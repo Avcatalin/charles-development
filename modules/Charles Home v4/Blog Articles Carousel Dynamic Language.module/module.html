@@ -1,0 +1,44 @@
+{% set current_language = request.path.split('/')[1] %} 
+<!-- Debugging: Output the current language to the webpage -->
+Current language: {{ request.path.split('/')[1] }}
+
+{% if current_language == 'de' %}
+{% set blog_posts = blog_recent_posts(blog_id=83673573028, limit=12) %}
+German blog posts count: {{ blog_posts|length }}
+{% elif current_language == 'it' %}
+{% set blog_posts = blog_recent_posts(blog_id=115759331169, limit=12) %}
+Italian blog posts count: {{ blog_posts|length }}
+{% else %}
+{% set blog_posts = blog_recent_posts(blog_id=52307339548, limit=12) %}
+English blog posts count: {{ blog_posts|length }}
+{% endif %}
+
+<div class="swiper articles-carousel">
+  <div class="swiper-wrapper">
+    {% for post in blog_posts %}
+    <div class="swiper-slide article-block">
+      <!-- Post Featured Image -->
+      <a href="{{ post.absolute_url }}">
+        <div class="blog-post" style="background-image: url('https://www.hello-charles.com/hubfs/Imported%20images/bg-article-dotted-canvas.svg');">
+          <div class="post-image">
+            <img src="{{ post.featured_image }}" alt="{{ post.featured_image }}" loading="lazy" />
+          </div>
+          <!-- Post Content -->
+          <div class="post-content">
+            <h3>{{ post.name|truncatehtml(50) }}</h3>
+            {{ post.post_list_content|truncatehtml(120) }}
+            <div class="align-btn">
+              <span class="read-more-button">Read more <i></i></span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  <!-- Swiper Navigation -->
+  <div class="swiper-nav-arrows">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>

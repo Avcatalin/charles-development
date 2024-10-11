@@ -1,0 +1,82 @@
+<div class="omr-content-container" style="background-image: url({{ module.style.background_image.src }});">
+  <div class="omr-container">
+    <div class="omr-content">
+      <p class="title">
+        {{ module.content_group.heading }}
+      </p>
+      <div class="omr-label">
+        {{ module.content_group.label_text }}
+      </div>
+      <div class="content">
+        {{ module.content_group.content }}
+      </div>
+    </div>
+    <div class="omr-qr-code">
+      <!-- Bell icon -->
+      {% if module.qr_group.bell_icon.src %}
+      {% set sizeAttrs = 'width="{{ module.qr_group.bell_icon.width|escape_attr }}" height="{{ module.qr_group.bell_icon.height|escape_attr }}"' %}
+      {% if module.qr_group.bell_icon.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.qr_group.bell_icon.width|escape_attr }}" height="{{ module.qr_group.bell_icon.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.qr_group.bell_icon.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.qr_group.bell_icon.max_width|escape_attr }}" height="{{ module.qr_group.bell_icon.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.qr_group.bell_icon.loading != 'disabled' ? 'loading="{{ module.qr_group.bell_icon.loading|escape_attr }}"' : '' %}
+      <img src="{{ module.qr_group.bell_icon.src|escape_url }}" alt="{{ module.qr_group.bell_icon.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="bell-icon">
+      {% endif %}
+      <!-- Text -->
+      <p>
+        {{ module.qr_group.text_field }}
+      </p>
+      <!-- Arrow Down -->
+      {% if module.qr_group.arrow_down.src %}
+      {% set sizeAttrs = 'width="{{ module.qr_group.arrow_down.width|escape_attr }}" height="{{ module.qr_group.arrow_down.height|escape_attr }}"' %}
+      {% if module.qr_group.arrow_down.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.qr_group.arrow_down.width|escape_attr }}" height="{{ module.qr_group.arrow_down.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.qr_group.arrow_down.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.qr_group.arrow_down.max_width|escape_attr }}" height="{{ module.qr_group.arrow_down.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.qr_group.arrow_down.loading != 'disabled' ? 'loading="{{ module.qr_group.arrow_down.loading|escape_attr }}"' : '' %}
+      <img src="{{ module.qr_group.arrow_down.src|escape_url }}" alt="{{ module.qr_group.arrow_down.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="arrow-big-down">
+      {% endif %}
+      <!-- Qr Code -->
+      {% if module.qr_group.qr_code.src %}
+      {% set sizeAttrs = 'width="{{ module.qr_group.qr_code.width|escape_attr }}" height="{{ module.qr_group.qr_code.height|escape_attr }}"' %}
+      {% if module.qr_group.qr_code.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.qr_group.qr_code.width|escape_attr }}" height="{{ module.qr_group.qr_code.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.qr_group.qr_code.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.qr_group.qr_code.max_width|escape_attr }}" height="{{ module.qr_group.qr_code.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.qr_group.qr_code.loading != 'disabled' ? 'loading="{{ module.qr_group.qr_code.loading|escape_attr }}"' : '' %}
+      <img src="{{ module.qr_group.qr_code.src|escape_url }}" alt="{{ module.qr_group.qr_code.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="qr-code-image">
+      {% endif %}
+
+      <!-- Mobile Button -->
+      <div class="qr-mobile-block">
+        {% set href = module.qr_group.mobile_url.url.href %}
+        {% if module.qr_group.mobile_url.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href|escape_url }}"
+           {% if module.qr_group.mobile_url.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.qr_group.mobile_url.rel %}rel="{{ module.qr_group.mobile_url.rel|escape_attr }}"{% endif %}
+           >
+          {% if module.qr_group.mobile_button.src %}
+          {% set sizeAttrs = 'width="{{ module.qr_group.mobile_button.width|escape_attr }}" height="{{ module.qr_group.mobile_button.height|escape_attr }}"' %}
+          {% if module.qr_group.mobile_button.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.qr_group.mobile_button.width|escape_attr }}" height="{{ module.qr_group.mobile_button.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.qr_group.mobile_button.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.qr_group.mobile_button.max_width|escape_attr }}" height="{{ module.qr_group.mobile_button.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.qr_group.mobile_button.loading != 'disabled' ? 'loading="{{ module.qr_group.mobile_button.loading|escape_attr }}"' : '' %}
+          <img src="{{ module.qr_group.mobile_button.src|escape_url }}" alt="{{ module.qr_group.mobile_button.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Agenda Button -->
+  <div class="omr-agenda">
+    {{ module.agenda_content }}
+  </div>
+</div>
+

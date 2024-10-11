@@ -1,0 +1,91 @@
+[ {
+  "id" : "08aa8b5e-e79a-071b-a11b-d8fd309b1902",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f65e29e0-58d5-0ba4-15e3-400c2eb5a7f6",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://www.hello-charles.com/hubfs/bg-omr.png",
+      "alt" : "bg-omr",
+      "width" : 3068,
+      "height" : 3067,
+      "max_width" : 2000,
+      "max_height" : 1999.348109517601,
+      "size_type" : "auto",
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "220049be-c629-16e6-afc5-e4ec6402c059",
+    "name" : "alignment_field",
+    "display_width" : null,
+    "label" : "Alignment",
+    "required" : false,
+    "locked" : false,
+    "alignment_direction" : "BOTH",
+    "type" : "alignment",
+    "default" : {
+      "horizontal_align" : "CENTER"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "background_image" : {
+      "src" : "https://www.hello-charles.com/hubfs/bg-omr.png",
+      "alt" : "bg-omr",
+      "width" : 3068,
+      "height" : 3067,
+      "max_width" : 2000,
+      "max_height" : 1999.348109517601,
+      "size_type" : "auto",
+      "loading" : "lazy"
+    },
+    "alignment_field" : {
+      "horizontal_align" : "CENTER"
+    }
+  }
+}, {
+  "id" : "ea0f291d-4fe7-e8ee-027e-2bda3e71f60c",
+  "name" : "omr_main_image",
+  "display_width" : null,
+  "label" : "OMR Main image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.hello-charles.com/hubfs/charles-omr-heading.png",
+    "alt" : "charles-omr-heading",
+    "width" : 2156,
+    "height" : 514,
+    "max_width" : 2000,
+    "max_height" : 476.80890538033395,
+    "size_type" : "auto",
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "0ab61163-ffc8-45de-fec9-946c1f723ac5",
+  "name" : "content_heading",
+  "display_width" : null,
+  "label" : "Content Heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1><img src=\"https://www.hello-charles.com/hubfs/wa-svg-icon.svg\" loading=\"lazy\" alt=\"wa-svg-icon\"> <span><strong>WhatsApp Marketing</strong> in <strong>2024</strong></span></h1>"
+} ]

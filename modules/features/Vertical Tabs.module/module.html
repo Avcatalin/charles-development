@@ -1,0 +1,77 @@
+<div class="container">
+  <!-- DESKTOP VERTICAL TABS -->
+  <div class="tabs-container" style="{{ module.vertical_tabs.spacing_field.css }}">
+    <div class="tabs-block">
+      <div id="tabs-section" class="tabs">
+        <!-- Tabs Heading Repeater -->
+        <ul class="tab-head">
+          {% for tab_repeater in module.tab_repeater %}
+          <li>
+            <a href="#tab-{{ tab_repeater.tab_number }}" class="tab-link {{ tab_repeater.tab_status }}"> 
+              <div class="inner-tab-item">
+                <span class="tab-icon">                 
+                  {% set loadingAttr = tab_repeater.tab_icon.loading != 'disabled' ? 'loading="{{ tab_repeater.tab_icon.loading }}"' : '' %}
+                  <img src="{{ tab_repeater.tab_icon.src }}" alt="{{ tab_repeater.tab_icon.alt }}" {{ loadingAttr }} class="img-fluid" width="35" height="35">
+                </span> 
+                <span class="tab-label">{{ tab_repeater.tab_name }}</span>
+              </div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        <!-- end Tabs Heading Repeater -->
+
+        <!-- Tabs Content Repeater -->
+        {% for tabs_content in module.tabs_content %}
+        <section id="tab-{{ tabs_content.tab_content_number }}" class="tab-body entry-content {{ tabs_content.tab_content_status }}" style="background-color: {{ module.tabs_content_background_color.color }}">
+          <div class="background-section-content" style="background-image: url({{ module.tabs_content_background_image.src }});">
+            {% set sizeAttrs = 'width="{{ tab_content_image.width }}" height="{{ tab_content_image.height }}"' %}
+            {% if tab_content_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ tab_content_image.width }}" height="{{ tab_content_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif tab_content_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ tab_content_image.max_width }}" height="{{ tab_content_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = tab_content_image.loading != 'disabled' ? 'loading="{{ tab_content_image.loading }}"' : '' %}
+            <img src="{{ tabs_content.tab_content_image.src }}" alt="{{ tabs_content.tab_content_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="img-fluid" />
+          </div>
+          <div class="section-content-text">
+            <p>
+              {{ tabs_content.tab_content }}
+            </p>
+          </div>
+        </section>
+        {% endfor %}
+        <!-- end Tabs Content Repeater -->
+      </div>
+    </div>
+  </div>
+  <!-- end DESKTOP VERTICAL TABS -->
+
+  <!-- MOBILE ACCORDION 2-->
+  <div class="mobile-accordion">
+    {% for tabs_content in module.tabs_content %}
+    <div class="accordion-item">
+      <span class="icon-acc">
+        <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 10L10 0.999999L1 10" stroke="#221F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p style="color: {{ module.color_accordion_header.color }}">{{ tabs_content.match_title }}</p>
+      </span>  
+      <div class="background-section-content" style="background-image: url({{ module.tabs_content_background_image.src }});">
+        {% set sizeAttrs = 'width="{{ tab_content_image.width }}" height="{{ tab_content_image.height }}"' %}
+        {% if tab_content_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ tab_content_image.width }}" height="{{ tab_content_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif tab_content_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ tab_content_image.max_width }}" height="{{ tab_content_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = tab_content_image.loading != 'disabled' ? 'loading="{{ tab_content_image.loading }}"' : '' %}
+        <img src="{{ tabs_content.tab_content_image.src }}" alt="{{ tabs_content.tab_content_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="img-fluid" />
+      </div>
+      <span class="content-acc" style="color: {{ module.color_accordion_content.color }}">        
+        {{ tabs_content.tab_content }}
+      </span>
+    </div>
+    {% endfor %}
+  </div>
+  <!-- end MOBILE ACCORDION 2-->
+</div>

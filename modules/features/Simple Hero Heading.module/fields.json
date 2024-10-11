@@ -1,0 +1,49 @@
+[ {
+  "id" : "a7322a05-64b6-6a20-7ed8-b19ea4d32564",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "The numbers add up"
+}, {
+  "id" : "f27cef21-dc8f-1229-0a85-6d4ce0968588",
+  "name" : "style_simple_heading",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f29abf76-a8d2-96a5-1e3b-0801921ea234",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "cc163ae0-c4b3-18c7-08a4-c12889b59fb8",
+  "name" : "title_color",
+  "display_width" : null,
+  "label" : "Title - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+} ]

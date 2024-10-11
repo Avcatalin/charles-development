@@ -1,0 +1,14 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Demo Mega Menu 2023
+  screenshotPath: ../images/template-previews/content.jpg
+-->
+{% extends './layouts/base-demo-mega-menu.html' %}
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--features', label='Main section' %}
+
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

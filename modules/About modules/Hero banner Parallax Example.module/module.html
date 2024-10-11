@@ -1,0 +1,31 @@
+<div style="position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100vh;">
+  <div style="height: 100%;
+    width: 100%;
+    position: fixed;">
+     <div class="{{ module.classname }}">
+      <div class="about_hero_slider">
+        {% for item in module.hero.image %}
+        <div class="about_hero" style="background-image: url({{ item.background_image.src }});">
+          <div class="container">
+            <div class="content">
+              {% set header_tag = module.header_tag || module.header_type  %}
+    {% if !header_tag %}
+      {% set header_tag = 'h1' %}
+    {% endif %}
+    {% header header_tag="{{ header_tag }}" value="{{ module.hero.title }}" %}
+              <div>
+                {{ module.hero.content }}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

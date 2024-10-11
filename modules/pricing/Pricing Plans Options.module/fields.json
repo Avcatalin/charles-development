@@ -1,0 +1,208 @@
+[ {
+  "id" : "f9cfd8f4-acbb-ed5b-43d6-2d6145bb2b7e",
+  "name" : "pricing_option_group",
+  "display_width" : null,
+  "label" : "Pricing Option Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "picker" : "file",
+    "id" : "69208a8d-8824-cfd0-c3f2-552838bde3b9",
+    "name" : "support_lottie_player",
+    "display_width" : null,
+    "label" : "Support - Lottie Player",
+    "required" : false,
+    "locked" : false,
+    "type" : "file",
+    "default" : "https://www.hello-charles.com/hubfs/123652-financial-charts-and-statistics-on-tab-with-up-arrow.json"
+  }, {
+    "id" : "08371abc-fa18-9e15-b8ab-3b44614adaf7",
+    "name" : "enable_image_jpg_png_",
+    "display_width" : null,
+    "label" : "Enable Image (jpg/png)",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "fa8aeae7-b278-a7e7-215a-5510421ec7e7",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/lotti.png",
+      "alt" : "lotti",
+      "loading" : "lazy",
+      "width" : 366,
+      "height" : 231,
+      "max_width" : 366,
+      "max_height" : 231
+    }
+  }, {
+    "id" : "98ca80a6-1226-4b81-f6cd-0db38ca547d5",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "I want to support my clients"
+  }, {
+    "id" : "0a53073b-8a9c-0d9a-f125-2ed316c8ebf6",
+    "name" : "title_color",
+    "display_width" : null,
+    "label" : "Title Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "927d7889-5dce-fda4-2b7e-f450df5325b5",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Here comes a nice text that explaines in detail what this feature means and why it is amazing for brands&nbsp;"
+  }, {
+    "id" : "1e6c6dbf-90d4-7feb-31f0-c3711558c7ef",
+    "name" : "content_color",
+    "display_width" : null,
+    "label" : "Content Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "58ceae46-6490-3c25-84e9-2e938e05d9ae",
+    "name" : "enable_checked_option",
+    "display_width" : null,
+    "label" : "Enable Checked option",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "e7442b81-f5ce-54a0-88f9-d2ad833651f8",
+    "name" : "checkbox_id",
+    "display_width" : null,
+    "label" : "Checkbox ID",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "check1"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "support_lottie_player" : "https://www.hello-charles.com/hubfs/123652-financial-charts-and-statistics-on-tab-with-up-arrow.json",
+    "enable_image_jpg_png_" : false,
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/lotti.png",
+      "alt" : "lotti",
+      "loading" : "lazy",
+      "width" : 366,
+      "height" : 231,
+      "max_width" : 366,
+      "max_height" : 231
+    },
+    "title" : "I want to support my clients",
+    "title_color" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    },
+    "content" : "Here comes a nice text that explaines in detail what this feature means and why it is amazing for brands&nbsp;",
+    "content_color" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    },
+    "enable_checked_option" : false,
+    "checkbox_id" : "check1"
+  } ]
+}, {
+  "id" : "36df7c8a-7145-9b8c-f022-713b7ef78df6",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "bf491445-86dc-5a13-5c06-c997d19f4d34",
+    "name" : "image_background_spacing",
+    "display_width" : null,
+    "label" : "Image Background Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "469ba983-ee3b-f9d6-e2fd-a9bfc8df0121",
+    "name" : "option_box_spacing",
+    "display_width" : null,
+    "label" : "Option Box spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "image_background_spacing" : { },
+    "option_box_spacing" : { }
+  }
+}, {
+  "id" : "47cc6efb-d617-7bb6-04a9-ba1b3f14a943",
+  "name" : "section_background_image",
+  "display_width" : null,
+  "label" : "Section Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/white-bg.svg",
+    "alt" : "white-bg",
+    "loading" : "lazy",
+    "width" : 1249,
+    "height" : 614,
+    "max_width" : 1249,
+    "max_height" : 614
+  }
+} ]

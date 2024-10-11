@@ -1,0 +1,134 @@
+<!--
+templateType: blog
+isAvailableForNewContent: true
+label: Charles B2B - blog post
+screenshotPath: ../images/template-previews/blog-post.png
+-->
+{% extends './layouts/base_blog.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  <div class="body-container body-container--blog-post">
+    <header class="blog-post--main-header">
+      <div class="header-wrap" style="max-width: 1000px;">
+        {% set meta = content.blog_post_author.display_name ~ " - " ~ content.publish_date_localized %}
+        {% if content.featured_image %}
+        {% module "hero" path="../modules/page-header",
+            title="{{ content.name }}",
+            subtitle="{{ meta }}"
+            image="{{ content.featured_image }}"
+            image_overlap="22"
+            img_has_border="true"
+          %}
+        {% else %}
+        {% module "hero" path="../modules/page-header",
+            title="{{ content.name }}",
+            subtitle="{{ meta }}"
+            image_overlap="0"
+            img_has_border="false"
+          %}
+        {% endif %}
+      </div>
+    </header>
+
+    {# Blog post #}
+    <div class="content-wrapper" style="max-width: 800px; padding-bottom: 5rem;">
+      <article class="blog-post">
+        <div class="author_block">
+          <div class="author_img">
+            <img src="{{ content.blog_post_author.avatar }}" alt="{{ content.blog_post_author.avatar.alt }}" width="50" height="50" loading="lazy">
+          </div>
+          <div class="author_name">
+            <p>
+              By <b>{{ content.blog_post_author.display_name }}</b>
+            </p>
+            <p>
+              <i>{{ content.blog_post_author.bio }}</i>
+            </p>
+          </div>
+
+          <div class="meta_info">
+            <p><b>Posted:</b> {{ content.publish_date|datetimeformat('%B %d, %Y') }}</p>
+            <p><b>Updated:</b> {{ content.published|datetimeformat('%B %d, %Y') }}</p>
+            {% if content.tag_list %}
+            <div class="blog-post__tags">
+              {% icon
+              name='tag',
+              purpose='decorative',
+              style='SOLID'
+            %}              
+              {% for tag in content.tag_list %}
+              <p class="blog-post__tag-link">{{ tag.name }}</p>{% if not loop.last %},&nbsp;{% endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>          
+        </div>
+        <aside id="left_sidebar">
+          <div id="CTA" style="display:none;">
+            <span class="hs-cta-wrapper" id="hs-cta-wrapper-a9ca4cc7-de9a-440c-a940-424e764bdc54"><span class="hs-cta-node hs-cta-a9ca4cc7-de9a-440c-a940-424e764bdc54" id="hs-cta-a9ca4cc7-de9a-440c-a940-424e764bdc54"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/8124115/a9ca4cc7-de9a-440c-a940-424e764bdc54" ><img class="hs-cta-img" id="hs-cta-img-a9ca4cc7-de9a-440c-a940-424e764bdc54" style="border-width:0px;" height="2038" width="1958" src="https://no-cache.hubspot.com/cta/default/8124115/a9ca4cc7-de9a-440c-a940-424e764bdc54.png"  alt="cCom book mockup CTA."/></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(8124115, 'a9ca4cc7-de9a-440c-a940-424e764bdc54', {"useNewLoader":"true","region":"na1"}); </script></span><!-- end HubSpot Call-to-Action Code -->
+            <p>Get your cCom Book </p>
+            <p>✅ Use WhatsApp for conversion<br>✅ Use <b>conversations</b> for retention<br>✅ Level up customer relationships</p>
+            <!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-882b06a8-3814-43fb-aef8-e4d1a8c04905"><span class="hs-cta-node hs-cta-882b06a8-3814-43fb-aef8-e4d1a8c04905" id="hs-cta-882b06a8-3814-43fb-aef8-e4d1a8c04905"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/8124115/882b06a8-3814-43fb-aef8-e4d1a8c04905" ><img class="hs-cta-img" id="hs-cta-img-882b06a8-3814-43fb-aef8-e4d1a8c04905" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/8124115/882b06a8-3814-43fb-aef8-e4d1a8c04905.png"  alt="Read now →"/></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(8124115, '882b06a8-3814-43fb-aef8-e4d1a8c04905', {"useNewLoader":"true","region":"na1"}); </script></span><!-- end HubSpot Call-to-Action Code -->
+          </div>
+          <div id="ToC"></div>
+        </aside>
+        <div class="blog-post__body">
+          {{ content.post_body }}
+          {% module "module_166853053886124" path="/charles-b2b/modules/About modules/Blog FAQ", label="Blog FAQ" %}
+          <br>
+
+          {% if absolute_url is string_containing "blog"  %}
+          {% module "module_170730125804111" path="/charles-b2b/modules/features/QR Code Block Blog", label="QR Code Block Blog" %}
+          {% endif %}
+          {% if absolute_url is string_containing "wiki"  %}
+          {% module "module_170730147418918" path="/charles-b2b/modules/features/QR Code Block Blog Wiki", label="QR Code Block Blog Wiki" %}
+          {% endif %}
+        </div>
+      </article>
+    </div>
+    {# End blog post #}
+    {# End blog post #}
+
+    <!-- Start -->
+    <div class="related_articles">
+      <div class="content-wrapper">
+        {% module "module_17029178477164" path="/charles-b2b/modules/Charles Home v4/Blog Related Articles", label="Blog Related Articles" %}
+       
+        <div class="content">
+          {% set found_posts = 0 %}
+          {% for topic in content.topic_list|map('slug') if found_posts < 3 %}
+          {% set tag_posts = blog_recent_tag_posts("default", topic, 4) %}
+          {% for post in tag_posts if found_posts < 3 %}
+          {% if content.id != post.id %}
+          <div class="block">
+            <div class="featured_img">
+              <a href="{{ post.absolute_url }}">
+                <img src="{{ resize_image_url(post.featured_image, 350, 222, 350) }}" alt="{{ post.title }}" width="350" height="222" loading="lazy">
+              </a>
+            </div>
+            <p class="related-title-no-tag">
+              <a href="{{ post.absolute_url }}">{{ post.title|replace(" | charles", "") }}</a>
+            </p>
+            <p class="meta_info">
+              {{ post.meta_description }}
+            </p>
+            <p class="author_date" style="display:none;">
+              <span>{{ post.blog_post_author.display_name }}</span>, 
+              <span>{{ post.publish_date_localized }}</span>
+            </p>
+            <a href="{{ post.absolute_url }}">Read more</a>
+          </div>
+          {% set found_posts = found_posts + 1 %}
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+
+    <!-- End -->
+  </div>
+</main>
+{% endblock body %}

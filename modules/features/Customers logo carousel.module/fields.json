@@ -1,0 +1,58 @@
+[ {
+  "id" : "b59ebb94-57a8-5603-89a7-a26a1a17d66c",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "707e9da3-e44f-0c39-16e3-fecc91347efd",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  } ]
+}, {
+  "id" : "687ea5ae-b0fd-dee0-a0ed-883c83680ee7",
+  "name" : "gradient_color",
+  "display_width" : null,
+  "label" : "Gradient Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#eaf4ff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "8d74f85d-4489-ce91-da70-a94efe2d5411",
+  "name" : "enable_side_gradient",
+  "display_width" : null,
+  "label" : "Enable Side Gradient",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+} ]

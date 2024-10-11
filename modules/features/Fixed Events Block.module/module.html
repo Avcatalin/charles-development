@@ -1,0 +1,43 @@
+{% if module.enable_events_block %}
+<div class="fixed-events-block">
+  {% for item in module.event_block %}
+  <div class="event-block" style="background-color: {{ item.event_block_background_color.css }}">
+    <!-- LINK WRAPPER -->
+    {% set href = item.link_field.url.href %}
+    {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}"
+       {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+       {% if item.link_field.rel %}rel="{{ item.link_field.rel }}"{% endif %}
+       class="link-wrapper-block">
+      <div class="event-content-choice">
+        <!-- IMAGE WRAPPER -->
+        {% if item.image_field.src %}
+        {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+        {% if item.image_field.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.image_field.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+        <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        <!-- end IMAGE WRAPPER -->
+        <!-- TEXT OPTION IF NEEDED -->
+        {% inline_rich_text field="content_text" value="{{ item.content_text }}" %}
+        <!-- end TEXT OPTION IF NEEDED -->
+      </div>
+      <!-- ARROW COLOR -->
+      <div class="arrow-block">
+        <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 28.022L15 15.022L2 2.02197" stroke="{{ item.arrow_color.css }}" stroke-width="3.34286" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <!-- end ARROW COLOR -->
+    </a>
+    <!-- end LINK WRAPPER -->
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

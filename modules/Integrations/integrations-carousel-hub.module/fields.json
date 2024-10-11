@@ -1,0 +1,110 @@
+[ {
+  "id" : "934acd8f-050c-45ac-c2ac-5369c1dd612c",
+  "name" : "container_id",
+  "display_width" : null,
+  "label" : "Container ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "7ee62fe5-43e0-7334-ef3f-d9e17abfe1f6",
+  "name" : "heading_width",
+  "display_width" : null,
+  "label" : "Heading Width",
+  "inline_help_text" : "Add max-width of heading in percentage.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "70%"
+}, {
+  "id" : "8c9d30e6-469c-5dcc-ada4-cb6f2cbc2422",
+  "name" : "heading_icon",
+  "display_width" : null,
+  "label" : "Heading Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/shopping-cart.svg",
+    "alt" : "shopping-cart",
+    "loading" : "lazy",
+    "width" : 32,
+    "height" : 28,
+    "max_width" : 32,
+    "max_height" : 28
+  }
+}, {
+  "id" : "dff649b6-a784-fbba-55af-af58ae8f7568",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Channels"
+}, {
+  "id" : "b582ff3d-fbe8-6872-11b3-51c3bcae5657",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>Any new marketing channel needs to prove its worth. Brands choose charles because ofupport.</span></p>"
+}, {
+  "id" : "90b0dfb2-1df6-ae3d-22aa-f4376a6778ec",
+  "name" : "integrations_hubdb",
+  "display_width" : null,
+  "label" : "Integrations HubDb",
+  "required" : false,
+  "locked" : false,
+  "type" : "hubdbtable",
+  "default" : 17331205
+}, {
+  "id" : "7276dbfe-7712-a946-901d-502884fbcd0a",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e2ece5c8-3234-bb3e-3e91-ef9c1feca52d",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "cb56c3a5-cd63-7093-5eb5-79a589e2e245",
+  "name" : "header_image_background",
+  "display_width" : null,
+  "label" : "Header image background",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#E2FAB4",
+    "opacity" : 100
+  }
+} ]

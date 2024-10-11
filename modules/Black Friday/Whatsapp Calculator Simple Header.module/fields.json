@@ -1,0 +1,285 @@
+[ {
+  "id" : "c4ea2356-9660-0815-12c4-75b291230188",
+  "name" : "label_group",
+  "display_width" : null,
+  "label" : "Label Group Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5daf9692-1f9a-7786-569f-b5ead114a7ff",
+    "name" : "label_color",
+    "display_width" : null,
+    "label" : "Label Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFDBFB",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "143f46c0-b3bd-2b94-e383-b54405143ffb",
+    "name" : "label_background_color",
+    "display_width" : null,
+    "label" : "Label Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#F339DF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "b4b3e505-b74f-33ae-39b8-5a79c0263e7a",
+    "name" : "label_text",
+    "display_width" : null,
+    "label" : "Label Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Revenue on whatsapp"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "label_color" : {
+      "color" : "#FFDBFB",
+      "opacity" : 100
+    },
+    "label_background_color" : {
+      "color" : "#F339DF",
+      "opacity" : 100
+    },
+    "label_text" : "Revenue on whatsapp"
+  }
+}, {
+  "id" : "15845332-223f-208c-d3b4-e8d5dd85deac",
+  "name" : "heading_title",
+  "display_width" : null,
+  "label" : "Heading Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2><span>The bfcm <span data-hs-icon-hubl=\"true\" style=\"display: inline-block; fill: #33475B;\">{% icon icon_set=\"fontawesome-5.14.0\" name=\"What's App\" style=\"REGULAR\" height=\"14\" purpose=\"decorative\" title=\"What's App icon\" %}</span> whatsapp revenue calculator</span></h2>"
+}, {
+  "id" : "0d13791c-156b-ef25-868b-f9983f38d53f",
+  "name" : "heading_subtitle",
+  "display_width" : null,
+  "label" : "Heading Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "calculate your BFCM revenue from WhatsApp"
+}, {
+  "id" : "756891cc-752d-5ed6-91d0-fe5864d69829",
+  "name" : "heading_image",
+  "display_width" : null,
+  "label" : "Heading Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/whatsapp-calculator.png",
+    "alt" : "whatsapp-calculator",
+    "loading" : "lazy",
+    "width" : 569,
+    "height" : 592,
+    "max_width" : 569,
+    "max_height" : 592
+  }
+}, {
+  "id" : "bd0bc6a2-b5cb-557c-2d04-3f32c0d5b5d3",
+  "name" : "form_content",
+  "display_width" : null,
+  "label" : "Form Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "925e7d90-6eb8-7d54-2215-1018d9546ed5",
+    "name" : "form_content",
+    "display_width" : null,
+    "label" : "Form Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><strong>Current WA subscriber base<br></strong></p>\n<p>(if you dont have WhatsApp subscribers yet just leave this blank)</p>"
+  }, {
+    "id" : "1a8fd380-f74e-a171-21b5-40edc1e88b02",
+    "name" : "email_subscribers_label",
+    "display_width" : null,
+    "label" : "Email Subscribers Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Email subscribers"
+  }, {
+    "id" : "b5932697-d5b2-be6a-36c2-0d0e8d0a6c87",
+    "name" : "website_visitors_label",
+    "display_width" : null,
+    "label" : "Website visitors Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Website visitors (monthly)"
+  }, {
+    "id" : "e7ddd391-f321-06dd-a73d-89bf251b9814",
+    "name" : "subscribers_per_year_label",
+    "display_width" : null,
+    "label" : "Subscribers per year Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "New <b>WhatsApp subscribers per year</b>"
+  }, {
+    "id" : "2043bf41-5135-f4ce-7279-c92a8ba2ff68",
+    "name" : "extra_subscribers_label",
+    "display_width" : null,
+    "label" : "Extra subscribers Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Extra annual Whatsapp revenue"
+  }, {
+    "id" : "e0684f38-1033-5437-d453-2fef5ad06bd5",
+    "name" : "how_it_works_label",
+    "display_width" : null,
+    "label" : "How it works Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "How is this calculated?"
+  }, {
+    "id" : "77f65e95-15d1-6821-296a-4491399546ce",
+    "name" : "how_it_works_url",
+    "display_width" : null,
+    "label" : "How it works URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "form_content" : "<p><strong>Current WA subscriber base<br></strong></p>\n<p>(if you dont have WhatsApp subscribers yet just leave this blank)</p>",
+    "email_subscribers_label" : "Email subscribers",
+    "website_visitors_label" : "Website visitors (monthly)",
+    "subscribers_per_year_label" : "New <b>WhatsApp subscribers per year</b>",
+    "extra_subscribers_label" : "Extra annual Whatsapp revenue",
+    "how_it_works_label" : "How is this calculated?",
+    "how_it_works_url" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "ffa3d95b-a264-50e4-5576-6f1590f70b91",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "731cd624-59e5-724f-a8fc-540c196a52ee",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "5c35d1c6-8150-c3c2-d67a-7059693d2bda",
+  "name" : "get_started_id",
+  "display_width" : null,
+  "label" : "Get Started ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "d5cc3c7f-44e8-4d7c-ec18-a199f58d64da",
+  "name" : "cta_button_label",
+  "display_width" : null,
+  "label" : "Get started Label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get a demo"
+}, {
+  "id" : "56cccba4-55eb-b171-5cbb-ba5ebacb256d",
+  "name" : "get_started",
+  "display_width" : null,
+  "label" : "Get Started",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

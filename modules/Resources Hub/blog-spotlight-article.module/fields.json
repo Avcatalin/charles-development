@@ -1,0 +1,38 @@
+[ {
+  "id" : "54b90696-9633-c774-dca8-411a7635945e",
+  "name" : "spotlight_title",
+  "display_width" : null,
+  "label" : "Spotlight Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Spotlight"
+}, {
+  "id" : "1246e918-3003-d310-f883-6dd3a1121c6d",
+  "name" : "class_select_spotlight",
+  "display_width" : null,
+  "label" : "Class Select Spotlight",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "s-black", "Black" ], [ "s-green", "Green" ], [ "s-purple", "Purple" ], [ "s-yellow", "Yellow" ], [ "s-pink", "Pink" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice"
+}, {
+  "id" : "4473a8d0-cf29-7572-2eb9-42cb4559410c",
+  "name" : "newest_topics_title",
+  "display_width" : null,
+  "label" : "Newest Topics Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Newest Topics"
+} ]

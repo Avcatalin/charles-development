@@ -1,0 +1,53 @@
+<article class="c-testimonials-v1">
+  {% for testimonial in module.testimonials %}
+  <section class="c-testimonials--entry w-full {% if loop.first %}active-slide{% endif %}" style="background: rgba({{ testimonial.bg_color.color|convert_rgb }}, {{ testimonial.bg_color.opacity / 100 }});">
+    <div class="c-testimonials--entry-content">
+      <header class="pb-4 pt-4 px-8 absolute">
+        <h3>{{ testimonial.title }}</h3>
+      </header>
+      
+      <div class="flex items-center relative">
+        <!-- placeholder for next testimonial -->
+        <div class="c-testimonials--thumbnail-ph" style="flex: 1 1 36%"></div>
+        
+        <!-- current testimonial video -->
+        <div class="" style="flex: 1 1 28%">
+          <div class="c-testimonials--video-container relative">
+            <div class="c-testimonials--video-wrap">
+              <div class="c-testimonials--video">
+                <video width="450" height="800" controls webkit-playsinline playsinline poster="{{ testimonial.video.poster }}">
+                  {% if testimonial.video.mp4 %}
+                  <source src="{{ testimonial.video.mp4 }}" type="video/mp4">
+                  {% endif %}
+                    
+                  {% if testimonial.video.webm %}
+                  <source src="{{ testimonial.video.webm }}" type="video/webm">
+                  {% endif %}
+                      
+                  {% if testimonial.video.ogv %}
+                  <source src="{{ testimonial.video.ogv }}" type="video/ogg">
+                  {% endif %}
+                        
+                  {% if testimonial.video.track %}
+                  <track label="English" kind="subtitles" srclang="en" src="{{ testimonial.video.track }}" default>
+                  {% endif %}
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+                
+        <!-- current testimonial meta -->
+        <div class="c-testimonials--meta p-6 pr-24" style="flex: 1 1 36%">
+          <div class="c-testimonials--meta-avatar" style="background-image: url({{ testimonial.client.icon }})"></div>
+          <div class="c-testimonials--meta-logo my-8">
+            <img alt="{{ testimonial.client.author }} Logo" src="{{ testimonial.client.logo }}"/>
+          </div>
+          <p class="c-testimonials--meta-text my-8">{{ testimonial.client.content }}</p>
+          <h5>{{ testimonial.client.author }}</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+</section>

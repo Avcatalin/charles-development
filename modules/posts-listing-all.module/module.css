@@ -1,0 +1,1 @@
+.c-post-listing{display:flex;flex-wrap:wrap;margin:0 -1.5rem}.c-post-listing .c-post-listing--entry{flex:0 0 33.33%;padding:1rem 1.5rem 3rem}@media screen and (max-width:920px){.c-post-listing .c-post-listing--entry{flex:0 0 50%}}@media screen and (max-width:635px){.c-post-listing .c-post-listing--entry{flex:0 0 100%}}

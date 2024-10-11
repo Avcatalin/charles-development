@@ -1,0 +1,121 @@
+<div class="app-info-section">
+  <div class="container">
+    <div class="app-info-container">
+      <div class="app-info-slider-block">
+        {% for item in module.mobile_app_slide %}
+        <div class="app-info-item">
+          <div class="app-slider-main-img">
+            <div class="app-slider-top-image">
+              <img loading="lazy" src="{{ item.slide_top_image.src }}" alt="{{ item.slide_top_image.alt }}" width="360" height="180">
+            </div>
+            <div class="app-slider-img">
+              <img loading="lazy" src="{{ item.app_image.src }}" alt="App Information" width="360" height="670"/>
+            </div>
+          </div>
+          <div class="app-info-slider-logo">
+            <div class="app-info-logo-list">
+              <img loading="lazy" src="{{ item.app_logo.src }}" alt="logo-listing-blog" width="250" height="130"/>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="app-notification-section" id="customers">
+  <div class="container">
+    <div class="app_title">
+      <h2>
+        {{ module.title }}
+      </h2>
+    </div>
+    <div class="app-notification-inner-block">
+      <div class="app-notification-slider">
+        {% for item in module.desktop_slide %}
+        <div class="slider-inner-content-main">
+          <div class="app-slider-item">
+            <div class="app-slider-left-coulmn">
+              <div class="app-slider-top-1 img-hover img-hover1">
+<!--                 <img src="{{ item.top_1_source.src }}" alt="PDP Mockup"
+                     data-ImgOld="{{ item.top1_placeholder.src }}"
+                     data-ImgNew="{{ item.top_1_source.src }}"
+                     data-phoneImg="{{ item.top_1_phone_image.src }}"
+                     > -->
+                <img loading="lazy" class="ImgOld" data-phoneImg="{{ item.top_1_phone_image.src }}" src="{{ item.top1_placeholder.src }}" alt="PDP Mockup" width="450" height="300">
+                <img loading="lazy" class="ImgNew" src="{{ item.top_1_source.src }}" alt="PDP Mockup" width="450" height="300">
+              </div>
+
+              <div class="notification-img-inn img-hover img-hover2">
+<!--                 <img src="{{ item.notification_placeholder.src }}" alt="Notification Mockup"
+                     data-ImgOld="{{ item.notification_placeholder.src }}"
+                     data-ImgNew="{{ item.notification_image_source.src }}"
+                     data-phoneImg="{{ item.notification_phone_image.src }}"
+                     > -->
+                <img loading="lazy" class="ImgOld" data-phoneImg="{{ item.notification_phone_image.src }}" src="{{ item.notification_placeholder.src }}" alt="Notification Mockup"  width="450" height="150">
+                <img loading="lazy" class="ImgNew" src="{{ item.notification_image_source.src }}" alt="Notification Mockup"  width="450" height="150">
+              </div>
+
+              <div class="salse-per-img">
+                <img loading="lazy" src="{{ item.sales_image.src }}" alt="Stat Holy" width="200" height="200">
+              </div>
+            </div>
+
+            <div class="center-phone-block img-setup">
+              <img loading="lazy" src="{{ item.phone_layout.src }}" alt="Testimonial Screen Woodboom PDP" class="placeholder-phone" width="840" height="1000">
+              <img loading="lazy" src="{{ item.phone_popup.src }}" alt="{{ item.phone_popup.alt }}" class="main-phone-img-section" width="350" height="630">
+            </div>
+
+            <div class="app-slider-right-coulmn">
+              <div class="slider-right-top-img img-hover img-hover3">
+<!--                 <img src="{{ item.right_placeholder.src }}" alt="Story Mockup"
+                     data-ImgOld="{{ item.right_placeholder.src }}"
+                     data-ImgNew="{{ item.right_source.src }}"
+                     data-phoneImg="{{ item.right_phone_image.src }}"
+                     > -->
+                <img loading="lazy" class="ImgOld" data-phoneImg="{{ item.right_phone_image.src }}" src="{{ item.right_placeholder.src }}" alt="Notification Mockup" width="auto" height="auto">
+                <img loading="lazy" class="ImgNew" src="{{ item.right_source.src }}" alt="Story Mockup" width="auto" height="auto">
+              </div>
+
+              <div class="app-slider-box-container">
+                <h3>{{ item.quote }}</h3>
+
+                <div class="app-slider-user-info">
+                  <div class="app-slider-img-profile">
+                    <img loading="lazy" src="{{ item.photo.src }}" alt="{{ item.photo.alt }}" width="85" height="85">
+                  </div>
+                  <div class="user-information-slider">
+                    <h5>{{ item.name_and_position }}</h5>
+                    {% set href = item.button_link.url.href %}
+                    {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                      {% set href = "mailto:" + href %}
+                    {% endif %}
+                    <a href="{{ href }}"
+                      {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                      {% if item.button_link.rel %}rel="{{ item.button_link.rel }}"{% endif %}
+                      >
+                      {{ item.button_text }}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+      <div class="app-notification-thubnail">
+        {% for item in module.desktop_slide %}
+        <div class="thumbnail-logo-list">
+          <img loading="lazy" src="{{ item.bottom_app_logo.src }}" alt="{{ item.bottom_app_logo.alt }}" width="270" height="140">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

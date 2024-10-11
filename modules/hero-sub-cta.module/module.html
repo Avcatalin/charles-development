@@ -1,0 +1,20 @@
+<section class="c-hero-section h-screen items-center bg-grey">
+  <div class="c-hero-section--title absolute text-center py-4 px-4 w-full flex items-center justify-center">
+    <div class="text-left">
+      {{ module.hero_text }}
+      <div class="mt-8">
+     <a href="{{ module.button.link.url.href }}"
+      style="color: {{ module.button.text_color.css }}; background: {{ module.button.bg_color.css }};"
+      class="c-button atf-demo">{{ module.button.text }}</a>
+        <a href="#charles" style="color: #000; background: none;" class="ch-button redirection-link">Learn More</a>
+  </div>
+    </div>
+  </div>
+
+  <div style="height:120vh" class="c-hero-section--animation-wrap relative w-full">
+    <div class="c-hero-section--animation absolute h-full w-full">
+      <lottie-player class="c-animation--player absolute top-0 bottom-0 mobile:hidden" autoplay loop renderer="canvas"  mode="normal" src="{{ module.lottie_file }}" preserveAspectRatio="xMidYMax slice"></lottie-player>
+      <lottie-player class="c-animation--player absolute top-0 bottom-0 tablet:hidden desktop:hidden" autoplay loop renderer="canvas"  mode="normal" src="{{ module.lottie_file_mobile }}" preserveAspectRatio="xMidYMax slice"></lottie-player>
+    </div>
+  </div>
+</section>

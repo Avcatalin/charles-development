@@ -1,0 +1,105 @@
+<div class="multiple-swiper-slider-container">
+  <!-- Custom Slider Products -->
+  <div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      {% for item in module.custom_slider %}
+      <div class="swiper-slide">
+        <div class="swiper-slide-wrapper">
+          <!-- Main Slide Image -->
+          {% if item.slick_slide_item.src %}
+          {% set sizeAttrs = 'width="{{ item.slick_slide_item.width }}" height="{{ item.slick_slide_item.height }}"' %}
+          {% if item.slick_slide_item.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ item.slick_slide_item.width }}" height="{{ item.slick_slide_item.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif item.slick_slide_item.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.slick_slide_item.max_width }}" height="{{ item.slick_slide_item.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.slick_slide_item.loading != 'disabled' ? 'loading="{{ item.slick_slide_item.loading }}"' : '' %}
+          <img src="{{ item.slick_slide_item.src }}" alt="{{ item.slick_slide_item.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          <!-- Inner slide item image -->
+          <div class="swiper-inner-content" style="top: {{ item.inner_image_top_spacing }};">
+            {% if item.second_inner_image.src %}
+            {% set sizeAttrs = 'width="{{ item.second_inner_image.width }}" height="{{ item.second_inner_image.height }}"' %}
+            {% if item.second_inner_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.second_inner_image.width }}" height="{{ item.second_inner_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.second_inner_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.second_inner_image.max_width }}" height="{{ item.second_inner_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.second_inner_image.loading != 'disabled' ? 'loading="{{ item.second_inner_image.loading }}"' : '' %}
+            <img src="{{ item.second_inner_image.src }}" alt="{{ item.second_inner_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} style="max-width: {{ item.inner_image_max_width }}">
+            {% endif %}
+          </div>
+
+          <!-- Slide Label -->
+          <div class="product_label" style="background-color: {{ item.slide_label_background_color.css }};">
+            <span style="color: {{ item.slide_label_text_color }}">{{ item.slide_label }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- Swiper Previous Button -->
+    <div class="swiper-button-prev">
+      <div class="swiper-btn-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" class="hero-slider__button__circle__wrapper" width="60" height="60">
+          <circle class="hero-slider__button__circle__fill" r="20" cx="25" cy="25"></circle>
+          <circle class="hero-slider__button__circle__progress" r="24" cx="25" cy="25"></circle>
+        </svg>
+      </div>
+    </div>
+    <!-- Swiper Next Button -->
+    <div class="swiper-button-next">
+      <div class="swiper-btn-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" class="hero-slider__button__circle__wrapper" width="60" height="60">
+          <circle class="hero-slider__button__circle__fill" r="20" cx="25" cy="25"></circle>
+          <circle class="hero-slider__button__circle__progress" r="24" cx="25" cy="25"></circle>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Slider Content -->
+  <div thumbsSlider="" class="swiper bottom-slider-content mySwiper" style="background-color: {{ module.bottom_slider_background_color.css }};">
+    <div class="swiper-wrapper">
+      {% for item in module.bottom_fade_slider %}
+      <div class="swiper-slide">
+        <!-- Icon Wrapper -->
+        <div class="icon_wrapper" style="background-color: {{ item.icon_background_color.css }};">
+          {% if item.slide_icon.src %}
+          {% set sizeAttrs = 'width="{{ item.slide_icon.width }}" height="{{ item.slide_icon.height }}"' %}
+          {% if item.slide_icon.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ item.slide_icon.width }}" height="{{ item.slide_icon.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif item.slide_icon.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.slide_icon.max_width }}" height="{{ item.slide_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.slide_icon.loading != 'disabled' ? 'loading="{{ item.slide_icon.loading }}"' : '' %}
+          <img src="{{ item.slide_icon.src }}" alt="{{ item.slide_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+
+        <!-- Product description -->
+        <div class="right_bottom_wrapper">
+          <div class="product_description" style="color: {{ item.description_text_color.css }}">
+            {% inline_rich_text field="product_description" value="{{ item.product_description }}" %}
+          </div>
+
+          <!-- Product Details Button -->
+          <div class="see_more_button">
+            {% set href = item.product_details_button.url.href %}
+            {% if item.product_details_button.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}"
+               {% if item.product_details_button.open_in_new_tab %}target="_blank"{% endif %}
+               {% if item.product_details_button.rel %}rel="{{ item.product_details_button.rel }}"{% endif %}
+               style="background-color: {{ item.product_button_background_color.css }};"
+               >
+              <span style="color: {{ item.product_button_text_color.css }}">{{ item.product_button_text }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

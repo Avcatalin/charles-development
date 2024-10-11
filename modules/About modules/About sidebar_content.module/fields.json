@@ -1,0 +1,366 @@
+[ {
+  "id" : "0ebc431e-587d-9696-dbbc-31364b9182a2",
+  "name" : "right_content",
+  "display_width" : null,
+  "label" : "Right content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b67a9414-83b1-7b9a-b667-405665437a12",
+    "name" : "phone_image",
+    "display_width" : null,
+    "label" : "Phone image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Group%209221.png",
+      "alt" : "Group 9221",
+      "loading" : "lazy",
+      "width" : 386,
+      "height" : 756,
+      "max_width" : 386,
+      "max_height" : 756
+    }
+  }, {
+    "id" : "9d5ee88b-8055-67f5-5374-93fef535817a",
+    "name" : "quote",
+    "display_width" : null,
+    "label" : "Quote",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "“An  <span>authentic conversation</span>  has the power to start a relationship that results in trust, loyalty, and happy customers.”"
+  }, {
+    "id" : "0155e68d-78e0-a5f9-9944-76baa86c67e8",
+    "name" : "text_block",
+    "display_width" : null,
+    "label" : "Text block",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "44fc29e5-ebaa-7ed1-e687-d3760a81825e",
+      "name" : "sub_title",
+      "display_width" : null,
+      "label" : "Sub title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Why Charles"
+    }, {
+      "id" : "ed78697f-a41c-0701-06f2-fd5ba169e549",
+      "name" : "sub_content",
+      "display_width" : null,
+      "label" : "Sub content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "Together with the ongoing support of Charles' customer success team, SNOCKS was quickly able to prove why WhatsApp is considered to be the sales, service and marketing channel of the future. After a smooth onboarding process and structured agent training, the exit-intent opt-in Flow was established and quickly proved the value of WhatsApp.<br>Opening and conversion rates of SNOCKS’ newsletters jumped by almost 150% compared to Email already for the first campaigns and customers loved the frictionless interaction of website and chat apps."
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "sub_title" : "Why Charles",
+      "sub_content" : "Together with the ongoing support of Charles' customer success team, SNOCKS was quickly able to prove why WhatsApp is considered to be the sales, service and marketing channel of the future. After a smooth onboarding process and structured agent training, the exit-intent opt-in Flow was established and quickly proved the value of WhatsApp.<br>Opening and conversion rates of SNOCKS’ newsletters jumped by almost 150% compared to Email already for the first campaigns and customers loved the frictionless interaction of website and chat apps."
+    }, {
+      "sub_title" : "Why Charles",
+      "sub_content" : "Together with the ongoing support of Charles' customer success team, SNOCKS was quickly able to prove why WhatsApp is considered to be the sales, service and marketing channel of the future. After a smooth onboarding process and structured agent training, the exit-intent opt-in Flow was established and quickly proved the value of WhatsApp.<br>Opening and conversion rates of SNOCKS’ newsletters jumped by almost 150% compared to Email already for the first campaigns and customers loved the frictionless interaction of website and chat apps."
+    }, {
+      "sub_title" : "Why Charles",
+      "sub_content" : "Together with the ongoing support of Charles' customer success team, SNOCKS was quickly able to prove why WhatsApp is considered to be the sales, service and marketing channel of the future. After a smooth onboarding process and structured agent training, the exit-intent opt-in Flow was established and quickly proved the value of WhatsApp.<br>Opening and conversion rates of SNOCKS’ newsletters jumped by almost 150% compared to Email already for the first campaigns and customers loved the frictionless interaction of website and chat apps."
+    } ]
+  }, {
+    "id" : "4f10b270-af4f-bb7c-217a-34a6b475f7c9",
+    "name" : "media_logo",
+    "display_width" : null,
+    "label" : "Media logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/MEDIA.png",
+      "alt" : "MEDIA",
+      "loading" : "lazy",
+      "width" : 182,
+      "height" : 43,
+      "max_width" : 182,
+      "max_height" : 43
+    }
+  }, {
+    "id" : "b3342d5a-1a8f-6b1c-61cf-f971ec02c654",
+    "name" : "media_title",
+    "display_width" : null,
+    "label" : "Media title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "\"Why WhatsApp?\""
+  }, {
+    "id" : "195e7d9c-884b-d96c-c70a-ac0188f2c5d6",
+    "name" : "media_title_logo",
+    "display_width" : null,
+    "label" : "Media title logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/image%20487.png",
+      "alt" : "image 487",
+      "loading" : "lazy",
+      "width" : 141,
+      "height" : 99,
+      "max_width" : 141,
+      "max_height" : 99
+    }
+  }, {
+    "id" : "f52df885-b170-f88d-0d93-4f3ca648be07",
+    "name" : "media_content",
+    "display_width" : null,
+    "label" : "Media content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Together with the ongoing support of Charles' customer success team, SNOCKS was quickly able to prove why WhatsApp is considered to be the sales, service and marketing channel of the future. After a smooth onboarding process and structured agent training, the exit-intent opt-in Flow was established and quickly proved the value of WhatsApp.<br>Opening and conversion rates of SNOCKS’ newsletters jumped by almost 150% compared to Email already for the first campaigns and customers loved the frictionless interaction of website and chat apps."
+  }, {
+    "id" : "60bbac73-5799-640d-772e-cd4fdee2333a",
+    "name" : "future_logo",
+    "display_width" : null,
+    "label" : "Future logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC09533_use%201.png",
+      "alt" : "DSC09533_use 1",
+      "loading" : "lazy",
+      "width" : 79,
+      "height" : 79,
+      "max_width" : 79,
+      "max_height" : 79
+    }
+  }, {
+    "id" : "cd453cd0-407a-c06d-6280-6a82274fd765",
+    "name" : "future_quote",
+    "display_width" : null,
+    "label" : "Future quote",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "“Join a team, that revolutionises the way we shop on our phones. See our jobs.”"
+  }, {
+    "id" : "5b85e256-dd11-09e1-2832-3aaebb809fdb",
+    "name" : "future_link",
+    "display_width" : null,
+    "label" : "Future link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#"
+  }, {
+    "id" : "632149bb-5ed2-7f87-777c-e5ef669b31df",
+    "name" : "phone_background",
+    "display_width" : null,
+    "label" : "Phone background",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat_award/Group%209291.png",
+      "alt" : "Group 9291",
+      "loading" : "lazy",
+      "width" : 672,
+      "height" : 3852,
+      "max_width" : 672,
+      "max_height" : 3852
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Group%209221.png",
+      "alt" : "Group 9221",
+      "loading" : "lazy",
+      "width" : 386,
+      "height" : 756,
+      "max_width" : 386,
+      "max_height" : 756
+    },
+    "quote" : "“An  <span>authentic conversation</span>  has the power to start a relationship that results in trust, loyalty, and happy customers.”",
+    "text_block" : [ {
+      "sub_title" : "Why Charles",
+      "sub_content" : "Together with the ongoing support of Charles' customer success team, SNOCKS was quickly able to prove why WhatsApp is considered to be the sales, service and marketing channel of the future. After a smooth onboarding process and structured agent training, the exit-intent opt-in Flow was established and quickly proved the value of WhatsApp.<br>Opening and conversion rates of SNOCKS’ newsletters jumped by almost 150% compared to Email already for the first campaigns and customers loved the frictionless interaction of website and chat apps."
+    }, {
+      "sub_title" : "Why Charles",
+      "sub_content" : "Together with the ongoing support of Charles' customer success team, SNOCKS was quickly able to prove why WhatsApp is considered to be the sales, service and marketing channel of the future. After a smooth onboarding process and structured agent training, the exit-intent opt-in Flow was established and quickly proved the value of WhatsApp.<br>Opening and conversion rates of SNOCKS’ newsletters jumped by almost 150% compared to Email already for the first campaigns and customers loved the frictionless interaction of website and chat apps."
+    }, {
+      "sub_title" : "Why Charles",
+      "sub_content" : "Together with the ongoing support of Charles' customer success team, SNOCKS was quickly able to prove why WhatsApp is considered to be the sales, service and marketing channel of the future. After a smooth onboarding process and structured agent training, the exit-intent opt-in Flow was established and quickly proved the value of WhatsApp.<br>Opening and conversion rates of SNOCKS’ newsletters jumped by almost 150% compared to Email already for the first campaigns and customers loved the frictionless interaction of website and chat apps."
+    } ],
+    "media_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/MEDIA.png",
+      "alt" : "MEDIA",
+      "loading" : "lazy",
+      "width" : 182,
+      "height" : 43,
+      "max_width" : 182,
+      "max_height" : 43
+    },
+    "media_title" : "\"Why WhatsApp?\"",
+    "media_title_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/image%20487.png",
+      "alt" : "image 487",
+      "loading" : "lazy",
+      "width" : 141,
+      "height" : 99,
+      "max_width" : 141,
+      "max_height" : 99
+    },
+    "media_content" : "Together with the ongoing support of Charles' customer success team, SNOCKS was quickly able to prove why WhatsApp is considered to be the sales, service and marketing channel of the future. After a smooth onboarding process and structured agent training, the exit-intent opt-in Flow was established and quickly proved the value of WhatsApp.<br>Opening and conversion rates of SNOCKS’ newsletters jumped by almost 150% compared to Email already for the first campaigns and customers loved the frictionless interaction of website and chat apps.",
+    "future_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC09533_use%201.png",
+      "alt" : "DSC09533_use 1",
+      "loading" : "lazy",
+      "width" : 79,
+      "height" : 79,
+      "max_width" : 79,
+      "max_height" : 79
+    },
+    "future_quote" : "“Join a team, that revolutionises the way we shop on our phones. See our jobs.”",
+    "future_link" : "#",
+    "phone_background" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat_award/Group%209291.png",
+      "alt" : "Group 9291",
+      "loading" : "lazy",
+      "width" : 672,
+      "height" : 3852,
+      "max_width" : 672,
+      "max_height" : 3852
+    }
+  }
+}, {
+  "id" : "7a296af4-45f7-173c-8472-44f993ce58b9",
+  "name" : "overlay_color",
+  "display_width" : null,
+  "label" : "Overlay color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "fc57f899-c2fb-c54b-4496-a83023662c96",
+  "name" : "press_text",
+  "display_width" : null,
+  "label" : "Press Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Backed, verbally, by the most influential tech magazines and marketing newschannels."
+}, {
+  "id" : "169ae3c3-716d-f0dc-0bd0-5608ef6e227a",
+  "name" : "testimonial_1",
+  "display_width" : null,
+  "label" : "Testimonial 1",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "\"One of the hottest startups in Berlin.\""
+}, {
+  "id" : "be7b24e7-f55b-bd79-5d5f-772b22f2a432",
+  "name" : "testimonial_2",
+  "display_width" : null,
+  "label" : "Testimonial 2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "\"A B2B startup transforming messaging apps into a revenue channel.\""
+}, {
+  "id" : "142d17a8-7233-64b5-f5fc-03481f7d8d9b",
+  "name" : "funding_text",
+  "display_width" : null,
+  "label" : "Funding Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "In a Series A funding round led by Salesforce Ventures and other investors Accel and HV Capital, charles has secured the right funding and strategic partners to push this new technology to the market."
+}, {
+  "id" : "e5a9e75c-aeae-468f-93e4-d08a1e9c5fef",
+  "name" : "company_text",
+  "display_width" : null,
+  "label" : "Company Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Empowering brands to leverage end-to-end relationships with their consumers using the power of conversational commerce."
+}, {
+  "id" : "38a3ec2c-30ae-dc9d-cdd0-e9fa4c421ecf",
+  "name" : "testimonial_3",
+  "display_width" : null,
+  "label" : "Testimonial 3",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "\"Charles brings <strong>conversational commerce</strong> to Whatsapp\""
+} ]

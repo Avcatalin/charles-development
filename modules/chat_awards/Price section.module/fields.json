@@ -1,0 +1,152 @@
+[ {
+  "id" : "132a1bd0-1269-a3b2-db09-632111f8f260",
+  "name" : "sub_title",
+  "display_width" : null,
+  "label" : "Sub title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<span>What’s in</span> for you?"
+}, {
+  "id" : "4169c488-f65c-7361-e70e-0ee1d0e20318",
+  "name" : "top_price",
+  "display_width" : null,
+  "label" : "Top price",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "30.000€"
+}, {
+  "id" : "90c27dcf-d64d-e0f1-80d7-51355c24222d",
+  "name" : "price_text",
+  "display_width" : null,
+  "label" : "Price text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "PRICE"
+}, {
+  "id" : "c55941f5-2645-8b6b-7386-2af74f49ef09",
+  "name" : "block",
+  "display_width" : null,
+  "label" : "Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "518ff2b6-cc8d-e5c6-bb7f-4494d2f8e278",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "1-YEAR"
+  }, {
+    "id" : "469b6fcf-9591-11a0-2f47-a42f5ecaa8a5",
+    "name" : "sub_text",
+    "display_width" : null,
+    "label" : "Sub text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Charles Software"
+  }, {
+    "id" : "5ae6aa2b-c79c-6d1b-deed-7f4d71a03537",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>... for free to <span>set up WhatsApp</span> as your new revenue channel. <img src=\"https://www.hello-charles.com/hubfs/chat_award/dollar.png\" alt=\"\"></p>"
+  }, {
+    "id" : "c89bbada-04ec-b854-1031-371f7ac04d3c",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat_award/phone-laptop.png",
+      "alt" : "phone-laptop",
+      "loading" : "lazy",
+      "width" : 77,
+      "height" : 62,
+      "max_width" : 77,
+      "max_height" : 62
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "sub_title" : "1-YEAR",
+    "sub_text" : "Charles Software",
+    "content" : "<p>... for free to <span>set up WhatsApp</span> as your new revenue channel. <img src=\"https://www.hello-charles.com/hubfs/chat_award/dollar.png\" alt=\"\"></p>",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat_award/phone-laptop.png",
+      "alt" : "phone-laptop",
+      "loading" : "lazy",
+      "width" : 77,
+      "height" : 62,
+      "max_width" : 77,
+      "max_height" : 62
+    }
+  }, {
+    "sub_title" : "1-YEAR",
+    "sub_text" : "Charles Software",
+    "content" : "<p>... for free to <span>set up WhatsApp</span> as your new revenue channel. <img src=\"https://www.hello-charles.com/hubfs/chat_award/dollar.png\" alt=\"\"></p>",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat_award/phone-laptop.png",
+      "alt" : "phone-laptop",
+      "loading" : "lazy",
+      "width" : 77,
+      "height" : 62,
+      "max_width" : 77,
+      "max_height" : 62
+    }
+  }, {
+    "sub_title" : "1-YEAR",
+    "sub_text" : "Charles Software",
+    "content" : "<p>... for free to <span>set up WhatsApp</span> as your new revenue channel. <img src=\"https://www.hello-charles.com/hubfs/chat_award/dollar.png\" alt=\"\"></p>",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat_award/phone-laptop.png",
+      "alt" : "phone-laptop",
+      "loading" : "lazy",
+      "width" : 77,
+      "height" : 62,
+      "max_width" : 77,
+      "max_height" : 62
+    }
+  } ]
+} ]

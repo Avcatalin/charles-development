@@ -1,0 +1,222 @@
+[ {
+  "id" : "64de8494-fdf6-51f0-d3d8-9460cdf3997d",
+  "name" : "features_section_background",
+  "display_width" : null,
+  "label" : "Banner Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.hello-charles.com/hubfs/dotted-canvas-bg.png",
+    "alt" : "dotted-canvas-bg",
+    "width" : 1440,
+    "height" : 1129,
+    "max_width" : 1440,
+    "max_height" : 1129
+  }
+}, {
+  "id" : "6c63ba24-b027-2fd7-a33f-39a21b703ba9",
+  "name" : "features_banner_icon",
+  "display_width" : null,
+  "label" : "Banner Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/banner-icon.svg",
+    "alt" : "banner-icon",
+    "loading" : "lazy",
+    "width" : 80,
+    "height" : 52,
+    "max_width" : 80,
+    "max_height" : 52
+  }
+}, {
+  "id" : "73e1f759-8b28-e401-a14d-881ae2541836",
+  "name" : "features_heading",
+  "display_width" : null,
+  "label" : "Main Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Journeys"
+}, {
+  "id" : "68fca3d2-6e9a-7c9b-8f17-c33e0569b706",
+  "name" : "color_choice_features_heading",
+  "display_width" : null,
+  "label" : "Title - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "79fa25aa-2386-cfb5-1bc0-9c94ee8a5054",
+  "name" : "enable_subtitle",
+  "display_width" : null,
+  "label" : "Enable Subtitle",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "b23d31c7-00be-c071-8574-86e31d5f4c01",
+  "name" : "features_subtitle",
+  "display_width" : null,
+  "label" : "Subtitle Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Self service. Sorted."
+}, {
+  "id" : "6f2fdd21-5276-b2f3-3ebe-b780e1e8b523",
+  "name" : "color_choice_subheader",
+  "display_width" : null,
+  "label" : "Subtitle Text - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "f6ada21a-7aa7-139d-01e2-8c27364a49f2",
+  "name" : "background_color_subheading",
+  "display_width" : null,
+  "label" : "Subtitle - Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFF171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "bc14bda1-6b0c-96ab-3d3d-99cf3940efdf",
+  "name" : "features_description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Some chats need a real person, others should be automated. On our open canvas, you create conversational flows that let customers lead the way, while you save time, money and revenue."
+}, {
+  "id" : "2a0ad81d-a5c6-7c70-d7f4-db0ed65d119a",
+  "name" : "color_choice_features_description",
+  "display_width" : null,
+  "label" : "Description - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "4554c9cc-5c1c-1678-e74c-9e45e33212a1",
+  "name" : "button_id",
+  "display_width" : null,
+  "label" : "Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "9504c3de-980d-b594-c188-0cba203d4b7f",
+  "name" : "background_color_book_demo",
+  "display_width" : null,
+  "label" : "CTA Button - Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#3A36DE",
+    "opacity" : 100
+  }
+}, {
+  "id" : "c60e8b28-1a96-ed12-5861-4485bd42cbf0",
+  "name" : "book_demo_text",
+  "display_width" : null,
+  "label" : "CTA Button - Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Book a demo"
+}, {
+  "id" : "139676b2-7a23-3b93-3b1a-216daed2c467",
+  "name" : "banner_introduction",
+  "display_width" : null,
+  "label" : "Banner Introduction",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "39a1587b-1e08-3c6d-e269-b3414ab8c898",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "b87e8376-30ee-0244-82d5-90395d43f3de",
+  "name" : "color_choice_book_demo",
+  "display_width" : null,
+  "label" : "CTA Button - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "9df97b94-15b2-0e13-3b27-42878db3f3d7",
+  "name" : "cta_button_url",
+  "display_width" : null,
+  "label" : "CTA Button - URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 41001952809
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

@@ -1,0 +1,80 @@
+[ {
+  "id" : "38d865d3-08c5-8e0e-e9f2-2c5a24ab6d57",
+  "name" : "heading_text",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "want Ideas? go ahead and copy these from <span style=\"background-color: #fff171; padding: 0 15px 0 10px; border-radius: 10px;\">our clients:</span>"
+}, {
+  "id" : "b1ac0486-8758-dc17-355c-5aaa8eadc14d",
+  "name" : "heading_color",
+  "display_width" : null,
+  "label" : "Title - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "f08efd7e-6fa4-b14f-ceae-4e68c1f8913b",
+  "name" : "border_color",
+  "display_width" : null,
+  "label" : "Border Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFF171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "28cd9c75-a9fe-bcae-0201-6449e084253e",
+  "name" : "heading_cta",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d9315e8a-95ec-7279-4285-ef88214cde1d",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "099894f6-10aa-f312-c563-d76473f9b033",
+  "name" : "background_color_heading",
+  "display_width" : null,
+  "label" : "Title - Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "36277939-66d3-d387-fd18-8e7f57b83893",
+  "name" : "enable_wave_line",
+  "display_width" : null,
+  "label" : "Enable wave line",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+} ]

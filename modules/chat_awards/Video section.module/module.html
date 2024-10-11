@@ -1,0 +1,27 @@
+  {% if module.top_emoji.src %}
+	{% set sizeAttrs = 'width="{{ module.top_emoji.width }}" height="{{ module.top_emoji.height }}"' %}
+	{% if module.top_emoji.size_type == 'auto' %}
+		{% set sizeAttrs = 'width="{{ module.top_emoji.width }}" height="{{ module.top_emoji.height }}" style="max-width: 100%; height: auto;"' %}
+	{% elif module.top_emoji.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.top_emoji.max_width }}" height="{{ module.top_emoji.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.top_emoji.loading != 'disabled' ? 'loading="{{ module.top_emoji.loading }}"' : '' %}
+{% endif %}
+
+<div class="video_content" style="background:#d4fcd5;">
+  <div class="container" style="{{ module.style.spacing_field.css }}">
+    <!-- .video area start-->
+    <div class="video_area" style="background: white;border-radius:50px 50px 0 0;padding-top: 40px;">
+      <div class="video_titles">
+        	<img src="{{ module.top_emoji.src }}" alt="{{ module.top_emoji.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        <h3>{{ module.content }}</h3>
+      </div>
+      <div class="video_content">
+        <iframe src="{{ module.video_url }}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- .video area end-->
+  </div>
+</div>

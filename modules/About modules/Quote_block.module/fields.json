@@ -1,0 +1,58 @@
+[ {
+  "id" : "d862efc5-ca64-29d9-bc81-4b26d57861a6",
+  "name" : "photo",
+  "display_width" : null,
+  "label" : "Photo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC09533_use%201.png",
+    "alt" : "DSC09533_use 1",
+    "loading" : "lazy",
+    "width" : 79,
+    "height" : 79,
+    "max_width" : 79,
+    "max_height" : 79
+  }
+}, {
+  "id" : "c2dd7fad-f324-360d-3c51-5cce07fe87c5",
+  "name" : "quote",
+  "display_width" : null,
+  "label" : "Quote",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "“Join a team, that revolutionises the way we shop on our phones. See our jobs.”"
+}, {
+  "id" : "0c4f74d1-dfd4-4157-8680-9bc9a2c9fbf6",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See jobs"
+}, {
+  "id" : "1e7d6b83-aff1-6837-f51a-6d74fcb240c7",
+  "name" : "button_url",
+  "display_width" : null,
+  "label" : "Button url",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#"
+} ]

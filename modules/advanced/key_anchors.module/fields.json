@@ -1,0 +1,143 @@
+[ {
+  "id" : "54d7d47d-6459-339b-55bf-a8442a7e9c75",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Introducing <strong>charles</strong>, the <span>conversational commerce suite</span> for consumer brands"
+}, {
+  "id" : "8968d19a-6ef0-f7ed-7691-1accb3713f56",
+  "name" : "sub_text",
+  "display_width" : null,
+  "label" : "Sub text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "For brands who want to talk and build relationships with their customers."
+}, {
+  "id" : "63a04e5d-710e-f44a-fba6-750c6c5b35ef",
+  "name" : "anchor",
+  "display_width" : null,
+  "label" : "Anchor",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "0f150c30-4eb9-1299-c9cd-71cda96a18f4",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Marketing-Icon.svg",
+      "alt" : "Marketing-Icon",
+      "loading" : "lazy",
+      "width" : 147,
+      "height" : 147,
+      "max_width" : 147,
+      "max_height" : 147
+    }
+  }, {
+    "id" : "a2096749-1baa-1147-912c-d588a3fc94bd",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Marketing"
+  }, {
+    "id" : "a082a7dd-b402-bdc9-f2b8-f10ba452bd50",
+    "name" : "sub_content",
+    "display_width" : null,
+    "label" : "Sub content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Send out <strong>WhatsApp newsletters</strong> to your audience"
+  }, {
+    "id" : "3629b162-9ebc-bd26-644c-149f3957f544",
+    "name" : "anchor",
+    "display_width" : null,
+    "label" : "Anchor",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#newsletter-section"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Marketing-Icon.svg",
+      "alt" : "Marketing-Icon",
+      "loading" : "lazy",
+      "width" : 147,
+      "height" : 147,
+      "max_width" : 147,
+      "max_height" : 147
+    },
+    "sub_title" : "Marketing",
+    "sub_content" : "Send out <strong>WhatsApp newsletters</strong> to your audience",
+    "anchor" : "#newsletter-section"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Marketing-Icon.svg",
+      "alt" : "Marketing-Icon",
+      "loading" : "lazy",
+      "width" : 147,
+      "height" : 147,
+      "max_width" : 147,
+      "max_height" : 147
+    },
+    "sub_title" : "Marketing",
+    "sub_content" : "Send out <strong>WhatsApp newsletters</strong> to your audience",
+    "anchor" : "#newsletter-section"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Marketing-Icon.svg",
+      "alt" : "Marketing-Icon",
+      "loading" : "lazy",
+      "width" : 147,
+      "height" : 147,
+      "max_width" : 147,
+      "max_height" : 147
+    },
+    "sub_title" : "Marketing",
+    "sub_content" : "Send out <strong>WhatsApp newsletters</strong> to your audience",
+    "anchor" : "#newsletter-section"
+  } ]
+} ]

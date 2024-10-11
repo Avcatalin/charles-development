@@ -1,0 +1,40 @@
+<div class="quote-block lp module" style="{{ module.style.spacing_field.css }}">
+  <div class="container">
+    <div class="quote-inner">
+      <div class="icons-block">
+        <!-- Image -->
+        {% if module.bottom_image.src %}
+        {% set sizeAttrs = 'width="{{ module.bottom_image.width }}" height="{{ module.bottom_image.height }}"' %}
+        {% if module.bottom_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.bottom_image.width }}" height="{{ module.bottom_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.bottom_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.bottom_image.max_width }}" height="{{ module.bottom_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.bottom_image.loading != 'disabled' ? 'loading="{{ module.bottom_image.loading }}"' : '' %}
+        <img src="{{ module.bottom_image.src }}" alt="{{ module.bottom_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="bottom_img">
+        {% endif %}
+      </div>
+      <!-- Quote Content -->
+      <div class="quote-content">
+        {{ module.quote_content }}
+
+        {% if module.toggle_cta %}
+        <div class="cta-wrapper">
+          <!-- Button CTA -->
+          {% set href = module.button_link.url.href %}
+          {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}" class="quote-cta"
+             {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+             >
+            {{ module.button_label }}
+            <i></i>
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

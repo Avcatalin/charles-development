@@ -1,0 +1,48 @@
+<div class="newschat-block">
+  <div class="container">
+    <!-- Content Text -->
+    <div class="newschat-top-content">
+      {{ module.content_text }}
+      <!-- CTA Button -->
+      {% set href = module.button_link.url.href %}
+      {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="mobile-cta" id="{{ module.button_id }}"
+         {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+         >
+        {{ module.button_label }}
+        <i></i>
+      </a>
+    </div>
+    <!-- Image NewsChat -->
+    {% if module.connect_line.src %}
+    {% set sizeAttrs = 'width="{{ module.connect_line.width }}" height="{{ module.connect_line.height }}"' %}
+    {% if module.connect_line.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.connect_line.width }}" height="{{ module.connect_line.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.connect_line.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.connect_line.max_width }}" height="{{ module.connect_line.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.connect_line.loading != 'disabled' ? 'loading="{{ module.connect_line.loading }}"' : '' %}
+    <img src="{{ module.connect_line.src }}" alt="{{ module.connect_line.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="connect-line">
+    {% endif %}
+    <!-- QR Code -->
+    <div class="qr-code">
+      {% if module.qr_code.src %}
+      {% set sizeAttrs = 'width="{{ module.qr_code.width }}" height="{{ module.qr_code.height }}"' %}
+      {% if module.qr_code.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.qr_code.width }}" height="{{ module.qr_code.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.qr_code.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.qr_code.max_width }}" height="{{ module.qr_code.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.qr_code.loading != 'disabled' ? 'loading="{{ module.qr_code.loading }}"' : '' %}
+      <img src="{{ module.qr_code.src }}" alt="{{ module.qr_code.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+    <!-- QR Text -->
+    <div class="newschat-content">
+      {{ module.newschat_content }}      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="chat-expert-block" style="{{ module.style.spacing_field.css }}; {% if module.style.align_center %}margin: 0 auto;{% endif %} max-width: {{ module.container_width }};">
+  <div class="chat-heading">
+    {{ module.heading }}
+    <!-- Shape line -->
+    {% if module.shape_line.src %}
+    {% set sizeAttrs = 'width="{{ module.shape_line.width }}" height="{{ module.shape_line.height }}"' %}
+    {% if module.shape_line.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.shape_line.width }}" height="{{ module.shape_line.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.shape_line.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.shape_line.max_width }}" height="{{ module.shape_line.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.shape_line.loading != 'disabled' ? 'loading="{{ module.shape_line.loading }}"' : '' %}
+    <img src="{{ module.shape_line.src }}" class="shape-line-svg" alt="{{ module.shape_line.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+    <!-- Mobile connect line -->
+    {% if module.mobile_shape_line.src %}
+    {% set sizeAttrs = 'width="{{ module.mobile_shape_line.width }}" height="{{ module.mobile_shape_line.height }}"' %}
+    {% if module.mobile_shape_line.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.mobile_shape_line.width }}" height="{{ module.mobile_shape_line.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.mobile_shape_line.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.mobile_shape_line.max_width }}" height="{{ module.mobile_shape_line.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.mobile_shape_line.loading != 'disabled' ? 'loading="{{ module.mobile_shape_line.loading }}"' : '' %}
+    <img src="{{ module.mobile_shape_line.src }}" class="shape-line-mobile" alt="{{ module.mobile_shape_line.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+
+  <!-- Button CTA Nav Item Six -->
+  <div class="chat-button-expert">
+    {% set href = module.book_demo_button.url.href %}
+    {% if module.book_demo_button.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}" id="{{ module.button_id }}"
+       {% if module.book_demo_button.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.book_demo_button.rel %}rel="{{ module.book_demo_button.rel }}"{% endif %}
+       >
+      <div class="nav-wrapper">  
+        <div class="left-content" style="width: {{ module.column_one_width }};">
+          <!-- Icon -->
+          {% if module.person.src %}
+          {% set sizeAttrs = 'width="{{ module.person.width }}" height="{{ module.person.height }}"' %}
+          {% if module.person.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.person.width }}" height="{{ module.person.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.person.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.person.max_width }}" height="{{ module.person.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.person.loading != 'disabled' ? 'loading="{{ module.person.loading }}"' : '' %}
+          <img src="{{ module.person.src }}" alt="{{ module.person.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          <!-- Content -->
+          <p style="padding-right: {{ module.space_button_label }};">
+            {{ module.chat_title }}
+          </p>
+        </div>
+        <span class="nav-btn">
+          {{ module.book_demo_label }}
+        </span>
+      </div>
+    </a>
+  </div>
+</div>

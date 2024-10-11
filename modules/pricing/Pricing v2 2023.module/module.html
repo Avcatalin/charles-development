@@ -1,0 +1,538 @@
+<!-- PRICING V2 CONTAINER -->
+<div class="pricing-v2-container" id="main-listing-packages">
+  <div class="row-pricing">
+    <!-- PRICING INTRO BOX -->
+    <div class="pricing-intro-box equal-col">
+      <div class="background-wrapper" style="background-image: url({{ module.pricing_box_first_background.src }});">
+
+        <!-- SUBSCRIPTION TYPE CHECKBOX -->
+        <div class="select-subscription-type">
+          <span class="subscr-label">{{ module.subscription_toggle_monthly }}</span>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          <span class="subscr-label">{{ module.subscription_toggle_yearly }}</span>
+        </div>
+
+        <!-- CHARLES LOGO -->
+        <div class="charles-logo">
+          {% if module.charles_logo.src %}
+          {% set sizeAttrs = 'width="{{ module.charles_logo.width }}" height="{{ module.charles_logo.height }}"' %}
+          {% if module.charles_logo.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.charles_logo.width }}" height="{{ module.charles_logo.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.charles_logo.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.charles_logo.max_width }}" height="{{ module.charles_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.charles_logo.loading != 'disabled' ? 'loading="{{ module.charles_logo.loading }}"' : '' %}
+          <img src="{{ module.charles_logo.src }}" alt="{{ module.charles_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+
+        <!-- CHARLES DEMO SCREEN -->
+        <div class="demo-screen">
+          {% if module.charles_demo_screen.src %}
+          {% set sizeAttrs = 'width="{{ module.charles_demo_screen.width }}" height="{{ module.charles_demo_screen.height }}"' %}
+          {% if module.charles_demo_screen.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.charles_demo_screen.width }}" height="{{ module.charles_demo_screen.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.charles_demo_screen.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.charles_demo_screen.max_width }}" height="{{ module.charles_demo_screen.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.charles_demo_screen.loading != 'disabled' ? 'loading="{{ module.charles_demo_screen.loading }}"' : '' %}
+          <img src="{{ module.charles_demo_screen.src }}" alt="{{ module.charles_demo_screen.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+
+        <!-- SUBTEXT DEMO SCREEN -->
+        <div class="demo-screen-subtitle">{{ module.subtitle_demo_screen }}</div>
+
+        <!-- WHATSAPP COUNTRIES -->
+        <div class="whatsapp-countries">
+          {% set href = module.whatsapp_countries_url.url.href %}
+          {% if module.whatsapp_countries_url.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if module.whatsapp_countries_url.open_in_new_tab %}target="_blank"{% endif %}
+             {% if module.whatsapp_countries_url.rel %}rel="{{ module.whatsapp_countries_url.rel }}"{% endif %}
+             >
+            {{ module.whatsapp_countries }}
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PRICING PACKAGE BOX -->
+    {% for item in module.pricing_package_repeater %}
+    {% if item.enable_custom_border_class %}
+    <div class="border-inner-overlay">
+      {% endif %}
+
+      <div class="pricing-box-package equal-col {{ item.custom_pricing_box_class }}">
+        <!-- MOST POPULAR TOOLTIP -->
+        {% if item.enable_most_popular_tooltip %}   
+        <div class="most-popular-tooltip">
+          <span>{{ item.most_popular_tooltip }}</span>
+        </div>
+        {% endif %}
+
+        <!-- TOP ICON -->
+        {% if item.enable_custom_border_class %}
+        <div class="border-image-overlay">
+          {% endif %}
+          <div class="icon-top">
+            {% if item.icon_top.src %}
+            {% set sizeAttrs = 'width="{{ item.icon_top.width }}" height="{{ item.icon_top.height }}"' %}
+            {% if item.icon_top.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.icon_top.width }}" height="{{ item.icon_top.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.icon_top.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.icon_top.max_width }}" height="{{ item.icon_top.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.icon_top.loading != 'disabled' ? 'loading="{{ item.icon_top.loading }}"' : '' %}
+            <img src="{{ item.icon_top.src }}" alt="{{ item.icon_top.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          {% if item.enable_custom_border_class %}
+        </div>
+        {% endif %}
+        <!-- PACKAGE TITLE -->
+        <div class="package-title-section">
+          <h3>{{ item.pricing_box_title }}</h3>
+          <p>{{ item.pricing_box_subtitle }}</p>
+        </div>
+
+        {% if item.display_enterprise_content %}      
+        <!-- ENTERPRISE BOX -->
+        <div class="enterprise-banner">
+          {% if item.enterprise_package_banner.src %}
+          {% set sizeAttrs = 'width="{{ item.enterprise_package_banner.width }}" height="{{ item.enterprise_package_banner.height }}"' %}
+          {% if item.enterprise_package_banner.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ item.enterprise_package_banner.width }}" height="{{ item.enterprise_package_banner.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif item.enterprise_package_banner.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.enterprise_package_banner.max_width }}" height="{{ item.enterprise_package_banner.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.enterprise_package_banner.loading != 'disabled' ? 'loading="{{ item.enterprise_package_banner.loading }}"' : '' %}
+          <img src="{{ item.enterprise_package_banner.src }}" alt="{{ item.enterprise_package_banner.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+
+          <!-- ENTERPRISE CONTENT -->
+          <h4>{{ item.enterprise_subtitle }}</h4>
+          <p>{{ item.enterprise_content }}</p>
+        </div>
+        {% endif %}
+
+        {% if item.display_general_sections %}
+        <!-- PRICING BOX PRICE -->
+        <div class="price-box">
+          <span class="price-value"><span class="price-sign">€</span><span class="value">{{ item.price_value }}</span></span>
+          <span class="second-price"><span class="price-sign">€</span><span class="value">{{ item.second_price }}</span></span>
+          <span class="payment-period">{{ item.payment_period }}</span>
+          <span class="second-payment-period">{{ item.second_payment_period }}</span>
+        </div>
+        <!-- PACKAGE BENEFITS -->
+        <div class="package-benefits">
+          <b>{{ item.package_benefits }}</b>
+          <span class="outbound-inbound-benefit">{{ item.outbound_inbound }}</span>
+        </div>
+        <!-- PACKAGE ADDITIONAL COST -->
+        <div class="package-additional-cost">
+          <p>{{ item.additional_cost }}</p>
+        </div>
+        {% endif %}
+
+        <!-- PACKAGE CTA BUTTON -->
+        <div class="package-cta-button">
+          {% set href = item.package_cta_button.url.href + "?demo_package=" + item.pricing_box_title %}
+          {% if item.package_cta_button.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if item.package_cta_button.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.package_cta_button.rel %}rel="{{ item.package_cta_button.rel }}"{% endif %}
+             >
+            {{ item.package_cta_button_text }}
+          </a>
+        </div>
+      </div>
+      {% if item.enable_custom_border_class %}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<!-- LIST TABLE COMPARE FEATURES -->
+<div class="pricing-table-compare">
+  <div class="table-toggle">
+    <p class="m-0">
+      <span>{{ module.compare_table_title }}</span>
+      <span class="icon-toggle">
+        {% if module.compare_table_icon.src %}
+        {% set sizeAttrs = 'width="{{ module.compare_table_icon.width }}" height="{{ module.compare_table_icon.height }}"' %}
+        {% if module.compare_table_icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.compare_table_icon.width }}" height="{{ module.compare_table_icon.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.compare_table_icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.compare_table_icon.max_width }}" height="{{ module.compare_table_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.compare_table_icon.loading != 'disabled' ? 'loading="{{ module.compare_table_icon.loading }}"' : '' %}
+        <img src="{{ module.compare_table_icon.src }}" alt="{{ module.compare_table_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </span>
+    </p>
+  </div>
+</div>
+
+<!-- SHOW TABLE CONTENT -->
+<div class="pricing-table-content" id="table-benefits-list">
+  <div class="packages-columns">
+    <!-- MAIN LEFT COLUMN -->
+    <div class="main-column">
+      <!-- FIRST ROW TABLE -->
+      <div class="users px-20 label-style">
+        {{ module.users_label }}
+      </div>
+      <div class="succes-manager px-20 label-style">
+        {{ module.success_manager_label }}
+      </div>
+      <div class="channels px-20 label-style">
+        {{ module.channels_label }}
+      </div>
+      <div class="whatsapp-verification px-20 label-style">
+        {{ module.whatsapp_verification_label }}
+      </div>
+      <div class="creative-support px-20 label-style">
+        {{ module.creative_support_label }}
+      </div>
+      <div class="int-guides px-20 label-style">
+        {{ module.guides_label }}
+      </div>
+      
+      <!-- SERVICES REPEATER -->
+      {% for item in module.service_box_repeater %}
+      <div class="service-wrapper">
+        <div class="title-icon-tooltip">
+          <div class="inner-title-icon-tooltip">
+            <!-- SERVICE ICON -->
+            <div class="service-icon">
+              {% if item.service_icon.src %}
+              {% set sizeAttrs = 'width="{{ item.service_icon.width }}" height="{{ item.service_icon.height }}"' %}
+              {% if item.service_icon.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.service_icon.width }}" height="{{ item.service_icon.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.service_icon.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.service_icon.max_width }}" height="{{ item.service_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.service_icon.loading != 'disabled' ? 'loading="{{ item.service_icon.loading }}"' : '' %}
+              <img src="{{ item.service_icon.src }}" alt="{{ item.service_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+            <!-- SERVICE TITLE -->
+            <h4 class="service-title">{{ item.service_title }}</h4>
+            <!-- SERVICE TOOLTIP -->
+            <div class="service-tooltip">
+              <!-- SERVICE TOOLTIP ICON -->
+              <div class="tooltip-icon" id="{{ item.tooltip_class_onclick }}">
+                {% if item.tooltip_icon.src %}
+                {% set sizeAttrs = 'width="{{ item.tooltip_icon.width }}" height="{{ item.tooltip_icon.height }}"' %}
+                {% if item.tooltip_icon.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ item.tooltip_icon.width }}" height="{{ item.tooltip_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif item.tooltip_icon.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ item.tooltip_icon.max_width }}" height="{{ item.tooltip_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = item.tooltip_icon.loading != 'disabled' ? 'loading="{{ item.tooltip_icon.loading }}"' : '' %}
+                <img src="{{ item.tooltip_icon.src }}" alt="{{ item.tooltip_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <!-- TOOLTIP CONTENT HIDDEN -->
+              <div class="tooltip-box {{ item.tooltip_class_onclick }}">
+                <div class="inner-tooltip">
+                  <!-- ADVANCED TOOLTIP IMAGE -->
+                  {% if item.advanced_tooltip_image.src %}
+                  {% set sizeAttrs = 'width="{{ item.advanced_tooltip_image.width }}" height="{{ item.advanced_tooltip_image.height }}"' %}
+                  {% if item.advanced_tooltip_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.advanced_tooltip_image.width }}" height="{{ item.advanced_tooltip_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.advanced_tooltip_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.advanced_tooltip_image.max_width }}" height="{{ item.advanced_tooltip_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.advanced_tooltip_image.loading != 'disabled' ? 'loading="{{ item.advanced_tooltip_image.loading }}"' : '' %}
+                  <img src="{{ item.advanced_tooltip_image.src }}" alt="{{ item.advanced_tooltip_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                  <!-- ADVANCED TOOLTIP CONTENT -->
+                  <div class="adv-tooltip-content">
+                    <div class="adv-icon-title">
+                      <!-- TOOLTIP INNER ICON -->
+                      <span class="adv-icon-wrapper">
+                        {% if item.advanced_tooltip_icon.src %}
+                        {% set sizeAttrs = 'width="{{ item.advanced_tooltip_icon.width }}" height="{{ item.advanced_tooltip_icon.height }}"' %}
+                        {% if item.advanced_tooltip_icon.size_type == 'auto' %}
+                        {% set sizeAttrs = 'width="{{ item.advanced_tooltip_icon.width }}" height="{{ item.advanced_tooltip_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                        {% elif item.advanced_tooltip_icon.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ item.advanced_tooltip_icon.max_width }}" height="{{ item.advanced_tooltip_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                        {% endif %}
+                        {% set loadingAttr = item.advanced_tooltip_icon.loading != 'disabled' ? 'loading="{{ item.advanced_tooltip_icon.loading }}"' : '' %}
+                        <img src="{{ item.advanced_tooltip_icon.src }}" alt="{{ item.advanced_tooltip_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                        {% endif %}
+                      </span>
+                      <h4>{{ item.advanced_tooltip_title }}</h4>
+                    </div>
+                    <!-- TOOLTIP CONTENT -->
+                    <p class="adv-tooltip-content">{{ item.advanced_tooltip_content }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="service-content">{{ item.service_text }}</p>
+        </div>
+        <!-- SERVICES BENEFITS -->
+        <div class="service-list-benefits">
+          {% for item_second in item.services_items_list %}
+          <div class="service-item">{{ item_second.service_item_title }}</div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="right-side-rows">
+      <!-- INTRO ESSENTIALS INFO PACKAGE -->
+      <div class="intro-row-benefits">
+        <!-- ESSENTIALS -->
+        <div class="intro-benefit-column">
+          <!-- USERS INCLUDED -->
+          <div class="users-included label-style">
+            {{ module.essentials_users }}
+          </div>
+          <!-- ROLES -->
+          <div class="role label-style">
+            {{ module.essentials_role }}
+          </div>
+          <!-- CHANNELS -->
+          <div class="channels label-style">        
+            <div class="channel-social">
+              {% for channel in module.channels_repeater %}
+                {% if channel.essentials_channels_icon.src %}
+                {% set sizeAttrs = 'width="{{ channel.essentials_channels_icon.width }}" height="{{ channel.essentials_channels_icon.height }}"' %}
+                {% if channel.essentials_channels_icon.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ channel.essentials_channels_icon.width }}" height="{{ channel.essentials_channels_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif channel.essentials_channels_icon.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ channel.essentials_channels_icon.max_width }}" height="{{ channel.essentials_channels_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = channel.essentials_channels_icon.loading != 'disabled' ? 'loading="{{ channel.essentials_channels_icon.loading }}"' : '' %}
+                <img src="{{ channel.essentials_channels_icon.src }}" alt="{{ channel.essentials_channels_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              {% endfor %}
+            </div>
+
+          </div>
+          <!-- WHATSAPP VERIFICATION -->
+          <div class="whatsapp-verification label-style">
+            {% if module.whatsapp_integration_activation %}
+            {{ module.essentials_whatsapp_integration }}
+            {% else %}
+            <span>
+            <img src="https://www.hello-charles.com/hubfs/x-icon.svg" alt="x-icon" loading="lazy" width="13" height="13" style="max-width: 100%; height: auto;">
+            </span>
+            {% endif %}
+          </div>
+        <!-- CREATIVE SUPPORT -->
+          <div class="creative-support label-style">
+            {% if module.creative_support_activation %}
+            <img src="https://www.hello-charles.com/hubfs/x-icon.svg" alt="x-icon" loading="lazy" width="13" height="13" style="max-width: 100%; height: auto;">
+            {% else %}
+            <span>
+            <img src="https://www.hello-charles.com/hubfs/x-icon.svg" alt="x-icon" loading="lazy" width="13" height="13" style="max-width: 100%; height: auto;">
+            </span>
+            {% endif %}
+          </div>
+           <!-- Intuitive guides -->
+          <div class="int-guides label-style">
+            {% if module.guides_activation %}
+            <p>Product Docs &amp; Best Practices</p>
+            {% else %}
+            <span>
+            <img src="https://www.hello-charles.com/hubfs/x-icon.svg" alt="x-icon" loading="lazy" width="13" height="13" style="max-width: 100%; height: auto;">
+            </span>
+            {% endif %}
+          </div>
+        </div>
+        <!-- GROWTH -->
+        <div class="intro-benefit-column">
+          <!-- USERS INCLUDED -->
+          <div class="users-included label-style">
+            {{ module.growth_users }}
+          </div>
+          <!-- ROLES -->
+          <div class="role label-style">
+            {{ module.growth_role }}
+          </div>
+          <!-- CHANNELS -->
+          <div class="channels label-style">        
+            <div class="channel-social">
+              {% for channel in module.growth_channels_repeater %}
+              
+                {% if channel.growth_channels_icon.src %}
+                {% set sizeAttrs = 'width="{{ channel.growth_channels_icon.width }}" height="{{ channel.growth_channels_icon.height }}"' %}
+                {% if channel.growth_channels_icon.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ channel.growth_channels_icon.width }}" height="{{ channel.growth_channels_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif channel.growth_channels_icon.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ channel.growth_channels_icon.max_width }}" height="{{ channel.growth_channels_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = channel.growth_channels_icon.loading != 'disabled' ? 'loading="{{ channel.growth_channels_icon.loading }}"' : '' %}
+                <img src="{{ channel.growth_channels_icon.src }}" alt="{{ channel.growth_channels_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              {% endfor %}
+            </div>
+
+          </div>
+          <!-- WHATSAPP VERIFICATION -->
+          <div class="whatsapp-verification label-style">
+            {% if module.growth_whatsapp_integration_active_inactive %}
+            {{ module.growth_whatsapp_integration }}
+            {% else %}
+            <span>-</span>
+            {% endif %}
+          </div>
+           <!-- CREATIVE SUPPORT -->
+          <div class="creative-support label-style">
+            {% if module.creative_support_activation %}
+                        <img src="https://www.hello-charles.com/hubfs/x-icon.svg" alt="x-icon" loading="lazy" width="13" height="13" style="max-width: 100%; height: auto;">
+            {% else %}
+            <span>
+              <img src="https://www.hello-charles.com/hubfs/normal-check.svg" alt="check-icon" loading="lazy" width="16" height="12" style="max-width: 100%; height: auto;">
+
+            </span>
+            {% endif %}
+          </div>
+           <!-- Intuitive guides -->
+          <div class="int-guides label-style">
+            {% if module.guides_activation %}
+            <p>Product Docs &amp; Best Practices</p>
+            {% else %}
+            <span>
+            <img src="https://www.hello-charles.com/hubfs/x-icon.svg" alt="x-icon" loading="lazy" width="13" height="13" style="max-width: 100%; height: auto;">
+            </span>
+            {% endif %}
+          </div>
+        </div>
+        <!-- PREMIUM -->
+        <div class="intro-benefit-column">
+          <!-- USERS INCLUDED -->
+          <div class="users-included label-style">
+            {{ module.premium_users }}
+          </div>
+          <!-- ROLES -->
+          <div class="role label-style">
+            {{ module.premium_role }}
+          </div>
+          <!-- CHANNELS -->
+          <div class="channels label-style">        
+            <div class="channel-social">
+              {% for channel in module.premium_channels_repeater %}
+                {% if channel.premium_channels_icon.src %}
+                {% set sizeAttrs = 'width="{{ channel.premium_channels_icon.width }}" height="{{ channel.premium_channels_icon.height }}"' %}
+                {% if channel.premium_channels_icon.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ channel.premium_channels_icon.width }}" height="{{ channel.premium_channels_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif channel.premium_channels_icon.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ channel.premium_channels_icon.max_width }}" height="{{ channel.premium_channels_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = channel.premium_channels_icon.loading != 'disabled' ? 'loading="{{ channel.premium_channels_icon.loading }}"' : '' %}
+                <img src="{{ channel.premium_channels_icon.src }}" alt="{{ channel.premium_channels_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              {% endfor %}
+            </div>
+
+          </div>
+          <!-- WHATSAPP VERIFICATION -->
+          <div class="whatsapp-verification label-style">
+            {% if module.premium_whatsapp_integration_active_inactive %}
+            {{ module.premium_whatsapp_integration }}
+            {% else %}
+            <span>-</span>
+            {% endif %}
+          </div>
+           <!-- CREATIVE SUPPORT -->
+          <div class="creative-support label-style">
+            {% if module.creative_support_activation %}
+            <img src="https://www.hello-charles.com/hubfs/normal-check.svg" alt="check-icon" loading="lazy" width="16" height="12" style="max-width: 100%; height: auto;">
+            {% else %}
+            <span>
+            <img src="https://www.hello-charles.com/hubfs/x-icon.svg" alt="x-icon" loading="lazy" width="13" height="13" style="max-width: 100%; height: auto;">
+            </span>
+            {% endif %}
+          </div>
+           <!-- Intuitive guides -->
+          <div class="int-guides label-style">
+            {% if module.guides_activation %}
+            <p>+ Dedicated Training Sessions</p>
+            {% else %}
+            <span>
+            <img src="https://www.hello-charles.com/hubfs/x-icon.svg" alt="x-icon" loading="lazy" width="13" height="13" style="max-width: 100%; height: auto;">
+            </span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <!-- ESSENTIALS BENEFITS PACKAGE -->
+      <div class="benefit-column">
+        <!-- BENEFITS ACTIVE / INACTIVE-->
+        <div class="package-benefits-active-inactive">
+          {% for row_item in module.checkbox_benefits_row_repeater %}
+          <!-- HORIZONTAL REPEATER CHECKBOXES -->
+          <div class="checkbox-benefit-row-repeater">
+            {% for package in row_item.packages_services_repeater %}
+            {% if row_item.benefits_active_inactive %}
+            <div class="benefit-checkbox label-style {% if package.free_trial_active_inactive %}free-trial-enable{% endif %}">
+              {% if package.package_benefit_active_inactive.src %}
+              {% set sizeAttrs = 'width="{{ package.package_benefit_active_inactive.width }}" height="{{ package.package_benefit_active_inactive.height }}"' %}
+              {% if package.package_benefit_active_inactive.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ package.package_benefit_active_inactive.width }}" height="{{ package.package_benefit_active_inactive.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif package.package_benefit_active_inactive.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ package.package_benefit_active_inactive.max_width }}" height="{{ package.package_benefit_active_inactive.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = package.package_benefit_active_inactive.loading != 'disabled' ? 'loading="{{ package.package_benefit_active_inactive.loading }}"' : '' %}
+              <img src="{{ package.package_benefit_active_inactive.src }}" alt="{{ package.package_benefit_active_inactive.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+            {% endif %}
+            {% endfor %}
+
+            <!-- INTEGRATION REPEATER -->
+            {% if row_item.essentials_integration_active_inactive %}
+            {% for item in row_item.essentials_integrations_main_repeater %}
+            <div class="integration-repeater-icons">
+              <div class="integration-box label-style">
+                {% for integration in item.essentials_integrations_icons_repeater %}
+                {% if integration.essentials_integration_icon.src %}
+                {% set sizeAttrs = 'width="{{ integration.essentials_integration_icon.width }}" height="{{ integration.essentials_integration_icon.height }}"' %}
+                {% if integration.essentials_integration_icon.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ integration.essentials_integration_icon.width }}" height="{{ integration.essentials_integration_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif integration.essentials_integration_icon.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ integration.essentials_integration_icon.max_width }}" height="{{ integration.essentials_integration_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = integration.essentials_integration_icon.loading != 'disabled' ? 'loading="{{ integration.essentials_integration_icon.loading }}"' : '' %}
+                <img src="{{ integration.essentials_integration_icon.src }}" alt="{{ integration.essentials_integration_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSE TABLE TOGGLE -->
+  <div class="close-table-toggle">
+    <div class="empty-yellow-space"></div>
+    <div class="toggle-btn-bottom">
+      <span>{{ module.toggle_table_bottom }}</span>
+      <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.3565 1.00977C8.1376 0.790874 7.83115 0.790874 7.61225 1.00977L1.13292 7.44532C0.914026 7.62044 0.914026 7.97067 1.13292 8.18957L2.00851 9.02137C2.18362 9.24027 2.53386 9.24027 2.75276 9.02137L7.96249 3.85542L13.216 9.02137C13.4349 9.24027 13.7413 9.24027 13.9602 9.02137L14.8358 8.18957C15.0547 7.97067 15.0547 7.62044 14.8358 7.44532L8.3565 1.00977Z" fill="#221F20"/>
+      </svg>
+    </div>
+  </div>
+</div>

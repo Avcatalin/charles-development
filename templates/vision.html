@@ -1,0 +1,262 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Vision
+  screenshotPath: ../images/template-previews/vision.jpg
+-->
+{% extends './layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'hero_arena' class='body-container body-container--vision body-container--hero c-hero-container', label='Hero section' %}
+    {# Hero section #}
+    {% dnd_section
+      background_color={
+        r: 255,
+        g: 241,
+        b: 113,
+        a: 1
+      },
+      padding={
+        'top': '5rem',
+        'bottom': '5rem',
+        'left': '2rem',
+        'right': '2rem'
+      },
+      vertical_alignment='MIDDLE',
+      max_width=600
+    %}
+      {% dnd_column %}
+
+        {% dnd_row %}
+          {% dnd_module path='@hubspot/rich_text'
+            vertical_alignment='MIDDLE'
+            horizontal_alignment='LEFT'
+            offset=0,
+            width=12,
+          %}
+            {% module_attribute 'html' %}
+              <h5>Our vision</h5> 
+              <h1><span style="font-weight: normal;">We humanize commerce by merging</span> conversation & conversion</h1>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+
+        {% dnd_row %}
+          {% dnd_module path='../modules/founders',
+            vertical_alignment='MIDDLE'
+            offset=0,
+            width=12,
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+
+      {% end_dnd_column %}  
+      
+    {% end_dnd_section %}
+  {% end_dnd_area %}
+
+  {% dnd_area 'dnd_area' class='body-container body-container--vision', label='Main section' %}
+
+    {# Header section #}
+    {% dnd_section%}
+      {% dnd_column %}
+
+        {% dnd_row %}
+          {% dnd_module path='../modules/header'
+            horizontal_alignment='LEFT'
+          %}
+            {% module_attribute 'title' %}
+              <span style="font-weight: normal;">Together with</span> <span style="font-weight: bold;">strong investors</span> <span style="font-weight: normal;">and industry leaders</span>.
+            {% end_module_attribute %}
+            {% module_attribute 'subtitle' %}
+              <span>For brands who want to talk and build relationships with their (best) customers.</span> 
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+    {# End header section #}
+
+    {# Investor section #}
+    {% dnd_section %}
+      {% dnd_column
+        offset=0,
+        width=3,
+      %}
+        {% dnd_row %}
+          {% dnd_module path='../modules/image',
+            img={
+              'size_type': 'auto_custom_max',
+              'max_width': 245,
+              'src': get_asset_url('../images/vision/dominik_richter_a.jpg')
+            },
+            scale=1.4,
+            scale_mobile=1.3,
+            vertical_alignment='TOP'
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row
+          padding={
+           'top': '2rem',
+            'bottom': '4rem',
+            'left': '0rem',
+            'right': '0rem'
+          }
+        %}
+          {% dnd_module path='@hubspot/rich_text'
+            vertical_alignment='MIDDLE'
+            horizontal_alignment='LEFT'
+            offset=0,
+            width=12,
+          %}
+            {% module_attribute 'html' %}
+              <span style="font-weight: bold">Dominik Richter</span><br><span style="font-weight: bold">CEO, Hello Fresh</span>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+
+      {% dnd_column
+        offset=3,
+        width=3,
+      %}
+        {% dnd_row %}
+          {% dnd_module path='../modules/image',
+            img={
+              'size_type': 'auto_custom_max',
+              'max_width': 245,
+              'src': get_asset_url('../images/vision/tarek_mueller_a.jpg')
+            },
+            scale=1.4,
+            scale_mobile=1.3,
+            vertical_alignment='TOP',
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row
+          padding={
+            'top': '2rem',
+            'bottom': '4rem',
+            'left': '0rem',
+            'right': '0rem'
+          }
+        %}
+          {% dnd_module path='@hubspot/rich_text'
+            vertical_alignment='MIDDLE'
+            horizontal_alignment='LEFT'
+            offset=0,
+            width=12
+          %}
+            {% module_attribute 'html' %}
+              <span style="font-weight: bold">Tarek Müller</span><br><span style="font-weight: bold">CEO, AboutYou</span>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+
+      {% dnd_column
+        offset=6,
+        width=3,
+      %}
+        {% dnd_row %}
+          {% dnd_module path='../modules/image',
+            img={
+              'size_type': 'auto_custom_max',
+              'max_width': 245,
+              'src': get_asset_url('../images/vision/alexander_graf_a.jpg')
+            },
+            scale=1.4,
+            scale_mobile=1.3,
+            vertical_alignment='TOP'
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row
+          padding={
+            'top': '2rem',
+            'bottom': '4rem',
+            'left': '0rem',
+            'right': '0rem'
+          }
+        %}
+          {% dnd_module path='@hubspot/rich_text'
+            vertical_alignment='MIDDLE'
+            horizontal_alignment='LEFT'
+            offset=0,
+            width=12
+          %}
+            {% module_attribute 'html' %}
+              <span style="font-weight: bold">Alexander Graf</span><br><span style="font-weight: bold">CEO, Spryker & Kassenzone</span>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+
+      {% dnd_column
+        offset=9,
+        width=3,
+      %}
+        {% dnd_row %}
+          {% dnd_module path='../modules/image',
+            img={
+             'size_type': 'auto_custom_max',
+              'max_width': 245,
+              'src': get_asset_url('../images/vision/anja-hendel_a.jpg')
+            },
+            scale=1.4,
+            scale_mobile=1.3,
+            vertical_alignment='TOP'
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row
+          padding={
+            'top': '2rem',
+            'bottom': '4rem',
+            'left': '0rem',
+            'right': '0rem'
+          }
+        %}
+          {% dnd_module path='@hubspot/rich_text'
+            vertical_alignment='MIDDLE'
+            horizontal_alignment='LEFT'
+            offset=0,
+            width=12
+          %}
+            {% module_attribute 'html' %}
+              <span style="font-weight: bold">Anja Hendel</span><br><span style="font-weight: bold">Director, Porsche Digital</span>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+
+    {% end_dnd_section %}
+    {# End investor section #}
+
+    {# Contact section #}
+    {% dnd_section %}
+      {% dnd_module path='../modules/cta'
+        title='Join our visioin'
+        text=''
+        align='text-center'
+        button={
+          'text': 'Contact us',
+          'link': {
+            'url': {
+              'type': 'EMAIL_ADDRESS',
+              'href': 'info@hey-charles.com'
+            }
+          }
+        }
+        horizontal_alignment='CENTER'
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
+    {# End contact section #}
+
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

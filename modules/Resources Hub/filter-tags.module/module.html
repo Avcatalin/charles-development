@@ -1,0 +1,24 @@
+<div class="filter-buttons dropdown">
+  <div class="dropdown-toggle" id="dropdownMenuButton">
+    <div class="placeholder-dropdown">
+      <!-- Icon -->
+      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.4853 0.200195H1.51654C0.172788 0.200195 -0.514712 1.8252 0.454038 2.7627L5.51654 7.8252V13.2002C5.51654 13.7002 5.73529 14.1377 6.11029 14.4502L8.11029 15.9502C9.07904 16.6064 10.5165 15.9814 10.5165 14.7314V7.8252L15.5478 2.7627C16.5165 1.8252 15.829 0.200195 14.4853 0.200195ZM9.01654 7.2002V14.7002L7.01654 13.2002V7.2002L1.51654 1.7002H14.5165L9.01654 7.2002Z" fill="#221F20"/>
+      </svg>
+      <span class="placeholder-label">{{ module.placeholder }}</span>
+      <span class="placeholder"></span>
+    </div>
+    <!-- Count tags -->
+    <span id="total-count"></span>
+  </div>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <!-- Options will be dynamically inserted here -->
+    {% set rows = hubdb_table_rows('52101617') %}
+    {% for row in rows %}
+    <button class="filter-button" data-filter="{{ row.name }}" data-tag-id="{{ row.name }}">{{ row.name }}</button>
+    {% endfor %}
+    <!-- Include a button to clear filters or show all -->
+    <button class="filter-button" data-tag-id="all">All</button>
+  </div>
+</div>
+

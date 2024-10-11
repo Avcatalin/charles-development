@@ -1,0 +1,23 @@
+<div class="typie-block" style="{{ module.style.spacing_field.css }}">
+  <div class="container">
+    <div class="inner-block">
+      <!-- Typie Logo -->
+      <div class="typie-logo">
+        {% if module.typie_logo.src %}
+        {% set sizeAttrs = 'width="{{ module.typie_logo.width }}" height="{{ module.typie_logo.height }}"' %}
+        {% if module.typie_logo.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.typie_logo.width }}" height="{{ module.typie_logo.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.typie_logo.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.typie_logo.max_width }}" height="{{ module.typie_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.typie_logo.loading != 'disabled' ? 'loading="{{ module.typie_logo.loading }}"' : '' %}
+        <img src="{{ module.typie_logo.src }}" alt="{{ module.typie_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <!-- Bubble Chat -->
+      <div class="bubble-chat">
+        {{ module.bubble_chat }}
+      </div>
+    </div>
+  </div>
+</div>

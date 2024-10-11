@@ -1,0 +1,83 @@
+[ {
+  "id" : "93194a4e-bdff-3357-0482-4d433206abb1",
+  "name" : "block",
+  "display_width" : null,
+  "label" : "Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "ab2bd3b3-dbcc-74d7-78b5-bd646b31957b",
+    "name" : "big_number",
+    "display_width" : null,
+    "label" : "Big number",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "2.5"
+  }, {
+    "id" : "e73bff15-0f71-4384-dfac-c786c92375d7",
+    "name" : "number_unit",
+    "display_width" : null,
+    "label" : "Number Unit (After)",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "X"
+  }, {
+    "id" : "7cf23b24-b027-6897-e0ac-23c9e417ef31",
+    "name" : "before_number",
+    "display_width" : null,
+    "label" : "Before Number",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  }, {
+    "id" : "7bcb71b0-4188-fa7e-3e0c-4d15eecb97eb",
+    "name" : "sub_text",
+    "display_width" : null,
+    "label" : "Sub text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Opening Rate vs Email"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "big_number" : "2.5",
+    "number_unit" : "X",
+    "number_before" : "",
+    "sub_text" : "Opening Rate vs Email"
+  }, {
+    "big_number" : "2.5",
+    "number_unit" : "X",
+    "number_before" : "",
+    "sub_text" : "Opening Rate vs Email"
+  }, {
+    "big_number" : "2.5",
+    "number_unit" : "X",
+    "number_before" : "",
+    "sub_text" : "Opening Rate vs Email"
+  } ]
+} ]

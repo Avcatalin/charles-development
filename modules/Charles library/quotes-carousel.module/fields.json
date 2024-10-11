@@ -1,0 +1,151 @@
+[
+ {
+  "children": [
+   {
+    "default": {
+     "size_type": "auto",
+     "src": "",
+     "alt": null,
+     "loading": "lazy"
+    },
+    "display_width": null,
+    "id": "98f040b9-c097-b55d-cb35-77e27dc748cb",
+    "label": "Quote client logo",
+    "locked": false,
+    "name": "quote_client_logo",
+    "required": false,
+    "resizable": true,
+    "responsive": true,
+    "show_loading": true,
+    "type": "image"
+   },
+   {
+    "default": "<p>\"WhatsApp is becoming a must-have marketing channel for every brand. But it's not always easy to add another.\"</p>",
+    "display_width": null,
+    "id": "5985e219-6aac-8ace-4c27-4d19b9e8abc7",
+    "label": "Quote content",
+    "locked": false,
+    "name": "quote_content",
+    "required": false,
+    "type": "richtext"
+   },
+   {
+    "default": {
+     "size_type": "auto",
+     "src": "",
+     "alt": null,
+     "loading": "lazy"
+    },
+    "display_width": null,
+    "id": "7b9696cd-dd7f-1d80-514d-4631e3c8f371",
+    "label": "Quote avatar",
+    "locked": false,
+    "name": "quote_avatar",
+    "required": false,
+    "resizable": true,
+    "responsive": true,
+    "show_loading": true,
+    "type": "image"
+   },
+   {
+    "allow_new_line": false,
+    "default": "NAME SURNAME",
+    "display_width": null,
+    "id": "8acd45cb-e6f4-5508-f89d-62956340bd2d",
+    "label": "Quote person",
+    "locked": false,
+    "name": "quote_person",
+    "required": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "validation_regex": ""
+   },
+   {
+    "allow_new_line": false,
+    "default": "Job Title",
+    "display_width": null,
+    "id": "25023a8e-2ce5-b9d0-2df4-9eb11e9fbaf8",
+    "label": "Quote job title",
+    "locked": false,
+    "name": "quote_job_title",
+    "required": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "validation_regex": ""
+   },
+   {
+    "default": {
+     "color": "#ECFDCC",
+     "opacity": 100
+    },
+    "display_width": null,
+    "id": "af7c0728-e079-32b4-941c-c5f389eb3c85",
+    "label": "Quote background",
+    "locked": false,
+    "name": "quote_background",
+    "required": false,
+    "type": "color"
+   }
+  ],
+  "default": [
+   {
+    "quote_client_logo": {
+     "size_type": "auto",
+     "src": "",
+     "alt": null,
+     "loading": "lazy"
+    },
+    "quote_content": "<p>\"WhatsApp is becoming a must-have marketing channel for every brand. But it's not always easy to add another.\"</p>",
+    "quote_avatar": {
+     "size_type": "auto",
+     "src": "",
+     "alt": null,
+     "loading": "lazy"
+    },
+    "quote_person": "NAME SURNAME",
+    "quote_job_title": "Job Title",
+    "quote_background": {
+     "color": "#ECFDCC",
+     "opacity": 100
+    }
+   }
+  ],
+  "display_width": null,
+  "expanded": false,
+  "group_occurrence_meta": null,
+  "id": "511b4cc2-d656-7f5e-72aa-bef91342d519",
+  "label": "Quote Block",
+  "locked": false,
+  "name": "quote_block",
+  "occurrence": {
+   "default": 1,
+   "min": 1
+  },
+  "required": false,
+  "tab": "CONTENT",
+  "type": "group"
+ },
+ {
+ "type": "group",
+ "isNew": false,
+ "name": "style",
+ "label": "Style",
+ "tab": "STYLE",
+ "id": "32bf23a1-d563-bd1f-00a8-86e4d1e9ded3",
+ "children": [
+  {
+   "type": "spacing",
+   "id": "bd182118-1935-d7df-c059-0dd7afa7c066",
+   "label": "Spacing",
+   "name": "spacing_field"
+  },
+  {
+   "type": "spacing",
+   "id": "a7b6fe82-9663-e023-d085-b37e0ccf4586",
+   "label": "Mobile spacing",
+   "name": "mobile_spacing"
+  }
+ ],
+ "default": {}
+}
+]

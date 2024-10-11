@@ -1,0 +1,37 @@
+<div id="{{ module.custom_id }}" class="button_container">
+  <!-- Heading with description -->
+  <div class="features-header-section" style="{{ module.header_with_content_style.spacing_field.css }}">
+
+    <!-- GET A DEMO -->
+    {% set href = module.demo_button.url.href %}
+    {% if module.demo_button.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}" id="{{ module.demo_button_id }}"
+       {% if module.demo_button.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.demo_button.rel %}rel="{{ module.demo_button.rel }}"{% endif %}
+       class="main-button-module"
+       style="background-color: {{ module.demo_button_background_color.css }}; color: {{ module.demo_button_text_color.css }}"
+       >
+      {{ module.demo_button_text }}
+    </a>
+    <!-- end GET A DEMO -->
+
+    <!-- LEARN MORE -->
+    {% if module.enable_second_button %}
+    {% set href = module.second_button_url.url.href %}
+    {% if module.second_button_url.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}" id="{{ module.second_button_id }}"
+       {% if module.second_button_url.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.second_button_url.rel %}rel="{{ module.second_button_url.rel }}"{% endif %}
+       class="second-button-module"
+       style="background-color: {{ module.second_button_background_color.css }}; color: {{ module.second_button_text_color.css }}"
+       >
+      {{ module.second_button_text }}
+    </a>
+    {% endif %}    
+    <!-- end LEARN MORE -->
+  </div>
+</div>

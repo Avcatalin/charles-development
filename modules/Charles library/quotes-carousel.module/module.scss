@@ -1,0 +1,173 @@
+.quotes-container {
+    position: relative;
+    overflow-x: hidden;
+
+    .quote-block {
+        padding: 80px 60px;
+        margin: 0 auto;
+        max-width: 1170px;
+        border-radius: 40px;
+
+        .quote-client-logo {
+            img {
+                margin: 0 auto 40px;
+                height: 50px !important;
+                width: auto;
+            }
+        }
+
+        .quote-content {
+            max-width: 80%;
+            margin: 0 auto 40px;
+
+            p {
+                color: #221F20;
+                font-family: 'Inter', sans-serif;
+                font-size: 3rem;
+                line-height: 3.25rem;
+                font-weight: 700;
+                font-style: italic;
+            }
+        }
+
+        .quote-person {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 80px;
+                height: 80px;
+                margin-right: 20px;
+                border-radius: 50px;
+            }
+
+            .person-info {
+                .name {
+                    font-size: 1.25rem;
+                    line-height: 28px;
+                    color: #000;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+
+                .job-title {
+                    font-size: 1.25rem;
+                    line-height: 28px;
+                    color: #000;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-style: italic;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .swiper-wrapper {
+        height: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 70px;
+        height: 70px;
+    
+        &::after {
+            content: '';
+        }
+
+        &.swiper-button-disabled {
+            opacity: 1;
+        }
+    }
+
+    .swiper-button-next {
+        background: url('https://www.hello-charles.com/hubfs/Imported%20images/arrow-right.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        right: 50px;
+    }
+
+    .swiper-button-prev {
+        background: url('https://www.hello-charles.com/hubfs/Imported%20images/arrow-left-1.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: 50px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .quotes-container .quote-block {
+        padding: 40px 15px;
+    }
+
+    .swiper-button-next {
+        right: 20px;
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+    }
+
+    .quotes-container .quote-block .quote-client-logo img {
+        height: 30px !important;
+        margin: 0 auto 25px;
+    }
+
+    .quotes-container .quote-block .quote-content p {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    .quotes-container .quote-block .quote-person img {
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    .quotes-container .quote-block .quote-person .person-info .name,
+    .quotes-container .quote-block .quote-person .person-info .job-title {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+
+    .quotes-container .quote-block .quote-content {
+        max-width: 70%;
+        margin: 0 auto 25px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .quotes-container .quote-block .quote-content p {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
+    }
+
+    .quotes-container .quote-block .quote-content {
+        max-width: 75%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 35px;
+        height: 35px;
+    }
+}

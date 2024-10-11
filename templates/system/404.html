@@ -1,0 +1,52 @@
+<!--
+  templateType: error_page
+  isAvailableForNewContent: true
+  label: Charles B2B - 404 error
+  screenshotPath: ../../images/template-previews/404.png
+-->
+{% extends '../layouts/base.html' %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="charles page not found">
+  <meta name="keywords" content="404, conversational commerce, whatsapp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found - charles conversational commerce</title>
+</head>
+
+{% block body %}
+<main class="body-container-wrapper charles-system-page">
+  <section class="content-wrapper fourofour-wrapper">
+    <div class="column_left">
+<div class="card" width="620" height="540">
+  <div class="products">
+    <div class="product active" product-id="1" product-color="#D18B49">
+      <div class="thumbnail"><img src="https://www.hello-charles.com/hubfs/bot-11.jpg"/></div>
+    </div>
+    <div class="product" product-id="2" product-color="#542F13">
+      <div class="thumbnail"><img src="https://www.hello-charles.com/hubfs/bot-22.jpg"/></div>
+    </div>
+    <div class="product" product-id="3" product-color="#A5AAAE">
+      <div class="thumbnail"><img src="https://www.hello-charles.com/hubfs/bot-33.jpg"/></div>
+    </div>
+    <div class="product" product-id="4" product-color="#ED8D1F">
+      <div class="thumbnail"><img src="https://www.hello-charles.com/hubfs/bot-44.jpg"/></div>
+    </div>
+    <div class="product" product-id="5" product-color="#C4C8CB">
+      <div class="thumbnail"><img src="https://www.hello-charles.com/hubfs/bot-55.jpg"/></div>
+    </div>
+  </div>
+  <div class="next_prev_box">
+    <a style="background-color:#fff171" class="c-button" id="prev" href="#" ripple="" ripple-color="#fff171">Prev</a>
+    <a style="background-color:#fff171" class="c-button" id="next" href="#" ripple="" ripple-color="#fff171">Next</a></div>
+</div>
+    </div>
+    <div class="error-page column_right" data-error="404">
+      <h1 class="error-page__heading my-8">Oh. looks like We’re human after all.</h1>
+      <p>
+        We can’t find the page you clicked on, sorry. Can we entertain you with some chatbot fails while you’re here? We think real-life conversations are better any day.
+      </p>
+      <a class="button" href="/">Go back home</a>
+    </div>
+  </section>
+</main>
+{% endblock body %}

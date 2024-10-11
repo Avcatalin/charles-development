@@ -1,0 +1,55 @@
+<div class="related_section" style="background-color: {{ module.style.color_field.css }};">
+  <div class="content-wrapper">
+    <div class="content">
+      {% if module.show_section_title %}
+      <p class="hubdb_title">{{ module.title }}</p>
+      {% endif %}      
+      <div class="blocks">        
+        {% for item in module.case_study_row %}
+        <div class="block">
+          <img src="{{ item.columns.photo.url }}" alt="{{ item.columns.name }}">
+          <p class="hubdb_client_name">{{ item.columns.name }}</p>
+          <p>{{ item.columns.content }}</p>
+          {% if item.columns.photo.url == true %}
+          <div class="case_block">
+            <a href="{{ item.columns.button_link }}" class="c-button bg-white">Read more</a>
+          </div>   
+          {% endif %}
+        </div>
+        {% endfor %}     
+
+        <!-- Articles -->
+        {% for item in module.article_box %}
+        <div class="block">
+          {% if item.article_image.src %}
+          {% set sizeAttrs = 'width="{{ item.article_image.width }}" height="{{ item.article_image.height }}"' %}
+          {% if item.article_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ item.article_image.width }}" height="{{ item.article_image.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif item.article_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.article_image.max_width }}" height="{{ item.article_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.article_image.loading != 'disabled' ? 'loading="{{ item.article_image.loading }}"' : '' %}
+          <img src="{{ item.article_image.src }}" alt="{{ item.article_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          <p class="hubdb_client_name">{{ item.title }}</p>
+          <p>
+            {{ item.excerpt }}
+          </p>
+          {% set href = item.button_url.url.href %}
+          {% if item.button_url.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <div class="case_block">
+            <a href="{{ href }}" class="c-button bg-white"
+               {% if item.button_url.open_in_new_tab %}target="_blank"{% endif %}
+               {% if item.button_url.rel %}rel="{{ item.button_url.rel }}"{% endif %}
+               >
+              {{ item.button_text }}
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

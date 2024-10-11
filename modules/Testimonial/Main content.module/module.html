@@ -1,0 +1,496 @@
+<div class="main_content">
+  <div class="container">
+    <div class="sidebar">
+      <div class="top_part">
+        <img src="{{ module.sidebar.logo.src }}" alt="{{ module.sidebar.logo.alt }}" loading="lazy" width="300" height="100">
+        <div class="company_info">
+          {{ module.sidebar.company_info }}
+          <!-- New Company Info -->
+          {% for item in module.sidebar.company_info_block %}
+          <p class="info_heading">
+            {{ item.company_info_heading }}
+          </p>  
+          <div class="company_content">
+            {{ item.company_info_content }}
+          </div>
+          {% endfor %}
+        </div>
+        <div class="topics">
+          {% for item in module.sidebar.topic %}
+          <div class="item">
+            <img src="{{ item.topic_image.src }}" alt="{{ item.topic_image.alt }}" loading="lazy" width="auto" height="100">
+            <p>
+              {{ item.topic_content }}
+            </p>
+          </div>
+          {% endfor %}
+        </div>
+
+        <!-- START PRODUCTS LIST -->        
+        <div class="features-list-aside">
+          {% if module.sidebar.show_features_title %}
+          <p class="main-title">
+            {{ module.sidebar.featured_products_title }}  
+          </p>
+          {% endif %}
+
+          {% if module.sidebar.show_conversations_block %}
+          <!-- CONVERSATIONS BLOCK -->
+          <div class="feature__block">
+            <a href="{{ module.sidebar.conversations_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.conversations_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.conversations_icon.width }}" height="{{ module.sidebar.conversations_icon.height }}"' %}
+                  {% if module.sidebar.conversations_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.conversations_icon.width }}" height="{{ module.sidebar.conversations_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.conversations_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.conversations_icon.max_width }}" height="{{ module.sidebar.conversations_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.conversations_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.conversations_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.conversations_icon.src }}" alt="{{ module.sidebar.conversations_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="feature__block-content">
+                <p class="feature_title">{{ module.sidebar.conversations_title }}</p>
+                <div class="description-content">
+                  <p>{{ module.sidebar.conversations_description }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- END CONVERSATIONS BLOCK -->
+          {% endif %}
+
+          {% if module.sidebar.show_journeys_block %}
+          <!-- JOURNEYS BLOCK -->
+          <div class="feature__block">
+            <a href="{{ module.sidebar.journeys_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.journeys_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.journeys_icon.width }}" height="{{ module.sidebar.journeys_icon.height }}"' %}
+                  {% if module.sidebar.journeys_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.journeys_icon.width }}" height="{{ module.sidebar.journeys_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.journeys_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.journeys_icon.max_width }}" height="{{ module.sidebar.journeys_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.journeys_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.journeys_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.journeys_icon.src }}" alt="{{ module.sidebar.journeys_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="feature__block-content">
+                <p class="feature_title">{{ module.sidebar.journeys_title }}</p>
+                <div class="description-content">
+                  <p>{{ module.sidebar.journeys_description }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- END JOURNEYS BLOCK -->
+          {% endif %}
+
+          {% if module.sidebar.show_campaigns_block %}
+          <!-- CAMPAIGNS BLOCK -->
+          <div class="feature__block">
+            <a href="{{ module.sidebar.campaigns_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.campaigns_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.campaigns_icon.width }}" height="{{ module.sidebar.campaigns_icon.height }}"' %}
+                  {% if module.sidebar.campaigns_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.campaigns_icon.width }}" height="{{ module.sidebar.campaigns_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.campaigns_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.campaigns_icon.max_width }}" height="{{ module.sidebar.campaigns_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.campaigns_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.campaigns_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.campaigns_icon.src }}" alt="{{ module.sidebar.campaigns_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="feature__block-content">
+                <p class="feature_title">{{ module.sidebar.campaigns_title }}</p>
+                <div class="description-content">
+                  <p>{{ module.sidebar.campaigns_description }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- END CAMPAIGNS BLOCK -->
+          {% endif %}
+
+          {% if module.sidebar.show_commerce_block %}
+          <!-- COMMERCE BLOCK -->
+          <div class="feature__block">
+            <a href="{{ module.sidebar.commerce_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.commerce_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.commerce_icon.width }}" height="{{ module.sidebar.commerce_icon.height }}"' %}
+                  {% if module.sidebar.commerce_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.commerce_icon.width }}" height="{{ module.sidebar.commerce_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.commerce_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.commerce_icon.max_width }}" height="{{ module.sidebar.commerce_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.commerce_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.commerce_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.commerce_icon.src }}" alt="{{ module.sidebar.commerce_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="feature__block-content">
+                <p class="feature_title">{{ module.sidebar.commerce_title }}</p>
+                <div class="description-content">
+                  <p>{{ module.sidebar.commerce_description }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- END COMMERCE BLOCK -->
+          {% endif %}
+
+          {% if module.sidebar.show_chat_ins_block %}
+          <!-- CHAT-INS BLOCK -->
+          <div class="feature__block">
+            <a href="{{ module.sidebar.chat_ins_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.chat_ins_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.chat_ins_icon.width }}" height="{{ module.sidebar.chat_ins_icon.height }}"' %}
+                  {% if module.sidebar.chat_ins_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.chat_ins_icon.width }}" height="{{ module.sidebar.chat_ins_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.chat_ins_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.chat_ins_icon.max_width }}" height="{{ module.sidebar.chat_ins_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.chat_ins_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.chat_ins_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.chat_ins_icon.src }}" alt="{{ module.sidebar.chat_ins_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="feature__block-content">
+                <p class="feature_title">{{ module.sidebar.chat_ins_title }}</p>
+                <div class="description-content">
+                  <p>{{ module.sidebar.chat_ins_description }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- END CHAT-INS BLOCK -->
+          {% endif %}
+
+          {% if module.sidebar.show_integrations_block %}
+          <!-- INTEGRATIONS BLOCK -->
+          <div class="feature__block integration">
+            <a href="{{ module.sidebar.integrations_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.integrations_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.integrations_icon.width }}" height="{{ module.sidebar.integrations_icon.height }}"' %}
+                  {% if module.sidebar.integrations_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.integrations_icon.width }}" height="{{ module.sidebar.integrations_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.integrations_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.integrations_icon.max_width }}" height="{{ module.sidebar.integrations_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.integrations_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.integrations_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.integrations_icon.src }}" alt="{{ module.sidebar.integrations_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="feature__block-content">
+                <p class="feature_title">{{ module.sidebar.integrations_title }}</p>
+                <div class="icons-list">
+                  {% for item in module.sidebar.integrations_repeater %}
+                  {% if item.integration_app_icon.src %}
+                  {% set sizeAttrs = 'width="{{ item.integration_app_icon.width }}" height="{{ item.integration_app_icon.height }}"' %}
+                  {% if item.integration_app_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.integration_app_icon.width }}" height="{{ item.integration_app_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.integration_app_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.integration_app_icon.max_width }}" height="{{ item.integration_app_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.integration_app_icon.loading != 'disabled' ? 'loading="{{ item.integration_app_icon.loading }}"' : '' %}
+                  <img src="{{ item.integration_app_icon.src }}" alt="{{ item.integration_app_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                  {% endfor %}                        
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- END INTEGRATIONS BLOCK -->
+          {% endif %}
+        </div>
+        <!-- END PRODUCTS LIST -->
+
+        <!-- MOBILE FEATURE PRODUCTS -->
+        {% if module.sidebar.show_features_title %}
+        <p class="main-title__mobile">
+          {{ module.sidebar.featured_products_title }}  
+        </p>
+        {% endif %}
+
+        <div class="features__products-mobile">            
+          {% if module.sidebar.show_conversations_block %}
+          <!-- CONVERSATIONS BLOCK -->
+          <div class="feature__block">
+            <a href="{{ module.sidebar.conversations_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.conversations_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.conversations_icon.width }}" height="{{ module.sidebar.conversations_icon.height }}"' %}
+                  {% if module.sidebar.conversations_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.conversations_icon.width }}" height="{{ module.sidebar.conversations_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.conversations_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.conversations_icon.max_width }}" height="{{ module.sidebar.conversations_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.conversations_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.conversations_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.conversations_icon.src }}" alt="{{ module.sidebar.conversations_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <p class="m-product-title">{{ module.sidebar.conversations_title }}</p>
+            </a>
+          </div>
+          <!-- END CONVERSATIONS BLOCK -->
+          {% endif %}
+
+          {% if module.sidebar.show_journeys_block %}
+          <!-- JOURNEYS BLOCK -->
+          <div class="feature__block">
+            <a href="{{ module.sidebar.journeys_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.journeys_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.journeys_icon.width }}" height="{{ module.sidebar.journeys_icon.height }}"' %}
+                  {% if module.sidebar.journeys_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.journeys_icon.width }}" height="{{ module.sidebar.journeys_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.journeys_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.journeys_icon.max_width }}" height="{{ module.sidebar.journeys_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.journeys_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.journeys_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.journeys_icon.src }}" alt="{{ module.sidebar.journeys_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <p class="m-product-title">{{ module.sidebar.journeys_title }}</p>
+            </a>
+          </div>
+          <!-- END JOURNEYS BLOCK -->
+          {% endif %}
+
+          {% if module.sidebar.show_campaigns_block %}
+          <!-- CAMPAIGNS BLOCK -->
+          <div class="feature__block">
+            <a href="{{ module.sidebar.campaigns_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.campaigns_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.campaigns_icon.width }}" height="{{ module.sidebar.campaigns_icon.height }}"' %}
+                  {% if module.sidebar.campaigns_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.campaigns_icon.width }}" height="{{ module.sidebar.campaigns_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.campaigns_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.campaigns_icon.max_width }}" height="{{ module.sidebar.campaigns_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.campaigns_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.campaigns_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.campaigns_icon.src }}" alt="{{ module.sidebar.campaigns_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <p class="m-product-title">{{ module.sidebar.campaigns_title }}</p>
+            </a>
+          </div>
+          <!-- END CAMPAIGNS BLOCK -->
+          {% endif %}
+
+          {% if module.sidebar.show_commerce_block %}
+          <!-- COMMERCE BLOCK -->
+          <div class="feature__block">
+            <a href="{{ module.sidebar.commerce_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.commerce_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.commerce_icon.width }}" height="{{ module.sidebar.commerce_icon.height }}"' %}
+                  {% if module.sidebar.commerce_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.commerce_icon.width }}" height="{{ module.sidebar.commerce_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.commerce_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.commerce_icon.max_width }}" height="{{ module.sidebar.commerce_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.commerce_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.commerce_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.commerce_icon.src }}" alt="{{ module.sidebar.commerce_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <p class="m-product-title">{{ module.sidebar.commerce_title }}</p>
+            </a>
+          </div>
+          <!-- END COMMERCE BLOCK -->
+          {% endif %}
+
+          {% if module.sidebar.show_chat_ins_block %}
+          <!-- CHAT-INS BLOCK -->
+          <div class="feature__block">
+            <a href="{{ module.sidebar.chat_ins_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.chat_ins_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.chat_ins_icon.width }}" height="{{ module.sidebar.chat_ins_icon.height }}"' %}
+                  {% if module.sidebar.chat_ins_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.chat_ins_icon.width }}" height="{{ module.sidebar.chat_ins_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.chat_ins_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.chat_ins_icon.max_width }}" height="{{ module.sidebar.chat_ins_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.chat_ins_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.chat_ins_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.chat_ins_icon.src }}" alt="{{ module.sidebar.chat_ins_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <p class="m-product-title">{{ module.sidebar.chat_ins_title }}</p>
+            </a>
+          </div>
+          <!-- END CHAT-INS BLOCK -->
+          {% endif %}
+
+          {% if module.sidebar.show_integrations_block %}
+          <!-- INTEGRATIONS BLOCK -->
+          <div class="feature__block">
+            <a href="{{ module.sidebar.integrations_url.href }}">
+              <div class="feature__block-icon">
+                <div class="feature__block-icon-circle">
+                  {% if module.sidebar.integrations_icon.src %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.integrations_icon.width }}" height="{{ module.sidebar.integrations_icon.height }}"' %}
+                  {% if module.sidebar.integrations_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.integrations_icon.width }}" height="{{ module.sidebar.integrations_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.sidebar.integrations_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.sidebar.integrations_icon.max_width }}" height="{{ module.sidebar.integrations_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.sidebar.integrations_icon.loading != 'disabled' ? 'loading="{{ module.sidebar.integrations_icon.loading }}"' : '' %}
+                  <img src="{{ module.sidebar.integrations_icon.src }}" alt="{{ module.sidebar.integrations_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+              <p class="m-product-title">{{ module.sidebar.integrations_title }}</p>
+            </a>
+          </div>
+          <!-- END INTEGRATIONS BLOCK -->
+          {% endif %}
+        </div>
+        <!-- END MOBILE FEATURE PRODUCTS -->
+
+        <div class="social_link mobile__display">
+          <p class="integration_title">
+            {{ module.sidebar.integration_title }}
+          </p>
+          <div class="feature__block-content">
+            <div class="icons-list">
+              {% for item in module.sidebar.integrations_repeater %}
+              {% if item.integration_app_icon.src %}
+              {% set sizeAttrs = 'width="{{ item.integration_app_icon.width }}" height="{{ item.integration_app_icon.height }}"' %}
+              {% if item.integration_app_icon.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.integration_app_icon.width }}" height="{{ item.integration_app_icon.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.integration_app_icon.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.integration_app_icon.max_width }}" height="{{ item.integration_app_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.integration_app_icon.loading != 'disabled' ? 'loading="{{ item.integration_app_icon.loading }}"' : '' %}
+              <img src="{{ item.integration_app_icon.src }}" alt="{{ item.integration_app_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+              {% endfor %}                        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main_body">
+      <div class="border_area">
+        <span class="intro_quote">
+          {{ module.main_body.title }}
+        </span>
+        <div class="roadmap">
+          {% for item in module.main_body.roadmap %}
+          <div class="block">
+            <h2>
+              <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" width="40" height="40" loading="lazy"> <span>{{ item.sub_title }}</span>
+            </h2>
+            <div class="text">
+              {{ item.content }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="how_did">
+          <h2>
+            <img src="{{ module.main_body.how_did_it.title_icon.src }}" alt="{{ module.main_body.how_did_it.title_icon.alt }}" width="40" height="40" loading="lazy"> <span>{{ module.main_body.how_did_it.sub_title }}</span>
+          </h2>
+          {% for item in module.main_body.how_did_it.block %}
+          <div class="block">
+            <h3>
+              {{ item.block_title }}
+            </h3>
+            <div class="block_content">
+              {% if item.image.src %}
+              {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+              {% if item.image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+              <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}              
+              <p>
+                {{ item.content }}
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="valuable_img">
+        <img src="{{ module.main_body.valuable_image.src }}" alt="{{ module.main_body.valuable_image.alt }}" width="300" height="300" loading="lazy">
+      </div>
+      <div class="future_steps">
+        <div class="img_wrapper">
+          <img src="{{ module.main_body.future_steps.icon.src }}" alt="{{ module.main_body.future_steps.icon.alt }}" width="40" height="40" loading="lazy"> <span>{{ module.main_body.future_steps.title }}</span>
+        </div>
+        <div class="blocks">
+          {% for item in module.main_body.future_steps.block %}
+          <div class="block">
+            <p class="big_num">
+              {{ item.sub_title }}
+            </p>
+            <p>
+              {{ item.sub_text }}
+            </p>
+          </div>
+          {% endfor %}
+
+        </div>
+        <p>
+          {{ module.main_body.future_steps.bottom_text }}
+        </p>
+      </div>
+
+      <div class="quote_block">
+        <div class="img">
+          <img src="{{ module.main_body.quote.photo.src }}" alt="{{ module.main_body.quote.photo.alt }}" width="50" height="50" loading="lazy">
+        </div>
+        <div class="text_part">
+          <p>
+            {{ module.main_body.quote.quote }}
+          </p>
+          <a href="{{ module.main_body.quote.button_link }}" id="{{ module.main_body.quote.button_id }}">{{ module.main_body.quote.button_text }}</a>
+        </div>
+      </div>
+
+
+      <div class="topics mobile_show">
+        {% for item in module.sidebar.topic %}
+        <div class="item">
+          <img src="{{ item.topic_image.src }}" alt="{{ item.topic_image.alt }}" width="350" height="100" loading="lazy">
+          <p>
+            {{ item.topic_content }}
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

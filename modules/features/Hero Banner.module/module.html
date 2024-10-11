@@ -1,0 +1,40 @@
+<!-- Banner Introduction (Icon/Title/Subtitle/Description) -->
+<div class="features-main-container" style="{{ module.banner_introduction.spacing_field.css }} {% if module.features_section_background.src %} background-image: url({{ module.features_section_background.src }}){% endif %};">
+  <div class="container">
+    <div class="text-center">
+      <!-- Banner Icon -->
+      {% if module.features_banner_icon.src %}
+      {% set sizeAttrs = 'width="{{ module.features_banner_icon.width }}" height="{{ module.features_banner_icon.height }}"' %}
+      {% if module.features_banner_icon.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.features_banner_icon.width }}" height="{{ module.features_banner_icon.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.features_banner_icon.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.features_banner_icon.max_width }}" height="{{ module.features_banner_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.features_banner_icon.loading != 'disabled' ? 'loading="{{ module.features_banner_icon.loading }}"' : '' %}
+      <img src="{{ module.features_banner_icon.src }}" class="banner-icon" alt="{{ module.features_banner_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+      <!-- Main Title -->
+      <h1 style="color: {{ module.color_choice_features_heading.color }}">{{ module.features_heading }}</h1>
+      <!-- Banner Subtitle -->
+      {% if module.enable_subtitle %}
+      <p class="subtitle-heading" style="color: {{ module.color_choice_subheader.color }}; background-color: {{ module.background_color_subheading.color }};">{{ module.features_subtitle }}</p>
+      {% endif %}
+      <!-- Banner Description -->
+      <p class="features-description" style="color: {{ module.color_choice_features_description.src }}">{{ module.features_description }}</p>
+      <!-- Banner CTA -->
+      {% set href = module.cta_button_url.url.href %}
+      {% if module.cta_button_url.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="features-general-button" id="{{ module.button_id }}" style="background: {{ module.background_color_book_demo.color }}"
+         {% if module.cta_button_url.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.cta_button_url.rel %}rel="{{ module.cta_button_url.rel }}"{% endif %}
+         >
+        <div class="inner-button-content">
+          <span style="color: {{ module.color_choice_book_demo.color }}">{{ module.book_demo_text }}</span>
+          <img src="{{ get_asset_url('/charles-b2b/modules/assets/arrow-right.svg') }}" alt="arrow right | charles" class="img-fluid" />
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

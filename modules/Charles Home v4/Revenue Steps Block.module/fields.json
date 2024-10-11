@@ -1,0 +1,762 @@
+[ {
+  "id" : "cb1d0c8c-23ac-91e7-989e-fd58cd72e950",
+  "name" : "top_right_image",
+  "display_width" : null,
+  "label" : "Top Right Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/coin.svg",
+    "alt" : "coin",
+    "loading" : "lazy",
+    "width" : 459,
+    "height" : 457,
+    "max_width" : 459,
+    "max_height" : 457
+  }
+}, {
+  "id" : "0f4d7989-7882-955c-c185-35de85af21a5",
+  "name" : "bottom_left_image",
+  "display_width" : null,
+  "label" : "Bottom Left Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.hello-charles.com/hubfs/black-round.webp",
+    "alt" : "black-round",
+    "width" : 227,
+    "height" : 227,
+    "max_width" : 227,
+    "max_height" : 227
+  }
+}, {
+  "id" : "ab9bdcb6-746e-b436-fe04-73632eb11208",
+  "name" : "main_center_images",
+  "display_width" : null,
+  "label" : "Main Center Images",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "9d29035d-3ebf-2578-7d30-cca12704e767",
+    "name" : "main_block_image",
+    "display_width" : null,
+    "label" : "Main Block Image - Desktop",
+    "inline_help_text" : "Carousel image for laptops/desktops.",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/sample-image.svg",
+      "alt" : "sample-image",
+      "loading" : "lazy",
+      "width" : 838,
+      "height" : 447,
+      "max_width" : 838,
+      "max_height" : 447
+    }
+  }, {
+    "id" : "3edf09de-790b-dff3-5ef3-0e3cf66a2329",
+    "name" : "image_class",
+    "display_width" : null,
+    "label" : "Image Class",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "active"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "main_block_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/sample-image.svg",
+      "alt" : "sample-image",
+      "loading" : "lazy",
+      "width" : 838,
+      "height" : 447,
+      "max_width" : 838,
+      "max_height" : 447
+    },
+    "image_class" : "active"
+  } ]
+}, {
+  "id" : "394e4b26-15c8-53b6-4d57-dceef616e852",
+  "name" : "review_block",
+  "display_width" : null,
+  "label" : "Review Block",
+  "inline_help_text" : "First review is hidden on mobile. If you need to change the review for mobile version, change only the second review.",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "f7f29169-8114-1e4d-0b28-496e71ee3039",
+    "name" : "review_logo",
+    "display_width" : null,
+    "label" : "Review Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/review-client.svg",
+      "alt" : "review-client",
+      "loading" : "lazy",
+      "width" : 107,
+      "height" : 38,
+      "max_width" : 107,
+      "max_height" : 38
+    }
+  }, {
+    "id" : "95e2d4f8-6c83-17d9-0552-6510bdb5b2fd",
+    "name" : "review_stars",
+    "display_width" : null,
+    "label" : "Review Stars",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/4-stars.svg",
+      "alt" : "4-stars",
+      "loading" : "lazy",
+      "width" : 90,
+      "height" : 19,
+      "max_width" : 90,
+      "max_height" : 19
+    }
+  }, {
+    "id" : "edbbb602-86d9-9aec-81a3-5470faa0fa7c",
+    "name" : "rating",
+    "display_width" : null,
+    "label" : "Rating",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "4.3"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "review_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/review-client.svg",
+      "alt" : "review-client",
+      "loading" : "lazy",
+      "width" : 107,
+      "height" : 38,
+      "max_width" : 107,
+      "max_height" : 38
+    },
+    "review_stars" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/4-stars.svg",
+      "alt" : "4-stars",
+      "loading" : "lazy",
+      "width" : 90,
+      "height" : 19,
+      "max_width" : 90,
+      "max_height" : 19
+    },
+    "rating" : "4.3"
+  } ]
+}, {
+  "id" : "91da527f-bc4c-ce1e-5dfd-03590750f5a5",
+  "name" : "quote_block",
+  "display_width" : null,
+  "label" : "Quote Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "72fe4c16-4d40-81b8-ba5e-8c6de645f41e",
+    "name" : "person_image",
+    "display_width" : null,
+    "label" : "Person Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/person-image.svg",
+      "alt" : "person-image",
+      "loading" : "lazy",
+      "width" : 167,
+      "height" : 202,
+      "max_width" : 167,
+      "max_height" : 202
+    }
+  }, {
+    "id" : "4c853294-53df-2b40-7db3-3610769878ca",
+    "name" : "quote_block_content",
+    "display_width" : null,
+    "label" : "Quote Block Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><em>“Bring 100,000s of customers into WhatsApp <strong>through Chat-ins</strong>”</em></p>\n<em>Grace Hemberg, Product Marketer at charles</em>"
+  }, {
+    "id" : "fae87ac2-26f6-a248-4ff5-0d7dee2863d3",
+    "name" : "quote_class",
+    "display_width" : null,
+    "label" : "Quote Class",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "active"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "person_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/person-image.svg",
+      "alt" : "person-image",
+      "loading" : "lazy",
+      "width" : 167,
+      "height" : 202,
+      "max_width" : 167,
+      "max_height" : 202
+    },
+    "quote_block_content" : "<p><em>“Bring 100,000s of customers into WhatsApp <strong>through Chat-ins</strong>”</em></p>\n<em>Grace Hemberg, Product Marketer at charles</em>",
+    "quote_class" : "active"
+  } ]
+}, {
+  "id" : "effd0d86-69c0-b6bc-fa42-0370a4722523",
+  "name" : "steps_block",
+  "display_width" : null,
+  "label" : "Steps Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "20aa9627-55c7-a170-862a-f9e918695b04",
+    "name" : "step_icon",
+    "display_width" : null,
+    "label" : "Step Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/attract.svg",
+      "alt" : "attract",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    }
+  }, {
+    "id" : "dffb2cb0-60bb-a89a-fd48-c6bb35237cd6",
+    "name" : "step_class",
+    "display_width" : null,
+    "label" : "Step Class",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "attract"
+  }, {
+    "id" : "1242f1f6-5a90-516c-b73c-ec2f3ce79bc1",
+    "name" : "data_step",
+    "display_width" : null,
+    "label" : "Data Step",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "31fde8d7-3484-82f5-b430-99c9536870d5",
+    "name" : "step_title",
+    "display_width" : null,
+    "label" : "Step Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Attract"
+  }, {
+    "id" : "8d203cc3-a914-0822-bc48-edd383b338ef",
+    "name" : "step_qr_code",
+    "display_width" : null,
+    "label" : "Step QR Code",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/qr-code.svg",
+      "alt" : "qr-code",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 96,
+      "max_width" : 97,
+      "max_height" : 96
+    }
+  }, {
+    "id" : "0705d340-66cc-b25e-6f80-51ae97380b51",
+    "name" : "step_qr_title",
+    "display_width" : null,
+    "label" : "Step QR Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Grow subscriber base with Chat-ins"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "step_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/attract.svg",
+      "alt" : "attract",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    },
+    "step_class" : "attract",
+    "step_title" : "Attract",
+    "step_qr_code" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/qr-code.svg",
+      "alt" : "qr-code",
+      "loading" : "lazy",
+      "width" : 97,
+      "height" : 96,
+      "max_width" : 97,
+      "max_height" : 96
+    },
+    "step_qr_title" : "Grow subscriber base with Chat-ins"
+  } ]
+}, {
+  "id" : "cbd97b36-4ccf-4b9d-5de7-6ab262dc02c2",
+  "name" : "meta_partner",
+  "display_width" : null,
+  "label" : "Meta Partner",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/meta-partner.svg",
+    "alt" : "meta-partner",
+    "loading" : "lazy",
+    "width" : 226,
+    "height" : 158,
+    "max_width" : 226,
+    "max_height" : 158
+  }
+}, {
+  "id" : "db29d361-909a-35a5-8d97-62eeb9dfa011",
+  "name" : "whatsapp_solution_provider",
+  "display_width" : null,
+  "label" : "WhatsApp Solution Provider",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/whatsapp-solution-provider.png",
+    "alt" : "WhatsApp Official Business Solution Provider",
+    "loading" : "lazy",
+    "width" : 266,
+    "height" : 146,
+    "max_width" : 266,
+    "max_height" : 146
+  }
+}, {
+  "id" : "99774d11-54c3-53d6-29a5-b1690c53e22b",
+  "name" : "get_started_url",
+  "display_width" : null,
+  "label" : "Get Started URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "af644bb4-9c58-7b79-a078-69df5406b4c9",
+  "name" : "get_started_label",
+  "display_width" : null,
+  "label" : "Get Started Label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get started"
+}, {
+  "id" : "b9bda76a-56a5-bb72-f18a-bc3fabb8a4a3",
+  "name" : "button_id",
+  "display_width" : null,
+  "label" : "Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "5c0cb9eb-8739-4539-628d-9c7ce66360c9",
+  "name" : "mobile_carousel",
+  "display_width" : null,
+  "label" : "Mobile Carousel",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d8db1140-6191-23a5-4ee7-953c9a1fed85",
+    "name" : "review_client",
+    "display_width" : null,
+    "label" : "Review Client",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/review-client-2.svg",
+      "alt" : "review-client-2",
+      "loading" : "lazy",
+      "width" : 34,
+      "height" : 34,
+      "max_width" : 34,
+      "max_height" : 34
+    }
+  }, {
+    "id" : "d5a7e9f1-3e62-32f8-869f-11bdac56d01f",
+    "name" : "meta_business",
+    "display_width" : null,
+    "label" : "Meta Business",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/meta-badge-icon.svg",
+      "alt" : "meta-badge-icon",
+      "loading" : "lazy",
+      "width" : 133,
+      "height" : 73,
+      "max_width" : 133,
+      "max_height" : 73
+    }
+  }, {
+    "id" : "abad3e56-819d-6e17-8268-fd545fa3856c",
+    "name" : "whatsapp_solution_provider_mobile",
+    "display_width" : null,
+    "label" : "Whatsapp Solution Provider",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "src" : "https://www.hello-charles.com/hubfs/whatsapp-solution-provider.png",
+      "alt" : "WhatsApp Official Business Solution Provider",
+      "width" : 266,
+      "height" : 146,
+      "max_width" : 266,
+      "max_height" : 146
+    }
+  }, {
+    "id" : "f7ede897-0d42-5fb7-bf2f-38bd08dd2ae8",
+    "name" : "slider_container",
+    "display_width" : null,
+    "label" : "Slider Container",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "ae4da60a-8414-b0f2-aebf-42a456ccc95c",
+      "name" : "slide_image",
+      "display_width" : null,
+      "label" : "Slide Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : true,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/mobile-slide-one.svg",
+        "alt" : "mobile-slide-one",
+        "loading" : "lazy",
+        "width" : 674,
+        "height" : 505,
+        "max_width" : 674,
+        "max_height" : 505
+      }
+    }, {
+      "id" : "bd18154f-c7d6-dde2-bbd3-3a80785567c5",
+      "name" : "slide_person",
+      "display_width" : null,
+      "label" : "Slide Person",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : true,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/main-person-v2.png",
+        "alt" : "main-person-v2",
+        "loading" : "lazy",
+        "width" : 386,
+        "height" : 458,
+        "max_width" : 386,
+        "max_height" : 458
+      }
+    }, {
+      "id" : "49e91e62-dc63-8e5f-f360-d930379b3f5e",
+      "name" : "slide_content_text",
+      "display_width" : null,
+      "label" : "Slide Content Text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p><em>\"Bring 100,000s of customers into WhatsApp <strong>through Chat-ins</strong>\"</em></p>\n<em><strong>Ilke</strong>, customer success at charles</em>"
+    }, {
+      "id" : "2bffc95f-b2d9-7e76-a664-cbfe03df1710",
+      "name" : "button_url",
+      "display_width" : null,
+      "label" : "Button URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "e74141d3-c4db-94ab-999a-2dd39552c90a",
+      "name" : "button_qr_label",
+      "display_width" : null,
+      "label" : "Button QR Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "See how it works"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "slide_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/mobile-slide-one.svg",
+        "alt" : "mobile-slide-one",
+        "loading" : "lazy",
+        "width" : 674,
+        "height" : 505,
+        "max_width" : 674,
+        "max_height" : 505
+      },
+      "slide_person" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/main-person-v2.png",
+        "alt" : "main-person-v2",
+        "loading" : "lazy",
+        "width" : 386,
+        "height" : 458,
+        "max_width" : 386,
+        "max_height" : 458
+      },
+      "slide_content_text" : "<p><em>\"Bring 100,000s of customers into WhatsApp <strong>through Chat-ins</strong>\"</em></p>\n<em><strong>Ilke</strong>, customer success at charles</em>",
+      "button_url" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "button_qr_label" : "See how it works"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "review_client" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/review-client-2.svg",
+      "alt" : "review-client-2",
+      "loading" : "lazy",
+      "width" : 34,
+      "height" : 34,
+      "max_width" : 34,
+      "max_height" : 34
+    },
+    "meta_business" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/meta-badge-icon.svg",
+      "alt" : "meta-badge-icon",
+      "loading" : "lazy",
+      "width" : 133,
+      "height" : 73,
+      "max_width" : 133,
+      "max_height" : 73
+    },
+    "whatsapp_solution_provider_mobile" : {
+      "src" : "https://www.hello-charles.com/hubfs/whatsapp-solution-provider.png",
+      "alt" : "WhatsApp Official Business Solution Provider",
+      "width" : 266,
+      "height" : 146,
+      "max_width" : 266,
+      "max_height" : 146
+    },
+    "slider_container" : [ {
+      "slide_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/mobile-slide-one.svg",
+        "alt" : "mobile-slide-one",
+        "loading" : "lazy",
+        "width" : 674,
+        "height" : 505,
+        "max_width" : 674,
+        "max_height" : 505
+      },
+      "slide_person" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/main-person-v2.png",
+        "alt" : "main-person-v2",
+        "loading" : "lazy",
+        "width" : 386,
+        "height" : 458,
+        "max_width" : 386,
+        "max_height" : 458
+      },
+      "slide_content_text" : "<p><em>\"Bring 100,000s of customers into WhatsApp <strong>through Chat-ins</strong>\"</em></p>\n<em><strong>Ilke</strong>, customer success at charles</em>",
+      "button_url" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "button_qr_label" : "See how it works"
+    } ]
+  }
+} ]

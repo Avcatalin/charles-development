@@ -1,0 +1,92 @@
+{
+  "button_label.default" : {
+    "message" : "Read more",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_label.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_label.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_label.label" : {
+    "message" : "Button Label",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_label.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_label.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Related Case Studies Multilanguage",
+    "description" : "",
+    "placeholders" : null
+  },
+  "related_case_hubdb.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "related_case_hubdb.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "related_case_hubdb.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "related_case_hubdb.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "related_case_hubdb.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "See more WhatsApp success stories",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

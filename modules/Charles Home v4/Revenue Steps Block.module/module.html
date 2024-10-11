@@ -1,0 +1,298 @@
+<!-- Desktop Version -->
+<!-- Revenue Steps Block -->
+<div class="revenue-steps-block desktop">
+  <div class="container">
+    <!-- Top Image Right Corner Parallax -->
+    <div class="top-right-image">
+      {% if module.top_right_image.src %}
+      {% set sizeAttrs = 'width="{{ module.top_right_image.width }}" height="{{ module.top_right_image.height }}"' %}
+      {% if module.top_right_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.top_right_image.width }}" height="{{ module.top_right_image.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.top_right_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.top_right_image.max_width }}" height="{{ module.top_right_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.top_right_image.loading != 'disabled' ? 'loading="{{ module.top_right_image.loading }}"' : '' %}
+      <img src="{{ module.top_right_image.src }}" alt="{{ module.top_right_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+    <!-- Block Background Image -->
+    <div class="block-background-image">
+      <!-- Inner image change on active step -->
+      <div class="inner-step-image">
+        <!-- Repeater images for desktop use -->
+        {% for item in module.main_center_images %}
+        {% if item.main_block_image.src %}
+        {% set sizeAttrs = 'width="{{ item.main_block_image.width }}" height="{{ item.main_block_image.height }}"' %}
+        {% if item.main_block_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.main_block_image.width }}" height="{{ item.main_block_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.main_block_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.main_block_image.max_width }}" height="{{ item.main_block_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.main_block_image.loading != 'disabled' ? 'loading="{{ item.main_block_image.loading }}"' : '' %}
+        <img src="{{ item.main_block_image.src }}" alt="{{ item.main_block_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="{{ item.image_class }}">
+        {% endif %}
+        {% endfor %}        
+      </div>
+
+      <!-- Reviews Block -->
+      <div class="reviews-block">
+        <!-- Review -->
+        {% for item in module.review_block %}
+        <div class="review">          
+          <!-- Client Image -->
+          <div class="review-logo">            
+            {% if item.review_logo.src %}
+            {% set sizeAttrs = 'width="{{ item.review_logo.width }}" height="{{ item.review_logo.height }}"' %}
+            {% if item.review_logo.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.review_logo.width }}" height="{{ item.review_logo.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.review_logo.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.review_logo.max_width }}" height="{{ item.review_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.review_logo.loading != 'disabled' ? 'loading="{{ item.review_logo.loading }}"' : '' %}
+            <img src="{{ item.review_logo.src }}" alt="{{ item.review_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <!-- Client Stars Rating -->
+          <div class="review-stars">
+            {% if item.review_stars.src %}
+            {% set sizeAttrs = 'width="{{ item.review_stars.width }}" height="{{ item.review_stars.height }}"' %}
+            {% if item.review_stars.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.review_stars.width }}" height="{{ item.review_stars.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.review_stars.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.review_stars.max_width }}" height="{{ item.review_stars.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.review_stars.loading != 'disabled' ? 'loading="{{ item.review_stars.loading }}"' : '' %}
+            <img src="{{ item.review_stars.src }}" alt="{{ item.review_stars.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <!-- Client Score -->
+          <div class="review-score">
+            {{ item.rating }}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Meta Partner Block -->
+      <div class="meta-badge">
+        {% if module.meta_partner.src %}
+        {% set sizeAttrs = 'width="{{ module.meta_partner.width }}" height="{{ module.meta_partner.height }}"' %}
+        {% if module.meta_partner.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.meta_partner.width }}" height="{{ module.meta_partner.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.meta_partner.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.meta_partner.max_width }}" height="{{ module.meta_partner.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.meta_partner.loading != 'disabled' ? 'loading="{{ module.meta_partner.loading }}"' : '' %}
+        <img src="{{ module.meta_partner.src }}" alt="{{ module.meta_partner.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <!-- Whatsapp Solution Provider -->
+      <div class="whatsapp-solution-provider">
+        {% if module.whatsapp_solution_provider.src %}
+        {% set sizeAttrs = 'width="{{ module.whatsapp_solution_provider.width }}" height="{{ module.whatsapp_solution_provider.height }}"' %}
+        {% if module.whatsapp_solution_provider.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.whatsapp_solution_provider.width }}" height="{{ module.whatsapp_solution_provider.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.whatsapp_solution_provider.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.whatsapp_solution_provider.max_width }}" height="{{ module.whatsapp_solution_provider.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.whatsapp_solution_provider.loading != 'disabled' ? 'loading="{{ module.whatsapp_solution_provider.loading }}"' : '' %}
+        <img src="{{ module.whatsapp_solution_provider.src }}" alt="{{ module.whatsapp_solution_provider.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+
+      <!-- Person & Quote -->
+      <div class="quote-block">
+        {% for item in module.quote_block %}
+        <div class="{{ item.quote_class }} inner-quote">
+          <!-- Person Image -->
+          <div class="person-image">
+            {% if item.person_image.src %}
+            {% set sizeAttrs = 'width="{{ item.person_image.width }}" height="{{ item.person_image.height }}"' %}
+            {% if item.person_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.person_image.width }}" height="{{ item.person_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.person_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.person_image.max_width }}" height="{{ item.person_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.person_image.loading != 'disabled' ? 'loading="{{ item.person_image.loading }}"' : '' %}
+            <img src="{{ item.person_image.src }}" alt="{{ item.person_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <!-- Person Quote -->
+          <div class="person-quote">
+            {{ item.quote_block_content }}
+          </div>          
+        </div>
+        {% endfor %}      
+      </div>
+
+      <!-- Bottom Image Left Corner Parallax -->
+      <div class="bottom-left-image">
+        {% if module.bottom_left_image.src %}
+        {% set sizeAttrs = 'width="{{ module.bottom_left_image.width }}" height="{{ module.bottom_left_image.height }}"' %}
+        {% if module.bottom_left_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.bottom_left_image.width }}" height="{{ module.bottom_left_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.bottom_left_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.bottom_left_image.max_width }}" height="{{ module.bottom_left_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.bottom_left_image.loading != 'disabled' ? 'loading="{{ module.bottom_left_image.loading }}"' : '' %}
+        <img src="{{ module.bottom_left_image.src }}" alt="{{ module.bottom_left_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Steps Action Buttons -->
+  <div class="block-steps-buttons">
+    <ul class="steps-list">
+      <div class="white-line"></div>
+      <div class="fill-line"></div>
+      {% for item in module.steps_block %}
+      <li class="{{ item.step_class }}">
+        <div class="clickable-step">
+          <div class="icon-inner">
+            {% if item.step_icon.src %}
+            {% set sizeAttrs = 'width="{{ item.step_icon.width }}" height="{{ item.step_icon.height }}"' %}
+            {% if item.step_icon.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.step_icon.width }}" height="{{ item.step_icon.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.step_icon.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.step_icon.max_width }}" height="{{ item.step_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.step_icon.loading != 'disabled' ? 'loading="{{ item.step_icon.loading }}"' : '' %}
+            <img src="{{ item.step_icon.src }}" alt="{{ item.step_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <!-- Step Title -->
+          <p>{{ item.step_title }}</p>
+        </div>
+        <!-- QR Code Block -->
+        <div class="qr-code-block">
+          <div class="qr-code-inner">            
+            {% if item.step_qr_code.src %}
+            {% set sizeAttrs = 'width="{{ item.step_qr_code.width }}" height="{{ item.step_qr_code.height }}"' %}
+            {% if item.step_qr_code.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.step_qr_code.width }}" height="{{ item.step_qr_code.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.step_qr_code.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.step_qr_code.max_width }}" height="{{ item.step_qr_code.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.step_qr_code.loading != 'disabled' ? 'loading="{{ item.step_qr_code.loading }}"' : '' %}
+            <img src="{{ item.step_qr_code.src }}" alt="{{ item.step_qr_code.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <!-- QR Code Title -->
+          <p>{{ item.step_qr_title }}</p>
+        </div>
+      </li>
+      {% endfor %}
+      <li class="get-started-cta">
+        <!-- Get started Btn -->
+        {% set href = module.get_started_url.url.href %}
+        {% if module.get_started_url.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" id="{{ module.button_id }}"
+           {% if module.get_started_url.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.get_started_url.rel %}rel="{{ module.get_started_url.rel }}"{% endif %}
+           >
+          <span>{{ module.get_started_label }}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+            <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Mobile Version -->
+<div class="revenue-steps-block mobile">
+  <!-- Review Block -->
+  <div class="review-box">
+    {% if module.mobile_carousel.review_client.src %}
+    {% set sizeAttrs = 'width="{{ module.mobile_carousel.review_client.width }}" height="{{ module.mobile_carousel.review_client.height }}"' %}
+    {% if module.mobile_carousel.review_client.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.mobile_carousel.review_client.width }}" height="{{ module.mobile_carousel.review_client.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.mobile_carousel.review_client.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.mobile_carousel.review_client.max_width }}" height="{{ module.mobile_carousel.review_client.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.mobile_carousel.review_client.loading != 'disabled' ? 'loading="{{ module.mobile_carousel.review_client.loading }}"' : '' %}
+    <img src="{{ module.mobile_carousel.review_client.src }}" alt="{{ module.mobile_carousel.review_client.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+  <!-- Meta Partners -->
+  <div class="meta-partner">
+    {% if module.mobile_carousel.meta_business.src %}
+    {% set sizeAttrs = 'width="{{ module.mobile_carousel.meta_business.width }}" height="{{ module.mobile_carousel.meta_business.height }}"' %}
+    {% if module.mobile_carousel.meta_business.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.mobile_carousel.meta_business.width }}" height="{{ module.mobile_carousel.meta_business.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.mobile_carousel.meta_business.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.mobile_carousel.meta_business.max_width }}" height="{{ module.mobile_carousel.meta_business.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.mobile_carousel.meta_business.loading != 'disabled' ? 'loading="{{ module.mobile_carousel.meta_business.loading }}"' : '' %}
+    <img src="{{ module.mobile_carousel.meta_business.src }}" alt="{{ module.mobile_carousel.meta_business.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+  <!-- Whatsapp Provider -->
+  <div class="whatsapp-solution-provider-mobile">
+    {% if module.mobile_carousel.whatsapp_solution_provider_mobile.src %}
+    {% set sizeAttrs = 'width="{{ module.mobile_carousel.whatsapp_solution_provider_mobile.width }}" height="{{ module.mobile_carousel.whatsapp_solution_provider_mobile.height }}"' %}
+    {% if module.mobile_carousel.whatsapp_solution_provider_mobile.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.mobile_carousel.whatsapp_solution_provider_mobile.width }}" height="{{ module.mobile_carousel.whatsapp_solution_provider_mobile.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.mobile_carousel.whatsapp_solution_provider_mobile.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.mobile_carousel.whatsapp_solution_provider_mobile.max_width }}" height="{{ module.mobile_carousel.whatsapp_solution_provider_mobile.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.mobile_carousel.whatsapp_solution_provider_mobile.loading != 'disabled' ? 'loading="{{ module.mobile_carousel.whatsapp_solution_provider_mobile.loading }}"' : '' %}
+    <img src="{{ module.mobile_carousel.whatsapp_solution_provider_mobile.src }}" alt="{{ module.mobile_carousel.whatsapp_solution_provider_mobile.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+  <!-- Slider Wrapper -->
+  <div class="revenue-slider">
+    <div class="swiper-wrapper">
+      {% for item in module.mobile_carousel.slider_container %}
+      <div class="swiper-slide">
+        <!-- Slide Image -->
+        {% if item.slide_image.src %}
+        {% set sizeAttrs = 'width="{{ item.slide_image.width }}" height="{{ item.slide_image.height }}"' %}
+        {% if item.slide_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.slide_image.width }}" height="{{ item.slide_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.slide_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.slide_image.max_width }}" height="{{ item.slide_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.slide_image.loading != 'disabled' ? 'loading="{{ item.slide_image.loading }}"' : '' %}
+        <img src="{{ item.slide_image.src }}" alt="{{ item.slide_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        <!-- Person Wrapper -->
+        <div class="slide-person-box">
+          <div class="person-profile-img">
+            {% if item.slide_person.src %}
+            {% set sizeAttrs = 'width="{{ item.slide_person.width }}" height="{{ item.slide_person.height }}"' %}
+            {% if item.slide_person.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.slide_person.width }}" height="{{ item.slide_person.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.slide_person.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.slide_person.max_width }}" height="{{ item.slide_person.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.slide_person.loading != 'disabled' ? 'loading="{{ item.slide_person.loading }}"' : '' %}
+            <img src="{{ item.slide_person.src }}" alt="{{ item.slide_person.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>        
+          <div class="person-quote">
+            {{ item.slide_content_text }}
+          </div>
+        </div>
+        <!-- CTA Button -->
+        <div class="slider-mobile-cta">
+          {% set href = item.button_url.url.href %}
+          {% if item.button_url.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if item.button_url.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.button_url.rel %}rel="{{ item.button_url.rel }}"{% endif %}
+             >
+            {{ item.button_qr_label }}
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>    
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="pricing-plan-options" style="background-image: url({{ module.section_background_image.src }}); {{ module.style.image_background_spacing.css }}">
+  {% for item in module.pricing_option_group %}
+  <div class="option-box" style="{{ module.style.option_box_spacing.css }}">
+    <!-- IMAGE OR LOTTIE PLAYER -->
+    <div class="image-container">
+      <lottie-player src="{{ item.support_lottie_player }}" background="transparent"  speed="1"  style="width: 325px; height: auto;" loop autoplay></lottie-player>
+      {% if item.enable_image_jpg_png_ %}
+        {% if item.image.src %}
+        {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+        {% if item.image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+        <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      {% endif %}
+    </div>
+    <!-- end IMAGE OR LOTTIE PLAYER -->
+    <div class="option-container">
+      <!-- CHECKBOX OPTION -->
+      <label class="check-option">
+        <input type="checkbox" id="{{ item.checkbox_id }}" name="checkbox" {% if item.enable_checked_option %}checked="checked"{% endif %} />
+      </label>
+      <div class="option-content">
+        <h4 style="color: {{ item.title_color.css }};">{{ item.title }}</h4>
+        <p style="color: {{ item.content_color.css }};">{{ item.content }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

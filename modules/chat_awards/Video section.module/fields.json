@@ -1,0 +1,68 @@
+[ {
+  "id" : "1a7273bb-b858-cb43-5592-a4662e0a0d37",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Every application gets rewarded & we have various prices reserved."
+}, {
+  "id" : "165fcfd7-0493-a126-6b8a-83cb1735c532",
+  "name" : "video_url",
+  "display_width" : null,
+  "label" : "Video url",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://www.youtube.com/embed/2JKEx8itz1w"
+}, {
+  "id" : "720af7a1-ae78-de31-9d3c-50f7d51aad34",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3a0437d0-a17e-7ce4-728c-8624e3ca578e",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing field",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "6e4843d0-2215-685a-bd03-922d038f0de6",
+  "name" : "top_emoji",
+  "display_width" : null,
+  "label" : "Top Emoji",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/trophy.svg",
+    "alt" : "trophy",
+    "loading" : "lazy",
+    "width" : 26,
+    "height" : 24,
+    "max_width" : 26,
+    "max_height" : 24
+  }
+} ]

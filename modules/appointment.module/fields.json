@@ -1,0 +1,102 @@
+[ {
+  "id" : "title",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "enabled_features" : [ "bold" ],
+  "type" : "richtext",
+  "default" : "Title here"
+}, {
+  "id" : "text",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : true,
+  "locked" : false,
+  "enabled_features" : [ "bold" ],
+  "type" : "richtext",
+  "default" : "CTA text content here"
+}, {
+  "id" : "align",
+  "name" : "align",
+  "display_width" : null,
+  "label" : "Alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "text-left", "Left" ], [ "text-center", "Center" ], [ "text-right", "Right" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "text-center"
+}, {
+  "id" : "button",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "button.text",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Click here"
+  }, {
+    "id" : "button.link",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG", "EMAIL_ADDRESS" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "button.text_color",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "button.bg_color",
+    "name" : "bg_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group"
+} ]

@@ -1,0 +1,46 @@
+[ {
+  "id" : "15394be1-b23e-c5d6-3404-c8114574aeb0",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Journeys also makes good business sense. You save time, make sales and offer support after hours and have better control over what your brand says and how it says it. Plus you don’t need to hire as many customer agents to manage your WhatsApp conversations. &nbsp;&nbsp;"
+}, {
+  "id" : "824629fc-cc2c-30ac-bc57-60e333a5432d",
+  "name" : "simple_Content",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "fe346b41-01bb-11aa-6781-2bfb1a475632",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "8b40be38-ca1e-823e-4471-36d6f89cbb15",
+  "name" : "content_color",
+  "display_width" : null,
+  "label" : "Description - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+} ]

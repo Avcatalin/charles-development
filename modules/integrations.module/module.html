@@ -1,0 +1,32 @@
+<div class="c-integrations-section glide">
+  <div class="c-integrations--wrap glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      {% for integration in module.integrations %}
+      {% set bg = integration.bg_color %}
+      {% set available = integration.available %}
+
+      <li class="c-integrations--integration glide__slide">
+        <div class="flex flex-col flex-no-wrap items-center justify-center">
+          <div class="c-integrations--integration-box flex items-center justify-center"
+            style="background-color: rgba({{ bg.color|convert_rgb }}, {{ bg.opacity / 100 }});">
+            <img src="{{ integration.icon }}" alt="{{ integration.title }}">
+          </div>
+
+          <h3 class="mt-3 mb-0 text-xl">{{ integration.title }}</h3>
+
+          {% if available %}
+          <div class="c-integrations--integration-status available text-muted">
+            <span>connected</span>
+          </div>
+          {% else %}
+          <div class="c-integrations--integration-status not-available text-muted">
+            <span>under construction</span>
+          </div>
+          {% endif %}
+        </div>
+
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

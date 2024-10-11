@@ -1,0 +1,87 @@
+{
+  "button_label.default" : {
+    "message" : "Erfahre mehr",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_label.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_label.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_label.label" : {
+    "message" : "Button Label",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_label.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_label.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Related Case Studies Multilanguage",
+    "description" : null,
+    "placeholders" : null
+  },
+  "related_case_hubdb.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "related_case_hubdb.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "related_case_hubdb.label" : {
+    "message" : "Related Case HubDB",
+    "description" : null,
+    "placeholders" : null
+  },
+  "related_case_hubdb.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Hier gibt es mehr Erfolgsgeschichten",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

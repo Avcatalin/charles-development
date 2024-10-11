@@ -1,0 +1,19 @@
+<div class="omr-header" style="background-image: url({{ module.style.background_image.src }});">
+  <div class="omr-container" style="{{ module.style.alignment_field }}">
+    <!-- Logo -->
+    {% if module.omr_main_image.src %}
+    {% set sizeAttrs = 'width="{{ module.omr_main_image.width|escape_attr }}" height="{{ module.omr_main_image.height|escape_attr }}"' %}
+    {% if module.omr_main_image.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.omr_main_image.width|escape_attr }}" height="{{ module.omr_main_image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.omr_main_image.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.omr_main_image.max_width|escape_attr }}" height="{{ module.omr_main_image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.omr_main_image.loading != 'disabled' ? 'loading="{{ module.omr_main_image.loading|escape_attr }}"' : '' %}
+    <img src="{{ module.omr_main_image.src|escape_url }}" alt="{{ module.omr_main_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="omr-main-image">
+    {% endif %}
+    <!-- Heading Content -->
+    <div class="omr-content">
+      {{ module.content_heading }}
+    </div>
+  </div>
+</div>

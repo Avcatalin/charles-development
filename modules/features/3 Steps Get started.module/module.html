@@ -1,0 +1,51 @@
+<div class="steps-wrapper" style="{{ module.style.spacing_field.css }}">
+  <img src="https://www.hello-charles.com/hubfs/Imported%20images/header-section-round.png" loading="eager" alt="heading section | charles" />
+  <div class="inner-dotted-canvas">
+    <div class="dotted-canvas">
+      <p class="title first">
+        {{ module.title }}
+      </p>
+      {% set href = module.link.url.href %}
+      {% if module.link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}"
+         {% if module.link.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.link.rel %}rel="{{ module.link.rel }}"{% endif %}
+         >
+        {% if module.main_image.src %}
+        {% set sizeAttrs = 'width="{{ module.main_image.width }}" height="{{ module.main_image.height }}"' %}
+        {% if module.main_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.main_image.width }}" height="{{ module.main_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.main_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.main_image.max_width }}" height="{{ module.main_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.main_image.loading != 'disabled' ? 'loading="{{ module.main_image.loading }}"' : '' %}
+        <img src="{{ module.main_image.src }}" class="main-image" alt="{{ module.main_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </a>
+      <p class="title second">
+        {{ module.subtitle }}
+      </p>
+    </div>
+
+    <!-- Whitepapers -->
+    <div class="whitepapers">
+      {% if module.whitepapers.src %}
+      {% set sizeAttrs = 'width="{{ module.whitepapers.width }}" height="{{ module.whitepapers.height }}"' %}
+      {% if module.whitepapers.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.whitepapers.width }}" height="{{ module.whitepapers.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.whitepapers.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.whitepapers.max_width }}" height="{{ module.whitepapers.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.whitepapers.loading != 'disabled' ? 'loading="{{ module.whitepapers.loading }}"' : '' %}
+      <img src="{{ module.whitepapers.src }}" class="whitepaper-img" alt="{{ module.whitepapers.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+      <!-- Content --> 
+      <p class="bottom-content">
+        {{ module.bottom_content }}
+      </p>
+    </div>
+  </div>
+
+</div>

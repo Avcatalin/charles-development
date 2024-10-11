@@ -1,0 +1,231 @@
+<div class="{% if module.enable_container_class %}container{% endif %}">
+  <div class="features-steps-section" style="{{ module.styles.spacing_field.css }}">
+    <div class="features-top-image">
+      {% if module.top_image.src %}
+      {% set sizeAttrs = 'width="{{ module.top_image.width }}" height="{{ module.top_image.height }}"' %}
+      {% if module.top_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.top_image.width }}" height="{{ module.top_image.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.top_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.top_image.max_width }}" height="{{ module.top_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.top_image.loading != 'disabled' ? 'loading="{{ module.top_image.loading }}"' : '' %}
+      <img src="{{ module.top_image.src }}" {{ loadingAttr }} {{ sizeAttrs }} class="img-fluid {% if module.styles.enable_centered_image %}mx-auto{% endif %} {% if module.styles.enable_right_image %} mr-image {% endif %}" style="{{ module.styles.top_image_spacing.css }}" alt="{{ module.top_image.alt }}" />
+      {% endif %}
+    </div>
+    <div class="features-main-image">
+      <!-- Modal Container -->
+      <div class="video-container">
+        <div class="inner-video">
+          <!-- Close Modal Button -->
+          <div class="close-video-btn">
+            <span>
+              <svg width="42" height="42" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" fill="#221F20"/>
+              </svg>
+            </span>
+          </div>
+          <!-- end Close Modal Button -->
+
+          <!-- VIDEO UPLOAD OPTION -->
+          {% if module.videoplayer_field.player_id %}
+          {% set max_width = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_width : module.videoplayer_field.width %}
+          {% set max_height = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_height : module.videoplayer_field.height %}
+          {% video_player "embed_player"
+            player_id={{ module.videoplayer_field.player_id }}
+            type={{ module.videoplayer_field.player_type || 'scriptV4' }}
+            full_width={{ module.videoplayer_field.size_type == 'auto_full_width' }},
+            conversion_asset={{ module.videoplayer_field.conversion_asset|tojson|safe }}
+          %}
+          {% endif %}
+          <!-- END VIDEO UPLOAD OPTION -->
+
+          <!-- VIDEO EMBED OR URL OPTION -->
+          {% if module.video_embed_options.source_type == "oembed" %}
+          <div class="oembed_container {% if module.video_embed_options.size_type == 'auto_full_width' %} oembed_container--full-size{% endif %}" id="oembed_container-{{name}}">
+            <div class="iframe_wrapper"
+                 data-embed-url="{{ module.video_embed_options.oembed_url }}"
+                 {% unless module.video_embed_options.size_type == "auto_full_width" || module.video_embed_options.size_type == "exact" %}
+                 data-max-height="{% if module.video_embed_options.size_type == "auto_custom_max" %}{{ module.video_embed_options.max_height }}{% endif %}"
+                 data-max-width="{% if module.video_embed_options.size_type == "auto_custom_max" %}{{ module.video_embed_options.max_width }}{% endif %}"
+                 {% endunless %}
+                 {% if module.video_embed_options.size_type == "exact" %}
+                 data-height="{{ module.video_embed_options.height }}"
+                 data-width="{{ module.video_embed_options.width }}"
+                 {% endif %}
+                 >
+            </div>
+          </div>
+          {% require_css %}
+          <style>
+            .oembed_container {
+              display: inline-block;
+              height: 100%;
+              position: relative;
+              width: 100%;
+            }
+            .oembed_container .iframe_wrapper > * {
+              height: 100%;
+              left: 0;
+              margin: 0 auto;
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 100%;
+            }
+            .iframe_wrapper {
+              height: 0;
+              padding-bottom: 56.25%;
+              padding-top: 25px;
+              position: relative;
+            }
+          </style>
+          {% end_require_css %}
+          {% require_js %}
+          <script>
+            function loadEmbedField(oembedContainer) {
+              const iframeWrapper = oembedContainer.querySelector('.iframe_wrapper');
+              if (!iframeWrapper) {
+                return;
+              }
+              const url = iframeWrapper.dataset.embedUrl;
+              if (!url) {
+                return;
+              }
+              const request = new XMLHttpRequest();
+              const requestUrl = "/_hcms/oembed?url=" + url + "&autoplay=0";
+              request.open('GET', requestUrl, true);
+              request.onload = function() {
+                if (request.status >= 200 && request.status < 400) {
+                  const data = JSON.parse(request.responseText);
+
+                  const maxHeight = iframeWrapper.dataset.maxHeight !== undefined && !iframeWrapper.dataset.maxHeight ? data.height : iframeWrapper.dataset.maxHeight;
+                  const maxWidth = iframeWrapper.dataset.maxWidth !== undefined && !iframeWrapper.dataset.maxWidth ? data.width : iframeWrapper.dataset.maxWidth;
+                  const height = iframeWrapper.dataset.height !== undefined && !iframeWrapper.dataset.height ? data.height : iframeWrapper.dataset.height;
+                  const width = iframeWrapper.dataset.width !== undefined && !iframeWrapper.dataset.width ? data.width : iframeWrapper.dataset.width;
+
+                  const el = document.createElement('div');
+                  el.innerHTML = data.html;
+                  const iframe = el.firstChild;
+                  iframeWrapper.appendChild(iframe);
+
+                  if (maxHeight) {
+                    const maxHeightStr = maxHeight.toString(10) + "px";
+                    oembedContainer.style.maxHeight = maxHeightStr;
+                    iframe.style.maxHeight = maxHeightStr;
+                  }
+
+                  if (maxWidth) {
+                    const maxWidthStr = maxWidth.toString(10) + "px";
+                    oembedContainer.style.maxWidth = maxWidthStr;
+                    iframe.style.maxWidth = maxWidthStr;
+                  }
+
+                  if (height) {
+                    const heightStr = height.toString(10) + "px";
+                    oembedContainer.style.height = heightStr;
+                    iframe.style.height = heightStr;
+                  }
+
+                  if (width) {
+                    const widthStr = width.toString(10) + "px";
+                    oembedContainer.style.width = widthStr;
+                    iframe.style.width = widthStr;
+                  }
+                } else {
+                  console.error('Server reached, error retrieving results.');
+                }
+              };
+              request.onerror = function() {
+                console.error('Could not reach the server.');
+              };
+              request.send();
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              var oEmbedContainers = document.getElementsByClassName('oembed_container');
+              Array.prototype.forEach.call(oEmbedContainers, loadEmbedField)
+            });
+          </script>
+          {% end_require_js %}
+          {% else %}
+          <div id="embed_container" class="embed_container">
+            <div class="iframe_wrapper">
+              {{ module.video_embed_options.embed_html }}
+            </div>
+          </div>
+          {% require_css %}
+          <style>
+            .iframe_wrapper {
+              height: 0;
+              padding-bottom: 56.25%;
+              padding-top: 25px;
+              position: relative;
+            }
+            .embed_container {
+              display: inline-block;
+              height: 100%;
+              position: relative;
+              width: 100%;
+            }
+            .embed_container iframe {
+              left: 0;
+              max-height: 100%;
+              max-width: 100%;
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+          </style>
+          {% end_require_css %}
+          {% endif %}
+          <!-- END VIDEO EMBED OR URL OPTION -->
+        </div>
+      </div>
+      <!-- end Modal Container -->
+      <!-- DESKTOP IMAGE -->
+      <div class="desktop-image">
+        {% if module.main_image.src %}
+        {% set sizeAttrs = 'width="{{ module.main_image.width }}" height="{{ module.main_image.height }}"' %}
+        {% if module.main_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.main_image.width }}" height="{{ module.main_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.main_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.main_image.max_width }}" height="{{ module.main_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.main_image.loading != 'disabled' ? 'loading="{{ module.main_image.loading }}"' : '' %}
+        <img src="{{ module.main_image.src }}" alt="{{ module.main_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <!-- end DESKTOP IMAGE -->
+
+      <!-- MOBILE IMAGE -->
+      <div class="mobile-image">
+        {% if module.main_image_mobile.src %}
+        {% set sizeAttrs = 'width="{{ module.main_image_mobile.width }}" height="{{ module.main_image_mobile.height }}"' %}
+        {% if module.main_image_mobile.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.main_image_mobile.width }}" height="{{ module.main_image_mobile.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.main_image_mobile.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.main_image_mobile.max_width }}" height="{{ module.main_image_mobile.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.main_image_mobile.loading != 'disabled' ? 'loading="{{ module.main_image_mobile.loading }}"' : '' %}
+        <img src="{{ module.main_image_mobile.src }}" alt="{{ module.main_image_mobile.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>      
+      <!-- end MOBILE IMAGE -->
+      <div class="features-cta-modal {% if module.align_cta_button %} align-middle {% endif %}">
+        <a href="javascript:void(0)" style="color: {{ module.modal_button_text_color.color }}; background-color: {{ module.modal_button_background.color }};">
+          {% if module.modal_button_icon.src %}
+          {% set sizeAttrs = 'width="{{ module.modal_button_icon.width }}" height="{{ module.modal_button_icon.height }}"' %}
+          {% if module.modal_button_icon.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.modal_button_icon.width }}" height="{{ module.modal_button_icon.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.modal_button_icon.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.modal_button_icon.max_width }}" height="{{ module.modal_button_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.modal_button_icon.loading != 'disabled' ? 'loading="{{ module.modal_button_icon.loading }}"' : '' %}
+          <img src="{{ module.modal_button_icon.src }}" class="modal-icon img-fluid" alt="{{ module.modal_button_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          <span>{{ module.modal_button_text }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

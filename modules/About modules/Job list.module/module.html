@@ -1,0 +1,39 @@
+
+<div class="job_list">
+  <div class="container">
+    <h2>
+      {{ module.title }}
+    </h2>
+    <div class="job_embed">
+      {% for item in module.job_list %}
+<!--       <div class="job">
+        <div class="logo">
+          <img src="{{ item.job_icon.src }}">
+        </div>
+        <div class="job_title">
+          <h2>
+            <strong>{{ item.job_title }}</strong>, {{ item.sub_title }}
+          </h2>
+          <p>
+            {{ item.role }}
+          </p>
+        </div>
+        <div class="job_btn">
+          <a target="_blank" rel="noopener noreferrer nofollow" href="{{ item.job_link }}">Apply</a>
+        </div>
+      </div> -->
+      {% endfor %}
+    </div>
+    <div class="job_link">
+      <p>
+        {{ module.link_title }}
+      </p>
+      <a target="_blank" rel="noopener noreferrer nofollow" href="{{ module.button_link }}"><img src="https://www.hello-charles.com/hubfs/About%20pages/trophy.png" alt="Trophy icon | charles"> {{ module.button_text }}</a>
+    </div>
+    <div class="info">
+      <p>
+        {{ module.info }}
+      </p>
+    </div>
+  </div>
+</div>

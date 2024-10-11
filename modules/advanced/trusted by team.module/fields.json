@@ -1,0 +1,74 @@
+[ {
+  "id" : "c611cc1e-357c-6c48-2b0f-123d499ea810",
+  "name" : "logos_collection_desktop",
+  "display_width" : null,
+  "label" : "Logo Collection Desktop",
+  "help_text" : "One image containing all logos in the wanted layout for desktop",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "b6d0f970-0b0e-b9be-8fc7-242aa108fa4f",
+  "name" : "logos_collection_tablet",
+  "display_width" : null,
+  "label" : "Logo Collection Tablet",
+  "help_text" : "One image containing all logos in the wanted layout for desktop",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "a3e02d19-8cf8-e2f8-cf8e-d40435325683",
+  "name" : "logo_collection_mobile",
+  "display_width" : null,
+  "label" : "Logo Collection Mobile",
+  "help_text" : "One image containing all logos in the wanted layout for desktop",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "1160dc2d-ac95-4ef1-4af4-1936391a2fed",
+  "name" : "case_studies",
+  "display_width" : null,
+  "label" : "Case studies",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 73285730393
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

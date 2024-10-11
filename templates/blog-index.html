@@ -1,0 +1,209 @@
+<!--
+templateType: blog
+isAvailableForNewContent: true
+label: Charles B2B - blog listing
+screenshotPath: ../images/template-previews/blog-index.png
+-->
+{% extends './layouts/base.html' %}
+
+<style type="text/css">
+  .blog-pagination{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .blog-pagination .blog-pagination__link{
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+  }
+  .blog-pagination .blog-pagination__link.blog-pagination__prev-link svg{
+    margin-right: 10px;
+  }
+  .blog-pagination .blog-pagination__link.blog-pagination__next-link svg{
+    margin-left: 10px;
+  }
+</style>
+
+{% block body %}
+<main class="body-container-wrapper press-page">
+  <div class="container-fluid body-container body-container--press body-container--hero c-hero-container">
+    <div class="row-fluid-wrapper">
+      <div class="row-fluid">
+
+        {# Blog author listing #}
+        {% if blog_author %}
+        <div class="blog-header">
+          <div class="blog-header__inner header-main-author">
+            {% if blog_author.avatar %}
+            <div class="blog-header__author-avatar" style="background-image: url('{{ blog_author.avatar }}');"></div>
+            {% endif %}
+            <div class="author-information">
+              <h1 class="blog-header__title">{{ blog_author.display_name }}</h1>
+              {% if blog_author.bio %}
+              <p class="blog-header__subtitle">{{ blog_author.bio }}</p>
+              {% endif %}
+              {% if blog_author.has_social_profiles %}
+              <div class="blog-header__author-social-links">
+                {% if blog_author.website %}
+                <a href="{{ blog_author.website }}" target="_blank" rel="noopener">
+                  {% icon
+                    name='link',
+                    purpose='semantic',
+                    style='SOLID',
+                    title='Follow me on my website',
+                    width='10'
+                  %}
+                </a>
+                {% endif %}
+                {% if blog_author.facebook %}
+                <a href="{{ blog_author.facebook }}" target="_blank" rel="noopener">
+                  {% icon
+                    name='facebook-f',
+                    purpose='semantic',
+                    style='SOLID',
+                    title='Follow me on Facebook',
+                    width='10'
+                  %}
+                </a>
+                {% endif %}
+                {% if blog_author.linkedin %}
+                <a href="{{ blog_author.linkedin }}" target="_blank" rel="noopener">
+                  {% icon
+                    name='linkedin-in',
+                    purpose='semantic',
+                    style='SOLID',
+                    title='Follow me on LinkedIn',
+                    width='10'
+                  %}
+                </a>
+                {% endif %}
+                {% if blog_author.twitter %}
+                <a href="{{ blog_author.twitter }}" target="_blank" rel="noopener">
+                  {% icon
+                    name='twitter',
+                    purpose='semantic',
+                    style='SOLID',
+                    title='Follow me on Twitter',
+                    width='10'
+                  %}
+                </a>
+                {% endif %}
+              </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% elif tag %}
+        {# End blog author listing #}
+
+        {# Blog tag listing #}
+        <div class="blog-header">
+          <div class="blog-header__inner">
+            <h5 class="blog-header__subtitle"><span id="hs_cos_wrapper_text" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text">charles Blog</span></h5>
+            <h1 class="blog-header__title">{{ page_meta.html_title|split(' | ')|last }}</h1>
+          </div>
+        </div>
+        {% else %}
+        {# End blog tag listing #}
+
+        {# Blog header #}
+        <div class="blog-header">
+          <div class="blog-header__inner">
+            <p class="blog-header__subtitle">{% text "text" label="Subtitle", value="charles blog" %}</p>
+            <h1 class="blog-header__title">{% rich_text "title_text" label="Title", value="cCom Center" %}</h1>
+            <p class="blog-header__intro">{% textarea "my_textarea" label="Intro", value="Lorem ipsum dolor sit amet." %}</p>
+          </div>
+        </div>
+        {% endif %}
+        {# End blog header #}
+      </div>
+    </div>
+    {# End section c-hero-container #}
+  </div>
+
+  <div class='container-fluid body-container body-container--press body-container--prime-content'>
+    <div class="row-fluid-wrapper">
+      <div class="row-fluid">
+        {% module "module_16625417793521" path="/charles-b2b/modules/news-snippet", label="News Promo Snippet" %}
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid body-container body-container--press">
+    <div class="row-fluid-wrapper">
+      <div class="row-fluid">
+
+        {# Blog listing section #}
+        <section class="blog-index">
+          
+          {% module "module_166255321504110" path="/charles-b2b/modules/posts-listing-select", label="Select Blogs" %}
+          {% if absolute_url is string_containing "wiki"  %}
+          {% module "module_168734636235119" path="/charles-b2b/modules/Wiki/Wiki block", label="Wiki block" %}
+          {% endif %}
+
+          <div class="blog-header__form">
+            {#  {% module "blog_subscribe_form" path="@hubspot/blog_subscribe",  title="" %} #}
+          </div>
+          
+          {% module "module_17072281440376" path="/charles-b2b/modules/features/QR Code Block", label="QR Code Block" %}
+          
+          {# {% rich_text "newschat_subscribe" label="Newschat CTA", value="Never miss an update?" %} #}
+          
+        </section>
+        {# End blog listing section #}
+
+        {# Blog pagination #}
+        {% if contents.total_page_count > 1 %}
+        <div class="blog-pagination" style="display:none;">
+          {% set page_list = [-2, -1, 0, 1, 2] %}
+          {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
+          {% elif contents.total_page_count - current_page_num == 0 %}{% set offset = -2 %}
+          {% elif current_page_num == 2 %}{% set offset = 1 %}
+          {% elif current_page_num == 1 %}{% set offset = 2 %}
+          {% else %}{% set offset = 0 %}{% endif %}
+          <a class="blog-pagination__link blog-pagination__prev-link {{ 'blog-pagination__prev-link--disabled' if !last_page_num }}" href="{{ blog_page_link(last_page_num) }}">
+            {% icon
+              name='chevron-left',
+              no_wrapper=True,
+              purpose='decorative',
+              style='SOLID',
+              width='13'
+            %}
+            Prev
+          </a>
+          {% for page in page_list %}
+          {% set this_page = current_page_num + page + offset %}
+          {% if this_page > 0 and this_page <= contents.total_page_count %}
+          <a class="blog-pagination__link blog-pagination__number-link {{ 'blog-pagination__link--active' if this_page == current_page_num }}" href="{{ blog_page_link(this_page) }}">{{ this_page }}</a>
+          {% endif %}
+          {% endfor %}
+          <a class="blog-pagination__link blog-pagination__next-link {{ 'blog-pagination__next-link--disabled' if !next_page_num }}" href="{{ blog_page_link(current_page_num + 1) }}">
+            Next
+            {% icon
+              name='chevron-right',
+              no_wrapper=True,
+              purpose='decorative',
+              style='SOLID',
+              width='13'
+            %}
+          </a>
+        </div>
+        {% endif %}
+        {# End blog pagination #}
+      </div>
+    </div>
+
+  </div>
+
+</main>
+{% endblock body %}
+
+<script type="text/javascript">
+  $('.blog-pagination').each(function () {
+    var t = $(this).text();
+    t = t.replace(/\foot$/, '');
+    $(this).text(t);
+  });
+</script>

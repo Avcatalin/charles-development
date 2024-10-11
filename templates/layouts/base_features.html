@@ -1,0 +1,88 @@
+<!--
+templateType: "none"
+isAvailableForNewContent: false
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page_meta.html_title }}</title>
+
+    {# {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %} #}
+    <link rel="shortcut icon" href="https://cdn.hello-charles.com/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.hello-charles.com/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.hello-charles.com/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.hello-charles.com/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://cdn.hello-charles.com/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://cdn.hello-charles.com/favicon/safari-pinned-tab.svg" color="#ccebfd">
+    <meta name="msapplication-TileColor" content="#fff171">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="{{ page_meta.meta_description }}">
+
+    {{ require_js('https://unpkg.com/@lottiefiles/lottie-player@0.5.1/dist/lottie-player.js') }}
+
+    {{ require_css(get_asset_url('../../css/main.css')) }}
+    {{ require_css(get_asset_url('../../css/swiper-bundle.min.css')) }}
+    {{ require_css(get_asset_url('../../css/slick.css')) }}
+    {{ require_css(get_asset_url('../../css/theme-overrides.css')) }}
+    {{ require_css(get_asset_url('/charles-b2b/css/advanced/chat_award.css')) }}
+    {{ require_css(get_asset_url('../../css/custom-refreshed.css')) }}
+    {{ require_js(get_asset_url('../../js/main.js'), { position: 'footer' }) }}
+    {{ require_js(get_asset_url('../../js/swiper-bundle.min.js')) }}
+
+    {{ standard_header_includes }}
+    <style type="text/css">
+      body {
+        overflow-x: hidden !important;
+      }
+      .page-overlay{
+        background-color: rgba(0,0,0,0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+      .page-overlay.active{
+        opacity: 1;
+        z-index: 998;
+      }
+      .navigation-primary .submenu.level-1 .menu-item .do-login{
+        background: #f3f3f3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Include Events Block -->
+    {% global_partial path='../partials/events-block.html' %}
+    <!-- end Include Events Block -->
+    <div class="body-wrapper {{ builtin_body_classes }}">
+      <div class="page-overlay"></div>
+      {% block header %}
+      {# {% global_partial path='../partials/topbar.html' %} #}
+      <div id="main-header-wrap">
+        <div id="main-page-header" class="page-header">
+          {% global_partial path='../partials/top-bar-module.html' %}
+          {% global_partial path='../partials/header_features.html' %}       
+        </div>
+      </div>
+      {% endblock header %}
+
+      {% block body %}
+      {% endblock body %}
+
+      {% block footer %}
+      {% global_partial path='../partials/footer.html' %}
+      {% endblock footer %}
+
+    </div>
+
+    {{ require_js(get_asset_url('../../js/slick.js')) }}
+    {{ require_js(get_asset_url('../../js/custom_refreshed.js')) }}
+    {{ require_js(get_asset_url('../../js/toc.js')) }}    
+    {{ standard_footer_includes }}
+  </body>
+</html>

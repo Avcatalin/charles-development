@@ -1,0 +1,148 @@
+[ {
+  "id" : "720c935a-badf-ddb3-7059-a17c886df72c",
+  "name" : "background_cta",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "225c2bb6-ee9d-2981-4a9e-dfcb1d2864a7",
+  "name" : "icon_features_cta",
+  "display_width" : null,
+  "label" : "Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/icon-cta.svg",
+    "alt" : "icon-cta",
+    "loading" : "lazy",
+    "width" : 78,
+    "height" : 60,
+    "max_width" : 78,
+    "max_height" : 60
+  }
+}, {
+  "id" : "9488975c-6674-5f32-cf2f-91125680ff4b",
+  "name" : "text_features_cta",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get a tour, tailored for your business"
+}, {
+  "id" : "4655c151-5b02-1df7-9f26-dbf6f8cf2a18",
+  "name" : "color_choice_cta_text",
+  "display_width" : null,
+  "label" : "Title - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "afd6a9fa-eab8-5b77-5552-039862464225",
+  "name" : "button_id",
+  "display_width" : null,
+  "label" : "Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "e98bb48f-a674-ee9e-8516-598d4867709f",
+  "name" : "text_book_demo_cta",
+  "display_width" : null,
+  "label" : "CTA Button - Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Book a demo"
+}, {
+  "id" : "1122a0fe-345c-1ded-46e2-e3e9ef67d81e",
+  "name" : "background_book_demo_cta",
+  "display_width" : null,
+  "label" : "CTA Button - Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F8EA6A",
+    "opacity" : 100
+  }
+}, {
+  "id" : "e816251e-07de-fd43-9416-2e3d52dfa4f5",
+  "name" : "cta_dark",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c67d66c1-a27c-e150-3489-f282e974e034",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "d08af72a-1790-f805-95e0-f437a15c8c8d",
+  "name" : "color_choice_book_demo_cta",
+  "display_width" : null,
+  "label" : "CTA Button - Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "296a465c-385a-1df1-8134-32b5f9d62729",
+  "name" : "page_url_features_cta",
+  "display_width" : null,
+  "label" : "URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 41001952809
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

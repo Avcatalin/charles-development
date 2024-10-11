@@ -1,0 +1,10 @@
+[ {
+  "id" : "652c3447-7396-63b6-18ac-7a8a14ee2639",
+  "name" : "simple_heading",
+  "display_width" : null,
+  "label" : "Simple heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>You may also be interested in...</h3>"
+} ]

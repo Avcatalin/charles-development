@@ -1,0 +1,235 @@
+[ {
+  "id" : "ec360246-72c5-f69f-45a2-06746a66c0ca",
+  "name" : "repeater",
+  "display_width" : null,
+  "label" : "Navigation Block",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "e2ef910d-d661-3279-0e6c-6dcf58cd3ce4",
+    "name" : "enable_title",
+    "display_width" : null,
+    "label" : "Enable title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "fc8d267d-bad6-3437-bfb8-edf150edd725",
+    "name" : "block_title",
+    "display_width" : null,
+    "label" : "Block title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Sample Title"
+  }, {
+    "id" : "a815fef8-84e9-cf52-bace-cb57d198abd1",
+    "name" : "navigation_items",
+    "display_width" : null,
+    "label" : "Navigation Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "a0828403-8435-a1e8-892f-0b51d343a237",
+      "name" : "icon",
+      "display_width" : null,
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://143291878.fs1.hubspotusercontent-eu1.net/hubfs/143291878/home-icon.svg",
+        "alt" : "home-icon",
+        "loading" : "lazy",
+        "width" : 24,
+        "height" : 24,
+        "max_width" : 24,
+        "max_height" : 24
+      }
+    }, {
+      "id" : "bd9b80eb-98d8-a2e8-ecc2-f11551030060",
+      "name" : "enable_internal_link",
+      "display_width" : null,
+      "label" : "Enable internal link",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "1c6c21f0-d54b-cb21-7806-4649787dbc0b",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link internal",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "ce5a09aa-2ed6-14c0-7e31-76959c461aa3",
+      "name" : "enable_external",
+      "display_width" : null,
+      "label" : "Enable external",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "1745402d-c761-bac8-6a76-bf140d695e09",
+      "name" : "enable_pro",
+      "display_width" : null,
+      "label" : "Enable PRO",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "ab099346-b882-f279-f3b5-ae9ddd0257f0",
+      "name" : "link_label",
+      "display_width" : null,
+      "label" : "Link label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "48c6f7ad-7e61-976e-1175-43afbf89dd80",
+      "name" : "link_id_api_call",
+      "display_width" : null,
+      "label" : "Link ID (API Call)",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "83ea4456-66f5-701c-b843-e12d10d4b48c",
+      "name" : "extra_class",
+      "display_width" : null,
+      "label" : "Extra class",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://143291878.fs1.hubspotusercontent-eu1.net/hubfs/143291878/home-icon.svg",
+        "alt" : "home-icon",
+        "loading" : "lazy",
+        "width" : 24,
+        "height" : 24,
+        "max_width" : 24,
+        "max_height" : 24
+      },
+      "enable_internal_link" : false,
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "enable_external" : false,
+      "enable_pro" : false
+    } ]
+  }, {
+    "id" : "f1292386-50b1-ca08-38a0-d0815b02705e",
+    "name" : "enable_notification",
+    "display_width" : null,
+    "label" : "Enable Notification",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "044b9d3e-c137-59b3-c9fa-02e584d37804",
+    "name" : "notification_block",
+    "display_width" : null,
+    "label" : "Notification Block",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><strong>Ready for Black Friday?</strong></p>\n<p>We prepared <br>something for you</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "enable_title" : false,
+    "block_title" : "Sample Title",
+    "navigation_items" : [ {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://143291878.fs1.hubspotusercontent-eu1.net/hubfs/143291878/home-icon.svg",
+        "alt" : "home-icon",
+        "loading" : "lazy",
+        "width" : 24,
+        "height" : 24,
+        "max_width" : 24,
+        "max_height" : 24
+      },
+      "enable_internal_link" : false,
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "enable_external" : false,
+      "enable_pro" : false
+    } ],
+    "enable_notification" : false,
+    "notification_block" : "<p><strong>Ready for Black Friday?</strong></p>\n<p>We prepared <br>something for you</p>"
+  } ]
+} ]

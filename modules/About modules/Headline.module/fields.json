@@ -1,0 +1,25 @@
+[ {
+  "id" : "af207c72-20cc-78bc-56fa-2421b97994d4",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<span><strong>Meet</strong></span> them all"
+}, {
+  "id" : "fb1678fa-2bd6-80b7-2417-41d8782f1fd8",
+  "name" : "classname",
+  "display_width" : null,
+  "label" : "Classname",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "optional for scrollify",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

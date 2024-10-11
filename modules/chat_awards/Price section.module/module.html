@@ -1,0 +1,34 @@
+<!-- pricing section start -->
+<div class="pricing">
+  <div class="container">
+    <div class="pricing_top">
+      <h2>{{ module.sub_title }} <img src="https://www.hello-charles.com/hubfs/chat_award/star.png" alt="star emoji"></h2>
+      <h1>{{ module.top_price }}</h1>
+      <h3>{{ module.price_text }}</h3>
+    </div>
+    <div class="pricing_down">
+      <!-- single -->
+      {% for item in module.block %}
+      <div class="single_priceing_item">
+        <div class="single_priceing_logo {% if loop.first %}priceing_one{% elif loop.last %}priceing_three{% else %}priceing_two{% endif %}">
+          <div class="boder_01"></div>
+          <div class="boder_02"></div>
+          <div class="boder_03"></div>
+          {% if loop.first %}
+          {% else %}
+          <div class="boder_04"></div>
+          {% endif %}
+          <img src="{{ item.image.src }}" alt="{{ item.image.alt }}">
+        </div>
+        <div class="pricing_desc">
+          <h1>{{ item.sub_title }}</h1>
+          <h2>{{ item.sub_text }}</h2>
+          {{ item.content }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+<!-- pricing section end -->

@@ -1,0 +1,179 @@
+[ {
+  "id" : "bg_img",
+  "name" : "bg_img",
+  "display_width" : null,
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "values",
+  "name" : "values",
+  "display_width" : null,
+  "label" : "Values",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "values.title",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "values.title",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Value Title"
+  }, {
+    "id" : "values.text",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : true,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "value text"
+  }, {
+    "id" : "values.icon",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null
+    }
+  }, {
+    "id" : "values.owner",
+    "name" : "owner",
+    "display_width" : null,
+    "label" : "Owner",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "values.owner.owner_name",
+      "name" : "owner_name",
+      "display_width" : null,
+      "label" : "Name",
+      "required" : true,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Name, Position"
+    }, {
+      "id" : "values.owner.avatar",
+      "name" : "avatar",
+      "display_width" : null,
+      "label" : "Avatar",
+      "required" : true,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group"
+  }, {
+    "id" : "values.colors",
+    "name" : "colors",
+    "display_width" : null,
+    "label" : "Colors",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "values.colors.bg_color",
+      "name" : "bg_color",
+      "display_width" : null,
+      "label" : "Background color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#FFF171",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "values.colors.text_color",
+      "name" : "text_color",
+      "display_width" : null,
+      "label" : "Text color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#845F2B",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "values.colors.border_color",
+      "name" : "border_color",
+      "display_width" : null,
+      "label" : "Border color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#EAD064",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "values.colors.inner_border_color",
+      "name" : "inner_border_color",
+      "display_width" : null,
+      "label" : "Inner border color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#845F2B",
+        "opacity" : 70
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Value #1"
+  } ]
+} ]

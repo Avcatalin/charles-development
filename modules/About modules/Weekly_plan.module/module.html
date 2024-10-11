@@ -1,0 +1,30 @@
+<div class="weekly_plan" style="background-color: {{ module.background.color }};">
+  <div class="container">
+    <div class="content">
+      {% for item in module.plan %}
+      <div class="block {% if item.switch_position %}switch{% endif %}">
+        <div class="text_part">
+          <h3> 
+            {{ item.sub_title }}
+          </h3>
+          <p>
+            {{ item.plan }}
+          </p> 
+        </div>
+        <div class="img_part">
+          <div>
+            {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+            {% if item.image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+            <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

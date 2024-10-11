@@ -1,0 +1,144 @@
+[ {
+  "id" : "a85112da-f879-e2d8-2197-8e3fc7b20256",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "43eb0f58-e31f-661b-00ed-1050c9828d99",
+    "name" : "partner_feature_background",
+    "display_width" : null,
+    "label" : "Partner Feature Background",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#00283B",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "partner_feature_background" : {
+      "color" : "#00283B",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "e1dac41b-1678-79ad-1e93-e7eae4fc1a1b",
+  "name" : "partner_logo",
+  "display_width" : null,
+  "label" : "Partner logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "8afb600b-f5a5-ea9b-476f-eda4130ef36e",
+  "name" : "intro_text",
+  "display_width" : null,
+  "label" : "Intro text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>More European brands are jumping into WhatsApp for <strong>more</strong>.</p>"
+}, {
+  "id" : "bc08e3ff-a7fd-130c-8988-4cdfba36d0f6",
+  "name" : "features_repeater",
+  "display_width" : null,
+  "label" : "Features Repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "1e5c8f9e-523d-4a43-d9e8-24f87c461036",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "f9062046-2ae8-4ae9-fb01-c5fe6eae221a",
+    "name" : "feature_text",
+    "display_width" : null,
+    "label" : "Feature text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "WhatsApp Product Finder"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "feature_text" : "WhatsApp Product Finder"
+  } ]
+}, {
+  "id" : "c5870981-aa21-f26c-fb4a-18b2b91546cc",
+  "name" : "more_url",
+  "display_width" : null,
+  "label" : "More URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "https://hello-charles.com",
+      "type" : "EXTERNAL"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "1b4fa592-8552-1038-8629-7fddc34ab8dd",
+  "name" : "more_label",
+  "display_width" : null,
+  "label" : "More label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get more info"
+} ]

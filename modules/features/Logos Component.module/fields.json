@@ -1,0 +1,40 @@
+[ {
+  "id" : "f7b0274d-84f4-4470-5f02-21ccde00bb26",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/about-you-logo.svg",
+    "alt" : "ABOUT YOU logo with black text on white background.",
+    "loading" : "lazy",
+    "width" : 178,
+    "height" : 82,
+    "max_width" : 178,
+    "max_height" : 82
+  } ]
+}, {
+  "id" : "f7bc7233-0797-5ad2-1dd0-c479cc351064",
+  "name" : "logo_width",
+  "display_width" : null,
+  "label" : "Logo Width",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "33.33%"
+} ]

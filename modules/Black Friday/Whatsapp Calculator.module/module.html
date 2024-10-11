@@ -1,0 +1,108 @@
+<div class="bf-whatsapp-calculator" id="bf-calculator-section">
+  <div class="container">
+    <div class="bf-calculator-wrapper">
+      <div class="calculator-header" style="background-image: url({{ module.header_background.src }})">
+        <div class="inner-flex">
+          <div class="heading">
+            {{ module.heading_title }}
+          </div>
+          <div class="heading-image">
+            {% if module.heading_image.src %}
+            {% set sizeAttrs = 'width="{{ module.heading_image.width }}" height="{{ module.heading_image.height }}"' %}
+            {% if module.heading_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.heading_image.width }}" height="{{ module.heading_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.heading_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.heading_image.max_width }}" height="{{ module.heading_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.heading_image.loading != 'disabled' ? 'loading="{{ module.heading_image.loading }}"' : '' %}
+            <img src="{{ module.heading_image.src }}" alt="{{ module.heading_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+        </div>
+        <!-- Sub Text -->
+        <span class="description">{{ module.heading_subtitle }}</span>
+      </div>
+      <div class="calculator-functional">
+        <div class="row-form">
+          <div class="bf-form">
+            <div class="form-intro-text">
+              {{ module.form_content.form_content }}
+            </div>
+            <!-- WA Subscriber base -->
+            <div class="form-group">
+              <div class="input-placeholder">
+                <input type="text" id="curr-sub-base" class="formated-number" placeholder="WhatsApp subscribers" oninput="formatInput(this)" />
+                <span>#</span>
+              </div>
+            </div>
+            <!-- Email Subscribers -->
+            <div class="form-group">
+              <label class="hide-label">Email subscribers</label>
+              <div class="input-placeholder">                
+                <input type="text" id="email-sub-base" class="formated-number" placeholder="Email subscriber" oninput="formatInput(this)" />
+                <span>#</span>
+              </div>
+            </div>
+            <!-- Website Visitors -->
+            <div class="form-group">
+              <label class="hide-label">Monthly website visitors</label>
+              <div class="input-placeholder">                
+                <input type="text" id="website-visitors" class="formated-number" placeholder="Monthly Website visitors" oninput="formatInput(this)" />
+                <span>#</span>
+              </div>
+            </div>
+            <!-- Range Input -->
+            <div class="form-group">
+              <label>When will you start with WhatsApp?</label>
+              <div class="range-wrapper">
+                <input type="range" step="20" id="date-range" onkeydown="event.preventDefault()" />
+                <ul class="range-dates" id="range-dates">
+                  <li>1.9.</li>
+                  <li>15.9.</li>
+                  <li>1.10.</li>
+                  <li>15.10.</li>
+                  <li>1.11.</li>
+                  <li>15.11.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bf-form-results">
+            <div class="inner-results">
+              <div class="result-one">
+                <label>Extra <b>BFCM subscribers</b></label>
+                <div id="calc-subscribers-results"></div>
+              </div>
+              <div class="result-two">
+                <label>Extra <b>BFCM revenue</b></label>
+                <div id="calc-amount-results"></div>
+              </div>
+              <div class="text-center">
+                <a href="#form-section" class="btn-get-started">Get Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function formatInput(inputElement) {
+    // Get the current cursor position
+//     const cursorPosition = inputElement.selectionStart;
+
+    // Get the input value and remove existing commas
+    let value = inputElement.value.replace(/,/g, '');
+
+    // Format the value with commas
+    value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+    // Update the input's value attribute
+    inputElement.value = value;
+
+    // Place the cursor at the end of the input
+    inputElement.setSelectionRange(value.length, value.length);
+  }
+</script>

@@ -1,0 +1,13 @@
+[ {
+  "id" : "aa0394e0-da77-5559-60d5-553477dbc452",
+  "name" : "related_articles_title",
+  "display_width" : null,
+  "label" : "Related Articles Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Related articles"
+} ]

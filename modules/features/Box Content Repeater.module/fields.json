@@ -1,0 +1,206 @@
+[ {
+  "id" : "e127b28d-2255-d5b5-5b21-036c7743f6ed",
+  "name" : "benefits_title",
+  "display_width" : null,
+  "label" : "Main Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "The numbers add up"
+}, {
+  "id" : "d98afb4d-a308-583b-52b2-e95c2ef559a3",
+  "name" : "color_title",
+  "display_width" : null,
+  "label" : "Main Title - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "5f9cc647-f81b-70d4-f323-1c8dd9f9bf01",
+  "name" : "benefit_box_group",
+  "display_width" : null,
+  "label" : "Boxes Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 3,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "e89fb4ff-a204-3564-4272-0c88251656a3",
+    "name" : "box_title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "3x"
+  }, {
+    "id" : "80f9c0f3-2b1a-5d0c-1536-33611b302e37",
+    "name" : "box_color_title",
+    "display_width" : null,
+    "label" : "Title - Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "6e818ab5-182b-680b-87a1-4100b3da90e8",
+    "name" : "box_subtitle_text",
+    "display_width" : null,
+    "label" : "Subtitle Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "better brand"
+  }, {
+    "id" : "0fa671e3-ba9d-2437-70db-c863b6509e29",
+    "name" : "box_subtitle_color",
+    "display_width" : null,
+    "label" : "Subtitle Text - Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#3A36DE",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "6d9b81d7-1dd5-ea0c-375f-c259c5aa5c4b",
+    "name" : "box_description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "You control the way your brand talks to customers, and the way it responds. You can get even get copywriters."
+  }, {
+    "id" : "804d8dd6-ee36-a739-ea53-d3f0445133a6",
+    "name" : "box_description_color",
+    "display_width" : null,
+    "label" : "Description - Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "box_title" : "3x",
+    "box_color_title" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    },
+    "box_subtitle_text" : "better brand",
+    "box_subtitle_color" : {
+      "color" : "#3A36DE",
+      "opacity" : 100
+    },
+    "box_description" : "You control the way your brand talks to customers, and the way it responds. You can get even get copywriters.",
+    "box_description_color" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  }, {
+    "box_title" : "3x",
+    "box_color_title" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    },
+    "box_subtitle_text" : "better brand",
+    "box_subtitle_color" : {
+      "color" : "#3A36DE",
+      "opacity" : 100
+    },
+    "box_description" : "You control the way your brand talks to customers, and the way it responds. You can get even get copywriters.",
+    "box_description_color" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  }, {
+    "box_title" : "3x",
+    "box_color_title" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    },
+    "box_subtitle_text" : "better brand",
+    "box_subtitle_color" : {
+      "color" : "#3A36DE",
+      "opacity" : 100
+    },
+    "box_description" : "You control the way your brand talks to customers, and the way it responds. You can get even get copywriters.",
+    "box_description_color" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  } ]
+}, {
+  "id" : "79eed468-9020-b216-350d-c828ddae26d2",
+  "name" : "benefits_bottom_content",
+  "display_width" : null,
+  "label" : "Bottom Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Journeys also makes good business sense. You save time, make sales and offer support after hours and have better control over what your brand says and how it says it. Plus you don’t need to hire as many customer agents to manage your WhatsApp conversations. &nbsp;&nbsp;"
+}, {
+  "id" : "81960d4c-e73f-8c44-1a13-dfa8f8f23523",
+  "name" : "box_benefits",
+  "display_width" : null,
+  "label" : "Section Spacing",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "717e4841-01e2-cf3c-8869-95831c798d23",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "addb2af1-a3be-5c21-b9e1-ff1a1b43d377",
+  "name" : "bottom_content_color",
+  "display_width" : null,
+  "label" : "Bottom Text - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+} ]

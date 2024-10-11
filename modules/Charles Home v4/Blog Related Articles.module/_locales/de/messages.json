@@ -1,0 +1,37 @@
+{
+  "name" : {
+    "message" : "Blog Related Articles",
+    "description" : null,
+    "placeholders" : null
+  },
+  "related_articles_title.default" : {
+    "message" : "Vielleicht interessierst du dich auch für...",
+    "description" : null,
+    "placeholders" : null
+  },
+  "related_articles_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "related_articles_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "related_articles_title.label" : {
+    "message" : "Related Articles Title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "related_articles_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "related_articles_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

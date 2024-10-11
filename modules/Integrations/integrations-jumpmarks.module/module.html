@@ -1,0 +1,28 @@
+<div class="integrations-jumpmarks-container" style="{{ module.style.spacing_field.css }}; max-width: {{ module.container_width }};">
+  {% for item in module.jumpmarks_repeater %}
+  <div class="integration-jumpmark" style="background: {{ item.jumpmark_background_color.css }};">
+    {% set href = item.jumpmark.url.href %}
+    {% if item.jumpmark.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href|escape_url }}"
+       {% if item.jumpmark.open_in_new_tab %}target="_blank"{% endif %}
+       {% if item.jumpmark.rel %}rel="{{ item.jumpmark.rel|escape_attr }}"{% endif %}
+       >
+      {% if item.jumpmark_icon.src %}
+      {% set sizeAttrs = 'width="{{ item.jumpmark_icon.width|escape_attr }}" height="{{ item.jumpmark_icon.height|escape_attr }}"' %}
+      {% if item.jumpmark_icon.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ item.jumpmark_icon.width|escape_attr }}" height="{{ item.jumpmark_icon.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+      {% elif item.jumpmark_icon.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ item.jumpmark_icon.max_width|escape_attr }}" height="{{ item.jumpmark_icon.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = item.jumpmark_icon.loading != 'disabled' ? 'loading="{{ item.jumpmark_icon.loading|escape_attr }}"' : '' %}
+      <img src="{{ item.jumpmark_icon.src|escape_url }}" alt="{{ item.jumpmark_icon.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="jumpmark-icon">
+      {% endif %}
+      <p class="jumpmark-label">
+        {{ item.jumpmark_label }}
+      </p>
+    </a>
+  </div>
+  {% endfor %}
+</div>

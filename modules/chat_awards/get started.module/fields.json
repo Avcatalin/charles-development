@@ -1,0 +1,46 @@
+[ {
+  "id" : "0591d0f7-0f85-4a8d-0d25-3c9fe4c260ea",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CHARLES <br> CHAT AWARDS "
+}, {
+  "id" : "49783020-98c3-672c-ad50-6bb5703f7a89",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Initial application only takes a few minutes."
+}, {
+  "id" : "ad1f79cf-ab1c-4d0f-dc2f-1878392cbbb5",
+  "name" : "bottom_image",
+  "display_width" : null,
+  "label" : "Bottom Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/Illustration%20Chat%20Award-1.png",
+    "alt" : "Illustration Chat Award-1",
+    "loading" : "lazy",
+    "width" : 3192,
+    "height" : 2144,
+    "max_width" : 3192,
+    "max_height" : 2144
+  }
+} ]

@@ -1,0 +1,254 @@
+[ {
+  "id" : "998160b6-59dd-1eb1-486e-ec81392c777f",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "681e1a46-fcc7-daa8-c96a-faab965e91e6",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : "https://www.hello-charles.com/hubfs/bg-omr.png",
+      "alt" : "bg-omr",
+      "width" : 3068,
+      "height" : 3067,
+      "max_width" : 2000,
+      "max_height" : 1999.348109517601,
+      "size_type" : "auto_custom_max"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "background_image" : {
+      "src" : "https://www.hello-charles.com/hubfs/bg-omr.png",
+      "alt" : "bg-omr",
+      "width" : 3068,
+      "height" : 3067,
+      "max_width" : 2000,
+      "max_height" : 1999.348109517601,
+      "size_type" : "auto_custom_max"
+    }
+  }
+}, {
+  "id" : "ce98dfbd-ef6f-376d-3f19-71d9f1111d9d",
+  "name" : "top_image",
+  "display_width" : null,
+  "label" : "Top Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/coins-group.png",
+    "alt" : "coins-group",
+    "loading" : "lazy",
+    "width" : 3390,
+    "height" : 703,
+    "max_width" : 2000,
+    "max_height" : 414.7492625368731
+  }
+}, {
+  "id" : "38a511af-7477-ba62-f70d-5358c24fe4b4",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Agenda"
+}, {
+  "id" : "978b0bcc-0628-7f67-d02f-1a46533e7442",
+  "name" : "agena_team_group",
+  "display_width" : null,
+  "label" : "Agena Team Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5ad09b1e-967d-ee54-4202-cdb8e925bd0d",
+    "name" : "agenda_team",
+    "display_width" : null,
+    "label" : "Agenda Team",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/agenda-team.png",
+      "alt" : "agenda-team",
+      "loading" : "lazy",
+      "width" : 392,
+      "height" : 350,
+      "max_width" : 392,
+      "max_height" : 350
+    }
+  }, {
+    "id" : "7e94b0ee-e52e-7d96-eced-662b6f6ebbdf",
+    "name" : "schedule",
+    "display_width" : null,
+    "label" : "Schedule",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "MAY 7: 14:00 - 16:30"
+  }, {
+    "id" : "bb8a1358-ce2c-ab2a-8808-f16fe1ad7031",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "OMR Masterclass - Expo Room"
+  }, {
+    "id" : "058beaab-8461-0a4a-a18d-bc47f35e3567",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>How WhatsApp changes your customer relationship status with Damian Minski and Yenny Cheung</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "agenda_team" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/agenda-team.png",
+      "alt" : "agenda-team",
+      "loading" : "lazy",
+      "width" : 392,
+      "height" : 350,
+      "max_width" : 392,
+      "max_height" : 350
+    },
+    "schedule" : "MAY 7: 14:00 - 16:30",
+    "title" : "OMR Masterclass - Expo Room",
+    "content" : "<p>How WhatsApp changes your customer relationship status with Damian Minski and Yenny Cheung</p>"
+  }
+}, {
+  "id" : "1969c431-c806-3447-2fc4-601a8db62550",
+  "name" : "agenda_day_one",
+  "display_width" : null,
+  "label" : "Agenda Day One",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/agenda-day-one.png",
+    "alt" : "agenda-day-one",
+    "loading" : "lazy",
+    "width" : 1232,
+    "height" : 3068,
+    "max_width" : 803.1290743155149,
+    "max_height" : 2000
+  }
+}, {
+  "id" : "a19f1698-5fc9-4528-146f-f01edcafb61f",
+  "name" : "agenda_day_two",
+  "display_width" : null,
+  "label" : "Agenda Day Two",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/agenda-omr-day-two.png",
+    "alt" : "agenda-omr-day-two",
+    "loading" : "lazy",
+    "width" : 1492,
+    "height" : 3212,
+    "max_width" : 929.016189290162,
+    "max_height" : 2000
+  }
+}, {
+  "id" : "5b3e55aa-1fb9-2d61-a257-5713a746e158",
+  "name" : "whitepaper_ad",
+  "display_width" : null,
+  "label" : "Whitepaper Ad",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/whitepaper-ad.png",
+    "alt" : "whitepaper-ad",
+    "loading" : "lazy",
+    "width" : 1324,
+    "height" : 908,
+    "max_width" : 1324,
+    "max_height" : 908
+  }
+}, {
+  "id" : "aa78d346-39aa-8614-174b-d6a02460933f",
+  "name" : "agenda_day_two_note",
+  "display_width" : null,
+  "label" : "Agenda Day Two Note",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "And many more gifts, merch and activities "
+}, {
+  "id" : "eaf86e46-47ee-57a8-9bfb-ac013f5e245c",
+  "name" : "bottom_coin",
+  "display_width" : null,
+  "label" : "Bottom Coin",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/security-coin.png",
+    "alt" : "security-coin",
+    "loading" : "lazy",
+    "width" : 532,
+    "height" : 530,
+    "max_width" : 532,
+    "max_height" : 530
+  }
+} ]

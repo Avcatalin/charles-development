@@ -1,0 +1,142 @@
+[ {
+  "id" : "0c1f4915-a33b-881b-5043-2af404ed226a",
+  "name" : "button_id",
+  "display_width" : null,
+  "label" : "Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "4c3afbec-2e9d-3163-9548-5816b6cec227",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : 41001952809,
+      "href" : null,
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "af793c0d-6434-f3ab-ce84-ccf3fe379ca4",
+  "name" : "button_label",
+  "display_width" : null,
+  "label" : "Button Label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get a demo"
+}, {
+  "id" : "7d289e08-5a69-59af-61fd-3ef6af358121",
+  "name" : "show_hide_button_icon",
+  "display_width" : null,
+  "label" : "Show/Hide Button Icon",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "8f393c14-3ecd-779a-3e8e-cc6ec55af146",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e429c72e-939a-2348-4b10-dea44659fb89",
+    "name" : "button_color",
+    "display_width" : null,
+    "label" : "Button Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#231f20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "d29cd3cf-1918-e0fa-323d-2eb7d2c6e260",
+    "name" : "button_background_color",
+    "display_width" : null,
+    "label" : "Button Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#231f20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "2f64386f-1e93-777f-6367-ac1ab68ae8e9",
+    "name" : "icon_color_choice",
+    "display_width" : null,
+    "label" : "Icon Color Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "white", "White" ], [ "dark", "Dark" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice"
+  }, {
+    "id" : "1515d9a0-123a-4c9f-1494-213bfa81b611",
+    "name" : "alignment",
+    "display_width" : null,
+    "label" : "Alignment",
+    "required" : false,
+    "locked" : false,
+    "type" : "textalignment",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "button_color" : {
+      "color" : "#231f20",
+      "opacity" : 100
+    },
+    "button_background_color" : {
+      "color" : "#231f20",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "5ff391c2-0d24-39d8-241c-cf71740deef8",
+  "name" : "button_icon",
+  "display_width" : null,
+  "label" : "Button Icon",
+  "required" : false,
+  "locked" : false,
+  "icon_set" : "fontawesome-5.14.0",
+  "type" : "icon",
+  "default" : { }
+}, {
+  "id" : "49bd398c-1ff4-8562-5c3c-05b0f9c738aa",
+  "name" : "container_width",
+  "display_width" : null,
+  "label" : "Container Width",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

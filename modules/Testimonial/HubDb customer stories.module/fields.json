@@ -1,0 +1,38 @@
+[ {
+  "id" : "3f34a2bd-81a1-0e5f-b1b9-8ab61fce59a5",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See our other cases"
+}, {
+  "id" : "2173a9b3-ce9f-516b-4ebb-a3d9cf84cc49",
+  "name" : "remove_tag",
+  "display_width" : null,
+  "label" : "Remove tag",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Woodboom", "Woodboom" ], [ "Holy Energy", "Holy Energy" ], [ "Maniko", "Maniko" ], [ "Snocks", "Snocks" ] ],
+  "multiple" : true,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : [ ]
+}, {
+  "id" : "0e3c97e3-932c-b21d-db89-54d9d767d09e",
+  "name" : "button_id",
+  "display_width" : null,
+  "label" : "Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

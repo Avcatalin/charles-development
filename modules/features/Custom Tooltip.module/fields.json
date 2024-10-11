@@ -1,0 +1,55 @@
+[ {
+  "id" : "93dcce82-9f5a-c2d4-fdac-77da7729112f",
+  "name" : "tooltip_image",
+  "display_width" : null,
+  "label" : "Tooltip Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/conversations-1.png",
+    "alt" : "conversations",
+    "loading" : "lazy",
+    "width" : 1146,
+    "height" : 762,
+    "max_width" : 1146,
+    "max_height" : 762
+  }
+}, {
+  "id" : "7eaeb5d2-1c96-cbcb-ab2b-c45ffd379659",
+  "name" : "tooltip_title",
+  "display_width" : null,
+  "label" : "Tooltip Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Journey's"
+}, {
+  "id" : "cacd3d26-4634-9a79-0c5a-82efe59551d2",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis velit eu justo rhoncus sagittis sed vitae lacus."
+}, {
+  "id" : "3ddb7087-c005-95ac-3360-f1ad2610f1e0",
+  "name" : "tooltip_background_color",
+  "display_width" : null,
+  "label" : "Tooltip Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+} ]

@@ -1,0 +1,43 @@
+<footer class="footer-block">    
+  <div class="container">
+    <h3 data-aos="fade-up"><span>Trusted by teams of </span>  20 to 2,000</h3>
+    <div class="logos-collection-wrapper" data-aos="fade-up">
+      {% if module.logos_collection_desktop.src %}
+	      {% set sizeAttrs = 'width="{{ module.logos_collection_desktop.width }}" height="{{ module.logos_collection_desktop.height }}"' %}
+	      {% if module.logos_collection_desktop.size_type == 'auto' %}
+		      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+	      {% elif module.logos_collection_desktop.size_type == 'auto_custom_max' %}
+		      {% set sizeAttrs = 'width="{{ module.logos_collection_desktop.max_width }}" height="{{ module.logos_collection_desktop.max_height }}" style="max-width: 100%; height: auto;"' %}
+	      {% endif %}
+	      {% set loadingAttr = module.logos_collection_desktop.loading != 'disabled' ? 'loading="{{ module.logos_collection_desktop.loading }}"' : '' %}
+	      <img class="desktop-img" src="{{ module.logos_collection_desktop.src }}" alt="{{ module.logos_collection_desktop.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+      
+      {% if module.logos_collection_tablet.src %}
+        {% set sizeAttrs = 'width="{{ module.logos_collection_tablet.width }}" height="{{ module.logos_collection_tablet.height }}"' %}
+        {% if module.logos_collection_tablet.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.logos_collection_tablet.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.logos_collection_tablet.max_width }}" height="{{ module.logos_collection_tablet.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+         {% set loadingAttr = module.logos_collection_tablet.loading != 'disabled' ? 'loading="{{ module.logos_collection_tablet.loading }}"' : '' %}
+        <img  class="tab-img" src="{{ module.logos_collection_tablet.src }}" alt="{{ module.logos_collection_tablet.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+      
+      
+      {% if module.logo_collection_mobile.src %}
+        {% set sizeAttrs = 'width="{{ module.logo_collection_mobile.width }}" height="{{ module.logo_collection_mobile.height }}"' %}
+        {% if module.logo_collection_mobile.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.logo_collection_mobile.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.logo_collection_mobile.max_width }}" height="{{ module.logo_collection_mobile.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+         {% set loadingAttr = module.logo_collection_mobile.loading != 'disabled' ? 'loading="{{ module.logo_collection_mobile.loading }}"' : '' %}
+        <img class="mobile-img" src="{{ module.logo_collection_mobile.src }}" alt="{{ module.logo_collection_mobile.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+    <div>
+      <a href="{{ module.case_studies.url.href }}" class="yellow-class">See our customer stories</a>
+    </div>
+  </div>
+</footer>

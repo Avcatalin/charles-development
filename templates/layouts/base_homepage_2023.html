@@ -1,0 +1,69 @@
+<!--
+templateType: "none"
+isAvailableForNewContent: false
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_meta.html_title }}</title>
+
+    {# {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %} #}
+    <link rel="shortcut icon" href="https://cdn.hello-charles.com/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.hello-charles.com/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.hello-charles.com/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.hello-charles.com/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://cdn.hello-charles.com/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://cdn.hello-charles.com/favicon/safari-pinned-tab.svg" color="#ccebfd">
+    <meta name="msapplication-TileColor" content="#fff171">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="{{ page_meta.meta_description }}">
+
+    {{ require_css(get_asset_url('../../css/main.css')) }}
+    {{ require_css(get_asset_url('../../css/theme-overrides.css')) }}
+    {{ require_css(get_asset_url('/charles-b2b/css/advanced/chat_award.css')) }}
+    {{ require_css(get_asset_url('../../css/custom-refreshed.css')) }}
+    
+    {{ standard_header_includes }}
+  </head>
+  <body class="main-body-homepage-2023">
+    <div class="body-wrapper body-homepage-2023 {{ builtin_body_classes }}">
+      <div class="page-overlay"></div>
+      {% block header %}
+      {# {% global_partial path='../partials/topbar.html' %} #}
+      <div id="main-header-wrap">
+        <div id="main-page-header" class="desktop page-header">
+          {% global_partial path='../partials/top-bar-module.html' %}
+          {% global_partial path='../partials/header_homepage_2023.html' %}       
+        </div>
+        <!-- Mobile Header -->
+        <div id="mobile-page-header" class="mobile page-header">
+          {% global_partial path='../partials/header_homepage_2023.html' %}       
+        </div>
+      </div>
+      {% endblock header %}
+
+      {% block body %}
+      {% endblock body %}
+
+      {% block footer %}
+      {% global_partial path='../partials/footer.html' %}
+      {% endblock footer %}
+
+      <!-- Back To Top -->
+      <div class="backtotop">
+        <div class="button-btt">
+          <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.79173 0.11811C5.62013 -0.0393701 5.37988 -0.0393701 5.20827 0.11811L0.128705 4.74803C-0.0429017 4.87401 -0.0429017 5.12598 0.128705 5.28346L0.815132 5.88189C0.952418 6.03937 1.22699 6.03937 1.3986 5.88189L5.48284 2.16535L9.6014 5.88189C9.77301 6.03937 10.0133 6.03937 10.1849 5.88189L10.8713 5.28346C11.0429 5.12598 11.0429 4.87402 10.8713 4.74803L5.79173 0.11811Z" fill="#221F20"/>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+    
+    {{ require_js( get_asset_url('../../js/homepage-custom-scripts.js'), { position: "footer" }) }}    
+
+    {{ standard_footer_includes }}
+  </body>
+</html>

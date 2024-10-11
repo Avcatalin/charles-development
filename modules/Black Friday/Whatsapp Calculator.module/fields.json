@@ -1,0 +1,88 @@
+[ {
+  "id" : "756891cc-752d-5ed6-91d0-fe5864d69829",
+  "name" : "heading_image",
+  "display_width" : null,
+  "label" : "Heading Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/whatsapp-calculator.png",
+    "alt" : "whatsapp-calculator",
+    "loading" : "lazy",
+    "width" : 569,
+    "height" : 592,
+    "max_width" : 569,
+    "max_height" : 592
+  }
+}, {
+  "id" : "0d13791c-156b-ef25-868b-f9983f38d53f",
+  "name" : "heading_subtitle",
+  "display_width" : null,
+  "label" : "Heading Subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "calculate your BFCM revenue from WhatsApp"
+}, {
+  "id" : "15845332-223f-208c-d3b4-e8d5dd85deac",
+  "name" : "heading_title",
+  "display_width" : null,
+  "label" : "Heading Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2><span>The bfcm <span data-hs-icon-hubl=\"true\" style=\"display: inline-block; fill: #33475B;\">{% icon icon_set=\"fontawesome-5.14.0\" name=\"What's App\" style=\"REGULAR\" height=\"14\" purpose=\"decorative\" title=\"What's App icon\" %}</span> whatsapp revenue calculator</span></h2>"
+}, {
+  "id" : "cc3820b4-b3c1-c684-1cac-1bcf5a5e2b07",
+  "name" : "header_background",
+  "display_width" : null,
+  "label" : "Header Background",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/dotted-canvas-bg-4.png",
+    "alt" : "dotted-canvas-bg-4",
+    "loading" : "lazy",
+    "width" : 1126,
+    "height" : 478,
+    "max_width" : 1126,
+    "max_height" : 478
+  }
+}, {
+  "id" : "bd0bc6a2-b5cb-557c-2d04-3f32c0d5b5d3",
+  "name" : "form_content",
+  "display_width" : null,
+  "label" : "Form Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "925e7d90-6eb8-7d54-2215-1018d9546ed5",
+    "name" : "form_content",
+    "display_width" : null,
+    "label" : "Form Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><strong>Current WA subscriber base<br></strong></p>\n<p>(if you dont have WhatsApp subscribers yet just leave this blank)</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "form_content" : "<p><strong>Current WA subscriber base<br></strong></p>\n<p>(if you dont have WhatsApp subscribers yet just leave this blank)</p>"
+  }
+} ]

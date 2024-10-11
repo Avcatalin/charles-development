@@ -1,0 +1,297 @@
+[ {
+  "id" : "fb4aa165-ab9c-dc51-747e-b46b41d1593d",
+  "name" : "reverse_columns",
+  "display_width" : null,
+  "label" : "Reverse columns",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "50261546-1c81-768c-138d-f759113a1c04",
+  "name" : "align_center",
+  "display_width" : null,
+  "label" : "Align Center",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "acad917c-659c-93e1-ac93-1826eb7d758c",
+  "name" : "event_logo",
+  "display_width" : null,
+  "label" : "Event Logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/leaders-chat-retail.webp",
+    "alt" : "leaders-chat-retail",
+    "loading" : "lazy",
+    "width" : 356,
+    "height" : 270,
+    "max_width" : 356,
+    "max_height" : 270
+  }
+}, {
+  "id" : "cf7fdd09-94be-8a08-42c5-3dbf273b1ad7",
+  "name" : "event_title",
+  "display_width" : null,
+  "label" : "Event Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "the community that KNOWS retail like you."
+}, {
+  "id" : "1a9e471a-54b0-020b-2e25-bd4cfa7656e7",
+  "name" : "label_group",
+  "display_width" : null,
+  "label" : "Label Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b5494c49-b3f5-e37b-88c0-398cc0d8ba12",
+    "name" : "activate_label",
+    "display_width" : null,
+    "label" : "Activate Label",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "95e360c3-dd3c-6de9-8c11-33f5f6c377f6",
+    "name" : "label_text",
+    "display_width" : null,
+    "label" : "Label Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "HAMBURG"
+  }, {
+    "id" : "259d71fb-e153-9abf-6101-c07d0353c170",
+    "name" : "label_text_color",
+    "display_width" : null,
+    "label" : "Label Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#3E47D7",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "e9a1aeb2-4a56-c3ce-46c9-34360dcc05d3",
+    "name" : "label_background_color",
+    "display_width" : null,
+    "label" : "Label Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#AAAFFF",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "activate_label" : false,
+    "label_text" : "HAMBURG",
+    "label_text_color" : {
+      "color" : "#3E47D7",
+      "opacity" : 100
+    },
+    "label_background_color" : {
+      "color" : "#AAAFFF",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "a6dff62c-61b9-c352-92c2-d928472cd169",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+}, {
+  "id" : "0352e50b-81e8-956c-960c-c454557026b8",
+  "name" : "event_image",
+  "display_width" : null,
+  "label" : "Event Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/hamburg-elbphilharmonie-noch.webp",
+    "alt" : "hamburg-elbphilharmonie-noch",
+    "loading" : "lazy",
+    "width" : 677,
+    "height" : 324,
+    "max_width" : 677,
+    "max_height" : 324
+  }
+}, {
+  "id" : "c4b363c2-411a-1798-f16b-632c768300a9",
+  "name" : "select_form",
+  "display_width" : null,
+  "label" : "Select Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "1ba7a115-426b-4530-b09e-ddefef1d2d96",
+    "response_type" : "inline",
+    "message" : "<p>Thanks for submitting the form. You will receive a double opt-in email with a link to confirm your subscription. Please click confirm to receive future emails from Charles.</p>",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "c723d9af-7542-da1e-3634-16217b339ec0",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "56f31d4f-4e53-9c02-1fef-f2eb77ad8bf5",
+    "name" : "background_spacing",
+    "display_width" : null,
+    "label" : "Background Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "0fdf00b0-6f52-8dd7-9211-9770e93bb9f6",
+    "name" : "section_spacing",
+    "display_width" : null,
+    "label" : "Section Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "660271e1-db41-88a7-795e-f4e0671d5eda",
+    "name" : "background_dotted",
+    "display_width" : null,
+    "label" : "Background Dotted",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/dotted-canvas-bg-Jan-18-2024-10-48-59-5115-AM.png",
+      "alt" : "Dotted canvas background",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 1822,
+      "max_width" : 1920,
+      "max_height" : 1822
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "background_spacing" : { },
+    "section_spacing" : { },
+    "background_dotted" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/dotted-canvas-bg-Jan-18-2024-10-48-59-5115-AM.png",
+      "alt" : "Dotted canvas background",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 1822,
+      "max_width" : 1920,
+      "max_height" : 1822
+    }
+  }
+}, {
+  "id" : "96fb108c-c82a-3699-28ef-774e891292b3",
+  "name" : "section_background",
+  "display_width" : null,
+  "label" : "Section Background",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.hello-charles.com/hubfs/background-section-blured.png",
+    "alt" : "background-section-blured",
+    "width" : 2122,
+    "height" : 2122,
+    "max_width" : 2000,
+    "max_height" : 2000,
+    "size_type" : "auto_custom_max"
+  }
+}, {
+  "id" : "8f3c203a-74e0-2fd9-a100-5fb2c932dfa7",
+  "name" : "reverse_items_order",
+  "display_width" : null,
+  "label" : "Reverse Items Order",
+  "inline_help_text" : "Enable only if you need to change the order of elements in the column.",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "001576ed-88a6-b074-99f3-1cbe83a9e0b3",
+  "name" : "logo_order_number",
+  "display_width" : null,
+  "label" : "Logo Order Number",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "370f917e-ca81-5015-dad3-14092331dc07",
+  "name" : "title_order_number",
+  "display_width" : null,
+  "label" : "Title Order Number",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "20d6d14a-afa7-5222-0b61-9a9982d077e0",
+  "name" : "description_order_number",
+  "display_width" : null,
+  "label" : "Description Order Number",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

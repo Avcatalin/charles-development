@@ -1,0 +1,205 @@
+[ {
+  "id" : "d9fdc56f-43df-8c04-4e42-e859cbd1d46d",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFF171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "06e044a5-f5f0-5094-0fd7-574d7dd9d2b6",
+  "name" : "icon_left_column",
+  "display_width" : null,
+  "label" : "Column Left - Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/icon-column-left.png",
+    "alt" : "icon-column-left",
+    "loading" : "lazy",
+    "width" : 241,
+    "height" : 279,
+    "max_width" : 241,
+    "max_height" : 279
+  }
+}, {
+  "id" : "8eea671d-604f-5fc9-c7c7-309a99c7eb91",
+  "name" : "title_content",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Like autopilot, but personal"
+}, {
+  "id" : "715c1093-8eb6-21cc-7f24-71ec18c876bf",
+  "name" : "title_color",
+  "display_width" : null,
+  "label" : "Title - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "7cc56605-c8e2-f6af-362d-2abeac25c9b7",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Every human is different, and so is every Journey. You may automate the conversation, but it still sounds human because your customers lead the way and the answers are written by you, not a bot.&nbsp;"
+}, {
+  "id" : "1d027bf0-08b8-782d-2858-38a283c4de29",
+  "name" : "content_color",
+  "display_width" : null,
+  "label" : "Description - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "9e66e255-c386-bba2-2268-c4c00f93f444",
+  "name" : "steps_bottom",
+  "display_width" : null,
+  "label" : "Steps Bottom",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ac278705-35bd-c234-738e-efd910df3600",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "a970274b-48b8-54b2-9a9e-780078883c8e",
+    "name" : "backgroundimage_field",
+    "display_width" : null,
+    "label" : "Background image",
+    "required" : false,
+    "locked" : false,
+    "type" : "backgroundimage",
+    "default" : {
+      "background_position" : "BOTTOM_RIGHT",
+      "background_size" : "cover",
+      "src" : "https://www.hello-charles.com/hubfs/Chatins_MainIcon.png"
+    }
+  }, {
+    "id" : "572f8ce5-9716-132c-7c1b-8c2fe449093b",
+    "name" : "margin_left_spacing",
+    "display_width" : null,
+    "label" : "Margin Left Spacing",
+    "inline_help_text" : "Column Left Image Spacing",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number"
+  }, {
+    "id" : "c67f10b7-6c90-06e3-6a9c-a51e15a5290d",
+    "name" : "margin_right_spacing",
+    "display_width" : null,
+    "label" : "Margin Right Spacing",
+    "inline_help_text" : "Column Left Image Spacing",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number"
+  }, {
+    "id" : "8fa4302d-0e0c-cdee-5db0-2a04763bd603",
+    "name" : "column_left_image_spacing",
+    "display_width" : null,
+    "label" : "Column Left Image Spacing",
+    "inline_help_text" : "Column Left Image Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { },
+    "backgroundimage_field" : {
+      "background_position" : "BOTTOM_RIGHT",
+      "background_size" : "cover",
+      "src" : "https://www.hello-charles.com/hubfs/Chatins_MainIcon.png"
+    }
+  }
+}, {
+  "id" : "08f23072-7d84-4973-2554-f8e68376481b",
+  "name" : "column_right_image",
+  "display_width" : null,
+  "label" : "Column Right - Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/right-column-image.png",
+    "alt" : "right-column-image",
+    "loading" : "lazy",
+    "width" : 423,
+    "height" : 678,
+    "max_width" : 423,
+    "max_height" : 678
+  }
+}, {
+  "id" : "3ea3411c-6a8f-9a83-4f54-a14e1214fcf4",
+  "name" : "show_wave_lines",
+  "display_width" : null,
+  "label" : "Enable wave line",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "5380a27c-6230-acd3-3cb1-65abe0500c8b",
+  "name" : "column_background_mobile",
+  "display_width" : null,
+  "label" : "Column Background Mobile",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/chat-icon-mobile.svg",
+    "alt" : "chat-icon-mobile",
+    "loading" : "lazy",
+    "width" : 259,
+    "height" : 273,
+    "max_width" : 259,
+    "max_height" : 273
+  }
+} ]

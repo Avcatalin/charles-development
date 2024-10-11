@@ -1,0 +1,25 @@
+<div class="columns-container">
+  <div class="row">
+    <!-- Column repeater -->
+    {% for item in module.column_repeater %}
+    <div class="column {{ item.column_width }}" style="{{ module.style.column_content_alignment.css }}">
+      {% if item.image.src %}
+      {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+      {% if item.image.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif item.image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+      <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+      <p class="title">
+        {{ item.title }}
+      </p>
+      <div class="content">
+        {{ item.content }}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

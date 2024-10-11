@@ -1,0 +1,54 @@
+<div id="features" class="container no-padding" style="max-width: {{ module.set_container_width }};">
+  <div class="features-repeater-wrapper {{ module.class_background_color }}">
+    {% for item in module.feature_block %}
+    <div class="feature-block-item {% if item.reverse_order %} reverse-order {% endif %}">
+      <div class="image-block">
+        {% if item.image_field.src %}
+        {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+        {% if item.image_field.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.image_field.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+        <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}      
+      </div>
+
+      <div class="content-block {% if item.reverse_order %} reverse-order {% endif %}">
+        <!-- ICON -->
+        <div class="icon-wrapper">
+          <div class="icon-circle">
+            {% if item.icon.src %}
+            {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+            {% if item.icon.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.icon.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+            <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+        </div>
+        <!-- end ICON -->
+        <div class="content-text">
+          <h3>{{ item.title }}</h3>
+          {% inline_rich_text field="content" value="{{ item.content }}" %}      
+          <!-- PAGE REDIRECT BUTTON -->
+          {% set href = item.button_url.url.href %}
+          {% if item.button_url.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if item.button_url.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.button_url.rel %}rel="{{ item.button_url.rel }}"{% endif %}
+             >
+            {{ item.button_text }}
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,148 @@
+[ {
+  "id" : "116ece42-7f80-15c1-4e60-8c3e08b67212",
+  "name" : "hero",
+  "display_width" : null,
+  "label" : "Hero",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ca8a8bfb-0428-8995-cbc6-1542549f650b",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "“It’s Better To have a conversation.”"
+  }, {
+    "id" : "fea4976d-e84a-fbe0-80e5-a623ac8b3c08",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Learn how the <span>rising eCom fashion company</span> leveraged WhatsApp's possibilities to get their customers into chat and let them stay in contact with the brand</p>"
+  }, {
+    "id" : "c4fb7641-5c11-7250-c252-075697b35f42",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "image",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 2
+    },
+    "children" : [ {
+      "id" : "2d5c95f4-8495-5523-4a95-e41523f9054f",
+      "name" : "background_image",
+      "display_width" : null,
+      "label" : "Background image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08675%201.png",
+        "alt" : "DSC08675 1",
+        "loading" : "lazy",
+        "width" : 1445,
+        "height" : 870,
+        "max_width" : 1445,
+        "max_height" : 870
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "background_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08675%201.png",
+        "alt" : "DSC08675 1",
+        "loading" : "lazy",
+        "width" : 1445,
+        "height" : 870,
+        "max_width" : 1445,
+        "max_height" : 870
+      }
+    }, {
+      "background_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08675%201.png",
+        "alt" : "DSC08675 1",
+        "loading" : "lazy",
+        "width" : 1445,
+        "height" : 870,
+        "max_width" : 1445,
+        "max_height" : 870
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "title" : "“It’s Better To have a conversation.”",
+    "content" : "<p>Learn how the <span>rising eCom fashion company</span> leveraged WhatsApp's possibilities to get their customers into chat and let them stay in contact with the brand</p>",
+    "image" : [ {
+      "background_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08675%201.png",
+        "alt" : "DSC08675 1",
+        "loading" : "lazy",
+        "width" : 1445,
+        "height" : 870,
+        "max_width" : 1445,
+        "max_height" : 870
+      }
+    }, {
+      "background_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08675%201.png",
+        "alt" : "DSC08675 1",
+        "loading" : "lazy",
+        "width" : 1445,
+        "height" : 870,
+        "max_width" : 1445,
+        "max_height" : 870
+      }
+    } ]
+  }
+}, {
+  "id" : "d1cc8100-0231-57a2-ca18-22bafb7b7ba8",
+  "name" : "classname",
+  "display_width" : null,
+  "label" : "Classname",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "placeholder for scrollify",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "b0527165-8438-eaa5-37c0-037e170e44b8",
+  "name" : "header_tag",
+  "display_width" : null,
+  "label" : "Header Tag",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "h1", "H1" ], [ "h2", "H2" ], [ "h3", "H3" ], [ "h4", "H4" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice"
+} ]

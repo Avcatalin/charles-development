@@ -1,0 +1,18 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 102659610835,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../css/swiper-bundle.min.css",
+    "name" : "swiper-bundle.min.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../js/swiper-bundle.min.js",
+    "name" : "swiper-bundle.min.js"
+  } ],
+  "label" : "Integrations Carousel",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,419 @@
+<!--
+templateType: "none"
+isAvailableForNewContent: false
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page_meta.html_title }}</title>
+    {% if content.language.languageTag == "de-de" %}
+    <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "charles | WhatsApp-Lösung für Unternehmen | DSGVO-konform",
+      "alternateName" : "charles",
+      "url" : "https://www.hello-charles.de/"
+    }
+  </script>
+    {% elif content.language.languageTag == "it-it" %}
+    <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "charles | Soluzione WhatsApp per le aziende | Conforme al GDPR",
+      "alternateName" : "charles",
+      "url" : "https://www.hello-charles.it/"
+    }
+  </script>
+    {% else %}
+    <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "charles | WhatsApp solution for business | GDPR compliant",
+      "alternateName" : "charles",
+      "url" : "https://www.hello-charles.com/"
+    }
+  </script>
+    {% endif %}
+    {# {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %} #}
+    <link rel="shortcut icon" href="https://cdn.hello-charles.com/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.hello-charles.com/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.hello-charles.com/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.hello-charles.com/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://cdn.hello-charles.com/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://cdn.hello-charles.com/favicon/safari-pinned-tab.svg" color="#ccebfd">
+    <meta name="msapplication-TileColor" content="#fff171">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="{{ page_meta.meta_description }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">  
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  as="style" onload="this.onload=null;this.rel='stylesheet'" media="all"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">
+
+    <style type="text/css">
+      .page-overlay{
+        background-color: rgba(0,0,0,0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+      .page-overlay.active{
+        opacity: 1;
+        z-index: 998;
+      }
+    </style>
+
+    {{ require_css(get_asset_url('../../css/main.css'), { async: true }) }}
+    {{ require_css(get_asset_url('../../css/theme-overrides.css'), { async: true }) }}
+    {{ require_css(get_asset_url('/charles-b2b/css/advanced/chat_award.css'), { async: true }) }}
+    {{ require_css(get_asset_url('../../css/advanced/advanced.css'), { async: true }) }}
+    {{ require_css( get_asset_url('/charles-b2b/css/custom-refreshed.css'), { async: true }) }}
+
+    {{ require_js(get_asset_url('../../js/main.js'), { position: "footer", async: true }) }}
+    {{ require_js(get_asset_url('../../js/custom_refreshed.js'), { position: "footer", async: true }) }}
+    {{ require_js(get_asset_url('../../js/advanced/lottie-charles.js'), { position: "footer" }) }} 
+    {{ require_js(get_asset_url('../../js/slick.js'), { position: "footer" } ) }}
+
+    {{ standard_header_includes }}
+  </head>
+  <body>
+    <!-- Include Events Block -->
+    {% global_partial path='../partials/events-block.html' %}
+    <!-- end Include Events Block -->
+    <div class="body-wrapper {{ builtin_body_classes }}">
+      {% block header %}
+      {# {% global_partial path='../partials/topbar.html' %} #}
+      <div id="main-header-wrap">
+        <div id="main-page-header" class="page-header">
+          {% global_partial path='../partials/top-bar-module.html' %}
+          {% global_partial path='../partials/header_refreshed.html' %}       
+        </div>
+      </div>
+      {% endblock header %}
+
+      {% block body %}
+      {% endblock body %}
+
+      {% block footer %}
+      {% global_partial path='../partials/footer.html' %}
+      {% endblock footer %}
+
+    </div>
+
+    <div class="sidebar-point">
+      <ul>
+        <li>
+          <a href="#newsletter-section" data-id="newsletter-section">
+            <img src="https://www.hello-charles.com/hubfs/advanced/Marketing-Icon.svg" alt="Marketing">
+            <span>Newsletter</span>
+          </a>
+        </li>
+        <li>
+          <a href="#sales-section" data-id="sales-section">
+            <img src="https://www.hello-charles.com/hubfs/advanced/Sales-Icon.svg" alt="Sales">
+            <span>Sales</span>
+          </a>
+        </li>
+        <li>
+          <a href="#service-section" data-id="service-section">
+            <img src="https://www.hello-charles.com/hubfs/advanced/Support-Icon.svg" alt="Support">
+            <span>Service</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    <script type="module">
+      // lottie animation
+      jQuery(document).ready(function($) {
+        $('[data-loop]').each(function() {
+          var loop = $(this).data('loop')
+          var lottie = $(this).get(0).getLottie()
+          if (loop && lottie) {
+            lottie.playSegments(loop, true)
+          }
+        })
+      });
+
+      jQuery(document).ready(function(){
+        var touch   = $('#resp-menu');
+        var menu    = $('.menu');
+
+        $(touch).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle();
+        });
+
+        $(window).resize(function(){
+          var w = $(window).width();
+          if(w > 767 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+          }
+        });
+
+      });
+
+      $('.testimonials-slider-container').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        fade: true,
+        cssEase: 'linear'
+      });
+      $('.app-info-slider-block').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        fade: true,
+        cssEase: 'linear'
+      });
+
+      $('.app-info-slider-block').on('afterChange', function(event, slick, currentSlide, nextSlide, index){
+
+        var dataId = $('.app-info-slider-block .slick-active').attr("data-slick-index");
+        console.log(dataId);
+        if(dataId == 0){
+          $('.app-info-section').removeClass('slide-1');
+          $('.app-info-section').removeClass('slide-2');
+          $('.app-info-section').removeClass('slide-3');
+
+        }
+        else{
+          $('.app-info-section').removeClass('slide-1');
+        }
+        if(dataId == 1){
+          $('.app-info-section').addClass('slide-1');
+
+        }
+        else{
+          $('.app-info-section').removeClass('slide-1');
+        }
+        if(dataId == 2){
+          $('.app-info-section').addClass('slide-2');
+
+        }
+        else{
+          $('.app-info-section').removeClass('slide-2');
+        }
+        if(dataId == 3){
+          $('.app-info-section').addClass('slide-3');
+        }
+        else{
+          $('.app-info-section').removeClass('slide-3');
+        }
+        //$('.slick-active .img-hover1 img').click();
+
+      });
+
+      $('.app-notification-slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        fade: true,
+        cssEase: 'linear',
+        asNavFor: '.app-notification-thubnail'
+      });
+
+      $('.app-notification-thubnail').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        adaptiveHeight: true,
+        asNavFor: '.app-notification-slider',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+      });
+
+      $('.sidebar-point ul li a').click(function (e) {
+        var linkHref = $(this).attr("href");
+        var idElement = linkHref.substr(linkHref.indexOf("#"));
+        $('html, body').animate({
+          scrollTop: $(idElement).offset().top + 20
+        }, 1000);
+        return false;
+      });
+      $('a.redirection-link').click(function (e) {
+        var linkHref = $(this).attr("href");
+        var idElement = linkHref.substr(linkHref.indexOf("#"));
+        $('html, body').animate({
+          scrollTop: $(idElement).offset().top + 20
+        }, 1000);
+        return false;
+      });
+
+      $(window).scroll(function(){
+        const offset = window.innerHeight * 0.5;
+        const scrollTop = $(this).scrollTop() + offset
+        if (scrollTop >= $('#newsletter-section').offset().top && scrollTop < $('#sales-section').offset().top) {
+
+          $('a[data-id="newsletter-section"]').parent().addClass('newClass');
+          $('body').addClass('section-1-start');
+        }
+        else{
+          $('a[data-id="newsletter-section"]').parent().removeClass('newClass');
+          $('body').removeClass('section-1-start');
+        }
+
+        if (scrollTop > $('.newssletter-row-2').offset().top) {
+          $('.sidebar-point').addClass('open-sidebar');
+        } else {
+          $('.sidebar-point').removeClass('open-sidebar');
+        }
+
+        if (scrollTop >= $('#sales-section').offset().top && scrollTop < $('#service-section').offset().top) {
+          $('a[data-id="newsletter-section"]').parent().removeClass('newClass')
+          $('a[data-id="sales-section"]').parent().addClass('newClass');
+          $('body').removeClass('section-1-start').addClass('section-2-start');
+
+        }
+        else{
+          $('a[data-id="sales-section"]').parent().removeClass('newClass');
+          $('body').removeClass('section-2-start');
+
+        }
+
+        if (scrollTop >= $('#service-section').offset().top && scrollTop < $('#service-section').offset().top + $('#service-section').height()) {
+          $('a[data-id="sales-section"]').parent().removeClass('newClass');
+          $('a[data-id="service-section"]').parent().addClass('newClass');
+          $('body').removeClass('section-2-start').addClass('section-3-start');
+        }
+        else{
+          $('a[data-id="service-section"]').parent().removeClass('newClass');
+          $('body').removeClass('section-3-start');
+        }
+
+        if($(this).scrollTop() >= $('.relationships-block-main').offset().top){
+          $('.sidebar-point').removeClass('open-sidebar');
+        }
+      });
+
+      $(document).ready(function(){
+        var imgNew1 = $('.img-hover1 img').attr('data-ImgNew');
+        var imgOld1 = $('.img-hover1 img').attr('data-ImgOld');
+        var imgphone1 = $('.img-hover1 img').attr('data-phoneImg');
+
+        var imgNew2 = $('.img-hover2 img').attr('data-ImgNew');
+        var imgOld2 = $('.img-hover2 img').attr('data-ImgOld');
+        var imgphone2 = $('.img-hover2 img').attr('data-phoneImg');
+
+        var imgNew3 = $('.img-hover3 img').attr('data-ImgNew');
+        var imgOld3 = $('.img-hover3 img').attr('data-ImgOld');
+        var imgphone3 = $('.img-hover3 img').attr('data-phoneImg');
+
+
+        $('.app-notification-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+          // $('.app-notification-slider').slick('refresh');
+          // $('.app-notification-thubnail').slick('refresh');
+        });
+
+        $('.app-notification-slider').on('afterChange', function(event, slick, currentSlide, nextSlide, index){
+          imgNew1 = $('.slick-current .img-hover1 img').attr('data-ImgNew');
+          imgOld1 = $('.slick-current .img-hover1 img').attr('data-ImgOld');
+          imgphone1 = $('.slick-current .img-hover1 img').attr('data-phoneImg');
+
+          imgNew2 = $('.slick-current .img-hover2 img').attr('data-ImgNew');
+          imgOld2 = $('.slick-current .img-hover2 img').attr('data-ImgOld');
+          imgphone2 = $('.slick-current .img-hover2 img').attr('data-phoneImg');
+
+          imgNew3 = $('.slick-current .img-hover3 img').attr('data-ImgNew');
+          imgOld3 = $('.slick-current .img-hover3 img').attr('data-ImgOld');
+          imgphone3 = $('.slick-current .img-hover3 img').attr('data-phoneImg');
+
+
+          var dataId = $('.app-notification-slider .slick-active').attr("data-slick-index");
+          console.log(dataId);
+          if(dataId == 0){
+            $('.app-notification-section').addClass('slider-1');
+            $('.app-notification-section').addClass('slider-2');
+            $('.app-notification-section').addClass('slider-3');
+
+          }
+          else{
+            $('.app-notification-section').removeClass('slider-1');
+          }
+          if(dataId == 1){
+            $('.app-notification-section').addClass('slider-1');
+
+          }
+          else{
+            $('.app-notification-section').removeClass('slider-1');
+          }
+          if(dataId == 2){
+            $('.app-notification-section').addClass('slider-2');
+
+          }
+          else{
+            $('.app-notification-section').removeClass('slider-2');
+          }
+          if(dataId == 3){
+            $('.app-notification-section').addClass('slider-3');
+          }
+          else{
+            $('.app-notification-section').removeClass('slider-3');
+          }
+          //$('.slick-active .img-hover1 img').click();
+
+        });
+
+        $(".img-hover img").mouseenter(function() {
+          $('.img-hover').removeClass('active-img');
+          $(this).parent().addClass('active-img');
+
+          if($(this).parent('.img-hover1').hasClass('active-img')){
+            $('.slick-current .img-hover1 img').attr('src',imgNew1);
+            $('.slick-current .img-hover2 img').attr('src',imgOld2);
+            $('.slick-current .img-hover3 img').attr('src',imgOld3);
+
+            $('.slick-current .main-phone-img-section').attr('src',imgphone1);
+          }
+          if($(this).parent('.img-hover2').hasClass('active-img')){
+            $('.slick-current .img-hover2 img').attr('src',imgNew2);
+            $('.slick-current .img-hover1 img').attr('src',imgOld1);
+            $('.slick-current .img-hover3 img').attr('src',imgOld3);
+            $('.slick-current .main-phone-img-section').attr('src',imgphone2);
+          }
+          if($(this).parent('.img-hover3').hasClass('active-img')){
+
+            $('.slick-current .img-hover3 img').attr('src',imgNew3);
+            $('.slick-current .img-hover1 img').attr('src',imgOld1);
+            $('.slick-current .img-hover2 img').attr('src',imgOld2);
+            $('.slick-current .main-phone-img-section').attr('src',imgphone3);
+          }
+
+        });
+      });
+    </script>
+    
+    {{ standard_footer_includes }}
+  </body>
+</html>

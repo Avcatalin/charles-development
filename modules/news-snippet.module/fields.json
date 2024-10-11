@@ -1,0 +1,166 @@
+[ {
+  "id" : "title",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Lorem Ipsum Headline"
+}, {
+  "id" : "category",
+  "name" : "category",
+  "display_width" : null,
+  "label" : "Category",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "cCom News"
+}, {
+  "picker" : "image",
+  "id" : "image",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Title Image",
+  "required" : false,
+  "locked" : false,
+  "type" : "file"
+}, {
+  "id" : "img_has_round_corners",
+  "name" : "img_has_round_corners",
+  "display_width" : null,
+  "label" : "Enable Image Round Corners",
+  "inline_help_text" : "Shows a border and shaddow around the image.",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "picker" : "image",
+  "id" : "icon",
+  "name" : "icon",
+  "display_width" : null,
+  "label" : "Icon",
+  "required" : false,
+  "locked" : false,
+  "type" : "file"
+}, {
+  "id" : "excerpt",
+  "name" : "excerpt",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut... "
+}, {
+  "id" : "class",
+  "name" : "class",
+  "display_width" : null,
+  "label" : "CSS Class",
+  "inline_help_text" : "Give the element extra css classes.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "button",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "button.text",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Click here"
+  }, {
+    "id" : "button.link",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG", "EMAIL_ADDRESS" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "button.text_color",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "button.bg_color",
+    "name" : "bg_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "text" : "Click here",
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_color" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    },
+    "bg_color" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    }
+  }
+} ]

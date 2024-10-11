@@ -1,0 +1,22 @@
+<style> 
+    .dev-upload--{{ name }} {
+        {{ module.style.spacing_field.css }};
+    }
+
+    @media screen and (max-width: 768px) {
+        .dev-upload--{{ name }} {
+            {{ module.style.mobile_spacing.css }};
+        }
+    }
+</style>
+
+<section class="dev-upload dev-upload--{{ name }}">
+    <div class="container">
+        <div class="heading">
+            {{ module.heading }}
+        </div>
+        <div class="description">
+            {{ module.description }}
+        </div>
+    </div>
+</section>

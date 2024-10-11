@@ -1,0 +1,284 @@
+[ {
+  "id" : "04dee545-8623-6c26-4019-fadedeb84117",
+  "name" : "content_group",
+  "display_width" : null,
+  "label" : "Content Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "083a7d30-e217-e70e-61fc-d6e1c020e268",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "READY FOR <br>#OMR24?"
+  }, {
+    "id" : "d315fda4-a4fb-f95b-62cc-a28206e2e02c",
+    "name" : "label_text",
+    "display_width" : null,
+    "label" : "Label Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "MEET US @A1 F08!"
+  }, {
+    "id" : "fac51e6b-3fe8-11c7-e5d5-ba66e57f9a7a",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Last year, we were&nbsp;rocking WhatsApp marketing&nbsp;with our customers. This year we want to double our efforts and provide you two days packed with insightful content from our pioneers who decided to stay one chat ahead with WhatsApp Marketing.</p>\n<p>Drop at to&nbsp;our booth A1 F08&nbsp;for talks with brands in the industry (Katjes, Dermalogica, Lampenwelt, Der Touristik to mention a few), insights into our full-stack integrations (Emarsys, Klaviyo, Zendesk, and more), charles merch (obviously), don’t forget to say hi to our booth neighbor Mawave – and discover how bright the future can be.</p>\n<p>Check out our agenda and stay up to date via WhatsApp - let’s rock another OMR together 😍</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "heading" : "READY FOR <br>#OMR24?",
+    "label_text" : "MEET US @A1 F08!",
+    "content" : "<p>Last year, we were&nbsp;rocking WhatsApp marketing&nbsp;with our customers. This year we want to double our efforts and provide you two days packed with insightful content from our pioneers who decided to stay one chat ahead with WhatsApp Marketing.</p>\n<p>Drop at to&nbsp;our booth A1 F08&nbsp;for talks with brands in the industry (Katjes, Dermalogica, Lampenwelt, Der Touristik to mention a few), insights into our full-stack integrations (Emarsys, Klaviyo, Zendesk, and more), charles merch (obviously), don’t forget to say hi to our booth neighbor Mawave – and discover how bright the future can be.</p>\n<p>Check out our agenda and stay up to date via WhatsApp - let’s rock another OMR together 😍</p>"
+  }
+}, {
+  "id" : "763cb719-5a73-d648-4e46-5ae4decb198b",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b12b7688-c271-f5bb-7c33-a4a1b2045896",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/dotted-omr-canvas.png",
+      "alt" : "dotted-omr-canvas",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 1355,
+      "max_width" : 1920,
+      "max_height" : 1355
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "background_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/dotted-omr-canvas.png",
+      "alt" : "dotted-omr-canvas",
+      "loading" : "lazy",
+      "width" : 1920,
+      "height" : 1355,
+      "max_width" : 1920,
+      "max_height" : 1355
+    }
+  }
+}, {
+  "id" : "5ae8efe4-d8a5-54ea-d2d7-6e47197e28c3",
+  "name" : "qr_group",
+  "display_width" : null,
+  "label" : "QR Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "95307fe3-14cb-af97-9364-36cd603bbea9",
+    "name" : "bell_icon",
+    "display_width" : null,
+    "label" : "Bell icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/bell-1.svg",
+      "alt" : "bell-1",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 40,
+      "max_width" : 36,
+      "max_height" : 40
+    }
+  }, {
+    "id" : "ae79f72e-0b8b-b84d-286d-15311c8deaf6",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Want to keep up with our OMR activities? Scan now!"
+  }, {
+    "id" : "b9ac1187-2cf1-011f-5502-7d34124b9dd4",
+    "name" : "arrow_down",
+    "display_width" : null,
+    "label" : "Arrow down",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/arrow-big-down.svg",
+      "alt" : "arrow-big-down",
+      "loading" : "lazy",
+      "width" : 68,
+      "height" : 95,
+      "max_width" : 68,
+      "max_height" : 95
+    }
+  }, {
+    "id" : "f3ca8be6-5b3f-e520-ad84-1ba36b7d6bd7",
+    "name" : "qr_code",
+    "display_width" : null,
+    "label" : "QR Code",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/qr-code-1.svg",
+      "alt" : "qr-code-1",
+      "loading" : "lazy",
+      "width" : 319,
+      "height" : 311,
+      "max_width" : 319,
+      "max_height" : 311
+    }
+  }, {
+    "id" : "19675aaa-398b-c96c-1581-03a3792e59b4",
+    "name" : "mobile_url",
+    "display_width" : null,
+    "label" : "Mobile URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://api.whatsapp.com/send/?phone=+4916093888242&text=Keep%20me%20posted%20on%20everything%20happening%20at%20the%20charles%20booth%20during%20OMR!%20",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "179862b2-413c-d55c-7dba-8857a72dcd46",
+    "name" : "mobile_button",
+    "display_width" : null,
+    "label" : "Mobile Button",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://www.hello-charles.com/hubfs/mobile-button.png",
+      "alt" : "mobile-button",
+      "loading" : "lazy",
+      "width" : 656,
+      "height" : 194,
+      "max_width" : 288,
+      "max_height" : 85
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "bell_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/bell-1.svg",
+      "alt" : "bell-1",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 40,
+      "max_width" : 36,
+      "max_height" : 40
+    },
+    "text_field" : "Want to keep up with our OMR activities? Scan now!",
+    "arrow_down" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/arrow-big-down.svg",
+      "alt" : "arrow-big-down",
+      "loading" : "lazy",
+      "width" : 68,
+      "height" : 95,
+      "max_width" : 68,
+      "max_height" : 95
+    },
+    "qr_code" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/qr-code-1.svg",
+      "alt" : "qr-code-1",
+      "loading" : "lazy",
+      "width" : 319,
+      "height" : 311,
+      "max_width" : 319,
+      "max_height" : 311
+    },
+    "mobile_url" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://api.whatsapp.com/send/?phone=+4916093888242&text=Keep%20me%20posted%20on%20everything%20happening%20at%20the%20charles%20booth%20during%20OMR!%20",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "mobile_button" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://www.hello-charles.com/hubfs/mobile-button.png",
+      "alt" : "mobile-button",
+      "loading" : "lazy",
+      "width" : 656,
+      "height" : 194,
+      "max_width" : 288,
+      "max_height" : 85
+    }
+  }
+}, {
+  "id" : "71c24e16-3c8f-0189-2302-352c864533ee",
+  "name" : "agenda_content",
+  "display_width" : null,
+  "label" : "Agenda Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p class=\"agenda-wrapp\" style=\"text-align: center;\"><img src=\"https://www.hello-charles.com/hubfs/calendar-alt-1.svg\" loading=\"lazy\" alt=\"calendar-alt-1\"> <span>The agenda</span></p>\n<img src=\"https://www.hello-charles.com/hubfs/arrow-big-down.svg\" loading=\"lazy\" alt=\"arrow-big-down\" style=\"margin-left: auto; margin-right: auto; display: block;\">"
+} ]

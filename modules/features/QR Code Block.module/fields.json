@@ -1,0 +1,157 @@
+[ {
+  "id" : "fd4abcbf-3283-9164-3db5-23d9c1e9daeb",
+  "name" : "qr_code_image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto_custom_max",
+    "src" : "https://www.hello-charles.com/hubfs/QR.svg",
+    "alt" : "QR",
+    "loading" : "lazy",
+    "width" : 78,
+    "height" : 60,
+    "max_width" : 250,
+    "max_height" : 192
+  }
+}, {
+  "id" : "badc6d10-48e6-43db-7912-0148e3a328f3",
+  "name" : "qr_code_title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See how it feels"
+}, {
+  "id" : "12f3c956-3cc4-98b9-f51e-6ec5bb955600",
+  "name" : "title_color",
+  "display_width" : null,
+  "label" : "Title - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "839ed87d-e0dc-413f-cee1-efb8db5a5704",
+  "name" : "qr_code_content",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "SCAN to take a journey ON <span style=\"display: flex; align-items: center;\"><img src=\"https://www.hello-charles.com/hubfs/whatsapp-icon-1.svg\" alt=\"whatsapp-icon-1\" loading=\"lazy\" style=\"width: 38px;\" width=\"38\"><span>WHATSAPP</span></span>"
+}, {
+  "id" : "653ca84d-5096-53e4-c0bc-565d946a4e49",
+  "name" : "qr_code",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "de752dd2-3585-42b0-6383-de7cbcb38571",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "1bb1a960-5e82-a82c-da4a-347081198012",
+  "name" : "content_color",
+  "display_width" : null,
+  "label" : "Description - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "43b08a22-3ae4-c76e-ca8d-bd32ec6066c6",
+  "name" : "mobile_cta_green_url",
+  "display_width" : null,
+  "label" : "CTA Button - URL",
+  "inline_help_text" : "Set URL for mobile button CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "page",
+  "default" : 41001952809
+}, {
+  "id" : "2f7d3728-c28a-d5e6-4285-ece4ad91efe9",
+  "name" : "mobile_cta_background_color",
+  "display_width" : null,
+  "label" : "CTA Button - Background Color",
+  "inline_help_text" : "Set background color for mobile button CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#00C40A",
+    "opacity" : 100
+  }
+}, {
+  "id" : "6311c7a2-e450-3f4b-e268-6169a81dbffe",
+  "name" : "mobile_cta_text",
+  "display_width" : null,
+  "label" : "CTA Button - Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "TRY IT OUT"
+}, {
+  "id" : "6544567a-fbc5-aca9-f8c3-4c6d48a5f352",
+  "name" : "mobile_cta_text_color",
+  "display_width" : null,
+  "label" : "CTA Button - Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b096fb6d-cd7f-15c6-5574-6a18c67a36c3",
+  "name" : "mobile_cta",
+  "display_width" : null,
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG", "CALL_TO_ACTION" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "http://wa.link/vlacci",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : true
+  }
+} ]

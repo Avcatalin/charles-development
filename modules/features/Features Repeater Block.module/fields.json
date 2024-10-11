@@ -1,0 +1,166 @@
+[ {
+  "id" : "17a91853-93dd-f22f-8cd2-d91a71052df8",
+  "name" : "feature_block",
+  "display_width" : null,
+  "label" : "Feature Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "f89b8ec6-5a62-ca6f-6d37-261555118871",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "a904aa17-ef70-52da-4feb-fdde3d9fac8f",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "6b9283f0-bca4-b4ff-c68d-ca1a99a1025a",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Chatins"
+  }, {
+    "id" : "6a09360c-41f1-d2a3-cd28-3f5807fb74ad",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "This explains why it’s growth in 3 lines with up to 3000 monthly free outbound messages. This explains why it’s growth in 3 lines with."
+  }, {
+    "id" : "2e24bbf4-1c3c-2cec-8563-3a9238ee5391",
+    "name" : "button_url",
+    "display_width" : null,
+    "label" : "Button URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "e441539f-c012-ce6f-09bf-2b168c22309b",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Learn more"
+  }, {
+    "id" : "add69aeb-7df6-a892-27fc-71a68aecb897",
+    "name" : "reverse_order",
+    "display_width" : null,
+    "label" : "Reverse Order",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "title" : "Chatins",
+    "content" : "This explains why it’s growth in 3 lines with up to 3000 monthly free outbound messages. This explains why it’s growth in 3 lines with.",
+    "button_url" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_text" : "Learn more",
+    "boolean_field" : false
+  } ]
+}, {
+  "id" : "faa06960-d2bf-be96-02df-7112b2e14cea",
+  "name" : "set_container_width",
+  "display_width" : null,
+  "label" : "Set Container Width",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "1160px"
+}, {
+  "id" : "38cd2da7-ab25-0060-5387-e38784aef315",
+  "name" : "class_background_color",
+  "display_width" : null,
+  "label" : "Class Background Color",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "blue-gradient"
+} ]

@@ -1,0 +1,82 @@
+{% if module.show_department %}
+<div class="scrollify">
+  <div class="about_department " style="background-image: url({{ module.department.background_image.src }}); background-color: {{ module.department.background_color.color }};  ">
+    <span class="overlay_part" style="background-image: url({{ module.department.background_image.src }}); background-color: {{ module.department.background_color.color }};  "></span>
+    <div class="container">
+      <h2>
+        {{ module.department.title }}
+      </h2>
+      <p>
+        {{ module.department.department_content }}
+      </p>
+      {% if module.show_logo %}
+      <div class="logo_block">
+        {% for item in module.department.block %}
+        <div class="block">
+          <div>
+            {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+            {% if item.icon.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.icon.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+            <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          </div>
+          <p class="desktop_text">
+            {{ item.sub_text }}
+          </p>
+          <p class="mobile_text">
+            {{ item.mobile_text }}
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="headline_block">
+    <div class="container">
+      <h2>
+        {{ module.department.bottom_headline }}
+      </h2>
+    </div>
+  </div>
+</div>
+{% endif %}
+{% for item in module.content_block %}
+<div class="repeat_content_block scrollify" id="{{ item.id_name }}" style="background-color: {{ item.background_color.color }}; background-image: url({{ item.background_image.src }});">
+  <div class="container">
+    <div class="content">
+      <div class="left_part">
+        <img src="{{ item.left_image.src }}" alt="{{ item.left_image.alt }}">
+      </div>
+      <div class="right_part">
+        <h3 style="color: {{ item.title_color.color }}">
+          {{ item.title }}
+        </h3>
+        <h4 style="color: {{ item.body_text_color.color }};">
+          {{ item.sub_title }}
+        </h4>
+        <p style="color: {{ item.body_text_color.color }};">
+          {{ item.content }}
+        </p>
+        <div class="number_block">
+          {% for num in item.number_block %}
+          <div class="item">
+            <p style="color: {{ item.body_text_color.color }};">
+              <span style="color: {{ item.body_text_color.color }};">{{ num.number }}</span>{{ num.sufix }}
+            </p>
+            <span style="color: {{ item.body_text_color.color }};">{{ num.bottom_text }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        {% if item.button_text != "" %}
+        <a href="{{ item.button_link.href }}"  style="color: {{ item.button_text_color.color }}; background-color: {{ item.button_background.color }}">{{ item.button_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

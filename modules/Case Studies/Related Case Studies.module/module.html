@@ -1,0 +1,23 @@
+<div class="related_section" style="background-color: {{ module.style.color_field.css }};">
+  <div class="content-wrapper">
+    <div class="content">
+      {% if module.show_section_title %}
+        <p class="hubdb_title">{{ module.title }}</p>
+      {% endif %}      
+      <div class="blocks">
+        {% for item in module.case_study_row %}
+          <div class="block">
+            <img src="{{ item.columns.photo.url }}" alt="{{ item.columns.name }}">
+            <p class="hubdb_client_name">{{ item.columns.name }}</p>
+            <p>{{ item.columns.content }}</p>
+            {% if item.columns.photo.url == true %}
+            <div class="case_block">
+              <a href="{{ item.columns.button_link }}" class="c-button bg-white">Read more</a>
+            </div>   
+            {% endif %}
+          </div>
+        {% endfor %}        
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,141 @@
+[ {
+  "id" : "54ba45d5-d5bd-a681-9a0d-5c9d41003975",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "3- steps to get started and we will be there all the way"
+}, {
+  "id" : "bd691dd8-2a0e-e8ec-25d6-7660ed225b1e",
+  "name" : "main_image",
+  "display_width" : null,
+  "label" : "Main image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto_custom_max",
+    "src" : "https://www.hello-charles.com/hubfs/steps-go-live.png",
+    "alt" : "steps-go-live",
+    "loading" : "lazy",
+    "width" : 1352,
+    "height" : 2764,
+    "max_width" : 675,
+    "max_height" : 1380
+  }
+}, {
+  "id" : "3ee24e33-b2d7-fe6c-bdd0-cc5003c7a211",
+  "name" : "link",
+  "display_width" : null,
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "cf6c5dd9-22eb-a563-f6ae-dc5d7d2e6dc6",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Need the Fitting  Enterprise BlueprintWhitepaper? "
+}, {
+  "id" : "654231a3-a27c-f7c4-7d4b-76fef6ab99d1",
+  "name" : "whitepapers",
+  "display_width" : null,
+  "label" : "Whitepapers",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/whitepapers.png",
+    "alt" : "whitepapers",
+    "loading" : "lazy",
+    "width" : 1533,
+    "height" : 1457,
+    "max_width" : 1533,
+    "max_height" : 1457
+  }
+}, {
+  "id" : "046a7e50-78c9-ea4b-f77f-511f42b03c3d",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6b3765cc-36e8-2944-1bff-8a015099392d",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : {
+      "margin" : {
+        "top" : {
+          "value" : null,
+          "units" : null
+        },
+        "bottom" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : {
+      "margin" : {
+        "top" : {
+          "value" : null,
+          "units" : null
+        },
+        "bottom" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  }
+}, {
+  "id" : "e8c6d31f-0eda-f2b4-343b-fe4f0caa9554",
+  "name" : "bottom_content",
+  "display_width" : null,
+  "label" : "Bottom Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "We understand the complexity of custom integrations. An entire team of API experts at charles is set up to connect your integrations"
+} ]

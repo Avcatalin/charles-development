@@ -1,0 +1,11 @@
+{
+  "extra_classes" : "widget-type-linked_image",
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "master_language" : "en",
+  "icon" : "https://storage.googleapis.com/charles-cdn/hubspot/charles_icon.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 102659610823,
+  "label" : "Image",
+  "is_available_for_new_content" : true
+}

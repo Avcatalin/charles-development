@@ -1,0 +1,21 @@
+<!--
+templateType: global_partial
+label: Website header testimonial
+-->
+<header id="main-page-header" class="fixed top-0 left-0 right-0 px-4 h-20 flex flex-no-wrap items-center">
+  <div class="page-header--logo h-10">
+    {% module 'site_logo' path='@hubspot/logo' %}
+  </div>
+
+  <div class="flex-grow"></div>
+
+  <div class="page-header--nav-wrap" id="main-nav">
+    {% module 'navigation-primary' path='../../modules/menu-section', label='Primary navigation' %}
+  </div>
+  <div class="page-header--burger-menu tablet:hidden desktop:hidden mobile:block">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>

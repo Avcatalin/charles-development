@@ -1,0 +1,16 @@
+<a href="{{ module.url_field }}" target="_blank" class="get_started_resource_top">
+  {% if module.front_icon.src %}
+  {% set sizeAttrs = 'width="{{ module.front_icon.width|escape_attr }}" height="{{ module.front_icon.height|escape_attr }}"' %}
+  {% if module.front_icon.size_type == 'auto' %}
+  {% set sizeAttrs = 'width="{{ module.front_icon.width|escape_attr }}" height="{{ module.front_icon.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+  {% elif module.front_icon.size_type == 'auto_custom_max' %}
+  {% set sizeAttrs = 'width="{{ module.front_icon.max_width|escape_attr }}" height="{{ module.front_icon.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+  {% endif %}
+  {% set loadingAttr = module.front_icon.loading != 'disabled' ? 'loading="{{ module.front_icon.loading|escape_attr }}"' : '' %}
+  <img src="{{ module.front_icon.src|escape_url }}" alt="{{ module.front_icon.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="typie">
+  {% endif %}
+  <span>{{ module.button_label }}</span>
+  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.4736 12.2812C15.6299 12.125 15.6299 11.9062 15.4736 11.75L10.9111 7.125C10.7549 6.96875 10.5049 6.96875 10.3799 7.125L9.75488 7.75C9.59863 7.875 9.59863 8.125 9.75488 8.28125L13.4424 12L9.75488 15.75C9.59863 15.9062 9.59863 16.125 9.75488 16.2812L10.3799 16.9062C10.5049 17.0625 10.7549 17.0625 10.9111 16.9062L15.4736 12.2812Z" fill="#221F20"/>
+  </svg>
+</a>

@@ -1,0 +1,26 @@
+<div class="partners-block" style="{{ module.style.spacing_field.css }}">
+  <div class="container">
+    <div class="partners-heading">
+      {{ module.partners_heading }}
+      <i></i>
+    </div>
+
+    <!-- Partners Logo Repeater -->
+    <div class="partners-list-block">
+      {% for item in module.partners_logo_list %}
+      <div class="partner-logo">
+        {% if item.partner_logo.src %}
+        {% set sizeAttrs = 'width="{{ item.partner_logo.width }}" height="{{ item.partner_logo.height }}"' %}
+        {% if item.partner_logo.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.partner_logo.width }}" height="{{ item.partner_logo.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.partner_logo.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.partner_logo.max_width }}" height="{{ item.partner_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.partner_logo.loading != 'disabled' ? 'loading="{{ item.partner_logo.loading }}"' : '' %}
+        <img src="{{ item.partner_logo.src }}" alt="{{ item.partner_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="fade-in">
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+<!--
+    templateType: blog_post
+    isAvailableForNewContent: true
+    label: Blog post Resource Hub
+-->
+{% extends './layouts/base_resources_hub.html' %}
+{% block body %}
+<main class="body-container-wrapper resources-hub single-resource-article">
+  <div class="container resources-container">
+    <div class="row">
+      <!-- Navbar -->
+      <div class="resources-sidebar">
+        <a href="/" class="logo">
+          <img src="https://www.hello-charles.com/hubfs/Resources%20Hub/charles-logo.png" alt="charles"  />
+        </a>
+
+        <!-- Repeater Navigation -->
+        <div class="resources-navigation">
+          <!-- Navigation block -->
+          {% module "module_171586092342238" path="/charles-b2b/modules/Resources Hub/resource-hub-navigation-global", label="resource-hub-navigation-global" %}
+          <!-- Button CTA -->
+          {% module "module_171586121175857" path="/charles-b2b/modules/Resources Hub/resource-hub-btn-global", label="resource-hub-btn-global" %}
+        </div>
+      </div>
+      <!-- Contemt -->
+      <div class="resources-content">       
+        <div class="resource-main-content">
+          <!-- Search & Filter -->
+          <div class="search-filter-container">
+            <div class="resource-hub-search-input">
+              {% module "module_171015737628233" path="/charles-b2b/modules/Resources Hub/resource-hub-search", label="resource-hub-search" %}
+            </div>
+            <!-- Filter tags -->
+            <div class="top-filter-tags">
+              {% module "module_17092052881681" path="/charles-b2b/modules/Resources Hub/filter-tags", label="filter-tags" %}
+            </div>
+          </div>
+          
+          <!-- Content Container Loading -->
+          <div class="loading-container">
+            <div class="single-article-header">
+              <div class="header-col first">
+                <h1>
+                  {{ content.page_title|replace("| charles", "") }}
+                </h1>
+                <div class="author_block">
+                  <div class="author_img">
+                    <img src="{{ content.blog_post_author.avatar }}" alt="{{ content.blog_post_author.avatar.alt }}" width="50" height="50" loading="lazy">
+                  </div>
+                  <div class="author_name">
+                    <p>
+                      By <b>{{ content.blog_post_author.display_name }}</b>
+                    </p>
+                    <p>
+                      <i>{{ content.blog_post_author.bio }}</i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="header-col second">
+                <div class="meta_info">
+                  {% if content.tag_list %}
+                  <div class="blog-post__tags">            
+                    {% for tag in content.tag_list %}
+                    <span class="blog-post__tag-link dynamic-color">{{ tag.name }}</span>{% if not loop.last %}&nbsp;{% endif %}
+                    {% endfor %}
+                  </div>
+                  {% endif %}
+                </div>  
+                <div class="post_excerpt">{{ content.post_summary }}</div>
+              </div>
+            </div>
+            <div class="resource-hub-featured-image">
+              <img src="{{ content.featured_image }}">
+            </div>
+            
+            <div class="resource-article-container">
+              <div class="content-column">
+                {{ content.post_body }}
+              </div>
+              <div class="jump-to-column">
+                
+              </div>
+            </div>
+      
+            <div id="overlay" class="overlay"></div>
+          </div>
+          
+          <!-- Related articles -->
+          <div class="related_articles resource-related">
+            <div class="content-wrapper">
+              {% module "module_17029178477164" path="/charles-b2b/modules/Charles Home v4/Blog Related Articles", label="Blog Related Articles" %}
+
+              <div class="content">
+                {% set found_posts = 0 %}
+                {% for topic in content.topic_list|map('slug') if found_posts <= 3 %}
+                {% set tag_posts = blog_recent_tag_posts("default", topic, 4) %}
+                {% for post in tag_posts if found_posts <= 3 %}
+                {% if content.id != post.id %}
+                <div class="block">
+                  <div class="featured_img">
+                    <a href="{{ post.absolute_url }}">
+                      <img src="{{ resize_image_url(post.featured_image, 350, 222, 350) }}" alt="{{ post.title }}" width="350" height="222" loading="lazy">
+                    </a>
+                  </div>
+                  <p class="related-title-no-tag">
+                    <a href="{{ post.absolute_url }}">{{ post.title|replace(" | charles", "") }}</a>
+                  </p>
+                  <p class="meta_info">
+                    {{ post.meta_description }}
+                  </p>
+                  <p class="author_date" style="display:none;">
+                    <span>{{ post.blog_post_author.display_name }}</span>, 
+                    <span>{{ post.publish_date_localized }}</span>
+                  </p>
+                  <a href="{{ post.absolute_url }}">Read more</a>
+                </div>
+                {% set found_posts = found_posts + 1 %}
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END row -->
+  </div>
+</main>
+{% endblock body %}

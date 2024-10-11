@@ -1,0 +1,56 @@
+{% set breadcrumbs = request.path|split('/') %}
+{# adds schema markup #}
+{% require_js %}
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+"itemListElement": [
+	    {
+			"@type": "ListItem",
+      "position": "1",
+			"item": {
+			  "@id": "{{ request.scheme }}://{{ request.domain }}/success/",
+			  "name": "Success Stories"
+			}
+		},
+    {
+			"@type": "ListItem",
+      "position": "2",
+			"item": {
+			  "@id": "{{ content.absolute_url }}",
+        "name": "{{ content.title }}"
+			}
+		}
+  ]
+}
+</script>
+{% end_require_js %}
+
+<div class="testimonial_hero" style="background: {{ module.bg_module_color.color }}">
+  <div class="content-wrapper">
+    <div class="content">
+      
+
+      <img src="{{ module.top_logo.src }}" alt="{{ module.top_logo.alt }}" class="top_logo">
+      <span  style="color: {{ module.text_color.color }}; opacity: {{ module.title_color.opacity }};">{{ module.tip_text }}</span>
+        
+        <h1 style="color: {{ module.title_color.color }}; opacity: {{ module.title_color.opacity }};">
+          {{ module.title }}
+        </h1>
+      <p>
+        <span style="color: {{ module.text_color.color }}; opacity: {{ module.text_color.opacity }};">
+          {{ module.summary }}
+        </span>
+      </p>  
+    </div>
+    <div class="photo_sec">
+      <img src="{{ module.photo.src }}" alt="{{ module.photo.alt }}" width="300" height="300" loading="lazy">
+      <p>
+        <span style="color: {{ module.text_color.color }}; opacity: {{ module.text_color.opacity }};">
+          {{ module.person_info }}
+        </span>
+      </p>
+    </div>
+  </div>
+</div>

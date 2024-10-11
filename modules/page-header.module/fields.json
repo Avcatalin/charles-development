@@ -1,0 +1,56 @@
+[ {
+  "id" : "title",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "enabled_features" : [ "underline", "bold", "alignment" ],
+  "type" : "richtext",
+  "default" : "Lorem Ipsum Headline"
+}, {
+  "id" : "subtitle",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Sub title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "picker" : "image",
+  "id" : "image",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Title Image",
+  "required" : false,
+  "locked" : false,
+  "type" : "file"
+}, {
+  "id" : "image_overlap",
+  "name" : "image_overlap",
+  "display_width" : null,
+  "label" : "Title Image Overlap",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 0,
+  "max" : 100,
+  "step" : 1,
+  "type" : "number",
+  "default" : 22
+}, {
+  "id" : "img_has_border",
+  "name" : "img_has_border",
+  "display_width" : null,
+  "label" : "Enable Image Border",
+  "inline_help_text" : "Shows a border and shaddow around the image.",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

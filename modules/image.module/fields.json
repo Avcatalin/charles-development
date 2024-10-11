@@ -1,0 +1,121 @@
+[ {
+  "id" : "c0659ae1-c6f6-be47-f874-aee733929395",
+  "name" : "img",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "https://static.hubspot.com/final/img/content/email-template-images/placeholder_200x200.png",
+    "alt" : "placeholder_200x200",
+    "width" : 200,
+    "height" : 200
+  }
+}, {
+  "id" : "scale",
+  "name" : "scale",
+  "display_width" : null,
+  "label" : "Image Scale (1 = 100%)",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 0.1,
+  "max" : 3,
+  "step" : 0.1,
+  "type" : "number",
+  "default" : 1
+}, {
+  "id" : "scale_mobile",
+  "name" : "scale_mobile",
+  "display_width" : null,
+  "label" : "Image Scale Mobile (1 = 100%)",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 0.1,
+  "max" : 3,
+  "step" : 0.1,
+  "type" : "number",
+  "default" : 1
+}, {
+  "id" : "63e5353d-6345-69dd-c6dc-bbd2a3049d97",
+  "name" : "link",
+  "display_width" : null,
+  "label" : "Link (optional)",
+  "help_text" : "This is where you'd like to send your visitors when they click on the image. Please include a protocol (i.e. \"http://\") in the URL.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "placeholder" : "http://...",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "6ad79926-6fd0-9769-f58e-fe1c4a4c17fa",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ad1d7040-3ecd-cc17-d09f-6fa1c2441129",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "4e826dd6-cf20-b308-cbb3-de456080195e",
+  "name" : "target",
+  "display_width" : null,
+  "label" : "Open link in new tab",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "acc4084e-9368-7d9d-503a-5e00b5dfa180",
+  "name" : "margin_sides",
+  "display_width" : null,
+  "label" : "margin sides",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "margin-left:1 px / em / %",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+} ]

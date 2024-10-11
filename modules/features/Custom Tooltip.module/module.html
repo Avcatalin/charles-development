@@ -1,0 +1,18 @@
+<div class="custom-tooltip-wrapper" style="background-color: {{ module.tooltip_background_color.css }}">
+  <div class="tooltip-image-box">
+    {% if module.tooltip_image.src %}
+    {% set sizeAttrs = 'width="{{ module.tooltip_image.width }}" height="{{ module.tooltip_image.height }}"' %}
+    {% if module.tooltip_image.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.tooltip_image.width }}" height="{{ module.tooltip_image.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.tooltip_image.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.tooltip_image.max_width }}" height="{{ module.tooltip_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.tooltip_image.loading != 'disabled' ? 'loading="{{ module.tooltip_image.loading }}"' : '' %}
+    <img src="{{ module.tooltip_image.src }}" alt="{{ module.tooltip_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+  <div class="tooltip-content-box">
+    <h3>{{ module.tooltip_title }}</h3>
+    {% inline_rich_text field="richtext_field" value="{{ module.richtext_field }}" %}
+  </div>
+</div>

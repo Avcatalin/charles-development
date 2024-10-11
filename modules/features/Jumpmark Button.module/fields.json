@@ -1,0 +1,86 @@
+[ {
+  "id" : "765c3053-0b3a-07c8-f935-ddcc8b11804b",
+  "name" : "section_id",
+  "display_width" : null,
+  "label" : "Section ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#jumpmark"
+}, {
+  "id" : "d523fb39-11c8-6d56-96da-a41e0fe138c3",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0dc3238f-678f-bc01-e659-17486538ed63",
+    "name" : "alignment",
+    "display_width" : null,
+    "label" : "Alignment",
+    "required" : false,
+    "locked" : false,
+    "type" : "textalignment",
+    "default" : {
+      "text_align" : "CENTER"
+    }
+  }, {
+    "id" : "75457641-2d73-cc6d-22dd-997b421af0d4",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "alignment" : {
+      "text_align" : "CENTER"
+    }
+  }
+}, {
+  "id" : "a2196098-7530-d1ef-62cf-061980788e50",
+  "name" : "jumpmark_label",
+  "display_width" : null,
+  "label" : "Jumpmark Label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get demo"
+}, {
+  "id" : "f4e7fc66-665b-e89a-c7d5-8f4d352b0945",
+  "name" : "button_background_color",
+  "display_width" : null,
+  "label" : "Button Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "6cfb81a2-aa74-d401-b7ce-8654e6e3f2eb",
+  "name" : "button_text_color",
+  "display_width" : null,
+  "label" : "Button Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#231f20",
+    "opacity" : 100
+  }
+} ]

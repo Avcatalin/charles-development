@@ -1,0 +1,24 @@
+<div class="button-container" id="{{ module.button_id }}" style="max-width: {{ module.container_width }}; {{ module.style.alignment.css }}">
+  {% set href = module.button_link.url.href %}
+  {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+  {% set href = "mailto:" + href %}
+  {% endif %}
+  <a href="{{ href }}" id="{{ module.button_id }}" class="general-simple-button" style="color: {{ module.style.button_color.css }}; background: {{ module.style.button_background_color.css }};"
+     {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+     {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+     >
+    <span>{{ module.button_label }}</span>
+
+    {% if module.show_hide_button_icon %}
+    <span class="button-icon {{ module.style.icon_color_choice }}">
+      {% icon
+      name="{{ module.button_icon.name }}"
+      style="{{ module.button_icon.type }}"
+      unicode="{{ module.button_icon.unicode }}"
+      icon_set="{{ module.button_icon.icon_set }}"
+    %}
+    </span>
+    {% endif %}
+  </a>
+</div>
+

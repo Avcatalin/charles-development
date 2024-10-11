@@ -1,0 +1,49 @@
+<div style="overflow: hidden; position: relative;">
+  <!-- CTA set top border color -->
+  <div class="light-cta-colored-border" style="{{ module.cta_light.spacing_field.css }} border-top: 4px solid {{ module.color_border.color }}; background-color: {{ module.color_inner.color }};">
+    <!-- CTa title and description -->
+    <div class="light-cta-title">
+      <p class="cta-title-text" style="color: {{ module.color_title.color }}">{{ module.title }}</p>
+      <p style="color: {{ module.color_content.color }}">{{ module.content }}</p>
+    </div>
+    <!-- CTA Button -->
+    {% set href = module.cta_button_url.url.href %}
+    {% if module.cta_button_url.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}" class="features-general-button" id="{{ module.button_id }}" style="color: {{ module.book_demo_color_text.color }}; background-color: {{ module.background_book_demo.color }}"
+       {% if module.cta_button_url.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.cta_button_url.rel %}rel="{{ module.cta_button_url.rel }}"{% endif %}
+       >
+      <div class="inner-button-content">
+        <span>{{ module.book_demo_text }}</span>
+        <img src="{{ get_asset_url('/charles-b2b/modules/assets/arrow-right.svg') }}" alt="arrow right | charles" class="img-fluid" />
+      </div>
+    </a>
+  </div>
+
+  <!-- Wave line right side -->
+  {% if module.enable_wave_line %}
+  <span class="dot-section bottom-right" style="right: {{ module.wave_line_position }}">
+    <svg viewBox="-17.236 -35.761 657.409 120.876" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 1 28.119 C 1 28.119 108 -29.383 161 28.117 C 214 85.617 285.864 62.352 285.864 62.352 C 285.864 62.352 356.446 49.077 393.414 12.109 C 430.382 -24.859 541.838 -51.343 642.811 17.627" stroke="{{ module.wave_line_color.css }}" stroke-width="4"/>
+      <ellipse style="stroke: rgb(0, 0, 0); paint-order: stroke; fill: {{ module.wave_line_color.css }}; stroke-width: 0px;" cx="-2.735" cy="28.857" rx="12.5" ry="12.5"/>
+    </svg>
+  </span>
+  {% endif %}
+  <!-- end Wave line right side -->
+
+  <!-- Mobile Wave line right side -->
+  <div class="mobile-line cta">
+    <svg viewBox="-11.682 5.452 28.137 3.915" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <view id="view-1">
+          <title>View 1</title>
+        </view>
+      </defs>
+      <circle cx="14.335" cy="7.374" r="0.89" fill="{{ module.wave_line_color.css }}" style="stroke: {{ module.wave_line_color.css }};" transform="matrix(1.284409, 0, 0, 1.29884, -3.901755, -2.210273)"/>
+      <path style="fill: {{ module.wave_line_color.css }}; stroke: {{ module.wave_line_color.css }};" d="M 13.572 7.375 L -12.308 7.375"/>
+    </svg>
+  </div>
+  <!-- end Mobile Wave line right side -->
+</div>

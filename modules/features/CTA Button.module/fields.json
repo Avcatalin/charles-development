@@ -1,0 +1,198 @@
+[ {
+  "id" : "fc6dce5e-c6c8-2ffd-6be0-4a9ff493f285",
+  "name" : "button_id",
+  "display_width" : null,
+  "label" : "Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "2b06730c-8c5b-57a2-10d4-ec64bdc72f12",
+  "name" : "color_border",
+  "display_width" : null,
+  "label" : "CTA Button Border - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#3A36DE",
+    "opacity" : 100
+  }
+}, {
+  "id" : "9a07328b-1ddd-dae2-3a0c-e95637965ba6",
+  "name" : "color_inner",
+  "display_width" : null,
+  "label" : "CTA Button - Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "6a6be68d-2487-a29e-a6b8-dd7aaa788450",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get a tour"
+}, {
+  "id" : "fae19276-c70a-60ff-cfc2-75a3a937688e",
+  "name" : "color_title",
+  "display_width" : null,
+  "label" : "Title - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "9f193e29-f273-ea60-c07a-783900037812",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "tailored TO your business"
+}, {
+  "id" : "fd481715-a4ec-ac03-43dd-3fab0be75b55",
+  "name" : "color_content",
+  "display_width" : null,
+  "label" : "Content - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "f1ea5e51-70a8-105c-8058-e2c79dfd4968",
+  "name" : "book_demo_text",
+  "display_width" : null,
+  "label" : "CTA Button - Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Book a demo"
+}, {
+  "id" : "74e35a20-5909-76fe-5353-cfda6f1757f9",
+  "name" : "background_book_demo",
+  "display_width" : null,
+  "label" : "CTA Button - Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#3A36DE",
+    "opacity" : 100
+  }
+}, {
+  "id" : "232de1ac-2c0a-9db1-763e-4396c3abeddc",
+  "name" : "cta_light",
+  "display_width" : null,
+  "label" : "CTA Light",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3fc89cfa-9463-5bde-399e-c11e6a34f65b",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "e300428b-84e7-ff75-b521-b2931af9485c",
+  "name" : "book_demo_color_text",
+  "display_width" : null,
+  "label" : "CTA Button Text - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "f953b891-b7fc-5e3a-ea58-4a1f93d3d54d",
+  "name" : "cta_button_url",
+  "display_width" : null,
+  "label" : "CTA Button - URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 41001952809
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "d6fc0c3d-7a56-7756-5036-baaa07ae3019",
+  "name" : "enable_wave_line",
+  "display_width" : null,
+  "label" : "Enable wave line",
+  "inline_help_text" : "Enable or disable the outside wave line",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "7c3f74ba-7d03-0f76-9c85-dbdf344c8424",
+  "name" : "wave_line_color",
+  "display_width" : null,
+  "label" : "Wave Line Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#3a36de",
+    "opacity" : 100
+  }
+}, {
+  "id" : "ebc3a6a5-36e1-cf2b-0a6d-21b21052edca",
+  "name" : "wave_line_position",
+  "display_width" : null,
+  "label" : "Wave Line Position",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "-58%"
+} ]

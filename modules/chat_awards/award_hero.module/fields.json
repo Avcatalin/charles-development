@@ -1,0 +1,380 @@
+[ {
+  "id" : "5d92c05c-18cd-d73f-a0ba-bb6a8ee68239",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CHARLES <br> CHAT AWARDS"
+}, {
+  "id" : "540811aa-ad94-b5c3-5379-f42a73df7993",
+  "name" : "sub_content",
+  "display_width" : null,
+  "label" : "Sub content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Win the #1 European Chat Awards and start pioneering conversational commerce with charles."
+}, {
+  "id" : "f26a7197-5128-e82c-e53f-7de2f5a7f7d0",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/chat_award/gb_logo2.png",
+    "alt" : "gb_logo2",
+    "loading" : "lazy",
+    "width" : 798,
+    "height" : 536,
+    "max_width" : 798,
+    "max_height" : 536
+  }
+}, {
+  "id" : "da1de817-7a73-cbe1-28ec-4ce4192f339d",
+  "name" : "pioneer_title",
+  "display_width" : null,
+  "label" : "Pioneer title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>This is to the <strong>PIONEERS</strong></h2>\n<p>We want to <span>drive</span> your ideas on</p>\n<p><img src=\"https://www.hello-charles.com/hubfs/chat_award/whats.png\" alt=\"\"> WhatsApp as a new channel!</p>"
+}, {
+  "id" : "aaf5e698-e3dd-0702-5d8f-5b0168e2c86c",
+  "name" : "pioneers_content",
+  "display_width" : null,
+  "label" : "Pioneers content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h4>In times of ever <span>growing customer aquisition costs</span> it is essential to explore new channels. Especially channels that can <span>drive conversion rate, retention rate and NPS.</span> Our community of clients is proving it over and over again with <span>WhatsApp</span> and now we want to find out how you would do it!</h4>"
+}, {
+  "id" : "ca3c2a44-5adc-4f9c-a62d-3ed9ad4ff510",
+  "name" : "headline",
+  "display_width" : null,
+  "label" : "Headline",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "9332ac76-f6d6-6d59-22a5-166b1c5275f8",
+  "name" : "countdown_date",
+  "display_width" : null,
+  "label" : "Countdown Date",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "mm/dd/yyyy",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "1ba638d5-3989-7706-a7e4-9590ac23d350",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "150fb1c2-6c12-4b15-5aed-4568b5ac7fb0",
+    "name" : "timeline",
+    "display_width" : null,
+    "label" : "Timeline",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "8f532d18-a66e-cdb8-6d66-13ad321cbb78",
+      "name" : "spacing_field",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : { }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "spacing_field" : { }
+    }
+  }, {
+    "id" : "d18a746c-868e-f300-8348-b0ea0ca6f2b4",
+    "name" : "header_down",
+    "display_width" : null,
+    "label" : "Header Down",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "edefc686-4d1f-69df-b8a2-ac2f0c412fb5",
+      "name" : "spacing_field_1",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : { }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "spacing_field_1" : { }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "timeline" : {
+      "spacing_field" : { }
+    },
+    "header_down" : {
+      "spacing_field_1" : { }
+    }
+  }
+}, {
+  "id" : "9c0f627a-8a54-340e-30f9-a29ae251f1da",
+  "name" : "timeline",
+  "display_width" : null,
+  "label" : "Timeline",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "51927a6c-ab65-da52-9794-1f709e79135d",
+    "name" : "start_date",
+    "display_width" : null,
+    "label" : "Start Date",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "d1a65661-af79-6197-4bca-03090d2827b4",
+    "name" : "middle_date",
+    "display_width" : null,
+    "label" : "Middle Date",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "a91975b4-8619-a9d3-2ef9-880a6ba1bee1",
+    "name" : "end_date",
+    "display_width" : null,
+    "label" : "End Date",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "463e4223-43b1-56f5-a624-1a5923664d61",
+    "name" : "start_text",
+    "display_width" : null,
+    "label" : "Start Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "3eef9ced-5ac9-40d7-7607-68c3a9980cb5",
+    "name" : "middle_text",
+    "display_width" : null,
+    "label" : "Middle Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "3481260a-171d-40be-79e4-a8d147a93657",
+    "name" : "end_text",
+    "display_width" : null,
+    "label" : "End Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "4aecd169-c902-219b-f76b-b649f3776a94",
+  "name" : "inner_pioneer_color",
+  "display_width" : null,
+  "label" : "inner pioneer color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "cc28067c-7313-a7dc-f06f-a9d543ac813f",
+  "name" : "hero_background",
+  "display_width" : null,
+  "label" : "Hero Background",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "4b00301b-44ff-f3b8-9c0b-7f27abd972a8",
+  "name" : "accent_color",
+  "display_width" : null,
+  "label" : "Accent Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#3A36DE",
+    "opacity" : 100
+  }
+}, {
+  "id" : "53d61cf1-a882-7831-21ce-cc9deb3d4d63",
+  "name" : "left_button",
+  "display_width" : null,
+  "label" : "Left Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6ba73aaa-0abb-fc98-dac2-e12904b3949f",
+    "name" : "button_left_link",
+    "display_width" : null,
+    "label" : "Button Left Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 41001952809
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "015a4cbf-5e48-3356-46e0-c499e7b3a55f",
+    "name" : "left_button_text",
+    "display_width" : null,
+    "label" : "Left Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get a Demo"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "button_left_link" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 41001952809
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "left_button_text" : "Get a Demo"
+  }
+}, {
+  "id" : "bda8128b-5c14-0a1a-a802-29a62d3ece37",
+  "name" : "right_button",
+  "display_width" : null,
+  "label" : "Right Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "72ea13e7-758d-c518-0f34-bf09d9f9d817",
+    "name" : "Button_Right_Link",
+    "display_width" : null,
+    "label" : "Button Right Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#form-id",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "92e40c0d-3737-391f-15e2-7b524967ea78",
+    "name" : "right_button_text",
+    "display_width" : null,
+    "label" : "Right Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Learn more"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "Button_Right_Link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#form-id",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "right_button_text" : "Learn more"
+  }
+} ]

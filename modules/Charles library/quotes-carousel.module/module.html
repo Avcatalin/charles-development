@@ -1,0 +1,57 @@
+<style>
+  .quotes-container--{{ name }} {
+    {{ module.style.spacing_field.css }}
+  }
+
+  @media screen and (max-width: 768px) {
+    .quotes-container--{{ name }} {
+      {{ module.style.mobile_spacing.css }}
+    }
+  }
+</style>
+
+<div class="quotes-container quotes-container--{{ name }} swiper-quotes">
+  <div class="swiper-wrapper">
+    {% for item in module.quote_block %}
+    <div class="swiper-slide">
+      <div class="quote-block" style="background: {{ item.quote_background.css }};">
+        <div class="quote-client-logo">
+          {% if item.quote_client_logo.src %}
+          {% set sizeAttrs = 'width="{{ item.quote_client_logo.width|escape_attr }}" height="{{ item.quote_client_logo.height|escape_attr }}"' %}
+          {% if item.quote_client_logo.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ item.quote_client_logo.width|escape_attr }}" height="{{ item.quote_client_logo.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% elif item.quote_client_logo.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.quote_client_logo.max_width|escape_attr }}" height="{{ item.quote_client_logo.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.quote_client_logo.loading != 'disabled' ? 'loading="{{ item.quote_client_logo.loading|escape_attr }}"' : '' %}
+          <img src="{{ item.quote_client_logo.src|escape_url }}" alt="{{ item.quote_client_logo.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="quote-content">
+          {{ item.quote_content }}
+        </div>
+        <div class="quote-person">
+          {% if item.quote_avatar.src %}
+          {% set sizeAttrs = 'width="{{ item.quote_avatar.width|escape_attr }}" height="{{ item.quote_avatar.height|escape_attr }}"' %}
+          {% if item.quote_avatar.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ item.quote_avatar.width|escape_attr }}" height="{{ item.quote_avatar.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% elif item.quote_avatar.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.quote_avatar.max_width|escape_attr }}" height="{{ item.quote_avatar.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.quote_avatar.loading != 'disabled' ? 'loading="{{ item.quote_avatar.loading|escape_attr }}"' : '' %}
+          <img src="{{ item.quote_avatar.src|escape_url }}" alt="{{ item.quote_avatar.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          <div class="person-info">
+            <p class="name">{{ item.quote_person }}</p>
+            <p class="job-title">{{ item.quote_job_title }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <!-- Swiper pagination -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+

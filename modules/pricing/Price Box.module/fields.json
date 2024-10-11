@@ -1,0 +1,314 @@
+[ {
+  "id" : "abd04129-ef90-fac1-5b25-8c992ff775af",
+  "name" : "title_content",
+  "display_width" : null,
+  "label" : "Title & Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+}, {
+  "id" : "df73859b-7fed-94e0-0c80-c1d35d4c5e58",
+  "name" : "content_color",
+  "display_width" : null,
+  "label" : "Content Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#231F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "cd9fb795-db5f-15d0-72cd-4b05fa538788",
+  "name" : "price_value",
+  "display_width" : null,
+  "label" : "Price Value",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "€ 349"
+}, {
+  "id" : "89544365-3309-61e0-251c-59a5d12356b1",
+  "name" : "price_value_color",
+  "display_width" : null,
+  "label" : "Price Value Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "0d144a17-8e3e-05a4-e683-a5f964f0cda8",
+  "name" : "get_started_url",
+  "display_width" : null,
+  "label" : "Get Started URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "29d0cf9b-136b-850f-dc90-d5000c1d34d4",
+  "name" : "get_started_text",
+  "display_width" : null,
+  "label" : "Get Started Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get started"
+}, {
+  "id" : "7faebef8-2d1b-e862-975a-bd303b5ecdc2",
+  "name" : "get_started_background_color",
+  "display_width" : null,
+  "label" : "Get Started Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFF171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "21b12ae6-415b-f179-13b1-e7359bd23d7f",
+  "name" : "how_to_we_calculate_price",
+  "display_width" : null,
+  "label" : "How to we calculate price",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<div style=\"text-align: center;\"><a href=\"https://www.google.com/\" rel=\"noopener\">How we calculate price</a></div>\n<div style=\"text-align: center;\">Based outbound messages</div>"
+}, {
+  "id" : "622f06aa-67db-4d76-9a53-f9c300dd976c",
+  "name" : "key_features_text",
+  "display_width" : null,
+  "label" : "Key Features Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Key features:"
+}, {
+  "id" : "fc9755c8-e162-3844-5864-48b11c536c03",
+  "name" : "key_features_background_color",
+  "display_width" : null,
+  "label" : "Key features Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFF171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "ccb2e504-b681-7022-9947-7eaf0b4624b9",
+  "name" : "get_started_text_color",
+  "display_width" : null,
+  "label" : "Get Started Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "51b2e9c2-2aae-c2fd-5eb8-064eb3f5e14d",
+  "name" : "features_list_icons",
+  "display_width" : null,
+  "label" : "Features List Icons",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "eea7bb03-0f8e-33b8-48cd-d205b47edbb4",
+    "name" : "features_list_icon",
+    "display_width" : null,
+    "label" : "Features List Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/user-crown.svg",
+      "alt" : "user-crown",
+      "loading" : "lazy",
+      "width" : 14,
+      "height" : 16,
+      "max_width" : 14,
+      "max_height" : 16
+    }
+  }, {
+    "id" : "21c2debc-9cf8-bf06-4440-f58b687b489a",
+    "name" : "features_list_text",
+    "display_width" : null,
+    "label" : "Features List Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "3 agents"
+  }, {
+    "id" : "6bcf33a5-6fd6-d5ba-32ca-a52383c23337",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "features_list_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/user-crown.svg",
+      "alt" : "user-crown",
+      "loading" : "lazy",
+      "width" : 14,
+      "height" : 16,
+      "max_width" : 14,
+      "max_height" : 16
+    },
+    "features_list_text" : "3 agents",
+    "text_color" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  } ]
+}, {
+  "id" : "5bf547d9-5c9a-5d53-26ac-e26c8d050039",
+  "name" : "features_bullet_list",
+  "display_width" : null,
+  "label" : "Features Bullet List",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "404451b0-a097-ffb2-6426-74c8dada3181",
+    "name" : "features_bullet_list_text",
+    "display_width" : null,
+    "label" : "Features Bullet List Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "This is one key feature"
+  }, {
+    "id" : "e5cc0dc1-b073-7a53-eb64-49252bddb0b6",
+    "name" : "enable_tooltip",
+    "display_width" : null,
+    "label" : "Enable Tooltip",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "83a43df1-088d-fe26-c4f3-e3184278745a",
+    "name" : "tooltip_icon",
+    "display_width" : null,
+    "label" : "Tooltip Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/tooltip-icon.svg",
+      "alt" : "tooltip-icon",
+      "loading" : "lazy",
+      "width" : 26,
+      "height" : 26,
+      "max_width" : 26,
+      "max_height" : 26
+    }
+  }, {
+    "id" : "1cf5ea74-92cf-7049-9666-c823c54c5108",
+    "name" : "tooltip_content",
+    "display_width" : null,
+    "label" : "Tooltip Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }, {
+    "id" : "f2a52e42-370a-3600-8a74-c0254414c163",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "features_bullet_list_text" : "This is one key feature",
+    "enable_tooltip" : false,
+    "tooltip_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/tooltip-icon.svg",
+      "alt" : "tooltip-icon",
+      "loading" : "lazy",
+      "width" : 26,
+      "height" : 26,
+      "max_width" : 26,
+      "max_height" : 26
+    },
+    "tooltip_content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "text_color" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    }
+  } ]
+} ]

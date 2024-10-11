@@ -1,0 +1,93 @@
+<!--
+templateType: global_partial
+label: Website header
+-->
+<header id="main-page-header" class="px-4 h-20 bg-secondary flex flex-no-wrap items-center">
+  <div class="page-header--logo h-10">
+    {% module 'site_logo' path='@hubspot/logo' %}
+  </div>
+
+  <div class="flex-grow"></div>
+
+  <div class="page-header--nav-wrap" id="main-nav">
+    {% module 'navigation-primary' path='../../modules/menu-section', label='Primary navigation' %}
+  </div>
+  <div class="page-header--burger-menu desktop:hidden mobile:block">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+  <div class="chat_award_nav_dropdown">
+    <div class="content">
+      <span>
+        COMPANY
+      </span>
+      <div class="blocks">
+        <div class="block_item">
+          <div>
+            <img src="https://www.hello-charles.com/hubfs/about-us-icon.svg" width="50" height="50" alt="about us icon">
+          </div>
+          <div>
+            <a href="/about">
+              <h4>
+                About us
+              </h4>
+              <p>
+                Find out about our story and founders
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="block_item">
+          <div>
+            <a href="/departments"><img src="https://www.hello-charles.com/hubfs/departments-icon.svg" width="50" height="50" alt="departments icon"></a>
+          </div>
+          <div>
+            <a href="/departments">
+              <h4>
+                Our Departments
+              </h4>
+              <p>
+                “50+ Experts leading customers to success.”
+              </p></a>
+          </div>
+        </div>
+        <div class="block_item">
+          <div>
+            <a href="/life-at-charles"><img src="https://www.hello-charles.com/hubfs/life-charles-icon.svg" width="50" height="50" alt="life at charles icon"></a>
+          </div>
+          <div>
+            <a href="/life-at-charles">
+              <h4>
+                Life at Charles
+              </h4>
+              <p>
+                “Great people sharing A big vision.”
+              </p>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="bottom_part">
+        <div class="left_part">
+          <h3>
+            OFFICES
+          </h3>
+          <p>
+            <img src="https://www.hello-charles.com/hubfs/chat_award/heart.svg" width="15" height="15" alt="heart icon"> Berlin
+          </p>
+        </div>
+        <div class="right_part">
+          <a href="/jobs"><p>
+            <img src="https://www.hello-charles.com/hubfs/light.svg" width="50" height="50" alt="lightbulb icon"> Wanna be part of our team?
+            </p></a>
+          <a href="/jobs" class="join-us">Join us <i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

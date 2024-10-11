@@ -1,0 +1,97 @@
+<div class="whatsapp-magic-section" style="background-image: url({{ module.section_background.src }})">
+  <div class="container">
+    <!-- Top First Section -->
+    <div class="row first-row">
+      <div class="col-bf-4">
+        <div class="video-component">
+          <div class="video-wrapper">
+            <!-- Video URL (placeholder) -->
+            <div class="video-url">
+              <video width="445" height="545" poster="{{ module.video_poster.src }}" onclick="this.paused ? this.play() : this.pause();">
+                <source src="{{ module.video_file }}" type="video/mp4">
+              </video> 
+            </div>
+            <!-- Video Label -->
+            <div class="video-label">
+              {{ module.video_label }}
+              <img src="https://www.hello-charles.com/hubfs/Imported%20images/small-bubble-corner.svg" alt="Small bubble corner | charles" class="video-bubble" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-bf-8">
+        <!-- Section label -->
+        <div class="purple-label">
+          {{ module.purple_badge }}
+        </div>
+        <h2>
+          <span class="light-span">{{ module.light_title }}</span>
+          <span class="bold-span">{{ module.bold_title }}</span>
+        </h2>
+      </div>
+    </div>
+    <div class="line-curved">
+      {% if module.line_curved.src %}
+      {% set sizeAttrs = 'width="{{ module.line_curved.width }}" height="{{ module.line_curved.height }}"' %}
+      {% if module.line_curved.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.line_curved.width }}" height="{{ module.line_curved.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.line_curved.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.line_curved.max_width }}" height="{{ module.line_curved.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.line_curved.loading != 'disabled' ? 'loading="{{ module.line_curved.loading }}"' : '' %}
+      <img src="{{ module.line_curved.src }}" alt="{{ module.line_curved.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+    <!-- Bottom Second Section -->
+    <div class="row second-row">
+      <div class="col-bf-7">
+        <h2>
+          {{ module.bold_title_second_row }}
+        </h2>
+        <div class="image-stats-mobile">
+          {% if module.stats_image.src %}
+          {% set sizeAttrs = 'width="{{ module.stats_image.width }}" height="{{ module.stats_image.height }}"' %}
+          {% if module.stats_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.stats_image.width }}" height="{{ module.stats_image.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.stats_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.stats_image.max_width }}" height="{{ module.stats_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.stats_image.loading != 'disabled' ? 'loading="{{ module.stats_image.loading }}"' : '' %}
+          <img src="{{ module.stats_image.src }}" alt="{{ module.stats_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="steps-repeater">
+          {% for item in module.steps_repeater %}
+          <div class="row-item">
+            <div class="letter-row" style="background-color: {{ item.letter_row_background.color }}">
+              {{ item.letter_row }}
+            </div>
+            <div class="content-row">
+              <h3>
+                {{ item.title_row }}
+              </h3>
+              <p>
+                {{ item.text_row }}
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <!-- Demo Buttonm -->
+        <a href="#form-section" class="demo-btn">{{ module.demo_button }}</a>
+      </div>
+      <div class="col-bf-5 image-stats-desktop">
+        {% if module.stats_image.src %}
+        {% set sizeAttrs = 'width="{{ module.stats_image.width }}" height="{{ module.stats_image.height }}"' %}
+        {% if module.stats_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.stats_image.width }}" height="{{ module.stats_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.stats_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.stats_image.max_width }}" height="{{ module.stats_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.stats_image.loading != 'disabled' ? 'loading="{{ module.stats_image.loading }}"' : '' %}
+        <img src="{{ module.stats_image.src }}" alt="{{ module.stats_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

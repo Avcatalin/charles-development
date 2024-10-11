@@ -1,0 +1,963 @@
+[ {
+  "id" : "7713f41a-1b65-3e32-8e2b-936a8239c21a",
+  "name" : "mega_nav_menus",
+  "display_width" : null,
+  "label" : "Mega nav menus",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "7ebbfd80-6928-3b4a-ea8f-bee15f08ef90",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "6e7d38e5-f355-19fb-53a6-97ee03eb9ab3",
+    "name" : "mega_nav_visible",
+    "display_width" : null,
+    "label" : "Mega nav visible?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "29738919-6e02-c7d3-6700-c0e9738160c9",
+    "name" : "which_nav_item_to_appear",
+    "display_width" : null,
+    "label" : "Which nav item to appear?",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 1,
+    "max" : 15,
+    "step" : 1,
+    "type" : "number",
+    "default" : 1
+  }, {
+    "id" : "7ebbfd80-6928-3b4a-ea8f-bee15f08ef90",
+    "name" : "navigation_title",
+    "display_width" : null,
+    "label" : "Navigation title",
+    "required" : false,
+    "locked" : true,
+    "validation_regex" : "",
+    "placeholder" : "COMPANY",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "COMPANY"
+  }, {
+    "id" : "3e3c228a-18e4-498a-d0c1-096a2b7271b0",
+    "name" : "submenu_items",
+    "display_width" : null,
+    "label" : "Submenu items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "fc8919f9-d8e8-80a3-b751-ba71c52ac2e7",
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "dd979eea-37cd-83e9-017b-c1de5fff58e4",
+      "name" : "submenu_item_image",
+      "display_width" : null,
+      "label" : "Submenu item image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      }
+    }, {
+      "id" : "6c301fe3-42d0-4ac2-8583-a5493d2b233f",
+      "name" : "submenu_item_url",
+      "display_width" : null,
+      "label" : "Submenu item url",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      }
+    }, {
+      "id" : "fc8919f9-d8e8-80a3-b751-ba71c52ac2e7",
+      "name" : "submenu_item_title",
+      "display_width" : null,
+      "label" : "Submenu item title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "About us",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "About us"
+    }, {
+      "id" : "4caa1bf5-ab1d-4ace-3eeb-3eedd985f84c",
+      "name" : "submenu_item_subtitle",
+      "display_width" : null,
+      "label" : "Submenu item subtitle",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Find out about our story and founders",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Find out about our story and founders"
+    }, {
+      "id" : "c27958f7-7d6f-aa1a-f908-baed493a2920",
+      "name" : "add_yellow_label",
+      "display_width" : null,
+      "label" : "Add yellow label",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "76294433-a1ae-5d6d-9a60-9dc5a4a60f7c",
+      "name" : "yellow_label_text",
+      "display_width" : null,
+      "label" : "Yellow label text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "New",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "New"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    }, {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    }, {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    } ]
+  }, {
+    "id" : "01bf6dc3-5c55-cdd3-ea4b-c976b645e40f",
+    "name" : "enable_nav_footer",
+    "display_width" : null,
+    "label" : "Enable nav footer",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "a8e9d1e9-c9e5-bc53-5552-46f43a29b6e6",
+    "name" : "enable_left_part",
+    "display_width" : null,
+    "label" : "Enable left part",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "03d58d90-e1bb-2f0b-7a29-123d4b5e43fd",
+    "name" : "nav_footer_title",
+    "display_width" : null,
+    "label" : "Nav footer title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "OFFICES",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "OFFICES"
+  }, {
+    "id" : "708d1c27-a99e-ecfd-2dc9-21a3ca9a96bf",
+    "name" : "left_part_title",
+    "display_width" : null,
+    "label" : "Left part title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Berlin",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Berlin"
+  }, {
+    "id" : "78fddd94-e39c-8997-d60a-5066127ffaad",
+    "name" : "left_part_image",
+    "display_width" : null,
+    "label" : "Left part image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat_award/heart.svg",
+      "alt" : "heart",
+      "loading" : "lazy",
+      "width" : 16,
+      "height" : 15,
+      "max_width" : 16,
+      "max_height" : 15
+    }
+  }, {
+    "id" : "36ae0b83-a1fc-955c-1b34-d0bbac18a73a",
+    "name" : "left_part_links",
+    "display_width" : null,
+    "label" : "Left part links?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "e617ebe9-fc29-604b-561d-f15a46d169ef",
+    "name" : "left_part_links_group",
+    "display_width" : null,
+    "label" : "Left part links group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "9770c87d-7955-65eb-fc4b-acbb9df1f48f",
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "9770c87d-7955-65eb-fc4b-acbb9df1f48f",
+      "name" : "left_part_link_text",
+      "display_width" : null,
+      "label" : "Left part link text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "Campaigns Analytics",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Campaigns Analytics"
+    }, {
+      "id" : "2f864b22-a49b-abd6-de1d-58e2b5ffe2a9",
+      "name" : "left_part_link",
+      "display_width" : null,
+      "label" : "Left part link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "url",
+      "default" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    } ]
+  }, {
+    "id" : "a931f0c9-2482-97bf-5611-a034f92b0c67",
+    "name" : "enable_right_part",
+    "display_width" : null,
+    "label" : "Enable right part",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "89ba04a3-e18a-1ee9-c97e-e8f4f48cd905",
+    "name" : "right_part_title",
+    "display_width" : null,
+    "label" : "Right part title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Wanna be part of our team?",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Wanna be part of our team?"
+  }, {
+    "id" : "4f89d6cf-87bd-57e2-d1da-03310b0196c9",
+    "name" : "right_part_image",
+    "display_width" : null,
+    "label" : "Right part image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/light.svg",
+      "alt" : "light",
+      "loading" : "lazy",
+      "width" : 50,
+      "height" : 50,
+      "max_width" : 50,
+      "max_height" : 50
+    }
+  }, {
+    "id" : "67345174-a697-5705-53bf-c67a2c9bf3b9",
+    "name" : "enable_right_part_button",
+    "display_width" : null,
+    "label" : "Enable right part button",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "b6b6512a-adff-a52c-3f55-cfecc85b97db",
+    "name" : "right_part_button_url",
+    "display_width" : null,
+    "label" : "Right part button url",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "/join",
+      "content_id" : null
+    }
+  }, {
+    "id" : "d8fdbf38-5713-5479-3dea-cf15a9be892b",
+    "name" : "right_part_button_text",
+    "display_width" : null,
+    "label" : "Right part button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Join us",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Join us"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "mega_nav_visible" : true,
+    "which_nav_item_to_appear" : 1,
+    "navigation_title" : "COMPANY",
+    "submenu_items" : [ {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    }, {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    }, {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    } ],
+    "enable_nav_footer" : true,
+    "enable_left_part" : true,
+    "nav_footer_title" : "OFFICES",
+    "left_part_title" : "Berlin",
+    "left_part_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat_award/heart.svg",
+      "alt" : "heart",
+      "loading" : "lazy",
+      "width" : 16,
+      "height" : 15,
+      "max_width" : 16,
+      "max_height" : 15
+    },
+    "left_part_links" : false,
+    "left_part_links_group" : [ {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    } ],
+    "enable_right_part" : true,
+    "right_part_title" : "Wanna be part of our team?",
+    "right_part_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/light.svg",
+      "alt" : "light",
+      "loading" : "lazy",
+      "width" : 50,
+      "height" : 50,
+      "max_width" : 50,
+      "max_height" : 50
+    },
+    "enable_right_part_button" : true,
+    "right_part_button_url" : {
+      "type" : "EXTERNAL",
+      "href" : "/join",
+      "content_id" : null
+    },
+    "right_part_button_text" : "Join us"
+  }, {
+    "mega_nav_visible" : true,
+    "which_nav_item_to_appear" : 1,
+    "navigation_title" : "COMPANY",
+    "submenu_items" : [ {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    }, {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    }, {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    } ],
+    "enable_nav_footer" : true,
+    "enable_left_part" : true,
+    "nav_footer_title" : "OFFICES",
+    "left_part_title" : "Berlin",
+    "left_part_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat_award/heart.svg",
+      "alt" : "heart",
+      "loading" : "lazy",
+      "width" : 16,
+      "height" : 15,
+      "max_width" : 16,
+      "max_height" : 15
+    },
+    "left_part_links" : false,
+    "left_part_links_group" : [ {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    } ],
+    "enable_right_part" : true,
+    "right_part_title" : "Wanna be part of our team?",
+    "right_part_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/light.svg",
+      "alt" : "light",
+      "loading" : "lazy",
+      "width" : 50,
+      "height" : 50,
+      "max_width" : 50,
+      "max_height" : 50
+    },
+    "enable_right_part_button" : true,
+    "right_part_button_url" : {
+      "type" : "EXTERNAL",
+      "href" : "/join",
+      "content_id" : null
+    },
+    "right_part_button_text" : "Join us"
+  }, {
+    "mega_nav_visible" : true,
+    "which_nav_item_to_appear" : 1,
+    "navigation_title" : "COMPANY",
+    "submenu_items" : [ {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    }, {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    }, {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    } ],
+    "enable_nav_footer" : true,
+    "enable_left_part" : true,
+    "nav_footer_title" : "OFFICES",
+    "left_part_title" : "Berlin",
+    "left_part_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat_award/heart.svg",
+      "alt" : "heart",
+      "loading" : "lazy",
+      "width" : 16,
+      "height" : 15,
+      "max_width" : 16,
+      "max_height" : 15
+    },
+    "left_part_links" : false,
+    "left_part_links_group" : [ {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    } ],
+    "enable_right_part" : true,
+    "right_part_title" : "Wanna be part of our team?",
+    "right_part_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/light.svg",
+      "alt" : "light",
+      "loading" : "lazy",
+      "width" : 50,
+      "height" : 50,
+      "max_width" : 50,
+      "max_height" : 50
+    },
+    "enable_right_part_button" : true,
+    "right_part_button_url" : {
+      "type" : "EXTERNAL",
+      "href" : "/join",
+      "content_id" : null
+    },
+    "right_part_button_text" : "Join us"
+  }, {
+    "mega_nav_visible" : true,
+    "which_nav_item_to_appear" : 1,
+    "navigation_title" : "COMPANY",
+    "submenu_items" : [ {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    }, {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    }, {
+      "submenu_item_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/about-us-icon.svg",
+        "alt" : "about-us-icon",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "submenu_item_url" : {
+        "type" : "EXTERNAL",
+        "href" : "/about",
+        "content_id" : null
+      },
+      "submenu_item_title" : "About us",
+      "submenu_item_subtitle" : "Find out about our story and founders",
+      "add_yellow_label" : false,
+      "yellow_label_text" : "New"
+    } ],
+    "enable_nav_footer" : true,
+    "enable_left_part" : true,
+    "nav_footer_title" : "OFFICES",
+    "left_part_title" : "Berlin",
+    "left_part_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat_award/heart.svg",
+      "alt" : "heart",
+      "loading" : "lazy",
+      "width" : 16,
+      "height" : 15,
+      "max_width" : 16,
+      "max_height" : 15
+    },
+    "left_part_links" : false,
+    "left_part_links_group" : [ {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    }, {
+      "left_part_link_text" : "Campaigns Analytics",
+      "left_part_link" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.hello-charles.com/guide/conversational-commerce",
+        "content_id" : null
+      }
+    } ],
+    "enable_right_part" : true,
+    "right_part_title" : "Wanna be part of our team?",
+    "right_part_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/light.svg",
+      "alt" : "light",
+      "loading" : "lazy",
+      "width" : 50,
+      "height" : 50,
+      "max_width" : 50,
+      "max_height" : 50
+    },
+    "enable_right_part_button" : true,
+    "right_part_button_url" : {
+      "type" : "EXTERNAL",
+      "href" : "/join",
+      "content_id" : null
+    },
+    "right_part_button_text" : "Join us"
+  } ]
+} ]

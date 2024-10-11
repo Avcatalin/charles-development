@@ -1,0 +1,129 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_meta.html_title }}</title>
+    {% if content.language.languageTag == "de-de" %}
+    <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "charles | WhatsApp-Lösung für Unternehmen | DSGVO-konform",
+      "alternateName" : "charles",
+      "url" : "https://www.hello-charles.de/"
+    }
+    </script>
+    {% elif content.language.languageTag == "it-it" %}
+    <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "charles | Soluzione WhatsApp per le aziende | Conforme al GDPR",
+      "alternateName" : "charles",
+      "url" : "https://www.hello-charles.it/"
+    }
+    </script>
+    {% else %}
+    <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "charles | WhatsApp solution for business | GDPR compliant",
+      "alternateName" : "charles",
+      "url" : "https://www.hello-charles.com/"
+    }
+    </script>
+    {% endif %}
+    {# {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %} #}
+    <link rel="shortcut icon" href="https://cdn.hello-charles.com/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.hello-charles.com/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.hello-charles.com/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.hello-charles.com/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://cdn.hello-charles.com/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://cdn.hello-charles.com/favicon/safari-pinned-tab.svg" color="#ccebfd">
+    <meta name="msapplication-TileColor" content="#fff171">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="{{ page_meta.meta_description }}">
+
+    {{ require_js('https://unpkg.com/@lottiefiles/lottie-player@0.5.1/dist/lottie-player.js') }}
+    {{ require_css(get_asset_url('../../css/main.css')) }}
+    {{ require_css(get_asset_url('../../css/theme-overrides.css')) }}
+    {{ require_css(get_asset_url('../../css/custom-refreshed.css')) }}
+    {{ require_js(get_asset_url('../../js/main.js')) }}    
+    {{ standard_header_includes }}
+  </head>
+  <body class="top-bar-visible">
+    <!-- Include Events Block -->
+    {% global_partial path='../partials/events-block.html' %}
+    <!-- end Include Events Block -->
+    <div class="body-wrapper {{ builtin_body_classes }}">
+      {% block header %}
+      {# {% global_partial path='../partials/topbar.html' %} #}
+      <div id="main-header-wrap">
+        <div id="main-page-header" class="page-header">
+          {% global_partial path='../partials/top-bar-module.html' %}
+          {% global_partial path='../partials/header_refreshed.html' %}
+        </div>
+      </div> 
+      {% endblock header %}
+
+      {% block body %}
+      {% endblock body %}
+
+      {% block footer %}
+      {% global_partial path='../partials/footer.html' %}
+      {% endblock footer %}
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      $(window).scroll(testScroll);
+      var viewed = false;
+
+      function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+      }
+
+      function testScroll() {
+        if (isScrolledIntoView($(".big_number")) && !viewed) {
+          viewed = true;
+          $('.big_number h2 span').each(function () {
+            var flag = 0;
+            if(Math.floor($(this).html()) == Math.ceil($(this).html())) {
+              flag = 1;
+            }
+            $(this).prop('Counter',0).animate({
+              Counter: $(this).text()
+            }, {
+              duration: 1000,
+              easing: 'swing',
+              step: function () {
+                if(flag == 1) {
+                  $(this).text(Math.ceil(this.Counter));
+                }
+                else {
+                  $(this).text(this.Counter.toFixed(1));
+                }
+              }
+            });
+          });
+        }
+      }
+    </script>
+    {{ require_js(get_asset_url('../../js/slick.js'), { position: 'footer' }) }}
+    {{ require_js(get_asset_url('../../js/custom_refreshed.js'), { position: 'footer' }) }}
+    {{ standard_footer_includes }}
+  </body>
+</html>

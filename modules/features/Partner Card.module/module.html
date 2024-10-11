@@ -1,0 +1,57 @@
+<div class="partner-card" style="max-width: {{ module.card_width }}px;">
+  <div class="image-block">
+    {% if module.featured_image.src %}
+    {% set sizeAttrs = 'width="{{ module.featured_image.width|escape_attr }}" height="{{ module.featured_image.height|escape_attr }}"' %}
+    {% if module.featured_image.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.featured_image.width|escape_attr }}" height="{{ module.featured_image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.featured_image.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.featured_image.max_width|escape_attr }}" height="{{ module.featured_image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.featured_image.loading != 'disabled' ? 'loading="{{ module.featured_image.loading|escape_attr }}"' : '' %}
+    <img src="{{ module.featured_image.src|escape_url }}" alt="{{ module.featured_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+  <div class="inner-content">
+    <p class="title-block">
+      {{ module.title }}
+    </p>
+    <div class="content-block">
+      {{ module.content }}
+    </div>
+
+    <!-- Enable Carousel -->
+    {% if module.enable_carousel %}
+    <div class="partners-logos-card {{ module.number_of_slides_class }}">
+      {% for item in module.partner_logo %}
+      <div class="partner-logo">
+        {% if item.src %}
+        {% set sizeAttrs = 'width="{{ item.width|escape_attr }}" height="{{ item.height|escape_attr }}"' %}
+        {% if item.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.width|escape_attr }}" height="{{ item.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.max_width|escape_attr }}" height="{{ item.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading|escape_attr }}"' : '' %}
+        <img src="{{ item.src|escape_url }}" alt="{{ item.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- CTA Button -->
+    <div class="cta-partner-wrapper">
+      {% set href = module.button_url.url.href %}
+      {% if module.button_url.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href|escape_url }}" id="{{ module.button_id }}" class="partner-cta-button"
+         {% if module.button_url.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.button_url.rel %}rel="{{ module.button_url.rel|escape_attr }}"{% endif %}
+         >
+        {{ module.button_label }}
+        <i></i>
+      </a>
+    </div>
+  </div>
+</div>

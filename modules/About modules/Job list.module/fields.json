@@ -1,0 +1,224 @@
+[ {
+  "id" : "70de5035-5f8c-b314-fb63-75df3c4397ef",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "SUCCESS"
+}, {
+  "id" : "ee5f25d7-5707-54d9-1cdb-0b2a9f9862ff",
+  "name" : "job_list",
+  "display_width" : null,
+  "label" : "Job list",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "560b3d4d-98ae-71c8-68e8-ede100541f04",
+    "name" : "job_title",
+    "display_width" : null,
+    "label" : "Job title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "ENGINEERING MANAGER"
+  }, {
+    "id" : "adb962c6-2d6e-efdc-f2b5-f3ee1b681d96",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "INTERNAL"
+  }, {
+    "id" : "28992bfb-1bd9-6e3e-9c6b-b3fe335e27f8",
+    "name" : "role",
+    "display_width" : null,
+    "label" : "Role",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Berlin, Full-Time"
+  }, {
+    "id" : "cdc1dbfc-0278-4f1f-8703-505495fc4d71",
+    "name" : "job_link",
+    "display_width" : null,
+    "label" : "Job link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#"
+  }, {
+    "id" : "0fa8c171-3d39-76f2-f405-3684e683af9d",
+    "name" : "job_icon",
+    "display_width" : null,
+    "label" : "Job icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Navigation%20(1).png",
+      "alt" : "Navigation (1)",
+      "loading" : "lazy",
+      "width" : 102,
+      "height" : 102,
+      "max_width" : 102,
+      "max_height" : 102
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "job_title" : "ENGINEERING MANAGER",
+    "sub_title" : "INTERNAL",
+    "role" : "Berlin, Full-Time",
+    "job_link" : "#",
+    "job_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Navigation%20(1).png",
+      "alt" : "Navigation (1)",
+      "loading" : "lazy",
+      "width" : 102,
+      "height" : 102,
+      "max_width" : 102,
+      "max_height" : 102
+    }
+  }, {
+    "job_title" : "ENGINEERING MANAGER",
+    "sub_title" : "INTERNAL",
+    "role" : "Berlin, Full-Time",
+    "job_link" : "#",
+    "job_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Navigation%20(1).png",
+      "alt" : "Navigation (1)",
+      "loading" : "lazy",
+      "width" : 102,
+      "height" : 102,
+      "max_width" : 102,
+      "max_height" : 102
+    }
+  }, {
+    "job_title" : "ENGINEERING MANAGER",
+    "sub_title" : "INTERNAL",
+    "role" : "Berlin, Full-Time",
+    "job_link" : "#",
+    "job_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Navigation%20(1).png",
+      "alt" : "Navigation (1)",
+      "loading" : "lazy",
+      "width" : 102,
+      "height" : 102,
+      "max_width" : 102,
+      "max_height" : 102
+    }
+  }, {
+    "job_title" : "ENGINEERING MANAGER",
+    "sub_title" : "INTERNAL",
+    "role" : "Berlin, Full-Time",
+    "job_link" : "#",
+    "job_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Navigation%20(1).png",
+      "alt" : "Navigation (1)",
+      "loading" : "lazy",
+      "width" : 102,
+      "height" : 102,
+      "max_width" : 102,
+      "max_height" : 102
+    }
+  }, {
+    "job_title" : "ENGINEERING MANAGER",
+    "sub_title" : "INTERNAL",
+    "role" : "Berlin, Full-Time",
+    "job_link" : "#",
+    "job_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Navigation%20(1).png",
+      "alt" : "Navigation (1)",
+      "loading" : "lazy",
+      "width" : 102,
+      "height" : 102,
+      "max_width" : 102,
+      "max_height" : 102
+    }
+  } ]
+}, {
+  "id" : "b34b8a1b-db52-21a4-0575-ac0fd8169ecf",
+  "name" : "link_title",
+  "display_width" : null,
+  "label" : "link title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Didn’t find what you were looking for? Take the innitiative 🚀"
+}, {
+  "id" : "ad25d024-efad-ff8e-9858-437baafe8546",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Initiative Application"
+}, {
+  "id" : "26982b5c-4735-46b1-b20b-58091a1b3b54",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#"
+}, {
+  "id" : "0b9cba8c-eacb-e3e7-5097-1da0b2cd1a92",
+  "name" : "info",
+  "display_width" : null,
+  "label" : "Info",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We deeply believe that <strong>\"It’s better to have a conversation\".</strong>  This is why our people team will look after you from when you submit your application and throughout the whole process."
+} ]

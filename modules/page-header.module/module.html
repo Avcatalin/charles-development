@@ -1,0 +1,66 @@
+{% set breadcrumbs = request.path|split('/') %}
+{# adds schema markup #}
+{% require_js %}
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+      {% for item in breadcrumbs %}
+      {% if item != 'it-it' and item != 'de-de' %}
+        {% unless loop.last %}
+          {
+            "@type": "ListItem",
+            "position": "{{ loop.index }}",
+            "item": {
+              "@id": "{{ request.scheme }}://{{ request.domain }}/{{ item }}/",
+              "name": "{{ item|replace('-',' ')|title }}"
+            }
+          },
+        {% else %}
+          {
+            "@type": "ListItem",
+            "position": "{{ loop.index }}",
+            "item": {
+              "@id": "{{ content.absolute_url }}",
+              "name": "{{ item|replace('-',' ')|title }}"
+            }
+          }
+        {% endunless %}
+      {% endif %}
+      {% endfor %}
+  ]
+}
+</script>
+{% end_require_js %}
+
+<header class="c-page-header">
+  <div id="breadcrumbs">
+    <ol> 
+      {% for item in breadcrumbs %}
+      {% if item != 'it-it' and item != 'de-de' %}
+      <li>
+        {% unless loop.last %}
+        <a href="/{{ item }}">
+          <b>{{ item|replace('-',' ')|title }}</b>
+        </a> /
+        {% else %}
+        {{ item|replace('-',' ')|capitalize }}
+        {% endunless %}
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ol> 
+  </div>
+
+  <h1 class="leading-snugd">{{ module.title|striptags }}</h1>
+  {% if module.subtitle %}
+  <p class="mt-2 font-normal" style="display:none;">{{ module.subtitle }}</p>
+  {% endif %}
+  {% if module.image %}
+  <div class="c-page-header--image {% if module.img_has_border %} c-page-header--image-border{% endif %} "
+       style="margin-bottom: -{{module.image_overlap}}%;">
+    <img src="{{ resize_image_url("{{ module.image }}", 950, 400, 1000) }}" alt="{{ module.title|striptags }} blog" width="950px" height="400px" />
+  </div>
+  {% endif %}
+</header>

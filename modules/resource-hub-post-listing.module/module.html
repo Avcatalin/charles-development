@@ -1,0 +1,50 @@
+{% set all_posts = [] %}
+{% for item in module.select_blog %}
+    {% set posts = blog_recent_posts(item, module.max_links) %}
+    {% for post_item in posts %}
+        {% do all_posts.append(post_item) %}
+    {% endfor %}
+{% endfor %}
+
+{% set buttonText = module.button.text %}
+{% set textColor = module.button.text_color %}
+{% set bgColor = module.button.bg_color %}
+{% set buttonNewtab = module.button.link.open_in_new_tab %}
+{% set buttonNoFollow = module.button.link.no_follow %}
+
+<div class="c-post-listing-section">
+  <div class="c-post-listing grid" id="posts-grid">
+    {% for post in all_posts|sort(true, false, 'publish_date') %}
+    <article class="c-post-listing--entry grid-item">
+      <div class="c-news-snippet-section c-news-snippet-section--rounded">
+        {% if post.featured_image %}
+        <!-- Feature Image-->
+        <div class="c-news-snippet--image">
+          <a href="{{ buttonAction }}" {% if buttonNewtab %}target="_blank" {% endif %} {% if buttonNoFollow %}rel="nofollow" {% endif %}>
+            <img src="{{ post.featured_image }}" class="w-full" alt="{{ post.featured_image_alt_text }}" />
+          </a>
+        </div>
+        {% endif %}
+        <a href="{{ buttonAction }}" {% if buttonNewtab %}target="_blank" {% endif %} {% if buttonNoFollow %}rel="nofollow" {% endif %}>
+          <p class="c-post_title text-xl mt-8 mb-4 mx-4" style="font-weight: 700">{{ post_name }}</p>
+        </a>
+        {% if post.blog_post_author.profile_image %}
+        <div class="author-image mx-4">
+          <img src="{{ post.blog_post_author.profile_image }}" alt="Author" class="author-img"/>
+        </div>
+        {% endif %}
+        <p class="author-name mx-4">{{ post.blog_post_author.display_name }}</p>
+        <p class="mx-4">{{ excerpt }}</p>
+        <div class="c-news-snippet--post-date mx-4 my-2">
+          <small class="text-muted">{{ post.publish_date_localized }}</small>
+        </div>
+        <div class="c-news-snippet-section--button mt-8 mx-4">
+          <a href="{{ buttonAction }}" style="color: rgba({{ textColor.color|convert_rgb }}, {{ textColor.opacity / 100 }}); background: rgba({{ bgColor.color|convert_rgb }}, {{ bgColor.opacity / 100 }});" {% if buttonNewtab %}target="_blank" {% endif %} {% if buttonNoFollow %}rel="nofollow" {% endif %} class="c-button bg-white">
+            {{ buttonText }}
+          </a>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>

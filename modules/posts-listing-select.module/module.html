@@ -1,0 +1,71 @@
+{# Create a variable to collect all posts #}
+{% set all_posts = [] %}
+
+{# Loop through all posts selected in the blog field #}
+{% for item in module.select_blog %}
+
+{# Get posts for each blog #}
+{% set posts = blog_recent_posts(item, module.max_links|divide(2)) %}
+{# Append each post to the all_posts array #}
+{% for post_item in posts %}
+{% do all_posts.append( post_item ) %}
+{% endfor %}
+{% endfor %}
+
+{% set buttonText = module.button.text %}
+{% set textColor = module.button.text_color %}
+{% set bgColor = module.button.bg_color %}
+{% set buttonNewtab = module.button.link.open_in_new_tab %}
+{% set buttonNoFollow = module.button.link.no_follow %}
+
+<div class="c-post-listing-section">
+  <div class="c-post-listing">
+    {% for post in all_posts[:100]|sort(true, false, 'publish_date')%}
+    {% set title = post.title %}
+    {% set post_name_parts = post.title | split(' | ') %}
+    {% set post_name = post_name_parts[0] %}
+    {% set category = post.tagNames | join(', ') %}
+    {% set excerpt = post.post_summary | striptags %}
+    {% set buttonAction = post.absolute_url %}
+
+    <article class="c-post-listing--entry">
+      <div class="c-news-snippet-section c-news-snippet-section--rounded">
+        <p class="c-post_category text-xl mb-8 underline mx-4">{{ category }}</p>
+        {% if post.featured_image %}
+        <!-- Feature Image-->
+        <div class="c-news-snippet--image">
+          <a href="{{ buttonAction }}"
+             {% if buttonNewtab %}target="_blank" {% endif %} {% if buttonNoFollow %}rel="nofollow" {% endif %}
+             >
+            <img src="{{ post.featured_image }}" class="w-full" alt="{{ post.featured_image_alt_text }}" />
+          </a>
+        </div>
+        {% endif %}
+        <a href="{{ buttonAction }}"
+           {% if buttonNewtab %}target="_blank" {% endif %} {% if buttonNoFollow %}rel="nofollow" {% endif %}> 
+          <p class="c-post_title text-xl mt-8 mb-4 mx-4" style="font-weight: 700">{{ post_name }}</p></a>
+        <p class="mx-4">{{ excerpt }}</p>
+
+        <div class="c-news-snippet--post-meta mx-4 my-2 flex flex-wrap justify-end" style="display:none;">
+          <div class="c-news-snippet--author-name flex-auto">
+            <small class="text-muted">{{ post.blog_post_author.display_name }}, {{ post.blog_post_author.bio }}</small>
+          </div>
+          <div class="c-news-snippet--post-date">
+            <small class="text-muted">{{ post.publish_date_localized }}</small>
+          </div>
+        </div>
+
+        <div class="c-news-snippet-section--button mt-8 mx-4">
+          <a href="{{ buttonAction }}"
+             style="color: rgba({{ textColor.color|convert_rgb }}, {{ textColor.opacity / 100 }}); background: rgba({{ bgColor.color|convert_rgb }}, {{ bgColor.opacity / 100 }});"
+             {% if buttonNewtab %}target="_blank" {% endif %} {% if buttonNoFollow %}rel="nofollow" {% endif %}
+             class="c-button bg-white">
+            {{ buttonText }}
+          </a>
+        </div>
+      </div>
+    </article>
+
+    {% endfor %}
+  </div> 
+</div> 

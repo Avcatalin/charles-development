@@ -1,0 +1,51 @@
+[ {
+  "id" : "7e6d5d65-2f8b-30b3-f532-9707c048187a",
+  "name" : "social_title",
+  "display_width" : null,
+  "label" : "Social Title",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<h2 style=\"text-align: center;\">See what our&nbsp;<strong>customers</strong> think.</h2>"
+}, {
+  "id" : "76edec52-7545-bd60-8a15-084b83c43de8",
+  "name" : "badge_list",
+  "display_width" : null,
+  "label" : "Badge List",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 4,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "ff57ebf5-21b6-9d00-36b7-6033a2183be7",
+    "name" : "badge_name",
+    "display_width" : null,
+    "label" : "Badge Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "210249e2-1822-cf9a-d336-027614ec15f6",
+    "name" : "badge",
+    "display_width" : null,
+    "label" : "Badge",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : ""
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "badge" : ""
+  } ]
+} ]

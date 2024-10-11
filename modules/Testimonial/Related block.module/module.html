@@ -1,0 +1,29 @@
+<div class="related_section">
+  <div class="content-wrapper">
+    <div class="content">
+      <h2>
+        {{ module.title }}
+      </h2>
+        <div class="description">
+          {{ module.description }}
+      </div>
+      <div class="blocks">
+        {% for item in module.block %}
+        <div class="block">
+          {% set href = item.link_button.url.href %}
+          <a href="{{ href }}"
+	{% if item.link_button.open_in_new_tab %}target="_blank"{% endif %}
+	{% if item.link_button.rel %}rel="{{ item.link_button.rel }}"{% endif %}>
+          <img src="{{ item.photo.src }}" alt="{{ item.photo.alt }}" width="300" height="300" loading="lazy"></a>
+          <span class="industry-tag">{{ item.industry }}</span>
+          <h3>{{ item.sub_title }}</h3>
+          <p>{{ item.content }}</p>
+<a href="{{ href }}" class="case-study-link"
+	{% if item.link_button.open_in_new_tab %}target="_blank"{% endif %}
+	{% if item.link_button.rel %}rel="{{ item.link_button.rel }}"{% endif %}>{{ item.button_text }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

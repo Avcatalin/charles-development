@@ -1,0 +1,216 @@
+[ {
+  "id" : "3f34a2bd-81a1-0e5f-b1b9-8ab61fce59a5",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See our other cases"
+}, {
+  "id" : "0201410c-6b3f-7fe0-4c67-4e6af3422b6a",
+  "name" : "block",
+  "display_width" : null,
+  "label" : "Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "51a25416-49d3-f57d-2717-6f28b16869da",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "sub title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Johannes, CEO SNOCKS"
+  }, {
+    "id" : "0e9a016d-5439-af85-d9b9-002270fcd046",
+    "name" : "industry",
+    "display_width" : null,
+    "label" : "Industry",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "Apparel & Fashion",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  }, {
+    "id" : "c83ccb03-be91-797c-963b-f64d7163547f",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "How SNOCKS pioneered newsletter marketing via WhatsApp"
+  }, {
+    "id" : "d0f7b7c7-2c7f-3783-693a-bf669a9cf364",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Read more"
+  }, {
+    "id" : "8c6e6611-46e1-d526-5fec-020eedecbd72",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#"
+  }, {
+    "id" : "bf559b51-743a-d3b5-3a9a-9dde4e8db360",
+    "name" : "link_button",
+    "display_width" : null,
+    "label" : "Link Button",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "580685d5-bf0b-b5c2-f8c8-997f2cf7194b",
+    "name" : "photo",
+    "display_width" : null,
+    "label" : "Photo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207325.png",
+      "alt" : "Group 7325",
+      "loading" : "lazy",
+      "width" : 281,
+      "height" : 268,
+      "max_width" : 281,
+      "max_height" : 268
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "sub_title" : "Johannes, CEO SNOCKS",
+    "industry" : "",
+    "content" : "How SNOCKS pioneered newsletter marketing via WhatsApp",
+    "button_text" : "Read more",
+    "button_link" : "#",
+    "link_button" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "photo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207325.png",
+      "alt" : "Group 7325",
+      "loading" : "lazy",
+      "width" : 281,
+      "height" : 268,
+      "max_width" : 281,
+      "max_height" : 268
+    }
+  }, {
+    "sub_title" : "Johannes, CEO SNOCKS",
+    "industry" : "",
+    "content" : "How SNOCKS pioneered newsletter marketing via WhatsApp",
+    "button_text" : "Read more",
+    "button_link" : "#",
+    "link_button" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "photo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207325.png",
+      "alt" : "Group 7325",
+      "loading" : "lazy",
+      "width" : 281,
+      "height" : 268,
+      "max_width" : 281,
+      "max_height" : 268
+    }
+  }, {
+    "sub_title" : "Johannes, CEO SNOCKS",
+    "industry" : "",
+    "content" : "How SNOCKS pioneered newsletter marketing via WhatsApp",
+    "button_text" : "Read more",
+    "button_link" : "#",
+    "link_button" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "photo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207325.png",
+      "alt" : "Group 7325",
+      "loading" : "lazy",
+      "width" : 281,
+      "height" : 268,
+      "max_width" : 281,
+      "max_height" : 268
+    }
+  } ]
+}, {
+  "id" : "945fa1a3-d631-cf0e-d525-658c40de0101",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+} ]

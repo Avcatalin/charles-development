@@ -1,0 +1,37 @@
+<div class="container">
+  <!-- Enable wave line left side -->
+  {% if module.enable_wave_line %}
+  <span class="dot-section bottom-left">
+    <svg viewBox="-9.495 -35.761 676.079 120.876" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <view id="view-1" viewBox="476.203 105.662 1.821 0.455">
+          <title>View 1</title>
+        </view>
+      </defs>
+      <path d="M -23.133 5.341 C -23.133 5.341 29.415 -23.084 97.705 -1.032 C 165.995 21.02 142.428 93.214 349.244 55.959 C 556.06 18.704 519.526 99.831 640.079 57.727" stroke="#3A36DE" stroke-width="4"/>
+      <ellipse style="stroke: rgb(0, 0, 0); paint-order: stroke; fill: rgb(58, 54, 222); stroke-width: 0px;" cx="644.784" cy="52.991" rx="12.5" ry="12.5"/>
+    </svg>
+  </span>
+  {% endif %}
+  <!-- end Enable wave line left side -->
+
+  <!-- Mobile enable wave line left side -->
+  <div class="mobile-line-heading">
+    <svg viewBox="-11.682 5.452 28.137 3.915" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <view id="view-1">
+          <title>View 1</title>
+        </view>
+      </defs>
+      <circle cx="14.335" cy="7.374" r="0.89" fill="#3A36DE" style="stroke: rgb(58, 54, 222);" transform="matrix(1.284409, 0, 0, 1.29884, -3.901755, -2.210273)"/>
+      <path style="fill: rgb(216, 216, 216); stroke: rgb(58, 54, 222);" d="M 13.572 7.375 L -12.308 7.375"/>
+    </svg>
+  </div>
+  <!-- end Mobile enable wave line left side -->
+
+  <!-- Heading CTA Box -->
+  <div class="heading-cta-box" style="{{ module.heading_cta.spacing_field.css }} background-color: {{ module.background_color_heading.color }}; border-top: 4px solid {{ module.border_color.color }}">
+    <!-- Heading CTA Title -->
+    <h3 style="color: {{ module.heading_color.color }};">{{ module.heading_text }}</h3>
+  </div>
+</div>

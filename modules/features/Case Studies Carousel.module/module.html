@@ -1,0 +1,38 @@
+<!-- Case Studies Carousel -->
+<div class="container">
+  <div class="slick-slider clients-chat-carousel-feature">
+    <!-- Carousel items repeater -->
+    {% for slide_item in module.slide_item %}
+    <div class="slick-slide">
+      {% set href = slide_item.slide_item_link.url.href %}
+      <a href="{{ href }}">
+        {% set sizeAttrs = 'width="{{ slide_item.slide_image.width }}" height="{{ slide_item.slide_image.height }}"' %}
+        {% if slide_item.slide_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ slide_item.slide_image.width }}" height="{{ slide_item.slide_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif slide_item.slide_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ slide_item.slide_image.max_width }}" height="{{ slide_item.slide_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = slide_item.slide_image.loading != 'disabled' ? 'loading="{{ slide_item.slide_image.loading }}"' : '' %}
+        <img src="{{ slide_item.slide_image.src }}" alt="{{ slide_item.slide_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="img-fluid">
+
+        <div class="slide-inner">
+          {% set sizeAttrs = 'width="{{ slide_item.slide_icon.width }}" height="{{ slide_item.slide_icon.height }}"' %}
+          {% if slide_item.slide_icon.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ slide_item.slide_icon.width }}" height="{{ slide_item.slide_icon.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif slide_item.slide_icon.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ slide_item.slide_icon.max_width }}" height="{{ slide_item.slide_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = slide_item.slide_icon.loading != 'disabled' ? 'loading="{{ slide_item.slide_icon.loading }}"' : '' %}
+          <img src="{{ slide_item.slide_icon.src }}" alt="{{ slide_item.slide_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="img-fluid icon">
+
+          <div class="slide-content" style="color: {{ slide_content_color.color }}">
+            <p class="case-title">{{ slide_item.slide_title }} <span>{{ slide_item.slide_subtitle }}</span></p>
+            <p>{{ slide_item.slide_content }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- end Carousel items repeater -->
+    {% endfor %}
+  </div>
+</div>

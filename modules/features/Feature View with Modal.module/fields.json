@@ -1,0 +1,242 @@
+[ {
+  "id" : "3c62cc30-d91a-cb12-3094-1d8aead91130",
+  "name" : "enable_container_class",
+  "display_width" : null,
+  "label" : "Enable Container Class",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "9920cdf6-140e-14b6-d856-fe2e83df931b",
+  "name" : "top_image",
+  "display_width" : null,
+  "label" : "Top Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "d38c7d7f-1700-0b47-7008-580d930d6528",
+  "name" : "main_image",
+  "display_width" : null,
+  "label" : "Main Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/main-header-image.png",
+    "alt" : "main-header-image",
+    "loading" : "lazy",
+    "width" : 1321,
+    "height" : 740,
+    "max_width" : 1321,
+    "max_height" : 740
+  }
+}, {
+  "id" : "b919c026-4c05-c203-c08a-14388b33e5c5",
+  "name" : "modal_button_icon",
+  "display_width" : null,
+  "label" : "Modal Button Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "acef9aef-51b1-5351-55b3-72d0d4eb73af",
+  "name" : "modal_button_text",
+  "display_width" : null,
+  "label" : "Modal Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See it in action"
+}, {
+  "id" : "2758ce10-c5a6-d79b-ce58-3377b9c2bfd7",
+  "name" : "modal_button_text_color",
+  "display_width" : null,
+  "label" : "Modal Button Text - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "728b1ea8-b25c-2b7b-2cdb-76c474343569",
+  "name" : "styles",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e5eaab5c-cbe2-c701-1121-2284d352bc29",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Full Section Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "01e2d5f0-06cf-dd6f-ef21-b6cabd435e2f",
+    "name" : "top_image_spacing",
+    "display_width" : null,
+    "label" : "Top Image Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "26950fb1-95cc-0328-b3bf-ce803e9b0481",
+    "name" : "enable_centered_image",
+    "display_width" : null,
+    "label" : "Enable centered image",
+    "inline_help_text" : "Center the top image",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "77507fa3-b6c5-e340-7fc0-7c6a7b271103",
+    "name" : "enable_right_image",
+    "display_width" : null,
+    "label" : "Enable Right Image",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { },
+    "top_image_spacing" : { },
+    "enable_centered_image" : false,
+    "enable_right_image" : false
+  }
+}, {
+  "id" : "2f2d1fe1-eb67-10b2-de70-ed5594020df6",
+  "name" : "modal_button_background",
+  "display_width" : null,
+  "label" : "Modal Button Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "7b14f4ce-92fa-b769-0fbe-9b402d9dd0a9",
+  "name" : "align_cta_button",
+  "display_width" : null,
+  "label" : "Align CTA Button",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "99aa1f2d-a450-c531-252a-c9265c8016c6",
+  "name" : "main_image_mobile",
+  "display_width" : null,
+  "label" : "Mobile Main Image",
+  "inline_help_text" : "Upload main image for mobile version",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/mobile_integration-1.svg",
+    "alt" : "mobile_integration-1",
+    "loading" : "lazy",
+    "width" : 357,
+    "height" : 220,
+    "max_width" : 357,
+    "max_height" : 220
+  }
+}, {
+  "id" : "909e9293-6272-ce2d-1f56-fb36ecfec66f",
+  "name" : "videoplayer_field",
+  "display_width" : null,
+  "label" : "Video Upload",
+  "required" : false,
+  "locked" : false,
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : false,
+  "type" : "videoplayer",
+  "default" : {
+    "player_id" : null
+  }
+}, {
+  "id" : "ab14273e-a595-e95f-71f3-95b12e3dc190",
+  "name" : "video_embed_options",
+  "display_width" : null,
+  "label" : "Video embed options",
+  "required" : false,
+  "locked" : false,
+  "supported_source_types" : [ "oembed", "html" ],
+  "supported_oembed_types" : [ "video", "link" ],
+  "resizable" : true,
+  "show_preview" : true,
+  "supported_media_bridge_providers" : [ ],
+  "type" : "embed",
+  "default" : {
+    "source_type" : "oembed",
+    "oembed_url" : "https://youtu.be/rGWhv7iKb98",
+    "oembed_response" : {
+      "type" : "video",
+      "version" : "1.0",
+      "html" : "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/rGWhv7iKb98?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen title=\"How Starbucks Lost $105 Million in Australia\"></iframe>",
+      "title" : "How Starbucks Lost $105 Million in Australia",
+      "author_name" : "HubSpot Marketing ",
+      "author_url" : "https://www.youtube.com/c/HubSpotMarketing",
+      "provider_name" : "YouTube",
+      "provider_url" : "https://www.youtube.com/",
+      "thumbnail_url" : "https://i.ytimg.com/vi/rGWhv7iKb98/hqdefault.jpg",
+      "thumbnail_width" : "480",
+      "thumbnail_height" : "360",
+      "height" : "113",
+      "width" : "200"
+    },
+    "width" : 200,
+    "height" : 113,
+    "size_type" : "auto_full_width",
+    "max_width" : 200,
+    "max_height" : 113
+  }
+} ]

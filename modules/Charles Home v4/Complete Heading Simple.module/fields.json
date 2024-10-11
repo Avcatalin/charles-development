@@ -1,0 +1,76 @@
+[ {
+  "id" : "bb46d603-6961-52d3-f073-6a10ebba1fe4",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>the best solution for higher CLVs is through <span class=\"charles-label\">WhatsApp marketing</span> and charles is the best option to bring and retain your customers</p>"
+}, {
+  "id" : "de1311b6-c274-40d5-5598-966e1cd60a67",
+  "name" : "get_started_url",
+  "display_width" : null,
+  "label" : "Get Started URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "ca1de61b-6543-f780-2315-7525b3c5000c",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4ca93286-07b1-5ec7-16fc-079d3a4b98a2",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "83f5112c-d86c-a6fd-b283-4455f12b95bc",
+  "name" : "get_started_label",
+  "display_width" : null,
+  "label" : "Get Started Label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get started"
+}, {
+  "id" : "6b12c313-f280-2dfd-7691-4115aa2f9fa2",
+  "name" : "button_id",
+  "display_width" : null,
+  "label" : "Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

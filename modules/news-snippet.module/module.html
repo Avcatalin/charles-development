@@ -1,0 +1,38 @@
+{% set title = module.title %}
+{% set category = module.category %}
+{% set excerpt = module.excerpt %}
+
+{% set buttonText = module.button.text %}
+{% set textColor = module.button.text_color %}
+{% set bgColor = module.button.bg_color %}
+{% set buttonAction = module.button.link.url.href %}
+{% if module.button.link.url.type is equalto "EMAIL_ADDRESS" %}
+{% set buttonAction = "mailto:" + buttonAction %}
+{% endif %}
+{% set buttonNewtab = module.button.link.open_in_new_tab %}
+{% set buttonNoFollow = module.button.link.no_follow %}
+
+<div class="c-news-snippet-section relative {% if module.img_has_round_corners %} c-news-snippet-section--rounded{% endif %} {{ module.class }}">
+  <div class="c-news-snippet-section--icon absolute rounded-full" style="background-image: url({{ module.icon }});"></div>
+  {% if category %}
+  <p class="c-news_category text-xl mb-8 underline" style="font-weight: 700">{{ category }}</p>
+  {% endif %}
+  
+  {% if module.image %}
+    <!-- Feature Icon-->
+     <div class="c-news-snippet--image">
+      <img src="{{ module.image }}" class="w-full" alt="{{ title }}"/>
+    </div>
+  {% endif %}
+  <p class="c-news_title text-xl mt-4 mb-2">{{ title }}</p>
+  <p class="text-muted">{{ excerpt }}</p>
+
+  <div class="-news-snippet-section--button mt-8">
+    <a href="{{ buttonAction }}"
+      style="color: rgba({{ textColor.color|convert_rgb }}, {{ textColor.opacity / 100 }}); background: rgba({{ bgColor.color|convert_rgb }}, {{ bgColor.opacity / 100 }});"
+      {% if buttonNewtab %}target="_blank"  rel="noopener noreferrer"{% endif %} {% if buttonNoFollow %}rel="noopener noreferrer nofollow" {% endif %}
+      class="c-button bg-white">
+      {{ buttonText }}
+    </a>
+  </div>
+</div>

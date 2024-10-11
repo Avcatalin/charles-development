@@ -1,0 +1,60 @@
+<div class="relationships-block-main">
+  <div class="container">
+
+    <div class="relationships-block-container">
+      <div class="relationships-header" data-aos="fade-up">
+        <h2>{{ module.title }}</h2>
+      </div>
+      <div class="relationships-main-content">
+        <div class="testimonials-slider-block">
+          <div class="testimonials-slider-container">
+            {% for item in module.slide_content %}
+            <div class="testimonials-item">
+              <div class="testimonials-inner-item">
+                <div class="testimonials-img" id="product">
+                  <div id="testimonials-diagram-{{ loop.index }}">
+                    <lottie-player loading="lazy" class="c-animation--player" autoplay="false" loop renderer="svg" mode="normal" src="{{ item.lottie }}"></lottie-player>
+                  </div>
+                </div>
+                <div class="testimonials-content">
+                  <h2>{{ item.sub_title }}</h2>
+                  <p>{{ item.sub_text }}</p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="about-charles-block">
+          <div class="about-header">
+            <div class="about-charles-left-header">
+              <h2>{{ module.bottom_title }}</h2>
+            </div>
+            <div class="social-media-block-charles">
+              <div class="social-icon-list">
+                <ul>
+                  <li><a href="{{ module.whatsapp_link }}"><img src="https://www.hello-charles.com/hubfs/advanced/wp-icon.png" alt="WhatsApp"></a></li>
+                  <li><a href="{{ module.instagram_link }}"><img src="https://www.hello-charles.com/hubfs/advanced/insta-icon.png" alt="Instagram"></a></li>
+                </ul>
+
+                <p>{{ module.social_text }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-services-block">
+            {% for item in module.logo_block %}
+            <div class="about-box-service">
+              {{ item.sub_content }}
+
+              <div class="about-logo-block">
+                <img loading="lazy" src="{{ item.logo.src }}" alt="{{ item.logo.alt }}">
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

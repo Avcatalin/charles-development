@@ -1,0 +1,24 @@
+<!--
+templateType: global_partial
+label: Website header
+-->
+<header id="main-page-header" class="main__header px-4 h-20 bg-white flex flex-no-wrap items-center">  
+  <div class="page-header--logo h-10">
+    {% module 'site_logo' path='@hubspot/logo' %}
+  </div>
+
+  <div class="flex-grow"></div>
+
+  <div class="page-header--nav-wrap" id="main-nav">
+    {% module 'navigation-primary' path='../../modules/menu-section', label='Primary navigation' %}
+  </div>
+  <div class="page-header--burger-menu desktop:hidden mobile:block">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  {# {% module "module_16597310127433" path='/charles-b2b/modules/chat award nav 2022', label="chat award nav" %} #}
+  {% module "module_17072966061731" path="/charles-b2b/modules/chat award nav 2024", label="chat award nav 2024" %}
+</header>

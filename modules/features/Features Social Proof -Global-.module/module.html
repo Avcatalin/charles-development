@@ -1,0 +1,10 @@
+<div class="social-title">
+  {{ module.social_title }}
+</div>
+<div class="social-proof-icons">
+  {% for item in module.badge_list %}
+  <div class="social-proof-content">
+    {{ item.badge }}
+  </div>
+  {% endfor %}
+</div>

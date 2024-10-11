@@ -1,0 +1,26 @@
+<div class="key-facts-block">
+  <div class="container" id="charles">
+    <div class="key-facts-inner-content">
+      <div class="heading-block" data-aos="fade-up">
+        <h2>{{ module.title }}</h2>
+        <p>{{ module.sub_text }}</p>
+      </div>
+
+      <div class="key-facts-listing-block">
+        {% for item in module.anchor %}
+        <div class="key-facts-box" data-aos="fade-up">
+          <div class="key-facts-img">
+            <a href="{{ item.anchor }}" class="redirection-link">
+              <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" width="145" height="145">
+            </a>
+          </div>
+          <div class="key-fact-detail">
+            <a href="{{ item.anchor }}">{{ item.sub_title }}</a>
+            <p>{{ item.sub_content }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

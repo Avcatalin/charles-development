@@ -1,0 +1,30 @@
+[ {
+  "id" : "hero_text",
+  "name" : "hero_text",
+  "display_width" : null,
+  "label" : "Hero text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Turn Conversations<br><strong>into Conversions.</strong>"
+}, {
+  "picker" : "file",
+  "id" : "lottie_file",
+  "name" : "lottie_file",
+  "display_width" : null,
+  "label" : "Lottie File",
+  "help_text" : "Upload a Lottie .json file.",
+  "required" : true,
+  "locked" : false,
+  "type" : "file"
+}, {
+  "picker" : "file",
+  "id" : "lottie_file_mobile",
+  "name" : "lottie_file_mobile",
+  "display_width" : null,
+  "label" : "Lottie File (Mobile)",
+  "help_text" : "Upload a Lottie .json file. (shown on mobile)",
+  "required" : true,
+  "locked" : false,
+  "type" : "file"
+} ]

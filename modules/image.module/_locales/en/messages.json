@@ -1,0 +1,137 @@
+{
+  "img.default.alt" : {
+    "message" : "placeholder_200x200",
+    "description" : "",
+    "placeholders" : null
+  },
+  "img.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "img.label" : {
+    "message" : "Image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "link.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "link.help_text" : {
+    "message" : "This is where you'd like to send your visitors when they click on the image. Please include a protocol (i.e. \"http://\") in the URL.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "link.label" : {
+    "message" : "Link (optional)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "link.placeholder" : {
+    "message" : "http://...",
+    "description" : "",
+    "placeholders" : null
+  },
+  "link.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "margin_sides.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "margin_sides.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "margin_sides.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "margin_sides.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "margin_sides.placeholder" : {
+    "message" : "margin-left:1 px / em / %",
+    "description" : null,
+    "placeholders" : null
+  },
+  "margin_sides.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.name" : {
+    "message" : "image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.spacing_field.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.spacing_field.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.spacing_field.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.spacing_field.label" : {
+    "message" : "Spacing",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.spacing_field.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "target.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "target.label" : {
+    "message" : "Open link in new tab",
+    "description" : "",
+    "placeholders" : null
+  }
+}

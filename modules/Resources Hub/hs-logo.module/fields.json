@@ -1,0 +1,41 @@
+[ {
+  "id" : "a650622b-e8a2-0d7b-7c4c-a41a291f8218",
+  "name" : "link_field",
+  "display_width" : null,
+  "label" : "Logo URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : 157273572275,
+      "href" : null,
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "dc87f9ef-7e54-0c51-7e55-0c49e9ecc0ec",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/charles-logo-1.webp",
+    "alt" : "charles-logo",
+    "loading" : "lazy",
+    "width" : 336,
+    "height" : 68,
+    "max_width" : 336,
+    "max_height" : 68
+  }
+} ]

@@ -1,0 +1,27 @@
+<div class="main-preloader-section loaded" style="background-image: url({{ module.preloader_background.src }});">
+  <div class="inner-container">
+    <div class="title-container">
+      <h2>
+        <span class="first">{{ module.title_first }}</span>
+        
+        <div class="vertical-slider-container">
+          <div class="slider-wrapper">
+            {% for item in module.slider_container %}
+              <span>{% inline_text field="slider_word" value="{{ item.slider_word }}" %}</span>
+            {% endfor %}
+          </div>
+        </div>
+        
+        <span class="last">{{ module.title_second }}</span>
+      </h2>
+      
+    </div>
+    
+    <div class="switch-checkbox">
+      <label class="switch">
+        <input type="checkbox" id="hidden-checkbox" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+</div>

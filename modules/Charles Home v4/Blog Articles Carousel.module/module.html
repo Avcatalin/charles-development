@@ -1,0 +1,33 @@
+<div class="blog-posts-block">
+  <!-- Custom HubSpot Module: Blog Article List -->
+  {% set blog_posts = blog_recent_posts(limit=5) %}
+  <div class="swiper articles-carousel">
+    <div class="swiper-wrapper">
+      {% for post in blog_posts %}
+      <div class="swiper-slide article-block">
+        <!-- Post Featured Image -->
+        <a href="{{ post.absolute_url }}">
+          <div class="blog-post" style="background-image: url('https://www.hello-charles.com/hubfs/Imported%20images/bg-article-dotted-canvas.svg');">
+            <div class="post-image">
+              <img src="{{ post.featured_image }}" alt="{{ post.featured_image }}" loading="lazy" />
+            </div>
+            <!-- Post Content -->
+            <div class="post-content">
+              <p class="article-title">{{ post.name|truncatehtml(50) }}</p>
+              {{ post.post_list_content|truncatehtml(120) }}
+              <div class="align-btn">
+                <span class="read-more-button">Read more <i></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- Swiper Navigation -->
+    <div class="swiper-nav-arrows">
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</div>

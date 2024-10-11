@@ -1,0 +1,310 @@
+<div class="bf-slider-container">
+  <div class="container">
+    <!-- Swiper Slider Main Container -->
+    <div class="swiper swiper-slider">
+      <div class="swiper-wrapper">
+        <!-- Slide One -->
+        <div class="slide-one swiper-slide">
+          <!-- Top Card Before -->
+          <div class="before-slide-card">
+            <div class="card-overlay" style="background-image: url({{ module.slide_one_group.before_slide_card_background.src }})">
+              <h4>
+                <span class="highlight" style="background-color: {{ module.slide_one_group.slide_one_highlight_background_color.css }}">{{ module.slide_one_group.before_slide_card_highlight }}</span>
+                <span class="d-block">{{ module.slide_one_group.before_slide_title }}</span>
+              </h4>
+            </div>
+          </div>
+          <!-- Slide Header -->
+          <div class="slide-header" style="background-color: {{ module.slide_one_group.slide_background_color.css }};">
+            <div class="col-one">
+              <!-- Video Box -->
+              <div class="image-inner">
+                <!-- Video URL (placeholder) -->
+                <div class="video-url">
+                  <video width="445" height="545" poster="{{ module.slide_one_group.vide_placeholder.src }}" onclick="this.paused ? this.play() : this.pause();">
+                    <source src="{{ module.slide_one_group.video_slide_one }}" type="video/mp4">
+                  </video> 
+                </div>
+                <div class="image-subcontent" style="background-color: {{ module.slide_one_group.subcontent_background.css }}">
+                  {{ module.slide_one_group.slide_one_group_subtitle }}
+                </div>
+              </div>
+            </div>
+            <div class="col-two">
+              <!-- Step Slide -->
+              <div class="step-slide">
+                <span>A</span>
+                {{ module.slide_one_group.step_title }}
+              </div>
+              <div class="slide-title">
+                {{ module.slide_one_group.slide_one_title }}
+              </div>
+            </div>
+            <div class="col-three">
+              <!-- Image Slide -->
+              {% if module.slide_one_group.slide_one_third_image.src %}
+              {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_one_third_image.width }}" height="{{ module.slide_one_group.slide_one_third_image.height }}"' %}
+              {% if module.slide_one_group.slide_one_third_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_one_third_image.width }}" height="{{ module.slide_one_group.slide_one_third_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.slide_one_group.slide_one_third_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_one_third_image.max_width }}" height="{{ module.slide_one_group.slide_one_third_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.slide_one_group.slide_one_third_image.loading != 'disabled' ? 'loading="{{ module.slide_one_group.slide_one_third_image.loading }}"' : '' %}
+              <img src="{{ module.slide_one_group.slide_one_third_image.src }}" alt="{{ module.slide_one_group.slide_one_third_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>
+          <!-- Slide One Bottom Content -->
+          <div class="slide-content">
+            <!-- Column One -->
+            <div class="col-one">
+              <span class="content-icon">
+                {% if module.slide_one_group.slide_content_icon_column_one.src %}
+                {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_content_icon_column_one.width }}" height="{{ module.slide_one_group.slide_content_icon_column_one.height }}"' %}
+                {% if module.slide_one_group.slide_content_icon_column_one.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_content_icon_column_one.width }}" height="{{ module.slide_one_group.slide_content_icon_column_one.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.slide_one_group.slide_content_icon_column_one.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_content_icon_column_one.max_width }}" height="{{ module.slide_one_group.slide_content_icon_column_one.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.slide_one_group.slide_content_icon_column_one.loading != 'disabled' ? 'loading="{{ module.slide_one_group.slide_content_icon_column_one.loading }}"' : '' %}
+                <img src="{{ module.slide_one_group.slide_content_icon_column_one.src }}" alt="{{ module.slide_one_group.slide_content_icon_column_one.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </span>
+              <div class="content-text">
+                {{ module.slide_one_group.slide_content_text_column_one }}
+              </div>
+            </div>
+            <!-- Column Two -->
+            <div class="col-two">
+              <span class="content-icon">
+                {% if module.slide_one_group.slide_content_icon_column_two.src %}
+                {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_content_icon_column_two.width }}" height="{{ module.slide_one_group.slide_content_icon_column_two.height }}"' %}
+                {% if module.slide_one_group.slide_content_icon_column_two.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_content_icon_column_two.width }}" height="{{ module.slide_one_group.slide_content_icon_column_two.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.slide_one_group.slide_content_icon_column_two.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_content_icon_column_two.max_width }}" height="{{ module.slide_one_group.slide_content_icon_column_two.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.slide_one_group.slide_content_icon_column_two.loading != 'disabled' ? 'loading="{{ module.slide_one_group.slide_content_icon_column_two.loading }}"' : '' %}
+                <img src="{{ module.slide_one_group.slide_content_icon_column_two.src }}" alt="{{ module.slide_one_group.slide_content_icon_column_two.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </span>
+              <div class="content-text">
+                {{ module.slide_one_group.slide_content_text_column_two }}
+              </div>
+            </div>
+            <!-- Column Three -->
+            <div class="col-three">
+              <span class="content-icon">
+                {% if module.slide_one_group.slide_content_icon_column_three.src %}
+                {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_content_icon_column_three.width }}" height="{{ module.slide_one_group.slide_content_icon_column_three.height }}"' %}
+                {% if module.slide_one_group.slide_content_icon_column_three.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_content_icon_column_three.width }}" height="{{ module.slide_one_group.slide_content_icon_column_three.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.slide_one_group.slide_content_icon_column_three.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.slide_one_group.slide_content_icon_column_three.max_width }}" height="{{ module.slide_one_group.slide_content_icon_column_three.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.slide_one_group.slide_content_icon_column_three.loading != 'disabled' ? 'loading="{{ module.slide_one_group.slide_content_icon_column_three.loading }}"' : '' %}
+                <img src="{{ module.slide_one_group.slide_content_icon_column_three.src }}" alt="{{ module.slide_one_group.slide_content_icon_column_three.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </span>
+              <div class="content-text">
+                {{ module.slide_one_group.slide_content_text_column_three }}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide Two -->
+        <div class="slide-two swiper-slide">
+          <!-- Top Card Before -->
+          <div class="before-slide-card">
+            <div class="card-overlay" style="background-image: url({{ module.slide_two_group.before_slide_card_background.src }})">
+              <h4>
+                <span class="highlight" style="background-color: {{ module.slide_two_group.slide_one_highlight_background_color.css }}">{{ module.slide_two_group.before_slide_card_highlight }}</span>
+                <span class="d-block">{{ module.slide_two_group.before_slide_title }}</span>
+              </h4>
+            </div>
+          </div>
+          <!-- Slide Header -->
+          <div class="slide-header" style="background-color: {{ module.slide_two_group.slide_background_color.css }};">
+            <div class="col-one">
+              <!-- Video Box -->
+              <div class="image-inner">
+                <!-- Video URL (placeholder) -->
+                <div class="video-url">
+                  <video width="445" height="545" poster="{{ module.slide_two_group.video_placeholder.src }}" onclick="this.paused ? this.play() : this.pause();">
+                    <source src="{{ module.slide_two_group.video_slide_two }}" type="video/mp4">
+                  </video> 
+                </div>
+                <div class="image-subcontent" style="background-color: {{ module.slide_two_group.subcontent_background.css }}">
+                  {{ module.slide_two_group.slide_two_group_subtitle }}
+                </div>
+              </div>
+            </div>
+            <div class="col-two">
+              <!-- Slide Step -->
+              <div class="step-slide">
+                <span>B</span>
+                {{ module.slide_two_group.step_title }}
+              </div>
+              <div class="slide-title">
+                {{ module.slide_two_group.slide_one_title }}
+              </div>
+            </div>
+            <div class="col-three">
+              <!-- Image Slide -->
+              {% if module.slide_two_group.slide_one_third_image.src %}
+              {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_one_third_image.width }}" height="{{ module.slide_two_group.slide_one_third_image.height }}"' %}
+              {% if module.slide_two_group.slide_one_third_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_one_third_image.width }}" height="{{ module.slide_two_group.slide_one_third_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.slide_two_group.slide_one_third_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_one_third_image.max_width }}" height="{{ module.slide_two_group.slide_one_third_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.slide_two_group.slide_one_third_image.loading != 'disabled' ? 'loading="{{ module.slide_two_group.slide_one_third_image.loading }}"' : '' %}
+              <img src="{{ module.slide_two_group.slide_one_third_image.src }}" alt="{{ module.slide_two_group.slide_one_third_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>
+          <!-- Slide Two Bottom Content -->
+          <div class="slide-content">
+            <!-- Column Two -->
+            <div class="col-one">
+              <span class="content-icon">
+                {% if module.slide_two_group.slide_content_icon_column_one.src %}
+                {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_content_icon_column_one.width }}" height="{{ module.slide_two_group.slide_content_icon_column_one.height }}"' %}
+                {% if module.slide_two_group.slide_content_icon_column_one.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_content_icon_column_one.width }}" height="{{ module.slide_two_group.slide_content_icon_column_one.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.slide_two_group.slide_content_icon_column_one.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_content_icon_column_one.max_width }}" height="{{ module.slide_two_group.slide_content_icon_column_one.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.slide_two_group.slide_content_icon_column_one.loading != 'disabled' ? 'loading="{{ module.slide_two_group.slide_content_icon_column_one.loading }}"' : '' %}
+                <img src="{{ module.slide_two_group.slide_content_icon_column_one.src }}" alt="{{ module.slide_two_group.slide_content_icon_column_one.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </span>
+              <div class="content-text">
+                {{ module.slide_two_group.slide_content_text_column_one }}
+              </div>
+            </div>
+            <!-- Column Two -->
+            <div class="col-two">
+              <span class="content-icon">
+                {% if module.slide_two_group.slide_content_icon_column_two.src %}
+                {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_content_icon_column_two.width }}" height="{{ module.slide_two_group.slide_content_icon_column_two.height }}"' %}
+                {% if module.slide_two_group.slide_content_icon_column_two.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_content_icon_column_two.width }}" height="{{ module.slide_two_group.slide_content_icon_column_two.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.slide_two_group.slide_content_icon_column_two.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_content_icon_column_two.max_width }}" height="{{ module.slide_two_group.slide_content_icon_column_two.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.slide_two_group.slide_content_icon_column_two.loading != 'disabled' ? 'loading="{{ module.slide_two_group.slide_content_icon_column_two.loading }}"' : '' %}
+                <img src="{{ module.slide_two_group.slide_content_icon_column_two.src }}" alt="{{ module.slide_two_group.slide_content_icon_column_two.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </span>
+              <div class="content-text">
+                {{ module.slide_two_group.slide_content_text_column_two }}
+              </div>
+            </div>
+            <!-- Column Three -->
+            <div class="col-three">
+              <span class="content-icon">
+                {% if module.slide_two_group.slide_content_icon_column_three.src %}
+                {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_content_icon_column_three.width }}" height="{{ module.slide_two_group.slide_content_icon_column_three.height }}"' %}
+                {% if module.slide_two_group.slide_content_icon_column_three.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_content_icon_column_three.width }}" height="{{ module.slide_two_group.slide_content_icon_column_three.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.slide_two_group.slide_content_icon_column_three.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.slide_two_group.slide_content_icon_column_three.max_width }}" height="{{ module.slide_two_group.slide_content_icon_column_three.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.slide_two_group.slide_content_icon_column_three.loading != 'disabled' ? 'loading="{{ module.slide_two_group.slide_content_icon_column_three.loading }}"' : '' %}
+                <img src="{{ module.slide_two_group.slide_content_icon_column_three.src }}" alt="{{ module.slide_two_group.slide_content_icon_column_three.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </span>
+              <div class="content-text">
+                {{ module.slide_two_group.slide_content_text_column_three }}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide Three -->
+        <div class="slide-three swiper-slide">
+          <!-- Top Card Before -->
+          <div class="before-slide-card">
+            <div class="card-overlay" style="background-image: url({{ module.slide_three_group.before_slide_card_background.src }})">
+              <h4>
+                <span class="highlight" style="background-color: {{ module.slide_three_group.slide_one_highlight_background_color.css }}">{{ module.slide_three_group.before_slide_card_highlight }}</span>
+                <span class="d-block">{{ module.slide_three_group.before_slide_title }}</span>
+              </h4>
+            </div>
+          </div>
+          <!-- Slide Header -->
+          <div class="slide-header" style="background-color: {{ module.slide_three_group.slide_background_color.css }};">
+            <div class="col-one">
+              <!-- Video Box -->
+              <div class="image-inner">
+                <!-- Video URL (placeholder) -->
+                <div class="video-url">
+                  <video width="445" height="545" poster="{{ module.slide_three_group.video_placeholder.src }}" onclick="this.paused ? this.play() : this.pause();">
+                    <source src="{{ module.slide_three_group.video_slide_three }}" type="video/mp4">
+                  </video> 
+                </div>
+                <div class="image-subcontent" style="background-color: {{ module.slide_three_group.subcontent_background.css }}">
+                  {{ module.slide_three_group.slide_three_group_subtitle }}
+                </div>
+              </div>
+            </div>
+            <div class="col-two">
+              <!-- Slide Step -->
+              <div class="step-slide">
+                <span>C</span>
+                {{ module.slide_three_group.step_title }}
+              </div>
+              <div class="slide-title">
+                {{ module.slide_three_group.slide_one_title }}
+              </div>
+            </div>
+            <div class="col-three">
+              <!-- Image Slide -->
+              {% if module.slide_three_group.slide_one_third_image.src %}
+              {% set sizeAttrs = 'width="{{ module.slide_three_group.slide_one_third_image.width }}" height="{{ module.slide_three_group.slide_one_third_image.height }}"' %}
+              {% if module.slide_three_group.slide_one_third_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.slide_three_group.slide_one_third_image.width }}" height="{{ module.slide_three_group.slide_one_third_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.slide_three_group.slide_one_third_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.slide_three_group.slide_one_third_image.max_width }}" height="{{ module.slide_three_group.slide_one_third_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.slide_three_group.slide_one_third_image.loading != 'disabled' ? 'loading="{{ module.slide_three_group.slide_one_third_image.loading }}"' : '' %}
+              <img src="{{ module.slide_three_group.slide_one_third_image.src }}" alt="{{ module.slide_three_group.slide_one_third_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>
+          <!-- Slide Two Bottom Content -->
+          <div class="slide-content">
+            <!-- Column One -->
+            <div class="col-one">
+              {{ module.slide_three_group.slide_content_text_column_one }}
+            </div>
+            <!-- Column Two -->
+            <div class="col-two">
+              {% if module.slide_three_group.slide_three_content_image.src %}
+              {% set sizeAttrs = 'width="{{ module.slide_three_group.slide_three_content_image.width }}" height="{{ module.slide_three_group.slide_three_content_image.height }}"' %}
+              {% if module.slide_three_group.slide_three_content_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.slide_three_group.slide_three_content_image.width }}" height="{{ module.slide_three_group.slide_three_content_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.slide_three_group.slide_three_content_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.slide_three_group.slide_three_content_image.max_width }}" height="{{ module.slide_three_group.slide_three_content_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.slide_three_group.slide_three_content_image.loading != 'disabled' ? 'loading="{{ module.slide_three_group.slide_three_content_image.loading }}"' : '' %}
+              <img src="{{ module.slide_three_group.slide_three_content_image.src }}" alt="{{ module.slide_three_group.slide_three_content_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+
+              <!-- Button Calculate -->
+              <div class="btn-calculate">
+                <a href="#bf-calculator-section" class="btn-calculate">Calculate Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,580 @@
+<div class="bf-modals-section" style="background-image: url({{ module.background_image_section.src }})">
+  <div class="container">
+    <div class="heading">
+      <div class="heading-badge">
+        {{ module.heading_badge }}
+      </div>
+      <h3>
+        {{ module.heading }}
+      </h3>
+      <p>
+        {{ module.heading_content }}
+      </p>
+    </div>
+
+    <!-- Modals List -->
+    <div class="modals-list">
+      <!-- Modal One -->
+      <div class="modal-one-view relative" style="background-color: {{ module.modal_one.modal_background.css }}; background-image: url({{ module.modal_one.modal_background_image.src }});">
+        <!-- Badge -->
+        <div class="view-badge" style="background-color: {{ module.modal_one.badge_background_color.css }}">
+          <span style="color: {{ module.modal_one.badge_text_color.css }}">{{ module.modal_one.modal_badge }}</span>
+        </div>
+
+        <!-- Modal Content -->
+        <div class="view-content">
+          {{ module.modal_one.modal_content }}
+        </div>
+
+        <!-- Button Modal -->
+        <div class="modal-trigger one">
+          <div class="trigger-inner" style="background-color: {{ module.modal_one.modal_trigger_background.css }}">
+            {% if module.modal_one.modal_button.src %}
+            {% set sizeAttrs = 'width="{{ module.modal_one.modal_button.width }}" height="{{ module.modal_one.modal_button.height }}"' %}
+            {% if module.modal_one.modal_button.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.modal_one.modal_button.width }}" height="{{ module.modal_one.modal_button.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.modal_one.modal_button.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.modal_one.modal_button.max_width }}" height="{{ module.modal_one.modal_button.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.modal_one.modal_button.loading != 'disabled' ? 'loading="{{ module.modal_one.modal_button.loading }}"' : '' %}
+            <img src="{{ module.modal_one.modal_button.src }}" alt="{{ module.modal_one.modal_button.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <!-- Modal Two & Three -->
+      <div class="d-flex-row">
+        <!-- Modal Two -->
+        <div class="modal-two-view relative" style="background-color: {{ module.modal_two.modal_background.css }}">
+          <!-- Badge -->
+          <div class="view-badge" style="background-color: {{ module.modal_two.badge_background_color.css }}">
+            <span style="color: {{ module.modal_two.badge_text_color.css }}">{{ module.modal_two.modal_badge }}</span>
+          </div>
+
+          <!-- Modal Content -->
+          <div class="view-content">
+            {{ module.modal_two.modal_content }}
+          </div>
+
+          <!-- Button Modal -->
+          <div class="modal-trigger two">
+            <div class="trigger-inner" style="background-color: {{ module.modal_two.modal_trigger_background.css }}">
+              {% if module.modal_two.modal_button.src %}
+              {% set sizeAttrs = 'width="{{ module.modal_two.modal_button.width }}" height="{{ module.modal_two.modal_button.height }}"' %}
+              {% if module.modal_two.modal_button.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.modal_two.modal_button.width }}" height="{{ module.modal_two.modal_button.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.modal_two.modal_button.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.modal_two.modal_button.max_width }}" height="{{ module.modal_two.modal_button.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.modal_two.modal_button.loading != 'disabled' ? 'loading="{{ module.modal_two.modal_button.loading }}"' : '' %}
+              <img src="{{ module.modal_two.modal_button.src }}" alt="{{ module.modal_two.modal_button.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>
+
+          <!-- Image Outside Box -->
+          <div class="modal-outside-image">
+            {% if module.modal_two.modal_background_image.src %}
+            {% set sizeAttrs = 'width="{{ module.modal_two.modal_background_image.width }}" height="{{ module.modal_two.modal_background_image.height }}"' %}
+            {% if module.modal_two.modal_background_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.modal_two.modal_background_image.width }}" height="{{ module.modal_two.modal_background_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.modal_two.modal_background_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.modal_two.modal_background_image.max_width }}" height="{{ module.modal_two.modal_background_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.modal_two.modal_background_image.loading != 'disabled' ? 'loading="{{ module.modal_two.modal_background_image.loading }}"' : '' %}
+            <img src="{{ module.modal_two.modal_background_image.src }}" alt="{{ module.modal_two.modal_background_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+        </div>
+        <!-- Modal Three -->
+        <div class="modal-three-view relative" style="background-color: {{ module.modal_three.modal_background.css }}; background-image: url({{ module.modal_three.modal_background_image.src }});">
+          <!-- Badge -->
+          <div class="view-badge" style="background-color: {{ module.modal_three.badge_background_color.css }}">
+            <span style="color: {{ module.modal_three.badge_text_color.css }}">{{ module.modal_three.modal_badge }}</span>
+          </div>
+
+          <!-- Modal Content -->
+          <div class="view-content">
+            {{ module.modal_three.modal_content }}
+          </div>
+
+          <!-- Button Modal -->
+          <div class="modal-trigger three">
+            <div class="trigger-inner" style="background-color: {{ module.modal_three.modal_trigger_background.css }}">
+              {% if module.modal_three.modal_button.src %}
+              {% set sizeAttrs = 'width="{{ module.modal_three.modal_button.width }}" height="{{ module.modal_three.modal_button.height }}"' %}
+              {% if module.modal_three.modal_button.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.modal_three.modal_button.width }}" height="{{ module.modal_three.modal_button.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.modal_three.modal_button.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.modal_three.modal_button.max_width }}" height="{{ module.modal_three.modal_button.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.modal_three.modal_button.loading != 'disabled' ? 'loading="{{ module.modal_three.modal_button.loading }}"' : '' %}
+              <img src="{{ module.modal_three.modal_button.src }}" alt="{{ module.modal_three.modal_button.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Four & Five -->
+      <div class="d-flex-row">
+        <!-- Modal Four -->
+        <div class="modal-four-view relative" style="background-color: {{ module.modal_four.modal_background.css }}; background-image: url({{ module.modal_four.modal_background_image.src }});">
+          <!-- Badge -->
+          <div class="view-badge" style="background-color: {{ module.modal_four.badge_background_color.css }}">
+            <span style="color: {{ module.modal_four.badge_text_color.css }}">{{ module.modal_four.modal_badge }}</span>
+          </div>
+
+          <!-- Modal Content -->
+          <div class="view-content">
+            {{ module.modal_four.modal_content }}
+          </div>
+
+          <!-- Button Modal -->
+          <div class="modal-trigger scroll-section">
+            <a href="#bf-calculator-section">
+              <div class="trigger-inner" style="background-color: {{ module.modal_four.modal_trigger_background.css }}">
+                {% if module.modal_four.modal_button.src %}
+                {% set sizeAttrs = 'width="{{ module.modal_four.modal_button.width }}" height="{{ module.modal_four.modal_button.height }}"' %}
+                {% if module.modal_four.modal_button.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.modal_four.modal_button.width }}" height="{{ module.modal_four.modal_button.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.modal_four.modal_button.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.modal_four.modal_button.max_width }}" height="{{ module.modal_four.modal_button.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.modal_four.modal_button.loading != 'disabled' ? 'loading="{{ module.modal_four.modal_button.loading }}"' : '' %}
+                <img src="{{ module.modal_four.modal_button.src }}" alt="{{ module.modal_four.modal_button.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Modal Five -->
+        <div class="modal-five-view relative" style="background-color: {{ module.modal_five.modal_background.css }}; background-image: url({{ module.modal_five.modal_background_image.src }});">
+          <!-- Badge -->
+          <div class="view-badge" style="background-color: {{ module.modal_five.badge_background_color.css }}">
+            <span style="color: {{ module.modal_five.badge_text_color.css }}">{{ module.modal_five.modal_badge }}</span>
+          </div>
+
+          <!-- Modal Content -->
+          <div class="view-content">
+            {{ module.modal_five.modal_content }}
+          </div>
+
+          <!-- Button Modal -->
+          <div class="modal-trigger">
+            {% set href = module.modal_five.inner_link.url.href %}
+            {% if module.modal_five.inner_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}"
+               {% if module.modal_five.inner_link.open_in_new_tab %}target="_blank"{% endif %}
+               {% if module.modal_five.inner_link.rel %}rel="{{ module.modal_five.inner_link.rel }}"{% endif %}
+               >
+              <div class="trigger-inner" style="background-color: {{ module.modal_five.modal_trigger_background.css }}">
+                {% if module.modal_five.modal_button.src %}
+                {% set sizeAttrs = 'width="{{ module.modal_five.modal_button.width }}" height="{{ module.modal_five.modal_button.height }}"' %}
+                {% if module.modal_five.modal_button.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.modal_five.modal_button.width }}" height="{{ module.modal_five.modal_button.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.modal_five.modal_button.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.modal_five.modal_button.max_width }}" height="{{ module.modal_five.modal_button.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.modal_five.modal_button.loading != 'disabled' ? 'loading="{{ module.modal_five.modal_button.loading }}"' : '' %}
+                <img src="{{ module.modal_five.modal_button.src }}" alt="{{ module.modal_five.modal_button.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <!-- Modal Six & Seven -->
+      <div class="d-flex-row">
+        <!-- Modal Six -->
+        <div class="modal-six-view relative" style="background-color: {{ module.modal_six.modal_background.css }}; background-image: url({{ module.modal_six.modal_background_image.src }});">
+          <!-- Badge -->
+          <div class="view-badge" style="background-color: {{ module.modal_six.badge_background_color.css }}">
+            <span style="color: {{ module.modal_six.badge_text_color.css }}">{{ module.modal_six.modal_badge }}</span>
+          </div>
+
+          <!-- Modal Content -->
+          <div class="view-content">
+            {{ module.modal_six.modal_content }}
+          </div>
+
+          <!-- Button Modal -->
+          <div class="modal-trigger six">
+            <div class="trigger-inner" style="background-color: {{ module.modal_six.modal_trigger_background.css }}">
+              {% if module.modal_six.modal_button.src %}
+              {% set sizeAttrs = 'width="{{ module.modal_six.modal_button.width }}" height="{{ module.modal_six.modal_button.height }}"' %}
+              {% if module.modal_six.modal_button.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.modal_six.modal_button.width }}" height="{{ module.modal_six.modal_button.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.modal_six.modal_button.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.modal_six.modal_button.max_width }}" height="{{ module.modal_six.modal_button.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.modal_six.modal_button.loading != 'disabled' ? 'loading="{{ module.modal_six.modal_button.loading }}"' : '' %}
+              <img src="{{ module.modal_six.modal_button.src }}" alt="{{ module.modal_six.modal_button.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Seven -->
+        <div class="modal-seven-view relative" style="background-color: {{ module.modal_seven.modal_background.css }}">
+          <!-- Badge -->
+          <div class="view-badge" style="background-color: {{ module.modal_seven.badge_background_color.css }}">
+            <span style="color: {{ module.modal_seven.badge_text_color.css }}">{{ module.modal_seven.modal_badge }}</span>
+          </div>
+
+          <!-- Modal Content -->
+          <div class="view-content">
+            {{ module.modal_seven.modal_content }}
+          </div>
+
+          <!-- Button Modal -->
+          <div class="modal-trigger seven">
+            <div class="trigger-inner" style="background-color: {{ module.modal_seven.modal_trigger_background.css }}">
+              {% if module.modal_seven.modal_button.src %}
+              {% set sizeAttrs = 'width="{{ module.modal_seven.modal_button.width }}" height="{{ module.modal_seven.modal_button.height }}"' %}
+              {% if module.modal_seven.modal_button.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.modal_seven.modal_button.width }}" height="{{ module.modal_seven.modal_button.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.modal_seven.modal_button.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.modal_seven.modal_button.max_width }}" height="{{ module.modal_seven.modal_button.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.modal_seven.modal_button.loading != 'disabled' ? 'loading="{{ module.modal_seven.modal_button.loading }}"' : '' %}
+              <img src="{{ module.modal_seven.modal_button.src }}" alt="{{ module.modal_seven.modal_button.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          </div>
+
+          <!-- Image Outside Box -->
+          <div class="modal-outside-image">
+            {% if module.modal_seven.modal_background_image.src %}
+            {% set sizeAttrs = 'width="{{ module.modal_seven.modal_background_image.width }}" height="{{ module.modal_seven.modal_background_image.height }}"' %}
+            {% if module.modal_seven.modal_background_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.modal_seven.modal_background_image.width }}" height="{{ module.modal_seven.modal_background_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.modal_seven.modal_background_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.modal_seven.modal_background_image.max_width }}" height="{{ module.modal_seven.modal_background_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.modal_seven.modal_background_image.loading != 'disabled' ? 'loading="{{ module.modal_seven.modal_background_image.loading }}"' : '' %}
+            <img src="{{ module.modal_seven.modal_background_image.src }}" alt="{{ module.modal_seven.modal_background_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <!-- Modal Eight -->
+      <div class="modal-eight-view relative" style="background-color: {{ module.modal_eight.modal_background.css }}; background-image: url({{ module.modal_eight.modal_background_image.src }});">
+        <!-- Badge -->
+        <div class="view-badge" style="background-color: {{ module.modal_eight.badge_background_color.css }}">
+          <span style="color: {{ module.modal_eight.badge_text_color.css }}">{{ module.modal_eight.modal_badge }}</span>
+        </div>
+
+        <!-- Modal Content -->
+        <div class="view-content">
+          {{ module.modal_eight.modal_content }}
+        </div>
+
+        <!-- Button Modal -->
+        <div class="modal-trigger eight">
+          <div class="trigger-inner" style="background-color: {{ module.modal_eight.modal_trigger_background.css }}">
+            {% if module.modal_eight.modal_button.src %}
+            {% set sizeAttrs = 'width="{{ module.modal_eight.modal_button.width }}" height="{{ module.modal_eight.modal_button.height }}"' %}
+            {% if module.modal_eight.modal_button.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.modal_eight.modal_button.width }}" height="{{ module.modal_eight.modal_button.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.modal_eight.modal_button.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.modal_eight.modal_button.max_width }}" height="{{ module.modal_eight.modal_button.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.modal_eight.modal_button.loading != 'disabled' ? 'loading="{{ module.modal_eight.modal_button.loading }}"' : '' %}
+            <img src="{{ module.modal_eight.modal_button.src }}" alt="{{ module.modal_eight.modal_button.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Before Form -->
+    <div class="bf-contact-form">
+      <div class="container">
+        <div class="calc-heading">
+          <div class="badge">
+            {{ module.form_header_badge }}
+          </div>
+          <div class="heading">
+            {{ module.form_header_content }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form header -->
+    <div class="bf-form-bottom" id="form-section">
+      <div class="form-top-header">
+        {% if module.form_header_icon.src %}
+        {% set sizeAttrs = 'width="{{ module.form_header_icon.width }}" height="{{ module.form_header_icon.height }}"' %}
+        {% if module.form_header_icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.form_header_icon.width }}" height="{{ module.form_header_icon.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.form_header_icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.form_header_icon.max_width }}" height="{{ module.form_header_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.form_header_icon.loading != 'disabled' ? 'loading="{{ module.form_header_icon.loading }}"' : '' %}
+        <img src="{{ module.form_header_icon.src }}" alt="{{ module.form_header_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Trigger Modals -->
+<!-- Modal One -->
+<div class="overlay hidden">
+  <section class="modal modal-one hidden">
+    <div class="inner-modal">
+      <div class="close">
+        ⨉
+      </div>
+      <div class="title">
+        {{ module.modal_one_pop_up.modal_one_title }}
+      </div>
+      <div class="modal-overlay-bg" style="background-image: url({{ module.modal_one_pop_up.modal_one_background_image.src }})">
+        {% if module.modal_one_pop_up.modal_one_image.src %}
+        {% set sizeAttrs = 'width="{{ module.modal_one_pop_up.modal_one_image.width }}" height="{{ module.modal_one_pop_up.modal_one_image.height }}"' %}
+        {% if module.modal_one_pop_up.modal_one_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.modal_one_pop_up.modal_one_image.width }}" height="{{ module.modal_one_pop_up.modal_one_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.modal_one_pop_up.modal_one_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.modal_one_pop_up.modal_one_image.max_width }}" height="{{ module.modal_one_pop_up.modal_one_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.modal_one_pop_up.modal_one_image.loading != 'disabled' ? 'loading="{{ module.modal_one_pop_up.modal_one_image.loading }}"' : '' %}
+        <img src="{{ module.modal_one_pop_up.modal_one_image.src }}" alt="{{ module.modal_one_pop_up.modal_one_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="modal-content">
+        {{ module.modal_one_pop_up.modal_one_content }}
+      </div>
+      {% set href = module.modal_one_pop_up.modal_one_cta.url.href %}
+      {% if module.modal_one_pop_up.modal_one_cta.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="modal-one-cta"
+         {% if module.modal_one_pop_up.modal_one_cta.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.modal_one_pop_up.modal_one_cta.rel %}rel="{{ module.modal_one_pop_up.modal_one_cta.rel }}"{% endif %}
+         >
+        {{ module.modal_one_pop_up.cta_text }}
+      </a>
+    </div>
+  </section>
+  <!-- Modal Two -->
+  <section class="modal modal-two hidden">
+    <div class="inner-modal">
+      <div class="close">
+        ⨉
+      </div>
+      <div class="title">
+        {{ module.modal_two_pop_up.modal_title }}
+      </div>
+      <div class="modal-overlay-bg">
+        {% if module.modal_two_pop_up.modal_image.src %}
+        {% set sizeAttrs = 'width="{{ module.modal_two_pop_up.modal_image.width }}" height="{{ module.modal_two_pop_up.modal_image.height }}"' %}
+        {% if module.modal_two_pop_up.modal_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.modal_two_pop_up.modal_image.width }}" height="{{ module.modal_two_pop_up.modal_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.modal_two_pop_up.modal_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.modal_two_pop_up.modal_image.max_width }}" height="{{ module.modal_two_pop_up.modal_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.modal_two_pop_up.modal_image.loading != 'disabled' ? 'loading="{{ module.modal_two_pop_up.modal_image.loading }}"' : '' %}
+        <img src="{{ module.modal_two_pop_up.modal_image.src }}" alt="{{ module.modal_two_pop_up.modal_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="modal-content">
+        {{ module.modal_two_pop_up.modal_content }}
+      </div>
+      {% set href = module.modal_two_pop_up.modal_cta.url.href %}
+      {% if module.modal_two_pop_up.modal_cta.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="modal-one-cta"
+         {% if module.modal_two_pop_up.modal_cta.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.modal_two_pop_up.modal_cta.rel %}rel="{{ module.modal_two_pop_up.modal_cta.rel }}"{% endif %}
+         >
+        {{ module.modal_two_pop_up.cta_text }}
+      </a>
+    </div>
+  </section>
+  <!-- Modal Three -->
+  <section class="modal modal-three hidden">
+    <div class="inner-modal">
+      <div class="close">
+        ⨉
+      </div>
+      <div class="title">
+        {{ module.modal_three_pop_up.modal_title }}
+      </div>
+      <div class="modal-overlay-bg">
+        {% if module.modal_three_pop_up.modal_image.src %}
+        {% set sizeAttrs = 'width="{{ module.modal_three_pop_up.modal_image.width }}" height="{{ module.modal_three_pop_up.modal_image.height }}"' %}
+        {% if module.modal_three_pop_up.modal_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.modal_three_pop_up.modal_image.width }}" height="{{ module.modal_three_pop_up.modal_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.modal_three_pop_up.modal_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.modal_three_pop_up.modal_image.max_width }}" height="{{ module.modal_three_pop_up.modal_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.modal_three_pop_up.modal_image.loading != 'disabled' ? 'loading="{{ module.modal_three_pop_up.modal_image.loading }}"' : '' %}
+        <img src="{{ module.modal_three_pop_up.modal_image.src }}" alt="{{ module.modal_three_pop_up.modal_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="modal-content">
+        {{ module.modal_three_pop_up.modal_content }}
+      </div>
+      {% set href = module.modal_three_pop_up.modal_cta.url.href %}
+      {% if module.modal_three_pop_up.modal_cta.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="modal-one-cta"
+         {% if module.modal_three_pop_up.modal_cta.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.modal_three_pop_up.modal_cta.rel %}rel="{{ module.modal_three_pop_up.modal_cta.rel }}"{% endif %}
+         >
+        {{ module.modal_three_pop_up.cta_text }}
+      </a>
+    </div>
+  </section>
+  <!-- Modal Six -->
+  <section class="modal modal-six hidden">
+    <div class="inner-modal">
+      <div class="close">
+        ⨉
+      </div>
+      <div class="title">
+        {{ module.modal_six_pop_up.modal_title }}
+      </div>
+      <div class="modal-overlay-bg">
+
+        <div class="swiper swiper-modal">
+          <div class="swiper-wrapper">
+            {% for item in module.modal_six_pop_up.modal_slider_images %}
+            <div class="swiper-slide">
+              {% if item.modal_image.src %}
+              {% set sizeAttrs = 'width="{{ item.modal_image.width }}" height="{{ item.modal_image.height }}"' %}
+              {% if item.modal_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.modal_image.width }}" height="{{ item.modal_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.modal_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.modal_image.max_width }}" height="{{ item.modal_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.modal_image.loading != 'disabled' ? 'loading="{{ item.modal_image.loading }}"' : '' %}
+              <img src="{{ item.modal_image.src }}" alt="{{ item.modal_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+            {% endfor %}
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="modal-content">
+        {{ module.modal_six_pop_up.modal_content }}
+      </div>
+      {% set href = module.modal_six_pop_up.modal_cta.url.href %}
+      {% if module.modal_six_pop_up.modal_cta.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="modal-one-cta"
+         {% if module.modal_six_pop_up.modal_cta.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.modal_six_pop_up.modal_cta.rel %}rel="{{ module.modal_six_pop_up.modal_cta.rel }}"{% endif %}
+         >
+        {{ module.modal_six_pop_up.cta_text }}
+      </a>
+    </div>
+  </section>
+  <!-- Modal Seven -->
+  <section class="modal modal-seven hidden">
+    <div class="inner-modal">
+      <div class="close">
+        ⨉
+      </div>
+      <div class="title">
+        {{ module.modal_seven_pop_up.modal_title }}
+      </div>
+      <div class="modal-overlay-bg">
+
+        <div class="swiper swiper-modal">
+          <div class="swiper-wrapper">
+            {% for item in module.modal_seven_pop_up.modal_slider_images %}
+            <div class="swiper-slide">
+              {% if item.modal_image.src %}
+              {% set sizeAttrs = 'width="{{ item.modal_image.width }}" height="{{ item.modal_image.height }}"' %}
+              {% if item.modal_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.modal_image.width }}" height="{{ item.modal_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.modal_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.modal_image.max_width }}" height="{{ item.modal_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.modal_image.loading != 'disabled' ? 'loading="{{ item.modal_image.loading }}"' : '' %}
+              <img src="{{ item.modal_image.src }}" alt="{{ item.modal_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="modal-content">
+        {{ module.modal_seven_pop_up.modal_content }}
+      </div>
+      {% set href = module.modal_seven_pop_up.modal_cta.url.href %}
+      {% if module.modal_seven_pop_up.modal_cta.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="modal-one-cta"
+         {% if module.modal_seven_pop_up.modal_cta.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.modal_seven_pop_up.modal_cta.rel %}rel="{{ module.modal_seven_pop_up.modal_cta.rel }}"{% endif %}
+         >
+        {{ module.modal_seven_pop_up.cta_text }}
+      </a>
+    </div>
+  </section>
+  <!-- Modal Eight -->
+  <section class="modal modal-eight hidden">
+    <div class="inner-modal">
+      <div class="close">
+        ⨉
+      </div>
+      <div class="title">
+        {{ module.modal_eight_pop_up.modal_title }}
+      </div>
+      <div class="modal-overlay-bg">
+
+        <div class="swiper swiper-modal">
+          <div class="swiper-wrapper">
+            {% for item in module.modal_eight_pop_up.modal_slider_images %}
+            <div class="swiper-slide">
+              {% if item.modal_image.src %}
+              {% set sizeAttrs = 'width="{{ item.modal_image.width }}" height="{{ item.modal_image.height }}"' %}
+              {% if item.modal_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.modal_image.width }}" height="{{ item.modal_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.modal_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.modal_image.max_width }}" height="{{ item.modal_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.modal_image.loading != 'disabled' ? 'loading="{{ item.modal_image.loading }}"' : '' %}
+              <img src="{{ item.modal_image.src }}" alt="{{ item.modal_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="modal-content">
+        {{ module.modal_eight_pop_up.modal_content }}
+      </div>
+      {% set href = module.modal_eight_pop_up.modal_cta.url.href %}
+      {% if module.modal_eight_pop_up.modal_cta.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="modal-one-cta"
+         {% if module.modal_eight_pop_up.modal_cta.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.modal_eight_pop_up.modal_cta.rel %}rel="{{ module.modal_eight_pop_up.modal_cta.rel }}"{% endif %}
+         >
+        {{ module.modal_eight_pop_up.cta_text }}
+      </a>
+    </div>
+  </section>
+</div>
+<!-- Slider Overlay -->
+<!-- <div class="overlay hidden"></div> -->

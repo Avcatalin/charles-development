@@ -1,0 +1,1420 @@
+[ {
+  "id" : "d7876425-234d-c89c-1914-028dd3d732c3",
+  "name" : "subscription_toggle_monthly",
+  "display_width" : null,
+  "label" : "Subscription Toggle Monthly",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "monthly"
+}, {
+  "id" : "416f452d-2fc8-44f0-c302-8e0ae7c5f24a",
+  "name" : "subscription_toggle_yearly",
+  "display_width" : null,
+  "label" : "Subscription Toggle Yearly",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "yearly"
+}, {
+  "id" : "94953d92-4022-c163-1144-314560e31b3a",
+  "name" : "charles_logo",
+  "display_width" : null,
+  "label" : "Charles Logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/charles-logo-dark.svg",
+    "alt" : "charles-logo-dark",
+    "loading" : "lazy",
+    "width" : 106,
+    "height" : 26,
+    "max_width" : 106,
+    "max_height" : 26
+  }
+}, {
+  "id" : "1ff28cdb-cc9f-91b2-11e2-694c4623e031",
+  "name" : "charles_demo_screen",
+  "display_width" : null,
+  "label" : "Charles Demo Screen",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/demo-screen-charles.png",
+    "alt" : "demo-screen-charles",
+    "loading" : "lazy",
+    "width" : 246,
+    "height" : 150,
+    "max_width" : 246,
+    "max_height" : 150
+  }
+}, {
+  "id" : "dc8a858f-aeb2-c11e-0637-e8026f1205f2",
+  "name" : "whatsapp_countries",
+  "display_width" : null,
+  "label" : "Whatsapp Countries",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See <b><u>WhatsApp fees</u></b> for your country"
+}, {
+  "id" : "dd00e01c-7ea2-0bb0-0123-aa07ea79db02",
+  "name" : "whatsapp_countries_url",
+  "display_width" : null,
+  "label" : "Whatsapp Countries URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "2fcd179a-2993-5236-e840-a6c73c0826d7",
+  "name" : "pricing_box_first_background",
+  "display_width" : null,
+  "label" : "Pricing Box First Background",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/pricing-intro-bg.svg",
+    "alt" : "pricing-intro-bg",
+    "loading" : "lazy",
+    "width" : 251,
+    "height" : 528,
+    "max_width" : 251,
+    "max_height" : 528
+  }
+}, {
+  "id" : "0e760428-37fc-eb82-d0ea-1b07c0f1325f",
+  "name" : "pricing_package_repeater",
+  "display_width" : null,
+  "label" : "Pricing Package Repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "4bd8a8a1-5dbd-0f5a-5331-69c1b930ab09",
+    "name" : "enable_most_popular_tooltip",
+    "display_width" : null,
+    "label" : "Enable Most popular tooltip",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "26f72db8-1317-1301-9ec4-d747028b53cc",
+    "name" : "enable_custom_border_class",
+    "display_width" : null,
+    "label" : "Enable Custom Border Class",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "5dabad6c-78ea-bcfe-9adc-bbfad6dbd57b",
+    "name" : "most_popular_tooltip",
+    "display_width" : null,
+    "label" : "Most popular tooltip",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Most popular 🤫"
+  }, {
+    "id" : "90b72798-cda0-7ce1-9115-03a767a45f33",
+    "name" : "icon_top",
+    "display_width" : null,
+    "label" : "Icon Top",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/icon-top.svg",
+      "alt" : "icon-top",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    }
+  }, {
+    "id" : "38408a57-4a7b-8894-5c9f-77d14a7b5d28",
+    "name" : "pricing_box_title",
+    "display_width" : null,
+    "label" : "Pricing Box Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Essentials"
+  }, {
+    "id" : "31527f4f-eee0-63bd-81d8-8ba431642ac2",
+    "name" : "pricing_box_subtitle",
+    "display_width" : null,
+    "label" : "Pricing Box Subtitle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "For new businesses with small teams."
+  }, {
+    "id" : "2ac2ccf5-9274-ea9f-527a-e3720e68f3cd",
+    "name" : "display_general_sections",
+    "display_width" : null,
+    "label" : "Display General Sections",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "3f244c8d-0c86-d85a-a16a-ed3dffbc9625",
+    "name" : "price_value",
+    "display_width" : null,
+    "label" : "Monthly Price Value",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "€349"
+  }, {
+    "id" : "b72a2d58-0f46-d2f2-0abb-b7b7727de66e",
+    "name" : "second_price",
+    "display_width" : null,
+    "label" : "Yearly Price Value",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "€1299"
+  }, {
+    "id" : "703135ac-e07b-0198-8fc0-78793a86efa7",
+    "name" : "payment_period",
+    "display_width" : null,
+    "label" : "Monthly Payment period",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "/month"
+  }, {
+    "id" : "21f649a0-dfd9-7bd6-acd0-cf51f5b9e0b8",
+    "name" : "second_payment_period",
+    "display_width" : null,
+    "label" : "Yearly Payment period",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "/year"
+  }, {
+    "id" : "5fd870b7-3e01-dc85-2b8f-57674b97d470",
+    "name" : "package_benefits",
+    "display_width" : null,
+    "label" : "Package Benefits",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "<span>1,000 free</span> WhatsApp conversations/month"
+  }, {
+    "id" : "2e9f9d25-21f2-420c-e92d-f9dec3ebadce",
+    "name" : "outbound_inbound",
+    "display_width" : null,
+    "label" : "Outbound/Inbound",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "(outbound)"
+  }, {
+    "id" : "bdfc97b6-45b9-2187-804b-846435aae1ad",
+    "name" : "additional_cost",
+    "display_width" : null,
+    "label" : "Additional cost",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "<b>0.03 cent*</b><br>per additional conversation"
+  }, {
+    "id" : "43a917f4-23c5-c7c2-6c2f-ef8490b63ef8",
+    "name" : "package_cta_button",
+    "display_width" : null,
+    "label" : "Package CTA Button",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "94a80a00-6e72-cd2c-0e1e-cba6d7c6e2ae",
+    "name" : "package_cta_button_text",
+    "display_width" : null,
+    "label" : "Package CTA Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get started"
+  }, {
+    "id" : "493b9029-d280-4bc9-a3eb-74b84b66fa8b",
+    "name" : "custom_pricing_box_class",
+    "display_width" : null,
+    "label" : "Custom Pricing Box Class",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "81161e4a-84f0-8381-27c6-c953a24b4707",
+    "name" : "display_enterprise_content",
+    "display_width" : null,
+    "label" : "Display Enterprise Content",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "c018ac18-8e74-36d0-25f0-8324f1458d6f",
+    "name" : "enterprise_package_banner",
+    "display_width" : null,
+    "label" : "Enterprise Package Banner",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/enterprise-banner.png",
+      "alt" : "enterprise-banner",
+      "loading" : "lazy",
+      "width" : 246,
+      "height" : 150,
+      "max_width" : 246,
+      "max_height" : 150
+    }
+  }, {
+    "id" : "fa0c2a19-5a12-1e25-0898-d6ddf1204850",
+    "name" : "enterprise_subtitle",
+    "display_width" : null,
+    "label" : "Enterprise Subtitle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Highly customizable"
+  }, {
+    "id" : "7ac8c633-a945-b528-84b6-b43400a280b6",
+    "name" : "enterprise_content",
+    "display_width" : null,
+    "label" : "Enterprise content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Here comes a nice text that describes how extremely flexible we are working with enterprises and also that we have a crazy whatsapp api and integration"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "enable_most_popular_tooltip" : false,
+    "enable_custom_border_class" : false,
+    "most_popular_tooltip" : "Most popular 🤫",
+    "icon_top" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/icon-top.svg",
+      "alt" : "icon-top",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    },
+    "pricing_box_title" : "Essentials",
+    "pricing_box_subtitle" : "For new businesses with small teams.",
+    "display_general_sections" : false,
+    "price_value" : "€349",
+    "second_price" : "€1299",
+    "payment_period" : "/month",
+    "second_payment_period" : "/year",
+    "package_benefits" : "<span>1,000 free</span> WhatsApp conversations/month",
+    "outbound_inbound" : "(outbound)",
+    "additional_cost" : "<b>0.03 cent*</b><br>per additional conversation",
+    "package_cta_button" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "package_cta_button_text" : "Get started",
+    "display_enterprise_content" : false,
+    "enterprise_package_banner" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/enterprise-banner.png",
+      "alt" : "enterprise-banner",
+      "loading" : "lazy",
+      "width" : 246,
+      "height" : 150,
+      "max_width" : 246,
+      "max_height" : 150
+    },
+    "enterprise_subtitle" : "Highly customizable",
+    "enterprise_content" : "Here comes a nice text that describes how extremely flexible we are working with enterprises and also that we have a crazy whatsapp api and integration"
+  } ]
+}, {
+  "id" : "38f432f2-109e-ca88-4832-3246102a5304",
+  "name" : "compare_table_title",
+  "display_width" : null,
+  "label" : "Compare Table Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See <b>all features</b> and compare"
+}, {
+  "id" : "964cfdc8-dc17-9c17-ca06-037ab13f40f1",
+  "name" : "compare_table_icon",
+  "display_width" : null,
+  "label" : "Compare Table Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/angle-down.svg",
+    "alt" : "angle-down",
+    "loading" : "lazy",
+    "width" : 15,
+    "height" : 10,
+    "max_width" : 15,
+    "max_height" : 10
+  }
+}, {
+  "id" : "d32bbf94-1531-1f33-aa1b-dbdd0f625acd",
+  "name" : "users_label",
+  "display_width" : null,
+  "label" : "Users label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Users"
+}, {
+  "id" : "82f170ae-b1c5-2da7-246f-ac9ac0263224",
+  "name" : "success_manager_label",
+  "display_width" : null,
+  "label" : "Success manager label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Success Manager"
+}, {
+  "id" : "b7794325-cdc3-468d-3f9a-0e73b462a453",
+  "name" : "channels_label",
+  "display_width" : null,
+  "label" : "Channels label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Channels"
+}, {
+  "id" : "5c146ed9-a00c-eacb-3901-472ddfd5b48c",
+  "name" : "whatsapp_verification_label",
+  "display_width" : null,
+  "label" : "Whatsapp verification label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Whatsapp verification"
+}, {
+  "id" : "5f50d5ad-e3d4-6adc-a455-b04d33899b6e",
+  "name" : "creative_support_label",
+  "display_width" : null,
+  "label" : "creative support label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "In-house agency"
+}, {
+  "id" : "3053ca5b-a231-dacc-3fce-1afc2d03081c",
+  "name" : "guides_label",
+  "display_width" : null,
+  "label" : "guides label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Detailed how-to guides"
+}, {
+  "id" : "fe22095d-2567-9d7c-0138-573da4930f98",
+  "name" : "service_box_repeater",
+  "display_width" : null,
+  "label" : "Service Box Repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "6b5cac0e-30b8-dcac-3fe7-1824615e3c92",
+    "name" : "service_icon",
+    "display_width" : null,
+    "label" : "Service Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chatins-icon-2.svg",
+      "alt" : "chatins-icon-2",
+      "loading" : "lazy",
+      "width" : 19,
+      "height" : 19,
+      "max_width" : 19,
+      "max_height" : 19
+    }
+  }, {
+    "id" : "ccb6569b-2f19-169a-fdd4-f7305c488712",
+    "name" : "service_title",
+    "display_width" : null,
+    "label" : "Service Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Chat-ins"
+  }, {
+    "id" : "a3a30e41-a513-0d23-b94a-2019c65aa4f4",
+    "name" : "service_text",
+    "display_width" : null,
+    "label" : "Service Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Widgets on your website to bring more customers into WhatsApp"
+  }, {
+    "id" : "908d99ce-07da-71bf-9d0a-3a9945490d29",
+    "name" : "tooltip_icon",
+    "display_width" : null,
+    "label" : "Tooltip Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/tooltip-icon-1.svg",
+      "alt" : "tooltip-icon-1",
+      "loading" : "lazy",
+      "width" : 27,
+      "height" : 26,
+      "max_width" : 27,
+      "max_height" : 26
+    }
+  }, {
+    "id" : "3efe1535-6cc3-64ff-ab51-e3fb243dec9c",
+    "name" : "tooltip_class_onclick",
+    "display_width" : null,
+    "label" : "Tooltip Class OnClick",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "acf8cf0e-1ce4-d576-2fa0-049ce02f814c",
+    "name" : "advanced_tooltip_image",
+    "display_width" : null,
+    "label" : "Advanced Tooltip Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/tooltip-service-image.jpg",
+      "alt" : "tooltip-service-image",
+      "loading" : "lazy",
+      "width" : 305,
+      "height" : 173,
+      "max_width" : 305,
+      "max_height" : 173
+    }
+  }, {
+    "id" : "5f63983e-6412-7e8b-f3e2-f68feec858ec",
+    "name" : "advanced_tooltip_icon",
+    "display_width" : null,
+    "label" : "Advanced Tooltip Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chatins-icon-2.svg",
+      "alt" : "chatins-icon-2",
+      "loading" : "lazy",
+      "width" : 19,
+      "height" : 19,
+      "max_width" : 19,
+      "max_height" : 19
+    }
+  }, {
+    "id" : "2c4459ca-9258-9761-acd4-a48932373280",
+    "name" : "advanced_tooltip_title",
+    "display_width" : null,
+    "label" : "Advanced Tooltip Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Chat-Ins"
+  }, {
+    "id" : "809472d5-0b5e-3840-0411-b8f183978c02",
+    "name" : "advanced_tooltip_content",
+    "display_width" : null,
+    "label" : "Advanced Tooltip Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "This explains why it’s essentials in 3 lines with up to 1000 monthly free outbound messagesThis explains why it’s essentials in 3 lines with up to 1000 monthly free outbound messages"
+  }, {
+    "id" : "ccbd7b7c-8025-3095-f488-81de0e8620d6",
+    "name" : "services_items_list",
+    "display_width" : null,
+    "label" : "Services Items List",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "cda228c4-6aef-4ae5-7eaa-02becd0edd31",
+      "name" : "service_item_title",
+      "display_width" : null,
+      "label" : "Service Item Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Thank-you page"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "service_item_title" : "Thank-you page"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "service_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chatins-icon-2.svg",
+      "alt" : "chatins-icon-2",
+      "loading" : "lazy",
+      "width" : 19,
+      "height" : 19,
+      "max_width" : 19,
+      "max_height" : 19
+    },
+    "service_title" : "Chat-ins",
+    "service_text" : "Widgets on your website to bring more customers into WhatsApp",
+    "tooltip_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/tooltip-icon-1.svg",
+      "alt" : "tooltip-icon-1",
+      "loading" : "lazy",
+      "width" : 27,
+      "height" : 26,
+      "max_width" : 27,
+      "max_height" : 26
+    },
+    "advanced_tooltip_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/tooltip-service-image.jpg",
+      "alt" : "tooltip-service-image",
+      "loading" : "lazy",
+      "width" : 305,
+      "height" : 173,
+      "max_width" : 305,
+      "max_height" : 173
+    },
+    "advanced_tooltip_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chatins-icon-2.svg",
+      "alt" : "chatins-icon-2",
+      "loading" : "lazy",
+      "width" : 19,
+      "height" : 19,
+      "max_width" : 19,
+      "max_height" : 19
+    },
+    "advanced_tooltip_title" : "Chat-Ins",
+    "advanced_tooltip_content" : "This explains why it’s essentials in 3 lines with up to 1000 monthly free outbound messagesThis explains why it’s essentials in 3 lines with up to 1000 monthly free outbound messages",
+    "services_items_list" : [ {
+      "service_item_title" : "Thank-you page"
+    } ]
+  } ]
+}, {
+  "id" : "ac388abb-2acf-00c2-3aba-e6ead347ad5f",
+  "name" : "essentials_users",
+  "display_width" : null,
+  "label" : "Essentials Users",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<b>3 User</b> incl."
+}, {
+  "id" : "1667b2a8-7b3e-6715-b960-53bba40e7c0b",
+  "name" : "essentials_role",
+  "display_width" : null,
+  "label" : "Essentials Role",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Success Manager Pool"
+}, {
+  "id" : "3c32c704-152a-7d73-0085-cd826bb25569",
+  "name" : "channels_repeater",
+  "display_width" : null,
+  "label" : "Channels Repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "dd047c57-68b8-e6ae-c87e-07444749c288",
+    "name" : "essentials_integrations_url",
+    "display_width" : null,
+    "label" : "Essentials Integrations URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "26b12dcc-2a9e-28d3-e9da-d9ae6982e0d3",
+    "name" : "essentials_channels_icon",
+    "display_width" : null,
+    "label" : "Essentials Channels Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Whatsapp-2.svg",
+      "alt" : "Whatsapp-2",
+      "loading" : "lazy",
+      "width" : 24,
+      "height" : 24,
+      "max_width" : 24,
+      "max_height" : 24
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "essentials_integrations_url" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "essentials_channels_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Whatsapp-2.svg",
+      "alt" : "Whatsapp-2",
+      "loading" : "lazy",
+      "width" : 24,
+      "height" : 24,
+      "max_width" : 24,
+      "max_height" : 24
+    }
+  } ]
+}, {
+  "id" : "81ef8330-ea48-d771-625e-c7b61e4ded02",
+  "name" : "whatsapp_integration_activation",
+  "display_width" : null,
+  "label" : "WhatsApp Integration Active - Inactive",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "5756fa3c-f56b-ce97-c328-bee23aa379a2",
+  "name" : "essentials_whatsapp_integration",
+  "display_width" : null,
+  "label" : "Essentials WhatsApp Integration",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Your Business <img src=\"https://www.hello-charles.com/hubfs/green-checkbox.svg\" alt=\"green-checkbox\" loading=\"lazy\" style=\"height: auto; max-width: 100%; width: 21px;\" width=\"21\" height=\"21\">"
+}, {
+  "id" : "67319650-d6f6-97fe-7245-ab53f13878e2",
+  "name" : "growth_users",
+  "display_width" : null,
+  "label" : "Growth Users",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<b>3 User</b> incl."
+}, {
+  "id" : "75fc1916-02da-fb55-c196-d7d138ddaa70",
+  "name" : "growth_role",
+  "display_width" : null,
+  "label" : "Growth Role",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Success Manager Pool"
+}, {
+  "id" : "214999c9-2787-6b5b-9112-f0d4b96b365e",
+  "name" : "growth_channels_repeater",
+  "display_width" : null,
+  "label" : "Growth Channels Repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "74eb935d-2517-26ef-9072-fce428c89127",
+    "name" : "growth_integrations_url",
+    "display_width" : null,
+    "label" : "Growth Integrations URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "9cd5b2f7-9716-910c-2f22-4b920cfc782b",
+    "name" : "growth_channels_icon",
+    "display_width" : null,
+    "label" : "Growth Channels Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Whatsapp-2.svg",
+      "alt" : "Whatsapp-2",
+      "loading" : "lazy",
+      "width" : 24,
+      "height" : 24,
+      "max_width" : 24,
+      "max_height" : 24
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "essentials_integrations_url" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "essentials_channels_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Whatsapp-2.svg",
+      "alt" : "Whatsapp-2",
+      "loading" : "lazy",
+      "width" : 24,
+      "height" : 24,
+      "max_width" : 24,
+      "max_height" : 24
+    }
+  } ]
+}, {
+  "id" : "0150c445-3fb8-1255-d22b-1a2110cabe3c",
+  "name" : "growth_whatsapp_integration_active_inactive",
+  "display_width" : null,
+  "label" : "Growth WhatsApp Integration Active - Inactive",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "a1a747c4-35e7-2ea6-5f9e-2160c414727c",
+  "name" : "growth_whatsapp_integration",
+  "display_width" : null,
+  "label" : "Growth WhatsApp Integration",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Your Business <img src=\"https://www.hello-charles.com/hubfs/green-checkbox.svg\" alt=\"green-checkbox\" loading=\"lazy\" style=\"height: auto; max-width: 100%; width: 21px;\" width=\"21\" height=\"21\">"
+}, {
+  "id" : "12ffce91-e465-d450-98ed-3bd319682783",
+  "name" : "premium_users",
+  "display_width" : null,
+  "label" : "Premium Users",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<b>3 User</b> incl."
+}, {
+  "id" : "e71725a5-13e6-1e03-44e9-42de2eed5b5b",
+  "name" : "premium_role",
+  "display_width" : null,
+  "label" : "Premium Role",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Success Manager Pool"
+}, {
+  "id" : "c33f952b-d674-9b19-b2fd-28649859489d",
+  "name" : "premium_channels_repeater",
+  "display_width" : null,
+  "label" : "Premium Channels Repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "70d79628-91bc-a06e-9748-c960b6c0f234",
+    "name" : "premium_integrations_url",
+    "display_width" : null,
+    "label" : "Premium Integrations URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "460b3293-a4f6-0268-84fb-458e338027d1",
+    "name" : "premium_channels_icon",
+    "display_width" : null,
+    "label" : "Premium Channels Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Whatsapp-2.svg",
+      "alt" : "Whatsapp-2",
+      "loading" : "lazy",
+      "width" : 24,
+      "height" : 24,
+      "max_width" : 24,
+      "max_height" : 24
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "essentials_integrations_url" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "essentials_channels_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Whatsapp-2.svg",
+      "alt" : "Whatsapp-2",
+      "loading" : "lazy",
+      "width" : 24,
+      "height" : 24,
+      "max_width" : 24,
+      "max_height" : 24
+    }
+  } ]
+}, {
+  "id" : "cc515e7d-42ce-f961-eff4-6add2ffec256",
+  "name" : "premium_whatsapp_integration_active_inactive",
+  "display_width" : null,
+  "label" : "Premium WhatsApp Integration Active - Inactive",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "20c987d1-8385-91f2-9b60-940243e1fd9b",
+  "name" : "premium_whatsapp_integration",
+  "display_width" : null,
+  "label" : "Premium WhatsApp Integration",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Your Business <img src=\"https://www.hello-charles.com/hubfs/green-checkbox.svg\" alt=\"green-checkbox\" loading=\"lazy\" style=\"height: auto; max-width: 100%; width: 21px;\" width=\"21\" height=\"21\">"
+}, {
+  "id" : "a9fe7f63-8ff7-f1f5-cd74-b6ce706e5b67",
+  "name" : "checkbox_benefits_row_repeater",
+  "display_width" : null,
+  "label" : "Checkbox Benefits Row Repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "c37bf221-93c5-506d-55ed-ee91265f766b",
+    "name" : "benefits_active_inactive",
+    "display_width" : null,
+    "label" : "Benefits Active-Inactive",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "29396a39-71a4-aba2-1a4a-06faf419fcca",
+    "name" : "packages_services_repeater",
+    "display_width" : null,
+    "label" : "Packages Services Repeater",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "991c5de1-45cd-8257-5798-432d8ba6882e",
+      "name" : "package_benefit_active_inactive",
+      "display_width" : null,
+      "label" : "Package Benefit Active/Inactive",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/normal-check.svg",
+        "alt" : "normal-check",
+        "loading" : "lazy",
+        "width" : 16,
+        "height" : 12,
+        "max_width" : 16,
+        "max_height" : 12
+      }
+    }, {
+      "id" : "07491d66-003c-c0c2-7313-7a6d73743763",
+      "name" : "free_trial_active_inactive",
+      "display_width" : null,
+      "label" : "Free Trial Active - Inactive",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "package_benefit_active_inactive" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/normal-check.svg",
+        "alt" : "normal-check",
+        "loading" : "lazy",
+        "width" : 16,
+        "height" : 12,
+        "max_width" : 16,
+        "max_height" : 12
+      },
+      "free_trial_active_inactive" : false
+    } ]
+  }, {
+    "id" : "be7f4a07-0fa7-0765-d608-1cda0fbe5a6a",
+    "name" : "essentials_integration_active_inactive",
+    "display_width" : null,
+    "label" : "Integration Active / Inactive",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "58abf687-52c3-192e-907d-3c065d80dab6",
+    "name" : "essentials_integrations_main_repeater",
+    "display_width" : null,
+    "label" : "Integrations Main Repeater",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "f24702f5-3791-717b-b730-2dde3a7b8824",
+      "name" : "essentials_integrations_icons_repeater",
+      "display_width" : null,
+      "label" : "Integrations Icons Repeater",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 1
+      },
+      "children" : [ {
+        "id" : "968da577-0a1c-39b1-4a5e-f98d0e110a0f",
+        "name" : "essentials_integration_icon",
+        "display_width" : null,
+        "label" : "Integration Icon",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/HubSpot.svg",
+          "alt" : "HubSpot",
+          "loading" : "lazy",
+          "width" : 24,
+          "height" : 24,
+          "max_width" : 24,
+          "max_height" : 24
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ {
+        "integration_icon" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/HubSpot.svg",
+          "alt" : "HubSpot",
+          "loading" : "lazy",
+          "width" : 24,
+          "height" : 24,
+          "max_width" : 24,
+          "max_height" : 24
+        }
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "essentials_integrations_icons_repeater" : [ {
+        "integration_icon" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/HubSpot.svg",
+          "alt" : "HubSpot",
+          "loading" : "lazy",
+          "width" : 24,
+          "height" : 24,
+          "max_width" : 24,
+          "max_height" : 24
+        }
+      } ]
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "benefits_active_inactive" : true,
+    "packages_services_repeater" : [ {
+      "benefits_active_inactive" : false,
+      "package_benefit_active_inactive" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/normal-check.svg",
+        "alt" : "normal-check",
+        "loading" : "lazy",
+        "width" : 16,
+        "height" : 12,
+        "max_width" : 16,
+        "max_height" : 12
+      },
+      "free_trial_active_inactive" : false
+    } ],
+    "essentials_integration_active_inactive" : false,
+    "essentials_integrations_main_repeater" : [ {
+      "essentials_integrations_icons_repeater" : [ {
+        "integration_icon" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/HubSpot.svg",
+          "alt" : "HubSpot",
+          "loading" : "lazy",
+          "width" : 24,
+          "height" : 24,
+          "max_width" : 24,
+          "max_height" : 24
+        }
+      } ]
+    } ]
+  } ]
+}, {
+  "id" : "29bdcc6b-4aed-ba17-eb83-b46d6d3b572e",
+  "name" : "toggle_table_bottom",
+  "display_width" : null,
+  "label" : "Toggle Table Bottom",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See <b>all features</b> and compare"
+}, {
+  "id" : "7c62c738-51de-3819-ce45-cf9e2fb2ca3c",
+  "name" : "subtitle_demo_screen",
+  "display_width" : null,
+  "label" : "subtitle_demo_screen",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>All packages include:</p>\n<ul>\n<li>Web-based contact center</li>\n<li>Easy-to-use interface</li>\n<li>WhatsApp advice</li>\n<li>Ongoing tech support</li>\n<li>Seasonal marketing ideas</li>\n</ul>"
+}, {
+  "id" : "747eabec-03bc-7a68-0712-3493c988f6e8",
+  "name" : "creative_support_activation",
+  "display_width" : null,
+  "label" : "Creative Support Activation",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "ef9d1e9d-0732-0968-42cf-fd49ee1839bf",
+  "name" : "guides_activation",
+  "display_width" : null,
+  "label" : "Guides Activation",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : true
+} ]

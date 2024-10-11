@@ -1,0 +1,1565 @@
+[ {
+  "id" : "64ce5770-896f-151e-15d7-7212b40beb21",
+  "name" : "sidebar",
+  "display_width" : null,
+  "label" : "Sidebar",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9452a4f7-efb1-185b-abe7-a02d6b0f103b",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/testimonial/image%20405.png",
+      "alt" : "image 405",
+      "loading" : "lazy",
+      "width" : 234,
+      "height" : 73,
+      "max_width" : 234,
+      "max_height" : 73
+    }
+  }, {
+    "id" : "405e7028-037f-86fa-7681-d0d4f0e07b3d",
+    "name" : "company_info",
+    "display_width" : null,
+    "label" : "Company info",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h4>COMPANY</h4>\n<p>SNOCKS conquers the German market since 2016 with sustainable and reliable basic socks and underwear</p>\n<h4>WEBSITE</h4>\n<p>https://snocks.com/</p>\n<h4>INDUSTRY</h4>\n<p>Fashion</p>"
+  }, {
+    "id" : "62381b16-d0f1-e25e-86c4-b1d3f1cff2b8",
+    "name" : "company_info_block",
+    "display_width" : null,
+    "label" : "Company Info Block",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "5476cb91-63ab-33bc-ac49-f7d676fc8afd",
+      "name" : "company_info_heading",
+      "display_width" : null,
+      "label" : "Company Info Heading",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Company"
+    }, {
+      "id" : "e77a106b-f95c-3167-ff5e-56e398c45ff7",
+      "name" : "company_info_content",
+      "display_width" : null,
+      "label" : "Company Info Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "company_info_heading" : "Company"
+    } ]
+  }, {
+    "id" : "14ebbd20-3964-ab57-316a-f63f7aa2e8b0",
+    "name" : "topic",
+    "display_width" : null,
+    "label" : "topic",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "372e1cc3-0213-07f2-a926-8de6cfdfbcf1",
+      "name" : "topic_image",
+      "display_width" : null,
+      "label" : "topic image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207668.png",
+        "alt" : "Group 7668",
+        "loading" : "lazy",
+        "width" : 337,
+        "height" : 64,
+        "max_width" : 337,
+        "max_height" : 64
+      }
+    }, {
+      "id" : "9845d597-d903-692b-ef87-65470df7ac5f",
+      "name" : "topic_content",
+      "display_width" : null,
+      "label" : "topic content",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Collect Opt-Ins, create segmented lists and <strong>reach and reactivate your customers</strong>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "topic_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207668.png",
+        "alt" : "Group 7668",
+        "loading" : "lazy",
+        "width" : 337,
+        "height" : 64,
+        "max_width" : 337,
+        "max_height" : 64
+      },
+      "topic_content" : "Collect Opt-Ins, create segmented lists and <strong>reach and reactivate your customers</strong>"
+    }, {
+      "topic_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207668.png",
+        "alt" : "Group 7668",
+        "loading" : "lazy",
+        "width" : 337,
+        "height" : 64,
+        "max_width" : 337,
+        "max_height" : 64
+      },
+      "topic_content" : "Collect Opt-Ins, create segmented lists and <strong>reach and reactivate your customers</strong>"
+    }, {
+      "topic_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207668.png",
+        "alt" : "Group 7668",
+        "loading" : "lazy",
+        "width" : 337,
+        "height" : 64,
+        "max_width" : 337,
+        "max_height" : 64
+      },
+      "topic_content" : "Collect Opt-Ins, create segmented lists and <strong>reach and reactivate your customers</strong>"
+    } ]
+  }, {
+    "id" : "d99b68b0-c61f-2057-5d52-b3ffa9184a01",
+    "name" : "integration_title",
+    "display_width" : null,
+    "label" : "Integration title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Integrations used"
+  }, {
+    "id" : "d48b787d-0105-ee3a-b034-f39d2ed95912",
+    "name" : "show_features_title",
+    "display_width" : null,
+    "label" : "Show Features Title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "2a505110-6992-4eb9-ef38-29eb6266e7a4",
+    "name" : "featured_products_title",
+    "display_width" : null,
+    "label" : "Featured Products TItle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Products"
+  }, {
+    "id" : "07b314bb-a294-2e10-a12d-d75cd4823c6e",
+    "name" : "show_conversations_block",
+    "display_width" : null,
+    "label" : "Show Conversations Block",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "db11cd6b-ba4f-3836-12f7-39b87bd7013c",
+    "name" : "show_journeys_block",
+    "display_width" : null,
+    "label" : "Show Journeys Block",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "078cb8a9-fce8-9859-2627-d72b829a72a9",
+    "name" : "show_campaigns_block",
+    "display_width" : null,
+    "label" : "Show Campaigns Block",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "0fc3f7ca-01a1-3f7d-ff1a-30865fad387d",
+    "name" : "show_commerce_block",
+    "display_width" : null,
+    "label" : "Show Commerce Block",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "8c509259-a00d-d882-5d35-fee992ede65f",
+    "name" : "show_chat_ins_block",
+    "display_width" : null,
+    "label" : "Show Chat-ins Block",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "c836ee19-abc3-47a4-4f85-a32b66956bf5",
+    "name" : "show_integrations_block",
+    "display_width" : null,
+    "label" : "Show Integrations Block",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "00877a70-642a-f98d-b547-82563380b833",
+    "name" : "conversations_icon",
+    "display_width" : null,
+    "label" : "Conversations Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Conversations%20Icon-2.svg",
+      "alt" : "Conversations Icon-2",
+      "loading" : "lazy",
+      "width" : 49,
+      "height" : 49,
+      "max_width" : 49,
+      "max_height" : 49
+    }
+  }, {
+    "id" : "528bedd6-aaaf-31bd-b9b5-a4ec1cc18418",
+    "name" : "conversations_title",
+    "display_width" : null,
+    "label" : "Conversations Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Conversations"
+  }, {
+    "id" : "05ac3536-8d2e-0176-3fcf-05845d7483dd",
+    "name" : "conversations_description",
+    "display_width" : null,
+    "label" : "Conversations Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Manage WhatsApp chats across your team"
+  }, {
+    "id" : "e339fad5-544d-c23a-19e2-10386e0f9d19",
+    "name" : "conversations_url",
+    "display_width" : null,
+    "label" : "Conversations URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "type" : "url",
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 93340659050
+    }
+  }, {
+    "id" : "3694ccf5-0685-b0ea-2234-9c5bc780579b",
+    "name" : "journeys_icon",
+    "display_width" : null,
+    "label" : "Journeys Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Journeys-icon.svg",
+      "alt" : "Journeys-icon",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 69,
+      "max_width" : 69,
+      "max_height" : 69
+    }
+  }, {
+    "id" : "8dff3728-4336-6f5b-faf6-838ca861bb6e",
+    "name" : "journeys_title",
+    "display_width" : null,
+    "label" : "Journeys Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Journeys"
+  }, {
+    "id" : "093148ff-5aaf-f15a-8191-34fc6052aef6",
+    "name" : "journeys_description",
+    "display_width" : null,
+    "label" : "Journeys Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Automate conversations the easy way"
+  }, {
+    "id" : "acb2a3aa-bbfb-f5fe-d963-a19d2fe63e2d",
+    "name" : "journeys_url",
+    "display_width" : null,
+    "label" : "Journeys URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "type" : "url",
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 85373214873
+    }
+  }, {
+    "id" : "2f6e2915-3c11-2eac-0d96-0f6074eeebde",
+    "name" : "campaigns_icon",
+    "display_width" : null,
+    "label" : "Campaigns Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Campaigns-icon.svg",
+      "alt" : "Campaigns-icon",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 69,
+      "max_width" : 69,
+      "max_height" : 69
+    }
+  }, {
+    "id" : "982a346a-da97-e2e7-f415-a2de4ccd092b",
+    "name" : "campaigns_title",
+    "display_width" : null,
+    "label" : "Campaigns Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Campaigns"
+  }, {
+    "id" : "5c44073a-ec69-48e2-916f-09ba36d54a34",
+    "name" : "campaigns_description",
+    "display_width" : null,
+    "label" : "Campaigns Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Feel the power of WhatsApp marketing"
+  }, {
+    "id" : "f20f7b45-91c0-6bbf-3a75-142ecd951217",
+    "name" : "campaigns_url",
+    "display_width" : null,
+    "label" : "Campaigns URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "type" : "url",
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 92536925543
+    }
+  }, {
+    "id" : "0a55f144-6c3a-b89b-7116-dc3b3d55a5e6",
+    "name" : "commerce_icon",
+    "display_width" : null,
+    "label" : "Commerce Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Commerce-icon.svg",
+      "alt" : "Commerce-icon",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 69,
+      "max_width" : 69,
+      "max_height" : 69
+    }
+  }, {
+    "id" : "8bb815d5-fb44-6566-656f-b50d9e6a34af",
+    "name" : "commerce_title",
+    "display_width" : null,
+    "label" : "Commerce Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Commerce"
+  }, {
+    "id" : "2132b6fc-6533-5544-5f7d-a1b75e104778",
+    "name" : "commerce_description",
+    "display_width" : null,
+    "label" : "Commerce Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Sell in WhatsApp with online shop integration"
+  }, {
+    "id" : "d1e8587c-3d33-7bbf-96e8-9037708f7c40",
+    "name" : "commerce_url",
+    "display_width" : null,
+    "label" : "Commerce URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "type" : "url",
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 92536925228
+    }
+  }, {
+    "id" : "458c7dda-c0c4-4e51-fe86-59fe061f92a3",
+    "name" : "chat_ins_icon",
+    "display_width" : null,
+    "label" : "Chat-ins Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Chat-ins-icon.svg",
+      "alt" : "Chat-ins-icon",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 69,
+      "max_width" : 69,
+      "max_height" : 69
+    }
+  }, {
+    "id" : "598099dd-b9cb-aae3-d41f-a3d96a6325df",
+    "name" : "chat_ins_title",
+    "display_width" : null,
+    "label" : "Chat-ins Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Chat-ins"
+  }, {
+    "id" : "abc88067-c9fb-284d-24fa-73a5c888a0d7",
+    "name" : "chat_ins_description",
+    "display_width" : null,
+    "label" : "Chat-ins Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Bring more customers into WhatsApp"
+  }, {
+    "id" : "f0937c71-8cfe-83ac-201a-5b1231ecfb14",
+    "name" : "chat_ins_url",
+    "display_width" : null,
+    "label" : "Chat-ins URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "type" : "url",
+    "default" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 93333887096
+    }
+  }, {
+    "id" : "b0834081-370b-3057-1e2a-99f5ae9ad56b",
+    "name" : "integrations_icon",
+    "display_width" : null,
+    "label" : "Integrations Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Integrations-icon.svg",
+      "alt" : "Integrations-icon",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 69,
+      "max_width" : 69,
+      "max_height" : 69
+    }
+  }, {
+    "id" : "6e35b86c-52ae-b746-7ef1-91d716042ab5",
+    "name" : "integrations_title",
+    "display_width" : null,
+    "label" : "Integrations Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Integrations"
+  }, {
+    "id" : "1c0912bd-c16d-c40f-2e33-d97ddc00a2bb",
+    "name" : "integrations_url",
+    "display_width" : null,
+    "label" : "Integrations URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : 93340658444,
+      "href" : null,
+      "type" : "CONTENT"
+    }
+  }, {
+    "id" : "4eff7d00-1109-236f-0613-5a5cfe0fb067",
+    "name" : "integrations_repeater",
+    "display_width" : null,
+    "label" : "Integrations Repeater",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "6c1b8707-9693-e1d7-f696-f0e2d6c8f48e",
+      "name" : "integration_url",
+      "display_width" : null,
+      "label" : "Integration URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "type" : "url",
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      }
+    }, {
+      "id" : "cecf9f8a-b4f6-5df2-0779-bbb7781ec68d",
+      "name" : "integration_app_icon",
+      "display_width" : null,
+      "label" : "Integration App Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/testimonial/image%20405.png",
+      "alt" : "image 405",
+      "loading" : "lazy",
+      "width" : 234,
+      "height" : 73,
+      "max_width" : 234,
+      "max_height" : 73
+    },
+    "company_info" : "<h4>COMPANY</h4>\n<p>SNOCKS conquers the German market since 2016 with sustainable and reliable basic socks and underwear</p>\n<h4>WEBSITE</h4>\n<p>https://snocks.com/</p>\n<h4>INDUSTRY</h4>\n<p>Fashion</p>",
+    "company_info_block" : [ {
+      "company_info_heading" : "Company"
+    } ],
+    "topic" : [ {
+      "topic_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207668.png",
+        "alt" : "Group 7668",
+        "loading" : "lazy",
+        "width" : 337,
+        "height" : 64,
+        "max_width" : 337,
+        "max_height" : 64
+      },
+      "topic_content" : "Collect Opt-Ins, create segmented lists and <strong>reach and reactivate your customers</strong>"
+    }, {
+      "topic_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207668.png",
+        "alt" : "Group 7668",
+        "loading" : "lazy",
+        "width" : 337,
+        "height" : 64,
+        "max_width" : 337,
+        "max_height" : 64
+      },
+      "topic_content" : "Collect Opt-Ins, create segmented lists and <strong>reach and reactivate your customers</strong>"
+    }, {
+      "topic_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207668.png",
+        "alt" : "Group 7668",
+        "loading" : "lazy",
+        "width" : 337,
+        "height" : 64,
+        "max_width" : 337,
+        "max_height" : 64
+      },
+      "topic_content" : "Collect Opt-Ins, create segmented lists and <strong>reach and reactivate your customers</strong>"
+    } ],
+    "integration_title" : "Integrations used",
+    "show_features_title" : false,
+    "featured_products_title" : "Products",
+    "show_conversations_block" : false,
+    "show_journeys_block" : false,
+    "show_campaigns_block" : false,
+    "show_commerce_block" : false,
+    "show_chat_ins_block" : false,
+    "show_integrations_block" : false,
+    "conversations_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Conversations%20Icon-2.svg",
+      "alt" : "Conversations Icon-2",
+      "loading" : "lazy",
+      "width" : 49,
+      "height" : 49,
+      "max_width" : 49,
+      "max_height" : 49
+    },
+    "conversations_title" : "Conversations",
+    "conversations_description" : "Manage WhatsApp chats across your team",
+    "conversations_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 93340659050
+    },
+    "journeys_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Journeys-icon.svg",
+      "alt" : "Journeys-icon",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 69,
+      "max_width" : 69,
+      "max_height" : 69
+    },
+    "journeys_title" : "Journeys",
+    "journeys_description" : "Automate conversations the easy way",
+    "journeys_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 85373214873
+    },
+    "campaigns_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Campaigns-icon.svg",
+      "alt" : "Campaigns-icon",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 69,
+      "max_width" : 69,
+      "max_height" : 69
+    },
+    "campaigns_title" : "Campaigns",
+    "campaigns_description" : "Feel the power of WhatsApp marketing",
+    "campaigns_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 92536925543
+    },
+    "commerce_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Commerce-icon.svg",
+      "alt" : "Commerce-icon",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 69,
+      "max_width" : 69,
+      "max_height" : 69
+    },
+    "commerce_title" : "Commerce",
+    "commerce_description" : "Sell in WhatsApp with online shop integration",
+    "commerce_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 92536925228
+    },
+    "chat_ins_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Chat-ins-icon.svg",
+      "alt" : "Chat-ins-icon",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 69,
+      "max_width" : 69,
+      "max_height" : 69
+    },
+    "chat_ins_title" : "Chat-ins",
+    "chat_ins_description" : "Bring more customers into WhatsApp",
+    "chat_ins_url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 93333887096
+    },
+    "integrations_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Integrations-icon.svg",
+      "alt" : "Integrations-icon",
+      "loading" : "lazy",
+      "width" : 69,
+      "height" : 69,
+      "max_width" : 69,
+      "max_height" : 69
+    },
+    "integrations_title" : "Integrations",
+    "integrations_url" : {
+      "content_id" : 93340658444,
+      "href" : null,
+      "type" : "CONTENT"
+    },
+    "integrations_repeater" : [ ]
+  }
+}, {
+  "id" : "c52bacce-715a-6419-ea1c-7eb551b786fa",
+  "name" : "main_body",
+  "display_width" : null,
+  "label" : "Main body",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d0d5b3b5-2cfb-6d0a-9af6-d8cbc15bcae6",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "A <strong>newsletter-centric success case</strong> using A/B Testing of Exit-Intent Popups and proving the value of WhatsApp vs. Email"
+  }, {
+    "id" : "43491279-311e-ec62-4a38-b9e5f5cff003",
+    "name" : "roadmap",
+    "display_width" : null,
+    "label" : "Roadmap",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "8ffcd052-1f57-a28d-3418-d07bb5e21f8e",
+      "name" : "sub_title",
+      "display_width" : null,
+      "label" : "Sub title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Challenge"
+    }, {
+      "id" : "451b4038-3acf-780a-99d6-5428eb981c47",
+      "name" : "icon",
+      "display_width" : null,
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/edit.svg",
+        "alt" : "edit",
+        "loading" : "lazy",
+        "width" : 34,
+        "height" : 31,
+        "max_width" : 34,
+        "max_height" : 31
+      }
+    }, {
+      "id" : "3a0f41f4-64fa-0c3a-3821-9b639ead1d36",
+      "name" : "content",
+      "display_width" : null,
+      "label" : "content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p>SNOCKS is a vibrant and fast-growing brand that reaches a quickly growing number of customers with its simple yet successful value proposition: Selling reliable and comfortable basics, socks and underwear. The two founders Johannes and Felix are actively shaping the brand via various social media channels making SNOCKS a well-known fashion startup in Germany. In addition, using Shopify and Klaviyo, SNOCKS has managed to build a quite significant community and newsletter subscriber base over the course of the past years.<br>However, they perceived it as increasingly difficult to reach, engage and reactivate those customers through the traditional channels. Getting high opening rates in email and thereby the chance to create active and engaging relationships with retention-potential became increasingly difficult.</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "sub_title" : "Challenge",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/edit.svg",
+        "alt" : "edit",
+        "loading" : "lazy",
+        "width" : 34,
+        "height" : 31,
+        "max_width" : 34,
+        "max_height" : 31
+      },
+      "content" : "<p>SNOCKS is a vibrant and fast-growing brand that reaches a quickly growing number of customers with its simple yet successful value proposition: Selling reliable and comfortable basics, socks and underwear. The two founders Johannes and Felix are actively shaping the brand via various social media channels making SNOCKS a well-known fashion startup in Germany. In addition, using Shopify and Klaviyo, SNOCKS has managed to build a quite significant community and newsletter subscriber base over the course of the past years.<br>However, they perceived it as increasingly difficult to reach, engage and reactivate those customers through the traditional channels. Getting high opening rates in email and thereby the chance to create active and engaging relationships with retention-potential became increasingly difficult.</p>"
+    }, {
+      "sub_title" : "Challenge",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/edit.svg",
+        "alt" : "edit",
+        "loading" : "lazy",
+        "width" : 34,
+        "height" : 31,
+        "max_width" : 34,
+        "max_height" : 31
+      },
+      "content" : "<p>SNOCKS is a vibrant and fast-growing brand that reaches a quickly growing number of customers with its simple yet successful value proposition: Selling reliable and comfortable basics, socks and underwear. The two founders Johannes and Felix are actively shaping the brand via various social media channels making SNOCKS a well-known fashion startup in Germany. In addition, using Shopify and Klaviyo, SNOCKS has managed to build a quite significant community and newsletter subscriber base over the course of the past years.<br>However, they perceived it as increasingly difficult to reach, engage and reactivate those customers through the traditional channels. Getting high opening rates in email and thereby the chance to create active and engaging relationships with retention-potential became increasingly difficult.</p>"
+    }, {
+      "sub_title" : "Challenge",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/edit.svg",
+        "alt" : "edit",
+        "loading" : "lazy",
+        "width" : 34,
+        "height" : 31,
+        "max_width" : 34,
+        "max_height" : 31
+      },
+      "content" : "<p>SNOCKS is a vibrant and fast-growing brand that reaches a quickly growing number of customers with its simple yet successful value proposition: Selling reliable and comfortable basics, socks and underwear. The two founders Johannes and Felix are actively shaping the brand via various social media channels making SNOCKS a well-known fashion startup in Germany. In addition, using Shopify and Klaviyo, SNOCKS has managed to build a quite significant community and newsletter subscriber base over the course of the past years.<br>However, they perceived it as increasingly difficult to reach, engage and reactivate those customers through the traditional channels. Getting high opening rates in email and thereby the chance to create active and engaging relationships with retention-potential became increasingly difficult.</p>"
+    } ]
+  }, {
+    "id" : "c4d6f705-9159-014f-6508-3e96d73d74aa",
+    "name" : "how_did_it",
+    "display_width" : null,
+    "label" : "How did it",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "129286dd-1937-926e-04f0-9c27d697043d",
+      "name" : "sub_title",
+      "display_width" : null,
+      "label" : "sub title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "How they did it:"
+    }, {
+      "id" : "7fca5c98-71ca-7832-5f1f-b1350168a93f",
+      "name" : "title_icon",
+      "display_width" : null,
+      "label" : "Title icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/edit.svg",
+        "alt" : "edit",
+        "loading" : "lazy",
+        "width" : 34,
+        "height" : 31,
+        "max_width" : 34,
+        "max_height" : 31
+      }
+    }, {
+      "id" : "cc4c9c33-465c-448e-8b38-8a57f6cd324f",
+      "name" : "block",
+      "display_width" : null,
+      "label" : "Block",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 4
+      },
+      "children" : [ {
+        "id" : "cc849a9c-b3e0-8a02-31a6-f3b63c1df15e",
+        "name" : "block_title",
+        "display_width" : null,
+        "label" : "block title",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Exit Intent Popups"
+      }, {
+        "id" : "a22b5d0d-d2b6-805c-c487-f9a8f33c841c",
+        "name" : "image",
+        "display_width" : null,
+        "label" : "Image",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        }
+      }, {
+        "id" : "9e9dd6b2-b9c2-1410-40f4-d92c2b254e66",
+        "name" : "content",
+        "display_width" : null,
+        "label" : "COntent",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      }, {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      }, {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      }, {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "sub_title" : "How they did it:",
+      "title_icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/edit.svg",
+        "alt" : "edit",
+        "loading" : "lazy",
+        "width" : 34,
+        "height" : 31,
+        "max_width" : 34,
+        "max_height" : 31
+      },
+      "block" : [ {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      }, {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      }, {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      }, {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      } ]
+    }
+  }, {
+    "id" : "be00ff79-0738-6413-76d4-d79ee181b799",
+    "name" : "valuable_image",
+    "display_width" : null,
+    "label" : "Valueable image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207190.png",
+      "alt" : "Group 7190",
+      "loading" : "lazy",
+      "width" : 283,
+      "height" : 256,
+      "max_width" : 283,
+      "max_height" : 256
+    }
+  }, {
+    "id" : "c0f59cc7-29de-52dc-e315-953f76c0a3e8",
+    "name" : "future_steps",
+    "display_width" : null,
+    "label" : "Future steps",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "854e2968-e84e-a5c1-5a20-80813589064d",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Future steps"
+    }, {
+      "id" : "3b8f6340-d020-32d0-eddf-a0f9e343c96f",
+      "name" : "icon",
+      "display_width" : null,
+      "label" : "icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/route.svg",
+        "alt" : "route",
+        "loading" : "lazy",
+        "width" : 26,
+        "height" : 27,
+        "max_width" : 26,
+        "max_height" : 27
+      }
+    }, {
+      "id" : "c4177753-241f-5a3e-8be6-be2646b42c26",
+      "name" : "block",
+      "display_width" : null,
+      "label" : "Block",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 3
+      },
+      "children" : [ {
+        "id" : "e6e0be95-bfd2-90d2-fa79-0b9fbf46c758",
+        "name" : "sub_title",
+        "display_width" : null,
+        "label" : "Sub title",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "1."
+      }, {
+        "id" : "cc385631-7d76-debe-ef76-3d6ab52edc92",
+        "name" : "sub_text",
+        "display_width" : null,
+        "label" : "sub text",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Scale the WhatsApp opt-in collection (e.g. through post-purchase flows)"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ {
+        "sub_title" : "1.",
+        "sub_text" : "Scale the WhatsApp opt-in collection (e.g. through post-purchase flows)"
+      }, {
+        "sub_title" : "1.",
+        "sub_text" : "Scale the WhatsApp opt-in collection (e.g. through post-purchase flows)"
+      }, {
+        "sub_title" : "1.",
+        "sub_text" : "Scale the WhatsApp opt-in collection (e.g. through post-purchase flows)"
+      } ]
+    }, {
+      "id" : "8df94617-4b01-498d-02f1-6e69fe94bd21",
+      "name" : "bottom_text",
+      "display_width" : null,
+      "label" : "bottom text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "SNOCKS unlocked the potential to scale further towards an end-to-end usage of WhatsApp. After the obvious success of the newsletter use case, the vision is a further rollout towards a commerce-driven solution with marketing, service and sales in chat."
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "title" : "Future steps",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/route.svg",
+        "alt" : "route",
+        "loading" : "lazy",
+        "width" : 26,
+        "height" : 27,
+        "max_width" : 26,
+        "max_height" : 27
+      },
+      "block" : [ {
+        "sub_title" : "1.",
+        "sub_text" : "Scale the WhatsApp opt-in collection (e.g. through post-purchase flows)"
+      }, {
+        "sub_title" : "1.",
+        "sub_text" : "Scale the WhatsApp opt-in collection (e.g. through post-purchase flows)"
+      }, {
+        "sub_title" : "1.",
+        "sub_text" : "Scale the WhatsApp opt-in collection (e.g. through post-purchase flows)"
+      } ],
+      "bottom_text" : "SNOCKS unlocked the potential to scale further towards an end-to-end usage of WhatsApp. After the obvious success of the newsletter use case, the vision is a further rollout towards a commerce-driven solution with marketing, service and sales in chat."
+    }
+  }, {
+    "id" : "49fddce4-6fe1-406d-1911-2bfed3e6c52b",
+    "name" : "quote",
+    "display_width" : null,
+    "label" : "Quote",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a7b4b18d-d11e-6025-b2a9-6ae659648de5",
+      "name" : "photo",
+      "display_width" : null,
+      "label" : "Photo",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/IMG_3542%201.png",
+        "alt" : "IMG_3542 1",
+        "loading" : "lazy",
+        "width" : 49,
+        "height" : 49,
+        "max_width" : 49,
+        "max_height" : 49
+      }
+    }, {
+      "id" : "c8da0f36-db8c-739d-200a-3f8c941f5d25",
+      "name" : "quote",
+      "display_width" : null,
+      "label" : "Quote",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Do you also want to prove the value of WhatsApp vs. Email newsletter for your business?"
+    }, {
+      "id" : "ef1a80ce-89b9-97b6-c9bf-4f687df41353",
+      "name" : "button_id",
+      "display_width" : null,
+      "label" : "Button ID",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "73f48b6a-5606-4fea-a70d-7d3f8fb819ef",
+      "name" : "button_text",
+      "display_width" : null,
+      "label" : "button text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Get a demo"
+    }, {
+      "id" : "f5d1af83-ff2a-bba4-2191-ea75b8ef4176",
+      "name" : "button_link",
+      "display_width" : null,
+      "label" : "Button link",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "#"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "photo" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/IMG_3542%201.png",
+        "alt" : "IMG_3542 1",
+        "loading" : "lazy",
+        "width" : 49,
+        "height" : 49,
+        "max_width" : 49,
+        "max_height" : 49
+      },
+      "quote" : "Do you also want to prove the value of WhatsApp vs. Email newsletter for your business?",
+      "button_text" : "Get a demo",
+      "button_link" : "#"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "title" : "A <strong>newsletter-centric success case</strong> using A/B Testing of Exit-Intent Popups and proving the value of WhatsApp vs. Email",
+    "roadmap" : [ {
+      "sub_title" : "Challenge",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/edit.svg",
+        "alt" : "edit",
+        "loading" : "lazy",
+        "width" : 34,
+        "height" : 31,
+        "max_width" : 34,
+        "max_height" : 31
+      },
+      "content" : "<p>SNOCKS is a vibrant and fast-growing brand that reaches a quickly growing number of customers with its simple yet successful value proposition: Selling reliable and comfortable basics, socks and underwear. The two founders Johannes and Felix are actively shaping the brand via various social media channels making SNOCKS a well-known fashion startup in Germany. In addition, using Shopify and Klaviyo, SNOCKS has managed to build a quite significant community and newsletter subscriber base over the course of the past years.<br>However, they perceived it as increasingly difficult to reach, engage and reactivate those customers through the traditional channels. Getting high opening rates in email and thereby the chance to create active and engaging relationships with retention-potential became increasingly difficult.</p>"
+    }, {
+      "sub_title" : "Challenge",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/edit.svg",
+        "alt" : "edit",
+        "loading" : "lazy",
+        "width" : 34,
+        "height" : 31,
+        "max_width" : 34,
+        "max_height" : 31
+      },
+      "content" : "<p>SNOCKS is a vibrant and fast-growing brand that reaches a quickly growing number of customers with its simple yet successful value proposition: Selling reliable and comfortable basics, socks and underwear. The two founders Johannes and Felix are actively shaping the brand via various social media channels making SNOCKS a well-known fashion startup in Germany. In addition, using Shopify and Klaviyo, SNOCKS has managed to build a quite significant community and newsletter subscriber base over the course of the past years.<br>However, they perceived it as increasingly difficult to reach, engage and reactivate those customers through the traditional channels. Getting high opening rates in email and thereby the chance to create active and engaging relationships with retention-potential became increasingly difficult.</p>"
+    }, {
+      "sub_title" : "Challenge",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/edit.svg",
+        "alt" : "edit",
+        "loading" : "lazy",
+        "width" : 34,
+        "height" : 31,
+        "max_width" : 34,
+        "max_height" : 31
+      },
+      "content" : "<p>SNOCKS is a vibrant and fast-growing brand that reaches a quickly growing number of customers with its simple yet successful value proposition: Selling reliable and comfortable basics, socks and underwear. The two founders Johannes and Felix are actively shaping the brand via various social media channels making SNOCKS a well-known fashion startup in Germany. In addition, using Shopify and Klaviyo, SNOCKS has managed to build a quite significant community and newsletter subscriber base over the course of the past years.<br>However, they perceived it as increasingly difficult to reach, engage and reactivate those customers through the traditional channels. Getting high opening rates in email and thereby the chance to create active and engaging relationships with retention-potential became increasingly difficult.</p>"
+    } ],
+    "how_did_it" : {
+      "sub_title" : "How they did it:",
+      "title_icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/edit.svg",
+        "alt" : "edit",
+        "loading" : "lazy",
+        "width" : 34,
+        "height" : 31,
+        "max_width" : 34,
+        "max_height" : 31
+      },
+      "block" : [ {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      }, {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      }, {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      }, {
+        "block_title" : "Exit Intent Popups",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207669.png",
+          "alt" : "Group 7669",
+          "loading" : "lazy",
+          "width" : 639,
+          "height" : 438,
+          "max_width" : 639,
+          "max_height" : 438
+        },
+        "content" : "An <strong>“exit-intent”-popup</strong> offers a special discount to customers that are about to leave a page or take a longer time to decide.  SNOCKS ran an <strong>A/B-Test</strong> between two popups: The first one offers a 10% discount if customers sign up for the <strong>WhatsApp</strong> newsletter, the second one a similar deal for <strong>Email</strong>."
+      } ]
+    },
+    "valuable_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/testimonial/Group%207190.png",
+      "alt" : "Group 7190",
+      "loading" : "lazy",
+      "width" : 283,
+      "height" : 256,
+      "max_width" : 283,
+      "max_height" : 256
+    },
+    "future_steps" : {
+      "title" : "Future steps",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/route.svg",
+        "alt" : "route",
+        "loading" : "lazy",
+        "width" : 26,
+        "height" : 27,
+        "max_width" : 26,
+        "max_height" : 27
+      },
+      "block" : [ {
+        "sub_title" : "1.",
+        "sub_text" : "Scale the WhatsApp opt-in collection (e.g. through post-purchase flows)"
+      }, {
+        "sub_title" : "1.",
+        "sub_text" : "Scale the WhatsApp opt-in collection (e.g. through post-purchase flows)"
+      }, {
+        "sub_title" : "1.",
+        "sub_text" : "Scale the WhatsApp opt-in collection (e.g. through post-purchase flows)"
+      } ],
+      "bottom_text" : "SNOCKS unlocked the potential to scale further towards an end-to-end usage of WhatsApp. After the obvious success of the newsletter use case, the vision is a further rollout towards a commerce-driven solution with marketing, service and sales in chat."
+    },
+    "quote" : {
+      "photo" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/testimonial/IMG_3542%201.png",
+        "alt" : "IMG_3542 1",
+        "loading" : "lazy",
+        "width" : 49,
+        "height" : 49,
+        "max_width" : 49,
+        "max_height" : 49
+      },
+      "quote" : "Do you also want to prove the value of WhatsApp vs. Email newsletter for your business?",
+      "button_text" : "Get a demo",
+      "button_link" : "#"
+    }
+  }
+} ]

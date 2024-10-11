@@ -1,0 +1,1199 @@
+[ {
+  "id" : "1742c7b6-7083-c973-9d18-f144229e3adb",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See what our clients do"
+}, {
+  "id" : "0ed30190-a50e-2e65-3cd3-33ddac7d9120",
+  "name" : "mobile_app_slide",
+  "display_width" : null,
+  "label" : "Mobile app slide",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "11ca8249-92a7-c50b-27db-47d49f0b2c77",
+    "name" : "slide_top_image",
+    "display_width" : null,
+    "label" : "Slide top image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/slide-1-top.png",
+      "alt" : "slide-1-top",
+      "loading" : "lazy",
+      "width" : 514,
+      "height" : 265,
+      "max_width" : 514,
+      "max_height" : 265
+    }
+  }, {
+    "id" : "3393f522-0279-f406-c03e-170617250bd1",
+    "name" : "app_image",
+    "display_width" : null,
+    "label" : "app image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-info-1.png",
+      "alt" : "app-info-1",
+      "loading" : "lazy",
+      "width" : 472,
+      "height" : 874,
+      "max_width" : 472,
+      "max_height" : 874
+    }
+  }, {
+    "id" : "4695bb8c-9d14-946d-9db6-0676a1168c16",
+    "name" : "app_logo",
+    "display_width" : null,
+    "label" : "app logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-list-logo-1.png",
+      "alt" : "app-list-logo-1",
+      "loading" : "lazy",
+      "width" : 272,
+      "height" : 141,
+      "max_width" : 272,
+      "max_height" : 141
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "slide_top_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/slide-1-top.png",
+      "alt" : "slide-1-top",
+      "loading" : "lazy",
+      "width" : 514,
+      "height" : 265,
+      "max_width" : 514,
+      "max_height" : 265
+    },
+    "app_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-info-1.png",
+      "alt" : "app-info-1",
+      "loading" : "lazy",
+      "width" : 472,
+      "height" : 874,
+      "max_width" : 472,
+      "max_height" : 874
+    },
+    "app_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-list-logo-1.png",
+      "alt" : "app-list-logo-1",
+      "loading" : "lazy",
+      "width" : 272,
+      "height" : 141,
+      "max_width" : 272,
+      "max_height" : 141
+    }
+  }, {
+    "slide_top_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/slide-1-top.png",
+      "alt" : "slide-1-top",
+      "loading" : "lazy",
+      "width" : 514,
+      "height" : 265,
+      "max_width" : 514,
+      "max_height" : 265
+    },
+    "app_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-info-1.png",
+      "alt" : "app-info-1",
+      "loading" : "lazy",
+      "width" : 472,
+      "height" : 874,
+      "max_width" : 472,
+      "max_height" : 874
+    },
+    "app_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-list-logo-1.png",
+      "alt" : "app-list-logo-1",
+      "loading" : "lazy",
+      "width" : 272,
+      "height" : 141,
+      "max_width" : 272,
+      "max_height" : 141
+    }
+  }, {
+    "slide_top_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/slide-1-top.png",
+      "alt" : "slide-1-top",
+      "loading" : "lazy",
+      "width" : 514,
+      "height" : 265,
+      "max_width" : 514,
+      "max_height" : 265
+    },
+    "app_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-info-1.png",
+      "alt" : "app-info-1",
+      "loading" : "lazy",
+      "width" : 472,
+      "height" : 874,
+      "max_width" : 472,
+      "max_height" : 874
+    },
+    "app_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-list-logo-1.png",
+      "alt" : "app-list-logo-1",
+      "loading" : "lazy",
+      "width" : 272,
+      "height" : 141,
+      "max_width" : 272,
+      "max_height" : 141
+    }
+  }, {
+    "slide_top_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/slide-1-top.png",
+      "alt" : "slide-1-top",
+      "loading" : "lazy",
+      "width" : 514,
+      "height" : 265,
+      "max_width" : 514,
+      "max_height" : 265
+    },
+    "app_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-info-1.png",
+      "alt" : "app-info-1",
+      "loading" : "lazy",
+      "width" : 472,
+      "height" : 874,
+      "max_width" : 472,
+      "max_height" : 874
+    },
+    "app_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-list-logo-1.png",
+      "alt" : "app-list-logo-1",
+      "loading" : "lazy",
+      "width" : 272,
+      "height" : 141,
+      "max_width" : 272,
+      "max_height" : 141
+    }
+  } ]
+}, {
+  "id" : "f5c80429-b8c8-22e3-a607-c62075e04124",
+  "name" : "desktop_slide",
+  "display_width" : null,
+  "label" : "Desktop slide",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "3ed42da9-1522-953c-fde0-8be0538a65fc",
+    "name" : "top_1_source",
+    "display_width" : null,
+    "label" : "top-1-source",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWPopup-Snocks.png",
+      "alt" : "NOSHADOWPopup-Snocks",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 330,
+      "max_width" : 453,
+      "max_height" : 330
+    }
+  }, {
+    "id" : "8ef68a87-1ab4-31be-f613-134cc292facd",
+    "name" : "top1_placeholder",
+    "display_width" : null,
+    "label" : "top1 placeholder",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Popup-Mockup1.png",
+      "alt" : "Popup-Mockup1",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 330,
+      "max_width" : 453,
+      "max_height" : 330
+    }
+  }, {
+    "id" : "8ba31ef3-c191-2319-7714-b49557d9acae",
+    "name" : "top_1_phone_image",
+    "display_width" : null,
+    "label" : "top-1_phone image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Popup1.png",
+      "alt" : "Testimonial-Screen-Snocks-Popup1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    }
+  }, {
+    "id" : "01b0ef3c-66fa-16f4-e02f-8ddea6098d44",
+    "name" : "notification_image_source",
+    "display_width" : null,
+    "label" : "notification image source",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWNotification-Snocks.png",
+      "alt" : "NOSHADOWNotification-Snocks",
+      "loading" : "lazy",
+      "width" : 455,
+      "height" : 133,
+      "max_width" : 455,
+      "max_height" : 133
+    }
+  }, {
+    "id" : "6d26e8f9-e4f0-4992-4875-5a6897a2a1c7",
+    "name" : "notification_placeholder",
+    "display_width" : null,
+    "label" : "notification placeholder",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Notification-Mockup1.png",
+      "alt" : "Notification-Mockup1",
+      "loading" : "lazy",
+      "width" : 455,
+      "height" : 133,
+      "max_width" : 455,
+      "max_height" : 133
+    }
+  }, {
+    "id" : "dbd8ffb4-c96b-fe90-303b-f932514af43a",
+    "name" : "notification_phone_image",
+    "display_width" : null,
+    "label" : "notification phone image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Maniko-Notification1.png",
+      "alt" : "Testimonial-Screen-Maniko-Notification1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    }
+  }, {
+    "id" : "52e7fe38-43d6-b0f0-b60b-d384cdfa0614",
+    "name" : "sales_image",
+    "display_width" : null,
+    "label" : "Sales image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Stat-Snocks.png",
+      "alt" : "Stat-Snocks",
+      "loading" : "lazy",
+      "width" : 245,
+      "height" : 245,
+      "max_width" : 245,
+      "max_height" : 245
+    }
+  }, {
+    "id" : "0a50a709-e599-565a-dceb-8a65489f18b7",
+    "name" : "phone_layout",
+    "display_width" : null,
+    "label" : "Phone layout",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Main-Phone.png",
+      "alt" : "Main-Phone",
+      "loading" : "lazy",
+      "width" : 946,
+      "height" : 1219,
+      "max_width" : 946,
+      "max_height" : 1219
+    }
+  }, {
+    "id" : "a38beb8a-199e-b7dc-017e-588c695e9617",
+    "name" : "phone_popup",
+    "display_width" : null,
+    "label" : "phone_popup",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Popup1.png",
+      "alt" : "Testimonial-Screen-Snocks-Popup1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    }
+  }, {
+    "id" : "6012cee9-6db0-b4ca-17d2-a27f99561b32",
+    "name" : "right_placeholder",
+    "display_width" : null,
+    "label" : "right placeholder",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Tracking-Mockup1.png",
+      "alt" : "Tracking-Mockup1",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 363,
+      "max_width" : 453,
+      "max_height" : 363
+    }
+  }, {
+    "id" : "7823c73d-18b3-5c4b-2730-6b36959661e9",
+    "name" : "right_source",
+    "display_width" : null,
+    "label" : "Right source",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWSnocks-Mockup.png",
+      "alt" : "NOSHADOWSnocks-Mockup",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 359,
+      "max_width" : 453,
+      "max_height" : 359
+    }
+  }, {
+    "id" : "cf3a2af3-d61a-9fe6-d91d-ad8ddb8a59f8",
+    "name" : "right_phone_image",
+    "display_width" : null,
+    "label" : "Right phone image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Tracking1.png",
+      "alt" : "Testimonial-Screen-Snocks-Tracking1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    }
+  }, {
+    "id" : "d166c046-b128-d2d7-7595-6ee51b796857",
+    "name" : "quote",
+    "display_width" : null,
+    "label" : "Quote",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "“WhatsApp popups are <strong>6x more valuable</strong> for us than Email popups”"
+  }, {
+    "id" : "c21dbdc0-12d6-d41a-0269-92ec9f2ee825",
+    "name" : "name_and_position",
+    "display_width" : null,
+    "label" : "Name and position",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "<strong>Johanes</strong> CEO Snocks"
+  }, {
+    "id" : "b4969ecb-bd67-355c-4a52-ced17e845cc6",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "See the full case"
+  }, {
+    "id" : "e10b03d2-d7a9-fe60-b48d-bba5a8947735",
+    "name" : "photo",
+    "display_width" : null,
+    "label" : "Photo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Mischa-Photo.png",
+      "alt" : "Mischa-Photo",
+      "loading" : "lazy",
+      "width" : 84,
+      "height" : 83,
+      "max_width" : 84,
+      "max_height" : 83
+    }
+  }, {
+    "id" : "37eee662-bd6f-fa8c-bdbb-9a1f223c84c1",
+    "name" : "bottom_app_logo",
+    "display_width" : null,
+    "label" : "Bottom app logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-list-logo-1.png",
+      "alt" : "app-list-logo-1",
+      "loading" : "lazy",
+      "width" : 272,
+      "height" : 141,
+      "max_width" : 272,
+      "max_height" : 141
+    }
+  }, {
+    "id" : "4b631523-55da-6a17-73e7-833b40b46dcc",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "top_1_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWPopup-Snocks.png",
+      "alt" : "NOSHADOWPopup-Snocks",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 330,
+      "max_width" : 453,
+      "max_height" : 330
+    },
+    "top1_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Popup-Mockup1.png",
+      "alt" : "Popup-Mockup1",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 330,
+      "max_width" : 453,
+      "max_height" : 330
+    },
+    "top_1_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Popup1.png",
+      "alt" : "Testimonial-Screen-Snocks-Popup1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "notification_image_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWNotification-Snocks.png",
+      "alt" : "NOSHADOWNotification-Snocks",
+      "loading" : "lazy",
+      "width" : 455,
+      "height" : 133,
+      "max_width" : 455,
+      "max_height" : 133
+    },
+    "notification_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Notification-Mockup1.png",
+      "alt" : "Notification-Mockup1",
+      "loading" : "lazy",
+      "width" : 455,
+      "height" : 133,
+      "max_width" : 455,
+      "max_height" : 133
+    },
+    "notification_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Maniko-Notification1.png",
+      "alt" : "Testimonial-Screen-Maniko-Notification1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "sales_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Stat-Snocks.png",
+      "alt" : "Stat-Snocks",
+      "loading" : "lazy",
+      "width" : 245,
+      "height" : 245,
+      "max_width" : 245,
+      "max_height" : 245
+    },
+    "phone_layout" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Main-Phone.png",
+      "alt" : "Main-Phone",
+      "loading" : "lazy",
+      "width" : 946,
+      "height" : 1219,
+      "max_width" : 946,
+      "max_height" : 1219
+    },
+    "phone_popup" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Popup1.png",
+      "alt" : "Testimonial-Screen-Snocks-Popup1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "right_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Tracking-Mockup1.png",
+      "alt" : "Tracking-Mockup1",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 363,
+      "max_width" : 453,
+      "max_height" : 363
+    },
+    "right_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWSnocks-Mockup.png",
+      "alt" : "NOSHADOWSnocks-Mockup",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 359,
+      "max_width" : 453,
+      "max_height" : 359
+    },
+    "right_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Tracking1.png",
+      "alt" : "Testimonial-Screen-Snocks-Tracking1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "quote" : "“WhatsApp popups are <strong>6x more valuable</strong> for us than Email popups”",
+    "name_and_position" : "<strong>Johanes</strong> CEO Snocks",
+    "button_text" : "See the full case",
+    "photo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Mischa-Photo.png",
+      "alt" : "Mischa-Photo",
+      "loading" : "lazy",
+      "width" : 84,
+      "height" : 83,
+      "max_width" : 84,
+      "max_height" : 83
+    },
+    "bottom_app_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-list-logo-1.png",
+      "alt" : "app-list-logo-1",
+      "loading" : "lazy",
+      "width" : 272,
+      "height" : 141,
+      "max_width" : 272,
+      "max_height" : 141
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "top_1_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWPopup-Snocks.png",
+      "alt" : "NOSHADOWPopup-Snocks",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 330,
+      "max_width" : 453,
+      "max_height" : 330
+    },
+    "top1_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Popup-Mockup1.png",
+      "alt" : "Popup-Mockup1",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 330,
+      "max_width" : 453,
+      "max_height" : 330
+    },
+    "top_1_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Popup1.png",
+      "alt" : "Testimonial-Screen-Snocks-Popup1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "notification_image_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWNotification-Snocks.png",
+      "alt" : "NOSHADOWNotification-Snocks",
+      "loading" : "lazy",
+      "width" : 455,
+      "height" : 133,
+      "max_width" : 455,
+      "max_height" : 133
+    },
+    "notification_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Notification-Mockup1.png",
+      "alt" : "Notification-Mockup1",
+      "loading" : "lazy",
+      "width" : 455,
+      "height" : 133,
+      "max_width" : 455,
+      "max_height" : 133
+    },
+    "notification_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Maniko-Notification1.png",
+      "alt" : "Testimonial-Screen-Maniko-Notification1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "sales_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Stat-Snocks.png",
+      "alt" : "Stat-Snocks",
+      "loading" : "lazy",
+      "width" : 245,
+      "height" : 245,
+      "max_width" : 245,
+      "max_height" : 245
+    },
+    "phone_layout" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Main-Phone.png",
+      "alt" : "Main-Phone",
+      "loading" : "lazy",
+      "width" : 946,
+      "height" : 1219,
+      "max_width" : 946,
+      "max_height" : 1219
+    },
+    "phone_popup" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Popup1.png",
+      "alt" : "Testimonial-Screen-Snocks-Popup1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "right_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Tracking-Mockup1.png",
+      "alt" : "Tracking-Mockup1",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 363,
+      "max_width" : 453,
+      "max_height" : 363
+    },
+    "right_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWSnocks-Mockup.png",
+      "alt" : "NOSHADOWSnocks-Mockup",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 359,
+      "max_width" : 453,
+      "max_height" : 359
+    },
+    "right_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Tracking1.png",
+      "alt" : "Testimonial-Screen-Snocks-Tracking1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "quote" : "“WhatsApp popups are <strong>6x more valuable</strong> for us than Email popups”",
+    "name_and_position" : "<strong>Johanes</strong> CEO Snocks",
+    "button_text" : "See the full case",
+    "photo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Mischa-Photo.png",
+      "alt" : "Mischa-Photo",
+      "loading" : "lazy",
+      "width" : 84,
+      "height" : 83,
+      "max_width" : 84,
+      "max_height" : 83
+    },
+    "bottom_app_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-list-logo-1.png",
+      "alt" : "app-list-logo-1",
+      "loading" : "lazy",
+      "width" : 272,
+      "height" : 141,
+      "max_width" : 272,
+      "max_height" : 141
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "top_1_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWPopup-Snocks.png",
+      "alt" : "NOSHADOWPopup-Snocks",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 330,
+      "max_width" : 453,
+      "max_height" : 330
+    },
+    "top1_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Popup-Mockup1.png",
+      "alt" : "Popup-Mockup1",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 330,
+      "max_width" : 453,
+      "max_height" : 330
+    },
+    "top_1_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Popup1.png",
+      "alt" : "Testimonial-Screen-Snocks-Popup1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "notification_image_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWNotification-Snocks.png",
+      "alt" : "NOSHADOWNotification-Snocks",
+      "loading" : "lazy",
+      "width" : 455,
+      "height" : 133,
+      "max_width" : 455,
+      "max_height" : 133
+    },
+    "notification_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Notification-Mockup1.png",
+      "alt" : "Notification-Mockup1",
+      "loading" : "lazy",
+      "width" : 455,
+      "height" : 133,
+      "max_width" : 455,
+      "max_height" : 133
+    },
+    "notification_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Maniko-Notification1.png",
+      "alt" : "Testimonial-Screen-Maniko-Notification1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "sales_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Stat-Snocks.png",
+      "alt" : "Stat-Snocks",
+      "loading" : "lazy",
+      "width" : 245,
+      "height" : 245,
+      "max_width" : 245,
+      "max_height" : 245
+    },
+    "phone_layout" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Main-Phone.png",
+      "alt" : "Main-Phone",
+      "loading" : "lazy",
+      "width" : 946,
+      "height" : 1219,
+      "max_width" : 946,
+      "max_height" : 1219
+    },
+    "phone_popup" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Popup1.png",
+      "alt" : "Testimonial-Screen-Snocks-Popup1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "right_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Tracking-Mockup1.png",
+      "alt" : "Tracking-Mockup1",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 363,
+      "max_width" : 453,
+      "max_height" : 363
+    },
+    "right_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWSnocks-Mockup.png",
+      "alt" : "NOSHADOWSnocks-Mockup",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 359,
+      "max_width" : 453,
+      "max_height" : 359
+    },
+    "right_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Tracking1.png",
+      "alt" : "Testimonial-Screen-Snocks-Tracking1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "quote" : "“WhatsApp popups are <strong>6x more valuable</strong> for us than Email popups”",
+    "name_and_position" : "<strong>Johanes</strong> CEO Snocks",
+    "button_text" : "See the full case",
+    "photo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Mischa-Photo.png",
+      "alt" : "Mischa-Photo",
+      "loading" : "lazy",
+      "width" : 84,
+      "height" : 83,
+      "max_width" : 84,
+      "max_height" : 83
+    },
+    "bottom_app_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-list-logo-1.png",
+      "alt" : "app-list-logo-1",
+      "loading" : "lazy",
+      "width" : 272,
+      "height" : 141,
+      "max_width" : 272,
+      "max_height" : 141
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "top_1_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWPopup-Snocks.png",
+      "alt" : "NOSHADOWPopup-Snocks",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 330,
+      "max_width" : 453,
+      "max_height" : 330
+    },
+    "top1_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Popup-Mockup1.png",
+      "alt" : "Popup-Mockup1",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 330,
+      "max_width" : 453,
+      "max_height" : 330
+    },
+    "top_1_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Popup1.png",
+      "alt" : "Testimonial-Screen-Snocks-Popup1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "notification_image_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWNotification-Snocks.png",
+      "alt" : "NOSHADOWNotification-Snocks",
+      "loading" : "lazy",
+      "width" : 455,
+      "height" : 133,
+      "max_width" : 455,
+      "max_height" : 133
+    },
+    "notification_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Notification-Mockup1.png",
+      "alt" : "Notification-Mockup1",
+      "loading" : "lazy",
+      "width" : 455,
+      "height" : 133,
+      "max_width" : 455,
+      "max_height" : 133
+    },
+    "notification_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Maniko-Notification1.png",
+      "alt" : "Testimonial-Screen-Maniko-Notification1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "sales_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Stat-Snocks.png",
+      "alt" : "Stat-Snocks",
+      "loading" : "lazy",
+      "width" : 245,
+      "height" : 245,
+      "max_width" : 245,
+      "max_height" : 245
+    },
+    "phone_layout" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Main-Phone.png",
+      "alt" : "Main-Phone",
+      "loading" : "lazy",
+      "width" : 946,
+      "height" : 1219,
+      "max_width" : 946,
+      "max_height" : 1219
+    },
+    "phone_popup" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Popup1.png",
+      "alt" : "Testimonial-Screen-Snocks-Popup1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "right_placeholder" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Tracking-Mockup1.png",
+      "alt" : "Tracking-Mockup1",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 363,
+      "max_width" : 453,
+      "max_height" : 363
+    },
+    "right_source" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/NOSHADOWSnocks-Mockup.png",
+      "alt" : "NOSHADOWSnocks-Mockup",
+      "loading" : "lazy",
+      "width" : 453,
+      "height" : 359,
+      "max_width" : 453,
+      "max_height" : 359
+    },
+    "right_phone_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Testimonial-Screen-Snocks-Tracking1.png",
+      "alt" : "Testimonial-Screen-Snocks-Tracking1",
+      "loading" : "lazy",
+      "width" : 332,
+      "height" : 708,
+      "max_width" : 332,
+      "max_height" : 708
+    },
+    "quote" : "“WhatsApp popups are <strong>6x more valuable</strong> for us than Email popups”",
+    "name_and_position" : "<strong>Johanes</strong> CEO Snocks",
+    "button_text" : "See the full case",
+    "photo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Mischa-Photo.png",
+      "alt" : "Mischa-Photo",
+      "loading" : "lazy",
+      "width" : 84,
+      "height" : 83,
+      "max_width" : 84,
+      "max_height" : 83
+    },
+    "bottom_app_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/app-list-logo-1.png",
+      "alt" : "app-list-logo-1",
+      "loading" : "lazy",
+      "width" : 272,
+      "height" : 141,
+      "max_width" : 272,
+      "max_height" : 141
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

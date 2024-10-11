@@ -1,0 +1,75 @@
+<div class="section-container" style="background: url({{ module.style.background_dotted.src }});">
+  <div class="container">
+    <!-- Background Image -->
+    <div class="section-image-background" style="{{ module.style.background_spacing.css }}">
+      {% if module.section_background.src %}
+      {% set sizeAttrs = 'width="{{ module.section_background.width }}" height="{{ module.section_background.height }}"' %}
+      {% if module.section_background.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.section_background.width }}" height="{{ module.section_background.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.section_background.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.section_background.max_width }}" height="{{ module.section_background.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.section_background.loading != 'disabled' ? 'loading="{{ module.section_background.loading }}"' : '' %}
+      <img src="{{ module.section_background.src }}" alt="{{ module.section_background.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+    <div class="section-row {% if module.reverse_columns %}reverse-columns{% endif %}{% if module.align_center %}align-center{% endif %}">
+      <div class="col-6 {% if module.reverse_items_order %}col-flex{% endif %}">
+        <div class="event-logo" style="order: {{ module.logo_order_number }}">
+          {% if module.event_logo.src %}
+          {% set sizeAttrs = 'width="{{ module.event_logo.width }}" height="{{ module.event_logo.height }}"' %}
+          {% if module.event_logo.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.event_logo.width }}" height="{{ module.event_logo.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.event_logo.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.event_logo.max_width }}" height="{{ module.event_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.event_logo.loading != 'disabled' ? 'loading="{{ module.event_logo.loading }}"' : '' %}
+          <img src="{{ module.event_logo.src }}" alt="{{ module.event_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="event-title" style="order: {{ module.title_order_number }}">
+          <h1>
+            {{ module.event_title }}
+          </h1>
+        </div>
+        {% if module.label_group.activate_label %}
+        <!-- Label -->
+        <div class="heading-label" style="color: {{ module.label_group.label_text_color.css }}; background-color: {{ module.label_group.label_background_color.css }}">
+          {{ module.label_group.label_text }}
+        </div>
+        {% endif %}
+
+        <!-- Heading Content -->
+        <div class="heading-description" style="order: {{ module.description_order_number }}">
+          {{ module.content }}
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="section-form-container">
+          <div class="event-image">
+            {% if module.event_image.src %}
+            {% set sizeAttrs = 'width="{{ module.event_image.width }}" height="{{ module.event_image.height }}"' %}
+            {% if module.event_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.event_image.width }}" height="{{ module.event_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.event_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.event_image.max_width }}" height="{{ module.event_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.event_image.loading != 'disabled' ? 'loading="{{ module.event_image.loading }}"' : '' %}
+            <img src="{{ module.event_image.src }}" alt="{{ module.event_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="inner-form-block">
+            {% form
+          form_to_use="{{ module.select_form.form_id }}"
+          response_response_type="{{ module.select_form.response_type }}"
+          response_message="{{ module.select_form.message }}"
+          response_redirect_id="{{ module.select_form.redirect_id }}"
+          response_redirect_url="{{module.select_form.redirect_url}}"
+          gotowebinar_webinar_key="{{ module.select_form.gotowebinar_webinar_key }}"
+        %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

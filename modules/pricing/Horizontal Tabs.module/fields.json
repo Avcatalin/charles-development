@@ -1,0 +1,1136 @@
+[ {
+  "id" : "a733b302-63a8-9932-45e9-007d5c76bd01",
+  "name" : "tab_section_background_color",
+  "display_width" : null,
+  "label" : "Tab Section Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFF171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "4ed2ddf1-98c6-88a0-fe60-a88403ed0f68",
+  "name" : "year_offer",
+  "display_width" : null,
+  "label" : "Year Offer",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "first month <strong>free! <img src=\"https://www.hello-charles.com/hubfs/emoji-final.png\" alt=\"emoji-final\" loading=\"lazy\" style=\"height: auto; max-width: 100%; width: 30px;\" width=\"30\" height=\"28\"></strong>"
+}, {
+  "id" : "ec9d5459-5fe7-c659-bdd7-35beb212c2ad",
+  "name" : "tabs_header",
+  "display_width" : null,
+  "label" : "Tabs Header",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "058851d2-5e0e-676a-16ca-24d3f922f3f8",
+    "name" : "tab_header",
+    "display_width" : null,
+    "label" : "Tab Header",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "monthly"
+  }, {
+    "id" : "24637ccb-8044-2108-b06c-a9f6264cc8d3",
+    "name" : "tab_id",
+    "display_width" : null,
+    "label" : "Tab ID",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "tab1"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "tab_header" : "monthly",
+    "tab_id" : "tab1"
+  } ]
+}, {
+  "id" : "83be971a-d632-a2d9-0565-4047461e935c",
+  "name" : "tab_content_title",
+  "display_width" : null,
+  "label" : "Tab Content Title - Monthly",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>A pricing <strong>tailored to your <br>business growth</strong></h2>"
+}, {
+  "id" : "9e682781-2b4a-b67a-fb83-52d4318a4bd9",
+  "name" : "tab_content_title_yearly",
+  "display_width" : null,
+  "label" : "Tab Content Title - Yearly",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>A yearly pricing <strong>tailored to your <br>business growth</strong></h2>"
+}, {
+  "id" : "186e5ea7-89e0-fab5-15af-930a3943a76c",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "67c909b1-4cbd-9a19-86cd-183887d2724d",
+    "name" : "cta_spacing",
+    "display_width" : null,
+    "label" : "CTA Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "2b3da895-b6e2-ee47-902f-876bab3c4d24",
+    "name" : "spacing_tab_content_title",
+    "display_width" : null,
+    "label" : "Spacing Tab Content Title",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "99739039-8318-06f0-3e5b-959373576cb5",
+    "name" : "tab_content_spacing",
+    "display_width" : null,
+    "label" : "Tab Content Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "cta_spacing" : { },
+    "spacing_tab_content_title" : { },
+    "tab_content_spacing" : { }
+  }
+}, {
+  "id" : "0ef9da42-c946-895c-0e62-65c45726d8eb",
+  "name" : "price_box_info",
+  "display_width" : null,
+  "label" : "Price Box Info - Monthly",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "030dba92-c9e1-8960-e59c-2a997df05677",
+    "name" : "box_background_color",
+    "display_width" : null,
+    "label" : "Box Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "56fc3cb8-8709-d061-d7d7-66cff1139cda",
+    "name" : "title_content",
+    "display_width" : null,
+    "label" : "Title & Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h4>ESSENTIALS</h4>\n<p>This explains why it’s essentials in 3 lines with up to 1000 monthly free outbound messages</p>"
+  }, {
+    "id" : "17a2c7e4-0ef1-9be5-6dde-90152ba64c2d",
+    "name" : "content_color",
+    "display_width" : null,
+    "label" : "Content Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "77fe6f35-e688-bf67-b964-76157faac7a7",
+    "name" : "price_value",
+    "display_width" : null,
+    "label" : "Price Value Standard",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "€ 349"
+  }, {
+    "id" : "acaa4c47-2827-76e1-563b-e361facac747",
+    "name" : "price_value_second_check",
+    "display_width" : null,
+    "label" : "Price Value Second Check",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "€ 449"
+  }, {
+    "id" : "e86c3cb2-d30f-0fb4-d38a-2b4bc1bf6d50",
+    "name" : "price_value_third_check",
+    "display_width" : null,
+    "label" : "Price Value Third Check",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "€ 549"
+  }, {
+    "id" : "82474b0c-5f85-1596-462c-35d7e91d907a",
+    "name" : "price_value_color",
+    "display_width" : null,
+    "label" : "Price Value Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "82f9f8d4-1671-052c-705f-684f1944a24a",
+    "name" : "price_value_id",
+    "display_width" : null,
+    "label" : "Price Value ID",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "value1"
+  }, {
+    "id" : "dbd828db-8634-2963-8785-75321db4e4c8",
+    "name" : "get_started_url",
+    "display_width" : null,
+    "label" : "Get Started URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "509d3147-7e4d-242e-ec2e-8a936c3702b9",
+    "name" : "get_started_text",
+    "display_width" : null,
+    "label" : "Get Started Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get started"
+  }, {
+    "id" : "883332a3-0fd8-6ddd-2f09-5bdcd5df0cb4",
+    "name" : "get_started_background_color",
+    "display_width" : null,
+    "label" : "Get Started Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "6614b785-7615-168c-0f2c-de9b3563851a",
+    "name" : "how_to_we_calculate_price",
+    "display_width" : null,
+    "label" : "How to we calculate price",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<div style=\"text-align: center;\"><a href=\"https://www.google.com/\" rel=\"noopener\">How we calculate price</a></div>\n<div style=\"text-align: center;\">Based outbound messages</div>"
+  }, {
+    "id" : "429e5c21-31b9-276e-55b7-d9c532a16007",
+    "name" : "key_features_text",
+    "display_width" : null,
+    "label" : "Key Features Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Key features:"
+  }, {
+    "id" : "32467985-3f89-371c-6ec3-b9cde8becebe",
+    "name" : "key_features_background_color",
+    "display_width" : null,
+    "label" : "Key features Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "a75fc0a2-ead3-67af-2280-5c2779c252c5",
+    "name" : "get_started_text_color",
+    "display_width" : null,
+    "label" : "Get Started Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "055f1ef0-b279-b213-2d75-979bf64bd157",
+    "name" : "features_list_icons",
+    "display_width" : null,
+    "label" : "Features List Icons",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "a242dd2d-fcfb-1d60-b76e-458523335d64",
+      "name" : "features_list_icon",
+      "display_width" : null,
+      "label" : "Features List Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "id" : "6ceead33-6859-0f7a-1a74-e9cb4997a6e5",
+      "name" : "features_list_text",
+      "display_width" : null,
+      "label" : "Features List Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "3 agents"
+    }, {
+      "id" : "445a2fec-994b-cc4e-fca9-249fdad5c572",
+      "name" : "text_color",
+      "display_width" : null,
+      "label" : "Text Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#221F20",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "features_list_icon" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "features_list_text" : "3 agents",
+      "text_color" : {
+        "color" : "#221F20",
+        "opacity" : 100
+      }
+    } ]
+  }, {
+    "id" : "6e5ddc90-4972-ff21-7f44-2f99e6d3e6f9",
+    "name" : "features_bullet_list",
+    "display_width" : null,
+    "label" : "Features Bullet List",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "2bcd51d9-c15a-a3b0-a14f-e85773585e08",
+      "name" : "features_bullet_list_text",
+      "display_width" : null,
+      "label" : "Features Bullet List Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "This is one key feature"
+    }, {
+      "id" : "f1aec0be-011f-0840-e991-af04d0bb8b67",
+      "name" : "enable_tooltip",
+      "display_width" : null,
+      "label" : "Enable Tooltip",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "7dd99cea-9199-8a5f-dd92-d0514d50f990",
+      "name" : "tooltip_icon",
+      "display_width" : null,
+      "label" : "Tooltip Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/tooltip-icon.svg",
+        "alt" : "tooltip-icon",
+        "loading" : "lazy",
+        "width" : 26,
+        "height" : 26,
+        "max_width" : 26,
+        "max_height" : 26
+      }
+    }, {
+      "id" : "cc818a2c-d2e0-d77e-d483-5ca9ce7b6e71",
+      "name" : "tooltip_content",
+      "display_width" : null,
+      "label" : "Tooltip Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }, {
+      "id" : "b84a3cb0-ef76-4618-09e5-d77d946d9f51",
+      "name" : "text_color",
+      "display_width" : null,
+      "label" : "Text Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#231F20",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "features_bullet_list_text" : "This is one key feature",
+      "enable_tooltip" : false,
+      "tooltip_icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/tooltip-icon.svg",
+        "alt" : "tooltip-icon",
+        "loading" : "lazy",
+        "width" : 26,
+        "height" : 26,
+        "max_width" : 26,
+        "max_height" : 26
+      },
+      "tooltip_content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text_color" : {
+        "color" : "#231F20",
+        "opacity" : 100
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "box_background_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "title_content" : "<h4>ESSENTIALS</h4>\n<p>This explains why it’s essentials in 3 lines with up to 1000 monthly free outbound messages</p>",
+    "content_color" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    },
+    "price_value" : "€ 349",
+    "price_value_second_check" : "€ 449",
+    "price_value_color" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    },
+    "price_value_id" : "value1",
+    "get_started_url" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "get_started_text" : "Get started",
+    "get_started_background_color" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    },
+    "how_to_we_calculate_price" : "<div style=\"text-align: center;\"><a href=\"https://www.google.com/\" rel=\"noopener\">How we calculate price</a></div>\n<div style=\"text-align: center;\">Based outbound messages</div>",
+    "key_features_text" : "Key features:",
+    "key_features_background_color" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    },
+    "get_started_text_color" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    },
+    "features_list_icons" : [ {
+      "features_list_icon" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "features_list_text" : "3 agents",
+      "text_color" : {
+        "color" : "#221F20",
+        "opacity" : 100
+      }
+    } ],
+    "features_bullet_list" : [ {
+      "features_bullet_list_text" : "This is one key feature",
+      "enable_tooltip" : false,
+      "tooltip_icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/tooltip-icon.svg",
+        "alt" : "tooltip-icon",
+        "loading" : "lazy",
+        "width" : 26,
+        "height" : 26,
+        "max_width" : 26,
+        "max_height" : 26
+      },
+      "tooltip_content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text_color" : {
+        "color" : "#231F20",
+        "opacity" : 100
+      }
+    } ],
+    "price_value_third_check" : "€ 549"
+  } ]
+}, {
+  "id" : "351ba6aa-0793-bf5a-236f-0abf46299d36",
+  "name" : "price_box_info_yearly",
+  "display_width" : null,
+  "label" : "Price Box Info - Yearly",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "dc95e30c-a955-77d8-ac94-368679033924",
+    "name" : "box_background_color",
+    "display_width" : null,
+    "label" : "Box Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "5853d0cb-f40d-feb0-7f61-8740bd1ca744",
+    "name" : "title_content",
+    "display_width" : null,
+    "label" : "Title & Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h4>ESSENTIALS</h4>\n<p>This explains why it’s essentials in 3 lines with up to 1000 monthly free outbound messages</p>"
+  }, {
+    "id" : "0096c74c-1243-4326-2d9e-24bad2adc70b",
+    "name" : "content_color",
+    "display_width" : null,
+    "label" : "Content Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "f72036fc-fd28-2a43-562d-d54853095739",
+    "name" : "price_value",
+    "display_width" : null,
+    "label" : "Price Value Standard",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "€ 349"
+  }, {
+    "id" : "0123a955-d9f2-cc94-b1b2-3a35b6aa31fc",
+    "name" : "price_value_second_check",
+    "display_width" : null,
+    "label" : "Price Value Second Check",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "€ 449"
+  }, {
+    "id" : "81ff81b3-2a48-48cc-2552-6495820f0ae6",
+    "name" : "price_value_third_check",
+    "display_width" : null,
+    "label" : "Price Value Third Check",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "€ 549"
+  }, {
+    "id" : "93c18860-f089-06cc-4929-fb6af67bf5a1",
+    "name" : "price_value_color",
+    "display_width" : null,
+    "label" : "Price Value Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "9b3217e2-051a-7c2a-bf77-9b2f50a91046",
+    "name" : "price_value_id",
+    "display_width" : null,
+    "label" : "Price Value ID",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "value1"
+  }, {
+    "id" : "e76522e3-eb16-0a16-a929-672cd1615e94",
+    "name" : "get_started_url",
+    "display_width" : null,
+    "label" : "Get Started URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "c03a0224-acb7-eeb0-3308-cc72d7124ffe",
+    "name" : "get_started_text",
+    "display_width" : null,
+    "label" : "Get Started Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get started"
+  }, {
+    "id" : "787e8164-1c45-a11c-3b5d-216cd8e54967",
+    "name" : "get_started_background_color",
+    "display_width" : null,
+    "label" : "Get Started Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "7f4a51d6-8ce8-927d-b706-606508d92a6b",
+    "name" : "how_to_we_calculate_price",
+    "display_width" : null,
+    "label" : "How to we calculate price",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<div style=\"text-align: center;\"><a href=\"https://www.google.com/\" rel=\"noopener\">How we calculate price</a></div>\n<div style=\"text-align: center;\">Based outbound messages</div>"
+  }, {
+    "id" : "a9116d27-4633-bbc7-067b-a05af01cd6ed",
+    "name" : "key_features_text",
+    "display_width" : null,
+    "label" : "Key Features Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Key features:"
+  }, {
+    "id" : "8c1c19c8-2aa8-11ca-870d-b14c7b1d1307",
+    "name" : "key_features_background_color",
+    "display_width" : null,
+    "label" : "Key features Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "aecceaa3-c34f-906f-b17e-5a679b8cee5e",
+    "name" : "get_started_text_color",
+    "display_width" : null,
+    "label" : "Get Started Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "ae11d007-81f5-41ac-c545-2c220b551d13",
+    "name" : "features_list_icons",
+    "display_width" : null,
+    "label" : "Features List Icons",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "8151b3d7-97ba-0a01-474d-e8abbd324878",
+      "name" : "features_list_icon",
+      "display_width" : null,
+      "label" : "Features List Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "id" : "a2f5a9b9-e9ca-f790-a3fe-027de630f860",
+      "name" : "features_list_text",
+      "display_width" : null,
+      "label" : "Features List Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "3 agents"
+    }, {
+      "id" : "427334b2-afea-7295-cfc4-84d6bb639c33",
+      "name" : "text_color",
+      "display_width" : null,
+      "label" : "Text Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#221F20",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "features_list_icon" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "features_list_text" : "3 agents",
+      "text_color" : {
+        "color" : "#221F20",
+        "opacity" : 100
+      }
+    } ]
+  }, {
+    "id" : "0db30a9c-5dca-5d21-5877-400dec6022dc",
+    "name" : "features_bullet_list",
+    "display_width" : null,
+    "label" : "Features Bullet List",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "9d305823-c997-08e7-56be-b1ac7e699fb1",
+      "name" : "features_bullet_list_text",
+      "display_width" : null,
+      "label" : "Features Bullet List Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "This is one key feature"
+    }, {
+      "id" : "3f4f781d-659b-cc8a-89d9-a284f54f5b19",
+      "name" : "enable_tooltip",
+      "display_width" : null,
+      "label" : "Enable Tooltip",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "66b3474d-5243-5b7a-6803-9549d4c659e5",
+      "name" : "tooltip_icon",
+      "display_width" : null,
+      "label" : "Tooltip Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/tooltip-icon.svg",
+        "alt" : "tooltip-icon",
+        "loading" : "lazy",
+        "width" : 26,
+        "height" : 26,
+        "max_width" : 26,
+        "max_height" : 26
+      }
+    }, {
+      "id" : "7c4b8b2c-0d0e-ce32-0a1b-c0305f16b1a0",
+      "name" : "tooltip_content",
+      "display_width" : null,
+      "label" : "Tooltip Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }, {
+      "id" : "cfd0e6fa-82b7-e343-470e-0aa882cd700b",
+      "name" : "text_color",
+      "display_width" : null,
+      "label" : "Text Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#231F20",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "features_bullet_list_text" : "This is one key feature",
+      "enable_tooltip" : false,
+      "tooltip_icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/tooltip-icon.svg",
+        "alt" : "tooltip-icon",
+        "loading" : "lazy",
+        "width" : 26,
+        "height" : 26,
+        "max_width" : 26,
+        "max_height" : 26
+      },
+      "tooltip_content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text_color" : {
+        "color" : "#231F20",
+        "opacity" : 100
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "box_background_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "title_content" : "<h4>ESSENTIALS</h4>\n<p>This explains why it’s essentials in 3 lines with up to 1000 monthly free outbound messages</p>",
+    "content_color" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    },
+    "price_value" : "€ 349",
+    "price_value_second_check" : "€ 449",
+    "price_value_third_check" : "€ 549",
+    "price_value_color" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    },
+    "price_value_id" : "value1",
+    "get_started_url" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "get_started_text" : "Get started",
+    "get_started_background_color" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    },
+    "how_to_we_calculate_price" : "<div style=\"text-align: center;\"><a href=\"https://www.google.com/\" rel=\"noopener\">How we calculate price</a></div>\n<div style=\"text-align: center;\">Based outbound messages</div>",
+    "key_features_text" : "Key features:",
+    "key_features_background_color" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    },
+    "get_started_text_color" : {
+      "color" : "#221F20",
+      "opacity" : 100
+    },
+    "features_list_icons" : [ {
+      "features_list_icon" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "features_list_text" : "3 agents",
+      "text_color" : {
+        "color" : "#221F20",
+        "opacity" : 100
+      }
+    } ],
+    "features_bullet_list" : [ {
+      "features_bullet_list_text" : "This is one key feature",
+      "enable_tooltip" : false,
+      "tooltip_icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/tooltip-icon.svg",
+        "alt" : "tooltip-icon",
+        "loading" : "lazy",
+        "width" : 26,
+        "height" : 26,
+        "max_width" : 26,
+        "max_height" : 26
+      },
+      "tooltip_content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text_color" : {
+        "color" : "#231F20",
+        "opacity" : 100
+      }
+    } ]
+  } ]
+}, {
+  "id" : "4a2b867a-95c8-080c-a5f4-bee522b7aa44",
+  "name" : "cta_button_background_color",
+  "display_width" : null,
+  "label" : "CTA Button Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "276eab8b-7e38-3a99-5010-4675257a03f9",
+  "name" : "cta_button_icon",
+  "display_width" : null,
+  "label" : "CTA Button Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/icon-cta.svg",
+    "alt" : "icon-cta",
+    "loading" : "lazy",
+    "width" : 78,
+    "height" : 60,
+    "max_width" : 78,
+    "max_height" : 60
+  }
+}, {
+  "id" : "15c202f4-01d5-4e29-bdf5-63e69b2802ef",
+  "name" : "color_choice_cta_text",
+  "display_width" : null,
+  "label" : "Color Choice CTA Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "95f4dbf9-b786-c24f-4d4d-619b3fd99134",
+  "name" : "cta_button_text",
+  "display_width" : null,
+  "label" : "CTA Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "You need a custom solution?"
+}, {
+  "id" : "f5284507-4acc-e3e4-b5d4-eb09103e9f06",
+  "name" : "page_url_features_cta",
+  "display_width" : null,
+  "label" : "Page URL Features CTA",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "ad93e885-d5b1-fd6b-6cda-1a2a73283b32",
+  "name" : "background_book_demo_cta",
+  "display_width" : null,
+  "label" : "Background Book Demo CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F8EA6A",
+    "opacity" : 100
+  }
+}, {
+  "id" : "96146c96-a26e-4392-ee24-955ab0787cca",
+  "name" : "color_choice_book_demo_cta",
+  "display_width" : null,
+  "label" : "Color Choice Book Demo CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "ed50c320-e9a6-6590-13c4-cc99584769b4",
+  "name" : "text_book_demo_cta",
+  "display_width" : null,
+  "label" : "Text Book Demo CTA",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Talk to us"
+} ]

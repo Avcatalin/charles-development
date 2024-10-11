@@ -1,0 +1,49 @@
+[ {
+  "id" : "3826b8e4-2a94-e593-3f43-c09a33228a9b",
+  "name" : "dismiss_icon_color",
+  "display_width" : null,
+  "label" : "Dismiss Icon Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#000",
+    "opacity" : 100
+  }
+}, {
+  "id" : "02bd96ef-55eb-6426-128d-e984ae211cac",
+  "name" : "background",
+  "display_width" : null,
+  "label" : "background",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#f3f3f3",
+    "opacity" : 100
+  }
+}, {
+  "id" : "d9e06b3d-1d3f-dbe2-2701-4fb2031b1912",
+  "name" : "main_content",
+  "display_width" : null,
+  "label" : "Main Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9a49fb28-78f9-0bc6-3b9a-8d6ec1a14652",
+    "name" : "p",
+    "display_width" : null,
+    "label" : "p",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Come to Shoptalk!</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "p" : "<p>Come to Shoptalk!</p>"
+  }
+} ]

@@ -1,0 +1,30 @@
+<div class="container">
+  <!-- CTA Dark with Icon -->
+  <div class="cta-button-features" style="background-color: {{ module.background_cta.color }}; {{ module.cta_dark.spacing_field.css }}">
+    <!-- CTA Icon -->
+    {% if module.icon_features_cta.src %}
+    {% set sizeAttrs = 'width="{{ module.icon_features_cta.width }}" height="{{ module.icon_features_cta.height }}"' %}
+    {% if module.icon_features_cta.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.icon_features_cta.width }}" height="{{ module.icon_features_cta.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.icon_features_cta.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.icon_features_cta.max_width }}" height="{{ module.icon_features_cta.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.icon_features_cta.loading != 'disabled' ? 'loading="{{ module.icon_features_cta.loading }}"' : '' %}
+    <img src="{{ module.icon_features_cta.src }}" alt="{{ module.icon_features_cta.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+    <!-- CTA Content -->
+    <div class="inner-cta-content">
+      <span style="color: {{ module.color_choice_cta_text.color }};">{{ module.text_features_cta }}</span>
+      {% set href = module.page_url_features_cta.url.href %}
+      {% if module.page_url_features_cta.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" id="{{ module.button_id }}" style="background-color: {{ module.background_book_demo_cta.color }}; color: {{ module.color_choice_book_demo_cta.color }};"
+         {% if module.page_url_features_cta.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.page_url_features_cta.rel %}rel="{{ module.page_url_features_cta.rel }}"{% endif %}
+         >
+        {{ module.text_book_demo_cta }}
+      </a>
+    </div>
+  </div>
+</div>

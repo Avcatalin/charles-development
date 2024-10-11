@@ -1,0 +1,3460 @@
+[ {
+  "id" : "22fd8d73-fe0f-ec5c-0997-7174b2c7cefe",
+  "name" : "logo_block",
+  "display_width" : null,
+  "label" : "Logo Block",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "dec23625-137a-bcbd-f53d-944378f96dad",
+    "name" : "logo_url",
+    "display_width" : null,
+    "label" : "Logo URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : 139662845073,
+        "href" : null,
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "03322ca9-25cf-3b1f-9a0f-d5f685d56ad4",
+    "name" : "logo_image",
+    "display_width" : null,
+    "label" : "Logo Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/charles-logo-2.svg",
+      "alt" : "charles-logo-2",
+      "loading" : "lazy",
+      "width" : 165,
+      "height" : 33,
+      "max_width" : 165,
+      "max_height" : 33
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "logo_url" : {
+      "url" : {
+        "content_id" : 139662845073,
+        "href" : null,
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "logo_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/charles-logo-2.svg",
+      "alt" : "charles-logo-2",
+      "loading" : "lazy",
+      "width" : 165,
+      "height" : 33,
+      "max_width" : 165,
+      "max_height" : 33
+    }
+  }
+}, {
+  "id" : "b568a77a-a415-6461-2b58-5abba6d46096",
+  "name" : "news_block",
+  "display_width" : null,
+  "label" : "News Block",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "7ca2260f-a6d3-ecbc-f272-1907d885f366",
+    "name" : "news_content",
+    "display_width" : null,
+    "label" : "News Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><strong>💰 New on the blog:</strong> How to make money with WhatsApp</p>"
+  }, {
+    "id" : "f1d9c3b1-9926-c928-c48f-7dd1b825ee13",
+    "name" : "news_url",
+    "display_width" : null,
+    "label" : "News URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.hello-charles.com/blog/make-money-whatsapp-api",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "news_content" : "<p><strong>💰 New on the blog:</strong> How to make money with WhatsApp</p>",
+    "news_url" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.hello-charles.com/blog/make-money-whatsapp-api",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "3f569df3-f2ad-7944-9235-e16bfae81088",
+  "name" : "demo_button_block",
+  "display_width" : null,
+  "label" : "Demo Button Block",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "e3c1833c-fa8d-bdac-b358-9a67928c45b5",
+    "name" : "demo_url",
+    "display_width" : null,
+    "label" : "Demo URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : 41001952809,
+        "href" : null,
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "79538a6d-25bf-c3ce-2507-e73ecd0678cd",
+    "name" : "demo_button_label",
+    "display_width" : null,
+    "label" : "Demo Button Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get a demo"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "demo_url" : {
+      "url" : {
+        "content_id" : 41001952809,
+        "href" : null,
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "demo_button_label" : "Get a demo"
+  }
+}, {
+  "id" : "d4fbe930-58da-11fc-fb1f-7161bc7d53a3",
+  "name" : "product_menu_block",
+  "display_width" : null,
+  "label" : "Product Menu Block",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "0e5aa65b-1eb7-42a6-0072-11d8947ffb50",
+    "name" : "product_label",
+    "display_width" : null,
+    "label" : "Product Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Product"
+  }, {
+    "id" : "e6468ab6-e2bd-1d47-3a8d-62e5ecc6aa77",
+    "name" : "badge_group",
+    "display_width" : null,
+    "label" : "Badge Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b899f179-5072-a158-a663-0db94d6649ee",
+      "name" : "badge_label_section_one",
+      "display_width" : null,
+      "label" : "Badge Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Features"
+    }, {
+      "id" : "b881e728-d9b9-4634-ff8e-f5095ae11a12",
+      "name" : "badge_text_color",
+      "display_width" : null,
+      "label" : "Badge Text Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#3E47D7",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "44f220da-9324-0ce7-4868-c2f6c4bcb082",
+      "name" : "badge_background_color",
+      "display_width" : null,
+      "label" : "Badge Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#AAAFFF",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "badge_label_section_one" : "Features",
+      "badge_text_color" : {
+        "color" : "#3E47D7",
+        "opacity" : 100
+      },
+      "badge_background_color" : {
+        "color" : "#AAAFFF",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "132e07d4-ecb8-73a5-a983-f9784c034eb0",
+    "name" : "block_one_top_content",
+    "display_width" : null,
+    "label" : "Block One Top Content",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "7f44f179-0773-5e9c-54e6-7713ab755f87",
+      "name" : "block_one_image",
+      "display_width" : null,
+      "label" : "Block One Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : true,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/laptop-and-smartphone.png",
+        "alt" : "laptop-and-smartphone",
+        "loading" : "disabled",
+        "width" : 871,
+        "height" : 621,
+        "max_width" : 871,
+        "max_height" : 621
+      }
+    }, {
+      "id" : "1b4ee6bc-3458-2781-0728-9599168e630d",
+      "name" : "block_one_content",
+      "display_width" : null,
+      "label" : "Block One Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h1>A WHATSAPP MARKETING PLATFORM BUILT FOR ROI</h1>\n<p>Lorem ipsum dolor sit amet, consetetu sadipscing elitr Lorem ipsum dolor sit amet.</p>"
+    }, {
+      "id" : "3c41d8ec-abc1-44ad-b9a3-67647a5c85d3",
+      "name" : "block_one_button_url",
+      "display_width" : null,
+      "label" : "Block One Button URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "76674fcf-d5db-22e2-ccae-7f2454d0b447",
+      "name" : "block_one_button_label",
+      "display_width" : null,
+      "label" : "Block One Button Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "See all features"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "block_one_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/laptop-and-smartphone.png",
+        "alt" : "laptop-and-smartphone",
+        "loading" : "disabled",
+        "width" : 871,
+        "height" : 621,
+        "max_width" : 871,
+        "max_height" : 621
+      },
+      "block_one_content" : "<h1>A WHATSAPP MARKETING PLATFORM BUILT FOR ROI</h1>\n<p>Lorem ipsum dolor sit amet, consetetu sadipscing elitr Lorem ipsum dolor sit amet.</p>",
+      "block_one_button_url" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "block_one_button_label" : "See all features"
+    }
+  }, {
+    "id" : "2e997a71-71ec-2d06-bdfa-7697bf3dbe06",
+    "name" : "charles_steps_repeater",
+    "display_width" : null,
+    "label" : "Charles Steps Repeater",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "e722444f-76a0-0728-be61-b6413eecf6ac",
+      "name" : "step_icon",
+      "display_width" : null,
+      "label" : "Step Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/chat-ins-icon.svg",
+        "alt" : "chat-ins-icon",
+        "loading" : "lazy",
+        "width" : 62,
+        "height" : 51,
+        "max_width" : 62,
+        "max_height" : 51
+      }
+    }, {
+      "id" : "c14e35c2-61c0-4dd6-f42e-555249307c92",
+      "name" : "step_title",
+      "display_width" : null,
+      "label" : "Step Title",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h3>Chat-ins</h3>"
+    }, {
+      "id" : "ce3f19d9-91fe-04f3-b115-ed29a72a0d56",
+      "name" : "stept_content",
+      "display_width" : null,
+      "label" : "Stept Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<em>Bring 100,000s of customers into <br>WhatsApp <strong>through Chat-ins</strong></em>"
+    }, {
+      "id" : "1307e424-8e06-88d9-8d5f-4bbdfe1aa05e",
+      "name" : "custom_class",
+      "display_width" : null,
+      "label" : "Custom Class",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "custom-step"
+    }, {
+      "id" : "40296fb5-f7ac-e22f-2250-e9b6909ee48b",
+      "name" : "step_link",
+      "display_width" : null,
+      "label" : "Step Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "step_icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/chat-ins-icon.svg",
+        "alt" : "chat-ins-icon",
+        "loading" : "lazy",
+        "width" : 62,
+        "height" : 51,
+        "max_width" : 62,
+        "max_height" : 51
+      },
+      "step_title" : "<h3>Chat-ins</h3>",
+      "stept_content" : "<em>Bring 100,000s of customers into <br>WhatsApp <strong>through Chat-ins</strong></em>",
+      "custom_class" : "custom-step",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "id" : "e60cd84c-55c5-c1a0-f2ab-f0bcf4ab12f2",
+    "name" : "type_background",
+    "display_width" : null,
+    "label" : "Type Background",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/typie-chat.png",
+      "alt" : "typie-chat",
+      "loading" : "lazy",
+      "width" : 282,
+      "height" : 600,
+      "max_width" : 282,
+      "max_height" : 600
+    }
+  }, {
+    "id" : "1d1d2793-0a3e-760a-4ae3-835c858ae846",
+    "name" : "block_two",
+    "display_width" : null,
+    "label" : "Block Two",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "295d0500-773e-a68f-2b4c-3f8693185dc9",
+      "name" : "badge_group",
+      "display_width" : null,
+      "label" : "Badge Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "949bba50-270a-8b13-fb38-cbc49c537c8e",
+        "name" : "badge_label",
+        "display_width" : null,
+        "label" : "Badge Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "News"
+      }, {
+        "id" : "3ccae107-4c54-e388-6bee-2f13622054c1",
+        "name" : "badge_text_color",
+        "display_width" : null,
+        "label" : "Badge Text Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        }
+      }, {
+        "id" : "a528fc58-bab3-bb5d-a322-8525a696a887",
+        "name" : "background_color",
+        "display_width" : null,
+        "label" : "Background Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "badge_label" : "News",
+        "badge_text_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      }
+    }, {
+      "id" : "b174b1e5-c165-dcb5-7a1f-d9bb1fc773ea",
+      "name" : "block_two_image",
+      "display_width" : null,
+      "label" : "Block Two Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : true,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/whatsapp-revenue-calculator.png",
+        "alt" : "whatsapp-revenue-calculator",
+        "loading" : "disabled",
+        "width" : 530,
+        "height" : 548,
+        "max_width" : 530,
+        "max_height" : 548
+      }
+    }, {
+      "id" : "9e544018-e9d0-8378-f017-7ab7bd50850d",
+      "name" : "block_two_content",
+      "display_width" : null,
+      "label" : "Block Two Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h2>Check our black friday toolset</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut posuere turpis. Etiam in dui eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut commodo arcu.</p>"
+    }, {
+      "id" : "e1bd8fd4-74a9-10f5-6656-16e1d1a93a80",
+      "name" : "button_link",
+      "display_width" : null,
+      "label" : "Button Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "47cf7819-e10c-6da9-92e0-4e0f07228e12",
+      "name" : "button_label",
+      "display_width" : null,
+      "label" : "Button Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Get the toolset"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "badge_group" : {
+        "badge_label" : "News",
+        "badge_text_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      },
+      "block_two_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/whatsapp-revenue-calculator.png",
+        "alt" : "whatsapp-revenue-calculator",
+        "loading" : "disabled",
+        "width" : 530,
+        "height" : 548,
+        "max_width" : 530,
+        "max_height" : 548
+      },
+      "block_two_content" : "<h2>Check our black friday toolset</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut posuere turpis. Etiam in dui eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut commodo arcu.</p>",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "button_label" : "Get the toolset"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "product_label" : "Product",
+    "badge_group" : {
+      "badge_label_section_one" : "Features",
+      "badge_text_color" : {
+        "color" : "#3E47D7",
+        "opacity" : 100
+      },
+      "badge_background_color" : {
+        "color" : "#AAAFFF",
+        "opacity" : 100
+      }
+    },
+    "block_one_top_content" : {
+      "block_one_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/laptop-and-smartphone.png",
+        "alt" : "laptop-and-smartphone",
+        "loading" : "disabled",
+        "width" : 871,
+        "height" : 621,
+        "max_width" : 871,
+        "max_height" : 621
+      },
+      "block_one_content" : "<h1>A WHATSAPP MARKETING PLATFORM BUILT FOR ROI</h1>\n<p>Lorem ipsum dolor sit amet, consetetu sadipscing elitr Lorem ipsum dolor sit amet.</p>",
+      "block_one_button_url" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "block_one_button_label" : "See all features"
+    },
+    "charles_steps_repeater" : [ {
+      "step_icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/chat-ins-icon.svg",
+        "alt" : "chat-ins-icon",
+        "loading" : "lazy",
+        "width" : 62,
+        "height" : 51,
+        "max_width" : 62,
+        "max_height" : 51
+      },
+      "step_title" : "<h3>Chat-ins</h3>",
+      "stept_content" : "<em>Bring 100,000s of customers into <br>WhatsApp <strong>through Chat-ins</strong></em>",
+      "custom_class" : "custom-step",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "type_background" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/typie-chat.png",
+      "alt" : "typie-chat",
+      "loading" : "lazy",
+      "width" : 282,
+      "height" : 600,
+      "max_width" : 282,
+      "max_height" : 600
+    },
+    "block_two" : {
+      "badge_group" : {
+        "badge_label" : "News",
+        "badge_text_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      },
+      "block_two_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/whatsapp-revenue-calculator.png",
+        "alt" : "whatsapp-revenue-calculator",
+        "loading" : "disabled",
+        "width" : 530,
+        "height" : 548,
+        "max_width" : 530,
+        "max_height" : 548
+      },
+      "block_two_content" : "<h2>Check our black friday toolset</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut posuere turpis. Etiam in dui eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut commodo arcu.</p>",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "button_label" : "Get the toolset"
+    }
+  }
+}, {
+  "id" : "cf33587d-dd7c-0c55-f890-652ac688cc78",
+  "name" : "why_charles_menu_block",
+  "display_width" : null,
+  "label" : "Why Charles Menu Block",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "996f5994-0936-aa72-e59d-e01671b1f995",
+    "name" : "why_charles_label",
+    "display_width" : null,
+    "label" : "Why charles Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Why charles"
+  }, {
+    "id" : "552dffa3-1c2b-7fed-6db5-7b8bf4b3d8f8",
+    "name" : "badge_group",
+    "display_width" : null,
+    "label" : "Badge Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "e2af507e-6558-473f-fabc-8a1764645906",
+      "name" : "badge_label",
+      "display_width" : null,
+      "label" : "Badge Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "FEATURES"
+    }, {
+      "id" : "ef8f7966-8b68-51d5-c07b-207a4206a1de",
+      "name" : "badge_text_color",
+      "display_width" : null,
+      "label" : "Badge Text Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#3E47D7",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "485895ee-21ef-29fa-7d08-7ed241aa27c9",
+      "name" : "badge_background_color",
+      "display_width" : null,
+      "label" : "Badge Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#AAAFFF",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "badge_label" : "FEATURES",
+      "badge_text_color" : {
+        "color" : "#3E47D7",
+        "opacity" : 100
+      },
+      "badge_background_color" : {
+        "color" : "#AAAFFF",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "7ce01a3d-b16a-2125-1e75-c3c2c95ff942",
+    "name" : "block_one_group",
+    "display_width" : null,
+    "label" : "Block One Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "cbed329d-2eab-2733-6607-6400c3d22391",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h2>Your Goals</h2>"
+    }, {
+      "id" : "9bfb4eda-1eeb-490e-16d9-8d0e4ebf2692",
+      "name" : "goal_repeater",
+      "display_width" : null,
+      "label" : "Goal Repeater",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 1
+      },
+      "children" : [ {
+        "id" : "a5f1f782-5652-a6f4-7250-c2720be7a114",
+        "name" : "goal_image",
+        "display_width" : null,
+        "label" : "Goal Image",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      }, {
+        "id" : "276cb43a-9b7b-3ab1-c544-58a5e903ef48",
+        "name" : "goal_text",
+        "display_width" : null,
+        "label" : "Goal Text",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "default" : "<h3><span>Generating <strong>Revenue</strong></span></h3>"
+      }, {
+        "id" : "e0f03fe0-4c20-be6e-d7d9-b3474f263eb0",
+        "name" : "goal_url",
+        "display_width" : null,
+        "label" : "Goal URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "4ba926e0-21d4-fc0a-c6f4-34e1266ab651",
+        "name" : "goal_button_label",
+        "display_width" : null,
+        "label" : "Goal Button Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Get the toolset"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ {
+        "goal_image" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "goal_text" : "<h3><span>Generating <strong>Revenue</strong></span></h3>",
+        "goal_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "goal_button_label" : "Get the toolset"
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "title" : "<h2>Your Goals</h2>",
+      "goal_repeater" : [ {
+        "goal_image" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "goal_text" : "<h3><span>Generating <strong>Revenue</strong></span></h3>",
+        "goal_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "goal_button_label" : "Get the toolset"
+      } ]
+    }
+  }, {
+    "id" : "7043eb6f-5a5c-e950-88f3-10e229e146d8",
+    "name" : "block_two_group",
+    "display_width" : null,
+    "label" : "Block Two Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "2575171b-a2bb-2d49-390e-b9f74603f5c0",
+      "name" : "badge_group",
+      "display_width" : null,
+      "label" : "Badge Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "9cdff0c5-336a-b6cb-583a-7745f2751ba4",
+        "name" : "badge_label",
+        "display_width" : null,
+        "label" : "Badge Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "WHY CHARLES"
+      }, {
+        "id" : "35d33f37-08b7-f5f3-0099-4ca38139c3f4",
+        "name" : "badge_label_color",
+        "display_width" : null,
+        "label" : "Badge Label Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        }
+      }, {
+        "id" : "61203018-0e74-5e67-77e8-bc5a77817612",
+        "name" : "badge_background_color",
+        "display_width" : null,
+        "label" : "Badge Background Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "badge_label" : "WHY CHARLES",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      }
+    }, {
+      "id" : "c94c64e0-3568-5c2c-4130-a579ed1d4726",
+      "name" : "team_image",
+      "display_width" : null,
+      "label" : "Team Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "id" : "f8fee96f-8cd6-6fe8-8028-43c056d5217e",
+      "name" : "content",
+      "display_width" : null,
+      "label" : "Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h2><span>a success team <br>that goes beyond</span></h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut posuere turpis. Etiam in dui eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut commodo arcu.</p>"
+    }, {
+      "id" : "42889263-8c5d-e382-f5fa-b57f73148b17",
+      "name" : "expert_group_cta",
+      "display_width" : null,
+      "label" : "Expert Group CTA",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "55395a58-e1d1-e6c8-eb6a-336288b46b7d",
+        "name" : "expert_image",
+        "display_width" : null,
+        "label" : "Expert Image",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      }, {
+        "id" : "a302f6a8-6afc-dbf8-e10c-29ececf23243",
+        "name" : "expert_label",
+        "display_width" : null,
+        "label" : "Expert Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Talk to an expert"
+      }, {
+        "id" : "b2fe0bbb-4c51-b000-3651-877a7ce37181",
+        "name" : "button_label",
+        "display_width" : null,
+        "label" : "Button Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "chat"
+      }, {
+        "id" : "1b9cb0ad-1d9c-44e9-f1a6-2d81077f84b6",
+        "name" : "expert_cta_link",
+        "display_width" : null,
+        "label" : "Expert CTA Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "expert_image" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "expert_label" : "Talk to an expert",
+        "button_label" : "chat",
+        "expert_cta_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "badge_group" : {
+        "badge_label" : "WHY CHARLES",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      },
+      "team_image" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "content" : "<h2><span>a success team <br>that goes beyond</span></h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut posuere turpis. Etiam in dui eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut commodo arcu.</p>",
+      "expert_group_cta" : {
+        "expert_image" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "expert_label" : "Talk to an expert",
+        "button_label" : "chat",
+        "expert_cta_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }
+  }, {
+    "id" : "aa18459b-3440-8ff5-e0f6-fbb043ff1198",
+    "name" : "block_three_group",
+    "display_width" : null,
+    "label" : "Block Three Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "4c0052a2-1cca-1b64-b5df-25fb9a0a50f2",
+      "name" : "badge_group",
+      "display_width" : null,
+      "label" : "Badge Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "59d054cc-f8d4-5b43-a9d2-01beaa6c14a1",
+        "name" : "badge_label",
+        "display_width" : null,
+        "label" : "Badge Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "SUCCESS CASES"
+      }, {
+        "id" : "e9176392-4eb4-13b0-e750-9552df880a5d",
+        "name" : "badge_label_color",
+        "display_width" : null,
+        "label" : "Badge Label Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        }
+      }, {
+        "id" : "fea18c16-dc64-809e-b33b-ff13b8c151d8",
+        "name" : "badge_background_color",
+        "display_width" : null,
+        "label" : "Badge Background Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "badge_label" : "SUCCESS CASES",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      }
+    }, {
+      "id" : "804bfcc7-271d-9c4e-bd54-caa569090ed5",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h2>Our Customers</h2>"
+    }, {
+      "id" : "f2e0fa1a-c0d5-9892-4cda-21f781fc4139",
+      "name" : "customers_repeater",
+      "display_width" : null,
+      "label" : "Customers Repeater",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 1
+      },
+      "children" : [ {
+        "id" : "edf9f5a8-c1c3-8768-67ed-5cb2f9c752b5",
+        "name" : "client_logo",
+        "display_width" : null,
+        "label" : "Client Logo",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      }, {
+        "id" : "5880a094-c0f1-264b-a4ee-48524209322e",
+        "name" : "client_text",
+        "display_width" : null,
+        "label" : "Client Text",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "default" : "<p>Snocks</p>\n<span>Fashion</span>"
+      }, {
+        "id" : "76cd2e6e-995b-9446-e1c4-a3d825e15377",
+        "name" : "client_page_url",
+        "display_width" : null,
+        "label" : "Client Page URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ {
+        "client_logo" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "client_text" : "<p>Snocks</p>\n<span>Fashion</span>",
+        "client_page_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ]
+    }, {
+      "id" : "10e64864-b0a8-8569-bad1-c2c6fcd95cde",
+      "name" : "partners_repeater",
+      "display_width" : null,
+      "label" : "Partners Repeater",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 1
+      },
+      "children" : [ {
+        "id" : "9a9d3879-70fb-3c69-f0bd-e9899a672c5a",
+        "name" : "partners_logo",
+        "display_width" : null,
+        "label" : "Partners Logo",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ {
+        "partners_logo" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      } ]
+    }, {
+      "id" : "ebb4afee-5cd4-6537-69d1-007ba3d1138b",
+      "name" : "block_button_label",
+      "display_width" : null,
+      "label" : "Block Button Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "See all cases"
+    }, {
+      "id" : "e2d58e68-0222-8cbb-3b4f-7bcbc6c0d441",
+      "name" : "block_button_url",
+      "display_width" : null,
+      "label" : "Block Button URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "badge_group" : {
+        "badge_label" : "SUCCESS CASES",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      },
+      "title" : "<h2>Our Customers</h2>",
+      "customers_repeater" : [ {
+        "client_logo" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "client_text" : "<p>Snocks</p>\n<span>Fashion</span>",
+        "client_page_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "partners_repeater" : [ {
+        "partners_logo" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      } ],
+      "block_button_label" : "See all cases",
+      "block_button_url" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "why_charles_label" : "Why charles",
+    "badge_group" : {
+      "badge_label" : "FEATURES",
+      "badge_text_color" : {
+        "color" : "#3E47D7",
+        "opacity" : 100
+      },
+      "badge_background_color" : {
+        "color" : "#AAAFFF",
+        "opacity" : 100
+      }
+    },
+    "block_one_group" : {
+      "title" : "<h2>Your Goals</h2>",
+      "goal_repeater" : [ {
+        "goal_image" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "goal_text" : "<h3><span>Generating <strong>Revenue</strong></span></h3>",
+        "goal_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "goal_button_label" : "Get the toolset"
+      } ]
+    },
+    "block_two_group" : {
+      "badge_group" : {
+        "badge_label" : "WHY CHARLES",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      },
+      "team_image" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "content" : "<h2><span>a success team <br>that goes beyond</span></h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut posuere turpis. Etiam in dui eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut commodo arcu.</p>",
+      "expert_group_cta" : {
+        "expert_image" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "expert_label" : "Talk to an expert",
+        "button_label" : "chat",
+        "expert_cta_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    },
+    "block_three_group" : {
+      "badge_group" : {
+        "badge_label" : "SUCCESS CASES",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      },
+      "title" : "<h2>Our Customers</h2>",
+      "customers_repeater" : [ {
+        "client_logo" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "client_text" : "<p>Snocks</p>\n<span>Fashion</span>",
+        "client_page_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "partners_repeater" : [ {
+        "partners_logo" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      } ],
+      "block_button_label" : "See all cases",
+      "block_button_url" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "32cf952a-6f79-4702-6441-4cb77d8a9df2",
+  "name" : "resources_menu_block",
+  "display_width" : null,
+  "label" : "Resources Menu Block",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "19e51757-1377-3d95-8986-ea7a2fdcc750",
+    "name" : "resources_label",
+    "display_width" : null,
+    "label" : "Resources Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Resources"
+  }, {
+    "id" : "d2927202-011c-d3d0-34da-1c1127e59586",
+    "name" : "block_one_group",
+    "display_width" : null,
+    "label" : "Block One Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c8a59742-897e-6f8d-6b73-687a8ce66295",
+      "name" : "badge_group",
+      "display_width" : null,
+      "label" : "Badge Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "26c1e605-9b8e-ed27-d85c-88430d87fe83",
+        "name" : "badge_label",
+        "display_width" : null,
+        "label" : "Badge Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "RESOURCES"
+      }, {
+        "id" : "d361bfa0-e697-8070-3b42-990082d3b22e",
+        "name" : "badge_label_color",
+        "display_width" : null,
+        "label" : "Badge Label Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#3E47D7",
+          "opacity" : 100
+        }
+      }, {
+        "id" : "0b9ad959-e040-2715-8569-b7bdc6b51c07",
+        "name" : "badge_background_color",
+        "display_width" : null,
+        "label" : "Badge Background Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#AAAFFF",
+          "opacity" : 100
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "badge_label" : "RESOURCES",
+        "badge_label_color" : {
+          "color" : "#3E47D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAAFFF",
+          "opacity" : 100
+        }
+      }
+    }, {
+      "id" : "b25a1e3b-09ad-1878-f8ac-dc75737ba73d",
+      "name" : "content",
+      "display_width" : null,
+      "label" : "Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h2>Learn</h2>\n<p>Increase your CLV by launching marketing campaigns that efficiently reach your customers.</p>"
+    }, {
+      "id" : "65ff2a9e-fd91-1568-8d0d-86279d27103b",
+      "name" : "resources_repeater",
+      "display_width" : null,
+      "label" : "Resources Repeater",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 1
+      },
+      "children" : [ {
+        "id" : "73dbea1c-b81e-d5b5-b1e0-9e193c461e84",
+        "name" : "resource_image",
+        "display_width" : null,
+        "label" : "Resource Image",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      }, {
+        "id" : "53ac3d35-2719-2d0e-7bd5-faa4f165dd88",
+        "name" : "resource_content",
+        "display_width" : null,
+        "label" : "Resource Content",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "default" : "<h3>Blog</h3>\n<p>Increase your CLV by launching marketing campaigns that efficiently reach your customers.</p>"
+      }, {
+        "id" : "a7695bbf-9784-cde7-b4b7-18795516ce86",
+        "name" : "resource_link",
+        "display_width" : null,
+        "label" : "Resource Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ {
+        "resource_image" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "resource_content" : "<h3>Blog</h3>\n<p>Increase your CLV by launching marketing campaigns that efficiently reach your customers.</p>",
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "badge_group" : {
+        "badge_label" : "RESOURCES",
+        "badge_label_color" : {
+          "color" : "#3E47D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAAFFF",
+          "opacity" : 100
+        }
+      },
+      "content" : "<h2>Learn</h2>\n<p>Increase your CLV by launching marketing campaigns that efficiently reach your customers.</p>",
+      "resources_repeater" : [ {
+        "resource_image" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "resource_content" : "<h3>Blog</h3>\n<p>Increase your CLV by launching marketing campaigns that efficiently reach your customers.</p>",
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ]
+    }
+  }, {
+    "id" : "2e0ad9d2-d6e4-8d1b-05ed-c6cb463d5dda",
+    "name" : "block_two_group",
+    "display_width" : null,
+    "label" : "Block Two Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "816805b9-9619-7a6d-49d4-c92cd56eb5d9",
+      "name" : "badge_group",
+      "display_width" : null,
+      "label" : "Badge Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "14494724-7b7f-71fe-4f53-8b247404c281",
+        "name" : "badge_label",
+        "display_width" : null,
+        "label" : "Badge Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "GUIDES"
+      }, {
+        "id" : "3fa61722-1138-636e-d413-e685f34d332e",
+        "name" : "badge_label_color",
+        "display_width" : null,
+        "label" : "Badge Label Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        }
+      }, {
+        "id" : "9b7f475e-2bfe-0ff7-48e9-82db00223bbf",
+        "name" : "badge_background_color",
+        "display_width" : null,
+        "label" : "Badge Background Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "badge_label" : "GUIDES",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      }
+    }, {
+      "id" : "028c828d-f29e-20e8-7f6a-c27d4e74b782",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h2>The RPC guide</h2>"
+    }, {
+      "id" : "a6ef2d5b-21b3-5a83-8c98-966b3da5ac27",
+      "name" : "rpc_image",
+      "display_width" : null,
+      "label" : "RPC Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "id" : "40eb3b93-26b0-3fd2-7977-5a960b20a1bf",
+      "name" : "guide_content",
+      "display_width" : null,
+      "label" : "Guide Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h3>5 Whatsapp marketing secrets</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut posuere turpis. Etiam in dui eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut commodo arcu.</p>"
+    }, {
+      "id" : "60cc140e-3ffa-6d58-2f6d-85bb9906d503",
+      "name" : "blog_button",
+      "display_width" : null,
+      "label" : "Blog Button",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "3c98b136-1b2e-f317-b978-b9ddbb24042b",
+      "name" : "button_label",
+      "display_width" : null,
+      "label" : "Button Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Read more"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "badge_group" : {
+        "badge_label" : "GUIDES",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      },
+      "title" : "<h2>The RPC guide</h2>",
+      "rpc_image" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "guide_content" : "<h3>5 Whatsapp marketing secrets</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut posuere turpis. Etiam in dui eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut commodo arcu.</p>",
+      "blog_button" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "button_label" : "Read more"
+    }
+  }, {
+    "id" : "63ecc136-d7b5-391e-ae37-72df49d45bf4",
+    "name" : "block_three_group",
+    "display_width" : null,
+    "label" : "Block Three Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "36d3c0fe-17a3-40a9-911c-64eddb5a5cdc",
+      "name" : "badge_group",
+      "display_width" : null,
+      "label" : "Badge Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "e71f5f27-fadc-2239-a9aa-42c5f509041a",
+        "name" : "badge_label",
+        "display_width" : null,
+        "label" : "Badge Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "WEBINARS"
+      }, {
+        "id" : "db973bf7-0824-289e-a0f2-5dd97abf0882",
+        "name" : "badge_label_color",
+        "display_width" : null,
+        "label" : "Badge Label Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        }
+      }, {
+        "id" : "dd9e259d-a411-6cd5-6066-f054bb11429a",
+        "name" : "badge_background_color",
+        "display_width" : null,
+        "label" : "Badge Background Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "badge_label" : "WEBINARS",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      }
+    }, {
+      "id" : "c06b7a06-2fa9-c59e-0100-c3e918ecbcf9",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h2>ucoming webinar!</h2>"
+    }, {
+      "id" : "ab028270-2ef6-1d31-cce0-584603d8eb78",
+      "name" : "webinar_image",
+      "display_width" : null,
+      "label" : "Webinar Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      }
+    }, {
+      "id" : "e98f3022-607e-49d5-daa8-e6d99b483fa0",
+      "name" : "content",
+      "display_width" : null,
+      "label" : "Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h3>webinar with braineffect</h3>\n<p>See a live WhatsApp campaign in action. BRAINEFFECT is in week 2 of a 4-week Black Friday campaign and shares its results and insights.</p>"
+    }, {
+      "id" : "f40d86ec-1110-9a15-2d57-302833ce9f8d",
+      "name" : "button_link",
+      "display_width" : null,
+      "label" : "Button Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "37559f33-d2e6-27f7-69b4-347cd7ab185e",
+      "name" : "button_label",
+      "display_width" : null,
+      "label" : "Button Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "See all upcoming webinars"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "badge_group" : {
+        "badge_label" : "WEBINARS",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      },
+      "title" : "<h2>ucoming webinar!</h2>",
+      "webinar_image" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "content" : "<h3>webinar with braineffect</h3>\n<p>See a live WhatsApp campaign in action. BRAINEFFECT is in week 2 of a 4-week Black Friday campaign and shares its results and insights.</p>",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "button_label" : "See all upcoming webinars"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "resources_label" : "Resources",
+    "block_one_group" : {
+      "badge_group" : {
+        "badge_label" : "RESOURCES",
+        "badge_label_color" : {
+          "color" : "#3E47D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAAFFF",
+          "opacity" : 100
+        }
+      },
+      "content" : "<h2>Learn</h2>\n<p>Increase your CLV by launching marketing campaigns that efficiently reach your customers.</p>",
+      "resources_repeater" : [ {
+        "resource_image" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "resource_content" : "<h3>Blog</h3>\n<p>Increase your CLV by launching marketing campaigns that efficiently reach your customers.</p>",
+        "link_field" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ]
+    },
+    "block_two_group" : {
+      "badge_group" : {
+        "badge_label" : "GUIDES",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      },
+      "title" : "<h2>The RPC guide</h2>",
+      "rpc_image" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "guide_content" : "<h3>5 Whatsapp marketing secrets</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut posuere turpis. Etiam in dui eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut commodo arcu.</p>",
+      "blog_button" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "button_label" : "Read more"
+    },
+    "block_three_group" : {
+      "badge_group" : {
+        "badge_label" : "WEBINARS",
+        "badge_label_color" : {
+          "color" : "#3EB2D7",
+          "opacity" : 100
+        },
+        "badge_background_color" : {
+          "color" : "#AAF5FF",
+          "opacity" : 100
+        }
+      },
+      "title" : "<h2>ucoming webinar!</h2>",
+      "webinar_image" : {
+        "size_type" : "auto",
+        "src" : "",
+        "alt" : null,
+        "loading" : "lazy"
+      },
+      "content" : "<h3>webinar with braineffect</h3>\n<p>See a live WhatsApp campaign in action. BRAINEFFECT is in week 2 of a 4-week Black Friday campaign and shares its results and insights.</p>",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "button_label" : "See all upcoming webinars"
+    }
+  }
+}, {
+  "id" : "5305b062-a2d1-2280-64f5-1b963416072e",
+  "name" : "mobile_panels",
+  "display_width" : null,
+  "label" : "Mobile Panels",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "79b636bb-a175-3e85-2d56-50a1b50096b9",
+    "name" : "main_panel",
+    "display_width" : null,
+    "label" : "Main Panel",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "eaaba608-065a-734b-96b9-576cd3ac9856",
+      "name" : "mobile_blog_image",
+      "display_width" : null,
+      "label" : "Mobile Blog Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : true,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/blog-mobile.png",
+        "alt" : "blog-mobile",
+        "loading" : "lazy",
+        "width" : 264,
+        "height" : 264,
+        "max_width" : 264,
+        "max_height" : 264
+      }
+    }, {
+      "id" : "01862ae9-6a7e-d2a0-b4b0-acde52099f79",
+      "name" : "content",
+      "display_width" : null,
+      "label" : "Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<span>Boost your business with a WhatsApp marketing agency</span>"
+    }, {
+      "id" : "fc9a4052-3397-d5f3-e2de-3d90d4e72d2a",
+      "name" : "button_url",
+      "display_width" : null,
+      "label" : "Button URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "1cef29f5-d7a8-f468-383a-9c0155692d87",
+      "name" : "button_label",
+      "display_width" : null,
+      "label" : "Button Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Read more"
+    }, {
+      "id" : "2072c7c1-8040-7b01-4dde-17f5409a1b68",
+      "name" : "product_group",
+      "display_width" : null,
+      "label" : "Product Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "55846fb8-8029-3408-7f29-96e93a101f53",
+        "name" : "product_label",
+        "display_width" : null,
+        "label" : "Product Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Product"
+      }, {
+        "id" : "eccd3b90-8056-08fb-6756-54629790f6be",
+        "name" : "image",
+        "display_width" : null,
+        "label" : "Image",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/typie-2.png",
+          "alt" : "Typie",
+          "loading" : "lazy",
+          "width" : 139,
+          "height" : 53,
+          "max_width" : 139,
+          "max_height" : 53
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "product_label" : "Product",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/typie-2.png",
+          "alt" : "Typie",
+          "loading" : "lazy",
+          "width" : 139,
+          "height" : 53,
+          "max_width" : 139,
+          "max_height" : 53
+        }
+      }
+    }, {
+      "id" : "b9c3f93f-c5dc-a6b1-2058-c2a72b416214",
+      "name" : "why_charles_group",
+      "display_width" : null,
+      "label" : "Why Charles Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "5274855c-d84c-fe9e-9490-e8cf2f1972b8",
+        "name" : "why_charles_label",
+        "display_width" : null,
+        "label" : "Why Charles Label",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "default" : "why <img src=\"https://www.hello-charles.com/hubfs/charles-mobile-logo.png\" width=\"295\" height=\"55\" loading=\"lazy\" alt=\"charles-mobile-logo\" style=\"height: auto; max-width: 100%; width: 295px;\"> ?<br>\n<p>&nbsp;</p>"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "why_charles_label" : "why <img src=\"https://www.hello-charles.com/hubfs/charles-mobile-logo.png\" width=\"295\" height=\"55\" loading=\"lazy\" alt=\"charles-mobile-logo\" style=\"height: auto; max-width: 100%; width: 295px;\"> ?<br>\n<p>&nbsp;</p>"
+      }
+    }, {
+      "id" : "ff8a83c5-6216-a6d4-d998-9b78917c920b",
+      "name" : "resources_group",
+      "display_width" : null,
+      "label" : "Resources Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "c121037f-ec97-4df8-fc04-d2ee3dd44cf7",
+        "name" : "resources_label",
+        "display_width" : null,
+        "label" : "Resources Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Resources"
+      }, {
+        "id" : "c849dcfe-a5f7-ec0c-2c81-2c07a79a0c32",
+        "name" : "icon",
+        "display_width" : null,
+        "label" : "Icon",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/glasses-icon.png",
+          "alt" : "glasses-icon",
+          "loading" : "lazy",
+          "width" : 123,
+          "height" : 101,
+          "max_width" : 123,
+          "max_height" : 101
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "resources_label" : "Resources",
+        "icon" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/glasses-icon.png",
+          "alt" : "glasses-icon",
+          "loading" : "lazy",
+          "width" : 123,
+          "height" : 101,
+          "max_width" : 123,
+          "max_height" : 101
+        }
+      }
+    }, {
+      "id" : "76fd40c8-d87f-8475-4884-8ec284d19236",
+      "name" : "test_wa_group",
+      "display_width" : null,
+      "label" : "Test WA Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "31f4ce03-835e-26c4-1b12-9fddaa42f26d",
+        "name" : "icon",
+        "display_width" : null,
+        "label" : "Icon",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/whatsapp-icon-1.png",
+          "alt" : "whatsapp-icon-1",
+          "loading" : "lazy",
+          "width" : 88,
+          "height" : 88,
+          "max_width" : 88,
+          "max_height" : 88
+        }
+      }, {
+        "id" : "bbaae6c8-65cd-c328-5d01-10a9e7d05acb",
+        "name" : "title",
+        "display_width" : null,
+        "label" : "Title",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Test it now"
+      }, {
+        "id" : "476abcef-312d-e401-e6f3-592fb7d9dc41",
+        "name" : "wa_link",
+        "display_width" : null,
+        "label" : "WA Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "href" : "",
+            "type" : "EXTERNAL"
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "icon" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/whatsapp-icon-1.png",
+          "alt" : "whatsapp-icon-1",
+          "loading" : "lazy",
+          "width" : 88,
+          "height" : 88,
+          "max_width" : 88,
+          "max_height" : 88
+        },
+        "title" : "Test it now",
+        "wa_link" : {
+          "url" : {
+            "content_id" : null,
+            "href" : "",
+            "type" : "EXTERNAL"
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "id" : "0092f8c3-1ef4-9a0e-b198-40a0110a49ae",
+      "name" : "get_demo_group",
+      "display_width" : null,
+      "label" : "Get demo Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "566b0911-8150-06c7-1788-779bbcf58f00",
+        "name" : "get_demo",
+        "display_width" : null,
+        "label" : "Get Demo",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Get a demo"
+      }, {
+        "id" : "7e3229e0-1324-483a-b726-42a8f986082e",
+        "name" : "demo_link",
+        "display_width" : null,
+        "label" : "Demo Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : 41001952809,
+            "href" : null,
+            "type" : "CONTENT"
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "get_demo" : "Get a demo",
+        "demo_link" : {
+          "url" : {
+            "content_id" : 41001952809,
+            "href" : null,
+            "type" : "CONTENT"
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "mobile_blog_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/blog-mobile.png",
+        "alt" : "blog-mobile",
+        "loading" : "lazy",
+        "width" : 264,
+        "height" : 264,
+        "max_width" : 264,
+        "max_height" : 264
+      },
+      "content" : "<span>Boost your business with a WhatsApp marketing agency</span>",
+      "button_url" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "button_label" : "Read more",
+      "product_group" : {
+        "product_label" : "Product",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/typie-2.png",
+          "alt" : "Typie",
+          "loading" : "lazy",
+          "width" : 139,
+          "height" : 53,
+          "max_width" : 139,
+          "max_height" : 53
+        }
+      },
+      "why_charles_group" : {
+        "why_charles_label" : "why <img src=\"https://www.hello-charles.com/hubfs/charles-mobile-logo.png\" width=\"295\" height=\"55\" loading=\"lazy\" alt=\"charles-mobile-logo\" style=\"height: auto; max-width: 100%; width: 295px;\"> ?<br>\n<p>&nbsp;</p>"
+      },
+      "resources_group" : {
+        "resources_label" : "Resources",
+        "icon" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/glasses-icon.png",
+          "alt" : "glasses-icon",
+          "loading" : "lazy",
+          "width" : 123,
+          "height" : 101,
+          "max_width" : 123,
+          "max_height" : 101
+        }
+      },
+      "test_wa_group" : {
+        "icon" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/whatsapp-icon-1.png",
+          "alt" : "whatsapp-icon-1",
+          "loading" : "lazy",
+          "width" : 88,
+          "height" : 88,
+          "max_width" : 88,
+          "max_height" : 88
+        },
+        "title" : "Test it now",
+        "wa_link" : {
+          "url" : {
+            "content_id" : null,
+            "href" : "",
+            "type" : "EXTERNAL"
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      },
+      "get_demo_group" : {
+        "get_demo" : "Get a demo",
+        "demo_link" : {
+          "url" : {
+            "content_id" : 41001952809,
+            "href" : null,
+            "type" : "CONTENT"
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }
+  }, {
+    "id" : "b8a765b3-da3f-f927-fcc3-b03a010c8dba",
+    "name" : "why_charles_group",
+    "display_width" : null,
+    "label" : "Why Charles Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "5d86c221-c092-6f27-4df0-710d6d8df712",
+      "name" : "why_charles_repeater",
+      "display_width" : null,
+      "label" : "Toolset Repeater",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 1
+      },
+      "children" : [ {
+        "id" : "08eeed28-7f24-7340-4371-c4509255b405",
+        "name" : "icon",
+        "display_width" : null,
+        "label" : "Icon",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      }, {
+        "id" : "bf7535c0-0ab0-6f18-c9c5-3f10c97ec05e",
+        "name" : "title",
+        "display_width" : null,
+        "label" : "Title",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text"
+      }, {
+        "id" : "e69c8874-f2ae-f9ea-1f81-44ed5e74bb96",
+        "name" : "button_url",
+        "display_width" : null,
+        "label" : "Button URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "aaf58f8c-b754-34b7-f286-b4a71c4de0c2",
+        "name" : "button_label",
+        "display_width" : null,
+        "label" : "Button Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ {
+        "icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "button_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ]
+    }, {
+      "id" : "223ec061-0656-4047-526f-748eda5801c3",
+      "name" : "customers_label",
+      "display_width" : null,
+      "label" : "Customers Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Success cases"
+    }, {
+      "id" : "6dd9fb62-fe2c-990f-9897-651086dd8b7a",
+      "name" : "customers_repeater",
+      "display_width" : null,
+      "label" : "Customers Repeater",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 1
+      },
+      "children" : [ {
+        "id" : "2f2e3037-4ea4-33e4-50fa-7542fd4e6609",
+        "name" : "client_logo",
+        "display_width" : null,
+        "label" : "Client Logo",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      }, {
+        "id" : "8f1b0b3c-d334-fe02-8a5a-0bb522e10640",
+        "name" : "client_name",
+        "display_width" : null,
+        "label" : "Client Name",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text"
+      }, {
+        "id" : "88d415cd-7b8d-be20-8d20-342c41cbdf50",
+        "name" : "customer_link",
+        "display_width" : null,
+        "label" : "Customer Link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ {
+        "client_logo" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "customer_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ]
+    }, {
+      "id" : "33812987-f147-29b1-f842-d4a151e94198",
+      "name" : "see_all_customers",
+      "display_width" : null,
+      "label" : "See all customers",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "See more customers stories"
+    }, {
+      "id" : "49f9bbfb-a498-568f-4ddd-2b67f4673d72",
+      "name" : "all_customers",
+      "display_width" : null,
+      "label" : "All Customers",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : 73285730393,
+          "href" : null,
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "why_charles_repeater" : [ {
+        "icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "button_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "customers_label" : "Success cases",
+      "customers_repeater" : [ {
+        "client_logo" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "customer_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "see_all_customers" : "See more customers stories",
+      "all_customers" : {
+        "url" : {
+          "content_id" : 73285730393,
+          "href" : null,
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "id" : "16a95486-5e33-ae89-4cad-fc279b42bd91",
+    "name" : "resources_group",
+    "display_width" : null,
+    "label" : "Resources Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c0527140-4450-0ebf-2d38-bec894396641",
+      "name" : "intro_group",
+      "display_width" : null,
+      "label" : "Intro Group",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "0fb178c5-34bd-ed00-7b13-9af79146a19e",
+        "name" : "intro_image",
+        "display_width" : null,
+        "label" : "Intro Image",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : true,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/blog-mobile.png",
+          "alt" : "blog-mobile",
+          "loading" : "lazy",
+          "width" : 264,
+          "height" : 264,
+          "max_width" : 264,
+          "max_height" : 264
+        }
+      }, {
+        "id" : "0382bc97-af6a-1ef9-38e0-fc4ce515bb50",
+        "name" : "intro_content",
+        "display_width" : null,
+        "label" : "Intro Content",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "default" : "<p><span>Boost your business with a WhatsApp marketing agency</span></p>"
+      }, {
+        "id" : "b3b426b4-24df-aec1-b985-adf0ecd5d0bb",
+        "name" : "button_url",
+        "display_width" : null,
+        "label" : "Button URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }, {
+        "id" : "ebea1721-b00f-9be7-3c50-cf31968fe1c2",
+        "name" : "button_label",
+        "display_width" : null,
+        "label" : "Button Label",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Read more"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "intro_image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/blog-mobile.png",
+          "alt" : "blog-mobile",
+          "loading" : "lazy",
+          "width" : 264,
+          "height" : 264,
+          "max_width" : 264,
+          "max_height" : 264
+        },
+        "intro_content" : "<p><span>Boost your business with a WhatsApp marketing agency</span></p>",
+        "button_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "button_label" : "Read more"
+      }
+    }, {
+      "id" : "376708b1-45a2-fa10-8def-99017ff3e0c0",
+      "name" : "resources_repeater",
+      "display_width" : null,
+      "label" : "Resources Repeater",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : 1,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 1
+      },
+      "children" : [ {
+        "id" : "9d6acb9a-643b-fb19-6c9b-08703209a284",
+        "name" : "resource_icon",
+        "display_width" : null,
+        "label" : "Resource Icon",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      }, {
+        "id" : "c4b864f9-ed1c-5424-2858-8609007047ba",
+        "name" : "resource_title",
+        "display_width" : null,
+        "label" : "Resource Title",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text"
+      }, {
+        "id" : "7765ce04-b98c-af48-9f52-4b9f86a96629",
+        "name" : "resource_url",
+        "display_width" : null,
+        "label" : "Resource URL",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ {
+        "resource_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "resource_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ]
+    }, {
+      "id" : "09e1460a-cf80-bae6-b5ad-a0e5aa46c677",
+      "name" : "bfmc_label",
+      "display_width" : null,
+      "label" : "BFMC Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "BFCM Webinar"
+    }, {
+      "id" : "9f2ee756-73cc-9394-f5d9-c7ec48fb7939",
+      "name" : "bfmc_url",
+      "display_width" : null,
+      "label" : "BFMC URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "intro_group" : {
+        "intro_image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/blog-mobile.png",
+          "alt" : "blog-mobile",
+          "loading" : "lazy",
+          "width" : 264,
+          "height" : 264,
+          "max_width" : 264,
+          "max_height" : 264
+        },
+        "intro_content" : "<p><span>Boost your business with a WhatsApp marketing agency</span></p>",
+        "button_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "button_label" : "Read more"
+      },
+      "resources_repeater" : [ {
+        "resource_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "resource_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "bfmc_label" : "BFCM Webinar",
+      "bfmc_url" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "main_panel" : {
+      "mobile_blog_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/blog-mobile.png",
+        "alt" : "blog-mobile",
+        "loading" : "lazy",
+        "width" : 264,
+        "height" : 264,
+        "max_width" : 264,
+        "max_height" : 264
+      },
+      "content" : "<span>Boost your business with a WhatsApp marketing agency</span>",
+      "button_url" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "button_label" : "Read more",
+      "product_group" : {
+        "product_label" : "Product",
+        "image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/typie-2.png",
+          "alt" : "Typie",
+          "loading" : "lazy",
+          "width" : 139,
+          "height" : 53,
+          "max_width" : 139,
+          "max_height" : 53
+        }
+      },
+      "why_charles_group" : {
+        "why_charles_label" : "why <img src=\"https://www.hello-charles.com/hubfs/charles-mobile-logo.png\" width=\"295\" height=\"55\" loading=\"lazy\" alt=\"charles-mobile-logo\" style=\"height: auto; max-width: 100%; width: 295px;\"> ?<br>\n<p>&nbsp;</p>"
+      },
+      "resources_group" : {
+        "resources_label" : "Resources",
+        "icon" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/glasses-icon.png",
+          "alt" : "glasses-icon",
+          "loading" : "lazy",
+          "width" : 123,
+          "height" : 101,
+          "max_width" : 123,
+          "max_height" : 101
+        }
+      },
+      "test_wa_group" : {
+        "icon" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/whatsapp-icon-1.png",
+          "alt" : "whatsapp-icon-1",
+          "loading" : "lazy",
+          "width" : 88,
+          "height" : 88,
+          "max_width" : 88,
+          "max_height" : 88
+        },
+        "title" : "Test it now",
+        "wa_link" : {
+          "url" : {
+            "content_id" : null,
+            "href" : "",
+            "type" : "EXTERNAL"
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      },
+      "get_demo_group" : {
+        "get_demo" : "Get a demo",
+        "demo_link" : {
+          "url" : {
+            "content_id" : 41001952809,
+            "href" : null,
+            "type" : "CONTENT"
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    },
+    "why_charles_group" : {
+      "why_charles_repeater" : [ {
+        "icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "button_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "customers_label" : "Success cases",
+      "customers_repeater" : [ {
+        "client_logo" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "customer_link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "see_all_customers" : "See more customers stories",
+      "all_customers" : {
+        "url" : {
+          "content_id" : 73285730393,
+          "href" : null,
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "resources_group" : {
+      "intro_group" : {
+        "intro_image" : {
+          "size_type" : "auto",
+          "src" : "https://www.hello-charles.com/hubfs/blog-mobile.png",
+          "alt" : "blog-mobile",
+          "loading" : "lazy",
+          "width" : 264,
+          "height" : 264,
+          "max_width" : 264,
+          "max_height" : 264
+        },
+        "intro_content" : "<p><span>Boost your business with a WhatsApp marketing agency</span></p>",
+        "button_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        },
+        "button_label" : "Read more"
+      },
+      "resources_repeater" : [ {
+        "resource_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "resource_url" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "bfmc_label" : "BFCM Webinar",
+      "bfmc_url" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+} ]

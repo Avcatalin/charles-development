@@ -1,0 +1,54 @@
+<!--
+templateType: global_partial
+isAvailableForNewContent: false
+-->
+<!-- Begin partial -->
+<style type="text/css">
+  .top-bar__component{
+    position: relative;
+  }
+  .lang_switcher_class{
+    display: inline;
+  }
+  .header__language-switcher{
+    position: absolute;
+    right: 2em;
+    top: 10px;
+    cursor: pointer;
+    z-index: 9;
+  }
+  .header__language-switcher .lang_list_class{
+    background-color: transparent !important;
+  }
+  .header__language-switcher--label{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .header__language-switcher--label > .widget-type-language_switcher{
+    display: inline-flex;
+    height: 20px;
+    margin-right: 8px;
+  }
+  .header__language-switcher--label-current{
+    font-size:0.8em;
+  }
+  @media screen and (max-width: 568px){
+    .header__language-switcher{
+      right: 1em;
+      top: 1em;
+    }
+  }
+</style>
+<div class="top-bar__component">
+  {% module "module_166618463440635" path="/charles-b2b/modules/features/TopBar Module", label="TopBar Module" %}
+  {% if content.translated_content|length %}
+  <div class="header__language-switcher header--element">
+    <div class="header__language-switcher--label">
+      {% module "language-switcher" path="@hubspot/language_switcher", display_mode='localized', label="Language Switcher" %}
+      <div class="header__language-switcher--label-current"> {{ locale_name(locale) }}</div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+<!-- End partial -->

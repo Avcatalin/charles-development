@@ -1,0 +1,135 @@
+[ {
+  "id" : "3aa3ce42-64ad-514c-d9d1-414b1b65a845",
+  "name" : "wiki_block_group",
+  "display_width" : null,
+  "label" : "Wiki Block Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 0
+  },
+  "children" : [ {
+    "id" : "86e22cc9-6303-e400-8175-4003416c6249",
+    "name" : "wiki_letter",
+    "display_width" : null,
+    "label" : "Wiki Letter",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "a", "A" ], [ "b", "B" ], [ "c", "C" ], [ "d", "D" ], [ "e", "E" ], [ "f", "F" ], [ "g", "G" ], [ "h", "H" ], [ "i", "I" ], [ "j", "J" ], [ "k", "K" ], [ "l", "L" ], [ "m", "M" ], [ "n", "N" ], [ "o", "O" ], [ "p", "P" ], [ "q", "Q" ], [ "r", "R" ], [ "s", "S" ], [ "t", "T" ], [ "u", "U" ], [ "w", "W" ], [ "x", "X" ], [ "y", "Y" ], [ "z", "Z" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice"
+  }, {
+    "id" : "0fa01fa1-e68e-6329-ac5a-9285490f93cf",
+    "name" : "select_wiki_group",
+    "display_width" : null,
+    "label" : "Select wiki group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 0
+    },
+    "children" : [ {
+      "id" : "2963427b-3947-2773-d4ee-e1d47f1e7a40",
+      "name" : "wiki_title",
+      "display_width" : null,
+      "label" : "Wiki Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "061db957-0ae0-2b95-a1b4-f44de8a8da3c",
+      "name" : "wiki_link",
+      "display_width" : null,
+      "label" : "Wiki link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "wiki_link" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "select_wiki_group" : {
+      "wiki_link" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "CONTENT"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "d52ad7f5-a526-e4c6-c48a-e5c1b0d47803",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "80419226-2597-647a-70c7-c6296a006205",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "b148e894-14af-967e-f047-b3ecd1ad86ee",
+  "name" : "headings",
+  "display_width" : null,
+  "label" : "Headings",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : ""
+} ]

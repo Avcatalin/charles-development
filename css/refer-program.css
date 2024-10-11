@@ -1,0 +1,112 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+.features-centered-title {
+  text-align: center;
+}
+.features-centered-title.banner-title {
+  padding-top: 280px;
+}
+.features-centered-title.section-title p {
+  font-size: 4rem;
+}
+.features-centered-title.section-p p {
+  font-size: 2rem;
+}
+.whatsapp-magic-section {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+.features-centered-title .referral-heading {
+  font-size: 5rem;
+  line-height: 60px;
+  letter-spacing: 0;
+  font-weight: normal;
+  margin: 0 0 15px;
+  font-family: 'charles_simpleitalic', sans-serif;
+}
+.features-centered-title .referral-content {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin: 0 0 15px;
+  font-family: 'Inter', sans-serif;
+}
+.whatsapp-magic-section .container .row.second-row .feature-main-title {
+  font-family: 'charles_simpleitalic', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+.steps-repeater .row-item .content-row .letter-title {
+  font-weight: 700;
+}
+.whatsapp-magic-section .container .row.second-row .col-bf-5 img {
+  position: relative;
+  max-width: 100% !important;
+}
+.features-centered-title {
+  padding-bottom: 20px !important;
+}
+.features-centered-title .trusted-partner-heading {
+  font-family: 'charles_simpleitalic', sans-serif;
+  font-weight: normal;
+  font-size: 4rem;
+  letter-spacing: 0;
+}
+.whatsapp-magic-section .container .row.second-row .col-bf-7 {
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .features-centered-title {
+    text-align: center;
+  }
+  .features-centered-title.banner-title {
+    padding-top: 160px;
+  }
+  .features-centered-title.section-title p {
+    font-size: 2.5rem;
+  }
+  .features-centered-title.section-p p {
+    font-size: 1.25rem;
+  }
+  .features-centered-title .setion_title {
+    font-size: 3rem !important;
+  }
+  .features-centered-title .referral-heading {
+    font-size: 3rem;
+    line-height: 48px;
+  }
+  .features-centered-title .referral-content {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .whatsapp-magic-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .image-stats-mobile {
+    margin-bottom: 40px;
+  }
+  .whatsapp-magic-section .container .row.second-row .col-bf-7 {
+    padding-right: 0;
+  }
+  .whatsapp-magic-section .container .row.second-row .feature-main-title {
+    font-size: 2.5rem;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+  .steps-repeater .row-item .letter-row {
+    width: 42px;
+    height: 42px;
+  }
+  .steps-repeater .row-item .content-row {
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,34 @@
+{% set title = module.title %}
+{% set text = module.text %}
+{% set align = module.align %}
+{% set paddingY = 'py-32 mobile:py-8' %}
+{% if module.dense is true %}
+  {% set paddingY = 'py-8 mobile:py-8' %}
+{% endif %}
+
+{% set titleClass = 'mb-8' %}
+{% if module.dense is true %}
+  {% set titleClass = 'mb-2' %}
+{% endif %}
+
+{% set ctaText = module.button.text %}
+{% set textColor = module.button.text_color %}
+{% set bgColor = module.button.bg_color %}
+{% set ctaAction = module.button.link.url.href %}
+{% if module.button.link.url.type is equalto "EMAIL_ADDRESS" %}
+  {% set ctaAction = "mailto:" + ctaAction %}
+{% endif %}
+{% set ctaNewtab = module.button.link.open_in_new_tab %}
+{% set ctaNoFollow = module.button.link.no_follow %}
+
+<div class="c-cta-section {{ align }} px-10 mobile:px-0 {{ paddingY }}">
+  <p class="c-cta-title {{ titleClass }}">{{ title }}</p>
+  <p>{{ text }}</p>
+  
+  <div class="c-features--cta my-8">
+    <a href="{{ ctaAction }}" style="color: rgba({{ textColor.color|convert_rgb }}, {{ textColor.opacity / 100 }}); background: rgba({{ bgColor.color|convert_rgb }}, {{ bgColor.opacity / 100 }});" {% if ctaNewtab %}target="_blank" rel="noopener noreferrer"{% endif %} {% if ctaNoFollow %}rel="noopener noreferrer nofollow" {% endif %}
+      class="c-button bg-white">
+      {{ ctaText }}
+    </a>
+  </div>
+</div>

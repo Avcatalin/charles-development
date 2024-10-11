@@ -1,0 +1,274 @@
+<div class="tab-section-container">
+  <!-- TABS HEADER -->
+  <ul id="tabs">
+    {% for item in module.tabs_header %}
+    <li><a id="{{ item.tab_id }}">{{ item.tab_header }}</a></li>
+    {% endfor %}
+    <!-- YEAR BADGE -->
+    <div class="year-offer">
+      {% inline_rich_text field="year_offer" value="{{ module.year_offer }}" %}
+    </div>
+    <!-- end YEAR BADGE -->
+  </ul>
+  <!-- end TABS HEADER -->
+  <div class="tab-content" id="tab1C" style="background-color: {{ module.tab_section_background_color.color }}; {{ module.style.tab_content_spacing.css }}"> 
+    <!-- TAB CONTENT TITLE -->
+    <div class="tab-content-title" style="{{ module.style.spacing_tab_content_title.css }}">
+      {% inline_rich_text field="tab_content_title" value="{{ module.tab_content_title }}" %}
+    </div>
+    <!-- end TAB CONTENT TITLE -->
+    <div class="prices-box-wrapper">
+      {% for item in module.price_box_info %}
+      <!-- PRICE BOX CONTAINER -->
+      <div class="price-box-container">
+        <!-- PRICE BOX INNER -->
+        <div class="price-box-inner" style="color: {{ item.content_color.css }}; background-color: {{ item.box_background_color.css }}">
+          <!-- CONTENT TOP -->
+          <div class="content-top">
+            {% inline_rich_text field="title_content" value="{{ item.title_content }}" %}
+          </div>
+          <!-- PRICE VALUE -->
+          <div class="price-value" id="{{ item.price_value_id }}" style="color: {{ item.price_value_color.css }}">
+            <span class="standard active">{{ item.price_value }}</span>
+            <span class="sell-products">{{ item.price_value_second_check }}</span>
+            <span class="campaigns">{{ item.price_value_third_check }}</span>
+          </div>
+          <!-- GET STARTED BUTTON -->
+          {% set href = item.get_started.url.href %}
+          {% if item.get_started.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if item.get_started.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.get_started.rel %}rel="{{ item.get_started.rel }}"{% endif %}
+             class="btn-main-yellow"
+             style="background-color: {{ item.get_started_background_color.css }}; color: {{ item.get_started_text_color.css }}">
+            {{ item.get_started_text }}
+          </a>
+          <!-- HOW DO WE CALCULATE PRICE -->
+          <div class="how-we-calculate">
+            {% inline_rich_text field="how_to_we_calculate_price" value="{{ item.how_to_we_calculate_price }}" %}
+          </div>
+          <!-- KEY FEATURES -->
+          <div class="key-features">
+            <div class="key-title" style="background-color: {{ item.key_features_background_color.css }}">
+              {{ item.key_features_text }}
+            </div>
+            <!-- FEATURES ICON LIST -->
+            <div class="features-icon-list"> 
+              <ul>
+                {% for item_second in item.features_list_icons %}
+                <li>
+                  {% if item_second.features_list_icon.src %}
+                  {% set sizeAttrs = 'width="{{ item_second.features_list_icon.width }}" height="{{ item_second.features_list_icon.height }}"' %}
+                  {% if item_second.features_list_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item_second.features_list_icon.width }}" height="{{ item_second.features_list_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item_second.features_list_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item_second.features_list_icon.max_width }}" height="{{ item_second.features_list_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item_second.features_list_icon.loading != 'disabled' ? 'loading="{{ item_second.features_list_icon.loading }}"' : '' %}
+                  <img src="{{ item_second.features_list_icon.src }}" alt="{{ item_second.features_list_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                  <span style="{{ item_second.text_color.css }}">{{ item_second.features_list_text }}</span>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <!-- FEATURES BULLET LIST -->
+            <div class="features-bullet-list">
+              <ul>
+                {% for item_second in item.features_bullet_list %}
+                <li>
+                  <div class="inner-feature-item">
+                    <span>{{ item_second.features_bullet_list_text }}</span>
+                    {% if item_second.enable_tooltip %}
+                    <div class="tooltip-icon">
+                      {% if item_second.tooltip_icon.src %}
+                      {% set sizeAttrs = 'width="{{ item_second.tooltip_icon.width }}" height="{{ item_second.tooltip_icon.height }}"' %}
+                      {% if item_second.tooltip_icon.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ item_second.tooltip_icon.width }}" height="{{ item_second.tooltip_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif item_second.tooltip_icon.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item_second.tooltip_icon.max_width }}" height="{{ item_second.tooltip_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                      {% set loadingAttr = item_second.tooltip_icon.loading != 'disabled' ? 'loading="{{ item_second.tooltip_icon.loading }}"' : '' %}
+                      <img src="{{ item_second.tooltip_icon.src }}" alt="{{ item_second.tooltip_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                      {% endif %}
+                      <div class="tooltip-content">
+                        {{ item_second.tooltip_content }}
+                      </div>
+                    </div>
+                    {% endif %}
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>    
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- CTA BUTTON DARK -->
+    <div class="cta-button-features" style="background-color: {{ module.cta_button_background_color.color }}; {{ module.style.cta_spacing.css }}">
+      <div class="inner-cta-content">
+        <!-- CTA Icon -->
+        {% if module.cta_button_icon.src %}
+        {% set sizeAttrs = 'width="{{ module.cta_button_icon.width }}" height="{{ module.cta_button_icon.height }}"' %}
+        {% if module.cta_button_icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.cta_button_icon.width }}" height="{{ module.cta_button_icon.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.cta_button_icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.cta_button_icon.max_width }}" height="{{ module.cta_button_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.cta_button_icon.loading != 'disabled' ? 'loading="{{ module.cta_button_icon.loading }}"' : '' %}
+        <img src="{{ module.cta_button_icon.src }}" alt="{{ module.cta_button_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}      
+        <!-- CTA Content -->
+        <span style="color: {{ module.color_choice_cta_text.color }};">{{ module.cta_button_text }}</span>
+      </div>
+
+      {% set href = module.page_url_features_cta.url.href %}
+      {% if module.page_url_features_cta.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" style="background-color: {{ module.background_book_demo_cta.color }}; color: {{ module.color_choice_book_demo_cta.color }};"
+         {% if module.page_url_features_cta.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.page_url_features_cta.rel %}rel="{{ module.page_url_features_cta.rel }}"{% endif %}
+         >
+        {{ module.text_book_demo_cta }}
+      </a>
+    </div>
+    <!-- end CTA BUTTON DARK -->
+  </div>
+  <div class="tab-content" id="tab2C" style="background-color: {{ module.tab_section_background_color.color }}; {{ module.style.tab_content_spacing.css }}">
+    <!-- TAB CONTENT TITLE -->
+    <div class="tab-content-title" style="{{ module.style.spacing_tab_content_title.css }}">
+      {% inline_rich_text field="tab_content_title_yearly" value="{{ module.tab_content_title_yearly }}" %}
+    </div>
+    <!-- end TAB CONTENT TITLE -->
+
+    <!-- end TAB CONTENT TITLE -->
+    <div class="prices-box-wrapper">
+      {% for item in module.price_box_info_yearly %}
+      <!-- PRICE BOX CONTAINER -->
+      <div class="price-box-container">
+        <!-- PRICE BOX INNER -->
+        <div class="price-box-inner" style="color: {{ item.content_color.css }}; background-color: {{ item.box_background_color.css }}">
+          <!-- CONTENT TOP -->
+          <div class="content-top">
+            {% inline_rich_text field="title_content" value="{{ item.title_content }}" %}
+          </div>
+          <!-- PRICE VALUE -->
+          <div class="price-value" id="{{ item.price_value_id }}" style="color: {{ item.price_box_info_yearly.css }}">
+            <span class="standard active">{{ item.price_value }}</span>
+            <span class="sell-products">{{ item.price_value_second_check }}</span>
+            <span class="campaigns">{{ item.price_value_third_check }}</span>
+          </div>
+          <!-- GET STARTED BUTTON -->
+          {% set href = item.get_started.url.href %}
+          {% if item.get_started.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if item.get_started.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.get_started.rel %}rel="{{ item.get_started.rel }}"{% endif %}
+             class="btn-main-yellow"
+             style="background-color: {{ item.get_started_background_color.css }}; color: {{ item.get_started_text_color.css }}">
+            {{ item.get_started_text }}
+          </a>
+          <!-- HOW DO WE CALCULATE PRICE -->
+          <div class="how-we-calculate">
+            {% inline_rich_text field="how_to_we_calculate_price" value="{{ item.how_to_we_calculate_price }}" %}
+          </div>
+          <!-- KEY FEATURES -->
+          <div class="key-features">
+            <div class="key-title" style="background-color: {{ item.key_features_background_color.css }}">
+              {{ item.key_features_text }}
+            </div>
+            <!-- FEATURES ICON LIST -->
+            <div class="features-icon-list"> 
+              <ul>
+                {% for item_second in item.features_list_icons %}
+                <li>
+                  {% if item_second.features_list_icon.src %}
+                  {% set sizeAttrs = 'width="{{ item_second.features_list_icon.width }}" height="{{ item_second.features_list_icon.height }}"' %}
+                  {% if item_second.features_list_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item_second.features_list_icon.width }}" height="{{ item_second.features_list_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item_second.features_list_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item_second.features_list_icon.max_width }}" height="{{ item_second.features_list_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item_second.features_list_icon.loading != 'disabled' ? 'loading="{{ item_second.features_list_icon.loading }}"' : '' %}
+                  <img src="{{ item_second.features_list_icon.src }}" alt="{{ item_second.features_list_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                  <span style="{{ item_second.text_color.css }}">{{ item_second.features_list_text }}</span>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <!-- FEATURES BULLET LIST -->
+            <div class="features-bullet-list">
+              <ul>
+                {% for item_second in item.features_bullet_list %}
+                <li>
+                  <div class="inner-feature-item">
+                    <span>{{ item_second.features_bullet_list_text }}</span>
+                    {% if item_second.enable_tooltip %}
+                    <div class="tooltip-icon">
+                      {% if item_second.tooltip_icon.src %}
+                      {% set sizeAttrs = 'width="{{ item_second.tooltip_icon.width }}" height="{{ item_second.tooltip_icon.height }}"' %}
+                      {% if item_second.tooltip_icon.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ item_second.tooltip_icon.width }}" height="{{ item_second.tooltip_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif item_second.tooltip_icon.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item_second.tooltip_icon.max_width }}" height="{{ item_second.tooltip_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                      {% set loadingAttr = item_second.tooltip_icon.loading != 'disabled' ? 'loading="{{ item_second.tooltip_icon.loading }}"' : '' %}
+                      <img src="{{ item_second.tooltip_icon.src }}" alt="{{ item_second.tooltip_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="tooltip-icon">
+                      {% endif %}
+                      <div class="tooltip-content">
+                        {{ item_second.tooltip_content }}
+                      </div>
+                    </div>
+                    {% endif %}
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>    
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- CTA BUTTON DARK -->
+    <div class="cta-button-features" style="background-color: {{ module.cta_button_background_color.color }}; {{ module.style.cta_spacing.css }}">
+      <div class="inner-cta-content">
+        <!-- CTA Icon -->
+        {% if module.cta_button_icon.src %}
+        {% set sizeAttrs = 'width="{{ module.cta_button_icon.width }}" height="{{ module.cta_button_icon.height }}"' %}
+        {% if module.cta_button_icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.cta_button_icon.width }}" height="{{ module.cta_button_icon.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.cta_button_icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.cta_button_icon.max_width }}" height="{{ module.cta_button_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.cta_button_icon.loading != 'disabled' ? 'loading="{{ module.cta_button_icon.loading }}"' : '' %}
+        <img src="{{ module.cta_button_icon.src }}" alt="{{ module.cta_button_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}      
+        <!-- CTA Content -->
+        <span style="color: {{ module.color_choice_cta_text.color }};">{{ module.cta_button_text }}</span>
+      </div>
+
+      {% set href = module.page_url_features_cta.url.href %}
+      {% if module.page_url_features_cta.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" style="background-color: {{ module.background_book_demo_cta.color }}; color: {{ module.color_choice_book_demo_cta.color }};"
+         {% if module.page_url_features_cta.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.page_url_features_cta.rel %}rel="{{ module.page_url_features_cta.rel }}"{% endif %}
+         >
+        {{ module.text_book_demo_cta }}
+      </a>
+    </div>
+    <!-- end CTA BUTTON DARK -->
+  </div>
+</div>

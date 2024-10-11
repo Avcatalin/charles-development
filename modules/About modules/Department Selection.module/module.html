@@ -1,0 +1,49 @@
+<div class="department_group">
+  <div class="container">
+    <h2>
+      {{ module.title }}
+    </h2>
+    <div class="filter">
+      <ul>
+        {% for item in module.block %}
+        <li data-label="{{ item.filter_label }}" class="{% if loop.first %}active{% endif %}">
+          <p>           
+            {% set sizeAttrs = 'width="{{ item.label_icon.width }}" height="{{ item.label_icon.height }}"' %}
+            {% if item.label_icon.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.label_icon.width }}" height="{{ item.label_icon.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.label_icon.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.label_icon.max_width }}" height="{{ item.label_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.label_icon.loading != 'disabled' ? 'loading="{{ item.label_icon.loading }}"' : '' %}
+            <img src="{{ item.label_icon.src }}" alt="{{ item.label_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> {{ item.filter_label }}
+          </p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="content"> 
+      {% for item in module.block %}
+      <div class="block {% if loop.first %}active{% endif %}" data-label="{{ item.filter_label }}">
+        <div class="left_part" style="background-image: url({{ item.content.left_image.src }});">
+          <!--           <img src="{{ item.content.left_image.src }}"> -->
+        </div>
+        <div class="right_content">
+          <h3>
+            {{ item.content.quote }}
+          </h3>
+          <p>
+            {{ item.content.description }}
+          </p>
+          <div class="author">
+            <img src="{{ item.content.photo.src }}" alt="{{ item.content.photo.alt }}">
+
+            <p style="margin: 0px;">
+              {{ item.content.author_info }}
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

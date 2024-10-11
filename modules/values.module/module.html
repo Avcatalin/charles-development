@@ -1,0 +1,41 @@
+{% set bg_img = module.bg_img.src %}
+
+<section class="c-value-section relative" id="{{ name }}">
+  <div class="c-value-section--bg absolute bg-cover bg-repeat left-0 right-0" style="background-image: url({{ bg_img }});"></div>
+
+  <article class="c-value-section--values flex flex-col items-center">
+    {% for value in module.values %}
+      {% set rellaxSpeed = - 2 + ((loop.index ) * 1.2) %}
+      {% set rellaxMobileEnabled = 1 %}
+      {% set rellaxTabletSpeed = ( 1 + (loop.index * 0.5)) * rellaxMobileEnabled %}
+      {% set rellaxMobileSpeed = ( 1 + (loop.index * 0.5)) * rellaxMobileEnabled %}
+      {% set zIndex = (loop.length + 10) - loop.index %}
+        
+    <section class="c-value-section--value max-w-md relative" style="z-index: {{ zIndex }};" data-rellax-speed="{{ rellaxSpeed }}" data-rellax-zindex="{{ zIndex }}" data-rellax-xs-speed="{{ rellaxMobileSpeed }}" data-rellax-mobile-speed="{{ rellaxMobileSpeed }}" data-rellax-tablet-speed="{{ rellaxTabletSpeed }}" ">
+      <div class="c-value-section--value--card--avatar-bg" style="background: rgba({{ value.colors.border_color.color|convert_rgb }}, {{ value.colors.border_color.opacity / 100 }});"></div>
+
+      <div class="c-value-section--value--card p-2 relative" style="background: rgba({{ value.colors.bg_color.color|convert_rgb }}, {{ value.colors.bg_color.opacity / 100 }}); border-color: rgba({{ value.colors.border_color.color|convert_rgb }}, {{ value.colors.border_color.opacity / 100 }}); color: rgba({{ value.colors.text_color.color|convert_rgb }}, {{ value.colors.text_color.opacity / 100 }});">
+        <div class="c-value-section--value--card--content pt-8 px-12 pb-2" style="border-color: rgba({{ value.colors.inner_border_color.color|convert_rgb }}, {{ value.colors.inner_border_color.opacity / 100 }});">
+
+          <div class="value-card--content-icon">
+            <img src="{{ value.icon.src }}" alt="{{ value.title }}">
+          </div>
+
+          <h3 class="value-card--content-title text-2xl my-4 text-center mr-auto ml-auto" style="color: rgba({{ value.colors.text_color.color|convert_rgb }}, {{ value.colors.text_color.opacity / 100 }});">
+            {{ value.title }}
+          </h3>
+
+          <p class="value-card--content-text text-center text-xs pb-6">
+            {{ value.text }}
+          </p>
+
+          <div class="c-value-section--value--card--owner">
+            <div class="value-card--owner-avatar bg-cover bg-no-repeat bg-center rounded-full border-solid border-8" style="background-image: url({{  value.owner.avatar.src }}); border-color: rgba({{ value.colors.bg_color.color|convert_rgb }}, {{ value.colors.bg_color.opacity / 100 }}); background-color: rgba({{ value.colors.bg_color.color|convert_rgb }}, {{ value.colors.bg_color.opacity / 100 }});"></div>
+            <span class="value-card--owner-name text-xs italic">{{ value.owner.owner_name }}</span>
+          </div>
+        </div>
+      </div>
+    </section> 
+    {% endfor %}
+  </article>
+</section>

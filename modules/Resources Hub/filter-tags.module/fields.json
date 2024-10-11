@@ -1,0 +1,34 @@
+[ {
+  "id" : "8affa0af-b86c-d00d-4e04-9b7e9941b451",
+  "name" : "icon_filter",
+  "display_width" : null,
+  "label" : "Icon Filter",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/filter-1.svg",
+    "alt" : "filter-1",
+    "loading" : "lazy",
+    "width" : 16,
+    "height" : 17,
+    "max_width" : 16,
+    "max_height" : 17
+  }
+}, {
+  "id" : "5f76c00d-bee0-449a-961b-17fb20f86046",
+  "name" : "placeholder",
+  "display_width" : null,
+  "label" : "Placeholder",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Filter"
+} ]

@@ -1,0 +1,156 @@
+[ {
+  "id" : "testimonials",
+  "name" : "testimonials",
+  "display_width" : null,
+  "label" : "Testimonials",
+  "required" : true,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "testimonials.title",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "testimonials.title",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : true,
+    "locked" : false,
+    "enabled_features" : [ "bold" ],
+    "type" : "richtext",
+    "default" : "Title here"
+  }, {
+    "id" : "testimonials.bg_color",
+    "name" : "bg_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "testimonials.video",
+    "name" : "video",
+    "display_width" : null,
+    "label" : "Video",
+    "required" : true,
+    "locked" : false,
+    "children" : [ {
+      "picker" : "file",
+      "id" : "testimonials.video.mp4",
+      "name" : "mp4",
+      "display_width" : null,
+      "label" : "Video (MP4)",
+      "required" : true,
+      "locked" : false,
+      "type" : "file"
+    }, {
+      "picker" : "file",
+      "id" : "testimonials.video.webm",
+      "name" : "webm",
+      "display_width" : null,
+      "label" : "Video (WebM)",
+      "required" : true,
+      "locked" : false,
+      "type" : "file"
+    }, {
+      "picker" : "file",
+      "id" : "testimonials.video.ogv",
+      "name" : "ogv",
+      "display_width" : null,
+      "label" : "Video (OGV)",
+      "required" : false,
+      "locked" : false,
+      "type" : "file"
+    }, {
+      "picker" : "image",
+      "id" : "testimonials.video.poster",
+      "name" : "poster",
+      "display_width" : null,
+      "label" : "Poster",
+      "required" : false,
+      "locked" : false,
+      "type" : "file"
+    }, {
+      "picker" : "file",
+      "id" : "testimonials.video.track",
+      "name" : "track",
+      "display_width" : null,
+      "label" : "Subtitles",
+      "help_text" : "Must be a .vtt file!",
+      "required" : false,
+      "locked" : false,
+      "type" : "file"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group"
+  }, {
+    "id" : "testimonials.client",
+    "name" : "client",
+    "display_width" : null,
+    "label" : "Client",
+    "required" : true,
+    "locked" : false,
+    "children" : [ {
+      "picker" : "image",
+      "id" : "testimonials.client.icon",
+      "name" : "icon",
+      "display_width" : null,
+      "label" : "Icon / Avatar",
+      "inline_help_text" : "Please provide a 1:1",
+      "required" : true,
+      "locked" : false,
+      "type" : "file"
+    }, {
+      "picker" : "image",
+      "id" : "testimonials.video.logo",
+      "name" : "logo",
+      "display_width" : null,
+      "label" : "Logo",
+      "required" : false,
+      "locked" : false,
+      "type" : "file"
+    }, {
+      "id" : "testimonials.client.content",
+      "name" : "content",
+      "display_width" : null,
+      "label" : "Testimonial text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : true,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : ""
+    }, {
+      "id" : "testimonials.client.author",
+      "name" : "author",
+      "display_width" : null,
+      "label" : "Author",
+      "help_text" : "Provide name and title of who is sohwn in the video.",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : ""
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ ]
+} ]

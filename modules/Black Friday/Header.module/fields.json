@@ -1,0 +1,95 @@
+[ {
+  "id" : "d1a85362-a1d6-5192-46a4-6f0808d88ee5",
+  "name" : "bf_label",
+  "display_width" : null,
+  "label" : "BF Label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "BLACK WEEK 2023"
+}, {
+  "id" : "b6a9e8e2-e73a-f0c7-5cab-9b92a8c0e7d5",
+  "name" : "bf_header_text",
+  "display_width" : null,
+  "label" : "BF Header Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "TURN ONE-TIME DEALS <strong>INTO ALL-TIME CUSTOMERS</strong>"
+}, {
+  "id" : "4f937ab6-510c-d91f-3cd3-8cc151bbd01a",
+  "name" : "bf_content_text",
+  "display_width" : null,
+  "label" : "BF Content Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Expecting big love on Black Friday and Cyber Monday <span style=\"background-color: #fff171;\"><strong>(BFCM)</strong></span>? <br>Here’s how to keep these relationships going in the long-term with WhatsApp."
+}, {
+  "id" : "8623384f-81d1-4bcf-f81b-8565d4c81040",
+  "name" : "swiper_slider_cards",
+  "display_width" : null,
+  "label" : "Swiper Slider Cards",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "81c527a6-2148-c342-f4a5-1dc4bc8f2d2a",
+    "name" : "swiper_image",
+    "display_width" : null,
+    "label" : "Swiper Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "swiper_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ]
+}, {
+  "id" : "5c96bc49-be4e-c8c9-724e-9767a10d910d",
+  "name" : "radial_overlay",
+  "display_width" : null,
+  "label" : "Radial Overlay",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto_custom_max",
+    "src" : "https://www.hello-charles.com/hubfs/Imported%20images/eclipse-gradient.png",
+    "alt" : "eclipse-gradient",
+    "loading" : "lazy",
+    "width" : 2435,
+    "height" : 1391,
+    "max_width" : 2000,
+    "max_height" : 1142.505133470226
+  }
+} ]

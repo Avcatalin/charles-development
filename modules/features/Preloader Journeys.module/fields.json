@@ -1,0 +1,79 @@
+[ {
+  "id" : "c60bbea1-85f1-ea39-a24c-a0fb8930872a",
+  "name" : "preloader_background",
+  "display_width" : null,
+  "label" : "Preloader Background",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/dotted-canvas-bg-3.png",
+    "alt" : "dotted-canvas-bg-3",
+    "loading" : "lazy",
+    "width" : 1440,
+    "height" : 1129,
+    "max_width" : 1440,
+    "max_height" : 1129
+  }
+}, {
+  "id" : "f3b75277-9697-86d1-d734-9fd92666f25b",
+  "name" : "title_first",
+  "display_width" : null,
+  "label" : "Title First",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Switch your "
+}, {
+  "id" : "fc2a440d-bba4-a32e-9f99-4037f9abb499",
+  "name" : "title_second",
+  "display_width" : null,
+  "label" : "Title Second",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "on."
+}, {
+  "id" : "6884d0db-9cb7-b7dc-fadb-e4c4edf9d8fc",
+  "name" : "slider_container",
+  "display_width" : null,
+  "label" : "Slider Container",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "935709c3-0275-930d-efe5-d170d9a7f15f",
+    "name" : "slider_word",
+    "display_width" : null,
+    "label" : "Slider Word",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "marketing automation"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "slider_word" : "marketing automation"
+  } ]
+} ]

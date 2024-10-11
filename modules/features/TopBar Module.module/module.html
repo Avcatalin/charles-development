@@ -1,0 +1,64 @@
+<!-- Standard Top Bar -->
+{% if module.enable_top_bar %}
+{% set href = module.link_redirect.url.href %}
+
+<a href="{{ href }}" id="notificationbar_cta"
+   {% if module.link_redirect.open_in_new_tab %}target="_blank"{% endif %}
+   {% if module.link_redirect.rel %}rel="{{ module.link_redirect.rel }}"{% endif %}>
+  <div class="top-bar-component" style="background-color: {{ module.background_color.css }}; {{ module.style.backgroundimage_field.css }};{{ module.style.spacing_field.css }}">
+    <div class="top-bar-alignment">      
+      {% if module.icon.src %}
+      <div class="top-bar-icon">
+        {% set sizeAttrs = 'width="{{ module.icon.width }}" height="{{ module.icon.height }}"' %}
+        {% if module.icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.icon.width }}" height="{{ module.icon.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.icon.max_width }}" height="{{ module.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.icon.loading != 'disabled' ? 'loading="{{ module.icon.loading }}"' : '' %}
+        <img src="{{ module.icon.src }}" class="img-fluid" alt="{{ module.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      </div>
+      {% endif %}
+
+      <div class="top-bar-content" style="color: {{ module.content_color.css }}">
+        {{ module.content }}
+      </div>
+    </div>
+  </div>
+</a>
+{% endif %}
+<!-- END Standard Top Bar -->
+<!-- Black Friday Top Bar -->
+{% if module.black_friday_top_bar %}
+
+{% set href = module.bf_link_wrapper.url.href %}
+{% if module.bf_link_wrapper.url.type is equalto "EMAIL_ADDRESS" %}
+{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}" class="bf-link-wrapper" id="notificationbar_cta"
+   {% if module.bf_link_wrapper.open_in_new_tab %}target="_blank"{% endif %}
+   {% if module.bf_link_wrapper.rel %}rel="{{ module.bf_link_wrapper.rel }}"{% endif %}
+   >
+  <div class="bf-top-bar">
+    <div class="bf-container">      
+      <div class="main-wrapper">
+        <div class="bf-image">
+          {% if module.bf_image.src %}
+          {% set sizeAttrs = 'width="{{ module.bf_image.width }}" height="{{ module.bf_image.height }}"' %}
+          {% if module.bf_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.bf_image.width }}" height="{{ module.bf_image.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.bf_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.bf_image.max_width }}" height="{{ module.bf_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.bf_image.loading != 'disabled' ? 'loading="{{ module.bf_image.loading }}"' : '' %}
+          <img src="{{ module.bf_image.src }}" alt="{{ module.bf_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        {{ module.bf_content }}
+      </div>
+      <!-- <span class="e-message">left to add <strong>WhatsApp revenue</strong> this <strong>BFCM</strong></span> -->
+    </div>
+  </div>
+</a>
+{% endif %}
+<!-- END Black Friday Top Bar -->

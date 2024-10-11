@@ -1,0 +1,67 @@
+<div class="faq-block" style="{{ module.style.spacing_field.css }}">
+  <div class="container">
+    <!-- Faq Repeater -->
+    <div class="inner-block">
+      <!-- Custom Header -->
+      <div class="top-header">
+        <!-- Charles Icon -->
+        <svg width="29" height="11" viewBox="0 0 29 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24.7851 6.96251C26.6885 6.96251 28.2314 5.41789 28.2314 3.51251C28.2314 1.60712 26.6885 0.0625 24.7851 0.0625C22.8818 0.0625 21.3389 1.60712 21.3389 3.51251C21.3389 5.41789 22.8818 6.96251 24.7851 6.96251Z" fill="#221F20"/>
+          <path d="M3.54832 10.5675C5.45164 10.5675 6.99459 9.02287 6.99459 7.11749C6.99459 5.2121 5.45164 3.66748 3.54832 3.66748C1.645 3.66748 0.102051 5.2121 0.102051 7.11749C0.102051 9.02287 1.645 10.5675 3.54832 10.5675Z" fill="#221F20"/>
+          <path d="M14.167 8.89561C16.0703 8.89561 17.6132 7.35099 17.6132 5.44561C17.6132 3.54022 16.0703 1.99561 14.167 1.99561C12.2636 1.99561 10.7207 3.54022 10.7207 5.44561C10.7207 7.35099 12.2636 8.89561 14.167 8.89561Z" fill="#221F20"/>
+        </svg>
+      </div>
+      {% for item in module.faq_repeater %}
+      <div class="content">
+        <div class="accordion-section-header">
+          {{ item.heading }}
+        </div>
+        <div class="accordion-section-content">
+          <div class="inner-space">
+            {{ item.richtext_field }}
+          </div>
+        </div>
+      </div>
+      {% endfor %}  
+    </div>
+
+    <!-- Button CTA Nav Item Six -->
+    <div class="mobile-chat-button">
+      {% set href = module.book_demo_button.url.href %}
+      {% if module.book_demo_button.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}"
+         {% if module.book_demo_button.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.book_demo_button.rel %}rel="{{ module.book_demo_button.rel }}"{% endif %}
+         >
+        <div class="nav-wrapper nav-item-six">  
+          <div class="left-content">
+            <!-- Icon -->
+            {% if module.person.src %}
+            {% set sizeAttrs = 'width="{{ module.person.width }}" height="{{ module.person.height }}"' %}
+            {% if module.person.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.person.width }}" height="{{ module.person.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.person.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.person.max_width }}" height="{{ module.person.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.person.loading != 'disabled' ? 'loading="{{ module.person.loading }}"' : '' %}
+            <img src="{{ module.person.src }}" alt="{{ module.person.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+            <!-- Content -->
+            {{ module.chat_content }}
+          </div>
+          <span class="nav-btn">
+            {{ module.book_demo_label }}
+            <span class="jumping-dots">
+              <span class="dot-1"></span>
+              <span class="dot-2"></span>
+              <span class="dot-3"></span>
+            </span>
+          </span>
+          <i></i>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

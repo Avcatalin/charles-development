@@ -1,0 +1,19 @@
+{% set href = module.link_field.url.href %}
+{% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href|escape_url }}"
+   {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+   {% if module.link_field.rel %}rel="{{ module.link_field.rel|escape_attr }}"{% endif %}
+   >
+  {% if module.logo.src %}
+  {% set sizeAttrs = 'width="{{ module.logo.width|escape_attr }}" height="{{ module.logo.height|escape_attr }}"' %}
+  {% if module.logo.size_type == 'auto' %}
+  {% set sizeAttrs = 'width="{{ module.logo.width|escape_attr }}" height="{{ module.logo.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+  {% elif module.logo.size_type == 'auto_custom_max' %}
+  {% set sizeAttrs = 'width="{{ module.logo.max_width|escape_attr }}" height="{{ module.logo.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+  {% endif %}
+  {% set loadingAttr = module.logo.loading != 'disabled' ? 'loading="{{ module.logo.loading|escape_attr }}"' : '' %}
+  <img src="{{ module.logo.src|escape_url }}" alt="{{ module.logo.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+  {% endif %}
+</a>

@@ -1,0 +1,39 @@
+<div class="bf-header">
+  <div class="container">
+    <div class="inner-content">
+      <div class="bf-label">
+        <img src="https://www.hello-charles.com/hubfs/Imported%20images/whatsapp-icon.svg" class="wa-icon-label" alt="Whatsapp icon | charles" />
+        {{ module.bf_label }}
+        <img src="https://www.hello-charles.com/hubfs/Imported%20images/label-corner.svg" class="label-corner" alt="Bubble corner | charles" />
+      </div>
+      <h1>
+        {{ module.bf_header_text }}
+      </h1>
+      <div class="content-text">
+        {{ module.bf_content_text }}
+      </div>
+
+      <!-- Swiper Cards -->
+      <div class="swiper cards-swiper">
+        <div class="swiper-wrapper">
+          {% for item in module.swiper_slider_cards %}
+          <div class="swiper-slide">
+            {% if item.swiper_image.src %}
+            {% set sizeAttrs = 'width="{{ item.swiper_image.width }}" height="{{ item.swiper_image.height }}"' %}
+            {% if item.swiper_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.swiper_image.width }}" height="{{ item.swiper_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.swiper_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.swiper_image.max_width }}" height="{{ item.swiper_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.swiper_image.loading != 'disabled' ? 'loading="{{ item.swiper_image.loading }}"' : '' %}
+            <img src="{{ item.swiper_image.src }}" alt="{{ item.swiper_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="radial-overlay" style="background-image: url({{ module.radial_overlay.src }})"></div>
+</div>

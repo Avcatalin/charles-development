@@ -1,0 +1,102 @@
+<!--
+templateType: blog
+isAvailableForNewContent: true
+label: Charles B2B - wiki glossary listing
+screenshotPath: ../images/template-previews/blog-index.png
+-->
+{% extends './layouts/base.html' %}
+
+<style type="text/css">
+  .blog-pagination{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .blog-pagination .blog-pagination__link{
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+  }
+  .blog-pagination .blog-pagination__link.blog-pagination__prev-link svg{
+    margin-right: 10px;
+  }
+  .blog-pagination .blog-pagination__link.blog-pagination__next-link svg{
+    margin-left: 10px;
+  }
+</style>
+
+{% block body %}
+<main class="body-container-wrapper press-page">
+  
+  <div class="container-fluid body-container body-container--press">
+    <div class="row-fluid-wrapper">
+      <div class="row-fluid">
+
+        {# Blog listing section #}
+        <section class="blog-index">
+          {% module "module_166255321504110" path="/charles-b2b/modules/posts-listing-select", label="Select Blogs" %}
+          {% module "module_168734636235119" path="/charles-b2b/modules/Wiki/Wiki block", label="Wiki block" %}
+          
+          {% module "module_17072241841242" path="/charles-b2b/modules/features/QR Code Block", label="QR Code Block" %}
+          <div class="blog-header__form">
+            {#  {% module "blog_subscribe_form" path="@hubspot/blog_subscribe",  title="" %} #}
+          </div>
+          {% rich_text "newschat_subscribe" label="Newschat CTA", value="Never miss an update?" %}
+          
+        </section>
+        {# End blog listing section #}
+
+        {# Blog pagination #}
+        {% if contents.total_page_count > 1 %}
+        <div class="blog-pagination" style="display:none;">
+          {% set page_list = [-2, -1, 0, 1, 2] %}
+          {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
+          {% elif contents.total_page_count - current_page_num == 0 %}{% set offset = -2 %}
+          {% elif current_page_num == 2 %}{% set offset = 1 %}
+          {% elif current_page_num == 1 %}{% set offset = 2 %}
+          {% else %}{% set offset = 0 %}{% endif %}
+          <a class="blog-pagination__link blog-pagination__prev-link {{ 'blog-pagination__prev-link--disabled' if !last_page_num }}" href="{{ blog_page_link(last_page_num) }}">
+            {% icon
+              name='chevron-left',
+              no_wrapper=True,
+              purpose='decorative',
+              style='SOLID',
+              width='13'
+            %}
+            Prev
+          </a>
+          {% for page in page_list %}
+          {% set this_page = current_page_num + page + offset %}
+          {% if this_page > 0 and this_page <= contents.total_page_count %}
+          <a class="blog-pagination__link blog-pagination__number-link {{ 'blog-pagination__link--active' if this_page == current_page_num }}" href="{{ blog_page_link(this_page) }}">{{ this_page }}</a>
+          {% endif %}
+          {% endfor %}
+          <a class="blog-pagination__link blog-pagination__next-link {{ 'blog-pagination__next-link--disabled' if !next_page_num }}" href="{{ blog_page_link(current_page_num + 1) }}">
+            Next
+            {% icon
+              name='chevron-right',
+              no_wrapper=True,
+              purpose='decorative',
+              style='SOLID',
+              width='13'
+            %}
+          </a>
+        </div>
+        {% endif %}
+        {# End blog pagination #}
+      </div>
+    </div>
+
+  </div>
+
+</main>
+{% endblock body %}
+
+<script type="text/javascript">
+  $('.blog-pagination').each(function () {
+    var t = $(this).text();
+    t = t.replace(/\foot$/, '');
+    $(this).text(t);
+  });
+</script>

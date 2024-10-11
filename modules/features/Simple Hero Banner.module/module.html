@@ -1,0 +1,39 @@
+<!-- Banner Introduction (Icon/Title/Subtitle/Description) -->
+<div class="features-main-container" style="{{ module.banner_introduction.spacing_field.css }} {% if module.features_section_background.src %} background: #fff url({{ module.features_section_background.src }}){% endif %};">
+  <div class="container">
+    <div class="inner-simple-hero {% if module.enable_centered_content %}text-center{% endif %}">
+      <!-- Main Title -->
+      <h1 style="color: {{ module.color_choice_features_heading.color }}">{{ module.features_heading }}</h1>
+      <!-- Banner Description -->
+      <p class="features-description" style="color: {{ module.color_choice_features_description.src }}">
+        {{ module.features_description }}
+      </p>
+      <!-- Main Button Modal -->
+      {% set href = module.cta_button_url.url.href %}
+      {% if module.cta_button_url.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="main-button-module"
+         {% if module.cta_button_url.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.cta_button_url.rel %}rel="{{ module.cta_button_url.rel }}"{% endif %}
+         style="background: {{ module.background_color_book_demo.color }};color: {{ module.color_choice_book_demo.color }};"
+         >
+        {{ module.book_demo_text }}
+      </a>
+      <!-- end Main Button Modal -->
+
+      <!-- Second Button Module -->
+      {% set href = module.second_button_module.url.href %}
+      {% if module.second_button_module.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="second-button-module"
+         {% if module.second_button_module.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.second_button_module.rel %}rel="{{ module.second_button_module.rel }}"{% endif %}
+         style="background-color: {{ module.second_button_background_color.css }};color: {{ module.second_button_text_color.css }}"
+         >
+        {{ module.second_button_text }}
+      </a>
+    </div>
+  </div>
+</div>

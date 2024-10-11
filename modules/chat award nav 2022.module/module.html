@@ -1,0 +1,69 @@
+{% for item in module.mega_nav_menus %}
+{% if item.mega_nav_visible %}
+<div class="chat_award_nav_dropdown chat_award_nav_dropdown-rbr" data-index="{{ item.which_nav_item_to_appear }}">
+  <div class="content">
+    <span class="mega_nav_title">
+      {{ item.navigation_title }}
+    </span>
+    <div class="blocks">
+      {% for item2 in item.submenu_items %}
+      <div class="block_item">
+        <div>
+          <a href="{{ item2.submenu_item_url.href }}"><img loading="lazy" src="{{ item2.submenu_item_image.src }}" width="50" height="50" alt="{{ item2.submenu_item_image.alt }}"></a>
+        </div>
+        <div>
+          <a href="{{ item2.submenu_item_url.href }}">
+            <span class="menu_sectitle">
+              {{ item2.submenu_item_title }}
+              {% if item2.add_yellow_label %}
+              <span class="yellow-label">{{ item2.yellow_label_text }}</span>
+              {% endif %}
+            </span>
+            <p>
+              {{ item2.submenu_item_subtitle }}
+            </p>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% if item.enable_nav_footer %}
+    <div class="bottom_part">
+      {% if item.enable_left_part %}
+      <div class="left_part">
+        <p>
+          {{ item.nav_footer_title }}
+        </p>
+        {% if item.left_part_links %}
+        <div class="left-part-links">
+          {% for itemLink in item.left_part_links_group %}
+          <a class="dark-link-arrow" href="{{ itemLink.left_part_link.href }}">{{ itemLink.left_part_link_text }} </a>
+          {% endfor %}
+        </div>
+        {% else %}
+        <p>
+          <img loading="lazy"  src="{{ item.left_part_image.src }}" width="15" height="15" alt="{{ item.left_part_image.alt }}"> {{ item.left_part_title }}
+        </p>
+        {% endif %}
+      </div>
+      {% endif %}
+      {% if item.enable_right_part %}
+      <div class="right_part" style="margin-left: auto;">
+        <a href="{{ item.right_part_button_url.href }}">
+          <p>
+            {% if item.right_part_image.src %}<img loading="lazy"  src="{{ item.right_part_image.src }}" width="50" height="50" alt="{{ item.right_part_image.alt }}">{% endif %} {{ item.right_part_title }}
+          </p>
+        </a>                  	
+      </div>
+      {% endif %}
+      {% if item.enable_right_part_button %}
+      <div class="right_part" style="margin-left: auto;">
+        <a href="{{ item.right_part_button_url.href }}" class="join-us">{{ item.right_part_button_text }}<i style="margin-left: 0.5rem;" class="fa fa-angle-right"></i></a>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+{% endfor %}

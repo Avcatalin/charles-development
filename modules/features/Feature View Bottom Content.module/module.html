@@ -1,0 +1,95 @@
+<div class="container px-0">
+  <div class="features-steps-bottom-section" style="{{ module.steps_bottom.spacing_field.css }} background: {{ module.background_color.color }};">
+    <div class="column-left">
+      <div class="image-container">
+        {% if module.icon_left_column.src %}
+        {% set sizeAttrs = 'width="{{ module.icon_left_column.width }}" height="{{ module.icon_left_column.height }}"' %}
+        {% if module.icon_left_column.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.icon_left_column.width }}" height="{{ module.icon_left_column.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.icon_left_column.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.icon_left_column.max_width }}" height="{{ module.icon_left_column.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.icon_left_column.loading != 'disabled' ? 'loading="{{ module.icon_left_column.loading }}"' : '' %}
+        <img src="{{ module.icon_left_column.src }}" alt="{{ module.icon_left_column.alt }}" {{ loadingAttr }} {{ sizeAttrs }} style="margin-left: {{ module.steps_bottom.margin_left_spacing }}px; margin-right: {{ module.steps_bottom.margin_right_spacing }}px; {{ module.steps_bottom.column_left_image_spacing.css }}">
+        {% endif %}
+        <!-- Enable wave line left side -->
+        {% if module.show_wave_lines %}
+        <span class="dot-section left">
+          <svg viewBox="-335.651 -180.226 921.34 397.704" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 553.808 176.638 C 553.808 176.638 523.399 40.666 359.123 98.366 C 194.847 156.067 186.808 32.638 186.808 32.638 C 186.808 32.638 175.621 -54.259 100.883 -87.282 C 26.145 -120.305 -86.827 -29.926 -269.903 -110.456 C -452.979 -190.986 -476.153 -110.456 -476.153 -110.456" stroke="#3A36DE" stroke-width="4"/>
+            <ellipse style="stroke: rgb(0, 0, 0); paint-order: stroke; fill: rgb(58, 54, 222); stroke-width: 0px;" cx="551.424" cy="185.335" rx="12.5" ry="12.5"/>
+          </svg>
+        </span>
+        {% endif %}
+        <!-- end Enable wave line left side -->
+
+        <!-- Mobile enable wave line -->
+         {% if module.show_wave_lines %}
+        <div class="mobile-line">
+          <svg viewBox="-11.682 5.452 28.137 3.915" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <view id="view-1">
+                <title>View 1</title>
+              </view>
+            </defs>
+            <circle cx="14.335" cy="7.374" r="0.89" fill="#3A36DE" style="stroke: rgb(58, 54, 222);" transform="matrix(1.284409, 0, 0, 1.29884, -3.901755, -2.210273)"/>
+            <path style="fill: rgb(216, 216, 216); stroke: rgb(58, 54, 222);" d="M 13.572 7.375 L -12.308 7.375"/>
+          </svg>
+        </div>
+        {% endif %}
+        <!-- end Mobile enable wave line -->
+      </div>
+      <!-- Title with description -->
+      <div class="content-container">
+        <h3 style="color: {{ module.title_color.color }};">{{ module.title_content }}</h3>
+        <p style="color: {{ module.content_color.color }};">{{ module.content }}</p>
+        <a href="https://www.facebook.com/business/partner-directory/search?solution_type=campaign_management&id=4932181706838081&section=overview" target="_blank"><div class="meta-badge-section">
+          <img src="https://www.hello-charles.com/hubfs/Meta-Business-Partner.svg" alt="Meta Partner Badge" width="150" height="100">
+        </div></a>
+      </div>
+      <!-- end Title with description -->
+    </div>
+
+    <div class="column-right bg-mobile">
+      {% if module.column_right_image.src %}
+      {% set sizeAttrs = 'width="{{ module.column_right_image.width }}" height="{{ module.column_right_image.height }}"' %}
+      {% if module.column_right_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.column_right_image.width }}" height="{{ module.column_right_image.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.column_right_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.column_right_image.max_width }}" height="{{ module.column_right_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.column_right_image.loading != 'disabled' ? 'loading="{{ module.column_right_image.loading }}"' : '' %}
+      <img src="{{ module.column_right_image.src }}" alt="{{ module.column_right_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+
+    <!-- Mobile wave line right side -->
+     {% if module.show_wave_lines %}
+    <div class="mobile-line right">
+      <svg viewBox="-11.682 5.452 28.137 3.915" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <view id="view-1">
+            <title>View 1</title>
+          </view>
+        </defs>
+        <circle cx="14.335" cy="7.374" r="0.89" fill="#3A36DE" style="stroke: rgb(58, 54, 222);" transform="matrix(1.284409, 0, 0, 1.29884, -3.901755, -2.210273)"/>
+        <path style="fill: rgb(216, 216, 216); stroke: rgb(58, 54, 222);" d="M 13.572 7.375 L -12.308 7.375"/>
+      </svg>
+    </div>
+    {% endif %}
+    <!-- end Mobile wave line right side -->
+
+    <!-- Enable wave line right side -->
+    {% if module.show_wave_lines %}
+    <span class="dot-section right">
+      <svg viewBox="-20.966 17.469 1000.686 599.529" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 986.101 43.603 C 766.944 6.068 702.907 46.648 664.535 64.937 C 626.163 83.226 546.288 151.16 287.793 64.004 C 29.298 -23.152 247.5 653.807 1 595.195" stroke="#3A36DE" stroke-width="4"/>
+        <ellipse style="stroke: rgb(0, 0, 0); paint-order: stroke; fill: rgb(58, 54, 222); stroke-width: 0px;" cx="-2.913" cy="592.972" rx="12.5" ry="12.5"/>
+      </svg>
+    </span>
+    {% endif %}
+    <!-- end Mobile wave line right side -->
+  </div>
+  <!-- Background image section -->
+  <img src="{{ module.steps_bottom.backgroundimage_field.src }}" alt="Chatins icon | charles" class="icon-bg" /> 
+</div>

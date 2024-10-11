@@ -1,0 +1,197 @@
+[ {
+  "id" : "9de01d6a-d30c-f7bc-c2f3-3cd168798e59",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "How does it work?"
+}, {
+  "id" : "68b17c68-0ec9-b1df-d0d1-ff0fad9544b2",
+  "name" : "title_link",
+  "display_width" : null,
+  "label" : "Title link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "#",
+    "content_id" : null
+  }
+}, {
+  "id" : "01c63279-7a66-6046-c6a2-6b5f1017c559",
+  "name" : "summary",
+  "display_width" : null,
+  "label" : "Summary",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Initial application only takes a few minutes."
+}, {
+  "id" : "3a7d6f2f-262d-f0d2-cb0f-1ed328db6705",
+  "name" : "start_date",
+  "display_width" : null,
+  "label" : "Start date",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "31.03.22"
+}, {
+  "id" : "bf05497d-41d8-ea80-9d3a-b182ec158e67",
+  "name" : "end_date",
+  "display_width" : null,
+  "label" : "End date",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "30.04.22"
+}, {
+  "id" : "622ecc3e-1516-202b-bdbb-e6cdf3321fa4",
+  "name" : "start_text",
+  "display_width" : null,
+  "label" : "Start text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Application <br>Deadline"
+}, {
+  "id" : "d3ef2d9e-2854-af18-e61b-a892a93e4e88",
+  "name" : "end_text",
+  "display_width" : null,
+  "label" : "End text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Winner <br> announcement"
+}, {
+  "id" : "611980ab-58e9-42b5-a946-736cae25f362",
+  "name" : "middle_text",
+  "display_width" : null,
+  "label" : "middle text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Jury of cCom experts"
+}, {
+  "id" : "b7064d49-a3e3-3d06-b70a-549679f42ff7",
+  "name" : "text1",
+  "display_width" : null,
+  "label" : "Text1",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Simply <span>tell us what business problem you are facing,</span> that WhatsApp as a new channel shall help you to solve? <img src=\"https://www.hello-charles.com/hubfs/chat_award/hand.png\" alt=\"\"></p>"
+}, {
+  "id" : "449fab9a-ef9d-c3cb-27f7-1ff7215c74c0",
+  "name" : "text2",
+  "display_width" : null,
+  "label" : "Text2",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>How will you solve this problem with WhatsApp?</span> Think in campaigns or ongoing use cases. Possible concepts can include the fight against growing CACs, with new superior customer XP achieving higher retention, higher conversion rates or higher customer lifetime value <span>IN CHAT.</span><img src=\"https://www.hello-charles.com/hubfs/chat_award/chat.png\" alt=\"\"></p>"
+}, {
+  "id" : "283cf1e8-36e6-efbd-1526-0c181bfdcebb",
+  "name" : "text3",
+  "display_width" : null,
+  "label" : "Text3",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Charles will enable you to<span>realize your concept</span><img src=\"https://www.hello-charles.com/hubfs/chat_award/roket.png\" alt=\"\"></p>"
+}, {
+  "id" : "33c47598-80a6-1bce-e21a-d881d3e11eee",
+  "name" : "get_started_title",
+  "display_width" : null,
+  "label" : "Get started title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Let’s get <span>started!</span>"
+}, {
+  "id" : "1022ee7d-a2fe-2498-6627-022d6f7b7d49",
+  "name" : "get_started_subtitle",
+  "display_width" : null,
+  "label" : "Get started subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "In just 5 minutes!"
+}, {
+  "id" : "84a8c95c-a7c6-eb27-9230-7d5634ea008a",
+  "name" : "middle_date",
+  "display_width" : null,
+  "label" : "Middle Date",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "d39a6c85-48e8-50c8-8915-78d8ecb82fc2",
+  "name" : "background",
+  "display_width" : null,
+  "label" : "Background",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#3A36DE",
+    "opacity" : 100
+  }
+}, {
+  "id" : "4d1330b3-68cc-948f-081a-63cc9b1686fe",
+  "name" : "inner_background",
+  "display_width" : null,
+  "label" : "Inner Background",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "668dd1c1-47b3-03c1-d260-24b3c346a67e",
+  "name" : "title_color",
+  "display_width" : null,
+  "label" : "Title color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff",
+    "opacity" : 100
+  }
+} ]

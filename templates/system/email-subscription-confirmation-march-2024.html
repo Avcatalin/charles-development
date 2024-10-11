@@ -1,0 +1,28 @@
+<!--
+  templateType: email_subscriptions_confirmation_page
+  isAvailableForNewContent: true
+-->
+{% set template_css = "../css/templates/system.css" %}
+{% set pageTitle = "Subscription confirmation" %}
+{% set font_config = {
+  "Source Serif Pro": ["600"],
+  "Montserrat": ["400", "700"]
+} %}
+{% extends "system-base-march-2024.html" %}
+
+{% block body %}
+<section class="section-wrapper section-wrapper--centered section-wrapper--narrow">
+  <div class="container">
+
+    {% email_subscriptions_confirmation "email_subscriptions_confirmation"
+      extra_classes="email-subscription-confirmation",
+      email_heading_level="p"
+      header="",
+      unsubscribe_all_success={{ template_translations.subscription_confirmation_unsub_all_success.message }},
+      subscription_update_success={{ template_translations.subscription_confirmation_sub_update_success.message }},
+      subheader_text="<span>is good to go. Talk soon!</span>"
+    %}
+   
+  </div>
+</section>
+{% endblock body %}

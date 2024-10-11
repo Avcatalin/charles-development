@@ -1,0 +1,114 @@
+<!--
+  templateType: global_partial
+  label: Footer Testimonial
+-->
+<footer class="footer pt-8">
+  <div class="footer__container content-wrapper">
+
+    <div class="footer--cols flex flex-wrap -mx-4">
+      <div class="footer--col logo-col p-4 w-full tablet:w-4/12 desktop:w-2/12">
+        {% module_block module 'footer_col_1' path='@hubspot/logo' %}{% end_module_block %}
+      </div>
+
+      <div class="footer--col p-4 w-full tablet:w-4/12 desktop:w-2/12">
+        <h5 class="mb-4 text-base font-bold">
+          {% module_block module 'footer_col_2_title' path='@hubspot/text' %}
+          {% module_attribute 'value' %}Colum 2{% end_module_attribute %}
+          {% end_module_block %}
+        </h5>
+        {% module_block module 'footer_col_2' path='@hubspot/menu' %}{% end_module_block %}
+        {# {% module_block module 'footer_col_2' path='@hubspot/rich_text' %}
+          {% module_attribute 'html' %}Footer Column 2 Content{% end_module_attribute %}
+        {% end_module_block %} #}
+      </div>
+
+      <div class="footer--col p-4 w-full tablet:w-4/12 desktop:w-2/12">
+        <h5 class="mb-4 text-base font-bold">
+          {% module_block module 'footer_col_3_title' path='@hubspot/text' %}
+          {% module_attribute 'value' %}Colum 3{% end_module_attribute %}
+          {% end_module_block %}
+        </h5>
+        {% module_block module 'footer_col_3' path='@hubspot/menu' %}{% end_module_block %}
+      </div>
+
+      <div class="footer--col p-4 w-full tablet:w-4/12 desktop:w-2/12">
+        <h5 class="mb-4 text-base font-bold" text-base font-bold>
+          {% module_block module 'footer_col_4_title' path='@hubspot/text' %}
+          {% module_attribute 'value' %}Colum 4{% end_module_attribute %}
+          {% end_module_block %}
+        </h5>
+        {% module_block module 'footer_col_4' path='@hubspot/menu' %}{% end_module_block %}
+      </div>
+
+      <!--       <div class="footer--col p-4 w-full tablet:w-4/12 desktop:w-2/12">
+        <h5 class="mb-4 text-base font-bold">
+{#           {% module_block module 'footer_col_5_title' path='@hubspot/text' %} #}
+{#           {% module_attribute 'value' %}Colum 5{% end_module_attribute %} #}
+{#           {% end_module_block %} #}
+        </h5>
+{#         {% module_block module 'footer_col_5' path='@hubspot/menu' %}{% end_module_block %} #}
+      </div> -->
+
+      <div class="footer--col p-4 w-full tablet:w-4/12 desktop:w-2/12">
+        <h5 class="mb-4 text-base font-bold">
+          {% module_block module 'footer_col_6_title' path='@hubspot/text' %}
+          {% module_attribute 'value' %}Colum 6{% end_module_attribute %}
+          {% end_module_block %}
+        </h5>
+        {# {% module_block module 'footer_col_6' path='@hubspot/menu' %}{% end_module_block %} #}
+        {# Social follow section #}
+        {% module_block module 'footer_social' path='../../modules/social-follow',
+                    label='Social follow'
+                  %}
+        {% module_attribute 'social_link' is_json=True %}
+        [
+        {"social_account": "facebook-f"},
+        {"social_account": "linkedin-in"},
+        {"social_account": "twitter"},
+        {"social_account": "instagram"}
+        ]
+        {% end_module_attribute %}
+        {% end_module_block %}
+        {# End social follow section #}
+      </div>
+    </div>
+
+    <div class="footer--meta flex flex-wrap -mx-4 items-center mt-4">
+      <div class="p-4 w-1/2 text-left mobile:w-full">
+        <!-- 
+          {# Social follow section #}
+          {% module_block module 'footer_social' path='../../modules/social-follow',
+            label='Social follow'
+          %}
+            {% module_attribute 'social_link' is_json=True %}
+              [
+                {"social_account": "facebook-f"},
+                {"social_account": "linkedin-in"},
+                {"social_account": "twitter"},
+                {"social_account": "instagram"}
+              ]
+            {% end_module_attribute %}
+          {% end_module_block %}
+          {# End social follow section #} -->
+      </div>
+      <div class="p-4 w-1/2 text-right mobile:w-full mobile:text-left">
+        {# Copyright information section #}
+        <div class="footer__copyright text-xs" style="opacity: 0.6;">
+          {% module_block module 'footer_copyright_text' path='@hubspot/text' %}
+          {% module_attribute 'value' %}© {{ year }} All rights reserved.{% end_module_attribute %}
+          {% end_module_block %}
+        </div>
+        {# End copyright information section #}
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['SLScoutObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                            })(window,document,'script','https://scout-cdn.salesloft.com/sl.js','slscout');
+    slscout(["init", "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0IjoxMTA0NjF9.TIrl0XOBoO5Q7by9qEEGRc_Kx-9g1QiVRvB3OythqIs"]);
+  </script>
+</footer>

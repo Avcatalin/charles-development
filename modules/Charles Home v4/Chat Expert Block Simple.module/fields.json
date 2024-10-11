@@ -1,0 +1,121 @@
+[ {
+  "id" : "31cbc2a7-9520-dbd9-4dac-938ccb9394ed",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Chat Heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p class=\"title\">Your expert <strong>One <span>click</span> away</strong></p>\n<p class=\"description\">charles helps brands to achieve measurable, profitable and repeatable results with automated WhatsApp campaigns and makes it easy to integrate shop systems or email marketing</p>"
+}, {
+  "id" : "38099340-402f-fdf0-8eb2-6175bb4e3d36",
+  "name" : "book_demo_button",
+  "display_width" : null,
+  "label" : "Book Demo Button",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : 41001952809,
+      "href" : null,
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "07e685c5-e769-cad3-4243-d531bf667629",
+  "name" : "person",
+  "display_width" : null,
+  "label" : "Person",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/chat-expert-person.png",
+    "alt" : "chat-expert-person",
+    "loading" : "lazy",
+    "width" : 206,
+    "height" : 227,
+    "max_width" : 206,
+    "max_height" : 227
+  }
+}, {
+  "id" : "c68126e4-5821-b550-3c1c-6c678d27c8d2",
+  "name" : "chat_title",
+  "display_width" : null,
+  "label" : "Chat title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Book a demo"
+}, {
+  "id" : "31424ff7-e3e4-1cf1-411d-a4aabfade463",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6cff447c-3e81-6255-631b-63402479ade9",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "d8cbf8a1-4195-41ce-4df3-b6b1c2c56f13",
+    "name" : "align_center",
+    "display_width" : null,
+    "label" : "Align Center",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { },
+    "align_center" : false
+  }
+}, {
+  "id" : "b0184b2f-02e3-e4d9-65ef-26c099bb4f40",
+  "name" : "book_demo_label",
+  "display_width" : null,
+  "label" : "Book demo label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "chat"
+}, {
+  "id" : "f1d14e32-5b5f-4e71-f431-d8f7676fb5c0",
+  "name" : "container_width",
+  "display_width" : null,
+  "label" : "Container Width",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "600px"
+} ]

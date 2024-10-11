@@ -1,0 +1,1135 @@
+<!-- Main Header inner content -->
+<div class="header-inner-wrapper">
+  <!-- Charles Main Logo -->
+  <div class="charles-main-logo d-none">
+    <!-- Logo URL -->
+    {% set href = module.logo_block.logo_url.url.href %}
+    {% if module.logo_block.logo_url.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}"
+       {% if module.logo_block.logo_url.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.logo_block.logo_url.rel %}rel="{{ module.logo_block.logo_url.rel }}"{% endif %}
+       >
+      <!-- Logo Image -->
+      {% if module.logo_block.logo_image.src %}
+      {% set sizeAttrs = 'width="{{ module.logo_block.logo_image.width }}" height="{{ module.logo_block.logo_image.height }}"' %}
+      {% if module.logo_block.logo_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.logo_block.logo_image.width }}" height="{{ module.logo_block.logo_image.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.logo_block.logo_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.logo_block.logo_image.max_width }}" height="{{ module.logo_block.logo_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.logo_block.logo_image.loading != 'disabled' ? 'loading="{{ module.logo_block.logo_image.loading }}"' : '' %}
+      <img src="{{ module.logo_block.logo_image.src }}" alt="{{ module.logo_block.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </a>
+  </div>
+
+  <!-- Mega Menu Block -->
+  <div class="charles-mega-menu d-none">
+    <ul>
+      <!-- Product Mega Menu -->
+      <li>
+        <a class="mega-item product-link" data-target="mega-product">
+          {{ module.product_menu_block.product_label }}
+          <!-- Arrow -->
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.722656 1.49609L5.76241 6.53585L10.8022 1.49609" stroke="#221F20" stroke-width="1.29594" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <!-- Mega Menu Product -->
+        <div class="product mega-menu" id="mega-product">
+          <div class="inner-mega-menu">
+            <!-- Block One -->
+            <div class="block-one">
+              <!-- Badge Block -->
+              <div class="badge-group">
+                <div class="badge" style="background-color: {{ module.product_menu_block.badge_group.badge_background_color.css }}">
+                  <span style="color: {{ module.product_menu_block.badge_group.badge_text_color.css }}">{{ module.product_menu_block.badge_group.badge_label_section_one }}</span>
+                </div>
+              </div>
+
+              <!-- Image and Content -->
+              <div class="product-content">
+                <!-- Image -->
+                <div class="content-image">
+                  <div class="image-wrapper">
+                    {% if module.product_menu_block.block_one_top_content.block_one_image.src %}
+                    {% set sizeAttrs = 'width="{{ module.product_menu_block.block_one_top_content.block_one_image.width }}" height="{{ module.product_menu_block.block_one_top_content.block_one_image.height }}"' %}
+                    {% if module.product_menu_block.block_one_top_content.block_one_image.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ module.product_menu_block.block_one_top_content.block_one_image.width }}" height="{{ module.product_menu_block.block_one_top_content.block_one_image.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.product_menu_block.block_one_top_content.block_one_image.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.product_menu_block.block_one_top_content.block_one_image.max_width }}" height="{{ module.product_menu_block.block_one_top_content.block_one_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.product_menu_block.block_one_top_content.block_one_image.loading != 'disabled' ? 'loading="{{ module.product_menu_block.block_one_top_content.block_one_image.loading }}"' : '' %}
+                    <img src="{{ module.product_menu_block.block_one_top_content.block_one_image.src }}" alt="{{ module.product_menu_block.block_one_top_content.block_one_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                  </div>
+                </div>
+                <!-- Content -->
+                <div class="content-text">
+                  {{ module.product_menu_block.block_one_top_content.block_one_content }}
+                  {% set href = module.product_menu_block.block_one_top_content.block_one_button_url.url.href %}
+                  {% if module.product_menu_block.block_one_top_content.block_one_button_url.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}" class="charles-btn-general"
+                     {% if module.product_menu_block.block_one_top_content.block_one_button_url.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if module.product_menu_block.block_one_top_content.block_one_button_url.rel %}rel="{{ module.product_menu_block.block_one_top_content.block_one_button_url.rel }}"{% endif %}
+                     >
+                    {{ module.product_menu_block.block_one_top_content.block_one_button_label }}
+                    <!-- Arrow SVG -->
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Steps Repeater Group -->
+              <div class="charles-success-steps">
+                <!-- Initial steps repeater -->
+                {% for item in module.product_menu_block.charles_steps_repeater %}
+                {% set href = item.step_link.url.href %}
+                {% if item.step_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}" class="step-group {{ item.custom_class }}"
+                   {% if item.step_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if item.step_link.rel %}rel="{{ item.step_link.rel }}"{% endif %}
+                   >
+                  <div class="step-icon-title">
+                    {% if item.step_icon.src %}
+                    {% set sizeAttrs = 'width="{{ item.step_icon.width }}" height="{{ item.step_icon.height }}"' %}
+                    {% if item.step_icon.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ item.step_icon.width }}" height="{{ item.step_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.step_icon.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ item.step_icon.max_width }}" height="{{ item.step_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.step_icon.loading != 'disabled' ? 'loading="{{ item.step_icon.loading }}"' : '' %}
+                    <img src="{{ item.step_icon.src }}" alt="{{ item.step_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                    {{ item.step_title }}                    
+                  </div>
+                  <div class="step-content">
+                    <div class="content-text">
+                      {{ item.stept_content }}
+                    </div>                      
+                    <!-- Hidden Button -->
+                    <span class="hidden-button">
+                      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+                {% endfor %}
+              </div>
+
+              <!-- Typie Background -->
+              {% if module.product_menu_block.type_background.src %}
+              {% set sizeAttrs = 'width="{{ module.product_menu_block.type_background.width }}" height="{{ module.product_menu_block.type_background.height }}"' %}
+              {% if module.product_menu_block.type_background.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.product_menu_block.type_background.width }}" height="{{ module.product_menu_block.type_background.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.product_menu_block.type_background.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.product_menu_block.type_background.max_width }}" height="{{ module.product_menu_block.type_background.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.product_menu_block.type_background.loading != 'disabled' ? 'loading="{{ module.product_menu_block.type_background.loading }}"' : '' %}
+              <img src="{{ module.product_menu_block.type_background.src }}" alt="{{ module.product_menu_block.type_background.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="typie-background">
+              {% endif %}
+            </div>
+            <!-- Block One -->
+            <div class="block-two">
+              <!-- Badge Block -->
+              <div class="badge-group">
+                <div class="badge" style="background-color: {{ module.product_menu_block.block_two.badge_group.background_color.css }}">
+                  <span style="color: {{ module.product_menu_block.block_two.badge_group.badge_text_color.css }}">{{ module.product_menu_block.block_two.badge_group.badge_label }}</span>
+                </div>
+              </div>            
+
+              <!-- Image Block -->
+              <div class="image-wrapper">
+                {% if module.product_menu_block.block_two.block_two_image.src %}
+                {% set sizeAttrs = 'width="{{ module.product_menu_block.block_two.block_two_image.width }}" height="{{ module.product_menu_block.block_two.block_two_image.height }}"' %}
+                {% if module.product_menu_block.block_two.block_two_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.product_menu_block.block_two.block_two_image.width }}" height="{{ module.product_menu_block.block_two.block_two_image.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.product_menu_block.block_two.block_two_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.product_menu_block.block_two.block_two_image.max_width }}" height="{{ module.product_menu_block.block_two.block_two_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.product_menu_block.block_two.block_two_image.loading != 'disabled' ? 'loading="{{ module.product_menu_block.block_two.block_two_image.loading }}"' : '' %}
+                <img src="{{ module.product_menu_block.block_two.block_two_image.src }}" alt="{{ module.product_menu_block.block_two.block_two_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <!-- Content Block -->
+              <div class="content-text">
+                {{ module.product_menu_block.block_two.block_two_content }}
+
+                <!-- Button Group -->
+                {% set href = module.product_menu_block.block_two.button_link.url.href %}
+                {% if module.product_menu_block.block_two.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}" class="charles-btn-general"
+                   {% if module.product_menu_block.block_two.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if module.product_menu_block.block_two.button_link.rel %}rel="{{ module.product_menu_block.block_two.button_link.rel }}"{% endif %}
+                   >
+                  {{ module.product_menu_block.block_two.button_label }}
+                  <!-- Arrow SVG -->
+                  <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a class="mega-item why-charles-link" data-target="mega-why-charles">
+          {{ module.why_charles_menu_block.why_charles_label }}
+          <!-- Arrow -->
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.722656 1.49609L5.76241 6.53585L10.8022 1.49609" stroke="#221F20" stroke-width="1.29594" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <!-- Mega Menu -->
+        <div class="why-charles mega-menu" id="mega-why-charles">
+          <div class="inner-mega-menu">
+            <!-- Block One -->
+            <div class="block-one">
+              <!-- Badge Block -->
+              <div class="badge-group">
+                <div class="badge" style="background-color: {{ module.why_charles_menu_block.badge_group.badge_background_color.css }}">
+                  <span style="color: {{ module.why_charles_menu_block.badge_group.badge_text_color.css }}">{{ module.why_charles_menu_block.badge_group.badge_label }}</span>
+                </div>
+              </div>
+
+              <!-- Image and Content -->
+              <div class="product-content">
+                <!-- Content -->
+                {{ module.why_charles_menu_block.block_one_group.title }}
+              </div>
+
+              {% for item in module.why_charles_menu_block.block_one_group.goal_repeater %}
+              <!-- Steps Repeater Group -->
+              <div class="charles-benefit-steps">
+                <!-- Benefits Steps -->
+                <div class="charles-benefit">
+                  <!-- Image Wrapper -->
+                  {% if item.goal_image.src %}
+                  {% set sizeAttrs = 'width="{{ item.goal_image.width }}" height="{{ item.goal_image.height }}"' %}
+                  {% if item.goal_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.goal_image.width }}" height="{{ item.goal_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.goal_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.goal_image.max_width }}" height="{{ item.goal_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.goal_image.loading != 'disabled' ? 'loading="{{ item.goal_image.loading }}"' : '' %}
+                  <img src="{{ item.goal_image.src }}" alt="{{ item.goal_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                  <div class="benefit-content">
+                    <!-- Title -->
+                    <div class="title">
+                      {{ item.goal_text }}
+                    </div>
+                    <!-- Button Benefit -->
+                    {% set href = item.goal_url.url.href %}
+                    {% if item.goal_url.url.type is equalto "EMAIL_ADDRESS" %}
+                    {% set href = "mailto:" + href %}
+                    {% endif %}
+                    <a href="{{ href }}" class="charles-btn-general"
+                       {% if item.goal_url.open_in_new_tab %}target="_blank"{% endif %}
+                       {% if item.goal_url.rel %}rel="{{ item.goal_url.rel }}"{% endif %}
+                       >
+                      {{ item.goal_button_label }}
+                      <!-- Arrow SVG -->
+                      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+            <!-- Block Two -->
+            <div class="block-two">
+              <!-- Badge Block -->
+              <div class="badge-group">
+                <div class="badge" style="background-color: {{ module.why_charles_menu_block.block_two_group.badge_group.badge_background_color.css }}">
+                  <span style="color: {{ module.why_charles_menu_block.block_two_group.badge_group.badge_label_color.css }}">{{ module.why_charles_menu_block.block_two_group.badge_group.badge_label }}</span>
+                </div>
+              </div>     
+
+              <!-- Image Block -->
+              <div class="image-wrapper">
+                {% if module.why_charles_menu_block.block_two_group.team_image.src %}
+                {% set sizeAttrs = 'width="{{ module.why_charles_menu_block.block_two_group.team_image.width }}" height="{{ module.why_charles_menu_block.block_two_group.team_image.height }}"' %}
+                {% if module.why_charles_menu_block.block_two_group.team_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.why_charles_menu_block.block_two_group.team_image.width }}" height="{{ module.why_charles_menu_block.block_two_group.team_image.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.why_charles_menu_block.block_two_group.team_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.why_charles_menu_block.block_two_group.team_image.max_width }}" height="{{ module.why_charles_menu_block.block_two_group.team_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.why_charles_menu_block.block_two_group.team_image.loading != 'disabled' ? 'loading="{{ module.why_charles_menu_block.block_two_group.team_image.loading }}"' : '' %}
+                <img src="{{ module.why_charles_menu_block.block_two_group.team_image.src }}" alt="{{ module.why_charles_menu_block.block_two_group.team_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <!-- Content Block -->
+              <div class="content-text why-charles">
+                <!-- Title & Content -->
+                {{ module.why_charles_menu_block.block_two_group.content }}
+              </div>
+
+              <!-- Expert CTA Block -->
+              <div class="mobile-chat-button">
+                {% set href = module.why_charles_menu_block.block_two_group.expert_group_cta.expert_cta_link.url.href %}
+                {% if module.why_charles_menu_block.block_two_group.expert_group_cta.expert_cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.why_charles_menu_block.block_two_group.expert_group_cta.expert_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if module.why_charles_menu_block.block_two_group.expert_group_cta.expert_cta_link.rel %}rel="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_cta_link.rel }}"{% endif %}
+                   >
+                  <div class="nav-wrapper nav-item-six">  
+                    <div class="left-content">
+                      <!-- Icon -->
+                      {% if module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.src %}
+                      {% set sizeAttrs = 'width="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.width }}" height="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.height }}"' %}
+                      {% if module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.width }}" height="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.max_width }}" height="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                      {% set loadingAttr = module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.loading != 'disabled' ? 'loading="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.loading }}"' : '' %}
+                      <img src="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.src }}" alt="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                      {% endif %}
+                      <!-- Content -->
+                      <h4>{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_label }}</h4>
+                    </div>
+                    <span class="nav-btn">
+                      {{ module.why_charles_menu_block.block_two_group.expert_group_cta.button_label }}
+                    </span>
+                    <i></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Block Three -->
+            <div class="block-three">
+              <!-- Badge Block -->
+              <div class="badge-group">
+                <div class="badge" style="background-color: {{ module.why_charles_menu_block.block_three_group.badge_group.badge_background_color.css }}">
+                  <span style="color: {{ module.why_charles_menu_block.block_three_group.badge_group.badge_label_color.css }}">{{ module.why_charles_menu_block.block_three_group.badge_group.badge_label }}</span>
+                </div>
+              </div>  
+
+              <!-- Title Block -->
+              <div class="content-text">
+                {{ module.why_charles_menu_block.block_three_group.title }}
+              </div>
+
+              <!-- Customers List -->
+              <div class="customers-block">
+                <!-- Customer Block -->
+                {% for item in module.why_charles_menu_block.block_three_group.customers_repeater %}
+                {% set href = item.client_page_url.url.href %}
+                {% if item.client_page_url.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}" class="customer-wrapper"
+                   {% if item.client_page_url.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if item.client_page_url.rel %}rel="{{ item.client_page_url.rel }}"{% endif %}
+                   >
+                  <div class="customer">
+                    <div class="client-name">
+                      <!-- Image -->
+                      {% if item.client_logo.src %}
+                      {% set sizeAttrs = 'width="{{ item.client_logo.width }}" height="{{ item.client_logo.height }}"' %}
+                      {% if item.client_logo.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ item.client_logo.width }}" height="{{ item.client_logo.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif item.client_logo.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item.client_logo.max_width }}" height="{{ item.client_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                      {% set loadingAttr = item.client_logo.loading != 'disabled' ? 'loading="{{ item.client_logo.loading }}"' : '' %}
+                      <img src="{{ item.client_logo.src }}" alt="{{ item.client_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                      {% endif %}
+
+                      <div class="client-text">
+                        <!-- Text -->
+                        {{ item.client_text }}
+                      </div>
+                    </div>
+
+                    <!-- Button Client -->
+                    <span class="customer-btn charles-btn-general">
+                      <!-- Arrow SVG -->
+                      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+                {% endfor %}
+              </div>
+
+              <!-- Clients Logos -->
+              <div class="clients-logos">
+                <!-- Logos List -->
+                {% for item in module.why_charles_menu_block.block_three_group.partners_repeater %}
+                {% if item.partners_logo.src %}
+                {% set sizeAttrs = 'width="{{ item.partners_logo.width }}" height="{{ item.partners_logo.height }}"' %}
+                {% if item.partners_logo.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ item.partners_logo.width }}" height="{{ item.partners_logo.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif item.partners_logo.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ item.partners_logo.max_width }}" height="{{ item.partners_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = item.partners_logo.loading != 'disabled' ? 'loading="{{ item.partners_logo.loading }}"' : '' %}
+                <img src="{{ item.partners_logo.src }}" alt="{{ item.partners_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                {% endfor %}
+              </div>
+
+              <!-- Block CTA -->
+              <div class="block-cta-button">
+                {% set href = module.why_charles_menu_block.block_three_group.block_button_url.url.href %}
+                {% if module.why_charles_menu_block.block_three_group.block_button_url.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}" class="charles-btn-general"
+                   {% if module.why_charles_menu_block.block_three_group.block_button_url.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if module.why_charles_menu_block.block_three_group.block_button_url.rel %}rel="{{ module.why_charles_menu_block.block_three_group.block_button_url.rel }}"{% endif %}
+                   >
+                  {{ module.why_charles_menu_block.block_three_group.block_button_label }}
+                  <!-- Arrow SVG -->
+                  <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a class="mega-item resources-link" data-target="mega-resources">
+          {{ module.resources_menu_block.resources_label }}
+          <!-- Arrow -->
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.722656 1.49609L5.76241 6.53585L10.8022 1.49609" stroke="#221F20" stroke-width="1.29594" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <!-- Mega Menu -->
+        <div class="resources mega-menu" id="mega-resources">
+          <div class="inner-mega-menu">
+            <!-- Block One -->
+            <div class="block-one">
+              <!-- Badge Block -->
+              <div class="badge-group">
+                <div class="badge" style="background-color: {{ module.resources_menu_block.block_one_group.badge_group.badge_background_color.css }}">
+                  <span style="color: {{ module.resources_menu_block.block_one_group.badge_group.badge_label_color.css }}">{{ module.resources_menu_block.block_one_group.badge_group.badge_label }}</span>
+                </div>
+              </div>
+
+              <!-- Image and Content -->
+              <div class="top-content">
+                <!-- Content -->
+                {{ module.resources_menu_block.block_one_group.content }}
+              </div>
+
+              <!-- Steps Repeater Group -->
+              <div class="resources-block">
+                {% for item in module.resources_menu_block.block_one_group.resources_repeater %}
+                {% set href = item.resource_link.url.href %}
+                {% if item.resource_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}" class="resource"
+                   {% if item.resource_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if item.resource_link.rel %}rel="{{ item.resource_link.rel }}"{% endif %}
+                   >
+                  <div class="icon">
+                    {% if item.resource_image.src %}
+                    {% set sizeAttrs = 'width="{{ item.resource_image.width }}" height="{{ item.resource_image.height }}"' %}
+                    {% if item.resource_image.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ item.resource_image.width }}" height="{{ item.resource_image.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.resource_image.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ item.resource_image.max_width }}" height="{{ item.resource_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.resource_image.loading != 'disabled' ? 'loading="{{ item.resource_image.loading }}"' : '' %}
+                    <img src="{{ item.resource_image.src }}" alt="{{ item.resource_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                  </div>
+                  <div class="content">
+                    {{ item.resource_content }}
+                  </div>
+                </a>
+                {% endfor %}
+              </div>
+
+            </div>
+            <!-- Block Two -->
+            <div class="block-two">
+              <!-- Badge Block -->
+              <div class="badge-group">
+                <div class="badge" style="background-color: {{ module.resources_menu_block.block_two_group.badge_group.badge_background_color.css }}">
+                  <span style="color: {{ module.resources_menu_block.block_two_group.badge_group.badge_label_color.css }}">{{ module.resources_menu_block.block_two_group.badge_group.badge_label }}</span>
+                </div>
+              </div>
+
+              <!-- Main Title -->
+              <div class="block-title">
+                {{ module.resources_menu_block.block_two_group.title }}
+              </div>
+              <!-- Image Block -->
+              <div class="image-wrapper">
+                {% if module.resources_menu_block.block_two_group.rpc_image.src %}
+                {% set sizeAttrs = 'width="{{ module.resources_menu_block.block_two_group.rpc_image.width }}" height="{{ module.resources_menu_block.block_two_group.rpc_image.height }}"' %}
+                {% if module.resources_menu_block.block_two_group.rpc_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.resources_menu_block.block_two_group.rpc_image.width }}" height="{{ module.resources_menu_block.block_two_group.rpc_image.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.resources_menu_block.block_two_group.rpc_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.resources_menu_block.block_two_group.rpc_image.max_width }}" height="{{ module.resources_menu_block.block_two_group.rpc_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.resources_menu_block.block_two_group.rpc_image.loading != 'disabled' ? 'loading="{{ module.resources_menu_block.block_two_group.rpc_image.loading }}"' : '' %}
+                <img src="{{ module.resources_menu_block.block_two_group.rpc_image.src }}" alt="{{ module.resources_menu_block.block_two_group.rpc_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <!-- Content Block -->
+              <div class="content-text">
+                <!-- Title & Content -->
+                {{ module.resources_menu_block.block_two_group.guide_content }}
+
+                <!-- Button CTA -->
+                {% set href = module.resources_menu_block.block_two_group.blog_button.url.href %}
+                {% if module.resources_menu_block.block_two_group.blog_button.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}" class="charles-btn-general"
+                   {% if module.resources_menu_block.block_two_group.blog_button.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if module.resources_menu_block.block_two_group.blog_button.rel %}rel="{{ module.resources_menu_block.block_two_group.blog_button.rel }}"{% endif %}
+                   >
+                  {{ module.resources_menu_block.block_two_group.button_label }}
+                  <!-- Arrow SVG -->
+                  <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Block Three -->
+            <div class="block-three">
+              <!-- Badge Block -->
+              <div class="badge-group">
+                <div class="badge" style="background-color: {{ module.resources_menu_block.block_three_group.badge_group.badge_background_color.css }}">
+                  <span style="color: {{ module.resources_menu_block.block_three_group.badge_group.badge_label_color.css }}">{{ module.resources_menu_block.block_three_group.badge_group.badge_label }}</span>
+                </div>
+              </div>  
+
+              <!-- Title Block -->
+              <div class="content-text">
+                <!-- Title -->
+                <div class="title">
+                  {{ module.resources_menu_block.block_three_group.title }}
+                </div>
+
+                <div class="image-wrapper">
+                  <!-- Image -->
+                  {% if module.resources_menu_block.block_three_group.webinar_image.src %}
+                  {% set sizeAttrs = 'width="{{ module.resources_menu_block.block_three_group.webinar_image.width }}" height="{{ module.resources_menu_block.block_three_group.webinar_image.height }}"' %}
+                  {% if module.resources_menu_block.block_three_group.webinar_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.resources_menu_block.block_three_group.webinar_image.width }}" height="{{ module.resources_menu_block.block_three_group.webinar_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.resources_menu_block.block_three_group.webinar_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.resources_menu_block.block_three_group.webinar_image.max_width }}" height="{{ module.resources_menu_block.block_three_group.webinar_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.resources_menu_block.block_three_group.webinar_image.loading != 'disabled' ? 'loading="{{ module.resources_menu_block.block_three_group.webinar_image.loading }}"' : '' %}
+                  <img src="{{ module.resources_menu_block.block_three_group.webinar_image.src }}" alt="{{ module.resources_menu_block.block_three_group.webinar_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="webinar-img">
+                  {% endif %}
+                </div>
+
+                <div class="content">
+                  <!-- Content & Title -->
+                  {{ module.resources_menu_block.block_three_group.content }}
+
+                  <!-- Button CTA -->
+                  {% set href = module.resources_menu_block.block_three_group.button_link.url.href %}
+                  {% if module.resources_menu_block.block_three_group.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}" class="charles-btn-general"
+                     {% if module.resources_menu_block.block_three_group.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if module.resources_menu_block.block_three_group.button_link.rel %}rel="{{ module.resources_menu_block.block_three_group.button_link.rel }}"{% endif %}
+                     >
+                    {{ module.resources_menu_block.block_three_group.button_label }}
+                    <!-- Arrow SVG -->
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile navigation -->
+  <div class="mobile-menu-navigation">
+    <!-- News Section (old top bar news) -->
+    <div class="charles-news-box">
+      <div class="news-inner">
+        <!-- News Content -->
+        {% set href = module.news_block.news_url.url.href %}
+        {% if module.news_block.news_url.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if module.news_block.news_url.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.news_block.news_url.rel %}rel="{{ module.news_block.news_url.rel }}"{% endif %}
+           >
+          {{ module.news_block.news_content }}        
+        </a>
+      </div>
+    </div>
+    <div class="top-header">
+      <!-- Logo -->
+      <div class="charles-main-logo">
+        <!-- Logo URL -->
+        {% set href = module.logo_block.logo_url.url.href %}
+        {% if module.logo_block.logo_url.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if module.logo_block.logo_url.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.logo_block.logo_url.rel %}rel="{{ module.logo_block.logo_url.rel }}"{% endif %}
+           >
+          <!-- Logo Image -->
+          {% if module.logo_block.logo_image.src %}
+          {% set sizeAttrs = 'width="{{ module.logo_block.logo_image.width }}" height="{{ module.logo_block.logo_image.height }}"' %}
+          {% if module.logo_block.logo_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.logo_block.logo_image.width }}" height="{{ module.logo_block.logo_image.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.logo_block.logo_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.logo_block.logo_image.max_width }}" height="{{ module.logo_block.logo_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.logo_block.logo_image.loading != 'disabled' ? 'loading="{{ module.logo_block.logo_image.loading }}"' : '' %}
+          <img src="{{ module.logo_block.logo_image.src }}" alt="{{ module.logo_block.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </a>
+      </div>
+
+      <!-- Menu Trigger -->
+      <div class="page-header--burger-menu desktop:hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div> 
+    </div>
+
+    <div class="inner-mega-menu">
+      <div class="swiper mobile-nav">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- Intro Panel -->
+            <div class="mobile-intro-panel">              
+              <!-- Main Navigation -->
+              <div class="mobile-main-navigation">
+                <!-- Product -->
+                <div class="product-button">
+                  <a href="#product-panel">
+                    <!-- Title -->
+                    <p class="title">{{ module.mobile_panels.main_panel.product_group.product_label }}</p>
+                    <!-- Image -->
+                    <div class="image-block">
+                      {% if module.mobile_panels.main_panel.product_group.image.src %}
+                      {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.product_group.image.width }}" height="{{ module.mobile_panels.main_panel.product_group.image.height }}"' %}
+                      {% if module.mobile_panels.main_panel.product_group.image.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.product_group.image.width }}" height="{{ module.mobile_panels.main_panel.product_group.image.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif module.mobile_panels.main_panel.product_group.image.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.product_group.image.max_width }}" height="{{ module.mobile_panels.main_panel.product_group.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                      {% set loadingAttr = module.mobile_panels.main_panel.product_group.image.loading != 'disabled' ? 'loading="{{ module.mobile_panels.main_panel.product_group.image.loading }}"' : '' %}
+                      <img src="{{ module.mobile_panels.main_panel.product_group.image.src }}" alt="{{ module.mobile_panels.main_panel.product_group.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                      {% endif %}
+                    </div>
+                    <!-- Button -->
+                    <div class="button-redirect">
+                      <svg width="57" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="57" height="40" rx="20" fill="white"/>
+                        <path d="M30.8438 20.2812C31 20.125 31 19.9062 30.8438 19.75L26.2812 15.125C26.125 14.9688 25.875 14.9688 25.75 15.125L25.125 15.75C24.9688 15.875 24.9688 16.125 25.125 16.2812L28.8125 20L25.125 23.75C24.9688 23.9062 24.9688 24.125 25.125 24.2812L25.75 24.9062C25.875 25.0625 26.125 25.0625 26.2812 24.9062L30.8438 20.2812Z" fill="#221F20"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <!-- Why Charles -->
+                <div class="why-charles-button">
+                  <a href="#why-charles-panel">
+                    <!-- Title -->
+                    <span class="title">{{ module.mobile_panels.main_panel.why_charles_group.why_charles_label }}</span>
+                    <!-- Button -->
+                    <div class="button-redirect">
+                      <svg width="57" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="57" height="40" rx="20" fill="#221F20"/>
+                        <path d="M30.8438 20.2812C31 20.125 31 19.9062 30.8438 19.75L26.2812 15.125C26.125 14.9688 25.875 14.9688 25.75 15.125L25.125 15.75C24.9688 15.875 24.9688 16.125 25.125 16.2812L28.8125 20L25.125 23.75C24.9688 23.9062 24.9688 24.125 25.125 24.2812L25.75 24.9062C25.875 25.0625 26.125 25.0625 26.2812 24.9062L30.8438 20.2812Z" fill="white"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <!-- Resources -->
+                <div class="resources-button">
+                  <a href="#resources-panel">
+                    <!-- Image -->
+                    <div class="image-block">
+                      {% if module.mobile_panels.main_panel.resources_group.icon.src %}
+                      {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.resources_group.icon.width }}" height="{{ module.mobile_panels.main_panel.resources_group.icon.height }}"' %}
+                      {% if module.mobile_panels.main_panel.resources_group.icon.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.resources_group.icon.width }}" height="{{ module.mobile_panels.main_panel.resources_group.icon.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif module.mobile_panels.main_panel.resources_group.icon.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.resources_group.icon.max_width }}" height="{{ module.mobile_panels.main_panel.resources_group.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                      {% set loadingAttr = module.mobile_panels.main_panel.resources_group.icon.loading != 'disabled' ? 'loading="{{ module.mobile_panels.main_panel.resources_group.icon.loading }}"' : '' %}
+                      <img src="{{ module.mobile_panels.main_panel.resources_group.icon.src }}" alt="{{ module.mobile_panels.main_panel.resources_group.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                      {% endif %}
+
+                      <!-- Title -->
+                      <span class="title">{{ module.mobile_panels.main_panel.resources_group.resources_label }}</span>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="button-redirect">
+                      <svg width="57" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="57" height="40" rx="20" fill="#FFF171"/>
+                        <path d="M30.8438 20.2812C31 20.125 31 19.9062 30.8438 19.75L26.2812 15.125C26.125 14.9688 25.875 14.9688 25.75 15.125L25.125 15.75C24.9688 15.875 24.9688 16.125 25.125 16.2812L28.8125 20L25.125 23.75C24.9688 23.9062 24.9688 24.125 25.125 24.2812L25.75 24.9062C25.875 25.0625 26.125 25.0625 26.2812 24.9062L30.8438 20.2812Z" fill="#221F20"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <!-- Test Whatsapp -->
+                <div class="test-wa-button">
+                  {% set href = module.mobile_panels.main_panel.test_wa_group.wa_link.url.href %}
+                  {% if module.mobile_panels.main_panel.test_wa_group.wa_link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}"
+                     {% if module.mobile_panels.main_panel.test_wa_group.wa_link.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if module.mobile_panels.main_panel.test_wa_group.wa_link.rel %}rel="{{ module.mobile_panels.main_panel.test_wa_group.wa_link.rel }}"{% endif %}
+                     >
+                    <!-- Image -->
+                    <div class="image-block">
+                      {% if module.mobile_panels.main_panel.test_wa_group.icon.src %}
+                      {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.test_wa_group.icon.width }}" height="{{ module.mobile_panels.main_panel.test_wa_group.icon.height }}"' %}
+                      {% if module.mobile_panels.main_panel.test_wa_group.icon.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.test_wa_group.icon.width }}" height="{{ module.mobile_panels.main_panel.test_wa_group.icon.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif module.mobile_panels.main_panel.test_wa_group.icon.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.test_wa_group.icon.max_width }}" height="{{ module.mobile_panels.main_panel.test_wa_group.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                      {% set loadingAttr = module.mobile_panels.main_panel.test_wa_group.icon.loading != 'disabled' ? 'loading="{{ module.mobile_panels.main_panel.test_wa_group.icon.loading }}"' : '' %}
+                      <img src="{{ module.mobile_panels.main_panel.test_wa_group.icon.src }}" alt="{{ module.mobile_panels.main_panel.test_wa_group.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                      {% endif %}
+                    </div>
+                    <!-- Title -->
+                    <span class="title">{{ module.mobile_panels.main_panel.test_wa_group.title }}</span>
+                    <!-- Button -->
+                    <div class="button-redirect">
+                      <svg width="57" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="57" height="40" rx="20" fill="white"/>
+                        <path d="M30.8438 20.2812C31 20.125 31 19.9062 30.8438 19.75L26.2812 15.125C26.125 14.9688 25.875 14.9688 25.75 15.125L25.125 15.75C24.9688 15.875 24.9688 16.125 25.125 16.2812L28.8125 20L25.125 23.75C24.9688 23.9062 24.9688 24.125 25.125 24.2812L25.75 24.9062C25.875 25.0625 26.125 25.0625 26.2812 24.9062L30.8438 20.2812Z" fill="#221F20"/>
+                      </svg>
+                    </div>
+                  </a>
+                </div>         
+              </div>
+              <!-- Demo Wrapper -->
+              <div class="get-demo-button">
+                {% set href = module.mobile_panels.main_panel.get_demo_group.demo_link.url.href %}
+                {% if module.mobile_panels.main_panel.get_demo_group.demo_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.mobile_panels.main_panel.get_demo_group.demo_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if module.mobile_panels.main_panel.get_demo_group.demo_link.rel %}rel="{{ module.mobile_panels.main_panel.get_demo_group.demo_link.rel }}"{% endif %}
+                   >
+                  {{ module.mobile_panels.main_panel.get_demo_group.get_demo }}
+                </a>
+              </div>
+
+              <!-- Blog Section Redirect -->
+              <div class="blog-mobile-block">
+                <!-- Image Block -->
+                <div class="image-block">
+                  {% if module.mobile_panels.main_panel.mobile_blog_image.src %}
+                  {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.mobile_blog_image.width }}" height="{{ module.mobile_panels.main_panel.mobile_blog_image.height }}"' %}
+                  {% if module.mobile_panels.main_panel.mobile_blog_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.mobile_blog_image.width }}" height="{{ module.mobile_panels.main_panel.mobile_blog_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.mobile_panels.main_panel.mobile_blog_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.mobile_blog_image.max_width }}" height="{{ module.mobile_panels.main_panel.mobile_blog_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.mobile_panels.main_panel.mobile_blog_image.loading != 'disabled' ? 'loading="{{ module.mobile_panels.main_panel.mobile_blog_image.loading }}"' : '' %}
+                  <img src="{{ module.mobile_panels.main_panel.mobile_blog_image.src }}" alt="{{ module.mobile_panels.main_panel.mobile_blog_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+                <div class="content-block">
+                  <!-- Text -->
+                  <p>{{ module.mobile_panels.main_panel.content }}</p>
+                  <!-- Button Link -->
+                  {% set href = module.mobile_panels.main_panel.button_url.url.href %}
+                  {% if module.mobile_panels.main_panel.button_url.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}" class="charles-btn-general"
+                     {% if module.mobile_panels.main_panel.button_url.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if module.mobile_panels.main_panel.button_url.rel %}rel="{{ module.mobile_panels.main_panel.button_url.rel }}"{% endif %}
+                     >
+                    {{ module.mobile_panels.main_panel.button_label }}
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product Slide Panel -->
+          <div class="swiper-slide" data-hash="product-panel">
+            <div class="mobile-product-menu">
+              <!-- Top Navigation -->
+              <div class="top-panel-nav">
+                <!-- Title Navigation -->
+                <div class="swiper-button-prev">
+                  <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.7793 16.9165L2.77739 9.53352L9.7793 2.15054" stroke="#221F20" stroke-width="3.77774" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <p>{{ module.product_menu_block.product_label }}</p>
+                <div class="swiper-button-next">
+                  <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.77344 16.9165L9.77535 9.53352L2.77344 2.15054" stroke="#221F20" stroke-width="3.77774" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+              <!-- Steps Repeater Group -->
+              <div class="charles-success-steps">
+                <!-- Initial steps repeater -->
+                {% for item in module.product_menu_block.charles_steps_repeater %}
+                {% set href = item.step_link.url.href %}
+                {% if item.step_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}" class="step-group {{ item.custom_class }}"
+                   {% if item.step_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if item.step_link.rel %}rel="{{ item.step_link.rel }}"{% endif %}
+                   >
+                  <div class="step-icon-title">
+                    {% if item.step_icon.src %}
+                    {% set sizeAttrs = 'width="{{ item.step_icon.width }}" height="{{ item.step_icon.height }}"' %}
+                    {% if item.step_icon.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ item.step_icon.width }}" height="{{ item.step_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.step_icon.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ item.step_icon.max_width }}" height="{{ item.step_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.step_icon.loading != 'disabled' ? 'loading="{{ item.step_icon.loading }}"' : '' %}
+                    <img src="{{ item.step_icon.src }}" alt="{{ item.step_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                    {{ item.step_title }}                    
+                  </div>
+                  <div class="step-content">                      
+                    <!-- Hidden Button -->
+                    <span class="hidden-button">
+                      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+                {% endfor %}
+              </div>
+              <!-- Bottom Image -->
+              <div class="product-bottom-image">
+                {% if module.mobile_panels.main_panel.product_group.image.src %}
+                {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.product_group.image.width }}" height="{{ module.mobile_panels.main_panel.product_group.image.height }}"' %}
+                {% if module.mobile_panels.main_panel.product_group.image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.product_group.image.width }}" height="{{ module.mobile_panels.main_panel.product_group.image.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.mobile_panels.main_panel.product_group.image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.mobile_panels.main_panel.product_group.image.max_width }}" height="{{ module.mobile_panels.main_panel.product_group.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.mobile_panels.main_panel.product_group.image.loading != 'disabled' ? 'loading="{{ module.mobile_panels.main_panel.product_group.image.loading }}"' : '' %}
+                <img src="{{ module.mobile_panels.main_panel.product_group.image.src }}" alt="{{ module.mobile_panels.main_panel.product_group.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+
+          <!-- Why Charles Slide Panel -->
+          <div class="swiper-slide" data-hash="why-charles-panel">
+            <div class="mobile-why-charles-menu">
+              <!-- Top Navigation -->
+              <div class="top-panel-nav">
+                <!-- Title Navigation -->
+                <div class="swiper-button-prev">
+                  <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.7793 16.9165L2.77739 9.53352L9.7793 2.15054" stroke="#221F20" stroke-width="3.77774" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <p>{{ module.why_charles_menu_block.why_charles_label }}</p>
+                <div class="swiper-button-next">
+                  <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.77344 16.9165L9.77535 9.53352L2.77344 2.15054" stroke="#221F20" stroke-width="3.77774" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+              <!-- Toolset Repeater Group -->
+              <div class="toolset-repeater-group">
+                {% for item in module.mobile_panels.why_charles_group.why_charles_repeater %}
+                <div class="toolset-block">
+                  {% if item.icon.src %}
+                  {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+                  {% if item.icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+                  <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                  <!-- Title -->
+                  <p class="toolset-title">
+                    {{ item.title }}
+                  </p>
+                  {% set href = item.button_url.url.href %}
+                  {% if item.button_url.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}" class="toolset-button"
+                     {% if item.button_url.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if item.button_url.rel %}rel="{{ item.button_url.rel }}"{% endif %}
+                     >
+                    {{ item.button_label }}
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                    </svg>
+                  </a>
+                </div>
+                {% endfor %}
+              </div>
+
+              <!-- Customers Success -->
+              <div class="customers-success-stories">
+                <!-- Label -->
+                <div class="label-group">
+                  {{ module.mobile_panels.why_charles_group.customers_label }}
+                </div>
+                <!-- Customers Repeater -->
+                <div class="customers-repeater">
+                  {% for item in module.mobile_panels.why_charles_group.customers_repeater %}
+                  <div class="customers-block">                    
+                    <div class="logo-title">
+                      {% if item.client_logo.src %}
+                      {% set sizeAttrs = 'width="{{ item.client_logo.width }}" height="{{ item.client_logo.height }}"' %}
+                      {% if item.client_logo.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ item.client_logo.width }}" height="{{ item.client_logo.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif item.client_logo.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item.client_logo.max_width }}" height="{{ item.client_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                      {% set loadingAttr = item.client_logo.loading != 'disabled' ? 'loading="{{ item.client_logo.loading }}"' : '' %}
+                      <img src="{{ item.client_logo.src }}" alt="{{ item.client_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                      {% endif %}
+
+                      <p class="customer-name">
+                        {{ item.client_name }}
+                      </p>
+                    </div>
+
+                    {% set href = item.customer_link.url.href %}
+                    {% if item.customer_link.url.type is equalto "EMAIL_ADDRESS" %}
+                    {% set href = "mailto:" + href %}
+                    {% endif %}
+                    <a href="{{ href }}" class="customer-button"
+                       {% if item.customer_link.open_in_new_tab %}target="_blank"{% endif %}
+                       {% if item.customer_link.rel %}rel="{{ item.customer_link.rel }}"{% endif %}
+                       >
+                      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                      </svg>
+                    </a>
+                  </div>
+                  {% endfor %}
+
+                  <!-- See all customer -->
+                  <p class="see-all-customers">
+                    {% set href = module.mobile_panels.why_charles_group.all_customers.url.href %}
+                    {% if module.mobile_panels.why_charles_group.all_customers.url.type is equalto "EMAIL_ADDRESS" %}
+                    {% set href = "mailto:" + href %}
+                    {% endif %}
+                    <a href="{{ href }}"
+                       {% if module.mobile_panels.why_charles_group.all_customers.open_in_new_tab %}target="_blank"{% endif %}
+                       {% if module.mobile_panels.why_charles_group.all_customers.rel %}rel="{{ module.mobile_panels.why_charles_group.all_customers.rel }}"{% endif %}
+                       >
+                      {{ module.mobile_panels.why_charles_group.see_all_customers }}
+                      <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.74219 11.375C4.89844 11.5312 5.11719 11.5312 5.27344 11.375L9.89844 6.78125C10.0547 6.65625 10.0547 6.40625 9.89844 6.25L9.27344 5.65625C9.14844 5.5 8.89844 5.5 8.74219 5.65625L5.02344 9.34375L1.27344 5.65625C1.11719 5.5 0.898438 5.5 0.742188 5.65625L0.117188 6.25C-0.0390625 6.40625 -0.0390625 6.65625 0.117188 6.78125L4.74219 11.375ZM5.27344 6.375L9.89844 1.78125C10.0547 1.65625 10.0547 1.40625 9.89844 1.25L9.27344 0.65625C9.14844 0.5 8.89844 0.5 8.74219 0.65625L5.02344 4.34375L1.27344 0.65625C1.11719 0.5 0.898438 0.5 0.742188 0.65625L0.117188 1.25C-0.0390625 1.40625 -0.0390625 1.65625 0.117188 1.78125L4.74219 6.375C4.89844 6.53125 5.11719 6.53125 5.27344 6.375Z" fill="#221F20"/>
+                      </svg>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resources Slide Panel -->
+          <div class="swiper-slide" data-hash="resources-panel">
+            <div class="mobile-resouces-menu">
+              <!-- Top Navigation -->
+              <div class="top-panel-nav">
+                <!-- Title Navigation -->
+                <div class="swiper-button-prev">
+                  <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.7793 16.9165L2.77739 9.53352L9.7793 2.15054" stroke="#221F20" stroke-width="3.77774" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <p>{{ module.resources_menu_block.resources_label }}</p>
+                <div class="swiper-button-next">
+                  <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.77344 16.9165L9.77535 9.53352L2.77344 2.15054" stroke="#221F20" stroke-width="3.77774" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>              
+
+              <!-- Resources Repeater -->
+              <div class="resources-mobile-repeater">
+                {% for item in module.mobile_panels.resources_group.resources_repeater %}
+                <div class="resource-block">
+                  {% set href = item.resource_url.url.href %}
+                  {% if item.resource_url.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}"
+                     {% if item.resource_url.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if item.resource_url.rel %}rel="{{ item.resource_url.rel }}"{% endif %}
+                     >
+                    <!-- Title -->
+                    <div class="resource-icon-title">
+                      {% if item.resource_icon.src %}
+                      {% set sizeAttrs = 'width="{{ item.resource_icon.width }}" height="{{ item.resource_icon.height }}"' %}
+                      {% if item.resource_icon.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ item.resource_icon.width }}" height="{{ item.resource_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif item.resource_icon.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item.resource_icon.max_width }}" height="{{ item.resource_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                      {% set loadingAttr = item.resource_icon.loading != 'disabled' ? 'loading="{{ item.resource_icon.loading }}"' : '' %}
+                      <img src="{{ item.resource_icon.src }}" alt="{{ item.resource_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                      {% endif %}
+                      <p class="resource-title">
+                        {{ item.resource_title }}
+                      </p>
+                    </div>
+                    <!-- Button -->
+                    <div class="resource-button">
+                      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#221F20"/>
+                      </svg>
+                    </div>
+
+                  </a>
+                </div>
+                {% endfor %}
+              </div>
+
+              <!-- BFMC Webinar -->
+              <div class="bfmc-webinar">
+                {% set href = module.mobile_panels.resources_group.bfmc_url.url.href %}
+                {% if module.mobile_panels.resources_group.bfmc_url.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.mobile_panels.resources_group.bfmc_url.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if module.mobile_panels.resources_group.bfmc_url.rel %}rel="{{ module.mobile_panels.resources_group.bfmc_url.rel }}"{% endif %}
+                   >
+                  <span>{{ module.mobile_panels.resources_group.bfmc_label }}</span>
+
+                  <div class="bfmc-button">
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#fff"/>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Expert CTA Block -->
+              <div class="mobile-chat-button">
+                {% set href = module.why_charles_menu_block.block_two_group.expert_group_cta.expert_cta_link.url.href %}
+                {% if module.why_charles_menu_block.block_two_group.expert_group_cta.expert_cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if module.why_charles_menu_block.block_two_group.expert_group_cta.expert_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if module.why_charles_menu_block.block_two_group.expert_group_cta.expert_cta_link.rel %}rel="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_cta_link.rel }}"{% endif %}
+                   >
+                  <div class="nav-wrapper nav-item-six">  
+                    <div class="left-content">
+                      <!-- Icon -->
+                      {% if module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.src %}
+                      {% set sizeAttrs = 'width="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.width }}" height="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.height }}"' %}
+                      {% if module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.width }}" height="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.max_width }}" height="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                      {% set loadingAttr = module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.loading != 'disabled' ? 'loading="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.loading }}"' : '' %}
+                      <img src="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.src }}" alt="{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                      {% endif %}
+                      <!-- Content -->
+                      <h4>{{ module.why_charles_menu_block.block_two_group.expert_group_cta.expert_label }}</h4>
+                    </div>
+                    <span class="nav-btn">
+                      {{ module.why_charles_menu_block.block_two_group.expert_group_cta.button_label }}
+                    </span>
+                    <i></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <!-- News Section (old top bar news) -->
+  <div class="charles-news-box d-none">
+    <div class="news-inner">
+      <!-- News Content -->
+      {% set href = module.news_block.news_url.url.href %}
+      {% if module.news_block.news_url.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}"
+         {% if module.news_block.news_url.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.news_block.news_url.rel %}rel="{{ module.news_block.news_url.rel }}"{% endif %}
+         >
+        {{ module.news_block.news_content }}        
+      </a>
+    </div>
+  </div>
+  <!-- Demo Button -->
+  <div class="charles-demo-btn d-none">
+    <!-- Button Link -->
+    {% set href = module.demo_button_block.demo_url.url.href %}
+    {% if module.demo_button_block.demo_url.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}"
+       {% if module.demo_button_block.demo_url.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.demo_button_block.demo_url.rel %}rel="{{ module.demo_button_block.demo_url.rel }}"{% endif %}
+       >
+      <!-- Button Label-->
+      {{ module.demo_button_block.demo_button_label }}
+      <!-- Arrow SVG -->
+      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="#fff"/>
+      </svg>
+      <i></i>
+    </a>
+  </div>
+</div>

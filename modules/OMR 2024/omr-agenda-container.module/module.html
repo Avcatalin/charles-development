@@ -1,0 +1,112 @@
+<div class="omr-agenda-container" style="background-image: url({{ module.style.background_image.src }});">
+  <!-- Top Image -->
+  {% if module.top_image.src %}
+  {% set sizeAttrs = 'width="{{ module.top_image.width|escape_attr }}" height="{{ module.top_image.height|escape_attr }}"' %}
+  {% if module.top_image.size_type == 'auto' %}
+  {% set sizeAttrs = 'width="{{ module.top_image.width|escape_attr }}" height="{{ module.top_image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+  {% elif module.top_image.size_type == 'auto_custom_max' %}
+  {% set sizeAttrs = 'width="{{ module.top_image.max_width|escape_attr }}" height="{{ module.top_image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+  {% endif %}
+  {% set loadingAttr = module.top_image.loading != 'disabled' ? 'loading="{{ module.top_image.loading|escape_attr }}"' : '' %}
+  <img src="{{ module.top_image.src|escape_url }}" alt="{{ module.top_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="omr-top-image">
+  {% endif %}
+  <div class="omr-container">
+    <div class="heading">
+      <p class="title">
+        {{ module.heading }}
+      </p>
+      <!-- Banner -->
+      <div class="omr-agenda-banner">
+        <a href="https://omr.com/en/events/omr24/masterclasses/casual-to-committed" target="_blank">
+          <div class="omr-team">
+            {% if module.agena_team_group.agenda_team.src %}
+            {% set sizeAttrs = 'width="{{ module.agena_team_group.agenda_team.width|escape_attr }}" height="{{ module.agena_team_group.agenda_team.height|escape_attr }}"' %}
+            {% if module.agena_team_group.agenda_team.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.agena_team_group.agenda_team.width|escape_attr }}" height="{{ module.agena_team_group.agenda_team.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.agena_team_group.agenda_team.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.agena_team_group.agenda_team.max_width|escape_attr }}" height="{{ module.agena_team_group.agenda_team.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.agena_team_group.agenda_team.loading != 'disabled' ? 'loading="{{ module.agena_team_group.agenda_team.loading|escape_attr }}"' : '' %}
+            <img src="{{ module.agena_team_group.agenda_team.src|escape_url }}" alt="{{ module.agena_team_group.agenda_team.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="omr-agenda-intro">
+            <div class="schedule-label">
+              <span>{{ module.agena_team_group.schedule }}</span>
+            </div>
+            <p class="agenda-title">
+              {{ module.agena_team_group.title }}
+            </p>
+            <div class="agenda-content">
+              {{ module.agena_team_group.content }}
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Agenda notes -->
+      <div class="omr-agenda-row">
+        <div class="agenda-col">
+          {% if module.agenda_day_one.src %}
+          {% set sizeAttrs = 'width="{{ module.agenda_day_one.width|escape_attr }}" height="{{ module.agenda_day_one.height|escape_attr }}"' %}
+          {% if module.agenda_day_one.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.agenda_day_one.width|escape_attr }}" height="{{ module.agenda_day_one.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.agenda_day_one.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.agenda_day_one.max_width|escape_attr }}" height="{{ module.agenda_day_one.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.agenda_day_one.loading != 'disabled' ? 'loading="{{ module.agenda_day_one.loading|escape_attr }}"' : '' %}
+          <img src="{{ module.agenda_day_one.src|escape_url }}" alt="{{ module.agenda_day_one.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="agenda-col">
+          <!-- Agenda Image -->
+          {% if module.agenda_day_two.src %}
+          {% set sizeAttrs = 'width="{{ module.agenda_day_two.width|escape_attr }}" height="{{ module.agenda_day_two.height|escape_attr }}"' %}
+          {% if module.agenda_day_two.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.agenda_day_two.width|escape_attr }}" height="{{ module.agenda_day_two.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.agenda_day_two.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.agenda_day_two.max_width|escape_attr }}" height="{{ module.agenda_day_two.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.agenda_day_two.loading != 'disabled' ? 'loading="{{ module.agenda_day_two.loading|escape_attr }}"' : '' %}
+          <img src="{{ module.agenda_day_two.src|escape_url }}" alt="{{ module.agenda_day_two.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="omr-agenda-two">
+          {% endif %}
+          <!-- Whitepaper Ad -->
+          <div class="omr-whitepaper">
+            {% if module.whitepaper_ad.src %}
+            {% set sizeAttrs = 'width="{{ module.whitepaper_ad.width|escape_attr }}" height="{{ module.whitepaper_ad.height|escape_attr }}"' %}
+            {% if module.whitepaper_ad.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.whitepaper_ad.width|escape_attr }}" height="{{ module.whitepaper_ad.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.whitepaper_ad.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.whitepaper_ad.max_width|escape_attr }}" height="{{ module.whitepaper_ad.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.whitepaper_ad.loading != 'disabled' ? 'loading="{{ module.whitepaper_ad.loading|escape_attr }}"' : '' %}
+            <img src="{{ module.whitepaper_ad.src|escape_url }}" alt="{{ module.whitepaper_ad.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="omr-whitepaper-ad">
+            {% endif %}
+          </div>
+          <!-- Bottom Note -->
+          <div class="omr-bottom-note">
+            <p>
+              {{ module.agenda_day_two_note }}
+            </p>
+          </div>
+          <!-- Bottom Coin -->
+          {% if module.bottom_coin.src %}
+          {% set sizeAttrs = 'width="{{ module.bottom_coin.width|escape_attr }}" height="{{ module.bottom_coin.height|escape_attr }}"' %}
+          {% if module.bottom_coin.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.bottom_coin.width|escape_attr }}" height="{{ module.bottom_coin.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.bottom_coin.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.bottom_coin.max_width|escape_attr }}" height="{{ module.bottom_coin.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.bottom_coin.loading != 'disabled' ? 'loading="{{ module.bottom_coin.loading|escape_attr }}"' : '' %}
+          <img src="{{ module.bottom_coin.src|escape_url }}" alt="{{ module.bottom_coin.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }} class="omr-bottom-coin">
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Button -->
+    <a href="#omr-form" class="omr-join-btn">
+      <img src="https://www.hello-charles.com/hubfs/join-btn.svg" loading="lazy" alt="Join us | charles" />
+    </a>
+  </div>
+</div>

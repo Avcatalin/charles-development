@@ -1,0 +1,27 @@
+<div class="bg_area">
+  <div class="container">
+    <div class="awards">
+      <h3>Share your pitch! 🚀</h3>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+	region: "na1",
+	portalId: "8124115",
+	formId: "1bf8fb5f-0f82-491d-809b-8781f8fc1aa3"
+});
+</script>
+    </div>
+    <div class="bg_content">
+      {% if module.bottom_image.src %}
+	{% set sizeAttrs = 'width="{{ module.bottom_image.width }}" height="{{ module.bottom_image.height }}"' %}
+	{% if module.bottom_image.size_type == 'auto' %}
+		{% set sizeAttrs = 'width="{{ module.bottom_image.width }}" height="{{ module.bottom_image.height }}" style="max-width: 100%; height: auto;"' %}
+	{% elif module.bottom_image.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.bottom_image.max_width }}" height="{{ module.bottom_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.bottom_image.loading != 'disabled' ? 'loading="{{ module.bottom_image.loading }}"' : '' %}
+	<img src="{{ module.bottom_image.src }}" alt="{{ module.bottom_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<!-- Repeater with content boxes -->
+<div class="container">
+  <div class="benefits-section" style="{{ module.box_benefits.spacing_field.css }}">
+    <div class="benefits-boxes">
+      <!-- Repeater starts here -->
+      {% for benefit_box_group in module.benefit_box_group %}
+        <div class="box-column">
+          <div class="box-inner">
+            <p class="number-percent" style="color: {{ benefit_box_group.box_color_title.color }};">{% inline_text field="benefit_box_group.box_title" value="{{ benefit_box_group.box_title }}" %}</p>
+            <p class="number-label" style="color: {{ benefit_box_group.box_subtitle_color.color }}">{% inline_text field="benefit_box_group.box_subtitle_text" value="{{ benefit_box_group.box_subtitle_text }}" %}</p>
+            <p style="color: {{ benefit_box_group.box_description_color.color }}">
+              {% inline_rich_text field="benefit_box_group.box_description" value="{{ benefit_box_group.box_description }}" %}  
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+      <!-- end Repeater -->
+    </div>    
+  </div>
+</div>

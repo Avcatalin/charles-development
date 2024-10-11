@@ -1,0 +1,48 @@
+[ {
+  "id" : "b3c1d29a-89d9-95cd-99bd-3927a6ea2a0e",
+  "name" : "url_field",
+  "display_width" : null,
+  "label" : "URL",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "31e07169-68e2-4b64-c932-806ff1018947",
+  "name" : "front_icon",
+  "display_width" : null,
+  "label" : "Front icon",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://143291878.fs1.hubspotusercontent-eu1.net/hubfs/143291878/typie.svg",
+    "alt" : "typie",
+    "loading" : "lazy",
+    "width" : 23,
+    "height" : 22,
+    "max_width" : 23,
+    "max_height" : 22
+  }
+}, {
+  "id" : "70f0bfdf-54c8-8bf2-bd1a-139bb051a8d9",
+  "name" : "button_label",
+  "display_width" : null,
+  "label" : "Button label",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get charles"
+} ]

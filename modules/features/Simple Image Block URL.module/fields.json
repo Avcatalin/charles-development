@@ -1,0 +1,102 @@
+[ {
+  "id" : "8b49d47c-570e-65d6-77d5-22e3a3d03475",
+  "name" : "custom_id",
+  "display_width" : null,
+  "label" : "Custom ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "a0cfd91c-bd12-bbf7-8b52-cf9324ae3591",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/typie-chat-1.png",
+    "alt" : "Typie Chat",
+    "loading" : "lazy",
+    "width" : 773,
+    "height" : 768,
+    "max_width" : 773,
+    "max_height" : 768
+  }
+}, {
+  "id" : "a3d9fcf8-51b9-c869-42a8-15b60d91574b",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "10b31796-a7b2-b217-4fd8-a8b2d536c2b5",
+    "name" : "alignment",
+    "display_width" : null,
+    "label" : "Alignment",
+    "required" : false,
+    "locked" : false,
+    "type" : "textalignment",
+    "default" : {
+      "text_align" : "LEFT"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "alignment" : {
+      "text_align" : "LEFT"
+    }
+  }
+}, {
+  "id" : "9c5b7e69-f7da-9b8d-4792-26de49cb349d",
+  "name" : "image_url",
+  "display_width" : null,
+  "label" : "Image URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "1ad6b482-c655-0456-d60c-edf8a9c15c6f",
+  "name" : "container_width",
+  "display_width" : null,
+  "label" : "Container Width",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "5f7ec978-1fa5-da2d-74ca-e940d5c08a41",
+  "name" : "margins",
+  "display_width" : null,
+  "label" : "Margins",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

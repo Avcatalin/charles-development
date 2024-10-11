@@ -1,0 +1,243 @@
+[ {
+  "id" : "184eeba5-a4f5-d733-7daa-ab472a0ad6c3",
+  "name" : "repeater",
+  "display_width" : null,
+  "label" : "Navigation Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "47179c2e-228a-9308-4c01-a09fe79bcc9e",
+    "name" : "enable_title",
+    "display_width" : null,
+    "label" : "Enable Title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "6f981022-2610-fbe5-d2af-8a49fa60da36",
+    "name" : "block_title",
+    "display_width" : null,
+    "label" : "Block Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Learn"
+  }, {
+    "id" : "8542c924-2b26-ef5c-4aa6-20fe8b2afedb",
+    "name" : "navigation_items",
+    "display_width" : null,
+    "label" : "Navigation Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "aed2c2ba-0856-c9d8-5282-c2fdcdcc835f",
+      "name" : "icon",
+      "display_width" : null,
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : true,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/home-icon.svg",
+        "alt" : "home-icon",
+        "loading" : "lazy",
+        "width" : 24,
+        "height" : 24,
+        "max_width" : 24,
+        "max_height" : 24
+      }
+    }, {
+      "id" : "1806efaf-9054-0b3c-f16a-8d0b040d056f",
+      "name" : "enable_internal_link",
+      "display_width" : null,
+      "label" : "Enable Internal Link",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "68441837-d510-7867-d7a4-e1144274a618",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link Internal",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "393c5474-9c5f-6c41-2aa4-6dc1b48a261a",
+      "name" : "enable_external",
+      "display_width" : null,
+      "label" : "Enable External",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "ee9f33f1-88c7-9aec-9c1b-69e27cf9e6cb",
+      "name" : "enable_pro",
+      "display_width" : null,
+      "label" : "Enable PRO",
+      "required" : false,
+      "locked" : false,
+      "display" : "toggle",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "edf2f153-ad0e-b3e8-87fc-6da0e358c9b6",
+      "name" : "link_label",
+      "display_width" : null,
+      "label" : "Link Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Sample label"
+    }, {
+      "id" : "b176f768-3e5d-f813-e349-1882bd3d057a",
+      "name" : "link_id_api_call",
+      "display_width" : null,
+      "label" : "Link ID (API Call)",
+      "inline_help_text" : "This field is used for custom API Call. Don't change this field.",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "a878259e-091a-cb4b-162d-34bbf4994da5",
+      "name" : "extra_class",
+      "display_width" : null,
+      "label" : "Extra class",
+      "inline_help_text" : "Add extra class only if needed.",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : ""
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/home-icon.svg",
+        "alt" : "home-icon",
+        "loading" : "lazy",
+        "width" : 24,
+        "height" : 24,
+        "max_width" : 24,
+        "max_height" : 24
+      },
+      "enable_internal_link" : false,
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "enable_external" : false,
+      "enable_pro" : false,
+      "link_label" : "Sample label",
+      "extra_class" : ""
+    } ]
+  }, {
+    "id" : "68090751-6ee0-18e6-6029-df0ff133351a",
+    "name" : "enable_notification",
+    "display_width" : null,
+    "label" : "Enable Notification",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "ca85db78-3f70-f68e-0227-d9c3e8654308",
+    "name" : "notification_block",
+    "display_width" : null,
+    "label" : "Notification Block",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><strong>Ready for Black Friday?</strong></p>\n<p>We prepared <br>something for you</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "enable_title" : false,
+    "block_title" : "Learn",
+    "navigation_items" : [ {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/home-icon.svg",
+        "alt" : "home-icon",
+        "loading" : "lazy",
+        "width" : 24,
+        "height" : 24,
+        "max_width" : 24,
+        "max_height" : 24
+      },
+      "enable_internal_link" : false,
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "enable_external" : false,
+      "enable_pro" : false,
+      "link_label" : "Sample label",
+      "extra_class" : ""
+    } ],
+    "enable_notification" : false,
+    "notification_block" : "<p><strong>Ready for Black Friday?</strong></p>\n<p>We prepared <br>something for you</p>"
+  } ]
+} ]

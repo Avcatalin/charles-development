@@ -1,0 +1,39 @@
+{% set title = module.title %}
+{% set text = module.text %}
+{% set align = module.align %}
+{% set paddingY = 'py-32 mobile:py-8' %}
+
+{% set titleClass = 'mb-8 font-normal' %}
+
+{% set ctaText = module.button.text %}
+{% set textColor = module.button.text_color %}
+{% set bgColor = module.button.bg_color %}
+{% set ctaAction = module.button.link.url.href %}
+{% if module.button.link.url.type is equalto "EMAIL_ADDRESS" %}
+  {% set ctaAction = "mailto:" + ctaAction %}
+{% endif %}
+{% set ctaNewtab = module.button.link.open_in_new_tab %}
+{% set ctaNoFollow = module.button.link.no_follow %}
+
+<div class="c-cta-section {{ align }} px-10 mobile:px-0 {{ paddingY }}">
+  <h2 class="{{ titleClass }}">{{ title }}</h2>
+  <div style="height: 4px; max-width: 14rem; margin: 2rem auto; background: rgba({{ bgColor.color|convert_rgb }}, {{ bgColor.opacity / 100 }});"></div>
+  <div style="max-width: 18rem; margin: 0 auto;">{{ text }}</div>
+  
+  <div class="c-features--cta my-8" style="font-size: 1.5rem">
+    <a href="{{ ctaAction }}" style="color: rgba({{ textColor.color|convert_rgb }}, {{ textColor.opacity / 100 }}); background: rgba({{ bgColor.color|convert_rgb }}, {{ bgColor.opacity / 100 }});" {% if ctaNewtab %}target="_blank" {% endif %} {% if ctaNoFollow %}rel="nofollow" {% endif %}
+      class="c-button c-appointment-button bg-white font-normal ">
+      <div style="padding: 0.5rem 0.5rem" class="flex items-center">
+        <svg width="33" height="38" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.0726 27.0834C14.6195 27.0834 15.1663 26.6277 15.1663 25.9897V22.3438C15.1663 21.797 14.6195 21.2501 14.0726 21.2501H10.4268C9.78874 21.2501 9.33301 21.797 9.33301 22.3438V25.9897C9.33301 26.6277 9.78874 27.0834 10.4268 27.0834H14.0726ZM23.9163 25.9897V22.3438C23.9163 21.797 23.3695 21.2501 22.8226 21.2501H19.1768C18.5387 21.2501 18.083 21.797 18.083 22.3438V25.9897C18.083 26.6277 18.5387 27.0834 19.1768 27.0834H22.8226C23.3695 27.0834 23.9163 26.6277 23.9163 25.9897ZM32.6663 25.9897V22.3438C32.6663 21.797 32.1195 21.2501 31.5726 21.2501H27.9268C27.2887 21.2501 26.833 21.797 26.833 22.3438V25.9897C26.833 26.6277 27.2887 27.0834 27.9268 27.0834H31.5726C32.1195 27.0834 32.6663 26.6277 32.6663 25.9897ZM23.9163 34.7397V31.0938C23.9163 30.547 23.3695 30.0001 22.8226 30.0001H19.1768C18.5387 30.0001 18.083 30.547 18.083 31.0938V34.7397C18.083 35.3777 18.5387 35.8334 19.1768 35.8334H22.8226C23.3695 35.8334 23.9163 35.3777 23.9163 34.7397ZM15.1663 34.7397V31.0938C15.1663 30.547 14.6195 30.0001 14.0726 30.0001H10.4268C9.78874 30.0001 9.33301 30.547 9.33301 31.0938V34.7397C9.33301 35.3777 9.78874 35.8334 10.4268 35.8334H14.0726C14.6195 35.8334 15.1663 35.3777 15.1663 34.7397ZM32.6663 34.7397V31.0938C32.6663 30.547 32.1195 30.0001 31.5726 30.0001H27.9268C27.2887 30.0001 26.833 30.547 26.833 31.0938V34.7397C26.833 35.3777 27.2887 35.8334 27.9268 35.8334H31.5726C32.1195 35.8334 32.6663 35.3777 32.6663 34.7397ZM41.4163 11.0417C41.4163 8.67196 39.4111 6.66675 37.0413 6.66675H32.6663V1.92716C32.6663 1.38029 32.1195 0.833414 31.5726 0.833414H27.9268C27.2887 0.833414 26.833 1.38029 26.833 1.92716V6.66675H15.1663V1.92716C15.1663 1.38029 14.6195 0.833414 14.0726 0.833414H10.4268C9.78874 0.833414 9.33301 1.38029 9.33301 1.92716V6.66675H4.95801C2.49707 6.66675 0.583006 8.67196 0.583006 11.0417V43.1251C0.583006 45.586 2.49707 47.5001 4.95801 47.5001H37.0413C39.4111 47.5001 41.4163 45.586 41.4163 43.1251V11.0417ZM37.0413 42.5782C37.0413 42.9428 36.7679 43.1251 36.4945 43.1251H5.50488C5.1403 43.1251 4.95801 42.9428 4.95801 42.5782V15.4167H37.0413V42.5782Z"
+            fill="#221F20" />
+        </svg>
+        
+        <span class="px-4 py-2">
+          {{ ctaText }}
+        </span>
+      </div>
+    </a>
+  </div>
+</div>

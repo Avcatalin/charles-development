@@ -1,0 +1,44 @@
+[ {
+  "id" : "ebb17d1d-c248-4ab4-b645-33a23a160456",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<span>To get started, <strong>you’ll need a WhatsApp marketing platform like charles</strong> – with GDPR features, automation and rich analytics built in. Start early in 2024 and enjoy being a step ahead of your competitors 😉</span>"
+}, {
+  "id" : "2b510593-fbae-d397-e564-0d849ad52fe1",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "84c19036-5459-ac4e-a1b2-43133ffd6cd2",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "8f012695-b597-cc47-7d3c-45b55bf7abb6",
+  "name" : "container_width",
+  "display_width" : null,
+  "label" : "Container Width",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "750px"
+} ]

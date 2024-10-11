@@ -1,0 +1,41 @@
+<div class="bg_area" style="background:{{ module.background.css }}">
+  <div class="container">
+    <div class="awards">
+      {% if module.qr_form %}
+      <div class="container">
+  <div class="qr-code-section" style="{{ module.qr_code.spacing_field.css }}">
+      <h3 style="color:{{ module.qr.title_color.color }};">{{ module.qr.qr_code_title }}</h3>
+    <img src="{{ module.qr.qr_image.src }}" class="img-fluid qr-code-svg" />
+      <div class="text-block" style="color:{{ module.qr.content_color.color }};">
+        {{ module.qr.qr_content }}
+      </div>
+
+    <!-- MOBILE CTA BUTTON -->
+    <a href="{{ content_by_id(module.qr.mobile_cta) }}" class="features-general-button mobile-btn" style="background: {{ module.qr.mobile_cta_background.color }}">
+      <div class="inner-button-content">
+        <span style="color: {{ module.qr.mobile_cta_text_color.color }}">{{ module.qr.mobile_cta_text }}</span>
+        <img src="{{ get_asset_url('/charles-b2b/modules/assets/arrow-right.svg') }}" class="img-fluid" />
+      </div>
+    </a>
+        </div>
+    <!-- end MOBILE CTA BUTTON -->
+  </div>
+</div>
+      {% else %}
+      <h3>{{ module.form_title }}</h3>
+    {{ module.form_embed_html }}
+      {% endif %}
+    </div>
+    <div class="bg_content">
+       {% if module.bottom_image.src %}
+	{% set sizeAttrs = 'width="{{ module.bottom_image.width }}" height="{{ module.bottom_image.height }}"' %}
+	{% if module.bottom_image.size_type == 'auto' %}
+		{% set sizeAttrs = 'width="{{ module.bottom_image.width }}" height="{{ module.bottom_image.height }}" style="max-width: 100%; height: auto;"' %}
+	{% elif module.bottom_image.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.bottom_image.max_width }}" height="{{ module.bottom_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.bottom_image.loading != 'disabled' ? 'loading="{{ module.bottom_image.loading }}"' : '' %}
+	<img src="{{ module.bottom_image.src }}" alt="{{ module.bottom_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+    </div>
+  </div>

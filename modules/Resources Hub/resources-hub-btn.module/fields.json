@@ -1,0 +1,48 @@
+[ {
+  "id" : "53f35bc4-5411-5dcf-529a-aba247424666",
+  "name" : "url_field",
+  "display_width" : null,
+  "label" : "URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "bf13203f-c218-1236-cf0a-31aedff2207d",
+  "name" : "front_icon",
+  "display_width" : null,
+  "label" : "Front Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/typie.svg",
+    "alt" : "typie",
+    "loading" : "lazy",
+    "width" : 23,
+    "height" : 22,
+    "max_width" : 23,
+    "max_height" : 22
+  }
+}, {
+  "id" : "7e3ad629-c7b9-d430-beca-c24556474ba5",
+  "name" : "button_label",
+  "display_width" : null,
+  "label" : "Label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get charles"
+} ]

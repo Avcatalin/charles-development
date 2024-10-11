@@ -1,0 +1,100 @@
+{% set cdDate = module.countdown_date %}
+
+<style>
+  .boder_1:after, .boder_1:before,
+  .boder_2:after, .boder_2:before,
+  .boder_3:after, .boder_3:before,
+  .boder_4:after, .boder_4:before,
+  .boder_5:after, .boder_5:before,
+  .boder_6:after, .boder_6:before,
+  .boder_7:after, .boder_7:before,
+  .boder_8:after, .boder_8:before {
+  background:{{ module.accent_color.css }} !important;
+    display:none;
+  }
+  .single_how_does_work_round .round_box{
+  background:{{ module.accent_color.css }} !important;
+  }
+  .how_does_work_round:after {
+    border-color:{{ module.accent_color.css }} !important;
+  }
+  #main-page-header,
+  .how_does_work_title h2:before, .how_does_work_title h2:after{
+  background:{{ module.hero_background.css }};
+  }
+  @media only screen and (max-width: 768px){
+  .how_does_work_down{
+    padding-bottom:180px !important;
+  }
+  }
+</style>
+
+<div class="header_area" style="background:{{ module.hero_background.css }}">
+  <div class="header_down" style="{{ module.style.header_down.spacing_field_1.css }}">
+    <h1>
+<!--       <img src="https://www.hello-charles.com/hubfs/chat_award/%F0%9F%8F%86.png" alt="Trophy Chat">  -->
+      {{ module.title }}</h1>
+    <p>{{ module.sub_content }}</p>
+<div class="mt-8">
+<a href="{{ module.left_button.button_left_link.url.href }}"  style="color: #ffffff; background: #000000;" class="c-button redirection-link"
+	{% if module.left_button.button_left_link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.left_button.button_left_link.rel %}rel="{{ module.left_button.button_left_link.rel }}"{% endif %}
+	>
+	{{ module.left_button.left_button_text }}
+</a>
+        <a href="{{ module.right_button.Button_Right_Link.url.href }}" style="color: #000; background: none;" class="bf-button redirection-link">{{ module.right_button.right_button_text }}</a>
+  </div>
+<div class="how_does_work_down" style="{{ module.style.timeline.spacing_field.css }}">
+        <div class="how_does_work_round">
+          <div class="single_how_does_work_round">
+            <h3>{{ module.timeline.start_date }}</h3>
+            <div class="round_box"></div>
+          </div>
+          <div class="single_how_does_work_round">
+            <h3>{{ module.timeline.middle_date }}</h3>
+            <div class="round_box"></div>
+          </div>
+          <div class="single_how_does_work_round">
+            <h3>{{ module.timeline.end_date }}</h3>
+            <div class="round_box"></div>
+          </div>
+        </div>
+        <!-- application s-->
+        <div class="application">
+          <div class="single_application">
+            <h3>{{ module.timeline.start_text }}</h3>
+          </div>
+          <div class="single_application">
+            <h3>{{ module.timeline.middle_text }}</h3>
+          </div>
+          <div class="single_application">
+            <h3>{{ module.timeline.end_text }}</h3>
+          </div>
+        </div>
+        <!-- application e -->
+      </div>
+      </div>
+</div>
+<!-- pioneers section start -->
+<div class="pioneers_area">
+  <div class="container">
+    <div class="pioneers_top">
+      <div class="boder_1"></div>
+      <div class="boder_2"></div>
+      <div class="boder_3"></div>
+      <div class="boder_4"></div>
+      <div class="inner_pioneer" style="background:{{ module.inner_pioneer_color.css }}">
+        <img src="{{ module.image.src }}" alt="{{ module.image.alt }}">
+      </div>
+      <div class="boder_5"></div>
+      <div class="boder_6"></div>
+      <div class="boder_7"></div>
+      <div class="boder_8"></div>
+    </div>
+    <div class="pioneers_down">
+      {{ module.pioneer_title }}
+      {{ module.pioneers_content }}
+    </div>
+  </div>
+</div>
+<!-- pioneers section end -->

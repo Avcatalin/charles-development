@@ -1,0 +1,275 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: About_new
+  screenshotPath: ../images/template-previews/about.jpg
+-->
+{% extends './layouts/base.html' %}
+{% block header %}
+<div id="main-header-wrap">
+  <div id="main-page-header" class="white_header page-header">
+    {% global_partial path='/charles-b2b/templates/partials/top-bar-module.html' %}
+    {% global_partial path='/charles-b2b/templates/partials/white_header_refreshed.html' %}
+  </div>
+</div>
+{% endblock header %}
+{% block body %}
+<style>
+  .body-wrapper {
+    background: #fff;
+  }
+</style>
+<main class="body-container-wrapper">
+  
+
+  {% dnd_area 'dnd_area' class='body-container body-container--about', label='Main section' %}
+
+    {# Main section #}
+    {% dnd_section
+      vertical_alignment='TOP',
+      full_width=true,
+      padding={
+        'top': '0rem',
+        'bottom': '0rem',
+        'left': '0rem',
+        'right': '0rem'
+      },
+      margin={
+        'top': '-7rem',
+        'bottom': '0rem',
+      }
+    %}
+      {% dnd_module path='../modules/values',
+        bg_img={
+          'size_type': 'auto',
+          'src': get_asset_url('../images/about/about_bg.jpg')
+        },
+        values=[
+          {
+            'title': '#1 Earn trust, not candy',
+            'text': '"We build and deepen relationships, thinking in and accumulating long term value instead of short-therm shine. Once trust is earned, we are loyal and perseverant - same time expecting that from others."',
+            'icon': {
+              'size_type': 'auto',
+              'src': get_asset_url('../images/about/earn_trust_icon.png')
+            },
+            'owner': {
+              'owner_name': 'Tiffany Lu, Marketing Manager',
+              'avatar': {
+                'size_type': 'auto',
+                'src': get_asset_url('../images/about/tiff.jpg')
+              }
+            },
+            'colors': {
+              'bg_color': {
+                'color': '#FFF171',
+                'opacity': 100
+              },
+              'text_color': {
+                'color': '#845F2B',
+                'opacity': 100
+              },
+              'border_color': {
+                'color': '#EAD064',
+                'opacity': 100
+              },
+              'inner_border_color': {
+                'color': '#845F2B',
+                'opacity': 30
+              }
+            }
+          },
+          {
+            'title': '#2 Lead with speed & value',
+            'text': '"We always seek value. Solving a problem or serving a purpose. Finding value takes time, a scare resource in a competitive landscape. Therefore we are faster, avoid analysis-paralysis or the wrong heavy bets. We achieve this with build-measure-learn iteration. Once we find value, we invest in heavy bets."',
+            'icon': {
+              'size_type': 'auto',
+              'src': get_asset_url('../images/about/lead_with_speed_and_value_icon.png')
+            },
+            'owner': {
+              'owner_name': 'Nick-Lennert Völker, Frontend Lead',
+              'avatar': {
+                'size_type': 'auto',
+                'src': get_asset_url('../images/about/nick.jpg')
+              }
+            },
+            'colors': {
+              'bg_color': {
+                'color': '#F2E6D4',
+                'opacity': 100
+              },
+              'text_color': {
+                'color': '#72562C',
+                'opacity': 100
+              },
+              'border_color': {
+                'color': '#E8D8C3',
+                'opacity': 100
+              },
+              'inner_border_color': {
+                'color': '#72562C',
+                'opacity': 30
+              }
+            }
+          },
+          {
+            'title': '#3 Collaborate by design',
+            'text': '"Collaboration wins, therefor we want to win by design. We organize our work and choose our tools this way, enabling 10x impact by collaboration, communication & context. This requires access, transparency and respect for each others flow."',
+            'icon': {
+              'size_type': 'auto',
+              'src': get_asset_url('../images/about/collab_by_design_icon.png')
+            },
+            'owner': {
+              'owner_name': 'Fynn, Full-Stack Developer',
+              'avatar': {
+                'size_type': 'auto',
+                'src': get_asset_url('../images/about/fynn.jpg')
+              }
+            },
+            'colors': {
+              'bg_color': {
+                'color': '#CEE9F4',
+                'opacity': 100
+              },
+              'text_color': {
+                'color': '#1F9ED2',
+                'opacity': 100
+              },
+              'border_color': {
+                'color': '#BBDBE9',
+                'opacity': 100
+              },
+              'inner_border_color': {
+                'color': '#1F9ED2',
+                'opacity': 30
+              }
+            }
+          },
+          {
+            'title': '#4 Humanize with machines',
+            'text': '"We see machines as core partners. They operate under the same values.​ We seek to humanize interactions at scale, which can only be done by the help of machines. Hence, we need to pioneer the development of a collaborational engine between human and machine agents."',
+            'icon': {
+              'size_type': 'auto',
+              'src': get_asset_url('../images/about/humanize_with_maschines_icon.png')
+            },
+            'owner': {
+              'owner_name': 'Robert Lindstädt, Chief Technology Officer',
+              'avatar': {
+                'size_type': 'auto',
+                'src': get_asset_url('../images/about/rob.jpg')
+              }
+            },
+            'colors': {
+              'bg_color': {
+                'color': '#4F463A',
+                'opacity': 100
+              },
+              'text_color': {
+                'color': '#F5F0E7',
+                'opacity': 100
+              },
+              'border_color': {
+                'color': '#3D3429',
+                'opacity': 100
+              },
+              'inner_border_color': {
+                'color': '#F5F0E7',
+                'opacity': 30
+              }
+            }
+          },
+          {
+            'title': '#5 Smile & craft',
+            'text': '"We touch the heart and feed the brain in every detail of our work. This is the only way to create outstanding experiences and unique products. We take pride in what we do, while killing darlings when facing better data or ideas. We outsmart and outwork others. We celebrate every milestone, every first chatout and every new agent that is using what we’ve build."',
+            'icon': {
+              'size_type': 'auto',
+              'src': get_asset_url('../images/about/smile_and_craft_icon.png')
+            },
+            'owner': {
+              'owner_name': 'Etienne Kiefer, Chief Creative Office',
+              'avatar': {
+                'size_type': 'auto',
+                'src': get_asset_url('../images/about/etja.jpg')
+              }
+            },
+            'colors': {
+              'bg_color': {
+                'color': '#FFF171',
+                'opacity': 100
+              },
+              'text_color': {
+                'color': '#845F2B',
+                'opacity': 100
+              },
+              'border_color': {
+                'color': '#EAD064',
+                'opacity': 100
+              },
+              'inner_border_color': {
+                'color': '#845F2B',
+                'opacity': 30
+              }
+            }
+          }
+        ]
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
+    {# End main section #}
+
+    {# Jobs section #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {# Jobs title #}
+        {% dnd_row
+          padding={
+            'top': '0rem',
+            'bottom': '3rem',
+            'left': '0rem',
+            'right': '0rem'
+          }
+        %}
+          {% dnd_module path='../modules/header',
+            subtitle=''
+          %}
+          {% module_attribute 'title' %}
+            <span><span style="text-decoration: underline;"> Your future</span> at Charles!</span>
+          {% end_module_attribute  %} 
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+
+        {# Jobs #}
+        {# {% set all_jobs = hubdb_table_rows('b2b_jobs') %} #}
+        {# {{ name|pprint }} #}
+
+        {% dnd_row %}
+          {% dnd_module path='../modules/cta',
+            align='text-left',
+            dense=true,
+            button={
+              'text': 'Apply now',
+              'link': {
+                'url': {
+                  'type': 'EMAIL_ADDRESS',
+                  'href': 'info@hey-charles.com'
+                }
+              }
+            }
+          %}
+            {% module_attribute 'title' %}
+              <span>Full-Stack Developer</span>
+            {% end_module_attribute  %} 
+            {% module_attribute 'text' %}
+              <span>Full Time, Berlin, Germany</span>
+            {% end_module_attribute  %} 
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {# End jobs #}
+       
+
+      {% end_dnd_column %}  
+    {% end_dnd_section %}
+    {# End jobs section #}
+
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

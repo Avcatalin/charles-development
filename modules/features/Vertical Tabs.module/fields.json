@@ -1,0 +1,272 @@
+[ {
+  "id" : "4e0aa20e-55c1-696b-7edd-fa08130d2333",
+  "name" : "tab_repeater",
+  "display_width" : null,
+  "label" : "Vertical Tabs Heading Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "d292b689-8576-9c2c-f96c-1707ed187cea",
+    "name" : "tab_name",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Learn about customer"
+  }, {
+    "id" : "0d5ba3c0-5f4e-8992-3d96-e320d8c4ff29",
+    "name" : "tab_icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/comment-dots.svg",
+      "alt" : "comment-dots",
+      "loading" : "lazy",
+      "width" : 40,
+      "height" : 36,
+      "max_width" : 40,
+      "max_height" : 36
+    }
+  }, {
+    "id" : "9ab1f9b1-fd7e-0933-09ed-4803c65b18de",
+    "name" : "tab_number",
+    "display_width" : null,
+    "label" : "Number association",
+    "inline_help_text" : "Set the same number on tab heading with tab content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "1"
+  }, {
+    "id" : "b4341fd0-2504-01e1-a89c-10ce04998b2d",
+    "name" : "tab_status",
+    "display_width" : null,
+    "label" : "Active Status",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "active"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "tab_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/comment-dots.svg",
+      "alt" : "comment-dots",
+      "loading" : "lazy",
+      "width" : 40,
+      "height" : 36,
+      "max_width" : 40,
+      "max_height" : 36
+    },
+    "tab_name" : "Learn about customer",
+    "tab_number" : "1",
+    "tab_status" : "active"
+  } ]
+}, {
+  "id" : "1d727fb4-4688-2a9b-0ede-870adbd90f43",
+  "name" : "tabs_content",
+  "display_width" : null,
+  "label" : "Vertical Tabs Content Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "bfaaba1e-24db-8490-99d4-c39234e016e0",
+    "name" : "match_title",
+    "display_width" : null,
+    "label" : "Match Title (mobile)",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "0e401044-9fee-3b39-7538-1b88b7f1ec2e",
+    "name" : "tab_content_image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/tab-image-content.png",
+      "alt" : "tab-image-content",
+      "loading" : "lazy",
+      "width" : 597,
+      "height" : 303,
+      "max_width" : 597,
+      "max_height" : 303
+    }
+  }, {
+    "id" : "b34af96e-1428-f2f5-46b7-dcf529205c68",
+    "name" : "tab_content",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Customers want campaigns that speak only to them. Especially in WhatsApp. You can get to know their likes and dislikes with simple Q&amp;As when they go into WhatsApp, so you can send highly targeted campaigns.&nbsp;"
+  }, {
+    "id" : "ec452f26-ebd7-8658-93d1-3e75111489e1",
+    "name" : "tab_content_status",
+    "display_width" : null,
+    "label" : "Active status",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "active"
+  }, {
+    "id" : "d8a946ae-421e-b6a4-d006-6289f59e8ab6",
+    "name" : "tab_content_number",
+    "display_width" : null,
+    "label" : "Number association",
+    "inline_help_text" : "Set the same number on tab content with tab heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "1"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "tab_content_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/tab-image-content.png",
+      "alt" : "tab-image-content",
+      "loading" : "lazy",
+      "width" : 597,
+      "height" : 303,
+      "max_width" : 597,
+      "max_height" : 303
+    },
+    "tab_content" : "Customers want campaigns that speak only to them. Especially in WhatsApp. You can get to know their likes and dislikes with simple Q&amp;As when they go into WhatsApp, so you can send highly targeted campaigns.&nbsp;",
+    "tab_content_status" : "active",
+    "tab_content_number" : "1"
+  } ]
+}, {
+  "id" : "a557565f-396e-5860-87d6-f2fe1bf6d2aa",
+  "name" : "tabs_content_background_image",
+  "display_width" : null,
+  "label" : "Description - Background Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/dotted-canvas-bg-1.png",
+    "alt" : "dotted-canvas-bg-1",
+    "loading" : "lazy",
+    "width" : 765,
+    "height" : 542,
+    "max_width" : 765,
+    "max_height" : 542
+  }
+}, {
+  "id" : "8f24a83f-2465-b8cc-f2e7-ad3f3e9f4162",
+  "name" : "vertical_tabs",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b2c583ac-2103-4676-07d3-7240959b05c5",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "2b4c6a07-b701-e5b5-81bf-d9d858f6be73",
+  "name" : "tabs_content_background_color",
+  "display_width" : null,
+  "label" : "Description - Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F3F3F3",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b6e4d50b-072f-44a9-c6c1-8e8f03d94170",
+  "name" : "color_accordion_header",
+  "display_width" : null,
+  "label" : "Title - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "a731c6e2-81fa-727d-db26-13acd835063d",
+  "name" : "color_accordion_content",
+  "display_width" : null,
+  "label" : "Mobile Accordion Description - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+} ]

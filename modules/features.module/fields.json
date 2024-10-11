@@ -1,0 +1,232 @@
+[ {
+  "id" : "title",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "enabled_features" : [ "bold" ],
+  "type" : "richtext",
+  "default" : "Title here"
+}, {
+  "id" : "text",
+  "name" : "text",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : true,
+  "locked" : false,
+  "enabled_features" : [ "bold" ],
+  "type" : "richtext",
+  "default" : "Header text content here"
+}, {
+  "picker" : "file",
+  "id" : "lottie_file",
+  "name" : "lottie_file",
+  "display_width" : null,
+  "label" : "Lottie File",
+  "help_text" : "Upload a Lottie .json file. (For the header section)",
+  "required" : false,
+  "locked" : false,
+  "type" : "file"
+}, {
+  "id" : "animation_y_offset",
+  "name" : "animation_y_offset",
+  "display_width" : null,
+  "label" : "Lottie Y Offset",
+  "inline_help_text" : "Vertical offset of the animation. (in % of the animations height)",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : -100,
+  "max" : 100,
+  "step" : 1,
+  "type" : "number",
+  "default" : 0
+}, {
+  "id" : "scroll_hint",
+  "name" : "scroll_hint",
+  "display_width" : null,
+  "label" : "Scroll Hint",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Discover all features"
+}, {
+  "id" : "anchor",
+  "name" : "anchor",
+  "display_width" : null,
+  "label" : "Menu Anchor",
+  "help_text" : "Optional HTML anchor (use with #anchor in links)",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "cta",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "cta.text",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Button Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Click here"
+  }, {
+    "id" : "cta.link",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group"
+}, {
+  "id" : "features",
+  "name" : "features",
+  "display_width" : null,
+  "label" : "Features",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "features.title",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "features.title",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Feature Title here"
+  }, {
+    "id" : "features.text",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Feature Text",
+    "required" : false,
+    "locked" : false,
+    "enabled_features" : [ "bold", "italic" ],
+    "type" : "richtext",
+    "default" : "Feature text here"
+  }, {
+    "picker" : "file",
+    "id" : "features.lottie_file",
+    "name" : "lottie_file",
+    "display_width" : null,
+    "label" : "Lottie File",
+    "help_text" : "Upload a Lottie .json file. (For the feature section)",
+    "required" : false,
+    "locked" : false,
+    "type" : "file"
+  }, {
+    "picker" : "image",
+    "id" : "features.icon",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "type" : "file"
+  }, {
+    "id" : "features.anchor",
+    "name" : "anchor",
+    "display_width" : null,
+    "label" : "Menu Anchor",
+    "help_text" : "Optional HTML anchor (use with #anchor in links)",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  }, {
+    "id" : "features.cta",
+    "name" : "cta",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "features.cta.text",
+      "name" : "text",
+      "display_width" : null,
+      "label" : "Button Label",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Click here"
+    }, {
+      "id" : "features.cta.link",
+      "name" : "link",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Feature #1",
+    "text" : "This is feature #1."
+  } ]
+} ]

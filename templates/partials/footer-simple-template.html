@@ -1,0 +1,41 @@
+<!--
+  templateType: global_partial
+  label: Footer
+-->
+<footer class="footer footer__simple_template p-4">
+  <div class="footer__container content-wrapper">
+
+    <div class="footer-columns-container">
+      <div class="footer-left-col">
+        <a href="https://www.facebook.com/business/partner-directory/search?id=4932181706838081" target="_blank" rel="nofollow noopener noreferrer">
+          <img loading="lazy" style="margin-right: 20px;" src="https://www.hello-charles.com/hubfs/Meta-Business-Partner.svg" alt="charles offical Meta Business Partner & WhatsApp Business API provider" width="120" height="69">
+        </a>
+        <!-- ISO Certification -->
+        <a href="https://www.hello-charles.com/hubfs/ISMS%20Certificate.pdf" target="_blank">
+          <img src="https://www.hello-charles.com/hubfs/ISO%2027001%20Certification%20Mark%20B&W.png" alt="ISO 27001 certification | charles" loading="lazy" style="width: 60px; height: auto;">
+        </a>
+        <img src="https://www.hello-charles.com/hubfs/Imported%20images/footer-simple-logo.png" loading="lazy" alt="G2 and OMR Reviews" class="simple-template-logos" />
+      </div>
+
+      <div class="footer-right-col">
+        {# Copyright information section #}
+        <div class="footer__copyright text-xs" style="opacity: 0.6;">
+          {% module_block module 'footer_copyright_text' path='@hubspot/text' %}
+          {% module_attribute 'value' %}© {{ year }} All rights reserved.{% end_module_attribute %}
+          {% end_module_block %}
+        </div>
+        {# End copyright information section #}
+      </div>
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['SLScoutObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                            })(window,document,'script','https://scout-cdn.salesloft.com/sl.js','slscout');
+    slscout(["init", "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0IjoxMTA0NjF9.TIrl0XOBoO5Q7by9qEEGRc_Kx-9g1QiVRvB3OythqIs"]);
+  </script>
+</footer>

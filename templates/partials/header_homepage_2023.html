@@ -1,0 +1,31 @@
+<!--
+templateType: global_partial
+label: Website header homepage 2023
+-->
+<header id="main-page-header" class="homepage-2023 px-4 h-20 flex flex-no-wrap items-center">
+  <div class="page-header--logo h-10">
+    <div class="charles-desktop-logo">
+      {% module 'site_logo' path='@hubspot/logo' %}
+    </div>
+    <div class="charles-mobile-logo">
+      <a href="/">
+        <img src="https://www.hello-charles.com/hubfs/Imported%20images/charles-mobile-logo.svg" alt="Charles" />
+      </a>
+    </div>
+  </div>
+
+  <div class="flex-grow"></div>
+
+  <div class="page-header--nav-wrap" id="main-nav">
+    {% module 'navigation-primary' path='../../modules/menu-section', label='Primary navigation' %}
+  </div>
+  <div class="page-header--burger-menu desktop:hidden">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div> 
+
+  {# {% module "module_16597310127433" path='/charles-b2b/modules/chat award nav 2022', label="chat award nav" %} #}
+  {% module "module_17072966061731" path="/charles-b2b/modules/chat award nav 2024", label="chat award nav 2024" %}
+</header>

@@ -1,0 +1,143 @@
+[ {
+  "id" : "7e8ed87f-70fe-d066-5e13-204eb2b1fb52",
+  "name" : "featured_image",
+  "display_width" : null,
+  "label" : "Featured image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/partner-image-block.png",
+    "alt" : "partner-image-block",
+    "loading" : "lazy",
+    "width" : 944,
+    "height" : 492,
+    "max_width" : 944,
+    "max_height" : 492
+  }
+}, {
+  "id" : "ac2aeb60-d632-6990-234b-e312cb51c092",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Agency partner"
+}, {
+  "id" : "ff1f63bd-a375-70b1-5acc-5aea61d58c43",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>WhatsApp is a huge opportunity for European brands. If you do it right. To ensure success, you need a WhatsApp marketing platform focused on profitability, efficiency and GDPR compliance. Like charles.</span></p>\n<ul>\n<li>WhatsApp is a huge opportunity</li>\n<li>WhatsApp is a huge opportunity</li>\n<li>WhatsApp is a huge opportunity</li>\n</ul>"
+}, {
+  "id" : "0a640e3b-9969-9b92-d296-d02823b981c5",
+  "name" : "button_url",
+  "display_width" : null,
+  "label" : "Button URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : 41001952809,
+      "href" : null,
+      "type" : "CONTENT"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "1b1f638d-ddea-a3c7-7f3a-59b469e4cfe5",
+  "name" : "button_label",
+  "display_width" : null,
+  "label" : "Button label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get started"
+}, {
+  "id" : "4e23d7db-eb23-df9a-ea42-857e6d15284a",
+  "name" : "button_id",
+  "display_width" : null,
+  "label" : "Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "7e065d18-8e59-0a5d-cdc4-7dc52bc185d2",
+  "name" : "card_width",
+  "display_width" : null,
+  "label" : "Card Width",
+  "inline_help_text" : "Set card with in px. Write only the number.",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "500"
+}, {
+  "id" : "cfe1d751-3334-ae0b-592b-0c4a2fe37c58",
+  "name" : "enable_carousel",
+  "display_width" : null,
+  "label" : "Enable Carousel",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "f7de5c9a-b942-0145-6858-6bc926048ea7",
+  "name" : "number_of_slides_class",
+  "display_width" : null,
+  "label" : "Number of slides class",
+  "inline_help_text" : "If images are small circles add class \"five-slides\".\nIf images are wide logos, add class \"four-slides\".",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "1a1cbe1a-8d65-ffca-6445-4a63cbfd28d6",
+  "name" : "partner_logo",
+  "display_width" : null,
+  "label" : "Partner logo",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  } ]
+} ]

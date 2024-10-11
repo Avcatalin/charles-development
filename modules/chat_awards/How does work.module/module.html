@@ -1,0 +1,99 @@
+<style>
+.inner_boder_1:after, .inner_boder_1:before,
+  .inner_boder_2:after, .inner_boder_2:before,
+  .inner_boder_3:after, .inner_boder_3:before,
+  .inner_boder_4:after, .inner_boder_4:before,
+  .inner_boder_5:after, .inner_boder_5:before,
+  .inner_boder_6:after, .inner_boder_6:before,
+  .inner_boder_7:after, .inner_boder_7:before {
+    background:{{ module.background.css }} !important;
+  }
+  .how_does_work_title h2 {
+    background:{{ module.background.css }} !important;
+    color:{{ module.title_color.css }} !important;
+  }
+</style>
+
+<div class="how_does_work" style="background:{{ module.background.css }}">
+  <div class="container">
+    <div class="how_does_work_content" style="background:{{ module.inner_background.css }}">
+      <div class="how_does_work_title">
+        <h2>{{ module.title }}</h2>
+        <p>{{ module.summary }}</p>
+      </div>
+      <div class="how_does_work_down">
+        <div class="how_does_work_round">
+          <div class="single_how_does_work_round">
+            <h3>{{ module.start_date }}</h3>
+            <div class="round_box"></div>
+          </div>
+          <div class="single_how_does_work_round">
+            <h3>{{ module.middle_date }}</h3>
+            <div class="round_box"></div>
+          </div>
+          <div class="single_how_does_work_round">
+            <h3>{{ module.end_date }}</h3>
+            <div class="round_box"></div>
+          </div>
+        </div>
+        <!-- application s-->
+        <div class="application">
+          <div class="single_application">
+            <h3>{{ module.start_text }}</h3>
+          </div>
+          <div class="single_application">
+            <h3>{{ module.middle_text }}</h3>
+          </div>
+          <div class="single_application">
+            <h3>{{ module.end_text }}</h3>
+          </div>
+        </div>
+        <!-- application e -->
+        <!-- counting_service start -->
+        <div class="counting_service">
+          <div class="single-counting">
+            <div class="counting_left counting_one">
+              <h2>1</h2>
+            </div>
+            <div class="counting_right">
+              {{ module.text1 }}
+            </div>
+          </div>
+          <div class="single-counting">
+            <div class="counting_left counting_two">
+              <h2>2</h2>
+            </div>
+            <div class="counting_right">
+              {{ module.text2 }}
+            </div>
+          </div>
+          <div class="single-counting">
+            <div class="counting_left counting_three">
+              <h2>3</h2>
+            </div>
+            <div class="counting_right">
+              {{ module.text3 }}
+            </div>
+          </div>
+        </div>
+        <!-- counting_service end -->
+      </div>
+      <!-- lets get start start -->
+      <div class="lets_get_start">
+        <div class="inner_boder_1"></div>
+        <div class="inner_boder_2"></div>
+        <div class="inner_boder_3"></div>
+        <div class="inner_boder_4"></div>
+        <div class="inner_boder_5"></div>
+        <div class="inner_boder_6"></div>
+        <div class="inner_boder_7"></div>
+        <div id="apply-now" class="lets_get_title">
+          <h2>{{ module.get_started_title }}</h2>
+          <p>{{ module.get_started_subtitle }}</p>
+        </div>
+
+      </div>
+      <!-- lets get start end -->
+    </div>
+  </div>
+</div>

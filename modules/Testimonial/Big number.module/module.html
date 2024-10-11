@@ -1,0 +1,16 @@
+<div class="big_number">
+  <div class="content-wrapper">
+    <div class="content">
+      {% for item in module.block %}
+      <div class="block">
+        <p class="big_number_title">
+          {{ item.before_number }}<span>{{ item.big_number }}</span>{{ item.number_unit }}
+        </p>
+        <p>
+          {{ item.sub_text }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

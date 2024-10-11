@@ -1,0 +1,700 @@
+[ {
+  "id" : "c1761606-eee9-8b7d-78e4-acc5c8516e92",
+  "name" : "show_department",
+  "display_width" : null,
+  "label" : "Show  department",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "0227e14a-e62b-c610-5df6-c72d43bf4bb5",
+  "name" : "department",
+  "display_width" : null,
+  "label" : "Department",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b64d78bb-28e5-c7a0-aa92-9301d802912c",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Depart title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "6 DEPARTMENTS"
+  }, {
+    "id" : "dec27a76-5eaa-5404-0cbe-cb4683370f7f",
+    "name" : "department_content",
+    "display_width" : null,
+    "label" : "Department content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "     Because we deeply believe that <strong>\"It’s better to have a conversation\"</strong>. Conversations are the human superpower to create trust, shape relationships and avoid misunderstandings. In life as in commerce. Between people as between consumers &amp; companies.      "
+  }, {
+    "id" : "d9d05ae6-f5c4-eeeb-185f-93adc398918d",
+    "name" : "block",
+    "display_width" : null,
+    "label" : "Block",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 6
+    },
+    "children" : [ {
+      "id" : "1faad771-9f12-6953-97de-f91fa8fdfff7",
+      "name" : "icon",
+      "display_width" : null,
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      }
+    }, {
+      "id" : "c5dd618d-7cfe-51a5-5a69-862c52f9bfb7",
+      "name" : "sub_text",
+      "display_width" : null,
+      "label" : "Sub text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "SUCCESS"
+    }, {
+      "id" : "025b2a5e-937c-de21-031a-ff76d3d74772",
+      "name" : "mobile_text",
+      "display_width" : null,
+      "label" : "Mobile text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "SUCCESS"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    }, {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    }, {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    }, {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    }, {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    }, {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    } ]
+  }, {
+    "id" : "188527b7-9961-27f5-275a-e5cf4ea55af6",
+    "name" : "bottom_headline",
+    "display_width" : null,
+    "label" : "Bottom headline",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "   <span><strong>Meet</strong></span> them all       "
+  }, {
+    "id" : "aebda8ff-0245-120d-fd87-ebcda1a31469",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Frame%203166.png",
+      "alt" : "Frame 3166",
+      "loading" : "lazy",
+      "width" : 1444,
+      "height" : 722,
+      "max_width" : 1444,
+      "max_height" : 722
+    }
+  }, {
+    "id" : "26c55c54-9e9b-90b3-6d90-e8679b8d6ea8",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#fff",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "title" : "6 DEPARTMENTS",
+    "department_content" : "     Because we deeply believe that <strong>\"It’s better to have a conversation\"</strong>. Conversations are the human superpower to create trust, shape relationships and avoid misunderstandings. In life as in commerce. Between people as between consumers &amp; companies.      ",
+    "block" : [ {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    }, {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    }, {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    }, {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    }, {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    }, {
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+        "alt" : "Group 8812",
+        "loading" : "lazy",
+        "width" : 89,
+        "height" : 100,
+        "max_width" : 89,
+        "max_height" : 100
+      },
+      "sub_text" : "SUCCESS",
+      "mobile_text" : "SUCCESS"
+    } ],
+    "bottom_headline" : "   <span><strong>Meet</strong></span> them all       ",
+    "background_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Frame%203166.png",
+      "alt" : "Frame 3166",
+      "loading" : "lazy",
+      "width" : 1444,
+      "height" : 722,
+      "max_width" : 1444,
+      "max_height" : 722
+    },
+    "background_color" : {
+      "color" : "#fff",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "f16e7efc-4198-351d-5cf2-c2a39323e75e",
+  "name" : "content_block",
+  "display_width" : null,
+  "label" : "Content block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "80bbe62f-b891-69c2-1373-7e30b2fa4c02",
+    "name" : "left_image",
+    "display_width" : null,
+    "label" : "Left image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Cup.png",
+      "alt" : "Cup",
+      "loading" : "lazy",
+      "width" : 514,
+      "height" : 459,
+      "max_width" : 514,
+      "max_height" : 459
+    }
+  }, {
+    "id" : "6a8c40f9-f272-e402-c98c-da5d7dddc38a",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "SUCCESS"
+  }, {
+    "id" : "8f96ec10-0d16-fff1-64b8-0d0850f8f071",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "“Being the global epicenter of conversational commerce”"
+  }, {
+    "id" : "1a4a5fdc-d508-53a5-35d4-9e27eb6a996f",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }, {
+    "id" : "c64dfef4-f5e4-d6a1-46d3-9eabac99212f",
+    "name" : "number_block",
+    "display_width" : null,
+    "label" : "Number block",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "51eb57b7-98ae-33a1-5b7b-0c730ca6908b",
+      "name" : "number",
+      "display_width" : null,
+      "label" : "Number",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "7"
+    }, {
+      "id" : "5375cbc9-9b83-c12a-6104-acd5ebdfc8df",
+      "name" : "sufix",
+      "display_width" : null,
+      "label" : "Sufix",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "090d4944-8784-2d8a-7dac-ab04304a4638",
+      "name" : "bottom_text",
+      "display_width" : null,
+      "label" : "Bottom text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "dedicated full-time Success professionals "
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "number" : "7",
+      "bottom_text" : "dedicated full-time Success professionals "
+    }, {
+      "number" : "7",
+      "bottom_text" : "dedicated full-time Success professionals "
+    }, {
+      "number" : "7",
+      "bottom_text" : "dedicated full-time Success professionals "
+    } ]
+  }, {
+    "id" : "f7d6b1d9-9c01-fff4-108d-8eb7a7f1e90b",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Wanna join?"
+  }, {
+    "id" : "a31ea76e-54fe-4239-62cf-030a1aaf424b",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    }
+  }, {
+    "id" : "c6332abf-057d-1492-ca6f-051d338fcd89",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#fff171",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "535fa724-65e7-8cc0-f586-ff8a98422ec7",
+    "name" : "title_color",
+    "display_width" : null,
+    "label" : "Title color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "c38d6b67-987d-ff05-9e21-41fb99d00c1c",
+    "name" : "body_text_color",
+    "display_width" : null,
+    "label" : "Body text color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "bfed95a8-9cb8-06cb-c566-4cb6e08809f3",
+    "name" : "background_image",
+    "display_width" : null,
+    "label" : "Background image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "d6840773-04a2-9d41-e487-d2c7885e129d",
+    "name" : "button_background",
+    "display_width" : null,
+    "label" : "Button background",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#fff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "35934937-957c-1760-2b80-db37bd9c5f7a",
+    "name" : "button_text_color",
+    "display_width" : null,
+    "label" : "Button text color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "bd4915f3-eaf3-3fa4-4df4-6f3d36ed9532",
+    "name" : "id_name",
+    "display_width" : null,
+    "label" : "ID",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "repeat1"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "left_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Cup.png",
+      "alt" : "Cup",
+      "loading" : "lazy",
+      "width" : 514,
+      "height" : 459,
+      "max_width" : 514,
+      "max_height" : 459
+    },
+    "title" : "SUCCESS",
+    "sub_title" : "“Being the global epicenter of conversational commerce”",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "number_block" : [ {
+      "number" : "7",
+      "bottom_text" : "dedicated full-time Success professionals "
+    }, {
+      "number" : "7",
+      "bottom_text" : "dedicated full-time Success professionals "
+    }, {
+      "number" : "7",
+      "bottom_text" : "dedicated full-time Success professionals "
+    } ],
+    "button_text" : "Wanna join?",
+    "button_link" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    },
+    "background_color" : {
+      "color" : "#fff171",
+      "opacity" : 100
+    },
+    "title_color" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    },
+    "body_text_color" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    },
+    "background_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "button_background" : {
+      "color" : "#fff",
+      "opacity" : 100
+    },
+    "button_text_color" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    },
+    "id" : "repeat1"
+  }, {
+    "left_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Cup.png",
+      "alt" : "Cup",
+      "loading" : "lazy",
+      "width" : 514,
+      "height" : 459,
+      "max_width" : 514,
+      "max_height" : 459
+    },
+    "title" : "SUCCESS",
+    "sub_title" : "“Being the global epicenter of conversational commerce”",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "number_block" : [ {
+      "number" : "7",
+      "bottom_text" : "dedicated full-time Success professionals "
+    }, {
+      "number" : "7",
+      "bottom_text" : "dedicated full-time Success professionals "
+    }, {
+      "number" : "7",
+      "bottom_text" : "dedicated full-time Success professionals "
+    } ],
+    "button_text" : "Wanna join?",
+    "button_link" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    },
+    "background_color" : {
+      "color" : "#fff171",
+      "opacity" : 100
+    },
+    "title_color" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    },
+    "body_text_color" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    },
+    "background_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "button_background" : {
+      "color" : "#fff",
+      "opacity" : 100
+    },
+    "button_text_color" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    },
+    "id" : "repeat1"
+  } ]
+} ]

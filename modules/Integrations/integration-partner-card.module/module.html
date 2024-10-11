@@ -1,0 +1,52 @@
+<div class="integration-partner-card">
+  <div class="partner-feature-img" style="background: {{ module.style.partner_feature_background.css }}">
+    {% if module.partner_logo.src %}
+    {% set sizeAttrs = 'width="{{ module.partner_logo.width|escape_attr }}" height="{{ module.partner_logo.height|escape_attr }}"' %}
+    {% if module.partner_logo.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.partner_logo.width|escape_attr }}" height="{{ module.partner_logo.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.partner_logo.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.partner_logo.max_width|escape_attr }}" height="{{ module.partner_logo.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.partner_logo.loading != 'disabled' ? 'loading="{{ module.partner_logo.loading|escape_attr }}"' : '' %}
+    <img src="{{ module.partner_logo.src|escape_url }}" alt="{{ module.partner_logo.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+  <div class="partner-intro-text">
+    {{ module.intro_text }}
+  </div>
+  <div class="partner-list">
+    <ul>
+      {% for item in module.features_repeater %}
+      <li>
+        <div class="feature-icon">
+          {% if item.icon.src %}
+          {% set sizeAttrs = 'width="{{ item.icon.width|escape_attr }}" height="{{ item.icon.height|escape_attr }}"' %}
+          {% if item.icon.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ item.icon.width|escape_attr }}" height="{{ item.icon.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% elif item.icon.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.icon.max_width|escape_attr }}" height="{{ item.icon.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading|escape_attr }}"' : '' %}
+          <img src="{{ item.icon.src|escape_url }}" alt="{{ item.icon.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <p>
+          {{ item.feature_text }}
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="partner-cta">
+    {% set href = module.more_url.url.href %}
+    {% if module.more_url.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href|escape_url }}"
+       {% if module.more_url.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.more_url.rel %}rel="{{ module.more_url.rel|escape_attr }}"{% endif %}
+       >
+      {{ module.more_label }}
+    </a>
+  </div>
+</div>

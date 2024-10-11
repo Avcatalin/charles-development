@@ -1,0 +1,138 @@
+[ {
+  "id" : "3ca40998-b395-b5f4-0f53-21257bb0a5ca",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<div style=\"text-align: center;\">These companies use <strong>Journeys.</strong></div>\n<div style=\"text-align: center;\">See you here soon?</div>"
+}, {
+  "id" : "9828d6a1-d5ca-cd37-e1ca-16970fd080ba",
+  "name" : "centered_title",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8641b72b-e2db-c120-b2ff-a56b4d31dcfd",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "eb30337b-ef16-1a95-9014-a67e90ccc036",
+  "name" : "title_color",
+  "display_width" : null,
+  "label" : "Title - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "15d1828c-802a-dea0-b73c-1101b8773f5f",
+  "name" : "font_family_option",
+  "display_width" : null,
+  "label" : "Font Family Option",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Karla"
+}, {
+  "id" : "894be9eb-6c3a-b3a2-599c-62fe6394dc7e",
+  "name" : "font_weight_option",
+  "display_width" : null,
+  "label" : "Font Weight Option",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "400"
+}, {
+  "id" : "9e22ab41-1049-19be-285d-7b1749aaa742",
+  "name" : "font_size_option",
+  "display_width" : null,
+  "label" : "Font Size Option",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "0290f45a-2f84-1758-bc01-2bc62b0dd7d3",
+  "name" : "line_height_option",
+  "display_width" : null,
+  "label" : "Line Height Option",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "cfa3763f-1805-6957-98a2-56d2b6ca5ba3",
+  "name" : "letter_spacing_option",
+  "display_width" : null,
+  "label" : "Letter Spacing Option",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "0"
+}, {
+  "id" : "d7cec513-4717-822f-311f-18064976a4a2",
+  "name" : "set_container_width",
+  "display_width" : null,
+  "label" : "Set Container Width",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "3fedb8ac-2f7d-0461-de35-676128906b22",
+  "name" : "container_background_color",
+  "display_width" : null,
+  "label" : "Container Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "53a2dcb5-7eb6-8388-2d8e-072898eb04f1",
+  "name" : "mobile_font_size",
+  "display_width" : null,
+  "label" : "Mobile font-size",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

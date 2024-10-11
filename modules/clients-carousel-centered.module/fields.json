@@ -1,0 +1,65 @@
+[ {
+  "id" : "5bb78560-0b8a-93c5-35a8-8f0144486556",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Brands that started their whatsapp journey with us"
+}, {
+  "id" : "35e9255d-dec8-87da-3312-f8c7b690bba8",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>We understand the complexity of custom integrations. An entire team of API experts at charles is set up to connect your integrations</span></p>"
+}, {
+  "id" : "b74ef04a-e228-6bea-022d-f3b53dee022e",
+  "name" : "promo_repeater",
+  "display_width" : null,
+  "label" : "Promo repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "b3f1b6a7-4fbc-fbc3-e228-0703bf13f804",
+    "name" : "promo_image",
+    "display_width" : null,
+    "label" : "Promo image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "promo_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ]
+} ]

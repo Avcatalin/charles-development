@@ -1,0 +1,114 @@
+[ {
+  "id" : "d4338cdb-0d92-5505-4978-21ece90d947b",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f5c0a1e8-4b0c-9253-5a0a-8626718dd250",
+    "name" : "column_content_alignment",
+    "display_width" : null,
+    "label" : "Column Content Alignment",
+    "required" : false,
+    "locked" : false,
+    "type" : "textalignment",
+    "default" : {
+      "text_align" : "CENTER"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "column_content_alignment" : {
+      "text_align" : "CENTER"
+    }
+  }
+}, {
+  "id" : "92c58b4a-3058-6aec-7a0f-8df5572a3028",
+  "name" : "column_repeater",
+  "display_width" : null,
+  "label" : "Column repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "5635b9d3-2956-ba7b-659e-20e526712ba3",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/opening-rates.webp",
+      "alt" : "Opening rates",
+      "loading" : "lazy",
+      "width" : 700,
+      "height" : 700,
+      "max_width" : 700,
+      "max_height" : 700
+    }
+  }, {
+    "id" : "5184d45b-8b84-7346-daff-839c7824d9a5",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Opening rates"
+  }, {
+    "id" : "d054095d-d1be-9399-39b5-0e40e8339bbd",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "3f12e84d-5b51-5974-94b2-7be1be11162c",
+    "name" : "column_width",
+    "display_width" : null,
+    "label" : "Column Width",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "col-2", "Col 2" ], [ "col-3", "Col 3" ], [ "col-4", "Col 4" ], [ "col-6", "Col 6" ], [ "col-7", "Col 7" ], [ "col-8", "Col 8" ], [ "col-9", "Col 9" ], [ "col-12", "Col 12" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/opening-rates.webp",
+      "alt" : "Opening rates",
+      "loading" : "lazy",
+      "width" : 700,
+      "height" : 700,
+      "max_width" : 700,
+      "max_height" : 700
+    },
+    "title" : "Opening rates"
+  } ]
+} ]

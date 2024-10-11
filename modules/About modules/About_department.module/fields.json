@@ -1,0 +1,242 @@
+[ {
+  "id" : "95dfbfa4-9c07-0e48-4bff-6939c38c8229",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "6 Departments"
+}, {
+  "id" : "f78eef4a-76a8-b524-d2cc-b3a4613e8d16",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Because we deeply believe that <strong>\"It’s better to have a conversation\"</strong>. Conversations are the human superpower to create trust, shape relationships and avoid misunderstandings. In life as in commerce. Between people as between consumers & companies."
+}, {
+  "id" : "9f9f6cb4-8032-7a8d-36a9-a67959467a3b",
+  "name" : "block",
+  "display_width" : null,
+  "label" : "Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "62b55106-c978-3c34-5494-98afa966d407",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+      "alt" : "Group 8812",
+      "loading" : "lazy",
+      "width" : 89,
+      "height" : 100,
+      "max_width" : 89,
+      "max_height" : 100
+    }
+  }, {
+    "id" : "145fa27e-ec8c-c284-d974-c67ea1132b72",
+    "name" : "sub_text",
+    "display_width" : null,
+    "label" : "sub text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "SUCCESS"
+  }, {
+    "id" : "145ffe00-71c5-649a-bb94-ae9217f10e7c",
+    "name" : "mobile_text",
+    "display_width" : null,
+    "label" : "Mobile text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+      "alt" : "Group 8812",
+      "loading" : "lazy",
+      "width" : 89,
+      "height" : 100,
+      "max_width" : 89,
+      "max_height" : 100
+    },
+    "sub_text" : "SUCCESS"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+      "alt" : "Group 8812",
+      "loading" : "lazy",
+      "width" : 89,
+      "height" : 100,
+      "max_width" : 89,
+      "max_height" : 100
+    },
+    "sub_text" : "SUCCESS"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+      "alt" : "Group 8812",
+      "loading" : "lazy",
+      "width" : 89,
+      "height" : 100,
+      "max_width" : 89,
+      "max_height" : 100
+    },
+    "sub_text" : "SUCCESS"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+      "alt" : "Group 8812",
+      "loading" : "lazy",
+      "width" : 89,
+      "height" : 100,
+      "max_width" : 89,
+      "max_height" : 100
+    },
+    "sub_text" : "SUCCESS"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+      "alt" : "Group 8812",
+      "loading" : "lazy",
+      "width" : 89,
+      "height" : 100,
+      "max_width" : 89,
+      "max_height" : 100
+    },
+    "sub_text" : "SUCCESS"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/Group%208812.png",
+      "alt" : "Group 8812",
+      "loading" : "lazy",
+      "width" : 89,
+      "height" : 100,
+      "max_width" : 89,
+      "max_height" : 100
+    },
+    "sub_text" : "SUCCESS"
+  } ]
+}, {
+  "id" : "e5c8aa98-b09a-7d78-b5a8-16aad24ccc8b",
+  "name" : "background_image",
+  "display_width" : null,
+  "label" : "background image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/About%20pages/Frame%203166.png",
+    "alt" : "Frame 3166",
+    "loading" : "lazy",
+    "width" : 1444,
+    "height" : 722,
+    "max_width" : 1444,
+    "max_height" : 722
+  }
+}, {
+  "id" : "714e31e6-e7c5-9100-8bef-ea9833d09a9a",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "feb8e28e-54b0-a2e3-2720-ee74aec2c1e3",
+  "name" : "show_logo",
+  "display_width" : null,
+  "label" : "Show logo",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "1d9c7acd-f9b3-6854-331a-d6584e8a4b8b",
+  "name" : "classname",
+  "display_width" : null,
+  "label" : "Classname",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "placeholder for scrollify",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "26cf44f6-07dd-f244-777a-a95efbaf8e5f",
+  "name" : "headline_block",
+  "display_width" : null,
+  "label" : "Headline block",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "642f753d-bcd9-7893-aaca-781618516750",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : " <span><strong>Meet</strong></span> them all "
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "title" : " <span><strong>Meet</strong></span> them all "
+  }
+} ]

@@ -1,0 +1,89 @@
+<div class="container px-0">
+  <div class="features-steps-bottom-section" style="{{ module.steps_bottom.spacing_field.css }} background: {{ module.background_color.color }};">
+    <div class="column-left">   
+      <!-- Title with description -->
+      <div class="content-container">
+        <div class="mobile-logo-partner">
+          {% if module.mobile_logo_partner.src %}
+          {% set sizeAttrs = 'width="{{ module.mobile_logo_partner.width }}" height="{{ module.mobile_logo_partner.height }}"' %}
+          {% if module.mobile_logo_partner.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.mobile_logo_partner.width }}" height="{{ module.mobile_logo_partner.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.mobile_logo_partner.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.mobile_logo_partner.max_width }}" height="{{ module.mobile_logo_partner.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.mobile_logo_partner.loading != 'disabled' ? 'loading="{{ module.mobile_logo_partner.loading }}"' : '' %}
+          <img src="{{ module.mobile_logo_partner.src }}" alt="{{ module.mobile_logo_partner.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <h3 style="color: {{ module.title_color.color }};">{{ module.title_content }}</h3>
+        <p style="color: {{ module.content_color.color }};">{{ module.content }}</p>
+      </div>
+      <!-- end Title with description -->
+      <div class="partner-logo">
+        {% if module.icon_left_column.src %}
+        {% set sizeAttrs = 'width="{{ module.icon_left_column.width }}" height="{{ module.icon_left_column.height }}"' %}
+        {% if module.icon_left_column.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.icon_left_column.width }}" height="{{ module.icon_left_column.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.icon_left_column.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.icon_left_column.max_width }}" height="{{ module.icon_left_column.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.icon_left_column.loading != 'disabled' ? 'loading="{{ module.icon_left_column.loading }}"' : '' %}
+        <img src="{{ module.icon_left_column.src }}" {{ loadingAttr }} {{ sizeAttrs }} style="margin-left: {{ module.steps_bottom.margin_left_spacing }}px; margin-right: {{ module.steps_bottom.margin_right_spacing }}px; {{ module.steps_bottom.column_left_image_spacing.css }}" alt="{{ module.icon_left_column.alt }}">
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="column-right bg-mobile">
+      <div class="desktop-right-image">
+        {% if module.column_right_image.src %}
+        {% set sizeAttrs = 'width="{{ module.column_right_image.width }}" height="{{ module.column_right_image.height }}"' %}
+        {% if module.column_right_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.column_right_image.width }}" height="{{ module.column_right_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.column_right_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.column_right_image.max_width }}" height="{{ module.column_right_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.column_right_image.loading != 'disabled' ? 'loading="{{ module.column_right_image.loading }}"' : '' %}
+        <img src="{{ module.column_right_image.src }}" alt="{{ module.column_right_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+
+      <div class="mobile-bottom-block">
+        <div class="block-content">
+          {{ module.mobile_content_bottom_block }}
+        </div>
+        <!-- Mobile CTA Button -->
+        <div class="mobile-right-cta">
+          {% set href = module.column_right_mobile_cta.url.href %}
+          {% if module.column_right_mobile_cta.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if module.column_right_mobile_cta.open_in_new_tab %}target="_blank"{% endif %}
+             {% if module.column_right_mobile_cta.rel %}rel="{{ module.column_right_mobile_cta.rel }}"{% endif %}
+             >
+            <div class="label-icon">
+              <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.16924 28.9035C5.81762 28.3764 7.34322 27.8976 8.86509 27.3965C9.17393 27.2925 9.40463 27.3259 9.67998 27.4967C12.3442 29.13 15.2428 29.7536 18.3424 29.3675C25.7657 28.447 31.0234 21.5761 29.9555 14.2189C28.8838 6.84689 21.9889 1.76518 14.6028 2.90847C5.0325 4.38956 0.13944 15.3251 5.46041 23.3801C5.75809 23.833 5.78786 24.1856 5.60925 24.6719C5.11436 26.0379 4.67157 27.4187 4.16924 28.9035ZM0 32.9581C0.531664 31.3717 1.05961 29.8114 1.58384 28.2511C1.9705 27.1032 2.3423 25.9515 2.74383 24.8073C2.83678 24.5361 2.82191 24.3281 2.68063 24.0717C-0.899739 17.6447 0.122692 9.97323 5.24972 4.73506C11.2988 -1.45045 21.5603 -1.59534 27.7878 4.41557C34.1789 10.5899 34.5247 20.4459 28.5723 26.9843C23.7724 32.2596 15.9276 33.7271 9.53649 30.5247C9.0829 30.2944 8.69996 30.2498 8.20547 30.4133C5.66241 31.2603 3.10075 32.0665 0.546536 32.8763C0.394101 32.9246 0.249101 33.0286 0 32.9581Z" fill="#FDFDFD"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1644 7.80485C12.2278 7.80485 12.2772 7.80849 12.3195 7.80485C13.1376 7.72122 13.5642 8.10665 13.7864 8.91752C14.0121 9.74293 14.3189 10.5574 14.6609 11.3465C14.9077 11.9283 14.7914 12.401 14.4317 12.8519C14.2025 13.1355 13.9698 13.4191 13.7088 13.6664C13.4197 13.9427 13.3879 14.2191 13.5713 14.5609C14.6292 16.5353 16.0714 18.1098 18.039 19.1279C19.2414 19.7533 19.0862 19.8479 20.0277 18.7388C20.264 18.4588 20.5108 18.1861 20.7224 17.8916C20.9551 17.5789 21.2337 17.4662 21.5722 17.6443C22.6512 18.2079 23.7232 18.7897 24.7951 19.3751C25.0349 19.5024 25.0631 19.7315 25.0596 19.9897C25.0384 21.6405 23.8149 23.015 22.1646 23.3131C21.276 23.4695 20.4544 23.3386 19.6046 23.0731C15.888 21.8987 13.1517 19.477 11.103 16.128C10.3766 14.9427 9.68898 13.75 9.5162 12.3282C9.30815 10.6374 9.84766 9.24114 11.0924 8.12847C11.4027 7.85212 11.7765 7.75758 12.1644 7.80485Z" fill="#FDFDFD"/>
+              </svg>
+              <span style="margin-left: 5px;">{{ module.column_right_mobile_cta_label }}</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enable wave line right side -->
+    {% if module.show_wave_lines %}
+    <span class="dot-section right">
+      <svg viewBox="-20.966 17.469 1000.686 599.529" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 986.101 43.603 C 766.944 6.068 702.907 46.648 664.535 64.937 C 626.163 83.226 546.288 151.16 287.793 64.004 C 29.298 -23.152 247.5 653.807 1 595.195" stroke="#3A36DE" stroke-width="4"/>
+        <ellipse style="stroke: rgb(0, 0, 0); paint-order: stroke; fill: rgb(58, 54, 222); stroke-width: 0px;" cx="-2.913" cy="592.972" rx="12.5" ry="12.5"/>
+      </svg>
+    </span>
+    {% endif %}
+    <!-- end Mobile wave line right side -->
+  </div>
+  <!-- Background image section -->
+  <img src="{{ module.steps_bottom.backgroundimage_field.src }}" class="icon-bg" />
+</div>

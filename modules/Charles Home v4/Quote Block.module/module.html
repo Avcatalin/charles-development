@@ -1,0 +1,75 @@
+<div class="quote-block module" style="{{ module.style.spacing_field.css }}">
+  <div class="container">
+    <div class="quote-inner">
+      <div class="icons-block">
+        <!-- Top Image -->
+        {% if module.top_image.src %}
+        {% set sizeAttrs = 'width="{{ module.top_image.width }}" height="{{ module.top_image.height }}"' %}
+        {% if module.top_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.top_image.width }}" height="{{ module.top_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.top_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.top_image.max_width }}" height="{{ module.top_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.top_image.loading != 'disabled' ? 'loading="{{ module.top_image.loading }}"' : '' %}
+        <img src="{{ module.top_image.src }}" alt="{{ module.top_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="top_img">
+        {% endif %}
+        <!-- Bottom Image -->
+        {% if module.bottom_image.src %}
+        {% set sizeAttrs = 'width="{{ module.bottom_image.width }}" height="{{ module.bottom_image.height }}"' %}
+        {% if module.bottom_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.bottom_image.width }}" height="{{ module.bottom_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.bottom_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.bottom_image.max_width }}" height="{{ module.bottom_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.bottom_image.loading != 'disabled' ? 'loading="{{ module.bottom_image.loading }}"' : '' %}
+        <img src="{{ module.bottom_image.src }}" alt="{{ module.bottom_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="bottom_img">
+        {% endif %}
+      </div>
+      <!-- Quote Content -->
+      <div class="quote-content">
+        {{ module.quote_content }}
+
+        <div class="cta-wrapper">
+          <!-- Button CTA -->
+          {% set href = module.button_link.url.href %}
+          {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}" class="quote-cta" id="{{ module.button_id }}"
+             {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+             >
+            {{ module.button_label }}
+            <i></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" async>
+  // Parallax Effect
+  const parallaxImageTop = document.querySelector('.top_img');
+  const parallaxImageBottom = document.querySelector('.bottom_img');
+
+  window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    const imageTop = parallaxImageTop.getBoundingClientRect().bottom;
+    const bottomTop = parallaxImageBottom.getBoundingClientRect().top;
+
+    if (imageTop < window.innerHeight && imageTop > -parallaxImageTop.clientHeight) {
+      //     const translateY = -50 - (scrollPosition - imageTop) * 0.2;
+      parallaxImageTop.style.transform = 'translateY(35%)';
+    } else {
+      parallaxImageTop.style.transform = 'translateY(-40%)';
+    }
+
+    if (bottomTop < window.innerHeight && bottomTop > -parallaxImageBottom.clientHeight) {
+      //     const translateY = -50 - (scrollPosition - imageTop) * 0.2;
+      parallaxImageBottom.style.transform = 'translateY(-30%)';
+    } else {
+      parallaxImageBottom.style.transform = 'translateY(50%)';
+    }
+  });
+</script>

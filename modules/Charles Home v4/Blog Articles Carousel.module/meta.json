@@ -1,0 +1,17 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 102662456787,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../css/swiper-bundle.min.css",
+    "name" : "swiper-bundle.min.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../js/swiper-bundle.min.js",
+    "name" : "swiper-bundle.min.js"
+  } ],
+  "is_available_for_new_content" : true
+}

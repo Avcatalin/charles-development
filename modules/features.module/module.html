@@ -1,0 +1,110 @@
+{% set title = module.title %}
+{% set text = module.text %}
+
+{% set lottieFile = module.lottie_file %}
+{% set lottieYOffset = module.animation_y_offset %}
+
+{% set scrollHint = module.scroll_hint %}
+
+{% set ctaText = module.cta.text %}
+{% set ctaAction = module.cta.link.url.href %}
+{% set ctaNewtab = module.cta.link.open_in_new_tab %}
+{% set ctaNoFollow = module.cta.link.no_follow %}
+
+<section class="c-features">
+  {% if module.anchor %}
+  <div class="c-anchor" id="{{ module.anchor }}"></div>
+  {% endif %}
+
+  <header class="c-features--header pb-8 bg-secondary relative">
+    <div class="flex items-center mobile:flex-col-reverse tablet:flex-col-reverse">
+      <!-- Header right (content) -->
+      <div class="w-5/12 mobile:w-full tablet:w-full text-left p-20 pt-32 mobile:p-10 tablet:p-10">
+        <h2 class="mb-8">{{ title }}</h2>
+        <p>{{ text }}</p>
+
+        {%if ctaText|length %}
+        <div class="c-features--cta my-8">
+          <a href="{{ ctaAction }}" {% if ctaNewtab %}target="_blank" {% endif %} {% if ctaNoFollow %}rel="nofollow" {% endif %}
+            class="c-button bg-white">
+            {{ ctaText }}
+          </a>
+        </div>
+        {% endif %}
+        
+      </div>
+      <!-- Header rigght (content) -->
+      <div class="c-features--animation-wrap w-7/12 mobile:w-full mobile:max-w-xs tablet:w-full tablet:max-w-xs self-start mobile:self-center tablet:self-center">
+        <div class="c-features--animation mobile:-mt-12 mobile:-mb-16 tablet:-mt-12 tablet:-mb-16">
+          {% if lottieFile and lottieFile|length %}
+            <lottie-player style="transform: translateY({{ lottieYOffset }}%) scale(1.25);" autoplay loop mode="bounce" src="{{ lottieFile }}"></lottie-player>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="c-features--scroll-hint absolute">
+        <span class="c-features--scroll-hint--text">
+          {{ scrollHint }}
+        </span>
+        <div class="c-features--scroll-hint--icon bg-secondary rounded-full">
+          <svg viewBox="0 0 38 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.88672 2.30078L19.2355 18.6496L35.5843 2.30078" stroke="#221F20" stroke-width="4.20397"
+              stroke-linecap="round" />
+          </svg>
+        </div>
+      
+      </div>
+    </div>
+  </header>
+  <article class="c-features--content py-12 relative">
+    <div class="features-achor"></div>
+    {% for feature in module.features %}
+      {% set cta = feature.cta %}
+      <section class="c-features--feature flex py-4 items-center relative mobile:flex-wrap">
+
+        {% if feature.anchor %}
+        <div class="c-anchor" id="{{ feature.anchor }}"></div>
+        {% endif %}
+
+        {% if feature.icon %}
+        <!-- Feature Icon-->
+        <div class="c-features--feature--icon absolute rounded-full bg-secondary shadow-lg mobile:hidden">
+          <img src="{{ feature.icon }}" alt="{{ feature.anchor }} Icon"/>
+        </div>
+        {% endif %}
+
+        <!-- Feature Animation -->
+        <div class="w-1/2 mobile:w-full">
+          <div class="c-features--feature-animation mobile:max-w-sm mx-auto py-8 px-16 mobile:py-4 mobile:px-8" style="max-width: 35rem;">
+            {% if feature.lottie_file and feature.lottie_file|length %}
+              <lottie-player autoplay loop mode="normal" src="{{ feature.lottie_file }}"></lottie-player>
+            {% endif %}
+          </div>
+        </div>
+
+        <!-- Feature Content -->
+        <div class="w-1/2 mobile:w-full">
+          <div class="c-features--feature-content p-8 tablet:pr-16 desktop:pr-24">
+            <h3 class="mb-8">
+              <span class="c-features--feature--icon rounded-full bg-secondary shadow-lg inline-block tablet:hidden desktop:hidden">
+                <img src="{{ feature.icon }}" alt="Icon" />
+              </span>
+              {{ feature.title }}
+            </h3>
+            <p>{{ feature.text }}</p>
+
+            {% if feature.cta.text|length %}
+            <div class="c-features--feature-cta my-4">
+              <a href="{{ feature.cta.link.url.href }}" class="c-button bg-secondary text-primary" {% if feature.cta.link.open_in_new_tab %}target="_blank" {% endif %} {% if feature.cta.link.no_follow %}rel="nofollow" {% endif %}>
+                {{ feature.cta.text }}
+              </a>
+            </div>
+            {% endif %}
+            
+          </div>
+        </div>
+        
+      </section>
+    {% endfor %}
+  </article>
+</section>

@@ -1,0 +1,66 @@
+[ {
+  "id" : "94acfc28-8d2e-281a-fff0-ad1ac76ad4cb",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Frequently asked questions",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "0653ef00-df88-a812-2741-dde228bd4099",
+  "name" : "faq",
+  "display_width" : null,
+  "label" : "FAQ",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 0
+  },
+  "children" : [ {
+    "id" : "6c642a37-b819-a5ae-51f8-69f8134ab287",
+    "name" : "question",
+    "display_width" : null,
+    "label" : "Question",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "What are WhatsApp Chat-Ins?",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  }, {
+    "id" : "d304cc49-41c3-a180-92e9-c8a9ff2579be",
+    "name" : "answer",
+    "display_width" : null,
+    "label" : "Answer",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : ""
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "question" : "",
+    "answer" : ""
+  }
+}, {
+  "id" : "958df1ae-96c5-93a3-ca76-31a9bdf64168",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+} ]

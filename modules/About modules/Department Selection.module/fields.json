@@ -1,0 +1,403 @@
+[ {
+  "id" : "168b80b8-606f-d6f5-53b3-9cea698614f7",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "SELECT A DEPARTMENT"
+}, {
+  "id" : "b5e356ff-f08b-1bd3-437a-9b01a8907b50",
+  "name" : "block",
+  "display_width" : null,
+  "label" : "Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "16a45cf6-d8d7-eafa-133e-5677ba357c36",
+    "name" : "filter_label",
+    "display_width" : null,
+    "label" : "Filter label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Success"
+  }, {
+    "id" : "ef577aac-bc14-7945-1867-f89ac0e5e107",
+    "name" : "label_icon",
+    "display_width" : null,
+    "label" : "Label icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/trophy.png",
+      "alt" : "trophy",
+      "loading" : "lazy",
+      "width" : 26,
+      "height" : 24,
+      "max_width" : 26,
+      "max_height" : 24
+    }
+  }, {
+    "id" : "3dffed28-9319-7f7b-a8a1-e7902ba407c3",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "4285e759-073c-7119-fb7e-f0651cada569",
+      "name" : "left_image",
+      "display_width" : null,
+      "label" : "Left image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+        "alt" : "DSC08633 1-1",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 480,
+        "max_width" : 800,
+        "max_height" : 480
+      }
+    }, {
+      "id" : "2d591222-d146-fd5d-fd55-a0eb0e9a3be3",
+      "name" : "quote",
+      "display_width" : null,
+      "label" : "Quote",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "“Being the global epicenter of conversational commerce”"
+    }, {
+      "id" : "5e0aafde-5e5f-5e1d-678e-5cb0db47e968",
+      "name" : "description",
+      "display_width" : null,
+      "label" : "Description",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+    }, {
+      "id" : "ca5b8fc3-418b-7895-e658-a275b28235bc",
+      "name" : "photo",
+      "display_width" : null,
+      "label" : "Photo",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Screenshot%202022-04-12%20at%2009.50%201.png",
+        "alt" : "Screenshot 2022-04-12 at 09.50 1",
+        "loading" : "lazy",
+        "width" : 55,
+        "height" : 54,
+        "max_width" : 55,
+        "max_height" : 54
+      }
+    }, {
+      "id" : "ae791e1f-abda-0b3a-2dd0-aa988408b4ff",
+      "name" : "author_info",
+      "display_width" : null,
+      "label" : "Author info",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "<strong>Damian Minski</strong>, Success Director"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "left_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+        "alt" : "DSC08633 1-1",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 480,
+        "max_width" : 800,
+        "max_height" : 480
+      },
+      "quote" : "“Being the global epicenter of conversational commerce”",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+      "photo" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Screenshot%202022-04-12%20at%2009.50%201.png",
+        "alt" : "Screenshot 2022-04-12 at 09.50 1",
+        "loading" : "lazy",
+        "width" : 55,
+        "height" : 54,
+        "max_width" : 55,
+        "max_height" : 54
+      },
+      "author_info" : "<strong>Damian Minski</strong>, Success Director"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "filter_label" : "Success",
+    "label_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/trophy.png",
+      "alt" : "trophy",
+      "loading" : "lazy",
+      "width" : 26,
+      "height" : 24,
+      "max_width" : 26,
+      "max_height" : 24
+    },
+    "content" : {
+      "left_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+        "alt" : "DSC08633 1-1",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 480,
+        "max_width" : 800,
+        "max_height" : 480
+      },
+      "quote" : "“Being the global epicenter of conversational commerce”",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+      "photo" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Screenshot%202022-04-12%20at%2009.50%201.png",
+        "alt" : "Screenshot 2022-04-12 at 09.50 1",
+        "loading" : "lazy",
+        "width" : 55,
+        "height" : 54,
+        "max_width" : 55,
+        "max_height" : 54
+      },
+      "author_info" : "<strong>Damian Minski</strong>, Success Director"
+    }
+  }, {
+    "filter_label" : "Success",
+    "label_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/trophy.png",
+      "alt" : "trophy",
+      "loading" : "lazy",
+      "width" : 26,
+      "height" : 24,
+      "max_width" : 26,
+      "max_height" : 24
+    },
+    "content" : {
+      "left_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+        "alt" : "DSC08633 1-1",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 480,
+        "max_width" : 800,
+        "max_height" : 480
+      },
+      "quote" : "“Being the global epicenter of conversational commerce”",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+      "photo" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Screenshot%202022-04-12%20at%2009.50%201.png",
+        "alt" : "Screenshot 2022-04-12 at 09.50 1",
+        "loading" : "lazy",
+        "width" : 55,
+        "height" : 54,
+        "max_width" : 55,
+        "max_height" : 54
+      },
+      "author_info" : "<strong>Damian Minski</strong>, Success Director"
+    }
+  }, {
+    "filter_label" : "Success",
+    "label_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/trophy.png",
+      "alt" : "trophy",
+      "loading" : "lazy",
+      "width" : 26,
+      "height" : 24,
+      "max_width" : 26,
+      "max_height" : 24
+    },
+    "content" : {
+      "left_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+        "alt" : "DSC08633 1-1",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 480,
+        "max_width" : 800,
+        "max_height" : 480
+      },
+      "quote" : "“Being the global epicenter of conversational commerce”",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+      "photo" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Screenshot%202022-04-12%20at%2009.50%201.png",
+        "alt" : "Screenshot 2022-04-12 at 09.50 1",
+        "loading" : "lazy",
+        "width" : 55,
+        "height" : 54,
+        "max_width" : 55,
+        "max_height" : 54
+      },
+      "author_info" : "<strong>Damian Minski</strong>, Success Director"
+    }
+  }, {
+    "filter_label" : "Success",
+    "label_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/trophy.png",
+      "alt" : "trophy",
+      "loading" : "lazy",
+      "width" : 26,
+      "height" : 24,
+      "max_width" : 26,
+      "max_height" : 24
+    },
+    "content" : {
+      "left_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+        "alt" : "DSC08633 1-1",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 480,
+        "max_width" : 800,
+        "max_height" : 480
+      },
+      "quote" : "“Being the global epicenter of conversational commerce”",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+      "photo" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Screenshot%202022-04-12%20at%2009.50%201.png",
+        "alt" : "Screenshot 2022-04-12 at 09.50 1",
+        "loading" : "lazy",
+        "width" : 55,
+        "height" : 54,
+        "max_width" : 55,
+        "max_height" : 54
+      },
+      "author_info" : "<strong>Damian Minski</strong>, Success Director"
+    }
+  }, {
+    "filter_label" : "Success",
+    "label_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/trophy.png",
+      "alt" : "trophy",
+      "loading" : "lazy",
+      "width" : 26,
+      "height" : 24,
+      "max_width" : 26,
+      "max_height" : 24
+    },
+    "content" : {
+      "left_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+        "alt" : "DSC08633 1-1",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 480,
+        "max_width" : 800,
+        "max_height" : 480
+      },
+      "quote" : "“Being the global epicenter of conversational commerce”",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+      "photo" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Screenshot%202022-04-12%20at%2009.50%201.png",
+        "alt" : "Screenshot 2022-04-12 at 09.50 1",
+        "loading" : "lazy",
+        "width" : 55,
+        "height" : 54,
+        "max_width" : 55,
+        "max_height" : 54
+      },
+      "author_info" : "<strong>Damian Minski</strong>, Success Director"
+    }
+  }, {
+    "filter_label" : "Success",
+    "label_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/trophy.png",
+      "alt" : "trophy",
+      "loading" : "lazy",
+      "width" : 26,
+      "height" : 24,
+      "max_width" : 26,
+      "max_height" : 24
+    },
+    "content" : {
+      "left_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+        "alt" : "DSC08633 1-1",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 480,
+        "max_width" : 800,
+        "max_height" : 480
+      },
+      "quote" : "“Being the global epicenter of conversational commerce”",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+      "photo" : {
+        "size_type" : "auto",
+        "src" : "https://www.hello-charles.com/hubfs/About%20pages/Screenshot%202022-04-12%20at%2009.50%201.png",
+        "alt" : "Screenshot 2022-04-12 at 09.50 1",
+        "loading" : "lazy",
+        "width" : 55,
+        "height" : 54,
+        "max_width" : 55,
+        "max_height" : 54
+      },
+      "author_info" : "<strong>Damian Minski</strong>, Success Director"
+    }
+  } ]
+} ]

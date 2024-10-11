@@ -1,0 +1,27 @@
+<p class="cl-heading">
+  {{ module.heading }}
+</p>
+<div class="partners-logos">
+  {% if module.enable_side_gradient %}
+  <div class="left-gradient" style="background: -webkit-linear-gradient(left, {{ module.gradient_color.css }}, transparent); background: -o-linear-gradient(right, {{ module.gradient_color.css }}, transparent); background: -moz-linear-gradient(right, {{ module.gradient_color.css }}, transparent); background: linear-gradient(to right, {{ module.gradient_color.css }}, transparent);"></div>
+  {% endif %}
+  <div class="partners-carousel">
+    {% for item in module.logo %}
+    <div class="partner-logo">
+      {% if item.src %}
+      {% set sizeAttrs = 'width="{{ item.width|escape_attr }}" height="{{ item.height|escape_attr }}"' %}
+      {% if item.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ item.width|escape_attr }}" height="{{ item.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+      {% elif item.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ item.max_width|escape_attr }}" height="{{ item.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading|escape_attr }}"' : '' %}
+      <img src="{{ item.src|escape_url }}" alt="{{ item.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% if module.enable_side_gradient %}
+  <div class="right-gradient" style="background: -webkit-linear-gradient(left, transparent, {{ module.gradient_color.css }}); background: -o-linear-gradient(right, transparent, {{ module.gradient_color.css }}); background: -moz-linear-gradient(right, transparent, {{ module.gradient_color.css }}); background: linear-gradient(to right, transparent, {{ module.gradient_color.css }});"></div>
+  {% endif %}
+</div>

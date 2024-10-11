@@ -1,0 +1,280 @@
+[ {
+  "id" : "aa9c3be9-c762-f9f2-bd42-dcd43cb3a7a1",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f39e68ac-5475-c53c-562a-6214e6fd27f5",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FDCCE1",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "1a070f95-2ce6-ae49-b9fa-3c6aaf3e4069",
+    "name" : "align_center",
+    "display_width" : null,
+    "label" : "Align Center",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "background_color" : {
+      "color" : "#FDCCE1",
+      "opacity" : 100
+    },
+    "align_center" : false
+  }
+}, {
+  "id" : "416a136b-83e5-001c-5de8-b91aca09eaec",
+  "name" : "section_background_custom",
+  "display_width" : null,
+  "label" : "Section Background Custom",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6eb6dee0-96ba-aabb-3246-56cab1253731",
+    "name" : "section_background",
+    "display_width" : null,
+    "label" : "Section Background",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/money-on-fire.png",
+      "alt" : "money-on-fire",
+      "loading" : "lazy",
+      "width" : 1300,
+      "height" : 1300,
+      "max_width" : 1300,
+      "max_height" : 1300
+    }
+  }, {
+    "id" : "f3b7389f-8b07-8559-1947-fcfc0d94418c",
+    "name" : "image_class",
+    "display_width" : null,
+    "label" : "Image Class",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "section_background" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/money-on-fire.png",
+      "alt" : "money-on-fire",
+      "loading" : "lazy",
+      "width" : 1300,
+      "height" : 1300,
+      "max_width" : 1300,
+      "max_height" : 1300
+    }
+  }
+}, {
+  "id" : "a56a1cf5-a9ad-21f6-4c85-eb1e95442c14",
+  "name" : "feature_repeater",
+  "display_width" : null,
+  "label" : "Feature Repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "65da2ab5-7f7e-8e62-4954-5c6055a0c12b",
+    "name" : "reverse_order",
+    "display_width" : null,
+    "label" : "Reverse order",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "04bafb01-ed9d-e344-f8e1-f97ed15896e1",
+    "name" : "feature_image",
+    "display_width" : null,
+    "label" : "Feature Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/emails-not-opened-image.png",
+      "alt" : "Email are not opened",
+      "loading" : "lazy",
+      "width" : 668,
+      "height" : 468,
+      "max_width" : 668,
+      "max_height" : 468
+    }
+  }, {
+    "id" : "f947e8e1-f871-c864-9169-d5a1cf61de41",
+    "name" : "feature_icon",
+    "display_width" : null,
+    "label" : "Feature Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/emails-not-opened-icon.png",
+      "alt" : "Emails are not opened icon",
+      "loading" : "lazy",
+      "width" : 112,
+      "height" : 112,
+      "max_width" : 112,
+      "max_height" : 112
+    }
+  }, {
+    "id" : "7f7ea75e-e2a5-e2b9-6002-d77fc356a63e",
+    "name" : "feature_title",
+    "display_width" : null,
+    "label" : "Feature Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Emails are not opened"
+  }, {
+    "id" : "238597be-da74-e059-0609-0318f329dd79",
+    "name" : "feature_content",
+    "display_width" : null,
+    "label" : "Feature Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Traditional channels such as e-mail have a very poor customer experience and are increasingly ending up in spam."
+  }, {
+    "id" : "8ad5015a-f613-60b1-2cba-04c028614154",
+    "name" : "enable_button",
+    "display_width" : null,
+    "label" : "Enable button",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "5161eb02-5804-2d74-7ac5-a28a36493ad4",
+    "name" : "button_url",
+    "display_width" : null,
+    "label" : "Button URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "1fdab5d3-cc01-aec3-2a3e-64ed936392f0",
+    "name" : "button_label",
+    "display_width" : null,
+    "label" : "Button Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "see more"
+  }, {
+    "id" : "82cd9feb-75c7-6290-db88-8d192a67a47a",
+    "name" : "button_id",
+    "display_width" : null,
+    "label" : "Button ID",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "reverse_order" : false,
+    "feature_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/emails-not-opened-image.png",
+      "alt" : "Email are not opened",
+      "loading" : "lazy",
+      "width" : 668,
+      "height" : 468,
+      "max_width" : 668,
+      "max_height" : 468
+    },
+    "feature_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/emails-not-opened-icon.png",
+      "alt" : "Emails are not opened icon",
+      "loading" : "lazy",
+      "width" : 112,
+      "height" : 112,
+      "max_width" : 112,
+      "max_height" : 112
+    },
+    "feature_title" : "Emails are not opened",
+    "feature_content" : "Traditional channels such as e-mail have a very poor customer experience and are increasingly ending up in spam.",
+    "enable_button" : true,
+    "button_url" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_label" : "see more"
+  } ]
+} ]

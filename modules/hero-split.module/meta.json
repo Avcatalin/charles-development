@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "icon" : "https://storage.googleapis.com/charles-cdn/hubspot/charles_icon.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 102659610818,
+  "label" : "Hero Split",
+  "is_available_for_new_content" : true
+}

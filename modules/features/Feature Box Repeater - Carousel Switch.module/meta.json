@@ -1,0 +1,22 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 102662457036,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../css/slick.css",
+    "name" : "slick.css"
+  }, {
+    "autoload" : true,
+    "path" : "../../../css/slick-theme.css",
+    "name" : "slick-theme.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../js/slick.js",
+    "name" : "slick.js"
+  } ],
+  "label" : "Feature Box Repeater - Carousel Switch",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,400 @@
+<div id="why-charles"></div>
+<div class="why-charles-block retention">
+  <div class="container" style="max-width: {{ module.container_width }};">
+    <div class="top-bar-black">
+      <img src="https://www.hello-charles.com/hubfs/Imported%20images/charles-white-dots.svg" alt="charles white dots" loading="lazy" alt="white-dots" />
+    </div>
+    <div class="content-block" style="background-image: url({{ module.container_background_image.src }});">
+      <div class="heading-content" style="width: {{ module.heading_group.heading_width }};">        
+        <!-- Badge -->
+        <div class="badge" style="background-color: {{ module.badge_group.badge_background_color.color }};">
+          <span style="color: {{ module.badge_group.badge_label_color.color }};">{{ module.badge_group.badge_label }}</span>
+        </div>
+        <!-- Title & Description -->
+        <div class="text-block">
+          {{ module.heading_group.heading_content }}
+        </div>
+      </div>
+
+      <!-- Box Blocks -->
+      <div class="custom-blocks">
+        <!-- Row One -->
+        <div class="row-one">
+          <div class="double-row">
+            <!-- Block 5 -->
+            <div class="block-five">
+              <div class="inner-block">
+                <div class="block-title">
+                  {{ module.blocks_group.block_5_group.block_5_title }}
+                </div>
+
+                <div class="block-image">
+                  {% if module.blocks_group.block_5_group.block_5_image.src %}
+                  {% set sizeAttrs = 'width="{{ module.blocks_group.block_5_group.block_5_image.width }}" height="{{ module.blocks_group.block_5_group.block_5_image.height }}"' %}
+                  {% if module.blocks_group.block_5_group.block_5_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.blocks_group.block_5_group.block_5_image.width }}" height="{{ module.blocks_group.block_5_group.block_5_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.blocks_group.block_5_group.block_5_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.blocks_group.block_5_group.block_5_image.max_width }}" height="{{ module.blocks_group.block_5_group.block_5_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.blocks_group.block_5_group.block_5_image.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_5_group.block_5_image.loading }}"' : '' %}
+                  <img src="{{ module.blocks_group.block_5_group.block_5_image.src }}" alt="{{ module.blocks_group.block_5_group.block_5_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+
+            <!-- Block 1 -->
+            <div class="block-one">
+              <div class="block-inner">
+                <div class="block-1-img">
+                  {% if module.blocks_group.block_1_group.block_1_image.src %}
+                  {% set sizeAttrs = 'width="{{ module.blocks_group.block_1_group.block_1_image.width }}" height="{{ module.blocks_group.block_1_group.block_1_image.height }}"' %}
+                  {% if module.blocks_group.block_1_group.block_1_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.blocks_group.block_1_group.block_1_image.width }}" height="{{ module.blocks_group.block_1_group.block_1_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.blocks_group.block_1_group.block_1_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.blocks_group.block_1_group.block_1_image.max_width }}" height="{{ module.blocks_group.block_1_group.block_1_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.blocks_group.block_1_group.block_1_image.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_1_group.block_1_image.loading }}"' : '' %}
+                  <img src="{{ module.blocks_group.block_1_group.block_1_image.src }}" alt="{{ module.blocks_group.block_1_group.block_1_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="desktop-version">
+                  {% endif %}
+
+                  {% if module.blocks_group.block_1_group.block_1_mobile_graph.src %}
+                  {% set sizeAttrs = 'width="{{ module.blocks_group.block_1_group.block_1_mobile_graph.width }}" height="{{ module.blocks_group.block_1_group.block_1_mobile_graph.height }}"' %}
+                  {% if module.blocks_group.block_1_group.block_1_mobile_graph.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.blocks_group.block_1_group.block_1_mobile_graph.width }}" height="{{ module.blocks_group.block_1_group.block_1_mobile_graph.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.blocks_group.block_1_group.block_1_mobile_graph.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.blocks_group.block_1_group.block_1_mobile_graph.max_width }}" height="{{ module.blocks_group.block_1_group.block_1_mobile_graph.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.blocks_group.block_1_group.block_1_mobile_graph.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_1_group.block_1_mobile_graph.loading }}"' : '' %}
+                  <img src="{{ module.blocks_group.block_1_group.block_1_mobile_graph.src }}" alt="{{ module.blocks_group.block_1_group.block_1_mobile_graph.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="mobile-version">
+                  {% endif %}
+                </div>
+                <div class="block-1-content">
+                  {{ module.blocks_group.block_1_group.block_1_content }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Block 3 -->
+          <div class="block-three">
+            <div class="slider-replacement">
+              {% set href = module.blocks_group.block_3_no_slider.slider_replacement_url.url.href %}
+              {% if module.blocks_group.block_3_no_slider.slider_replacement_url.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if module.blocks_group.block_3_no_slider.slider_replacement_url.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if module.blocks_group.block_3_no_slider.slider_replacement_url.rel %}rel="{{ module.blocks_group.block_3_no_slider.slider_replacement_url.rel }}"{% endif %}
+                 >
+                <!-- Replacement Image -->
+                {% if module.blocks_group.block_3_no_slider.slider_replacement.src %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_3_no_slider.slider_replacement.width }}" height="{{ module.blocks_group.block_3_no_slider.slider_replacement.height }}"' %}
+                {% if module.blocks_group.block_3_no_slider.slider_replacement.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_3_no_slider.slider_replacement.width }}" height="{{ module.blocks_group.block_3_no_slider.slider_replacement.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.blocks_group.block_3_no_slider.slider_replacement.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_3_no_slider.slider_replacement.max_width }}" height="{{ module.blocks_group.block_3_no_slider.slider_replacement.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.blocks_group.block_3_no_slider.slider_replacement.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_3_no_slider.slider_replacement.loading }}"' : '' %}
+                <img src="{{ module.blocks_group.block_3_no_slider.slider_replacement.src }}" class="desktop" alt="{{ module.blocks_group.block_3_no_slider.slider_replacement.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                <!-- Replacement Image Mobile -->
+                {% if module.blocks_group.block_3_no_slider.slider_replacement_mobile.src %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_3_no_slider.slider_replacement_mobile.width }}" height="{{ module.blocks_group.block_3_no_slider.slider_replacement_mobile.height }}"' %}
+                {% if module.blocks_group.block_3_no_slider.slider_replacement_mobile.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_3_no_slider.slider_replacement_mobile.width }}" height="{{ module.blocks_group.block_3_no_slider.slider_replacement_mobile.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.blocks_group.block_3_no_slider.slider_replacement_mobile.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_3_no_slider.slider_replacement_mobile.max_width }}" height="{{ module.blocks_group.block_3_no_slider.slider_replacement_mobile.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.blocks_group.block_3_no_slider.slider_replacement_mobile.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_3_no_slider.slider_replacement_mobile.loading }}"' : '' %}
+                <img src="{{ module.blocks_group.block_3_no_slider.slider_replacement_mobile.src }}" class="mobile" alt="{{ module.blocks_group.block_3_no_slider.slider_replacement_mobile.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </a>
+            </div>            
+          </div>
+        </div> 
+
+        <!-- Row Two -->
+        <div class="row-two">
+          <!-- Block 4 -->
+          <div class="block-four">
+            <div class="inner_padd">
+              {% if module.blocks_group.block_4_group.image_field.src %}
+              {% set sizeAttrs = 'width="{{ module.blocks_group.block_4_group.image_field.width }}" height="{{ module.blocks_group.block_4_group.image_field.height }}"' %}
+              {% if module.blocks_group.block_4_group.image_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.blocks_group.block_4_group.image_field.width }}" height="{{ module.blocks_group.block_4_group.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.blocks_group.block_4_group.image_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.blocks_group.block_4_group.image_field.max_width }}" height="{{ module.blocks_group.block_4_group.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.blocks_group.block_4_group.image_field.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_4_group.image_field.loading }}"' : '' %}
+              <img src="{{ module.blocks_group.block_4_group.image_field.src }}" alt="{{ module.blocks_group.block_4_group.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+              <!-- Content -->
+              <div class="content-text">
+                {{ module.blocks_group.block_4_group.content }}
+              </div>
+            </div>
+          </div>
+
+          <!-- Block Five New -->
+          <div class="block-five-new">
+            <div class="inner-padd">
+              <!-- Logo -->
+              <div class="client-logo">
+                {% if module.blocks_group.block_5_group_main.image_field.src %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_5_group_main.image_field.width }}" height="{{ module.blocks_group.block_5_group_main.image_field.height }}"' %}
+                {% if module.blocks_group.block_5_group_main.image_field.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_5_group_main.image_field.width }}" height="{{ module.blocks_group.block_5_group_main.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.blocks_group.block_5_group_main.image_field.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_5_group_main.image_field.max_width }}" height="{{ module.blocks_group.block_5_group_main.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.blocks_group.block_5_group_main.image_field.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_5_group_main.image_field.loading }}"' : '' %}
+                <img src="{{ module.blocks_group.block_5_group_main.image_field.src }}" alt="{{ module.blocks_group.block_5_group_main.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <div class="testimonial">
+                {{ module.blocks_group.block_5_group_main.content }}
+              </div>
+              <div class="ceo-info">
+                {% if module.blocks_group.block_5_group_main.client_avatar.src %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_5_group_main.client_avatar.width }}" height="{{ module.blocks_group.block_5_group_main.client_avatar.height }}"' %}
+                {% if module.blocks_group.block_5_group_main.client_avatar.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_5_group_main.client_avatar.width }}" height="{{ module.blocks_group.block_5_group_main.client_avatar.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.blocks_group.block_5_group_main.client_avatar.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_5_group_main.client_avatar.max_width }}" height="{{ module.blocks_group.block_5_group_main.client_avatar.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.blocks_group.block_5_group_main.client_avatar.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_5_group_main.client_avatar.loading }}"' : '' %}
+                <img src="{{ module.blocks_group.block_5_group_main.client_avatar.src }}" class="ceo-avatar" alt="{{ module.blocks_group.block_5_group_main.client_avatar.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                <!-- Name -->
+                <p class="ceo-name">
+                  {{ module.blocks_group.block_5_group_main.client_name }}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block Six New -->
+          <div class="block-five-new second">
+            <div class="inner-padd">
+              <!-- Logo -->
+              <div class="client-logo">
+                {% if module.blocks_group.block_6_group_main.image_field.src %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_6_group_main.image_field.width }}" height="{{ module.blocks_group.block_6_group_main.image_field.height }}"' %}
+                {% if module.blocks_group.block_6_group_main.image_field.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_6_group_main.image_field.width }}" height="{{ module.blocks_group.block_6_group_main.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.blocks_group.block_6_group_main.image_field.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_6_group_main.image_field.max_width }}" height="{{ module.blocks_group.block_6_group_main.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.blocks_group.block_6_group_main.image_field.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_6_group_main.image_field.loading }}"' : '' %}
+                <img src="{{ module.blocks_group.block_6_group_main.image_field.src }}" alt="{{ module.blocks_group.block_6_group_main.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <div class="testimonial">
+                {{ module.blocks_group.block_6_group_main.content }}
+              </div>
+              <div class="ceo-info">
+                {% if module.blocks_group.block_6_group_main.client_avatar.src %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_6_group_main.client_avatar.width }}" height="{{ module.blocks_group.block_6_group_main.client_avatar.height }}"' %}
+                {% if module.blocks_group.block_6_group_main.client_avatar.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_6_group_main.client_avatar.width }}" height="{{ module.blocks_group.block_6_group_main.client_avatar.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.blocks_group.block_6_group_main.client_avatar.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_6_group_main.client_avatar.max_width }}" height="{{ module.blocks_group.block_6_group_main.client_avatar.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.blocks_group.block_6_group_main.client_avatar.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_6_group_main.client_avatar.loading }}"' : '' %}
+                <img src="{{ module.blocks_group.block_6_group_main.client_avatar.src }}" class="ceo-avatar" alt="{{ module.blocks_group.block_6_group_main.client_avatar.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                <!-- Name -->
+                <p class="ceo-name">
+                  {{ module.blocks_group.block_6_group_main.client_name }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row Three -->
+        <div class="row-three">
+          <!-- Block 6 -->
+          <div class="block-six">                
+            <div class="inner-padd">
+              <div class="block-content">
+                {{ module.blocks_group.block_6_group.block_content }}
+              </div>
+              <div class="block-image">
+                {% if module.blocks_group.block_6_group.block_image.src %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_6_group.block_image.width }}" height="{{ module.blocks_group.block_6_group.block_image.height }}"' %}
+                {% if module.blocks_group.block_6_group.block_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_6_group.block_image.width }}" height="{{ module.blocks_group.block_6_group.block_image.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.blocks_group.block_6_group.block_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_6_group.block_image.max_width }}" height="{{ module.blocks_group.block_6_group.block_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.blocks_group.block_6_group.block_image.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_6_group.block_image.loading }}"' : '' %}
+                <img src="{{ module.blocks_group.block_6_group.block_image.src }}" alt="{{ module.blocks_group.block_6_group.block_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                <!-- Mobile Content Text -->
+                <div class="mobile-content-text">
+                  {{ module.blocks_group.block_6_group.mobile_content }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block 9 -->
+          <div class="block-nine">
+            <div class="inner-padd">
+              <div class="heading">
+                {{ module.blocks_group.block_9_group.heading }}
+              </div>
+              <div class="block-image">
+                {% if module.blocks_group.block_9_group.block_9_image.src %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_9_group.block_9_image.width }}" height="{{ module.blocks_group.block_9_group.block_9_image.height }}"' %}
+                {% if module.blocks_group.block_9_group.block_9_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_9_group.block_9_image.width }}" height="{{ module.blocks_group.block_9_group.block_9_image.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.blocks_group.block_9_group.block_9_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_9_group.block_9_image.max_width }}" height="{{ module.blocks_group.block_9_group.block_9_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.blocks_group.block_9_group.block_9_image.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_9_group.block_9_image.loading }}"' : '' %}
+                <img src="{{ module.blocks_group.block_9_group.block_9_image.src }}" alt="{{ module.blocks_group.block_9_group.block_9_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <!-- CTA Button -->
+              {% set href = module.blocks_group.block_9_group.button_link.url.href %}
+              {% if module.blocks_group.block_9_group.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}" class="cta-button"
+                 {% if module.blocks_group.block_9_group.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if module.blocks_group.block_9_group.button_link.rel %}rel="{{ module.blocks_group.block_9_group.button_link.rel }}"{% endif %}
+                 >
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </div>      
+        </div>
+
+        <!-- Integrations for days -->
+        <div class="integrations-block">
+          <div class="inner-block">
+            <div class="block-image">
+              <div class="img-wrapper">
+                {% if module.integrations_group.integrations.src %}
+                {% set sizeAttrs = 'width="{{ module.integrations_group.integrations.width }}" height="{{ module.integrations_group.integrations.height }}"' %}
+                {% if module.integrations_group.integrations.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.integrations_group.integrations.width }}" height="{{ module.integrations_group.integrations.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.integrations_group.integrations.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.integrations_group.integrations.max_width }}" height="{{ module.integrations_group.integrations.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.integrations_group.integrations.loading != 'disabled' ? 'loading="{{ module.integrations_group.integrations.loading }}"' : '' %}
+                <img src="{{ module.integrations_group.integrations.src }}" alt="{{ module.integrations_group.integrations.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <div class="heading">
+                {{ module.integrations_group.heading }}
+              </div>
+            </div>
+            <div class="block-button">
+              {% set href = module.integrations_group.button_link.url.href %}
+              {% if module.integrations_group.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}" class="cta-button"
+                 {% if module.integrations_group.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if module.integrations_group.button_link.rel %}rel="{{ module.integrations_group.button_link.rel }}"{% endif %}
+                 >
+                <span>{{ module.integrations_group.button_label }}</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.84375 6.28125C7 6.125 7 5.90625 6.84375 5.75L2.28125 1.125C2.125 0.96875 1.875 0.96875 1.75 1.125L1.125 1.75C0.96875 1.875 0.96875 2.125 1.125 2.28125L4.8125 6L1.125 9.75C0.96875 9.90625 0.96875 10.125 1.125 10.2812L1.75 10.9062C1.875 11.0625 2.125 11.0625 2.28125 10.9062L6.84375 6.28125Z" fill="white"/>
+                </svg>
+                <i></i>
+              </a>              
+            </div>
+          </div>
+        </div>
+
+        <!-- Row Four -->
+        <div class="row-four">
+          <!-- Block 9 New -->
+          <div class="block-nine-new">
+            <div class="inner-padd">
+              <!-- Logo -->
+              <div class="client-logo">
+                {% if module.blocks_group.block_9_group_main.image_field.src %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_9_group_main.image_field.width }}" height="{{ module.blocks_group.block_9_group_main.image_field.height }}"' %}
+                {% if module.blocks_group.block_9_group_main.image_field.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_9_group_main.image_field.width }}" height="{{ module.blocks_group.block_9_group_main.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.blocks_group.block_9_group_main.image_field.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_9_group_main.image_field.max_width }}" height="{{ module.blocks_group.block_9_group_main.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.blocks_group.block_9_group_main.image_field.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_9_group_main.image_field.loading }}"' : '' %}
+                <img src="{{ module.blocks_group.block_9_group_main.image_field.src }}" alt="{{ module.blocks_group.block_9_group_main.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <div class="testimonial">
+                {{ module.blocks_group.block_9_group_main.content }}
+              </div>
+              <div class="ceo-info">
+                {% if module.blocks_group.block_9_group_main.client_avatar.src %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_9_group_main.client_avatar.width }}" height="{{ module.blocks_group.block_9_group_main.client_avatar.height }}"' %}
+                {% if module.blocks_group.block_9_group_main.client_avatar.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_9_group_main.client_avatar.width }}" height="{{ module.blocks_group.block_9_group_main.client_avatar.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.blocks_group.block_9_group_main.client_avatar.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.blocks_group.block_9_group_main.client_avatar.max_width }}" height="{{ module.blocks_group.block_9_group_main.client_avatar.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.blocks_group.block_9_group_main.client_avatar.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_9_group_main.client_avatar.loading }}"' : '' %}
+                <img src="{{ module.blocks_group.block_9_group_main.client_avatar.src }}" class="ceo-avatar" alt="{{ module.blocks_group.block_9_group_main.client_avatar.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                <!-- Name -->
+                <p class="ceo-name">
+                  {{ module.blocks_group.block_9_group_main.client_name }}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block 10 -->
+          <div class="block-ten">
+            <div class="inner_padd">
+              {% if module.blocks_group.block_10.image_field.src %}
+              {% set sizeAttrs = 'width="{{ module.blocks_group.block_10.image_field.width }}" height="{{ module.blocks_group.block_10.image_field.height }}"' %}
+              {% if module.blocks_group.block_10.image_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.blocks_group.block_10.image_field.width }}" height="{{ module.blocks_group.block_10.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.blocks_group.block_10.image_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.blocks_group.block_10.image_field.max_width }}" height="{{ module.blocks_group.block_10.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.blocks_group.block_10.image_field.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_10.image_field.loading }}"' : '' %}
+              <img src="{{ module.blocks_group.block_10.image_field.src }}" alt="{{ module.blocks_group.block_10.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+              <!-- Content -->
+              <div class="content-text">
+                {{ module.blocks_group.block_10.content }}
+              </div>
+            </div>
+          </div>
+
+          <!-- Block Eleven -->
+          <div class="block-eleven">
+            <div class="inner_padd">
+              {% if module.blocks_group.block_11.image_field.src %}
+              {% set sizeAttrs = 'width="{{ module.blocks_group.block_11.image_field.width }}" height="{{ module.blocks_group.block_11.image_field.height }}"' %}
+              {% if module.blocks_group.block_11.image_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.blocks_group.block_11.image_field.width }}" height="{{ module.blocks_group.block_11.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.blocks_group.block_11.image_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.blocks_group.block_11.image_field.max_width }}" height="{{ module.blocks_group.block_11.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.blocks_group.block_11.image_field.loading != 'disabled' ? 'loading="{{ module.blocks_group.block_11.image_field.loading }}"' : '' %}
+              <img src="{{ module.blocks_group.block_11.image_field.src }}" alt="{{ module.blocks_group.block_11.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+              <!-- Content -->
+              <div class="content-text">
+                {{ module.blocks_group.block_11.content }}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

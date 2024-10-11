@@ -1,0 +1,74 @@
+<div class="swiper-container">
+  <!-- Full container background -->
+  {% if module.section_background_custom.section_background.src %}
+  {% set sizeAttrs = 'width="{{ module.section_background_custom.section_background.width }}" height="{{ module.section_background_custom.section_background.height }}"' %}
+  {% if module.section_background_custom.section_background.size_type == 'auto' %}
+  {% set sizeAttrs = 'width="{{ module.section_background_custom.section_background.width }}" height="{{ module.section_background_custom.section_background.height }}" style="max-width: 100%; height: auto;"' %}
+  {% elif module.section_background_custom.section_background.size_type == 'auto_custom_max' %}
+  {% set sizeAttrs = 'width="{{ module.section_background_custom.section_background.max_width }}" height="{{ module.section_background_custom.section_background.max_height }}" style="max-width: 100%; height: auto;"' %}
+  {% endif %}
+  {% set loadingAttr = module.section_background_custom.section_background.loading != 'disabled' ? 'loading="{{ module.section_background_custom.section_background.loading }}"' : '' %}
+  <img src="{{ module.section_background_custom.section_background.src }}" class="{{ module.section_background_custom.image_class }}" alt="{{ module.section_background_custom.section_background.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+  {% endif %}
+  
+  <div class="repeater-features">
+    {% for item in module.feature_repeater %}
+    <div class="retention-feature-box {% if item.reverse_order %}row-reverse{% endif %}" style="{% if module.style.align_center %}margin: 0 auto 35px;{% endif %} background-color: {{ module.style.background_color.css }}">
+      <div class="feature-image">
+        <!-- Icon -->
+        {% if item.feature_icon.src %}
+        {% set sizeAttrs = 'width="{{ item.feature_icon.width }}" height="{{ item.feature_icon.height }}"' %}
+        {% if item.feature_icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.feature_icon.width }}" height="{{ item.feature_icon.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.feature_icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.feature_icon.max_width }}" height="{{ item.feature_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.feature_icon.loading != 'disabled' ? 'loading="{{ item.feature_icon.loading }}"' : '' %}
+        <img src="{{ item.feature_icon.src }}" class="feature-icon" alt="{{ item.feature_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+
+        <!-- Image -->
+        {% if item.feature_image.src %}
+        {% set sizeAttrs = 'width="{{ item.feature_image.width }}" height="{{ item.feature_image.height }}"' %}
+        {% if item.feature_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.feature_image.width }}" height="{{ item.feature_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.feature_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.feature_image.max_width }}" height="{{ item.feature_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.feature_image.loading != 'disabled' ? 'loading="{{ item.feature_image.loading }}"' : '' %}
+        <img src="{{ item.feature_image.src }}" alt="{{ item.feature_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+
+      <div class="feature-content">
+        <div class="content-padding">
+          <p class="title">
+            {{ item.feature_title }}
+          </p>
+          <p class="content">
+            {{ item.feature_content }}
+          </p>
+          {% if item.enable_button %}	
+          {% set href = item.button_url.url.href %}
+          {% if item.button_url.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}" class="retention-general-button" id="{{ item.button_id }}"
+             {% if item.button_url.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.button_url.rel %}rel="{{ item.button_url.rel }}"{% endif %}
+             >
+            <span>{{ item.button_label }}</span>
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" aria-hidden="true">
+              <g id="chevron-right1_layer">
+                <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                </path>
+              </g>
+            </svg>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}    
+  </div>
+</div>

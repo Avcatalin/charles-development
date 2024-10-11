@@ -1,0 +1,128 @@
+[ {
+  "id" : "hero_text",
+  "name" : "hero_text",
+  "display_width" : null,
+  "label" : "Hero text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Turn Conversations<br><strong>into Conversions.</strong>"
+}, {
+  "picker" : "file",
+  "id" : "lottie_file",
+  "name" : "lottie_file",
+  "display_width" : null,
+  "label" : "Lottie File",
+  "help_text" : "Upload a Lottie .json file.",
+  "required" : true,
+  "locked" : false,
+  "type" : "file"
+}, {
+  "picker" : "file",
+  "id" : "lottie_file_mobile",
+  "name" : "lottie_file_mobile",
+  "display_width" : null,
+  "label" : "Lottie File (Mobile)",
+  "help_text" : "Upload a Lottie .json file. (shown on mobile)",
+  "required" : true,
+  "locked" : false,
+  "type" : "file"
+}, {
+  "id" : "f56a6619-2764-9d8a-d85c-d170395c0cd5",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "989c1569-d69b-fda1-74df-629478d1eeb2",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "13a96e50-59cd-442c-39b0-12223072ba71",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "cf158348-4ad6-e3c6-765a-327f31f8da3d",
+    "name" : "bg_color",
+    "display_width" : null,
+    "label" : "BG Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "8de1ac20-f4ba-6d9b-2bb2-888570903b87",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "11410360-dfa0-50f5-4234-61728a3ffccb",
+    "name" : "learn_more",
+    "display_width" : null,
+    "label" : "Learn More",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Learn more"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "text_color" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "bg_color" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "learn_more" : "Learn more"
+  }
+} ]

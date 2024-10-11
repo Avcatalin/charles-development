@@ -1,0 +1,18 @@
+{% set ctaText = module.text %}
+{% set textColor = module.text_color %}
+{% set bgColor = module.bg_color %}
+{% set ctaAction = module.link.url.href %}
+{% if module.link.url.type is equalto "EMAIL_ADDRESS" %}
+  {% set ctaAction = "mailto:" + ctaAction %}
+{% endif %}
+{% set ctaNewtab = module.link.open_in_new_tab %}
+{% set ctaNoFollow = module.link.no_follow %}
+
+<div class="c-button--module">
+  <a href="{{ ctaAction }}"
+    style="font-weight: normal;color: rgba({{ textColor.color|convert_rgb }}, {{ textColor.opacity / 100 }}); background: rgba({{ bgColor.color|convert_rgb }}, {{ bgColor.opacity / 100 }});"
+    {% if ctaNewtab %}target="_blank" {% endif %} {% if ctaNoFollow %}rel="nofollow" {% endif %}
+    class="c-button bg-white">
+    {{ ctaText }}
+  </a>
+</div>

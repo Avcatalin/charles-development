@@ -1,0 +1,35 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Content
+  screenshotPath: ../images/template-previews/content.jpg
+-->
+{% extends './layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--simple-content', label='Main section' %}
+
+    {# Main section #}
+    {% dnd_section
+      vertical_alignment='TOP'
+      padding={
+        'top': '7rem',
+        'bottom': '5rem',
+        'left': '2rem',
+        'right': '2rem'
+      },
+    %}
+      {% dnd_module path='@hubspot/rich_text',
+      %}
+        {% module_attribute 'html' %}
+          <h1>Simple Content page</h1>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
+    {# End main section #}
+
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

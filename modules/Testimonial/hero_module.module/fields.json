@@ -1,0 +1,127 @@
+[ {
+  "id" : "a9327739-ac7d-2d5e-4040-f456036f9af4",
+  "name" : "top_logo",
+  "display_width" : null,
+  "label" : "Top logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/testimonial/image%20405.png",
+    "alt" : "image 405",
+    "loading" : "lazy",
+    "width" : 234,
+    "height" : 73,
+    "max_width" : 234,
+    "max_height" : 73
+  }
+}, {
+  "id" : "d279c7c7-42e4-dfbf-981b-227020fd2e80",
+  "name" : "tip_text",
+  "display_width" : null,
+  "label" : "Tip text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CUSTOMER STORIES"
+}, {
+  "id" : "ba432cf6-59b5-c49d-226c-53103364685c",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "How SNOCKS pioneered newsletter <span>marketing</span> via WhatsApp "
+}, {
+  "id" : "8d484244-53d0-41ed-f81d-3669cfc01b6f",
+  "name" : "summary",
+  "display_width" : null,
+  "label" : "Summary",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Learn how the rising eCom fashion company leveraged WhatsApp's possibilities to get their customers into chat and let them stay in contact with the brand"
+}, {
+  "id" : "b151cdd0-407a-8822-01bc-baa9879798d4",
+  "name" : "photo",
+  "display_width" : null,
+  "label" : "Photo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/testimonial/image%20389.png",
+    "alt" : "image 389",
+    "loading" : "lazy",
+    "width" : 422,
+    "height" : 403,
+    "max_width" : 422,
+    "max_height" : 403
+  }
+}, {
+  "id" : "7a7c1c26-1ca7-6761-0784-62a6de877b98",
+  "name" : "person_info",
+  "display_width" : null,
+  "label" : "person info",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Johannes, Ceo snocks"
+}, {
+  "id" : "a71aa6ad-daed-353c-4f35-229e353d393b",
+  "name" : "bg_module_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#6FA8DC",
+    "opacity" : 100
+  }
+}, {
+  "id" : "0d96ff6f-64e7-c1a8-d2ae-d784b2cb703a",
+  "name" : "text_color",
+  "display_width" : null,
+  "label" : "Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "591c1ea3-a21b-f7e8-8735-c2a9079f8687",
+  "name" : "title_color",
+  "display_width" : null,
+  "label" : "Title Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFF171",
+    "opacity" : 100
+  }
+} ]

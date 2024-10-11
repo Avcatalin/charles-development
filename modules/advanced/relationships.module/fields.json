@@ -1,0 +1,207 @@
+[ {
+  "id" : "1105c071-a1a0-ca93-05ec-06d153316157",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Lead your customers into <span>End-to-End</span> relationships, no matter which channel they’re coming from"
+}, {
+  "id" : "421c9543-c9ac-30c2-d9b3-3945d0528957",
+  "name" : "slide_content",
+  "display_width" : null,
+  "label" : "Slide content",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "picker" : "file",
+    "id" : "6e53d1fc-5962-5693-9d23-a37a2f1faaef",
+    "name" : "lottie",
+    "display_width" : null,
+    "label" : "Lottie",
+    "help_text" : "Upload a Lottie .json file.",
+    "required" : true,
+    "locked" : false,
+    "type" : "file"
+  }, {
+    "id" : "6b024934-9180-d766-c70f-06f74499bec0",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Sell your product or service customers in chat"
+  }, {
+    "id" : "3e02fb0a-0ea4-a194-2c1c-9a8cae41f4fb",
+    "name" : "sub_text",
+    "display_width" : null,
+    "label" : "Sub text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "A beautiful & intuitive UI that integrates messenger API’s with commerce backends. Bringing your product catalogue & checkout into conversational journeys"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "sub_title" : "Sell your product or service customers in chat",
+    "sub_text" : "A beautiful & intuitive UI that integrates messenger API’s with commerce backends. Bringing your product catalogue & checkout into conversational journeys"
+  }, {
+    "sub_title" : "Sell your product or service customers in chat",
+    "sub_text" : "A beautiful & intuitive UI that integrates messenger API’s with commerce backends. Bringing your product catalogue & checkout into conversational journeys"
+  }, {
+    "sub_title" : "Sell your product or service customers in chat",
+    "sub_text" : "A beautiful & intuitive UI that integrates messenger API’s with commerce backends. Bringing your product catalogue & checkout into conversational journeys"
+  } ]
+}, {
+  "id" : "e0116442-d878-8632-0fe1-16f5a9091eb6",
+  "name" : "bottom_title",
+  "display_width" : null,
+  "label" : "Bottom title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What the world says about charles"
+}, {
+  "id" : "34459468-e152-75b7-a154-023a6982950c",
+  "name" : "logo_block",
+  "display_width" : null,
+  "label" : "Logo block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "ecdcb1fd-6cc5-98a8-3bc4-ae9d039d1781",
+    "name" : "sub_content",
+    "display_width" : null,
+    "label" : "Sub content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h5>“Charles raises €6.4M seed to bring <strong>‘conversational commerce’ to WhatsApp”</strong></h5>"
+  }, {
+    "id" : "96f45a46-b587-18be-8eca-19dd96030128",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Tech-Crunch-Logo.svg",
+      "alt" : "Tech-Crunch-Logo",
+      "loading" : "lazy",
+      "width" : 221,
+      "height" : 79,
+      "max_width" : 221,
+      "max_height" : 79
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "sub_content" : "<h5>“Charles raises €6.4M seed to bring <strong>‘conversational commerce’ to WhatsApp”</strong></h5>",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Tech-Crunch-Logo.svg",
+      "alt" : "Tech-Crunch-Logo",
+      "loading" : "lazy",
+      "width" : 221,
+      "height" : 79,
+      "max_width" : 221,
+      "max_height" : 79
+    }
+  }, {
+    "sub_content" : "<h5>“Charles raises €6.4M seed to bring <strong>‘conversational commerce’ to WhatsApp”</strong></h5>",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Tech-Crunch-Logo.svg",
+      "alt" : "Tech-Crunch-Logo",
+      "loading" : "lazy",
+      "width" : 221,
+      "height" : 79,
+      "max_width" : 221,
+      "max_height" : 79
+    }
+  }, {
+    "sub_content" : "<h5>“Charles raises €6.4M seed to bring <strong>‘conversational commerce’ to WhatsApp”</strong></h5>",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/advanced/Tech-Crunch-Logo.svg",
+      "alt" : "Tech-Crunch-Logo",
+      "loading" : "lazy",
+      "width" : 221,
+      "height" : 79,
+      "max_width" : 221,
+      "max_height" : 79
+    }
+  } ]
+}, {
+  "id" : "8ff95f73-10c2-c71b-f8eb-decdb6584dc2",
+  "name" : "social_text",
+  "display_width" : null,
+  "label" : "Social text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "We are an official <strong>WhatsApp Business</strong> Solution provider Instagram API provider",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "178fa536-2469-a59c-89a4-ed3d0b25b7ad",
+  "name" : "whatsapp_link",
+  "display_width" : null,
+  "label" : "whatsapp link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "e838a5e4-a183-a630-6702-bacf3aeab2dc",
+  "name" : "instagram_link",
+  "display_width" : null,
+  "label" : "instagram link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://instagram.com/charles.tech"
+} ]

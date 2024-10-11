@@ -1,0 +1,84 @@
+<!-- PRICE BOX CONTAINER -->
+<div class="price-box-container">
+  <!-- PRICE BOX INNER -->
+  <div class="price-box-inner" style="color: {{ module.content_color.css }}">
+    <!-- CONTENT TOP -->
+    <div class="content-top">
+      {% inline_rich_text field="title_content" value="{{ module.title_content }}" %}
+    </div>
+    <!-- PRICE VALUE -->
+    <div class="price-value" style="color: {{ module.price_value_color.css }}">
+      {{ module.price_value }}
+    </div>
+    <!-- GET STARTED BUTTON -->
+    {% set href = module.get_started.url.href %}
+    {% if module.get_started.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}"
+       {% if module.get_started.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.get_started.rel %}rel="{{ module.get_started.rel }}"{% endif %}
+       class="btn-main-yellow"
+       style="background-color: {{ module.get_started_background_color.css }}; color: {{ module.get_started_text_color.css }}">
+      {{ module.get_started_text }}
+    </a>
+    <!-- HOW DO WE CALCULATE PRICE -->
+    <div class="how-we-calculate">
+      {% inline_rich_text field="how_to_we_calculate_price" value="{{ module.how_to_we_calculate_price }}" %}
+    </div>
+    <!-- KEY FEATURES -->
+    <div class="key-features">
+      <div class="key-title" style="background-color: {{ module.key_features_background_color.css }}">
+        {{ module.key_features_text }}
+      </div>
+      <!-- FEATURES ICON LIST -->
+      <div class="features-icon-list"> 
+        <ul>
+          {% for item in module.features_list_icons %}
+          <li>
+            {% if item.features_list_icon.src %}
+            {% set sizeAttrs = 'width="{{ item.features_list_icon.width }}" height="{{ item.features_list_icon.height }}"' %}
+            {% if item.features_list_icon.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.features_list_icon.width }}" height="{{ item.features_list_icon.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.features_list_icon.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.features_list_icon.max_width }}" height="{{ item.features_list_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.features_list_icon.loading != 'disabled' ? 'loading="{{ item.features_list_icon.loading }}"' : '' %}
+            <img src="{{ item.features_list_icon.src }}" alt="{{ item.features_list_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+            <span style="{{ item.text_color.css }}">{{ item.features_list_text }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- FEATURES BULLET LIST -->
+      <div class="features-bullet-list">
+        <ul>
+          {% for item in module.features_bullet_list %}
+          <li>
+            <span>{{ item.features_bullet_list_text }}</span>
+            {% if item.enable_tooltip %}
+            <div class="tooltip-icon">
+              {% if item.tooltip_icon.src %}
+              {% set sizeAttrs = 'width="{{ item.tooltip_icon.width }}" height="{{ item.tooltip_icon.height }}"' %}
+              {% if item.tooltip_icon.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.tooltip_icon.width }}" height="{{ item.tooltip_icon.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.tooltip_icon.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.tooltip_icon.max_width }}" height="{{ item.tooltip_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.tooltip_icon.loading != 'disabled' ? 'loading="{{ item.tooltip_icon.loading }}"' : '' %}
+              <img src="{{ item.tooltip_icon.src }}" alt="{{ item.tooltip_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+              <div class="tooltip-content">
+                {{ item.tooltip_content }}
+              </div>
+            </div>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>    
+    </div>
+  </div>
+</div>

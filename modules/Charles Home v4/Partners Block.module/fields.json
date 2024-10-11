@@ -1,0 +1,85 @@
+[ {
+  "id" : "49da33df-d0bb-93ab-3933-ebf4539c1107",
+  "name" : "partners_heading",
+  "display_width" : null,
+  "label" : "Partners Heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>trusted by +300 businesses</p>"
+}, {
+  "id" : "037d655d-f416-a3eb-88c1-14b2452274f2",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "74a6fd8d-745f-aaef-9897-cc177975713f",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "50a97bdc-4f18-65c3-1c6e-7f3d247db54f",
+  "name" : "partners_logo_list",
+  "display_width" : null,
+  "label" : "Partners Logo List",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "adf16117-68f7-d33a-77ee-6b59b1ac41df",
+    "name" : "partner_logo",
+    "display_width" : null,
+    "label" : "Partner Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/blackroll.svg",
+      "alt" : "blackroll",
+      "loading" : "lazy",
+      "width" : 178,
+      "height" : 83,
+      "max_width" : 178,
+      "max_height" : 83
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "partner_logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/blackroll.svg",
+      "alt" : "blackroll",
+      "loading" : "lazy",
+      "width" : 178,
+      "height" : 83,
+      "max_width" : 178,
+      "max_height" : 83
+    }
+  } ]
+} ]

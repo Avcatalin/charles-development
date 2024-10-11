@@ -1,0 +1,190 @@
+[ {
+  "id" : "0b1bd9cd-dfb0-629a-9022-ef0730b055d7",
+  "name" : "header_with_content_style",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "628eddf1-d257-80d9-5d2b-5104d82111b7",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "c1d3b044-596c-f197-4d2c-19ace73c1f99",
+  "name" : "content_color",
+  "display_width" : null,
+  "label" : "Description - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "1cd14ed0-620c-8825-d9ee-b96d814a73c9",
+  "name" : "custom_id",
+  "display_width" : null,
+  "label" : "Custom ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "71b43d6d-a3e3-8fcc-ddc3-7a2ad1ca45ab",
+  "name" : "demo_button",
+  "display_width" : null,
+  "label" : "Demo Button URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "CONTENT",
+      "href" : null,
+      "content_id" : 41001952809
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "0f57c8f5-a198-49f5-ba46-5c4894ee1598",
+  "name" : "demo_button_text",
+  "display_width" : null,
+  "label" : "Demo Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get a demo"
+}, {
+  "id" : "3df7a0ee-c34f-ccff-8c17-ba241d28e587",
+  "name" : "demo_button_background_color",
+  "display_width" : null,
+  "label" : "Demo Button Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FFF171",
+    "opacity" : 100
+  }
+}, {
+  "id" : "3edd86df-90e7-210f-4a77-0c7266f9cbe4",
+  "name" : "demo_button_text_color",
+  "display_width" : null,
+  "label" : "Demo Button Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#000",
+    "opacity" : 100
+  }
+}, {
+  "id" : "036296bc-c262-ec89-64bd-4a9c23bbbf35",
+  "name" : "demo_button_id",
+  "display_width" : null,
+  "label" : "Demo Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "7fbb70e4-1ee5-a368-e337-177dc29be78d",
+  "name" : "enable_second_button",
+  "display_width" : null,
+  "label" : "Enable Second Button",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "f7a8890a-5a68-b2f9-efba-a903a41f21d8",
+  "name" : "second_button_url",
+  "display_width" : null,
+  "label" : "Second Button URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.google.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "55ea92b1-227a-dc52-4f18-409724230025",
+  "name" : "second_button_text",
+  "display_width" : null,
+  "label" : "Second Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Learn more"
+}, {
+  "id" : "c1c94094-76b1-0de0-c3a0-e301ef9166ef",
+  "name" : "second_button_background_color",
+  "display_width" : null,
+  "label" : "Second Button Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b78226c6-2933-31e8-7bb5-549d358d69a7",
+  "name" : "second_button_text_color",
+  "display_width" : null,
+  "label" : "Second Button Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#000",
+    "opacity" : 100
+  }
+}, {
+  "id" : "291acd14-8189-c3f0-97e6-5e848cd69f3e",
+  "name" : "second_button_id",
+  "display_width" : null,
+  "label" : "Second Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

@@ -1,0 +1,99 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Resources Hub Case studies
+  screenshotPath: ../images/template-previews/content.jpg
+-->
+{% extends './layouts/base_resources_hub.html' %}
+{% block body %}
+<main class="body-container-wrapper resources-hub">
+  <div class="container resources-container">
+    <div class="row">
+      <!-- Navbar -->
+      <div class="resources-sidebar">
+        <div class="sidebar-inner">
+          <!-- Logo -->
+          <div class="logo">
+            {% module "module_17164644061341" path="/charles-b2b/modules/Resources Hub/hs-logo", label="hs-logo" %}
+          </div>
+
+          <!-- Repeater Navigation -->
+          <div class="resources-navigation">
+            <!-- Navigation block -->
+          {% module "module_171586092342238" path="/charles-b2b/modules/Resources Hub/resource-hub-navigation-global", label="resource-hub-navigation-global" %}
+          <!-- Button CTA -->
+          {% module "module_171586121175857" path="/charles-b2b/modules/Resources Hub/resource-hub-btn-global", label="resource-hub-btn-global" %}
+          </div>
+        </div>
+      </div>
+      <!-- Contemt -->
+      <div class="resources-content">
+        <div class="mobile-top-navigation">
+          <div class="m-logo">
+            {% module "module_17164644061341" path="/charles-b2b/modules/Resources Hub/hs-logo", label="hs-logo" %}
+          </div>
+          <div class="menu-trigger">
+            <img src="https://www.hello-charles.com/hubfs/Imported%20images/menu-trigger-charles.svg" loading="lazy" width="45" height="25" />
+          </div>
+        </div>
+        <div class="title-container">
+          <h1 class="dynamic-title">
+            {{ content.page_title }}
+          </h1>
+
+          <!-- Right side -->
+          <div class="nav-right-side">
+            <!-- Language Switcher -->
+            {% if content.translated_content|length %}
+            <div class="header__language-switcher header--element">
+              <div class="header__language-switcher--label">
+                {% module "language-switcher" path="@hubspot/language_switcher", display_mode='localized', label="Language Switcher" %}
+                <div class="header__language-switcher--label-current"> {{ locale_name(locale) }}</div>
+              </div>
+            </div>
+            {% endif %}
+
+            <!-- Module for top button -->
+            <div class="top-nav-cta">
+              {% module "module_171214486548336" path="/charles-b2b/modules/Resources Hub/resources-hub-btn", label="resources-hub-btn" %}
+            </div>
+          </div>
+        </div>        
+        <div class="resource-main-content">
+          <!-- Search & Filter -->
+          <div class="search-filter-container">
+            <div class="resource-hub-search-input">
+              {% module "module_171015737628233" path="/charles-b2b/modules/Resources Hub/resource-hub-search", label="resource-hub-search" %}
+            </div>
+            <div class="top-filter-tags">
+              {% module "module_17092052881681" path="/charles-b2b/modules/Resources Hub/filter-tags", label="filter-tags" %}
+            </div>
+          </div>
+          <div class="loading-container">
+            <div class="main-container">
+              <div class="content-block">
+                <!-- Content -->
+                {% dnd_area 'dnd_area' class='body-container body-container--resources', label='Main section' %}
+
+                {% end_dnd_area %}
+              </div>
+              
+              <!-- Jump to -->
+              <div class="jump-to-column">
+                
+              </div>
+            </div>
+
+            <!-- Search-results -->
+            <div class="resource-hub-search-results">
+              {% module "module_170929988417427" path="/charles-b2b/modules/Resources Hub/resource-hub-search-results", label="resource-hub-search-results" %}
+            </div>
+            <!-- Overlay -->
+            <div id="overlay" class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock body %}

@@ -1,0 +1,16 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Pricing
+screenshotPath: ../images/template-previews/content.jpg
+-->
+{% extends "./layouts/advanced_base_refreshed.html" %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  <div class="page-overlay"></div>
+  {% dnd_area 'section_container' class='body-container body-container--pricing', label='Main section' %} 
+
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

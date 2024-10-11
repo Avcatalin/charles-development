@@ -1,0 +1,32 @@
+{
+  "name" : {
+    "message" : "Simple Heading Sections",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_heading.default" : {
+    "message" : "<h3>You may also be interested in...</h3>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_heading.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_heading.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_heading.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "simple_heading.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

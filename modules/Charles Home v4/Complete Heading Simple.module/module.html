@@ -1,0 +1,28 @@
+<!-- Custom Complete Heading with Description and Button -->
+<div class="complete-heading-simple" style="{{ module.style.spacing_field.css }}">
+  <div class="container">
+    <!-- heading -->
+    <div class="heading">
+      {{ module.description }}
+    </div>
+    <!-- CTA Button -->
+    <div class="cta-box">
+      <div class="cta-wrapper">
+        {% set href = module.get_started_url.url.href %}
+        {% if module.get_started_url.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" class="charles-custom-button" id="{{ module.button_id }}"
+           {% if module.get_started_url.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.get_started_url.rel %}rel="{{ module.get_started_url.rel }}"{% endif %}
+           >
+          <span>{{ module.get_started_label }}</span>
+          <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.49219 6.28125C6.64844 6.125 6.64844 5.90625 6.49219 5.75L1.92969 1.125C1.77344 0.96875 1.52344 0.96875 1.39844 1.125L0.773438 1.75C0.617188 1.875 0.617188 2.125 0.773438 2.28125L4.46094 6L0.773438 9.75C0.617188 9.90625 0.617188 10.125 0.773438 10.2812L1.39844 10.9062C1.52344 11.0625 1.77344 11.0625 1.92969 10.9062L6.49219 6.28125Z"/>
+          </svg>
+          <i></i>
+        </a>  
+      </div>    
+    </div>
+  </div>
+</div>

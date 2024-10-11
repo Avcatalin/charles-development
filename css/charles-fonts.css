@@ -1,0 +1,41 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+@font-face {
+    font-family: 'charles_inktrapregular';
+    src: url('https://www.hello-charles.com/hubfs/Charles%20Fonts/charlessans_inktrap-webfont.woff2') format('woff2'),
+         url('https://www.hello-charles.com/hubfs/Charles%20Fonts/charlessans_inktrap-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'charles_inktrapitalic';
+    src: url('https://www.hello-charles.com/hubfs/Charles%20Fonts/charlessans_inktrap-italic-webfont.woff2') format('woff2'),
+         url('https://www.hello-charles.com/hubfs/Charles%20Fonts/charlessans_inktrap-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'charles_simpleregular';
+    src: url('https://www.hello-charles.com/hubfs/Charles%20Fonts/charlessans_simple-webfont.woff2') format('woff2'),
+         url('https://www.hello-charles.com/hubfs/Charles%20Fonts/charlessans_simple-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'charles_simpleitalic';
+    src: url('https://www.hello-charles.com/hubfs/Charles%20Fonts/charlessans_simple-italic-webfont.woff2') format('woff2'),
+         url('https://www.hello-charles.com/hubfs/Charles%20Fonts/charlessans_simple-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,94 @@
+[ {
+  "id" : "9b278dc2-30df-2e96-5ef4-524cceb680b6",
+  "name" : "bottom_image",
+  "display_width" : null,
+  "label" : "Bottom Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.hello-charles.com/hubfs/bubble-chat-1.svg",
+    "alt" : "bubble-chat-1",
+    "width" : 289,
+    "height" : 224,
+    "max_width" : 289,
+    "max_height" : 224
+  }
+}, {
+  "id" : "ac1adad0-d696-427f-b100-5fa6783087b8",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a8167c98-609c-b00c-d410-7af679ef5b1c",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "4a60eadd-8536-bdc9-dc3f-936d20769ba7",
+  "name" : "quote_content",
+  "display_width" : null,
+  "label" : "Quote Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>Revenue per conversation is your new kpi</h3>"
+}, {
+  "id" : "a3a4f5c5-02c6-daf9-b61a-1fc73558e48f",
+  "name" : "toggle_cta",
+  "display_width" : null,
+  "label" : "Toggle CTA",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "2930bed6-353a-25d4-6800-6110c3146c51",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "25c0e187-3a98-bf0a-c8c8-0376fbb58e03",
+  "name" : "button_label",
+  "display_width" : null,
+  "label" : "Button Label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Book Demo"
+} ]

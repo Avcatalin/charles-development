@@ -1,0 +1,345 @@
+[ {
+  "id" : "fc005773-bc87-1ed7-9bc7-86c83a005242",
+  "name" : "plan",
+  "display_width" : null,
+  "label" : "Plan",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 7
+  },
+  "children" : [ {
+    "id" : "9826d6cf-37ce-5ce2-a6e0-33385e4b5175",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "MONDAY"
+  }, {
+    "id" : "9fd44a4b-4b07-4621-02b1-1aaf9a061027",
+    "name" : "location",
+    "display_width" : null,
+    "label" : "Location",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : true,
+    "type" : "text",
+    "default" : "📍 Berlin"
+  }, {
+    "id" : "e3466072-9daf-eae9-2a89-88396a0c5804",
+    "name" : "date",
+    "display_width" : null,
+    "label" : "Date",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "29 June 2022"
+  }, {
+    "id" : "fb1c2690-9210-00eb-e450-482baf9e920d",
+    "name" : "plan",
+    "display_width" : null,
+    "label" : "plan",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "A fresh week starts with a fresh mind. We plan the week very well in each department while never loosing track of the common big picture."
+  }, {
+    "id" : "68861491-0fa8-ee28-60d3-dccefe2a3901",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+      "alt" : "DSC08633 1-1",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 480,
+      "max_width" : 800,
+      "max_height" : 480
+    }
+  }, {
+    "id" : "7800f907-e355-0e0b-8212-368c2f6e2f91",
+    "name" : "switch_position",
+    "display_width" : null,
+    "label" : "Switch position",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "7efd7c82-05f6-089e-c02f-6db45962c5e7",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "f82428cb-ce26-1671-bf32-85be6ce9a667",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "See Event"
+  }, {
+    "id" : "33040f63-6bbc-261d-c073-1c18f6f24d3c",
+    "name" : "display",
+    "display_width" : null,
+    "label" : "Display Button?",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "none", "No" ], [ "inline-block", "Yes" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "none"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "sub_title" : "MONDAY",
+    "location" : "📍 Berlin",
+    "date" : "29 June 2022",
+    "plan" : "A fresh week starts with a fresh mind. We plan the week very well in each department while never loosing track of the common big picture.",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+      "alt" : "DSC08633 1-1",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 480,
+      "max_width" : 800,
+      "max_height" : 480
+    },
+    "switch_position" : false,
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_text" : "See Event",
+    "display" : "none"
+  }, {
+    "sub_title" : "MONDAY",
+    "location" : "📍 Berlin",
+    "date" : "29 June 2022",
+    "plan" : "A fresh week starts with a fresh mind. We plan the week very well in each department while never loosing track of the common big picture.",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+      "alt" : "DSC08633 1-1",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 480,
+      "max_width" : 800,
+      "max_height" : 480
+    },
+    "switch_position" : false,
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_text" : "See Event",
+    "display" : "none"
+  }, {
+    "sub_title" : "MONDAY",
+    "location" : "📍 Berlin",
+    "date" : "29 June 2022",
+    "plan" : "A fresh week starts with a fresh mind. We plan the week very well in each department while never loosing track of the common big picture.",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+      "alt" : "DSC08633 1-1",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 480,
+      "max_width" : 800,
+      "max_height" : 480
+    },
+    "switch_position" : false,
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_text" : "See Event",
+    "display" : "none"
+  }, {
+    "sub_title" : "MONDAY",
+    "location" : "📍 Berlin",
+    "date" : "29 June 2022",
+    "plan" : "A fresh week starts with a fresh mind. We plan the week very well in each department while never loosing track of the common big picture.",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+      "alt" : "DSC08633 1-1",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 480,
+      "max_width" : 800,
+      "max_height" : 480
+    },
+    "switch_position" : false,
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_text" : "See Event",
+    "display" : "none"
+  }, {
+    "sub_title" : "MONDAY",
+    "location" : "📍 Berlin",
+    "date" : "29 June 2022",
+    "plan" : "A fresh week starts with a fresh mind. We plan the week very well in each department while never loosing track of the common big picture.",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+      "alt" : "DSC08633 1-1",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 480,
+      "max_width" : 800,
+      "max_height" : 480
+    },
+    "switch_position" : false,
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_text" : "See Event",
+    "display" : "none"
+  }, {
+    "sub_title" : "MONDAY",
+    "location" : "📍 Berlin",
+    "date" : "29 June 2022",
+    "plan" : "A fresh week starts with a fresh mind. We plan the week very well in each department while never loosing track of the common big picture.",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+      "alt" : "DSC08633 1-1",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 480,
+      "max_width" : 800,
+      "max_height" : 480
+    },
+    "switch_position" : false,
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_text" : "See Event",
+    "display" : "none"
+  }, {
+    "sub_title" : "MONDAY",
+    "location" : "📍 Berlin",
+    "date" : "29 June 2022",
+    "plan" : "A fresh week starts with a fresh mind. We plan the week very well in each department while never loosing track of the common big picture.",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/About%20pages/DSC08633%201-1.png",
+      "alt" : "DSC08633 1-1",
+      "loading" : "lazy",
+      "width" : 800,
+      "height" : 480,
+      "max_width" : 800,
+      "max_height" : 480
+    },
+    "switch_position" : false,
+    "link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_text" : "See Event",
+    "display" : "none"
+  } ]
+}, {
+  "id" : "5d1b8d0d-2c38-974e-9ebd-9b5149fe4f17",
+  "name" : "background",
+  "display_width" : null,
+  "label" : "Background",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fff171",
+    "opacity" : 100
+  }
+} ]

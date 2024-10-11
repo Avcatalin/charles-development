@@ -1,0 +1,113 @@
+<div class="about_sidebar">
+  <div class="overlay_back" style="background-color: {{ module.overlay_color.color }};">
+
+  </div>
+  <div class="container">
+    <div class="left_sidebar">
+      <div class="block1">
+        <img src="https://www.hello-charles.com/hubfs/CharlesLOGO.png" alt="charles logo">
+        <span>COMPANY</span>
+        <p>
+          {{ module.company_text }}
+        </p>
+      </div>
+      <div class="block2">
+        <span>Funding</span>
+        <p>
+          {{ module.funding_text }}
+        </p>
+        <div>
+          <img src="https://www.hello-charles.com/hubfs/salesforce-ventures-logo-vert.svg" alt="Salesforce Ventures logo" width="100" height="70">
+          <img src="https://www.hello-charles.com/hubfs/chat_award/20160411063425_Accel__Partners__2015_logo%201.svg" alt="Accel Partners 2015 logo" width="120" height="50">
+          <img src="https://www.hello-charles.com/hubfs/chat_award/hvcap-sq%201.svg" alt="HV Capital" width="80" height="70">
+        </div>
+      </div>
+      <div class="block3">
+        <span>Press</span>
+        <p>
+          {{ module.press_text }}
+        </p>
+        <img src="https://www.hello-charles.com/hubfs/chat_award/image%20465.svg" alt="Wired" width="110" height="45">
+        <p>
+          {{ module.testimonial_1 }}
+        </p>
+        <img src="https://www.hello-charles.com/hubfs/chat_award/image%20466.svg" alt="Contagious" width="60" height="70">
+        <p>
+          {{ module.testimonial_2 }}
+        </p>
+        <img src="https://www.hello-charles.com/hubfs/TechCrunch_logo.svg" alt="TechCrunch" width="80" height="40">
+        <p>
+          {{ module.testimonial_3 }}
+        </p>
+        <div>
+          <img src="https://www.hello-charles.com/hubfs/About%20pages/image%20105.png" alt="Digital Pioneers">
+          <img src="https://www.hello-charles.com/hubfs/About%20pages/image%20104.png" alt="Business Insider">
+          <img src="https://www.hello-charles.com/hubfs/About%20pages/image%20103.png" alt="Tech EU"> 
+        </div>
+      </div>
+      <div class="block4">
+        <span>Badge Recognition</span>
+        <p>
+          Our badges, from Meta recognized partner to Otta's Top 100 Fastest Growing companies.
+        </p>
+        <div>
+          <a href="https://www.facebook.com/business/partner-directory/search?id=4932181706838081" target="_blank" rel="nofollow">
+            <img src="https://www.hello-charles.com/hubfs/mbp_badge_-_light_backgrounds_4x.png" alt="MBP badge" width="100" height="50">
+          </a>
+          <a href="https://otta.com/rocketlist/europe/2022/Charles" target="_blank" rel="nofollow">
+            <img src="https://www.hello-charles.com/hubfs/otta-logo.svg" alt="OTTA logo" width="100" height="50">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="right_content">
+      <div class="phone_img">
+        <img src="{{ module.right_content.phone_image.src }}" alt="Phone White Background | charles">
+        <div class="overflow_img">
+          <img src="{{ module.right_content.phone_background.src }}" alt="Phone Screen Information | charles">  
+        </div>
+      </div>
+
+      <h3>
+        {{ module.right_content.quote }}
+      </h3>
+      {% for item in module.right_content.text_block %}
+      <div class="text_block">
+        <h4>
+          <img src="https://www.hello-charles.com/hubfs/About%20pages/route%20(1).svg" alt="Route icon"> {{ item.sub_title }}
+        </h4>
+        <div>
+          {{ item.sub_content }}
+        </div>
+      </div>
+      {% endfor %}
+      <div class="media">
+        <h3>
+          MEDIA
+        </h3>
+        <h4>
+          <img src="{{ module.right_content.media_title_logo.src }}" alt="Media icon"> {{ module.right_content.media_title }}
+        </h4>
+        <div>
+          {{ module.right_content.media_content }}
+        </div>
+      </div>
+      <div class="future">
+        <h4>
+          Future
+        </h4>
+        <div class="future_quote">
+          <div>
+            <img src="{{ module.right_content.future_logo.src }}" alt="Future icon">
+          </div>
+          <div>
+            <p>
+              {{ module.right_content.future_quote }}
+            </p>
+            <a href="{{ module.right_content.future_link }}">See jobs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

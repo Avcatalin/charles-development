@@ -1,0 +1,45 @@
+<div class="{{ module.classname }} about_department_block">
+  <div class="about_department " style="background-image: url({{ module.background_image.src }}); background-color: {{ module.background_color.color }};  ">
+    <span class="overlay_part" style="background-image: url({{ module.background_image.src }}); background-color: {{ module.background_color.color }};  "></span>
+    <div class="container">
+      <h2>
+        {{ module.title }}
+      </h2>
+      <p>
+        {{ module.content }}
+      </p>
+      {% if module.show_logo %}
+      <div class="logo_block">
+        {% for item in module.block %}
+        <div class="block">
+          <div>
+            {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+            {% if item.icon.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.icon.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+            <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>            
+          </div>
+          <p class="desktop_text">
+            {{ item.sub_text }}
+          </p>
+          <p class="mobile_text">
+            {{ item.mobile_text }}
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="headline_block">
+    <div class="container">
+      <h2>
+        {{ module.headline_block.title }}
+      </h2>
+    </div>
+  </div>
+</div>

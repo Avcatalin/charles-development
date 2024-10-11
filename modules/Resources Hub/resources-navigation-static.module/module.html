@@ -1,0 +1,57 @@
+<div class="navigation-sidebar">
+  {% for item in module.repeater %}
+  <div class="navigation-block">
+    {% if item.enable_title %}
+    <p class="block-title">
+      {{ item.block_title }}  
+    </p>
+    {% endif %}
+    {% for item2 in item.navigation_items %}
+    <div class="navigation-item {% if item2.enable_external %}external-icon{% endif %}{% if item2.enable_pro %}pro-icon{% endif %}">   
+      <div class="nav-link-wrapper {{ item2.extra_class }}" id="{{ item2.link_id_api_call }}">
+        <!-- Icon -->
+        {% if item2.icon.src %}
+        {% set sizeAttrs = 'width="{{ item2.icon.width }}" height="{{ item2.icon.height }}"' %}
+        {% if item2.icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item2.icon.width }}" height="{{ item2.icon.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item2.icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item2.icon.max_width }}" height="{{ item2.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item2.icon.loading != 'disabled' ? 'loading="{{ item2.icon.loading }}"' : '' %}
+        <img src="{{ item2.icon.src }}" alt="{{ item2.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        <!-- Link + Label -->
+        {% if item2.enable_internal_link %}
+        {% set href = item2.link_field.url.href %}
+        {% if item2.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if item2.link_field.open_in_new_tab %}target="_blank"{% endif %}
+           {% if item2.link_field.rel %}rel="{{ item2.link_field.rel }}"{% endif %}
+           >     
+          <span class="item-label">{{ item2.link_label }}</span>
+        </a>
+        {% else %}
+        <span class="item-label" id="{{ item2.link_id_api_call }}">{{ item2.link_label }}</span>
+        {% endif %}
+      </div>
+      <!-- Enable External -->
+      {% if item2.enable_external %}
+      <img src="https://www.hello-charles.com/hubfs/Resources%20Hub/icons/external-link.svg" alt="External link" width="24" height="24" loading="lazy" />
+      {% endif %}
+      <!-- Enale PRO icon -->
+      {% if item2.enable_pro %}
+      <img src="https://www.hello-charles.com/hubfs/Resources%20Hub/icons/pro-icon.svg" alt="PRO icon" width="36" height="19" loading="lazy" />
+      {% endif %}
+    </div>
+    {% endfor %}
+    <!-- Notification Container -->
+    {% if item.enable_notification %}
+    <div class="resources-notification">
+      {{ item.notification_block }}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>

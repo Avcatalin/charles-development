@@ -1,0 +1,32 @@
+<div class="wiki-section" style="{{ module.style.spacing_field.css }}">
+  {% if module.headings %}
+  <div style="display:block;width:100%;">
+    {{ module.headings }}
+  </div>
+  {% endif %}
+  {% for item in module.wiki_block_group %}  
+  <div class="wiki-block">
+    <div class="wiki-letter">
+      <p class="wiki-letter-text">
+        {{ item.wiki_letter }}
+      </p>
+    </div>
+    <ul>
+      {% for item2 in item.select_wiki_group %}
+      <li>
+        {% set href = item2.wiki_link.url.href %}
+        {% if item2.wiki_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if item2.wiki_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if item2.wiki_link.rel %}rel="{{ item2.wiki_link.rel }}"{% endif %}
+           >
+          {{ item2.wiki_title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>

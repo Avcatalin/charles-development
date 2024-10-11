@@ -1,0 +1,25 @@
+<div class="box-title-block" style="margin-bottom: {{ module.custom_space }};">
+  <div class="container">
+    <!-- Box Repeater -->
+    {% for item in module.box_repeater %}
+    <div class="box-block" style="background-color: {{ item.box_background_color.css }}">
+      <div class="box-title">
+        {{ item.heading }}
+      </div>
+      <div class="box-cta">
+        {% set href = item.button_link.url.href %}
+        {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" id="{{ item.button_id }}"
+           {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if item.button_link.rel %}rel="{{ item.button_link.rel }}"{% endif %}
+           >
+          {{ item.button_label }}
+          <i></i>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

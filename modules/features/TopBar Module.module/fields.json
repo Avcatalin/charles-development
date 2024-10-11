@@ -1,0 +1,185 @@
+[ {
+  "id" : "88cbfe41-21ab-8c70-fa81-4d98ef332510",
+  "name" : "enable_top_bar",
+  "display_width" : null,
+  "label" : "Enable Top Bar",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "897ee82e-7440-050b-e08e-ec035cc84e10",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "ebf26467-e72d-945c-ebfd-1c95c77203c8",
+  "name" : "icon",
+  "display_width" : null,
+  "label" : "Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/play-icon.svg",
+    "alt" : "play-icon",
+    "loading" : "lazy",
+    "width" : 25,
+    "height" : 25,
+    "max_width" : 25,
+    "max_height" : 25
+  }
+}, {
+  "id" : "3335e1ec-755a-7a7c-fa21-277fedba8646",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Listen to the latest episode of <span>unmuted</span> right here"
+}, {
+  "id" : "387cccbf-a61f-2c38-e498-e88731c132a2",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c7136dcd-d51a-1734-fbf3-9195058c242f",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "e2988d70-cdcc-560c-edb0-238fdc4558d7",
+    "name" : "backgroundimage_field",
+    "display_width" : null,
+    "label" : "Background image",
+    "required" : false,
+    "locked" : false,
+    "type" : "backgroundimage",
+    "default" : {
+      "src" : "",
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { },
+    "backgroundimage_field" : {
+      "src" : "",
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover"
+    }
+  }
+}, {
+  "id" : "d133946b-4b4f-2874-7963-c67dd49833c0",
+  "name" : "content_color",
+  "display_width" : null,
+  "label" : "Content Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "707572cc-0407-61fe-9aba-86d61daa0858",
+  "name" : "link_redirect",
+  "display_width" : null,
+  "label" : "Link Redirect",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.hubspot.com/",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "cab99120-9cea-d943-b473-10b8b5e7b42f",
+  "name" : "black_friday_top_bar",
+  "display_width" : null,
+  "label" : "Black Friday Top Bar",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "2c129ae9-02bd-c3eb-0b57-9da585d6c578",
+  "name" : "bf_link_wrapper",
+  "display_width" : null,
+  "label" : "BF Link Wrapper",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "4d0989fa-5f45-71f7-6660-09f27a5d1fef",
+  "name" : "bf_image",
+  "display_width" : null,
+  "label" : "BF Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/discount-symbol.png",
+    "alt" : "discount-symbol",
+    "loading" : "lazy",
+    "width" : 500,
+    "height" : 500,
+    "max_width" : 500,
+    "max_height" : 500
+  }
+}, {
+  "id" : "6d83997e-b17f-1a14-ea64-cf04d8732a80",
+  "name" : "bf_content",
+  "display_width" : null,
+  "label" : "BF Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<div class=\"main-wrapper\">\n<div class=\"counter-wrapper\">\n<div class=\"wrapper\"><span id=\"days\"></span> <span class=\"c-label\">days</span></div>\n<div class=\"wrapper\"><span id=\"hours\"></span> <span class=\"c-label\">hours</span></div>\n<div class=\"wrapper\"><span id=\"minutes\"></span> <span class=\"c-label\">mins</span></div>\n<div class=\"wrapper\"><span id=\"seconds\"></span><span class=\"c-label\">secs</span></div>\n</div>\n<span class=\"e-message\">left to make <strong>WhatsApp</strong> revenue this <strong>BFCM</strong></span></div>"
+} ]

@@ -1,0 +1,139 @@
+[
+ {
+  "allow_new_line": false,
+  "default": "Trying to solve this scss compiler",
+  "display_width": null,
+  "id": "910b09fe-c50c-0689-6f9c-14c8e3dc562b",
+  "label": "Heading",
+  "locked": false,
+  "name": "heading",
+  "required": false,
+  "show_emoji_picker": false,
+  "type": "text",
+  "validation_regex": ""
+ },
+ {
+  "default": "Lorem ipsum dolor estum sanctum.",
+  "display_width": null,
+  "id": "4ab82d74-0723-83ea-e2fb-936b0384e3ae",
+  "label": "Description",
+  "locked": false,
+  "name": "description",
+  "required": false,
+  "type": "richtext"
+ },
+ {
+ "children": [
+  {
+   "default": {
+    "padding": {
+     "top": {
+      "value": 100,
+      "units": "px"
+     },
+     "bottom": {
+      "value": 100,
+      "units": "px"
+     },
+     "left": {
+      "value": 0,
+      "units": "px"
+     },
+     "right": {
+      "value": 0,
+      "units": "px"
+     }
+    }
+   },
+   "display_width": null,
+   "id": "87978d45-1250-f436-b927-0321430ee4f1",
+   "label": "Spacing",
+   "locked": false,
+   "name": "spacing_field",
+   "required": false,
+   "type": "spacing"
+  },
+  {
+   "default": {
+    "padding": {
+     "top": {
+      "value": 60,
+      "units": "px"
+     },
+     "bottom": {
+      "value": 60,
+      "units": "px"
+     },
+     "left": {
+      "value": 0,
+      "units": "px"
+     },
+     "right": {
+      "value": 0,
+      "units": "px"
+     }
+    }
+   },
+   "display_width": null,
+   "id": "5cc6bb70-e85e-6a3c-d8ac-115638a67f57",
+   "label": "Mobile spacing",
+   "locked": false,
+   "name": "mobile_spacing",
+   "required": false,
+   "type": "spacing"
+  }
+ ],
+ "default": {
+  "spacing_field": {
+   "padding": {
+    "top": {
+     "value": 100,
+     "units": "px"
+    },
+    "bottom": {
+     "value": 100,
+     "units": "px"
+    },
+    "left": {
+     "value": 0,
+     "units": "px"
+    },
+    "right": {
+     "value": 0,
+     "units": "px"
+    }
+   }
+  },
+  "mobile_spacing": {
+   "padding": {
+    "top": {
+     "value": 60,
+     "units": "px"
+    },
+    "bottom": {
+     "value": 60,
+     "units": "px"
+    },
+    "left": {
+     "value": 0,
+     "units": "px"
+    },
+    "right": {
+     "value": 0,
+     "units": "px"
+    }
+   }
+  }
+ },
+ "display_width": null,
+ "expanded": false,
+ "group_occurrence_meta": null,
+ "id": "e4515e1a-83cd-44ad-1489-99d34fb5fec9",
+ "label": "Style",
+ "locked": false,
+ "name": "style",
+ "required": false,
+ "tab": "STYLE",
+ "type": "group"
+}
+]

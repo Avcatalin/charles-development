@@ -1,0 +1,153 @@
+[ {
+  "id" : "4583b9de-67da-c2d0-fe1d-b039a2d80527",
+  "name" : "reverse_order",
+  "display_width" : null,
+  "label" : "Reverse Order",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "e502129d-a62a-f2d3-57be-785ad561849a",
+  "name" : "show_button",
+  "display_width" : null,
+  "label" : "Show Button?",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "0497c0ef-9711-4c03-884d-6bae2142fa68",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/sample-whatsapp.jpg",
+    "alt" : "sample-whatsapp",
+    "loading" : "lazy",
+    "width" : 1280,
+    "height" : 853,
+    "max_width" : 1280,
+    "max_height" : 853
+  }
+}, {
+  "id" : "948c4f11-069c-44d7-af4d-c9146e3f4d47",
+  "name" : "content_block",
+  "display_width" : null,
+  "label" : "Content Block",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h3>chatins</h3>\n<p>This explains why it’s growth in 3 lines with up to 3000 monthly free outbound messages. This explains why it’s growth in 3 lines with.</p>"
+}, {
+  "id" : "a04a7d16-09a6-6afb-7029-ebe7fc257244",
+  "name" : "content_block_color",
+  "display_width" : null,
+  "label" : "Content Block Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+}, {
+  "id" : "0620a4ab-fe86-0436-7728-e0aa0873ec4f",
+  "name" : "button_id",
+  "display_width" : null,
+  "label" : "Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "2c7bb9d0-bf0c-cf57-f1de-54e6e161e16a",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See feature"
+}, {
+  "id" : "7982a498-25fe-e376-3271-ff81660065ac",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "e9ba86d8-b6ee-c2ee-08cc-64c9f892ac03",
+  "name" : "button_background_color",
+  "display_width" : null,
+  "label" : "Button Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#F8EA6A",
+    "opacity" : 100
+  }
+}, {
+  "id" : "c6ec3762-1caf-bc5c-4651-d828c9d1fdac",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5004efde-39d0-803c-f2f8-fcf70c12fb52",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "86e29ffc-c5e5-b0fd-922f-9b382fd92698",
+  "name" : "button_text_color",
+  "display_width" : null,
+  "label" : "Button Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+} ]

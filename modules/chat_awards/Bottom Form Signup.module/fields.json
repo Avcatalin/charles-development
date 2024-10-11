@@ -1,0 +1,261 @@
+[ {
+  "id" : "0591d0f7-0f85-4a8d-0d25-3c9fe4c260ea",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CHARLES <br> CHAT AWARDS "
+}, {
+  "id" : "49783020-98c3-672c-ad50-6bb5703f7a89",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Initial application only takes a few minutes."
+}, {
+  "id" : "ddd82429-36e7-8608-b050-3956a7674f07",
+  "name" : "form_embed_html",
+  "display_width" : null,
+  "label" : "Form Embed HTML",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Put Embed script here."
+}, {
+  "id" : "1a805646-c305-793f-22b6-999cc1e14f21",
+  "name" : "form_title",
+  "display_width" : null,
+  "label" : "Form Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Share your pitch! 🚀"
+}, {
+  "id" : "1e977363-232b-4359-6ff4-b29282aa405a",
+  "name" : "bottom_image",
+  "display_width" : null,
+  "label" : "Bottom Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/Illustration%20Chat%20Award-1.png",
+    "alt" : "Illustration Chat Award-1",
+    "loading" : "lazy",
+    "width" : 3192,
+    "height" : 2144,
+    "max_width" : 3192,
+    "max_height" : 2144
+  }
+}, {
+  "id" : "f2cb92d1-a362-a954-aa28-c9039288a763",
+  "name" : "background",
+  "display_width" : null,
+  "label" : "Background",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#3A36DE",
+    "opacity" : 100
+  }
+}, {
+  "id" : "c3650ef4-63d5-9595-a355-682d34a42428",
+  "name" : "qr_form",
+  "display_width" : null,
+  "label" : "Form // QR",
+  "help_text" : "Turn on for Temporary QR, Turn off for Form.",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "c2da3932-5b68-5f22-b7ca-b4b695480b68",
+  "name" : "qr",
+  "display_width" : null,
+  "label" : "qr",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "679f1c79-d77e-3636-ba4d-2b3f5bf538b0",
+    "name" : "qr_image",
+    "display_width" : null,
+    "label" : "QR Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "b33fa258-7c54-4229-e0ff-6e629dbf9e2b",
+    "name" : "qr_code_title",
+    "display_width" : null,
+    "label" : "QR code title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "a8cbca37-3912-5c4d-7ff3-b92659585eb0",
+    "name" : "title_color",
+    "display_width" : null,
+    "label" : "Title color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "54d55bdc-8d22-41ca-dced-a03c7ed3b9f6",
+    "name" : "content_color",
+    "display_width" : null,
+    "label" : "Content Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "c8f1c948-632f-ffe0-60b7-922b711ce7d8",
+    "name" : "mobile_cta_background",
+    "display_width" : null,
+    "label" : "mobile cta background",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "2ca67885-6dd1-e9ea-57d6-d664ffa62e1b",
+    "name" : "mobile_cta_text_color",
+    "display_width" : null,
+    "label" : "mobile cta text color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "11c097ec-c6a5-be0c-75b9-a9540ec6f7be",
+    "name" : "qr_content",
+    "display_width" : null,
+    "label" : "QR Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "28441949-ed29-ae71-6494-f3b8b96a4094",
+    "name" : "mobile_cta",
+    "display_width" : null,
+    "label" : "Mobile CTA",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "27a1a084-6975-83e3-96dc-ddd5aa5e7951",
+    "name" : "mobile_cta_text",
+    "display_width" : null,
+    "label" : "Mobile CTA Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "qr_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "title_color" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "content_color" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "mobile_cta_background" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "mobile_cta_text_color" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "mobile_cta" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "e91cf7f8-abcd-b57e-d144-72dbb0224d10",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form."
+  }
+} ]

@@ -1,0 +1,94 @@
+[ {
+  "id" : "40cc7de6-b40f-7a41-5543-1d180d2c934f",
+  "name" : "retention_image",
+  "display_width" : null,
+  "label" : "Retention Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/retention-marketing-banner.png",
+    "alt" : "retention-marketing-banner",
+    "loading" : "eager",
+    "width" : 2624,
+    "height" : 1842,
+    "max_width" : 2000,
+    "max_height" : 1403.9634146341464
+  }
+}, {
+  "id" : "94f3ed20-8840-6c90-379e-406bed7ac7da",
+  "name" : "mobile_retention_image",
+  "display_width" : null,
+  "label" : "Mobile retention image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.hello-charles.com/hubfs/mobile-retention-banner.png",
+    "alt" : "mobile-retention-banner",
+    "loading" : "eager",
+    "width" : 613,
+    "height" : 1949,
+    "max_width" : 613,
+    "max_height" : 1949
+  }
+}, {
+  "id" : "bcdba7aa-2711-7ebf-f9dc-40e33a673fec",
+  "name" : "retention_content",
+  "display_width" : null,
+  "label" : "Retention content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1>Returning customers <strong>One <span>chat</span> away</strong></h1>"
+}, {
+  "id" : "43db5ad2-4c29-df21-6db6-83c69c4c8e76",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "61144f63-5e78-8486-8097-1bccbedad197",
+  "name" : "button_label",
+  "display_width" : null,
+  "label" : "Button Label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See features"
+}, {
+  "id" : "e690352c-b4a3-2cb3-96e8-e3aff3124419",
+  "name" : "button_id",
+  "display_width" : null,
+  "label" : "Button ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

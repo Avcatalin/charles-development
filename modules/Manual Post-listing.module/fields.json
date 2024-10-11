@@ -1,0 +1,86 @@
+[ {
+  "id" : "643831b9-0aa6-a0ef-f3db-b5a71143168e",
+  "name" : "list_title",
+  "display_width" : null,
+  "label" : "List title to display",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Recent Posts"
+}, {
+  "id" : "button",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "button.text",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Click here"
+  }, {
+    "id" : "button.text_color",
+    "name" : "text_color",
+    "display_width" : null,
+    "label" : "Text color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "button.bg_color",
+    "name" : "bg_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "text" : "Click here",
+    "text_color" : {
+      "color" : "#231F20",
+      "opacity" : 100
+    },
+    "bg_color" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "473b57c0-9f2b-38c0-46d8-d5dc5326ea4a",
+  "name" : "select_blogs",
+  "display_width" : null,
+  "label" : "Select Blogs to Display",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "type" : "page"
+} ]

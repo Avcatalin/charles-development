@@ -1,0 +1,71 @@
+[ {
+  "id" : "integrations",
+  "name" : "integrations",
+  "display_width" : null,
+  "label" : "Integrations",
+  "required" : true,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "integrations.title",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "integrations.title",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Integration title here"
+  }, {
+    "picker" : "image",
+    "id" : "integrations.icon",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "type" : "file"
+  }, {
+    "id" : "integrations.bg_color",
+    "name" : "bg_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF171",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "integrations.available",
+    "name" : "available",
+    "display_width" : null,
+    "label" : "Available",
+    "inline_help_text" : "Set of the integration is already available or still under construction.",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "title" : "WhatsApp",
+    "bg_color" : {
+      "color" : "#26E430",
+      "opacity" : 100
+    },
+    "available" : true
+  } ]
+} ]

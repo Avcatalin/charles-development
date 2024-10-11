@@ -1,0 +1,133 @@
+[ {
+  "id" : "0941ee7d-6331-af85-bfd6-5c3b85fd353a",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6b99feff-3abc-9b45-c214-2e53acf098c3",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "4f71f05d-3409-1ab6-6382-553e48935add",
+  "name" : "container_width",
+  "display_width" : null,
+  "label" : "Container Width",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "980px"
+}, {
+  "id" : "ab9de7ce-7ef4-e552-972e-cf1718eb8908",
+  "name" : "jumpmarks_repeater",
+  "display_width" : null,
+  "label" : "Jumpmarks Repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "634a4e15-be84-6c03-f336-98238a53b443",
+    "name" : "jumpmark",
+    "display_width" : null,
+    "label" : "Jumpmark",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "#channels",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "08307ae7-5e79-660d-4503-479817f06489",
+    "name" : "jumpmark_icon",
+    "display_width" : null,
+    "label" : "Jumpmark icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "fc118fb8-4c83-602c-ffbb-2e781aa74093",
+    "name" : "jumpmark_label",
+    "display_width" : null,
+    "label" : "Jumpmark Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "b0d8feab-252b-5c9b-c4b8-1e7fede11047",
+    "name" : "jumpmark_background_color",
+    "display_width" : null,
+    "label" : "Jumpmark Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#EDFDCC",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "jumpmark" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "#channels",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "jumpmark_icon" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "jumpmark_background_color" : {
+      "color" : "#EDFDCC",
+      "opacity" : 100
+    }
+  } ]
+} ]

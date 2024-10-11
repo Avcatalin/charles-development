@@ -1,0 +1,147 @@
+<!-- Desktop Version -->
+<div class="key-feature-block desktop">
+  <div class="container">
+    <!-- Top Image -->
+    <div class="top-section-image">
+      {% for item in module.top_heading_image %}
+      {% if item.top_image.src %}
+      {% set sizeAttrs = 'width="{{ item.top_image.width }}" height="{{ item.top_image.height }}"' %}
+      {% if item.top_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ item.top_image.width }}" height="{{ item.top_image.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif item.top_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ item.top_image.max_width }}" height="{{ item.top_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = item.top_image.loading != 'disabled' ? 'loading="{{ item.top_image.loading }}"' : '' %}
+      <img src="{{ item.top_image.src }}" alt="{{ item.top_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="{{ item.active_class }}">
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Content Block -->
+    <div class="content-block">
+      <!-- Top Carousel Features -->
+      <div class="features-carousel">
+        <!-- Carousel Item -->
+        {% for item in module.carousel_group %}
+        <div class="carousel-item {{ item.active_class }}" style="background: {{ item.tab_background_color.css }}">
+          <div class="item-icon">
+            {% if item.carousel_item_icon.src %}
+            {% set sizeAttrs = 'width="{{ item.carousel_item_icon.width }}" height="{{ item.carousel_item_icon.height }}"' %}
+            {% if item.carousel_item_icon.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.carousel_item_icon.width }}" height="{{ item.carousel_item_icon.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.carousel_item_icon.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.carousel_item_icon.max_width }}" height="{{ item.carousel_item_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.carousel_item_icon.loading != 'disabled' ? 'loading="{{ item.carousel_item_icon.loading }}"' : '' %}
+            <img src="{{ item.carousel_item_icon.src }}" alt="{{ item.carousel_item_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <span class="item-title">{{ item.carousel_item_title }}</span>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Active Feature -->
+      <div class="feature-content-block">
+        {% for item in module.carousel_group_content %}
+        <div class="feature-content-item {{ item.active_class_content }}" style="background: {{ item.tab_content_background_color.css }}">
+          <!-- Outline here with div if ::after doesn't work -->
+          {% if module.enable_wave_line %}
+          <div class="wave-line-block">
+            <svg width="1657" height="112" viewBox="0 0 1657 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1656.71 27.2627L750.357 27.2627C743.368 27.2627 741.039 17.9081 747.213 14.6314L749.813 13.2512C755.313 10.3324 753.238 2.00006 747.013 2.00006V2.00006C745.945 2.00006 744.897 2.28603 743.978 2.82825L723.964 14.6314C709.941 22.901 693.958 27.2627 677.679 27.2627L509.013 27.2627C484.426 27.2627 464.313 46.8484 463.661 71.4269L463.214 88.2683C463.138 91.1386 461.784 93.8249 459.522 95.5931V95.5931C452.505 101.077 442.445 94.9057 444.155 86.1658L450.542 53.5225C453.204 39.9162 442.786 27.2627 428.922 27.2627L9 27.2627" stroke="#221F20" stroke-width="2.1968"/>
+              <circle cx="8.58549" cy="26.6955" r="8.58549" fill="#221F20"/>
+            </svg>
+          </div>
+          {% endif %}
+          <!-- Bottom Feature Content -->
+          <div class="feature-bottom-content">
+            <div class="feature-main-image">
+              <div class="inner-featured-img">
+                {% if item.carousel_item_image.src %}
+                {% set sizeAttrs = 'width="{{ item.carousel_item_image.width }}" height="{{ item.carousel_item_image.height }}"' %}
+                {% if item.carousel_item_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ item.carousel_item_image.width }}" height="{{ item.carousel_item_image.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif item.carousel_item_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ item.carousel_item_image.max_width }}" height="{{ item.carousel_item_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = item.carousel_item_image.loading != 'disabled' ? 'loading="{{ item.carousel_item_image.loading }}"' : '' %}
+                <img src="{{ item.carousel_item_image.src }}" alt="{{ item.carousel_item_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+            </div>
+            <div class="feature-content-text">
+              <!-- Content Rich Text -->
+              {{ item.carousel_item_content }}
+              {% if item.enable_button %}
+              <div class="cta-wrapper">
+                <!-- Content CTA -->
+                {% set href = item.carousel_item_cta_link.url.href %}
+                {% if item.carousel_item_cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}" class="feature-content-cta" id="{{ item.button_id }}"
+                   {% if item.carousel_item_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if item.carousel_item_cta_link.rel %}rel="{{ item.carousel_item_cta_link.rel }}"{% endif %}
+                   >
+                  {{ item.carousel_item_cta_label }}
+                  <i></i>
+                </a>
+              </div>
+              {% endif %}
+            </div>
+          </div>          
+        </div>
+        {% endfor %}        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Version -->
+<div class="key-feature-block mobile">
+  <div class="key-feature-slider">
+    <div class="swiper-wrapper">
+      {% for item in module.mobile_carousel.slides_repeater %}
+      <div class="swiper-slide">
+        <div class="inner-slide" style="background: {{ item.slide_background_color.color }};">
+          <!-- Slide Icon -->
+          <div class="icon-wrapper">
+            <div class="icon-img" style="background: {{ item.slide_background_color.color }};">
+              {% if item.mobile_icon.src %}
+              {% set sizeAttrs = 'width="{{ item.mobile_icon.width }}" height="{{ item.mobile_icon.height }}"' %}
+              {% if item.mobile_icon.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.mobile_icon.width }}" height="{{ item.mobile_icon.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.mobile_icon.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.mobile_icon.max_width }}" height="{{ item.mobile_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.mobile_icon.loading != 'disabled' ? 'loading="{{ item.mobile_icon.loading }}"' : '' %}
+              <img src="{{ item.mobile_icon.src }}" alt="{{ item.mobile_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+            <span class="icon-label">{{ item.icon_label }}</span>
+          </div>
+          <!-- Slide Content -->
+          <div class="slide-content">
+            <div class="slide-main-image">
+              {% if item.slide_main_image.src %}
+              {% set sizeAttrs = 'width="{{ item.slide_main_image.width }}" height="{{ item.slide_main_image.height }}"' %}
+              {% if item.slide_main_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.slide_main_image.width }}" height="{{ item.slide_main_image.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.slide_main_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.slide_main_image.max_width }}" height="{{ item.slide_main_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.slide_main_image.loading != 'disabled' ? 'loading="{{ item.slide_main_image.loading }}"' : '' %}
+              <img src="{{ item.slide_main_image.src }}" alt="{{ item.slide_main_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+            <div class="slide-content-text">
+              {{ item.slide_content }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

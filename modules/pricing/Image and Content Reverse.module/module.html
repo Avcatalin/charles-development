@@ -1,0 +1,30 @@
+<div class="image-content-reverse-block {% if module.reverse_order %} order-reverse {% endif %}" style="{{ module.style.spacing_field.css }}">
+  <!-- IMAGE CONTAINER -->
+  <div class="image-container">
+    {% if module.image_field.src %}
+    {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+    {% if module.image_field.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.image_field.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+    <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+  <!-- CONTENT SECTION -->
+  <div class="content-container" style="color: {{ module.content_block_color.css }}">
+    {% inline_rich_text field="content_block" value="{{ module.content_block }}" %}
+    {% set href = module.button_link.url.href %}
+    {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}" class="main-button-charles" id="{{ module.button_id }}"
+       {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+       style="background-color: {{ module.button_background_color.css }}; color: {{ module.button_text_color.css }};
+              {% if !module.show_button %} display:none; {% endif %}">
+      {{ module.button_text }}
+    </a>
+  </div>
+</div>

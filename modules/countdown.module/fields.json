@@ -1,0 +1,64 @@
+[ {
+  "id" : "text",
+  "name" : "countdown_date",
+  "display_width" : null,
+  "label" : "Countdown Date",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "mm/dd/yyyy",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "12/31/2023"
+}, {
+  "id" : "da8ade95-6956-278e-ad72-a14ccee37fa6",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "aca3351c-8851-018c-030d-65d977c1f0f2",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "c651ac83-0887-cb9e-1d0a-a7ed23fcf13d",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "background_color" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }
+}, {
+  "id" : "835eb31e-f346-e4ab-4fc4-ae90832031bc",
+  "name" : "headline",
+  "display_width" : null,
+  "label" : "Headline",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

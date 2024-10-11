@@ -1,0 +1,66 @@
+<div class="whatsapp-magic-section" style="background-image: url({{ module.section_background.src }})">
+  <div class="container">
+    <!-- Bottom Second Section -->
+    <div class="row second-row">
+      <div class="col-bf-7">
+        <p class="feature-main-title">
+          {{ module.bold_title_second_row }}
+        </p>
+        <div class="image-stats-mobile">
+          {% if module.stats_image.src %}
+          {% set sizeAttrs = 'width="{{ module.stats_image.width }}" height="{{ module.stats_image.height }}"' %}
+          {% if module.stats_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.stats_image.width }}" height="{{ module.stats_image.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.stats_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.stats_image.max_width }}" height="{{ module.stats_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.stats_image.loading != 'disabled' ? 'loading="{{ module.stats_image.loading }}"' : '' %}
+          <img src="{{ module.stats_image.src }}" alt="{{ module.stats_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="steps-repeater">
+          {% for item in module.steps_repeater %}
+          <div class="row-item">
+            <div class="letter-row" style="background-color: {{ item.letter_row_background.color }}">
+              {{ item.letter_row }}
+            </div>
+            <div class="content-row">
+              <p class="letter-title">
+                {{ item.title_row }}
+              </p>
+              <p class="letter-content">
+                {{ item.text_row }}
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% if module.activate_button %}
+        <!-- Demo Buttonm -->
+        {% set href = module.get_demo_link.url.href %}
+        {% if module.get_demo_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if module.get_demo_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.get_demo_link.rel %}rel="{{ module.get_demo_link.rel }}"{% endif %}
+           >
+          <span class="demo-btn">{{ module.demo_button }}</span>
+        </a>
+        {% endif %}
+      </div>
+      <div class="col-bf-5 image-stats-desktop">
+        {% if module.stats_image.src %}
+        {% set sizeAttrs = 'width="{{ module.stats_image.width }}" height="{{ module.stats_image.height }}"' %}
+        {% if module.stats_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.stats_image.width }}" height="{{ module.stats_image.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.stats_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.stats_image.max_width }}" height="{{ module.stats_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.stats_image.loading != 'disabled' ? 'loading="{{ module.stats_image.loading }}"' : '' %}
+        <img src="{{ module.stats_image.src }}" alt="{{ module.stats_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,225 @@
+[ {
+  "id" : "81997454-ca75-19ef-9989-47e066fca725",
+  "name" : "slide_item",
+  "display_width" : null,
+  "label" : "Carousel Items Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "bb54b7bf-b478-1c30-83e3-ecdd8c8f43d6",
+    "name" : "slide_image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Baro%20Case.png",
+      "alt" : "Baro Case",
+      "loading" : "lazy",
+      "width" : 382,
+      "height" : 418,
+      "max_width" : 382,
+      "max_height" : 418
+    }
+  }, {
+    "id" : "8cca0204-f327-a8b6-67e8-2d8961a4903c",
+    "name" : "slide_icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat.svg",
+      "alt" : "Chat Icon",
+      "loading" : "lazy",
+      "width" : 67,
+      "height" : 68,
+      "max_width" : 67,
+      "max_height" : 68
+    }
+  }, {
+    "id" : "2a0b9f93-ae96-ac41-9deb-cd304616d954",
+    "name" : "slide_title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Gamify campaigns"
+  }, {
+    "id" : "39329bbd-8ab4-35ed-6fe6-6ba673ebcb22",
+    "name" : "slide_subtitle",
+    "display_width" : null,
+    "label" : "Subtitle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "like Barò Cosmetics"
+  }, {
+    "id" : "e07ed4b1-4f86-6e89-77fb-bae4b73ffb0f",
+    "name" : "slide_content",
+    "display_width" : null,
+    "label" : "Content Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Run fun campaigns and reward engaged users with special offers."
+  }, {
+    "id" : "9b9022bc-5d9d-f933-749c-2c8cf3bcb4bd",
+    "name" : "slide_item_link",
+    "display_width" : null,
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 73285730393
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "slide_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Baro%20Case.png",
+      "alt" : "Baro Case",
+      "loading" : "lazy",
+      "width" : 382,
+      "height" : 418,
+      "max_width" : 382,
+      "max_height" : 418
+    },
+    "slide_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat.svg",
+      "alt" : "Chat Icon",
+      "loading" : "lazy",
+      "width" : 67,
+      "height" : 68,
+      "max_width" : 67,
+      "max_height" : 68
+    },
+    "slide_title" : "Gamify campaigns",
+    "slide_subtitle" : "like Barò Cosmetics",
+    "slide_content" : "Run fun campaigns and reward engaged users with special offers.",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 73285730393
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "slide_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Baro%20Case.png",
+      "alt" : "Baro Case",
+      "loading" : "lazy",
+      "width" : 382,
+      "height" : 418,
+      "max_width" : 382,
+      "max_height" : 418
+    },
+    "slide_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat.svg",
+      "alt" : "Chat Icon",
+      "loading" : "lazy",
+      "width" : 67,
+      "height" : 68,
+      "max_width" : 67,
+      "max_height" : 68
+    },
+    "slide_title" : "Gamify campaigns",
+    "slide_subtitle" : "like Barò Cosmetics",
+    "slide_content" : "Run fun campaigns and reward engaged users with special offers.",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 73285730393
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "slide_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Baro%20Case.png",
+      "alt" : "Baro Case",
+      "loading" : "lazy",
+      "width" : 382,
+      "height" : 418,
+      "max_width" : 382,
+      "max_height" : 418
+    },
+    "slide_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/chat.svg",
+      "alt" : "Chat Icon",
+      "loading" : "lazy",
+      "width" : 67,
+      "height" : 68,
+      "max_width" : 67,
+      "max_height" : 68
+    },
+    "slide_title" : "Gamify campaigns",
+    "slide_subtitle" : "like Barò Cosmetics",
+    "slide_content" : "Run fun campaigns and reward engaged users with special offers.",
+    "link_field" : {
+      "url" : {
+        "type" : "CONTENT",
+        "href" : null,
+        "content_id" : 73285730393
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "a4436f05-9e22-84a8-74a4-aa60730de74c",
+  "name" : "slide_content_color",
+  "display_width" : null,
+  "label" : "Carousel Item - Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#221F20",
+    "opacity" : 100
+  }
+} ]

@@ -1,0 +1,34 @@
+[ {
+  "id" : "a4dbcdf0-1c3d-979d-eecb-8e9ed086ae83",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See more WhatsApp success stories"
+}, {
+  "id" : "7afad092-5601-2e04-8797-d94f5695401a",
+  "name" : "related_case_hubdb",
+  "display_width" : null,
+  "label" : "Related Case HubDB",
+  "required" : false,
+  "locked" : false,
+  "type" : "hubdbtable",
+  "default" : 5342753
+}, {
+  "id" : "0fce404f-324b-8b79-a796-8e73892bbd1a",
+  "name" : "button_label",
+  "display_width" : null,
+  "label" : "Button Label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Read more"
+} ]

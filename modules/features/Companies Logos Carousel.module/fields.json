@@ -1,0 +1,98 @@
+[ {
+  "id" : "8616161d-0277-5a96-db6b-a74a62c93638",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Slider Spacing",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b00ee8fb-b54b-6165-67c5-3180bab8f2ea",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "spacing_field" : { }
+  }
+}, {
+  "id" : "1b87e05b-b15c-7701-f90b-293974792bcf",
+  "name" : "logo_slider",
+  "display_width" : null,
+  "label" : "Companies Logos Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "9b905d0b-bb9e-7196-43a3-3759e6860bfb",
+    "name" : "company_logos",
+    "display_width" : null,
+    "label" : "Companies Logos",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Logo%20Grid%20Updated%202.png",
+      "alt" : "Logo Grid Updated 2",
+      "loading" : "lazy",
+      "width" : 1440,
+      "height" : 93,
+      "max_width" : 1440,
+      "max_height" : 93
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "company_logos" : {
+      "size_type" : "auto",
+      "src" : "https://www.hello-charles.com/hubfs/Logo%20Grid%20Updated%202.png",
+      "alt" : "Logo Grid Updated 2",
+      "loading" : "lazy",
+      "width" : 1440,
+      "height" : 93,
+      "max_width" : 1440,
+      "max_height" : 93
+    }
+  } ]
+}, {
+  "id" : "b5688ab0-cb0f-3a4a-f2d3-710731de94a8",
+  "name" : "enable_left_to_right",
+  "display_width" : null,
+  "label" : "Enable LTR",
+  "inline_help_text" : "Enable left to right mode",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "9ce29e51-292d-ea77-1181-bfb6506ec521",
+  "name" : "enable_right_to_left",
+  "display_width" : null,
+  "label" : "Enable RTL",
+  "inline_help_text" : "Enable right to left mode",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+} ]

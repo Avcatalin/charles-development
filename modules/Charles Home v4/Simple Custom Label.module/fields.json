@@ -1,0 +1,59 @@
+[ {
+  "id" : "5792d5e0-98d8-6788-0dd7-458dc427b787",
+  "name" : "label_color",
+  "display_width" : null,
+  "label" : "Label Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#3E47D7",
+    "opacity" : 100
+  }
+}, {
+  "id" : "24e5a506-018b-d985-18ec-e368dfdd25d6",
+  "name" : "label_background_color",
+  "display_width" : null,
+  "label" : "Label Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#AAAFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "aad06921-ee6f-f4ba-024f-b47ebf7d183a",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Label Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "57e32b5a-3e69-c8e6-53ee-de7cbca71404",
+    "name" : "spacing_field",
+    "display_width" : null,
+    "label" : "Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "f35b7b5f-7df1-ae8f-65f6-f1edb78ca1ca",
+  "name" : "label_text",
+  "display_width" : null,
+  "label" : "Label Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "profitability fixed"
+} ]

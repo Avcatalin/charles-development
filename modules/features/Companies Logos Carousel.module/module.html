@@ -1,0 +1,17 @@
+<!-- Companies logos slider that goes left to right or reverse -->
+<div class="companies-logos-wrapper" style="{{ module.style.spacing_field.css }}">
+  <div class="slick-slider companies-logos-carousel {% if module.enable_left_to_right %} ltr {% endif %} {% if module.enable_right_to_left %} rtl {% endif %}">
+    {% for logo_slider in module.logo_slider %}
+    <div class="slick-slide">
+      {% set sizeAttrs = 'width="{{ logo_slider.company_logos.width }}" height="{{ logo_slider.company_logos.height }}"' %}
+      {% if logo_slider.company_logos.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ logo_slider.company_logos.width }}" height="{{ logo_slider.company_logos.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif logo_slider.company_logos.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ logo_slider.company_logos.max_width }}" height="{{ logo_slider.company_logos.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = logo_slider.company_logos.loading != 'disabled' ? 'loading="{{ logo_slider.company_logos.loading }}"' : '' %}
+      <img src="{{ logo_slider.company_logos.src }}" alt="{{ logo_slider.company_logos.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    </div>
+    {% endfor %}
+  </div>
+</div>
