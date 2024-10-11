@@ -9,9 +9,10 @@
   "private": true,
   "scripts": {
     "dev": "npm run development",
-    "watch": "concurrently \"npm run dev:webpack\" \"npm run dev:gulp\"",
+    "watch": "concurrently \"npm run dev:webpack\" \"npm run watch:gulp\" \"npm run hs:watch\"",
     "dev:webpack": "cross-env NODE_ENV=development webpack --progress --config=./webpack.config.js --watch",
-    "dev:gulp": "gulp watch",
+    "watch:gulp": "gulp watch && npm run hs:watch",
+    "hs:watch": "hs watch modules /modules",
     "lint": "npx eslint",
     "build": "npm run production",
     "production": "concurrently \"npm run prod:webpack\" \"npm run prod:gulp\"",
