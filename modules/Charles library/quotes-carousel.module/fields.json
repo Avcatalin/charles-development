@@ -1,5 +1,12 @@
 [
  {
+  "type": "text",
+  "id": "6528a066-44b5-9ffc-6259-f48faa52e230",
+  "validation_regex": "",
+  "label": "Anchor",
+  "name": "anchor"
+ },
+ {
   "children": [
    {
     "default": {
@@ -126,26 +133,41 @@
   "type": "group"
  },
  {
- "type": "group",
- "isNew": false,
- "name": "style",
- "label": "Style",
- "tab": "STYLE",
- "id": "32bf23a1-d563-bd1f-00a8-86e4d1e9ded3",
  "children": [
   {
-   "type": "spacing",
+   "default": {},
+   "display_width": null,
    "id": "bd182118-1935-d7df-c059-0dd7afa7c066",
    "label": "Spacing",
-   "name": "spacing_field"
+   "locked": false,
+   "name": "spacing_field",
+   "required": false,
+   "type": "spacing"
   },
   {
-   "type": "spacing",
+   "default": {},
+   "display_width": null,
    "id": "a7b6fe82-9663-e023-d085-b37e0ccf4586",
    "label": "Mobile spacing",
-   "name": "mobile_spacing"
+   "locked": false,
+   "name": "mobile_spacing",
+   "required": false,
+   "type": "spacing"
   }
  ],
- "default": {}
+ "default": {
+  "spacing_field": {},
+  "mobile_spacing": {}
+ },
+ "display_width": null,
+ "expanded": false,
+ "group_occurrence_meta": null,
+ "id": "32bf23a1-d563-bd1f-00a8-86e4d1e9ded3",
+ "label": "Style",
+ "locked": false,
+ "name": "style",
+ "required": false,
+ "tab": "STYLE",
+ "type": "group"
 }
 ]

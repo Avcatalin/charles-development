@@ -10,7 +10,7 @@
   }
 </style>
 
-<div class="quotes-container quotes-container--{{ name }} swiper-quotes">
+<div id="{{ module.anchor }}" class="quotes-container quotes-container--{{ name }} swiper-quotes">
   <div class="swiper-wrapper">
     {% for item in module.quote_block %}
     <div class="swiper-slide">
